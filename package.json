@@ -15,15 +15,15 @@
   "author": "",
   "main": "vue.config.js",
   "scripts": {
-    "build": "vue-cli-service build",
+    "build": "yarn run vue-cli-service build",
     "build-ghpages": "yarn run build-production & yarn run deploy-ghpages",
-    "build-modern": "vue-cli-service build --modern --color",
+    "build-modern": "yarn run vue-cli-service build --modern --color",
     "build-production": "yarn run fetch-api-json & yarn run build-modern",
     "deploy-ghpages": "yarn run vue-cli-ghpages",
     "fetch-api-json": "node ./script/fetch-api-json",
-    "serve": "vue-cli-service serve --color",
-    "serve-production": "vue-cli-service serve --mode production",
-    "test": "vue-cli-service test:unit"
+    "serve": "yarn run vue-cli-service serve --color",
+    "serve-production": "yarn run vue-cli-service serve --mode production",
+    "test": "yarn run vue-cli-service test:unit"
   },
   "dependencies": {
     "@node-novel/cache-loader": "^1.0.4",
