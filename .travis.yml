@@ -1,18 +1,19 @@
 language: node_js
 node_js:
-  - node
-provider: pages
+- node
+deploy:
+  provider: pages
   github-token: $GITHUB_TOKEN
   on:
     branch: master
   local-dir: dist
 before_install:
-  - git config --global user.email "testbot@test.test"
-  - git config --global user.name "testbot"
-  - git config --global gc.reflogExpire "7 days"
-  - git config --global gc.reflogExpireUnreachable "7 days"
-  - export FORCE_COLOR=1
+- git config --global user.email "testbot@test.test"
+- git config --global user.name "testbot"
+- git config --global gc.reflogExpire "7 days"
+- git config --global gc.reflogExpireUnreachable "7 days"
+- export FORCE_COLOR=1
 before_script:
-  - git version
+- git version
 script:
-  - npm run build-production
+- npm run build-production
