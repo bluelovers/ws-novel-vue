@@ -19,5 +19,5 @@ install:
 before_script:
   - git version
 script:
-  #- npm run build-production
-  - npm run build-ghpages
+  #- yarn run build-production
+  - yarn run build-ghpages
