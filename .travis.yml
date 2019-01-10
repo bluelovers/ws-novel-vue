@@ -20,6 +20,6 @@ before_script:
   - git version
 script:
   #- yarn run build-production
-  - yarn run fetch-api-json
-  - yarn run build-modern
+#  - yarn run fetch-api-json
+  - yarn run build
 #  - yarn run deploy-ghpages

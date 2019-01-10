@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "description": "https://demonovel.netlify.com/",
+  "keywords": [
+    "netlify",
+    "node-novel",
+    "vue"
+  ],
   "homepage": "https://github.com/bluelovers/ws-novel-vue#readme",
   "bugs": {
     "url": "https://github.com/bluelovers/ws-novel-vue/issues"
@@ -15,12 +20,14 @@
   "author": "",
   "main": "vue.config.js",
   "scripts": {
-    "build": "yarn run vue-cli-service build",
-    "build-ghpages": "yarn run build-production & yarn run deploy-ghpages",
+    "build": "node ./script/build",
+    "build-base": "yarn run vue-cli-service build",
     "build-modern": "yarn run vue-cli-service build --modern --color",
-    "build-production": "yarn run fetch-api-json & yarn run build",
+    "deploy-and-build": "yarn run vue-cli-ghpages",
     "deploy-ghpages": "yarn run vue-cli-ghpages",
+    "fetch-and-build": "yarn run build & yarn run deploy-ghpages",
     "fetch-api-json": "node ./script/fetch-api-json",
+    "pre-commit": "node ./script/pre-commit",
     "serve": "yarn run vue-cli-service serve --color",
     "serve-production": "yarn run vue-cli-service serve --mode production",
     "test": "yarn run vue-cli-service test:unit"
@@ -49,11 +56,18 @@
     "@vue/cli-plugin-typescript": "^3.3.0",
     "@vue/cli-plugin-unit-mocha": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
+    "cross-spawn-extra": "^1.0.3",
     "fs-extra": "^7.0.1",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
+    "sort-package-json": "^1.17.1",
+    "terser-webpack-plugin": "^1.2.1",
     "typescript": "next",
     "vue-cli-plugin-vuetify": "^0.4.6",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "node ./script/pre-commit"
   }
 }
