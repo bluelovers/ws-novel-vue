@@ -1,12 +1,8 @@
-/**
- * Created by user on 2019/1/10/010.
- */
-
 const production = process.env.NODE_ENV === 'production';
 
-export = {
-	publicPath: './',
+module.exports = {
 
+	publicPath: './',
 	/*
 	configureWebpack: {
 
@@ -14,25 +10,17 @@ export = {
 
 	},
 	*/
-
 	css: {
 		modules: true,
 		sourceMap: true,
-
-		/*
-		loaderOptions: {
-			postcss: {
-
-			},
-		},
-		*/
 	},
-
 	devServer: {
 		disableHostCheck: true,
+		before()
+		{
+			//return require('./script/fetch-api-json')
+		},
+		clientLogLevel: 'error',
 	},
 
-	pwa: {},
-
-	pluginOptions: {},
-}
+};

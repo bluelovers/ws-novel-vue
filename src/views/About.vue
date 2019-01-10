@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" data-app>
     <h1>This is an about page</h1>
 
     <vs-button color="primary" type="filled">Primary</vs-button>
@@ -117,6 +117,18 @@
       <Tag type="dot" closable color="success">标签二</Tag>
       <Tag type="dot" closable color="error">标签三</Tag>
       <Tag type="dot" closable color="warning">标签四</Tag>
+
+    <template>
+      <div class="text-xs-center">
+        <v-chip color="primary" text-color="white">Primary</v-chip>
+
+        <v-chip color="secondary" text-color="white">Secondary</v-chip>
+
+        <v-chip color="red" text-color="white">Colored Chip</v-chip>
+
+        <v-chip color="green" text-color="white">Colored Chip</v-chip>
+      </div>
+    </template>
 
   </div>
 

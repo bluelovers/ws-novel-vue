@@ -1,5 +1,10 @@
 # hello-world
 
+https://demonovel.netlify.com/
+
+https://bluelovers.github.io/ws-novel-vue/
+
+
 ## Project setup
 ```
 yarn install

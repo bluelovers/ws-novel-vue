@@ -2,14 +2,13 @@
 /**
  * Created by user on 2019/1/10/010.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-const node_fetch_1 = require("node-fetch");
+const cross_fetch_1 = require("cross-fetch");
 const Bluebird = require("bluebird");
 const fs = require("fs-extra");
 const path = require("path");
 // @ts-ignore
-node_fetch_1.default.Promise = Bluebird;
-node_fetch_1.default('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
+cross_fetch_1.default.Promise = Bluebird;
+module.exports = cross_fetch_1.default('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
     .then(res => res.json())
     .then(json => {
     let s = JSON.stringify(json, null, 2);

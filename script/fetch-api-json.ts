@@ -2,7 +2,7 @@
  * Created by user on 2019/1/10/010.
  */
 
-import fetch from 'node-fetch';
+import fetch from 'cross-fetch';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
@@ -10,7 +10,7 @@ import path = require('path');
 // @ts-ignore
 fetch.Promise = Bluebird;
 
-fetch('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
+export = fetch('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
 	.then(res => res.json())
 	.then(json => {
 

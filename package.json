@@ -2,19 +2,37 @@
   "name": "hello-world",
   "version": "0.1.0",
   "private": true,
+  "description": "https://demonovel.netlify.com/",
+  "homepage": "https://github.com/bluelovers/ws-novel-vue#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/ws-novel-vue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-novel-vue.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "vue.config.js",
   "scripts": {
-    "test": "vue-cli-service test:unit",
+    "build": "vue-cli-service build",
+    "build-ghpages": "npm run build-production & npx vue-cli-ghpages",
+    "build-modern": "vue-cli-service build --modern --color",
+    "build-production": "npm run build-modern & npm run fetch-api-json",
+    "fetch-api-json": "node ./script/fetch-api-json",
+    "serve": "vue-cli-service serve --color",
     "serve-production": "vue-cli-service serve --mode production",
-    "serve": "vue-cli-service serve",
-    "build-modern": "vue-cli-service build --modern",
-    "build": "vue-cli-service build"
+    "test": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@node-novel/cache-loader": "^1.0.4",
     "@vue/cli": "^3",
     "bluebird": "^3.5.3",
+    "cross-fetch": "^3.0.0",
     "iview": "^3.2.1",
     "vue": "^2.5.21",
     "vue-class-component": "^6.3.2",
+    "vue-cli-ghpages": "^1.0.0",
     "vue-plugin-load-script": "^1.2.0",
     "vue-property-decorator": "^7.2.0",
     "vue-router": "^3.0.2",
@@ -23,15 +41,18 @@
   },
   "devDependencies": {
     "@bluelovers/tsconfig": "^1.0.0",
-    "@vue/cli-plugin-pwa": "^3.3.0",
+    "@types/bluebird": "^3.5.25",
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.12.18",
+    "@types/node-fetch": "^2.1.4",
     "@vue/cli-plugin-typescript": "^3.3.0",
     "@vue/cli-plugin-unit-mocha": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
     "fs-extra": "^7.0.1",
-    "node-fetch": "^2.3.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "typescript": "next",
+    "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-template-compiler": "^2.5.21"
   }
 }
