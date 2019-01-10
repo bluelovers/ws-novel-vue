@@ -7,6 +7,8 @@ deploy:
   on:
     branch: master
   local-dir: dist
+  verbose: true
+  target_branch: gh-pages
 before_install:
 #  - git config --global user.email "testbot@test.test"
 #  - git config --global user.name "testbot"
