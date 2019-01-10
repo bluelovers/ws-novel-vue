@@ -24,9 +24,8 @@ yarn-error.log*
 /src/**/*.d.ts
 !/src/shims-tsx.d.ts
 !/src/shims-vue.d.ts
-
-/src/**/*.js
 /script/**/*.d.ts
 
 /*.d.ts
 *.js.map
+!/vue.config.js
