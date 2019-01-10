@@ -1,12 +1,12 @@
 language: node_js
 node_js:
   - node
-#deploy:
-#  provider: pages
-#  github-token: $GITHUB_TOKEN
-#  on:
-#    branch: master
-#  local-dir: dist
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local-dir: dist
 before_install:
   - git config --global user.email "testbot@test.test"
   - git config --global user.name "testbot"
@@ -22,4 +22,4 @@ script:
   #- yarn run build-production
   - yarn run fetch-api-json
   - yarn run build-modern
-  - yarn run deploy-ghpages
+#  - yarn run deploy-ghpages
