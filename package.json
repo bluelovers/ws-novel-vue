@@ -18,7 +18,7 @@
     "build": "yarn run vue-cli-service build",
     "build-ghpages": "yarn run build-production & yarn run deploy-ghpages",
     "build-modern": "yarn run vue-cli-service build --modern --color",
-    "build-production": "yarn run fetch-api-json & yarn run build-modern",
+    "build-production": "yarn run fetch-api-json & yarn run build",
     "deploy-ghpages": "yarn run vue-cli-ghpages",
     "fetch-api-json": "node ./script/fetch-api-json",
     "serve": "yarn run vue-cli-service serve --color",
