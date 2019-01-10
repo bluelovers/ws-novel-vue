@@ -15,4 +15,4 @@ before_install:
 before_script:
   -
 script:
-  - cd packages/hello-world && npm run build-ghpages
+  - npm run build-production
