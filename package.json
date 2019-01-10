@@ -16,9 +16,10 @@
   "main": "vue.config.js",
   "scripts": {
     "build": "vue-cli-service build",
-    "build-ghpages": "npm run build-production & npx vue-cli-ghpages",
+    "build-ghpages": "yarn run build-production & yarn run deploy-ghpages",
     "build-modern": "vue-cli-service build --modern --color",
-    "build-production": "npm run build-modern & npm run fetch-api-json",
+    "build-production": "yarn run build-modern & yarn run fetch-api-json",
+    "deploy-ghpages": "yarn run vue-cli-ghpages",
     "fetch-api-json": "node ./script/fetch-api-json",
     "serve": "vue-cli-service serve --color",
     "serve-production": "vue-cli-service serve --mode production",
