@@ -21,4 +21,6 @@ if (!production)
 	Vue.config.devtools = true
 }
 
+import './global';
+
 export default Vue

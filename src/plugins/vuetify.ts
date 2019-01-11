@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+//import 'vuetify/dist/vuetify.min.css'
+import '../assets/stylus/main.styl'
 import zhHant from 'vuetify/src/locale/zh-Hant'
 
 Vue.use(Vuetify, {

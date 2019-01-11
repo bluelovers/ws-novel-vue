@@ -1,7 +1,8 @@
 <template>
 	<div id="app">
 		<v-app dark class="caption">
-			<v-toolbar app>
+
+			<v-toolbar app height="40" :clipped-left="$vuetify.breakpoint.lgAndUp">
 				<center style="width: 100%;">
 					<router-link to="/">Home</router-link>
 					<!--
@@ -14,12 +15,18 @@
 					-->
 				</center>
 			</v-toolbar>
-			<v-content pa0 maauto>
-				<v-container fluid pa0 maauto style="padding: 0;">
-				<router-view />
+			<v-content>
+				<v-container fluid pa-0>
+				<router-view class="pa-0 py-2" />
 				</v-container>
 			</v-content>
-			<!--v-footer app></v-footer-->
+			<v-footer app>
+				<v-spacer></v-spacer>
+				<div class="mr-2">
+					<a :href="`${publicPath}static/novel-stat.json`" target="_blank" rel="noopener">novel-stat.json</a>
+				</div>
+				<div class="mr-2">&copy; {{ new Date().getFullYear() }}　</div>
+			</v-footer>
 		</v-app>
 	</div>
 </template>
