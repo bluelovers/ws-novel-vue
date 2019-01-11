@@ -5,7 +5,7 @@ import lang from 'iview/dist/locale/zh-TW'
 import { locale } from 'iview'
 import iView from 'iview';
 
-locale(lang)
+locale(lang);
 
 Vue.use(iView);
 

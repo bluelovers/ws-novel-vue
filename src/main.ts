@@ -1,12 +1,9 @@
 import Vue from 'vue'
+import './lib/init'
 import App from './App.vue'
 import router from './router'
-import './lib/init'
-
 
 Vue.config.productionTip = false;
-
-
 
 new Vue({
   router,

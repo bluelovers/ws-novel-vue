@@ -130,6 +130,22 @@
       </div>
     </template>
 
+
+      <Row>
+        <Col span="8">col-8</Col>
+        <Col span="8" offset="8">col-8 | offset-8</Col>
+      </Row>
+      <br>
+      <Row>
+        <Col span="6" offset="8">col-6 | offset-8</Col>
+        <Col span="6" offset="4">col-6 | offset-4</Col>
+      </Row>
+      <br>
+      <Row>
+        <Col span="12" offset="8">col-12 | offset-8</Col>
+      </Row>
+
+
   </div>
 
 
