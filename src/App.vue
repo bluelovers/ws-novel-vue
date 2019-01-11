@@ -4,7 +4,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/vuesax">Vuesax</router-link>
+      <router-link to="/vuesax">Vuesax</router-link> |
+      <router-link to="/novels">Novel</router-link>
     </div>
     <v-content>
     <router-view/>

@@ -47,8 +47,7 @@ module.exports = {
         },
     },
     chainWebpack(config) {
-        config.resolve.extensions.prepend('.tsx');
-        config.resolve.extensions.prepend('.ts');
+        const webpack = require('webpack');
     },
     css: {
         sourceMap: true,

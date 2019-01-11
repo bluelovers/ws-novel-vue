@@ -34,10 +34,11 @@
   },
   "dependencies": {
     "@bluelovers/tsconfig": "^1.0.0",
-    "@node-novel/cache-loader": "^1.0.4",
+    "@node-novel/cache-loader": "^1.0.6",
+    "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.3",
     "iview": "^3.2.1",
-
+    "node-novel-info": "^2.3.18",
     "vue": "^2.5.21",
     "vue-class-component": "^6.3.2",
     "vue-headful": "^2.0.1",
@@ -47,7 +48,6 @@
     "vuetify": "^1.4.1"
   },
   "devDependencies": {
-    "terser": "^3.14.1",
     "@types/bluebird": "^3.5.25",
     "@types/fs-extra": "^5.0.4",
     "@types/node": "^10.12.18",
@@ -67,6 +67,7 @@
     "sass-loader": "^7.1.0",
     "sort-package-json": "^1.17.1",
     "stylus-loader": "^3.0.2",
+    "terser": "^3.14.1",
     "terser-webpack-plugin": "^1.2.1",
     "typescript": "next",
     "vue-cli-ghpages": "^1.0.0",

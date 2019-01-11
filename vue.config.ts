@@ -80,10 +80,15 @@ module.exports = {
 
 	chainWebpack(config: ChainWebpack)
 	{
-		config.resolve.extensions.prepend('.tsx');
-		config.resolve.extensions.prepend('.ts');
+		//config.resolve.extensions.prepend('.tsx');
+		//config.resolve.extensions.prepend('.ts');
 
 		//console.log(config.resolve.extensions.values());
+
+		const webpack = require('webpack');
+
+//		// @ts-ignore
+//		config.plugins.set(new webpack.IgnorePlugin(/\.d\.ts$/))
 	},
 
 	css: {
