@@ -1,5 +1,5 @@
 <template>
-  <div class="about" data-app>
+  <div class="about" >
     <h1>This is an about page</h1>
 
     <vs-button color="primary" type="filled">Primary</vs-button>
@@ -141,7 +141,7 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 import testjson from '../../public/static/novel-stat.json';
 
-console.log(testjson.meta);
+console.log(testjson.meta, process.env.NODE_ENV);
 
 @Component({
   components: {

@@ -15,7 +15,9 @@ module.exports = cross_fetch_1.default('https://gitee.com/bluelovers/novel/raw/m
     let root = path.join(__dirname, '..');
     return Bluebird.all([
         fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.json'), s),
+        fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.js'), s),
         fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.json'), s),
+        fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.js'), s),
     ])
         .tap(function () {
         console.info(`saved`, 'novel-stat.json');

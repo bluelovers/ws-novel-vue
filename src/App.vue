@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
+  <v-app data-app app id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/vuesax">Vuesax</router-link>
     </div>
+    <v-content>
     <router-view/>
-  </div>
+    </v-content>
+  </v-app>
 </template>
 
 <style lang="scss">

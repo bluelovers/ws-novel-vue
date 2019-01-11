@@ -20,7 +20,9 @@ export = fetch('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
 
 		return Bluebird.all([
 			fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.json'), s),
+				fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.js'), s),
 			fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.json'), s),
+				fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.js'), s),
 		])
 			.tap(function ()
 			{

@@ -14,7 +14,7 @@ module.exports = {
 			splitChunks: {
 				chunks: 'all',
 			},
-			minimize: true,
+			minimize: production,
 			minimizer: [new TerserPlugin({
 				sourceMap: true,
 
@@ -51,9 +51,12 @@ module.exports = {
 	},
 
 	css: {
-		modules: true,
+		/**
+		 * 不要將 moudle 設為 true 否則插件的 CSS 全都會失敗 無法自動導入
+		 */
 		sourceMap: true,
 	},
+
 	devServer: {
 		disableHostCheck: true,
 		before()

@@ -5,6 +5,7 @@
     "jsx": "preserve",
     "importHelpers": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "inlineSourceMap": false,
     "inlineSources": false,
     "removeComments": true,
