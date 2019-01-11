@@ -33,6 +33,7 @@
     "tests/**/*.tsx"
   ],
   "exclude": [
+    "dist/**/*",
     "node_modules"
   ]
 }

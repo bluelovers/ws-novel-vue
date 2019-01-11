@@ -25,6 +25,8 @@ const cwd = path.join(__dirname, '..');
 		'build-modern',
 		'--',
 		'--report',
+		//'--client-log-level',
+		//'none',
 	], {
 		cwd,
 		stdio: 'inherit',
