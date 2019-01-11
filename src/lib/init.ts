@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import '../plugins/vuetify'
-import '../plugins/iview'
-import '../plugins/vuesax'
+//import '../plugins/iview'
+//import '../plugins/vuesax'
 //import LoadScript from 'vue-plugin-load-script';
 import vueHeadful from 'vue-headful';
 

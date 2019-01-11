@@ -167,7 +167,7 @@ console.log(testjson.meta, process.env.NODE_ENV);
     return {
       dialog: false
     }
-  }
+  },
 })
 export default class About extends Vue {}
 </script>

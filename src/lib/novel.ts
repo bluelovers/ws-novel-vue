@@ -7,6 +7,8 @@ import { array_unique } from 'array-hyper-unique'
 
 let novelStatCache: NovelStatCache;
 
+export { IFilterNovelData }
+
 export function loadNovelStatCache()
 {
 	const novelStatJson = require('../../public/static/novel-stat.json') as INovelStatCache;
