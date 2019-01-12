@@ -23,7 +23,7 @@
 			<v-footer app>
 				<v-spacer></v-spacer>
 				<div class="mr-2">
-					<a :href="`${publicPath}static/novel-stat.json`" target="_blank" rel="noopener">novel-stat.json</a>
+					<a :href="`https://gitee.com/bluelovers/novel/blob/master/novel-stat.json`" target="_blank" rel="noopener">novel-stat.json</a>
 				</div>
 				<div class="mr-2">&copy; {{ new Date().getFullYear() }}　</div>
 			</v-footer>
