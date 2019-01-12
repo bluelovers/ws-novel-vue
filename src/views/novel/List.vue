@@ -25,11 +25,16 @@
 					align-content-center="true"
 					justify-center="true"
 					fluid>
-					<v-layout row wrap>
+					<v-layout
+						row wrap
+						align-center="true"
+						align-content-center="true"
+					>
 						<v-flex
 							v-for="item in novels"
 							md4
 							flat tile
+							class="my-novel"
 						>
 
 							<v-card>
@@ -37,7 +42,7 @@
 
 									<v-flex>
 
-										<a :href="novelLink(item)" target="_blank" rel="noopener">
+										<a :href="novelLink(item)" target="_blank" rel="noopener" class="text-none">
 
 											<v-tooltip lazy bottom>
 
@@ -52,6 +57,31 @@
 													slot="activator"
 
 												>
+													<v-container pa-0 text-xs-right class="my-novel-tag" style="position: absolute;bottom: 0;right: 0;">
+
+														<v-chip
+															v-if="item.mdconf.novel.author"
+															small
+															class="text-xs-right caption"
+															label
+															color="pink accent-4" text-color="white"
+
+														>{{ item.mdconf.novel.author }}
+														</v-chip>
+
+														<v-chip
+															small
+															class="text-xs-right caption"
+															label
+															color="purple darken-4" text-color="white"
+
+														>{{ item.pathMain }}
+														</v-chip>
+
+
+													</v-container>
+
+
 												</v-img>
 
 												<v-container
@@ -660,4 +690,17 @@ export default class List extends Vue
 .text-overflow-ellipsis {
 	text-overflow: ellipsis;
 }
+
+.my-novel {
+	.my-novel-tag {
+		opacity: 0.7;
+	}
+
+	&:hover {
+		.my-novel-tag {
+			opacity: 1;
+		}
+	}
+}
+
 </style>
