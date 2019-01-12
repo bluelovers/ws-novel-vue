@@ -1,0 +1,11 @@
+# https://play.netlify.com/headers
+
+/static/*
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: X-Requested-With, Content-Type, Accept
+
+/*.ico
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: X-Requested-With, Content-Type, Accept
