@@ -6,7 +6,7 @@
 	>
 
 		<v-layout>
-			<v-flex sm6 offset-sm3>
+			<v-flex sm10 offset-sm1>
 
 				<div>
 					<v-pagination
