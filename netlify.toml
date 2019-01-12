@@ -1,5 +1,5 @@
 [build]
 publish = "dist/"
-command = "yarn upgrade && yarn run build"
+command = "yarn run build"
 [[redirects]]
 force = false
