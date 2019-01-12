@@ -22,7 +22,7 @@ const cwd = path.join(__dirname, '..');
 
 	await CrossSpawn('yarn', [
 		'run',
-		'build-modern',
+		'build-base',
 		'--',
 		'--report',
 		//'--client-log-level',

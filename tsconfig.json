@@ -1,7 +1,7 @@
 {
   "extends": "@bluelovers/tsconfig",
   "compilerOptions": {
-    //"strict": true,
+    "strict": false,
     "jsx": "preserve",
     "importHelpers": true,
     "esModuleInterop": true,
@@ -9,6 +9,7 @@
     "inlineSourceMap": false,
     "inlineSources": false,
     "removeComments": true,
+    "skipLibCheck": true,
     "baseUrl": ".",
     "types": [
       "webpack-env"

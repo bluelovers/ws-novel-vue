@@ -1,6 +1,5 @@
 # Netlify settings for single-page application
-/static/novel-stat.js    /static/novel-stat.js 200
-/static/novel-stat.json    /static/novel-stat.json 200
-/favicon.ico    /favicon.ico    200
-/*    /index.html   200
-
+/static/novel-stat.js    /static/novel-stat.js
+/static/novel-stat.json    /static/novel-stat.json
+/favicon.ico    /favicon.ico
+/*    /index.html    200

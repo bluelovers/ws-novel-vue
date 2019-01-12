@@ -12,7 +12,7 @@ const cwd = path.join(__dirname, '..');
     });
     await cross_spawn_extra_1.async('yarn', [
         'run',
-        'build-modern',
+        'build-base',
         '--',
         '--report',
     ], {
