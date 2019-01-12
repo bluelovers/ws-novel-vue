@@ -364,7 +364,7 @@ export default class List extends Vue
 
 		if (ks.length)
 		{
-			console.info(keyword, ks);
+			//console.info(keyword, ks);
 
 			try
 			{
@@ -373,7 +373,7 @@ export default class List extends Vue
 
 				const r = new zhRegExp(ks.join('|'));
 
-				console.info(r);
+				//console.info(r);
 
 				_this.cur_len = 0;
 
@@ -462,21 +462,18 @@ export default class List extends Vue
 
 		this._resetSubSearch();
 
-		_this.cur_author = keyword;
+		_this.cur_author = keyword.trim();
 
 		let ls = NovelData.novels
 			.reduce(function (ls, novel)
 			{
-				if (novel.mdconf.novel && novel.mdconf.contribute && novel.mdconf.contribute.length)
+				if (novel.mdconf.novel.author === keyword)
 				{
-					if (novel.mdconf.novel.author === keyword)
-					{
-						ls.push(novel)
-					}
-					else if (novel.mdconf.novel.authors && novel.mdconf.novel.authors.includes(keyword))
-					{
-						ls.push(novel)
-					}
+					ls.push(novel)
+				}
+				else if (novel.mdconf.novel.authors && novel.mdconf.novel.authors.length && novel.mdconf.novel.authors.includes(keyword))
+				{
+					ls.push(novel)
 				}
 
 				return ls;
