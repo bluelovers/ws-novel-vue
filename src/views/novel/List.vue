@@ -132,6 +132,7 @@
 				clearable
 				placeholder="搜尋標題 (使用 regexp-cjk 支援自動轉換簡繁日字漢字，以及一部分的 REGEXP 語法，空白視為分隔)"
 				persistent-hint
+				:value="cur_keyword"
 				@change="_searchList"
 				@click:clear="_searchReset"
 			></v-text-field>
@@ -149,7 +150,6 @@
 			:clipped="$vuetify.breakpoint.lgAndUp"
 			app
 			v-model="drawer"
-			fixed
 		>
 
 			<v-expansion-panel
@@ -158,7 +158,7 @@
 			>
 				<v-expansion-panel-content>
 					<div slot="header">Tags</div>
-					<v-card v-if="contributes.length">
+					<v-card v-if="tags.length">
 						<v-card-text expand>
 							<v-chip v-for="name in tags" class="caption" @click="_searchByTag(name)"
 									small
@@ -178,6 +178,35 @@
 						<span>NONE</span>
 					</v-container>
 				</v-expansion-panel-content>
+			</v-expansion-panel>
+
+			<v-expansion-panel
+				v-model="panel"
+				expand
+			>
+				<v-expansion-panel-content>
+					<div slot="header">Authors</div>
+					<v-card v-if="authors.length">
+						<v-card-text expand>
+							<v-chip v-for="name in authors" class="caption" @click="_searchByAuthor(name)"
+									small
+									:selected="name === cur_author"
+									:close="name === cur_author"
+									@input="_authorInput"
+									label
+									:color="name === cur_author ? 'pink' : ''"
+									:text-color="name === cur_author ? 'white' : ''"
+							>
+								<v-icon left v-if="name === cur_author">label</v-icon>
+								{{ name }}
+							</v-chip>
+						</v-card-text>
+					</v-card>
+					<v-container v-else>
+						<span>NONE</span>
+					</v-container>
+				</v-expansion-panel-content>
+
 			</v-expansion-panel>
 
 			<v-expansion-panel
@@ -250,11 +279,14 @@ export default class List extends Vue
 
 			tags: [] as typeof NovelData["tags"],
 			contributes: [] as typeof NovelData["contributes"],
+			authors: NovelData["authors"],
 
 			novels_all: NovelData.novels,
 
+			cur_keyword: '',
 			cur_tag: '',
 			cur_contribute: '',
+			cur_author: '',
 		};
 
 		setTimeout(() => this.updateResource(this.page), 250);
@@ -298,6 +330,7 @@ export default class List extends Vue
 		ks = array_unique(ks);
 
 		this._resetSubSearch();
+		_this.cur_keyword = keyword;
 
 		if (ks.length)
 		{
@@ -382,6 +415,45 @@ export default class List extends Vue
 
 		_this.cur_tag = '';
 		_this.cur_contribute = '';
+		_this.cur_keyword = '';
+		_this.cur_author = '';
+	}
+
+	_searchByAuthor(value: string)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_len = 0;
+
+		let keyword = value;
+
+		//console.log('_searchByContribute', value);
+
+		this._resetSubSearch();
+
+		_this.cur_author = keyword;
+
+		let ls = NovelData.novels
+			.reduce(function (ls, novel)
+			{
+				if (novel.mdconf.novel && novel.mdconf.contribute && novel.mdconf.contribute.length)
+				{
+					if (novel.mdconf.novel.author === keyword)
+					{
+						ls.push(novel)
+					}
+					else if (novel.mdconf.novel.authors && novel.mdconf.novel.authors.includes(keyword))
+					{
+						ls.push(novel)
+					}
+				}
+
+				return ls;
+			}, [])
+		;
+
+		this._updateList(ls);
 	}
 
 	_searchByContribute(value: string)
@@ -425,6 +497,19 @@ export default class List extends Vue
 		if (!data)
 		{
 			_this.cur_tag = '';
+
+			this._updateList(NovelData.novels);
+		}
+	}
+
+	_authorInput(data)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		if (!data)
+		{
+			_this.cur_author = '';
 
 			this._updateList(NovelData.novels);
 		}

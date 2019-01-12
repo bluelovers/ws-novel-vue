@@ -1,5 +1,6 @@
 
 import create, { createFromJSON, INovelStatCache, IFilterNovelData, IFilterNovel, NovelStatCache } from '@node-novel/cache-loader'
+import { cacheSortCallback } from '@node-novel/cache-loader/lib/util'
 import path = require('path');
 
 import NovelInfo = require('node-novel-info');
@@ -69,6 +70,16 @@ export function dataAll()
 					{
 						data.tags.push(...novel.mdconf.novel.tags);
 					}
+
+					if (novel.mdconf.novel && novel.mdconf.novel.author)
+					{
+						data.authors.push(novel.mdconf.novel.author);
+					}
+
+					if (novel.mdconf.novel && novel.mdconf.novel.authors && novel.mdconf.novel.authors.length)
+					{
+						data.authors.push(...novel.mdconf.novel.authors);
+					}
 				})
 			;
 
@@ -83,12 +94,15 @@ export function dataAll()
 			tags: [] as string[],
 			contributes: [] as string[],
 
+			authors: [] as string[],
+
 			data: datamap,
 		})
 	;
 
 	ret.tags = array_unique(ret.tags);
 	ret.contributes = array_unique(ret.contributes);
+	ret.authors = array_unique(ret.authors).sort(cacheSortCallback);
 
 	return ret
 }
