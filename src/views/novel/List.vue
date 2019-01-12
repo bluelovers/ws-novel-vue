@@ -3,9 +3,13 @@
 	<v-container
 		v-on:keyup.left="pagePrev"
 		v-on:keyup.right="pageNext"
+		@keydown.native.left="pagePrev"
+		@keydown.native.right="pageNext"
 	>
 
-		<v-layout>
+		<v-layout
+
+		>
 			<v-flex sm10 offset-sm1>
 
 				<div>
@@ -37,12 +41,16 @@
 							class="my-novel"
 						>
 
-							<v-card>
+							<v-hover>
+
+							<v-card slot-scope="{ hover }">
 								<v-layout>
 
 									<v-flex>
 
-										<a :href="novelLink(item)" target="_blank" rel="noopener" class="text-none">
+
+
+										<a :href="novelLink(item)" target="_blank" rel="noopener" class="text-none" >
 
 											<v-tooltip lazy bottom>
 
@@ -55,8 +63,17 @@
 													v-on:error="imageError"
 													v-on:load="imageLoaded"
 													slot="activator"
-
+													@click="this.blur()"
 												>
+													<v-expand-transition>
+														<div
+															v-if="hover"
+															class="d-flex transition-fast-in-fast-out purple darken-4  v-card--reveal white--text caption pre-wrap pa-0 ma-0"
+															style="height: 100%;"
+														>{{ item.mdconf.novel.preface }}</div>
+													</v-expand-transition>
+
+
 													<v-container pa-0 text-xs-right class="my-novel-tag" style="position: absolute;bottom: 0;right: 0;">
 
 														<v-chip
@@ -84,6 +101,7 @@
 
 												</v-img>
 
+
 												<v-container
 													fill-height
 													fluid
@@ -100,16 +118,23 @@
 												</v-container>
 
 
+
 												<span v-text="item.novelID + ' by ' + item.mdconf.novel.author"></span>
+
+
 											</v-tooltip>
 
 										</a>
+
+
 
 
 									</v-flex>
 
 								</v-layout>
 							</v-card>
+
+							</v-hover>
 
 
 						</v-flex>
@@ -698,6 +723,20 @@ export default class List extends Vue
 			opacity: 1;
 		}
 	}
+}
+
+.v-card--reveal {
+	align-items: center;
+	bottom: 0;
+	justify-content: center;
+	opacity: .8;
+	position: absolute;
+	width: 100%;
+}
+
+.pre-wrap
+{
+	white-space: pre-wrap;
 }
 
 </style>
