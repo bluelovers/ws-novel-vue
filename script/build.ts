@@ -33,5 +33,16 @@ const cwd = path.join(__dirname, '..');
 	})
 	;
 
+	await fs.copy(path.join(cwd, 'public'), path.join(cwd, 'dist'), {
+		overwrite: false,
+		errorOnExist: false,
+		recursive: true,
+	})
+		.then(function ()
+		{
+			console.log('copy', 'public => dist');
+		})
+	;
+
 })();
 
