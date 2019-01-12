@@ -3,7 +3,7 @@ import create, { createFromJSON, INovelStatCache, IFilterNovelData, IFilterNovel
 import path = require('path');
 
 import NovelInfo = require('node-novel-info');
-import { array_unique } from 'array-hyper-unique'
+import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
 
 let novelStatCache: NovelStatCache;
 
@@ -24,7 +24,7 @@ export function dataAll()
 
 	let datamap = novelStatCache.filterNovel();
 
-	return Object.entries(datamap)
+	let ret = Object.entries(datamap)
 		.reduce(function (data, [pathMain, novels])
 		{
 			data.pathMains.push(pathMain);
@@ -32,10 +32,12 @@ export function dataAll()
 			Object.entries(novels)
 				.forEach(function ([novelID, novel])
 				{
-					array_unique([
+					let ks = array_unique([
 						novelID,
 						...NovelInfo.getNovelTitleFromMeta(novel.mdconf)
-					].filter(v => v))
+					].filter(v => v));
+
+					ks
 						.forEach(title => {
 							data.alias[title] = data.alias[title] || [];
 
@@ -43,7 +45,30 @@ export function dataAll()
 						})
 					;
 
+					let alllist = array_unique(array_unique(ks.map(title => data.alias[title])).reduce((ls, list) => {
+
+						ls.push(...list);
+
+						return ls;
+					}, []));
+
+					ks
+						.forEach(title => {
+							data.alias[title] = alllist;
+						})
+					;
+
 					data.novels.push(novel);
+
+					if (novel.mdconf.contribute && novel.mdconf.contribute.length)
+					{
+						data.contributes.push(...novel.mdconf.contribute);
+					}
+
+					if (novel.mdconf.novel && novel.mdconf.novel.tags && novel.mdconf.novel.tags.length)
+					{
+						data.tags.push(...novel.mdconf.novel.tags);
+					}
 				})
 			;
 
@@ -55,7 +80,15 @@ export function dataAll()
 			},
 			novels: [] as IFilterNovelData[],
 
+			tags: [] as string[],
+			contributes: [] as string[],
+
 			data: datamap,
 		})
 	;
+
+	ret.tags = array_unique(ret.tags);
+	ret.contributes = array_unique(ret.contributes);
+
+	return ret
 }

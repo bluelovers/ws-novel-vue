@@ -110,14 +110,6 @@
 			</v-flex>
 		</v-layout>
 
-		<v-navigation-drawer
-			:clipped="$vuetify.breakpoint.lgAndUp"
-			app
-			v-model="drawer"
-			fixed
-		>
-		</v-navigation-drawer>
-
 		<v-toolbar
 			app
 			height="40" :clipped-left="$vuetify.breakpoint.lgAndUp"
@@ -139,7 +131,7 @@
 				browser-autocomplete="true"
 				clearable
 				placeholder="搜尋標題 (使用 regexp-cjk 支援自動轉換簡繁日字漢字，以及一部分的 REGEXP 語法，空白視為分隔)"
-				persistent-hint="true"
+				persistent-hint
 				@change="_searchList"
 				@click:clear="_searchReset"
 			></v-text-field>
@@ -152,6 +144,72 @@
 
 
 		</v-toolbar>
+
+		<v-navigation-drawer
+			:clipped="$vuetify.breakpoint.lgAndUp"
+			app
+			v-model="drawer"
+			fixed
+		>
+
+			<v-expansion-panel
+				v-model="panel"
+				expand
+			>
+				<v-expansion-panel-content>
+					<div slot="header">Tags</div>
+					<v-card v-if="contributes.length">
+						<v-card-text expand>
+							<v-chip v-for="name in tags" class="caption" @click="_searchByTag(name)"
+									small
+									:selected="name === cur_tag"
+									:close="name === cur_tag"
+									@input="_tagInput"
+									label
+									:color="name === cur_tag ? 'pink' : ''"
+									:text-color="name === cur_tag ? 'white' : ''"
+							>
+								<v-icon left v-if="name === cur_tag">label</v-icon>
+								{{ name }}
+							</v-chip>
+						</v-card-text>
+					</v-card>
+					<v-container v-else>
+						<span>NONE</span>
+					</v-container>
+				</v-expansion-panel-content>
+			</v-expansion-panel>
+
+			<v-expansion-panel
+				v-model="panel"
+				expand
+			>
+				<v-expansion-panel-content>
+					<div slot="header">Contributes</div>
+					<v-card v-if="contributes.length">
+						<v-card-text expand>
+							<v-chip v-for="name in contributes" class="caption" @click="_searchByContribute(name)"
+									small
+									:selected="name === cur_contribute"
+									:close="name === cur_contribute"
+									@input="_contributeInput"
+									label
+									:color="name === cur_contribute ? 'pink' : ''"
+									:text-color="name === cur_contribute ? 'white' : ''"
+							>
+								<v-icon left v-if="name === cur_contribute">label</v-icon>
+								{{ name }}
+							</v-chip>
+						</v-card-text>
+					</v-card>
+					<v-container v-else>
+						<span>NONE</span>
+					</v-container>
+				</v-expansion-panel-content>
+
+			</v-expansion-panel>
+
+		</v-navigation-drawer>
 
 	</v-container>
 
@@ -190,7 +248,13 @@ export default class List extends Vue
 			page,
 			pages: 0,
 
+			tags: [] as typeof NovelData["tags"],
+			contributes: [] as typeof NovelData["contributes"],
+
 			novels_all: NovelData.novels,
+
+			cur_tag: '',
+			cur_contribute: '',
 		};
 
 		setTimeout(() => this.updateResource(this.page), 250);
@@ -233,6 +297,8 @@ export default class List extends Vue
 
 		ks = array_unique(ks);
 
+		this._resetSubSearch();
+
 		if (ks.length)
 		{
 			console.info(keyword, ks);
@@ -245,6 +311,8 @@ export default class List extends Vue
 				const r = new zhRegExp(ks.join('|'));
 
 				console.info(r);
+
+				_this.cur_len = 0;
 
 				let ls = Object.entries(NovelData.alias)
 					.reduce(function (ls, [title, list])
@@ -261,11 +329,7 @@ export default class List extends Vue
 
 				if (ls !== _this.novels_all)
 				{
-					_this.cur_len = 0;
-					_this.novels_all = array_unique(ls);
-					_this.page = 1;
-
-					this.updateResource(1)
+					this._updateList(array_unique(ls))
 				}
 			}
 			catch (e)
@@ -275,10 +339,126 @@ export default class List extends Vue
 		}
 		else if (_this.novels_all !== NovelData.novels)
 		{
+			this._updateList(NovelData.novels)
+		}
+	}
+
+	_searchByTag(value: string)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_len = 0;
+
+		let keyword = value;
+
+		//console.log('_searchByTag', value);
+
+		this._resetSubSearch();
+		_this.cur_tag = keyword;
+
+		let ls = NovelData.novels
+			.reduce(function (ls, novel)
+			{
+				if (novel.mdconf.novel && novel.mdconf.novel.tags && novel.mdconf.novel.tags.length)
+				{
+					if (novel.mdconf.novel.tags.includes(keyword))
+					{
+						ls.push(novel)
+					}
+				}
+
+				return ls;
+			}, [])
+		;
+
+		this._updateList(ls);
+	}
+
+	_resetSubSearch()
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_tag = '';
+		_this.cur_contribute = '';
+	}
+
+	_searchByContribute(value: string)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_len = 0;
+
+		let keyword = value;
+
+		//console.log('_searchByContribute', value);
+
+		this._resetSubSearch();
+
+		_this.cur_contribute = keyword;
+
+		let ls = NovelData.novels
+			.reduce(function (ls, novel)
+			{
+				if (novel.mdconf.novel && novel.mdconf.contribute && novel.mdconf.contribute.length)
+				{
+					if (novel.mdconf.contribute.includes(keyword))
+					{
+						ls.push(novel)
+					}
+				}
+
+				return ls;
+			}, [])
+		;
+
+		this._updateList(ls);
+	}
+
+	_tagInput(data)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		if (!data)
+		{
+			_this.cur_tag = '';
+
+			this._updateList(NovelData.novels);
+		}
+	}
+
+	_contributeInput(data)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		if (!data)
+		{
+			_this.cur_contribute = '';
+
+			this._updateList(NovelData.novels);
+		}
+	}
+
+	_updateList(ls: IFilterNovelData[])
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		if (ls !== _this.novels_all)
+		{
 			_this.cur_len = 0;
 			_this.page = 1;
-			_this.novels_all = NovelData.novels;
-			this.updateResource(1)
+			_this.novels_all = ls;
+
+			this.updateResource(_this.page)
+		}
+		else if (!_this.cur_len)
+		{
+			this.updateResource(_this.page)
 		}
 	}
 
@@ -296,7 +476,37 @@ export default class List extends Vue
 
 		let idx = (this.page - 1) * self.page_size;
 
-		return _this.novels_all.slice(idx, idx + self.page_size);
+		_this.novels = _this.novels_all.slice(idx, idx + self.page_size);
+
+		{
+			let ls = _this.novels.reduce(function (ls, data)
+			{
+				if (data.mdconf.novel && data.mdconf.novel.tags && data.mdconf.novel.tags.length)
+				{
+					ls.push(...data.mdconf.novel.tags);
+				}
+
+				return ls;
+			}, []);
+
+			_this.tags = array_unique(ls);
+		}
+
+		{
+			let ls = _this.novels.reduce(function (ls, data)
+			{
+				if (data.mdconf.contribute && data.mdconf.contribute.length)
+				{
+					ls.push(...data.mdconf.contribute);
+				}
+
+				return ls;
+			}, []);
+
+			_this.contributes = array_unique(ls);
+		}
+
+		return _this.novels;
 	}
 
 	img_unsplash(data: IFilterNovelData)
@@ -314,12 +524,12 @@ export default class List extends Vue
 
 	imageError(...data)
 	{
-		console.log('imageError', data, this);
+		//console.log('imageError', data, this);
 	}
 
 	imageLoaded(...data)
 	{
-		console.log('imageLoaded', data, this);
+		//console.log('imageLoaded', data, this);
 	}
 
 	pagePrev()
