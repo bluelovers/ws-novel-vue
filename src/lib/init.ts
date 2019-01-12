@@ -8,7 +8,7 @@ import vueHeadful from 'vue-headful';
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import '@/assets/style.scss'
-import VueAnalytics from 'vue-analytics'
+import '../plugins/firebase'
 
 const production = process.env.NODE_ENV === 'production';
 
@@ -18,9 +18,7 @@ Vue.component('vue-headful', vueHeadful);
 
 if (production)
 {
-	Vue.use(VueAnalytics, {
-		id: 'UA-23959095-8'
-	});
+	require('../plugins/vue-analytics');
 }
 
 if (!production)

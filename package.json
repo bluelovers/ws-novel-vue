@@ -37,6 +37,7 @@
     "@node-novel/cache-loader": "^1.0.6",
     "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.3",
+    "firebase": "^5.7.3",
     "iview": "^3.2.1",
     "node-novel-info": "^2.3.19",
     "regexp-cjk": "^2.0.15",
@@ -46,6 +47,7 @@
     "vue-headful": "^2.0.1",
     "vue-property-decorator": "^7.3.0",
     "vue-router": "^3.0.2",
+    "vuefire": "^2.0.0-alpha.20",
     "vuesax": "^3.8.0",
     "vuetify": "^1.4.1"
   },

@@ -28,6 +28,9 @@
 				<div class="mr-2">&copy; {{ new Date().getFullYear() }}　</div>
 			</v-footer>
 		</v-app>
+		<vue-headful
+			title="Novels"
+		/>
 	</div>
 </template>
 
