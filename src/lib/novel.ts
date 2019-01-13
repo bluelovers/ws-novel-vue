@@ -1,17 +1,27 @@
 
-import create, { createFromJSON, INovelStatCache, IFilterNovelData, IFilterNovel, NovelStatCache } from '@node-novel/cache-loader'
+import create, {
+	createFromJSON, INovelStatCache, IFilterNovelData, IFilterNovel, NovelStatCache,
+	INovelStatCacheHistory,
+	createMoment,
+} from '@node-novel/cache-loader'
 import { cacheSortCallback } from '@node-novel/cache-loader/lib/util'
 import path = require('path');
+import url from 'url';
 
 import NovelInfo = require('node-novel-info');
 import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
 
 let novelStatCache: NovelStatCache;
 
-export { IFilterNovelData }
+export { IFilterNovelData, INovelStatCacheHistory, createMoment }
 
-export function loadNovelStatCache()
+export function loadNovelStatCache(reload?: boolean)
 {
+	if (!reload && novelStatCache)
+	{
+		return novelStatCache
+	}
+
 	const novelStatJson = require('../../public/static/novel-stat.json') as INovelStatCache;
 
 	return novelStatCache = createFromJSON(novelStatJson, {
@@ -119,4 +129,12 @@ export enum EnumEventLabel
 	CONTRIBUTE = 'contribute',
 	KEYWORD = 'keyword',
 	TAG = 'tag',
+}
+
+export function novelLink(pathMain: string, novelID: string)
+{
+	return url.resolve('https://gitee.com/bluelovers/novel/tree/master/', [
+		pathMain,
+		novelID,
+	].join('/'))
 }

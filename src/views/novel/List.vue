@@ -189,8 +189,9 @@
 			height="40" :clipped-left="$vuetify.breakpoint.lgAndUp"
 			fixed
 		>
+			<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+
 			<v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-				<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
 				<router-link to="/" class="text-color-inherit">Novel</router-link>
 			</v-toolbar-title>
 
@@ -217,10 +218,13 @@
 
 			></v-text-field>
 
+			<v-spacer />
+
 			<v-toolbar-items>
 
+				<NavToolbarItems></NavToolbarItems>
 
-				<v-spacer />
+
 			</v-toolbar-items>
 
 
@@ -328,6 +332,8 @@ import url from 'url';
 import { Component, Vue, Watch } from 'vue-property-decorator';
 import { Route } from 'vue-router'
 
+import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
+
 import { dataAll, EnumEventAction, EnumEventLabel, IFilterNovelData } from '../../lib/novel';
 import { img_unsplash } from '../../lib/util';
 
@@ -335,10 +341,13 @@ const NovelData = dataAll();
 
 const lowSrcMap = new WeakMap();
 
-@Component
+@Component({
+	components: {
+		NavToolbarItems,
+	},
+})
 export default class List extends Vue
 {
-
 	$ga: IVueAnalytics$ga;
 
 	page: number;
