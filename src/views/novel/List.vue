@@ -2,12 +2,21 @@
 
 	<!-- @fixme 不管怎麼設定 鍵盤事件都無效 -->
 	<v-container
-		v-on:keyup.left="pagePrev"
-		v-on:keyup.right="pageNext"
-		@keydown.native.left="pagePrev"
-		@keydown.native.right="pageNext"
-		@keyup.page-down="pageNext"
+
 	>
+
+		<vue-global-events
+
+			@keyup.left="pagePrev"
+			@keyup.right="pageNext"
+
+			@keyup.page-up="pagePrev"
+			@keyup.page-down="pageNext"
+
+			v-touch:swipe.right="pagePrev"
+			v-touch:swipe.left="pageNext"
+
+		/>
 
 		<v-layout
 
@@ -16,8 +25,8 @@
 
 				<div>
 					<v-pagination
-						v-model="page"
 						:length="pages"
+						:value="page"
 						:total-visible="7"
 						circle
 						@input="updateResource"
@@ -164,8 +173,8 @@
 
 				<div>
 					<v-pagination
-						v-model="page"
 						:length="pages"
+						:value="page"
 						:total-visible="7"
 						circle
 						@input="updateResource"
@@ -739,6 +748,7 @@ export default class List extends Vue
 		let idx = (this.page - 1) * self.page_size;
 
 		_this.novels = _this.novels_all.slice(idx, idx + self.page_size);
+		_this.page = self.page;
 
 		{
 			let ls = _this.novels.reduce(function (ls, data)
@@ -801,7 +811,7 @@ export default class List extends Vue
 
 	pageNext()
 	{
-		this.pageGo(1)
+		this.pageGo(2)
 	}
 
 	pageGo(p: number)
