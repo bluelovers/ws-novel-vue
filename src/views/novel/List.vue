@@ -1,17 +1,12 @@
-import { EnumEventLabel } from '../../lib/novel';
-import { EnumEventLabel } from '../../lib/novel';
-import { EnumEventLabel } from '../../lib/novel';
-import { EnumEventLabel } from '../../lib/novel';
-import { EnumEventLabel } from '../../lib/novel';
-import { EnumEventLabel } from '../../lib/novel';
-import { EnumEventAction } from '../../lib/novel';
 <template>
 
+	<!-- @fixme 不管怎麼設定 鍵盤事件都無效 -->
 	<v-container
 		v-on:keyup.left="pagePrev"
 		v-on:keyup.right="pageNext"
 		@keydown.native.left="pagePrev"
 		@keydown.native.right="pageNext"
+		@keyup.page-down="pageNext"
 	>
 
 		<v-layout

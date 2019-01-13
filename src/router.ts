@@ -33,11 +33,13 @@ export default new Router({
 //			component: () => import(/* webpackChunkName: "about" */ './views/Vuesax.vue'),
 //		},
 
+		/*
 		{
 			path: '/',
 			name: 'Novels',
 			component: Novels,
 		},
+		*/
 
 		{
 			name: 'search',
@@ -50,8 +52,10 @@ export default new Router({
 			component: Novels,
 		},
 		{
-			path: '*',
+			path: '/',
+			name: 'Novels',
 			component: Novels,
+			alias: '*',
 		},
 	],
 })
