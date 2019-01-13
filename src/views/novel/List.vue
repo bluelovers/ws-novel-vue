@@ -13,9 +13,6 @@
 			@keyup.page-up="pagePrev"
 			@keyup.page-down="pageNext"
 
-			v-touch:swipe.right="pagePrev"
-			v-touch:swipe.left="pageNext"
-
 		/>
 
 		<v-layout
