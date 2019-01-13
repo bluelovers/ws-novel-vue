@@ -398,12 +398,12 @@ export default class List extends Vue
 	@Watch('$route')
 	onRouterChanged(to: Route, from?: Route)
 	{
-		console.log('onRouterChanged', to, from);
+		//console.log('onRouterChanged', to, from);
 		if (to.name == EnumEventAction.SEARCH)
 		{
 			let q = this._queryParams(to);
 
-			console.log('onRouterChanged', q);
+			//console.log('onRouterChanged', q);
 
 			this._search(q.searchType, q.searchValue);
 		}
