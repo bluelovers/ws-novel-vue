@@ -19,7 +19,10 @@
 		/>
 
 		<v-layout
-
+			v-touch="{
+				left: () => pagePrev(),
+				right: () => pagePrev()
+			}"
 		>
 			<v-flex sm10 offset-sm1>
 
