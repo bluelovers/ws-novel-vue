@@ -65,6 +65,7 @@
     "cross-fetch": "^3.0.0",
     "cross-spawn-extra": "^1.0.3",
     "css-loader": "^2.1.0",
+    "fast-glob": "^2.2.6",
     "fs-extra": "^7.0.1",
     "material-design-icons-iconfont": "^4.0.3",
     "material-icons": "^0.3.0",
