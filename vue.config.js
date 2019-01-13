@@ -4,7 +4,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
 module.exports = {
-    publicPath: './',
+    publicPath: '/',
     productionSourceMap: development,
     runtimeCompiler: true,
     configureWebpack: {

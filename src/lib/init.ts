@@ -7,8 +7,9 @@ import vueHeadful from 'vue-headful';
 
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+
 import '@/assets/style.scss'
-import '../plugins/firebase'
+//import '../plugins/firebase'
 import { production, development } from './const'
 
 //Vue.use(LoadScript);

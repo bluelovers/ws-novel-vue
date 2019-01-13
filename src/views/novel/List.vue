@@ -1,4 +1,9 @@
 import { EnumEventLabel } from '../../lib/novel';
+import { EnumEventLabel } from '../../lib/novel';
+import { EnumEventLabel } from '../../lib/novel';
+import { EnumEventLabel } from '../../lib/novel';
+import { EnumEventLabel } from '../../lib/novel';
+import { EnumEventLabel } from '../../lib/novel';
 import { EnumEventAction } from '../../lib/novel';
 <template>
 
@@ -23,6 +28,8 @@ import { EnumEventAction } from '../../lib/novel';
 						@input="updateResource"
 					></v-pagination>
 				</div>
+
+				{{ query }}
 
 				<v-container
 					v-if="cur_len"
@@ -178,10 +185,9 @@ import { EnumEventAction } from '../../lib/novel';
 			height="40" :clipped-left="$vuetify.breakpoint.lgAndUp"
 			fixed
 		>
-
 			<v-toolbar-title style="width: 300px" class="ml-0 pl-3">
 				<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-				<span class="hidden-sm-and-down">Novel</span>
+				<router-link to="/" class="text-color-inherit">Novel</router-link>
 			</v-toolbar-title>
 
 			<v-text-field
@@ -196,8 +202,8 @@ import { EnumEventAction } from '../../lib/novel';
 				placeholder="搜尋標題 (使用 regexp-cjk 支援自動轉換簡繁日字漢字，以及一部分的 REGEXP 語法，空白視為分隔)"
 				persistent-hint
 				:value="cur_keyword"
-				@change="_searchList"
-				@click:clear="_searchReset"
+				@change="_searchByKeyword"
+				@click:clear="_searchResetKeyword"
 			></v-text-field>
 
 			<v-toolbar-items>
@@ -216,7 +222,6 @@ import { EnumEventAction } from '../../lib/novel';
 		>
 
 			<v-expansion-panel
-				v-model="panel"
 				expand
 			>
 				<v-expansion-panel-content>
@@ -227,7 +232,7 @@ import { EnumEventAction } from '../../lib/novel';
 									small
 									:selected="name === cur_tag"
 									:close="name === cur_tag"
-									@input="_tagInput"
+									@input="_searchResetTag"
 									label
 									:color="name === cur_tag ? 'pink' : ''"
 									:text-color="name === cur_tag ? 'white' : ''"
@@ -255,7 +260,7 @@ import { EnumEventAction } from '../../lib/novel';
 									small
 									:selected="name === cur_author"
 									:close="name === cur_author"
-									@input="_authorInput"
+									@input="_searchResetAuthor"
 									label
 									:color="name === cur_author ? 'pink' : ''"
 									:text-color="name === cur_author ? 'white' : ''"
@@ -273,7 +278,6 @@ import { EnumEventAction } from '../../lib/novel';
 			</v-expansion-panel>
 
 			<v-expansion-panel
-				v-model="panel"
 				expand
 			>
 				<v-expansion-panel-content>
@@ -284,7 +288,7 @@ import { EnumEventAction } from '../../lib/novel';
 									small
 									:selected="name === cur_contribute"
 									:close="name === cur_contribute"
-									@input="_contributeInput"
+									@input="_searchResetContribute"
 									label
 									:color="name === cur_contribute ? 'pink' : ''"
 									:text-color="name === cur_contribute ? 'white' : ''"
@@ -311,7 +315,8 @@ import { EnumEventAction } from '../../lib/novel';
 import { IVueAnalytics$ga } from '@/plugins/vue-analytics';
 import { array_unique } from 'array-hyper-unique'
 import url from 'url';
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Watch } from 'vue-property-decorator';
+import { Route } from 'vue-router'
 
 import { dataAll, EnumEventAction, EnumEventLabel, IFilterNovelData } from '../../lib/novel';
 import { img_unsplash } from '../../lib/util';
@@ -355,9 +360,118 @@ export default class List extends Vue
 			cur_author: '',
 		};
 
-		setTimeout(() => this.updateResource(this.page), 250);
+		this._data_init();
 
 		return data;
+	}
+
+	_data_init()
+	{
+		if (this.$route.params.searchType)
+		{
+			setTimeout(() => this.onRouterChanged(this.$route, null), 250);
+		}
+		else
+		{
+			setTimeout(() => this.updateResource(this.page), 250);
+		}
+	}
+
+	/**
+	 * merge Route.query Route.params
+	 */
+	_queryParams(to: Route)
+	{
+		let q = {
+			searchValue: '',
+			searchType: '' as EnumEventLabel,
+			...to.query,
+			...to.params,
+		};
+
+		// @ts-ignore
+		q.searchValue = to.query.searchValue || to.params.searchValue || '';
+
+		return q;
+	}
+
+	@Watch('$route')
+	onRouterChanged(to: Route, from?: Route)
+	{
+		console.log('onRouterChanged', to, from);
+		if (to.name == EnumEventAction.SEARCH)
+		{
+			let q = this._queryParams(to);
+
+			console.log('onRouterChanged', q);
+
+			this._search(q.searchType, q.searchValue);
+		}
+		else
+		{
+			this._searchReset(EnumEventLabel.KEYWORD)
+		}
+	}
+
+	_search(searchType: EnumEventLabel, searchValue: string)
+	{
+		switch (searchType)
+		{
+			case EnumEventLabel.TAG:
+				this._searchByTag(searchValue);
+				break;
+			case  EnumEventLabel.AUTHOR:
+				this._searchByAuthor(searchValue);
+				break;
+			case  EnumEventLabel.CONTRIBUTE:
+				this._searchByContribute(searchValue);
+				break;
+			case  EnumEventLabel.KEYWORD:
+				this._searchByKeyword(searchValue);
+				break;
+			default:
+				throw new TypeError(`searchType not exists: ${searchType}`)
+		}
+	}
+
+	_searchReset(searchType: EnumEventLabel)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		this._searchStatReset();
+
+		_this.cur_len = 0;
+
+		this._updateList(NovelData.novels);
+
+		this._searchUpdateRouter(EnumEventLabel.KEYWORD, '')
+	}
+
+	_searchUpdateRouter(searchType: EnumEventLabel, searchValue: string)
+	{
+		if (searchValue)
+		{
+			let q = this._queryParams(this.$route);
+
+			if (q.searchType !== searchType || q.searchValue != searchValue)
+			{
+				this.$router.push({
+					//path: `/${EnumEventAction.SEARCH}/${searchType}?searchValue=${searchValue || ''}`,
+
+					path: `/${EnumEventAction.SEARCH}/${searchType}`,
+					query: {
+						searchValue: searchValue || '',
+					},
+				});
+			}
+		}
+		else
+		{
+			this.$router.push({
+				path: `/`,
+			});
+		}
 	}
 
 	novelLink(data: IFilterNovelData)
@@ -368,12 +482,18 @@ export default class List extends Vue
 		].join('/'))
 	}
 
-	_searchReset()
+	_searchResetKeyword()
 	{
-		this._searchList('')
+		this._searchReset(EnumEventLabel.KEYWORD)
 	}
 
-	_searchList(keyword: string)
+	beforeRouteUpdate(to, from, next)
+	{
+		console.log('beforeRouteUpdate', to, from, next);
+		next();
+	}
+
+	_searchByKeyword(keyword: string)
 	{
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
@@ -395,14 +515,14 @@ export default class List extends Vue
 
 		ks = array_unique(ks);
 
-		this._resetSubSearch();
+		this._searchStatReset();
 		_this.cur_keyword = keyword;
 
 		if (ks.length)
 		{
 			//console.info(keyword, ks);
 
-			this._ga(EnumEventAction.SEARCH, EnumEventLabel.TAG, keyword);
+			this._ga(EnumEventAction.SEARCH, EnumEventLabel.KEYWORD, keyword);
 
 			try
 			{
@@ -427,6 +547,8 @@ export default class List extends Vue
 					}, [] as IFilterNovelData[]);
 
 				ls = array_unique(ls);
+
+				this._searchUpdateRouter(EnumEventLabel.KEYWORD, keyword);
 
 				if (ls !== _this.novels_all)
 				{
@@ -455,10 +577,12 @@ export default class List extends Vue
 
 		//console.log('_searchByTag', value);
 
-		this._resetSubSearch();
+		this._searchStatReset();
 		_this.cur_tag = keyword;
 
 		this._ga(EnumEventAction.SEARCH, EnumEventLabel.TAG, keyword);
+
+		this._searchUpdateRouter(EnumEventLabel.TAG, keyword);
 
 		let ls = NovelData.novels
 			.reduce(function (ls, novel)
@@ -478,7 +602,7 @@ export default class List extends Vue
 		this._updateList(ls);
 	}
 
-	_resetSubSearch()
+	_searchStatReset()
 	{
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
@@ -500,9 +624,10 @@ export default class List extends Vue
 
 		//console.log('_searchByContribute', value);
 
-		this._resetSubSearch();
+		this._searchStatReset();
 
 		this._ga(EnumEventAction.SEARCH, EnumEventLabel.AUTHOR, keyword);
+		this._searchUpdateRouter(EnumEventLabel.AUTHOR, keyword);
 
 		_this.cur_author = keyword;
 
@@ -545,7 +670,8 @@ export default class List extends Vue
 
 		//console.log('_searchByContribute', value);
 
-		this._resetSubSearch();
+		this._searchStatReset();
+		this._searchUpdateRouter(EnumEventLabel.CONTRIBUTE, keyword);
 
 		_this.cur_contribute = keyword;
 
@@ -569,43 +695,19 @@ export default class List extends Vue
 		this._updateList(ls);
 	}
 
-	_tagInput(data)
+	_searchResetTag(data?)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
-
-		if (!data)
-		{
-			_this.cur_tag = '';
-
-			this._updateList(NovelData.novels);
-		}
+		this._searchReset(EnumEventLabel.TAG)
 	}
 
-	_authorInput(data)
+	_searchResetAuthor(data?)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
-
-		if (!data)
-		{
-			_this.cur_author = '';
-
-			this._updateList(NovelData.novels);
-		}
+		this._searchReset(EnumEventLabel.AUTHOR)
 	}
 
-	_contributeInput(data)
+	_searchResetContribute(data?)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
-
-		if (!data)
-		{
-			_this.cur_contribute = '';
-
-			this._updateList(NovelData.novels);
-		}
+		this._searchReset(EnumEventLabel.CONTRIBUTE)
 	}
 
 	_updateList(ls: IFilterNovelData[])

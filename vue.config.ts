@@ -6,7 +6,7 @@ const development = !production;
 
 module.exports = {
 
-	publicPath: './',
+	publicPath: '/',
 
 	productionSourceMap: development,
 

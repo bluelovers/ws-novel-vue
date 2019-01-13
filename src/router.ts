@@ -37,5 +37,16 @@ export default new Router({
 			name: 'Novels',
 			component: () => import('./views/novel/List.vue'),
 		},
+
+		{
+			name: 'search',
+			path: '/search/:searchType/:searchValue',
+			component: () => import('./views/novel/List.vue'),
+		},
+		{
+			name: 'search',
+			path: '/search/:searchType',
+			component: () => import('./views/novel/List.vue'),
+		},
 	],
 })
