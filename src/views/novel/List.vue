@@ -17,7 +17,7 @@
 
 		<v-layout
 			v-touch="{
-				left: () => pagePrev(),
+				left: () => pageNext(),
 				right: () => pagePrev()
 			}"
 		>
@@ -208,6 +208,13 @@
 				:value="cur_keyword"
 				@change="_searchByKeyword"
 				@click:clear="_searchResetKeyword"
+
+				@keyup.left="_stopEvent"
+				@keyup.right="_stopEvent"
+
+				@keyup.page-up="_stopEvent"
+				@keyup.page-down="_stopEvent"
+
 			></v-text-field>
 
 			<v-toolbar-items>
@@ -253,7 +260,6 @@
 			</v-expansion-panel>
 
 			<v-expansion-panel
-				v-model="panel"
 				expand
 			>
 				<v-expansion-panel-content>
@@ -397,6 +403,11 @@ export default class List extends Vue
 		q.searchValue = to.query.searchValue || to.params.searchValue || '';
 
 		return q;
+	}
+
+	_stopEvent(event: Event)
+	{
+		event.stopImmediatePropagation();
 	}
 
 	@Watch('$route')
@@ -811,7 +822,7 @@ export default class List extends Vue
 
 	pageNext()
 	{
-		this.pageGo(2)
+		this.pageGo(1)
 	}
 
 	pageGo(p: number)
