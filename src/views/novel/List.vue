@@ -1,3 +1,5 @@
+import { EnumEventLabel } from '../../lib/novel';
+import { EnumEventAction } from '../../lib/novel';
 <template>
 
 	<v-container
@@ -50,7 +52,13 @@
 
 
 
-										<a :href="novelLink(item)" target="_blank" rel="noopener" class="text-none" >
+										<a
+											:href="novelLink(item)"
+											target="_blank"
+											rel="noopener"
+											class="text-none"
+											@click="_ga('click', item.pathMain, item.novelID)"
+										>
 
 											<v-tooltip lazy bottom>
 
@@ -63,7 +71,7 @@
 													v-on:error="imageError"
 													v-on:load="imageLoaded"
 													slot="activator"
-													@click="this.blur()"
+													onclick="this && this.blur && this.blur()"
 												>
 													<v-expand-transition>
 														<div
@@ -300,12 +308,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import url from 'url';
-import { img_unsplash } from '../../lib/util';
+import { IVueAnalytics$ga } from '@/plugins/vue-analytics';
 import { array_unique } from 'array-hyper-unique'
+import url from 'url';
+import { Component, Vue } from 'vue-property-decorator';
 
-import { dataAll, IFilterNovelData } from '../../lib/novel';
+import { dataAll, EnumEventAction, EnumEventLabel, IFilterNovelData } from '../../lib/novel';
+import { img_unsplash } from '../../lib/util';
 
 const NovelData = dataAll();
 
@@ -314,6 +323,8 @@ const lowSrcMap = new WeakMap();
 @Component
 export default class List extends Vue
 {
+
+	$ga: IVueAnalytics$ga;
 
 	page: number;
 
@@ -391,6 +402,8 @@ export default class List extends Vue
 		{
 			//console.info(keyword, ks);
 
+			this._ga(EnumEventAction.SEARCH, EnumEventLabel.TAG, keyword);
+
 			try
 			{
 				// @ts-ignore
@@ -445,6 +458,8 @@ export default class List extends Vue
 		this._resetSubSearch();
 		_this.cur_tag = keyword;
 
+		this._ga(EnumEventAction.SEARCH, EnumEventLabel.TAG, keyword);
+
 		let ls = NovelData.novels
 			.reduce(function (ls, novel)
 			{
@@ -487,7 +502,9 @@ export default class List extends Vue
 
 		this._resetSubSearch();
 
-		_this.cur_author = keyword.trim();
+		this._ga(EnumEventAction.SEARCH, EnumEventLabel.AUTHOR, keyword);
+
+		_this.cur_author = keyword;
 
 		let ls = NovelData.novels
 			.reduce(function (ls, novel)
@@ -508,6 +525,15 @@ export default class List extends Vue
 		this._updateList(ls);
 	}
 
+	/**
+	 * 由於實際上 eventValue 只能是數字 所以只好放棄 eventCategory
+	 * @private
+	 */
+	_ga(eventAction: EnumEventAction, eventLabel: EnumEventLabel, eventValue: string)
+	{
+		this.$ga && this.$ga.event(eventAction, eventLabel, eventValue)
+	}
+
 	_searchByContribute(value: string)
 	{
 		// @ts-ignore
@@ -522,6 +548,8 @@ export default class List extends Vue
 		this._resetSubSearch();
 
 		_this.cur_contribute = keyword;
+
+		this._ga(EnumEventAction.SEARCH, EnumEventLabel.CONTRIBUTE, keyword);
 
 		let ls = NovelData.novels
 			.reduce(function (ls, novel)

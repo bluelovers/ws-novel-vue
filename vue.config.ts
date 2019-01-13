@@ -10,6 +10,8 @@ module.exports = {
 
 	productionSourceMap: development,
 
+	runtimeCompiler: true,
+
 	configureWebpack: {
 
 		//plugins: [],
@@ -95,7 +97,7 @@ module.exports = {
 		/**
 		 * 不要將 moudle 設為 true 否則插件的 CSS 全都會失敗 無法自動導入
 		 */
-		sourceMap: true,
+		sourceMap: development,
 	},
 
 	devServer: {

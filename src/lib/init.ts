@@ -9,14 +9,13 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import '@/assets/style.scss'
 import '../plugins/firebase'
-
-const production = process.env.NODE_ENV === 'production';
+import { production, development } from './const'
 
 //Vue.use(LoadScript);
 
 Vue.component('vue-headful', vueHeadful);
 
-if (production)
+if (production || 1)
 {
 	require('../plugins/vue-analytics');
 }

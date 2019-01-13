@@ -47,17 +47,18 @@
     "vue-headful": "^2.0.1",
     "vue-property-decorator": "^7.3.0",
     "vue-router": "^3.0.2",
-    "vuefire": "^2.0.0-alpha.20",
+    "vuefire": "next",
     "vuesax": "^3.8.0",
     "vuetify": "^1.4.1"
   },
   "devDependencies": {
-    "@types/bluebird": "^3.5.25",
-    "@types/fs-extra": "^5.0.4",
-    "@types/node": "^10.12.18",
+    "@bluelovers/tsconfig": "^1",
+    "@types/bluebird": "^3",
+    "@types/fs-extra": "^5",
+    "@types/node": "^10",
     "@types/node-fetch": "^2.1.4",
     "@types/webpack-chain": "^5.0.0",
-    "@vue/cli": "^3",
+    "@vue/cli": "^3.3.0",
     "@vue/cli-plugin-typescript": "^3.3.0",
     "@vue/cli-plugin-unit-mocha": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
@@ -85,6 +86,7 @@
     "vue-template-compiler": "^2.5.22",
     "yorkie": "^2.0.0"
   },
+  "resolutions": {},
   "gitHooks": {
     "pre-commit": "node ./script/pre-commit"
   }

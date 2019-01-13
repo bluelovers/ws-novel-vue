@@ -6,6 +6,7 @@ const development = !production;
 module.exports = {
     publicPath: './',
     productionSourceMap: development,
+    runtimeCompiler: true,
     configureWebpack: {
         optimization: {
             splitChunks: {
@@ -50,7 +51,7 @@ module.exports = {
         const webpack = require('webpack');
     },
     css: {
-        sourceMap: true,
+        sourceMap: development,
     },
     devServer: {
         disableHostCheck: true,

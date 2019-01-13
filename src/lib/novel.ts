@@ -106,3 +106,17 @@ export function dataAll()
 
 	return ret
 }
+
+export enum EnumEventAction
+{
+	SEARCH = 'search',
+	CLICK = 'click',
+}
+
+export enum EnumEventLabel
+{
+	AUTHOR = 'author',
+	CONTRIBUTE = 'contribute',
+	KEYWORD = 'keyword',
+	TAG = 'tag',
+}
