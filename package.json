@@ -33,7 +33,7 @@
     "test": "yarn run vue-cli-service test:unit"
   },
   "dependencies": {
-    "@bluelovers/tsconfig": "^1.0.0",
+    "@bluelovers/tsconfig": "^1",
     "@node-novel/cache-loader": "^1.0.6",
     "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.3",
@@ -52,7 +52,6 @@
     "vuetify": "^1.4.1"
   },
   "devDependencies": {
-    "@bluelovers/tsconfig": "^1",
     "@types/bluebird": "^3",
     "@types/fs-extra": "^5",
     "@types/node": "^10",

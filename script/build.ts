@@ -11,6 +11,7 @@ const cwd = path.join(__dirname, '..');
 
 (async () =>
 {
+	await import('./build/yarn-list');
 
 	await CrossSpawn('node', [
 		path.join(__dirname, './fetch-api-json'),
