@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Novels from './views/novel/List.vue'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
 	mode: 'history',
@@ -35,18 +36,22 @@ export default new Router({
 		{
 			path: '/',
 			name: 'Novels',
-			component: () => import('./views/novel/List.vue'),
+			component: Novels,
 		},
 
 		{
 			name: 'search',
 			path: '/search/:searchType/:searchValue',
-			component: () => import('./views/novel/List.vue'),
+			component: Novels,
 		},
 		{
 			name: 'search',
 			path: '/search/:searchType',
-			component: () => import('./views/novel/List.vue'),
+			component: Novels,
+		},
+		{
+			path: '*',
+			component: Novels,
 		},
 	],
 })
