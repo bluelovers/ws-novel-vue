@@ -24,7 +24,7 @@ const cwd = path.join(__dirname, '..');
 		'run',
 		'build-base',
 		'--',
-		'--report',
+		//'--report',
 		//'--client-log-level',
 		//'none',
 	], {

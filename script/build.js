@@ -15,7 +15,6 @@ const cwd = path.join(__dirname, '..');
         'run',
         'build-base',
         '--',
-        '--report',
     ], {
         cwd,
         stdio: 'inherit',
