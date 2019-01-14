@@ -620,9 +620,11 @@ export default class List extends Vue
 			try
 			{
 				// @ts-ignore
-				const zhRegExp = require('regexp-cjk').zhRegExp || RegExp;
+				const zhRegExp = require('regexp-cjk').zhRegExp || RegExp as import('regexp-cjk').zhRegExp;
 
-				const r = new zhRegExp(ks.join('|'));
+				const r = new zhRegExp(ks.join('|'), 'iu', {
+					greedyTable: true,
+				});
 
 				//console.info(r);
 
