@@ -97,6 +97,7 @@ import {
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 import { randColor } from '@/lib/colors';
 import { IVueAnalytics$ga } from '@/plugins/vue-analytics';
+import moment from 'moment';
 
 @Component({
 	components: {
@@ -123,22 +124,35 @@ export default class History extends Vue
 	{
 		let _historys = loadNovelStatCache().historys().reverse();
 
+		let { timestamp, todayTimestamp } = loadNovelStatCache().data.meta;
+
 		let list = _historys.reduce(function (ls, row)
 		{
-			let [timestamp, history] = row;
+			let [row_timestamp, history] = row;
 
-			let m = createMoment(+timestamp)
-				.locale(['ja', 'jp', 'zh-tw', 'zh-cn'])
-			;
+			// @ts-ignore
+			row_timestamp = +row_timestamp;
+
+			let m = createMoment(row_timestamp);
+
+			// @ts-ignore
+			const isToday: boolean = row_timestamp == todayTimestamp;
+
+			if (isToday)
+			{
+				m = createMoment(timestamp);
+			}
+
+			m = m.locale(['ja', 'jp', 'zh-tw', 'zh-cn']);
 
 			let data = {
-				timestamp: +timestamp,
+				timestamp: row_timestamp as any as number,
 				data: history as INovelStatCacheHistory,
 
 				color: randColor().name || randColor().name,
 
 				from: m.fromNow(),
-				date: m.format('YYYY-MM-DD'),
+				date: m.format(),
 
 				epub: history.epub,
 			};
@@ -154,6 +168,9 @@ export default class History extends Vue
 			data: INovelStatCacheHistory,
 
 			color?,
+			from: string,
+			date: string,
+			epub: INovelStatCacheHistory["epub"],
 		}[]);
 
 		return {
