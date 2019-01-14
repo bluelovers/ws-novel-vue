@@ -834,7 +834,7 @@ export default class List extends Vue
 
 		self.page = Math.min(Math.max((self.page) | 0, 1), _this.pages);
 
-		let idx = (this.page - 1) * self.page_size;
+		let idx = (self.page - 1) * self.page_size;
 
 		_this.novels = _this.novels_all.slice(idx, idx + self.page_size);
 		_this.page = self.page;
