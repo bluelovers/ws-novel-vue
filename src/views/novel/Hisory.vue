@@ -28,7 +28,7 @@
 
 				<div class="py-3">
 					<v-tooltip lazy top>
-					<h2 :class="`headline font-weight-bold mb-3 ${item.color}--text .display-2`" slot="activator">
+					<h2 :class="`headline font-weight-bold mb-3 ${item.color}--text .display-2 wf-roundedmplus1c`" slot="activator">
 						{{item.from}}
 					</h2>
 						<span v-text="item.date"></span>
@@ -86,7 +86,7 @@
 			</v-timeline-item>
 		</v-timeline>
 
-		<v-toolbar
+		<!--v-toolbar
 			app
 			height="40" :clipped-left="$vuetify.breakpoint.lgAndUp"
 			fixed
@@ -106,7 +106,7 @@
 
 			</v-toolbar-items>
 
-		</v-toolbar>
+		</v-toolbar-->
 
 	</v-container>
 

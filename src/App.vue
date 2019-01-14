@@ -10,7 +10,6 @@
 				<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
 
 				<v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-
 					<router-link to="/" class="text-color-inherit">Novel</router-link>
 				</v-toolbar-title>
 

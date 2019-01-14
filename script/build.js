@@ -12,6 +12,7 @@ const path = require("path");
 const cwd = path.join(__dirname, '..');
 (async () => {
     await Promise.resolve().then(() => __importStar(require('./build/yarn-list')));
+    await Promise.resolve().then(() => __importStar(require('./netlify')));
     await cross_spawn_extra_1.async('node', [
         path.join(__dirname, './fetch-api-json'),
     ], {

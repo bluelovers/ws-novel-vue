@@ -13,6 +13,8 @@ const cwd = path.join(__dirname, '..');
 {
 	await import('./build/yarn-list');
 
+	await import('./netlify');
+
 	await CrossSpawn('node', [
 		path.join(__dirname, './fetch-api-json'),
 	], {
