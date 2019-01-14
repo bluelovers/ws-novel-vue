@@ -49,6 +49,7 @@
     "vue-property-decorator": "^7.3.0",
     "vue-router": "^3.0.2",
     "vue2-touch-events": "^1.1.1",
+    "vuebar": "^0.0.20",
     "vuefire": "next",
     "vuesax": "^3.8.0",
     "vuetify": "^1.4.1"

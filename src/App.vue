@@ -31,6 +31,8 @@
 			</v-content>
 			<v-footer app>
 				<v-spacer></v-spacer>
+				<FooterItems/>
+				<v-spacer></v-spacer>
 				<div class="mr-2">
 					<a :href="`${publicPath}static/novel-stat.json`" target="_blank" rel="noopener">novel-stat.json</a>
 				</div>
@@ -47,10 +49,12 @@
 import { IVueComponent } from '@/lib/vue/index';
 import { Component, Vue, Watch, Prop } from 'vue-property-decorator';
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
+import FooterItems from '@/components/Nav/FooterItems.vue'
 
 @Component({
 	components: {
 		NavToolbarItems,
+		FooterItems,
 	},
 })
 export default class extends Vue {}

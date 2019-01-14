@@ -161,8 +161,21 @@
 					</v-layout>
 				</v-container>
 
-				<v-container v-else-if="pages == 0">
-					<span>NONE</span>
+				<v-container
+					v-else-if="pages == 0"
+					align-center="true"
+					align-content-center="true"
+					justify-center="true"
+				>
+					<v-alert
+						:value="true"
+						type="error"
+						dismissible
+						style="max-width: 250px;border-radius: 10px;"
+						@input="_searchResetKeyword"
+					>
+						NONE
+					</v-alert>
 				</v-container>
 
 				<v-progress-circular
@@ -258,7 +271,12 @@
 						</v-card-text>
 					</v-card>
 					<v-container v-else>
-						<span>NONE</span>
+						<v-alert
+							:value="true"
+							type="error"
+						>
+							NONE
+						</v-alert>
 					</v-container>
 				</v-expansion-panel-content>
 			</v-expansion-panel>
@@ -365,7 +383,7 @@ export default class List extends Vue
 			page_size,
 			novels: [] as typeof NovelData["novels"],
 			page,
-			pages: 0,
+			pages: 1,
 
 			tags: [] as typeof NovelData["tags"],
 			contributes: [] as typeof NovelData["contributes"],

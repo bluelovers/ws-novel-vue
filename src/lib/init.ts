@@ -18,6 +18,9 @@ import { production, development } from './const'
 
 //Vue.use(LoadScript);
 
+//import Vuebar from 'vuebar';
+//Vue.use(Vuebar);
+
 Vue.component('vue-headful', vueHeadful);
 Vue.component('vue-global-events', GlobalEvents);
 
