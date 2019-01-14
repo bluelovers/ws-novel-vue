@@ -3,7 +3,7 @@
   "compilerOptions": {
     "strict": false,
     "jsx": "preserve",
-    "importHelpers": true,
+//    "importHelpers": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "inlineSourceMap": false,
@@ -11,20 +11,24 @@
     "removeComments": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
+
+//    "types": [
+//      "webpack-env"
+//    ],
+
     "paths": {
       "@/*": [
         "src/*"
       ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    }
+
+//  ,
+//    "lib": [
+//      "esnext",
+//      "dom",
+//      "dom.iterable",
+//      "scripthost"
+//    ]
   },
   "include": [
     "src/**/*.ts",

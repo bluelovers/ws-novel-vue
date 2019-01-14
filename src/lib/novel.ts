@@ -14,7 +14,7 @@ import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
 
 let novelStatCache: NovelStatCache;
 
-export { IFilterNovelData, INovelStatCacheHistory, createMoment }
+export { IFilterNovelData, INovelStatCacheHistory, createMoment, NovelInfo }
 
 export function loadNovelStatCache(reload?: boolean)
 {
@@ -33,6 +33,14 @@ export function loadNovelStatCache(reload?: boolean)
 export function toHalfWidthLocaleLowerCase(s: string)
 {
 	return StrUtil.toHalfWidth(s).toLocaleLowerCase()
+}
+
+export function getNovelTitleFromMeta(mdconf: NovelInfo.IMdconfMeta, novelID?: string)
+{
+	return array_unique([
+		novelID,
+		...NovelInfo.getNovelTitleFromMeta(mdconf)
+	].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
 }
 
 export function dataAll()

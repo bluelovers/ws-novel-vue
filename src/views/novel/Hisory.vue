@@ -2,6 +2,10 @@
 
 	<v-container>
 
+		<vue-headful
+			title="History"
+		/>
+
 		<v-timeline
 			align-top
 			dense
@@ -33,19 +37,48 @@
 						<dl v-for="epub in item.epub">
 							<dt class="d-inline-block">
 								<v-chip class="caption" small>
-									{{epub[0]}}
+									{{epub.pathMain}}
 								</v-chip>
 							</dt>
 							<dd class="d-inline-block">
-								<v-badge right color="green">
+
+								<v-tooltip lazy bottom>
+
 								<a
-									:href="novelLink(epub[0],epub[1])"
+									:href="novelLink(epub.pathMain, epub.novelID)"
 									target="_blank" rel="noopener"
 									class="text-none"
-									@click="_ga('click', epub[0], epub[1])"
-								>{{epub[1]}}</a>
-									<span v-if="((epub[2].chapter - epub[2].chapter_old) > 0) && ((epub[2].chapter - epub[2].chapter_old) != epub[2].chapter)" slot="badge">{{ epub[2].chapter - epub[2].chapter_old }}</span>
+									@click="_ga('click', epub.pathMain, epub.novelID)"
+									slot="activator"
+								>{{epub.novelID}}</a>
+
+									<div>
+										<div v-for="title in epub.titles">
+											{{ title }}
+										</div>
+									</div>
+
+								</v-tooltip>
+
+								<v-badge right color="green">
+
+									<router-link :to="`/search/author?searchValue=${epub.author}`" class="text-color-inherit">
+
+									<v-chip
+										v-if="epub.author"
+										small
+										class="text-xs-right caption"
+										label
+										color="pink accent-4" text-color="white"
+									>{{ epub.author }}
+									</v-chip>
+
+									</router-link>
+
+									<span v-if="(epub.chapter_add > 0) && (epub.chapter_add != epub.chapter)" slot="badge">{{ epub.chapter_add }}</span>
 								</v-badge>
+
+
 							</dd>
 						</dl>
 					</div>
@@ -93,6 +126,8 @@ import {
 	INovelStatCacheHistory,
 	createMoment,
 	novelLink,
+	NovelInfo,
+	getNovelTitleFromMeta,
 } from '@/lib/novel';
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 import { randColor } from '@/lib/colors';
@@ -122,9 +157,11 @@ export default class History extends Vue
 
 	data()
 	{
-		let _historys = loadNovelStatCache().historys().reverse();
+		const novelStatCache = loadNovelStatCache();
 
-		let { timestamp, todayTimestamp } = loadNovelStatCache().data.meta;
+		let _historys = novelStatCache.historys().reverse();
+
+		let { timestamp, todayTimestamp } = novelStatCache.data.meta;
 
 		let list = _historys.reduce(function (ls, row)
 		{
@@ -154,8 +191,41 @@ export default class History extends Vue
 				from: m.fromNow(),
 				date: m.format(),
 
-				epub: history.epub,
+				epub: Object.entries(history.epub)
+					.reduce(function (ls, [k, epub])
+					{
+						const pathMain: string = epub[0];
+						const novelID: string = epub[1];
+
+						const mdconf = novelStatCache.mdconf_get(pathMain, novelID);
+
+						let subdata = epub[2];
+
+						let data = {
+							...subdata,
+							pathMain,
+							novelID,
+
+							chapter_add: 0,
+
+							author: mdconf.novel.author,
+
+							titles: getNovelTitleFromMeta(mdconf, novelID)
+						};
+
+						if (subdata.chapter)
+						{
+							data.chapter_add = epub[2].chapter - epub[2].chapter_old
+						}
+
+						ls.push(data);
+
+						return ls
+					}, []),
+
 			};
+
+
 
 			if (data.epub.length)
 			{

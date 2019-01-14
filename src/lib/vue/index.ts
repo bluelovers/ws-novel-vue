@@ -8,8 +8,8 @@ import { Component, Vue, Watch, Prop } from 'vue-property-decorator';
 import { IVueAnalytics$ga } from '@/plugins/vue-analytics';
 
 // @ts-ignore
-export type IVueComponent<T extends Vue = Vue> = T & ReturnType<T["data"]> & {
+export type IVueComponent<T extends Vue = Vue> = Vue & Partial<ReturnType<T["data"]>> & {
 	$ga: IVueAnalytics$ga,
-}
+} & T
 
 

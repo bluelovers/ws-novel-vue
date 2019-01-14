@@ -1,9 +1,10 @@
 <template>
 
-	<!-- @fixme 不管怎麼設定 鍵盤事件都無效 -->
-	<v-container
+	<v-container>
 
-	>
+		<vue-headful
+			:title="title"
+		/>
 
 		<vue-global-events
 
@@ -56,102 +57,101 @@
 
 							<v-hover>
 
-							<v-card slot-scope="{ hover }">
-								<v-layout>
+								<v-card slot-scope="{ hover }">
+									<v-layout>
 
-									<v-flex>
-
-
-
-										<a
-											:href="novelLink(item)"
-											target="_blank"
-											rel="noopener"
-											class="text-none"
-											@click="_ga('click', item.pathMain, item.novelID)"
-										>
-
-											<v-tooltip lazy bottom>
-
-												<v-img
-													:src="item.mdconf.novel.cover"
-													:lazy-src="img_unsplash(item)"
-													height="150px"
-													align-center="true"
-													align-content-center="true"
-													v-on:error="imageError"
-													v-on:load="imageLoaded"
-													slot="activator"
-													onclick="this && this.blur && this.blur()"
-												>
-													<v-expand-transition>
-														<div
-															v-if="hover"
-															class="d-flex transition-fast-in-fast-out purple darken-4  v-card--reveal white--text caption pre-wrap pa-0 ma-0"
-															style="height: 100%;"
-														>{{ item.mdconf.novel.preface }}</div>
-													</v-expand-transition>
+										<v-flex>
 
 
-													<v-container pa-0 text-xs-right class="my-novel-tag" style="position: absolute;bottom: 0;right: 0;">
+											<a
+												:href="novelLink(item)"
+												target="_blank"
+												rel="noopener"
+												class="text-none"
+												@click="_ga('click', item.pathMain, item.novelID)"
+											>
 
-														<v-chip
-															v-if="item.mdconf.novel.author"
-															small
-															class="text-xs-right caption"
-															label
-															color="pink accent-4" text-color="white"
+												<v-tooltip lazy bottom>
 
-														>{{ item.mdconf.novel.author }}
-														</v-chip>
-
-														<v-chip
-															small
-															class="text-xs-right caption"
-															label
-															color="purple darken-4" text-color="white"
-
-														>{{ item.pathMain }}
-														</v-chip>
-
-
-													</v-container>
-
-
-												</v-img>
-
-
-												<v-container
-													fill-height
-													fluid
-													pa-2
-													style="height: 3em"
-													slot="activator"
-
-												>
-													<v-layout fill-height>
-														<v-flex xs12 align-end flexbox overflow-hidden class="text-no-wrap text-truncate">
-															<span v-text="item.novelID"></span>
-														</v-flex>
-													</v-layout>
-												</v-container>
+														<v-img
+															:src="item.mdconf.novel.cover"
+															:lazy-src="img_unsplash(item)"
+															height="150px"
+															align-center="true"
+															align-content-center="true"
+															v-on:error="imageError"
+															v-on:load="imageLoaded"
+															slot="activator"
+															onclick="this && this.blur && this.blur()"
+														>
+															<v-expand-transition>
+																<div
+																	v-if="hover"
+																	class="d-flex transition-fast-in-fast-out purple darken-4  v-card--reveal white--text caption pre-wrap pa-0 ma-0"
+																	style="height: 100%;"
+																>{{ item.mdconf.novel.preface }}
+																</div>
+															</v-expand-transition>
 
 
+															<v-container pa-0 text-xs-right class="my-novel-tag" style="position: absolute;bottom: 0;right: 0;">
 
-												<span v-text="item.novelID + ' by ' + item.mdconf.novel.author"></span>
+																<v-chip
+																	v-if="item.mdconf.novel.author"
+																	small
+																	class="text-xs-right caption"
+																	label
+																	color="pink accent-4" text-color="white"
+																>{{ item.mdconf.novel.author }}
+																</v-chip>
+
+																<v-chip
+																	small
+																	class="text-xs-right caption"
+																	label
+																	color="purple darken-4" text-color="white"
+
+																>{{ item.pathMain }}
+																</v-chip>
 
 
-											</v-tooltip>
-
-										</a>
+															</v-container>
 
 
+														</v-img>
 
 
-									</v-flex>
+														<v-container
+															fill-height
+															fluid
+															pa-2
+															style="height: 3em"
+															slot="activator"
 
-								</v-layout>
-							</v-card>
+														>
+															<v-layout fill-height>
+																<v-flex xs12 align-end flexbox overflow-hidden class="text-no-wrap text-truncate">
+																	<span v-text="item.novelID"></span>
+																</v-flex>
+															</v-layout>
+														</v-container>
+
+
+													<div slot="default">
+														<div v-for="title in getNovelTitleFromMeta(item.mdconf, item.novelID)">
+															{{ title }}
+														</div>
+													</div>
+
+												</v-tooltip>
+
+											</a>
+
+
+										</v-flex>
+
+									</v-layout>
+								</v-card>
 
 							</v-hover>
 
@@ -350,11 +350,20 @@ import url from 'url';
 import { Component, Vue, Watch } from 'vue-property-decorator';
 import { Route } from 'vue-router'
 import StrUtil from 'str-util';
+import { IVueComponent } from '@/lib/vue/index';
 
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 
-import { dataAll, EnumEventAction, EnumEventLabel, IFilterNovelData, toHalfWidthLocaleLowerCase } from '../../lib/novel';
-import { img_unsplash } from '../../lib/util';
+import {
+	dataAll,
+	EnumEventAction,
+	EnumEventLabel,
+	IFilterNovelData,
+	toHalfWidthLocaleLowerCase,
+	NovelInfo,
+	getNovelTitleFromMeta,
+} from '@/lib/novel';
+import { img_unsplash } from '@/lib/util';
 
 const NovelData = dataAll();
 
@@ -396,6 +405,9 @@ export default class List extends Vue
 			cur_tag: '',
 			cur_contribute: '',
 			cur_author: '',
+
+			cur_title: '',
+			title: '',
 		};
 
 		this._data_init();
@@ -403,8 +415,44 @@ export default class List extends Vue
 		return data;
 	}
 
+	getNovelTitleFromMeta(mdconf, novelID?)
+	{
+		let ls =  getNovelTitleFromMeta(mdconf, novelID)
+		return ls
+	}
+
+	_setTitle(this: IVueComponent<List>, titles: string[] | string)
+	{
+		if (Array.isArray(titles))
+		{
+			titles = titles.join(' - ');
+		}
+		else if (!titles || !titles.length)
+		{
+			titles = ''
+		}
+
+		this.cur_title = titles;
+
+		this._updateTitle();
+	}
+
+	_updateTitle(this: IVueComponent<List>)
+	{
+		if (this.cur_title)
+		{
+			this.title = this.cur_title + ' - Novel';
+		}
+		else
+		{
+			this.title = 'Novel'
+		}
+	}
+
 	_data_init()
 	{
+		this._updateTitle();
+
 		if (this.$route.params.searchType)
 		{
 			setTimeout(() => this.onRouterChanged(this.$route, null), 250);
@@ -475,6 +523,8 @@ export default class List extends Vue
 			default:
 				throw new TypeError(`searchType not exists: ${searchType}`)
 		}
+
+		this._setTitle([searchValue, searchType]);
 	}
 
 	_searchReset(searchType: EnumEventLabel)
@@ -817,6 +867,8 @@ export default class List extends Vue
 			_this.contributes = array_unique(ls);
 		}
 
+		this._updateTitle();
+
 		return _this.novels;
 	}
 
@@ -908,8 +960,7 @@ export default class List extends Vue
 	width: 100%;
 }
 
-.pre-wrap
-{
+.pre-wrap {
 	white-space: pre-wrap;
 }
 
