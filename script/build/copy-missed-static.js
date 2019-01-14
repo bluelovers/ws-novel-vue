@@ -5,6 +5,7 @@ const project_config_1 = tslib_1.__importDefault(require("../../project.config")
 const Bluebird = require("bluebird");
 const fs = require("fs-extra");
 const path = require("path");
+const util_1 = tslib_1.__importDefault(require("../util"));
 const copyOptions = {
     overwrite: false,
     errorOnExist: false,
@@ -22,7 +23,7 @@ module.exports = Bluebird.resolve(FastGlob.async([
     ],
 }))
     .tap(function () {
-    console.log('[copy]', 'check missed file');
+    util_1.default.info('[copy]', 'check missed file');
 })
     .map(async function (file) {
     let target = path.join(project_config_1.default.distPath, file);
@@ -30,13 +31,13 @@ module.exports = Bluebird.resolve(FastGlob.async([
     const exists = await fs.pathExists(target);
     if (!exists) {
         await fs.copy(source, target, copyOptions);
-        console.log('[copy]', file);
+        util_1.default.success('[copy]', file);
     }
     else {
-        console.log('[skip]', file);
+        util_1.default.gray('[skip]', file);
     }
 })
     .tap(function () {
-    console.log('[copy]', 'done');
+    util_1.default.info('[copy]', 'done');
 });
 //# sourceMappingURL=copy-missed-static.js.map

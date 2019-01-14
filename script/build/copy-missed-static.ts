@@ -7,6 +7,7 @@ import ProjectConfig, { ProjectRoot } from '../../project.config';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
+import console from '../util';
 
 const copyOptions: fs.CopyOptions = {
 	overwrite: false,
@@ -29,7 +30,7 @@ export = Bluebird.resolve(FastGlob.async<string>([
 }))
 	.tap(function ()
 	{
-		console.log('[copy]', 'check missed file');
+		console.info('[copy]', 'check missed file');
 	})
 	.map(async function (file)
 	{
@@ -42,15 +43,15 @@ export = Bluebird.resolve(FastGlob.async<string>([
 		{
 			await fs.copy(source, target, copyOptions);
 
-			console.log('[copy]', file);
+			console.success('[copy]', file);
 		}
 		else
 		{
-			console.log('[skip]', file);
+			console.gray('[skip]', file);
 		}
 	})
 	.tap(function ()
 	{
-		console.log('[copy]', 'done');
+		console.info('[copy]', 'done');
 	})
 ;

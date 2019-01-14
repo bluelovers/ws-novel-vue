@@ -5,6 +5,7 @@
 import { async as CrossSpawn } from 'cross-spawn-extra';
 import ProjectConfig, { ProjectRoot } from '../../project.config';
 import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
+import console from '../util';
 
 import PackageJson = require('../../package.json');
 

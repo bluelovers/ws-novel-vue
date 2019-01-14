@@ -6,6 +6,7 @@ import { async as CrossSpawn } from 'cross-spawn-extra';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
+import console from './util';
 
 const cwd = path.join(__dirname, '..');
 

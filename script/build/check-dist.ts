@@ -7,6 +7,7 @@ import ProjectConfig, { ProjectRoot } from '../../project.config';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
+import console from '../util';
 
 export = Bluebird.resolve(FastGlob.async<string>([
 	'**',
@@ -17,7 +18,7 @@ export = Bluebird.resolve(FastGlob.async<string>([
 }))
 	.tap(function (ls)
 	{
-		console.log(`file in dist:`);
-		console.log(ls);
+		console.info(`file in dist:`);
+		console.info(ls);
 	})
 ;

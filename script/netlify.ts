@@ -2,16 +2,16 @@
  * Created by user on 2019/1/14/014.
  */
 
-//import NetlifyEnv = require('netlify-env');
+import console from './util';
 
 let {
 	INCOMING_HOOK_TITLE,
 	INCOMING_HOOK_BODY,
 } = process.env;
 
-console.log(`NetlifyEnv:`);
+console.info(`NetlifyEnv:`);
 
-console.log({
+console.dir({
 	INCOMING_HOOK_TITLE,
 	INCOMING_HOOK_BODY,
 });

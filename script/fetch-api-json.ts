@@ -6,6 +6,7 @@ import fetch from 'cross-fetch';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
+import console from './util';
 
 // @ts-ignore
 fetch.Promise = Bluebird;
@@ -26,7 +27,7 @@ export = fetch('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
 		])
 			.tap(function ()
 			{
-				console.info(`saved`, 'novel-stat.json');
+				console.success(`saved`, 'novel-stat.json');
 			})
 	})
 ;
