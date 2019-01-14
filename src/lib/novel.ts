@@ -7,6 +7,7 @@ import create, {
 import { cacheSortCallback } from '@node-novel/cache-loader/lib/util'
 import path = require('path');
 import url from 'url';
+import StrUtil from 'str-util';
 
 import NovelInfo = require('node-novel-info');
 import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
@@ -29,6 +30,11 @@ export function loadNovelStatCache(reload?: boolean)
 	});
 }
 
+export function toHalfWidthLocaleLowerCase(s: string)
+{
+	return StrUtil.toHalfWidth(s).toLocaleLowerCase()
+}
+
 export function dataAll()
 {
 	novelStatCache = loadNovelStatCache();
@@ -46,7 +52,8 @@ export function dataAll()
 					let ks = array_unique([
 						novelID,
 						...NovelInfo.getNovelTitleFromMeta(novel.mdconf)
-					].filter(v => v));
+					].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
+					;
 
 					ks
 						.forEach(title => {

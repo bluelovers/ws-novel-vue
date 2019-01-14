@@ -349,10 +349,11 @@ import { array_unique } from 'array-hyper-unique'
 import url from 'url';
 import { Component, Vue, Watch } from 'vue-property-decorator';
 import { Route } from 'vue-router'
+import StrUtil from 'str-util';
 
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 
-import { dataAll, EnumEventAction, EnumEventLabel, IFilterNovelData } from '../../lib/novel';
+import { dataAll, EnumEventAction, EnumEventLabel, IFilterNovelData, toHalfWidthLocaleLowerCase } from '../../lib/novel';
 import { img_unsplash } from '../../lib/util';
 
 const NovelData = dataAll();
@@ -540,7 +541,7 @@ export default class List extends Vue
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
-		let ks = keyword
+		let ks = toHalfWidthLocaleLowerCase(keyword)
 			.replace(/([\.\?])+/g, '$1')
 			.split(/[\s　#\-,@]+/)
 			.map(function (v: string)
