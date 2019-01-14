@@ -56,3 +56,16 @@ export interface IVueAnalytics$ga
 		eventValue: number,
 	}): void
 }
+
+declare module 'vue/types/vue'
+{
+	interface Vue
+	{
+		$ga: IVueAnalytics$ga
+	}
+
+	interface VueConstructor
+	{
+		$ga: IVueAnalytics$ga
+	}
+}

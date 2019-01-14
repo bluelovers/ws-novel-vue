@@ -149,7 +149,7 @@ export default class History extends Vue
 	 * 由於實際上 eventValue 只能是數字 所以只好放棄 eventCategory
 	 * @private
 	 */
-	_ga(this: IVueComponent<History>, eventAction: EnumEventAction, eventLabel: EnumEventLabel, eventValue: string)
+	_ga(eventAction: EnumEventAction, eventLabel: EnumEventLabel, eventValue: string)
 	{
 		this.$ga && this.$ga.event(eventAction, eventLabel, eventValue)
 	}

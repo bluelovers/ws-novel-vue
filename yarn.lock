@@ -7929,10 +7929,10 @@ regexp-range@^1.0.4:
     fill-range "^6.0.0"
     japanese "^1.2.0"
 
-regexp-support@^1.0.22:
-  version "1.0.22"
-  resolved "https://registry.yarnpkg.com/regexp-support/-/regexp-support-1.0.22.tgz#da971cf79610dae34631a3c4f8464c4adec5c658"
-  integrity sha512-58++zZeCsdPV3+0KTf2rBaa1N3WKzr4tVs80/gMC6PNv7k7fxKlzc+d6LGvWsRAEe5S3gPm9geQfllLdVCOtLA==
+regexp-support@^1.0.22, regexp-support@^1.0.23:
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/regexp-support/-/regexp-support-1.0.23.tgz#d32c052052fb0d7c5c644514010a42106046d931"
+  integrity sha512-d8g7riW0bIVvMf0Xs23xts1lWirgjuwJ8PgpbR3iANTiz7e3hBQN3VcudJE8B/sm38EnZlZKwWiunfRdK6GSAg==
 
 regexpp2@^1.1.1:
   version "1.1.1"

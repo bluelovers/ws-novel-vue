@@ -376,7 +376,7 @@ const lowSrcMap = new WeakMap();
 })
 export default class List extends Vue
 {
-	$ga: IVueAnalytics$ga;
+	//$ga: IVueAnalytics$ga;
 
 	page: number;
 
