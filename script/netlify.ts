@@ -2,12 +2,12 @@
  * Created by user on 2019/1/14/014.
  */
 
-import NetlifyEnv = require('netlify-env');
+//import NetlifyEnv = require('netlify-env');
 
 let {
 	INCOMING_HOOK_TITLE,
 	INCOMING_HOOK_BODY,
-} = NetlifyEnv;
+} = process.env;
 
 console.log(`NetlifyEnv:`);
 
@@ -16,5 +16,7 @@ console.log({
 	INCOMING_HOOK_BODY,
 });
 
-export = NetlifyEnv
-
+export = {
+	INCOMING_HOOK_TITLE,
+	INCOMING_HOOK_BODY,
+}

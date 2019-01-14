@@ -72,7 +72,6 @@
     "fs-extra": "^7.0.1",
     "material-design-icons-iconfont": "^4.0.4",
     "material-icons": "^0.3.0",
-    "netlify-env": "^0.0.4",
     "node-sass": "^4.11.0",
     "roboto-fontface": "*",
     "sass-loader": "^7.1.0",
