@@ -1,5 +1,6 @@
 import ChainWebpack = require("webpack-chain");
 import TerserPlugin = require('terser-webpack-plugin');
+import webpack = require('webpack');
 
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
@@ -14,7 +15,12 @@ module.exports = {
 
 	configureWebpack: {
 
-		//plugins: [],
+		plugins: [
+			/**
+			 * https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
+			 */
+			new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
+		],
 //		devtool: !production,
 
 		optimization: {
@@ -87,10 +93,13 @@ module.exports = {
 
 		//console.log(config.resolve.extensions.values());
 
-		const webpack = require('webpack');
+//		const webpack = require('webpack');
 
 //		// @ts-ignore
 //		config.plugins.set(new webpack.IgnorePlugin(/\.d\.ts$/))
+
+
+//		config.plugins.set(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/))
 	},
 
 	css: {

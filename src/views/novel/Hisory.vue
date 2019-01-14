@@ -134,6 +134,10 @@ import { randColor } from '@/lib/colors';
 import { IVueAnalytics$ga } from '@/plugins/vue-analytics';
 import moment from 'moment';
 
+//import('moment/locale/ja');
+//import('moment/locale/zh-tw');
+//import('moment/locale/zh-cn');
+
 @Component({
 	components: {
 		NavToolbarItems,
@@ -180,7 +184,7 @@ export default class History extends Vue
 				m = createMoment(timestamp);
 			}
 
-			m = m.locale(['ja', 'jp', 'zh-tw', 'zh-cn']);
+			m = m.locale(['ja', 'zh-tw', 'zh-cn']);
 
 			let data = {
 				timestamp: row_timestamp as any as number,

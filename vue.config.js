@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const TerserPlugin = require("terser-webpack-plugin");
+const webpack = require("webpack");
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
 module.exports = {
@@ -8,6 +9,9 @@ module.exports = {
     productionSourceMap: development,
     runtimeCompiler: true,
     configureWebpack: {
+        plugins: [
+            new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
+        ],
         optimization: {
             splitChunks: {
                 chunks: 'all',
@@ -48,7 +52,6 @@ module.exports = {
         },
     },
     chainWebpack(config) {
-        const webpack = require('webpack');
     },
     css: {
         sourceMap: development,
