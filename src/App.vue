@@ -34,9 +34,9 @@
 				<FooterItems/>
 				<v-spacer></v-spacer>
 				<div class="mr-2">
-					<a :href="`${publicPath}static/novel-stat.json`" target="_blank" rel="noopener">novel-stat.json</a>
+					<a :href="`${publicPath}static/novel-stat.json`" target="_blank" rel="noopener" @click="_ga('click', 'api', 'novel-stat.json')">novel-stat.json</a>
 				</div>
-				<div class="mr-2">&copy; {{ new Date().getFullYear() }}　</div>
+				<div class="mr-2">&copy; {{ updateDate }}　</div>
 			</v-footer>
 		</v-app>
 		<vue-headful
@@ -51,13 +51,51 @@ import { Component, Vue, Watch, Prop } from 'vue-property-decorator';
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 import FooterItems from '@/components/Nav/FooterItems.vue'
 
+import {
+	loadNovelStatCache,
+	createMoment,
+	EnumEventAction,
+	EnumEventLabel,
+} from '@/lib/novel';
+
 @Component({
 	components: {
 		NavToolbarItems,
 		FooterItems,
 	},
 })
-export default class extends Vue {}
+export default class extends Vue {
+
+	data()
+	{
+		let timestamp = loadNovelStatCache().data.meta.timestamp || null;
+		let date = createMoment(timestamp || undefined);
+		let updateDate: string;
+
+		if (timestamp)
+		{
+			updateDate = date.format();
+		}
+		else
+		{
+			updateDate = date.format('YYYY');
+		}
+
+		return {
+			updateDate
+		}
+	}
+
+	/**
+	 * 由於實際上 eventValue 只能是數字 所以只好放棄 eventCategory
+	 * @private
+	 */
+	_ga(this: IVueComponent, eventAction: EnumEventAction, eventLabel: EnumEventLabel, eventValue: string)
+	{
+		this.$ga && this.$ga.event(eventAction, eventLabel, eventValue)
+	}
+
+}
 </script>
 
 <style lang="scss">

@@ -136,6 +136,7 @@ export enum EnumEventLabel
 	CONTRIBUTE = 'contribute',
 	KEYWORD = 'keyword',
 	TAG = 'tag',
+	API = 'api',
 }
 
 export function novelLink(pathMain: string, novelID: string)
