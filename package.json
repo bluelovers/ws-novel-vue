@@ -22,16 +22,20 @@
   "scripts": {
     "build-netlify": "node ./script/build-netlify",
     "build": "node ./script/build",
-    "build-base": "yarn run vue-cli-service build",
-    "build-modern": "yarn run vue-cli-service build --modern --color",
-    "deploy-and-build": "yarn run vue-cli-ghpages",
-    "deploy-ghpages": "yarn run vue-cli-ghpages",
+    "build-base": "vue-cli-service build",
+    "build-modern": "vue-cli-service build --modern --color",
+    "deploy-and-build": "vue-cli-ghpages",
+    "deploy-ghpages": "vue-cli-ghpages",
     "fetch-and-build": "yarn run build & yarn run deploy-ghpages",
     "fetch-api-json": "node ./script/fetch-api-json",
     "pre-commit": "node ./script/pre-commit",
-    "serve": "yarn run vue-cli-service serve --color",
-    "serve-production": "yarn run vue-cli-service serve --mode production",
-    "test": "yarn run vue-cli-service test:unit"
+    "serve": "vue-cli-service serve --color",
+    "serve-production": "vue-cli-service serve --mode production",
+
+    "inspect": "vue-cli-service inspect",
+    "inspect-production": "vue-cli-service inspect --mode production",
+
+    "test": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@bluelovers/tsconfig": "^1",

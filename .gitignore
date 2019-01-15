@@ -29,3 +29,4 @@ yarn-error.log*
 /*.d.ts
 *.js.map
 !/vue.config.js
+/a.js

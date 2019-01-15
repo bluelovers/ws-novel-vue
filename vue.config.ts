@@ -1,9 +1,13 @@
 import ChainWebpack = require("webpack-chain");
 import TerserPlugin = require('terser-webpack-plugin');
 import webpack = require('webpack');
+import path = require('path');
+import console from './script/util';
 
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
+
+console.debug('NODE_ENV', process.env.NODE_ENV);
 
 module.exports = {
 
@@ -32,7 +36,7 @@ module.exports = {
 			minimizer: [new TerserPlugin({
 				sourceMap: development,
 
-				parallel: true,
+				//parallel: true,
 
 				terserOptions: {
 					compress: {
@@ -100,6 +104,41 @@ module.exports = {
 
 
 //		config.plugins.set(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/))
+
+		config
+			.plugin('fork-ts-checker')
+			/*
+			.use(require('fork-ts-checker-webpack-plugin'), [{
+				vue: true,
+				tslint: false,
+				formatter: 'codeframe',
+				checkSyntacticErrors: false,
+			}])
+			*/
+			.tap(function (...argv)
+			{
+				let conf = argv[0][0];
+
+				console.info('fork-ts-checker');
+
+				console.dir(argv);
+
+				console.gray('-'.repeat(10));
+
+				conf.tslint = false;
+				conf.transpileOnly = true;
+				conf.checkSyntacticErrors = false;
+
+				conf.tsconfig = path.resolve(__dirname, 'tsconfig.json');
+
+				conf.reportFiles = conf.reportFiles || [];
+				conf.reportFiles.push('!*.d.ts');
+
+				console.dir(conf);
+
+				return argv
+			})
+		;
 	},
 
 	css: {
