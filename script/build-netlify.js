@@ -35,7 +35,7 @@ function skipBuild() {
                     break;
                 case gitee_1.EnumNetlifyHookBodyGiteeAction.MERGE:
                     util_1.default.info(`merge_status: ${json.merge_status}`);
-                    if (json.state !== gitee_1.EnumNetlifyHookBodyGiteePullRequest.MERGED) {
+                    if (json.state !== gitee_1.EnumNetlifyHookBodyGiteePullRequestStatus.MERGED) {
                         return true;
                     }
                     else {

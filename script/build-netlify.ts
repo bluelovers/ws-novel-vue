@@ -7,7 +7,7 @@ import {
 	EnumNetlifyHookBodyGiteeAction,
 	EnumNetlifyHookBodyGiteeHookName,
 	EnumNetlifyHookBodyGiteeMergeStatus,
-	EnumNetlifyHookBodyGiteePullRequest,
+	EnumNetlifyHookBodyGiteePullRequestStatus,
 } from 'netlify-env2/lib/gitee';
 import console from './util';
 import Bluebird = require('bluebird');
@@ -61,7 +61,7 @@ export function skipBuild()
 				case EnumNetlifyHookBodyGiteeAction.MERGE:
 					console.info(`merge_status: ${json.merge_status}`);
 
-					if (json.state !== EnumNetlifyHookBodyGiteePullRequest.MERGED)
+					if (json.state !== EnumNetlifyHookBodyGiteePullRequestStatus.MERGED)
 					{
 						return true;
 					}
