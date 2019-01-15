@@ -6,13 +6,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 const cross_spawn_extra_1 = require("cross-spawn-extra");
 const path = require("path");
 const cwd = path.join(__dirname, '..');
-(async () => {
+module.exports = (async () => {
     await Promise.resolve().then(() => __importStar(require('./build/yarn-list')));
-    await Promise.resolve().then(() => __importStar(require('./netlify')));
     await cross_spawn_extra_1.async('node', [
         path.join(__dirname, './fetch-api-json'),
     ], {

@@ -1,9 +1,6 @@
 # hello-world
 
-https://demonovel.netlify.com/
-
-https://bluelovers.github.io/ws-novel-vue/
-
+> https://demonovel.netlify.com/
 
 ## Project setup
 ```

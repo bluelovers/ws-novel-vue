@@ -10,11 +10,9 @@ import console from './util';
 
 const cwd = path.join(__dirname, '..');
 
-(async () =>
+export = (async () =>
 {
 	await import('./build/yarn-list');
-
-	await import('./netlify');
 
 	await CrossSpawn('node', [
 		path.join(__dirname, './fetch-api-json'),
@@ -41,4 +39,3 @@ const cwd = path.join(__dirname, '..');
 	await import('./build/check-dist');
 
 })();
-
