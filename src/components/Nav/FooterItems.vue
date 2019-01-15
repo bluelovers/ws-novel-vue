@@ -1,7 +1,7 @@
 <template>
 	<v-toolbar-items>
 
-		<router-link to="/" class="text-color-inherit">
+		<router-link to="/" class="text-color-inherit" style="display: inline-block;">
 			<v-btn icon class="my-0">
 				<v-icon>developer_board</v-icon>
 			</v-btn>
@@ -9,7 +9,7 @@
 
 		<v-spacer />
 
-		<router-link to="/history" class="text-color-inherit">
+		<router-link to="/history" class="text-color-inherit" style="display: inline-block;">
 			<v-btn icon class="my-0">
 				<v-icon>history</v-icon>
 			</v-btn>
