@@ -13,7 +13,9 @@ exports.env = netlify_env2_1.parseNetlifyEnv(netlify_env2_1.getNetlifyEnv());
     util_1.default.gray(`-`.repeat(10));
     util_1.default.info(`check env and hook`);
     util_1.default.gray(`-`.repeat(10));
-    if (await skipBuild()) {
+    let bool = await skipBuild();
+    util_1.default.debug(`skipBuild: ${bool}`);
+    if (bool) {
         util_1.default.warn(`SKIP BUILD`);
         return false;
     }
@@ -31,6 +33,7 @@ function skipBuild() {
         if (json.hook_name === gitee_1.EnumNetlifyHookBodyGiteeHookName.MERGE_REQUEST_HOOKS) {
             switch (json.action) {
                 case gitee_1.EnumNetlifyHookBodyGiteeAction.CREATE:
+                case gitee_1.EnumNetlifyHookBodyGiteeAction.UPDATE:
                     return true;
                     break;
                 case gitee_1.EnumNetlifyHookBodyGiteeAction.MERGE:
@@ -44,7 +47,7 @@ function skipBuild() {
                     }
                     break;
             }
-            return false;
+            return true;
         }
     }
     return null;

@@ -25,7 +25,11 @@ export const env = parseNetlifyEnv(getNetlifyEnv());
 	console.info(`check env and hook`);
 	console.gray(`-`.repeat(10));
 
-	if (await skipBuild())
+	let bool = await skipBuild();
+
+	console.debug(`skipBuild: ${bool}`);
+
+	if (bool)
 	{
 		console.warn(`SKIP BUILD`);
 		return false;
@@ -56,6 +60,7 @@ export function skipBuild()
 			switch (json.action)
 			{
 				case EnumNetlifyHookBodyGiteeAction.CREATE:
+				case EnumNetlifyHookBodyGiteeAction.UPDATE:
 					return true;
 					break;
 				case EnumNetlifyHookBodyGiteeAction.MERGE:
@@ -75,7 +80,7 @@ export function skipBuild()
 					break;
 			}
 
-			return false
+			return true;
 		}
 	}
 
