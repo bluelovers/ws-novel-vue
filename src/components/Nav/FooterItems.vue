@@ -1,19 +1,19 @@
 <template>
 	<v-toolbar-items>
 
-		<v-btn icon>
-			<router-link to="/" class="text-color-inherit">
+		<router-link to="/" class="text-color-inherit">
+			<v-btn icon class="my-0">
 				<v-icon>developer_board</v-icon>
-			</router-link>
-		</v-btn>
+			</v-btn>
+		</router-link>
 
 		<v-spacer />
 
-		<v-btn icon>
-			<router-link to="/history" class="text-color-inherit">
+		<router-link to="/history" class="text-color-inherit">
+			<v-btn icon class="my-0">
 				<v-icon>history</v-icon>
-			</router-link>
-		</v-btn>
+			</v-btn>
+		</router-link>
 
 	</v-toolbar-items>
 </template>

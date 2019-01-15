@@ -133,6 +133,11 @@ module.exports = {
 
 				conf.reportFiles = conf.reportFiles || [];
 				conf.reportFiles.push('!*.d.ts');
+				conf.reportFiles.push('!**/*.d.ts');
+
+				conf.compilerOptions = conf.compilerOptions || {};
+				conf.compilerOptions.skipLibCheck = true;
+				conf.silent = true;
 
 				console.dir(conf);
 

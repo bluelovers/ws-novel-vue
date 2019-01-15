@@ -68,6 +68,10 @@ module.exports = {
             conf.tsconfig = path.resolve(__dirname, 'tsconfig.json');
             conf.reportFiles = conf.reportFiles || [];
             conf.reportFiles.push('!*.d.ts');
+            conf.reportFiles.push('!**/*.d.ts');
+            conf.compilerOptions = conf.compilerOptions || {};
+            conf.compilerOptions.skipLibCheck = true;
+            conf.silent = true;
             util_1.default.dir(conf);
             return argv;
         });
