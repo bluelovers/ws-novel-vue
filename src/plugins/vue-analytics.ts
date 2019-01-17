@@ -23,13 +23,11 @@ Vue.use(VueAnalytics, {
 
 	},
 	checkDuplicatedScript: true,
-	/*
 	debug: {
-		sendHitTask: development,
-		trace: development,
-		enabled: development,
+		sendHitTask: true,
+		trace: true,
+		//enabled: development,
 	},
-	*/
 	/**
 	 * this is right after the tracker and before every other hit to Google Analytics
 	 */
