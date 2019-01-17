@@ -275,12 +275,26 @@
 			app
 			v-model="drawer"
 		>
-
 			<v-expansion-panel
 				expand
+				focusable
 			>
 				<v-expansion-panel-content>
-					<div slot="header">Tags</div>
+					<div slot="header">
+						<v-chip
+							class="caption"
+							small
+							label
+							:selected="!!cur_tag"
+							:close="!!cur_tag"
+							:color="cur_tag ? 'pink' : ''"
+							:text-color="cur_tag ? 'white' : ''"
+							@input="_searchResetTag"
+						>
+							<v-icon left>label</v-icon>
+							Tag
+						</v-chip>
+					</div>
 					<v-card v-if="tags.length">
 						<v-card-text expand>
 							<v-chip v-for="name in tags" class="caption" @click="_searchByTag(name)"
@@ -308,11 +322,29 @@
 				</v-expansion-panel-content>
 			</v-expansion-panel>
 
+			<v-divider></v-divider>
+
 			<v-expansion-panel
 				expand
+				focusable
 			>
 				<v-expansion-panel-content>
-					<div slot="header">Authors</div>
+					<div slot="header">
+						<v-chip
+							class="caption"
+							small
+							label
+							:selected="!!cur_author"
+							:close="!!cur_author"
+							:color="cur_author ? 'pink' : ''"
+							:text-color="cur_author ? 'white' : ''"
+							@input="_searchResetAuthor"
+						>
+							<v-icon left>school</v-icon>
+							Authors
+						</v-chip>
+
+					</div>
 					<v-card v-if="authors.length">
 						<v-card-text expand>
 							<v-chip v-for="name in authors" class="caption" @click="_searchByAuthor(name)"
@@ -336,11 +368,29 @@
 
 			</v-expansion-panel>
 
+			<v-divider></v-divider>
+
 			<v-expansion-panel
 				expand
+				focusable
 			>
 				<v-expansion-panel-content>
-					<div slot="header">Contributes</div>
+					<div slot="header">
+						<v-chip
+							class="caption"
+							small
+							label
+							:selected="!!cur_contribute"
+							:close="!!cur_contribute"
+							:color="cur_contribute ? 'pink' : ''"
+							:text-color="cur_contribute ? 'white' : ''"
+							@input="_searchResetContribute"
+						>
+							<v-icon left>people</v-icon>
+							Contributes
+						</v-chip>
+
+					</div>
 					<v-card v-if="contributes.length">
 						<v-card-text expand>
 							<v-chip v-for="name in contributes" class="caption" @click="_searchByContribute(name)"
