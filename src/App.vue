@@ -2,26 +2,7 @@
 	<div id="app">
 		<v-app dark class="caption">
 
-			<v-toolbar
-				app
-				height="40" :clipped-left="$vuetify.breakpoint.lgAndUp"
-				fixed
-			>
-				<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-
-				<v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-					<router-link to="/" class="text-color-inherit">Novel</router-link>
-				</v-toolbar-title>
-
-				<v-spacer></v-spacer>
-
-				<v-toolbar-items>
-
-					<NavToolbarItems></NavToolbarItems>
-
-				</v-toolbar-items>
-
-			</v-toolbar>
+			<Topbar></Topbar>
 
 			<v-content>
 				<v-container fluid pa-0>
@@ -49,6 +30,7 @@ import { IVueComponent } from '@/lib/vue/index';
 import { Component, Vue, Watch, Prop } from 'vue-property-decorator';
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 import FooterItems from '@/components/Nav/FooterItems.vue'
+import Topbar from '@/components/Nav/Topbar.vue'
 
 import {
 	loadNovelStatCache,
@@ -59,8 +41,9 @@ import {
 
 @Component({
 	components: {
-		NavToolbarItems,
+		//NavToolbarItems,
 		FooterItems,
+		Topbar,
 	},
 })
 export default class extends Vue {

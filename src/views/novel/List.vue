@@ -73,68 +73,68 @@
 
 												<v-tooltip lazy bottom>
 
-														<v-img
-															:src="item.mdconf.novel.cover"
-															:lazy-src="img_unsplash(item)"
-															height="150px"
-															align-center="true"
-															align-content-center="true"
-															v-on:error="imageError"
-															v-on:load="imageLoaded"
-															slot="activator"
-															onclick="this && this.blur && this.blur()"
-														>
-															<v-expand-transition>
-																<div
-																	v-if="hover"
-																	class="d-flex transition-fast-in-fast-out purple darken-4  v-card--reveal white--text caption pre-wrap pa-0 ma-0"
-																	style="height: 100%;"
-																>{{ item.mdconf.novel.preface }}
-																</div>
-															</v-expand-transition>
+													<v-img
+														:src="item.mdconf.novel.cover"
+														:lazy-src="img_unsplash(item)"
+														height="150px"
+														align-center="true"
+														align-content-center="true"
+														v-on:error="imageError"
+														v-on:load="imageLoaded"
+														slot="activator"
+														onclick="this && this.blur && this.blur()"
+													>
+														<v-expand-transition>
+															<div
+																v-if="hover"
+																class="d-flex transition-fast-in-fast-out purple darken-4  v-card--reveal white--text caption pre-wrap pa-0 ma-0"
+																style="height: 100%;"
+															>{{ item.mdconf.novel.preface }}
+															</div>
+														</v-expand-transition>
 
 
-															<v-container pa-0 text-xs-right class="my-novel-tag" style="position: absolute;bottom: 0;right: 0;">
+														<v-container pa-0 text-xs-right class="my-novel-tag" style="position: absolute;bottom: 0;right: 0;">
 
-																<v-chip
-																	v-if="item.mdconf.novel.author"
-																	small
-																	class="text-xs-right caption"
-																	label
-																	color="pink accent-4" text-color="white"
-																>{{ item.mdconf.novel.author }}
-																</v-chip>
+															<v-chip
+																v-if="item.mdconf.novel.author"
+																small
+																class="text-xs-right caption"
+																label
+																color="pink accent-4" text-color="white"
+															>{{ item.mdconf.novel.author }}
+															</v-chip>
 
-																<v-chip
-																	small
-																	class="text-xs-right caption"
-																	label
-																	color="purple darken-4" text-color="white"
+															<v-chip
+																small
+																class="text-xs-right caption"
+																label
+																color="purple darken-4" text-color="white"
 
-																>{{ item.pathMain }}
-																</v-chip>
-
-
-															</v-container>
+															>{{ item.pathMain }}
+															</v-chip>
 
 
-														</v-img>
-
-
-														<v-container
-															fill-height
-															fluid
-															pa-2
-															style="height: 3em"
-															slot="activator"
-
-														>
-															<v-layout fill-height>
-																<v-flex xs12 align-end flexbox overflow-hidden class="text-no-wrap text-truncate">
-																	<span v-text="item.novelID"></span>
-																</v-flex>
-															</v-layout>
 														</v-container>
+
+
+													</v-img>
+
+
+													<v-container
+														fill-height
+														fluid
+														pa-2
+														style="height: 3em"
+														slot="activator"
+
+													>
+														<v-layout fill-height>
+															<v-flex xs12 align-end flexbox overflow-hidden class="text-no-wrap text-truncate">
+																<span v-text="item.novelID"></span>
+															</v-flex>
+														</v-layout>
+													</v-container>
 
 
 													<div slot="default">
@@ -197,7 +197,34 @@
 			</v-flex>
 		</v-layout>
 
-		<v-toolbar
+		<Topbar @drawer="onDrawer" :drawerValue="drawer">
+
+			<v-text-field
+				flat
+				solo-inverted
+				hide-details
+				prepend-inner-icon="search"
+				label="Search"
+				class="caption"
+				browser-autocomplete="true"
+				clearable
+				placeholder="搜尋標題 (使用 regexp-cjk 支援自動轉換簡繁日字漢字，以及一部分的 REGEXP 語法，空白視為分隔)"
+				persistent-hint
+				:value="cur_keyword"
+				@change="_searchByKeyword"
+				@click:clear="_searchResetKeyword"
+
+				@keyup.left="_stopEvent"
+				@keyup.right="_stopEvent"
+
+				@keyup.page-up="_stopEvent"
+				@keyup.page-down="_stopEvent"
+
+			></v-text-field>
+
+		</Topbar>
+
+		<!--v-toolbar
 			app
 			height="40" :clipped-left="$vuetify.breakpoint.lgAndUp"
 			fixed
@@ -205,7 +232,7 @@
 			<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
 
 			<v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-				<router-link to="/" class="text-color-inherit">Novel</router-link>
+				<router-link to="/" class="text-color-inherit top-bar-header-title">Novel</router-link>
 			</v-toolbar-title>
 
 			<v-text-field
@@ -241,7 +268,7 @@
 			</v-toolbar-items>
 
 
-		</v-toolbar>
+		</v-toolbar-->
 
 		<v-navigation-drawer
 			:clipped="$vuetify.breakpoint.lgAndUp"
@@ -364,6 +391,7 @@ import {
 	getNovelTitleFromMeta,
 } from '@/lib/novel';
 import { img_unsplash } from '@/lib/util';
+import Topbar from '@/components/Nav/Topbar.vue'
 
 const NovelData = dataAll();
 
@@ -372,6 +400,7 @@ const lowSrcMap = new WeakMap();
 @Component({
 	components: {
 		NavToolbarItems,
+		Topbar,
 	},
 })
 export default class List extends Vue
@@ -415,9 +444,16 @@ export default class List extends Vue
 		return data;
 	}
 
+	onDrawer(drawer: boolean)
+	{
+		console.log(777777, drawer);
+
+		this.drawer = drawer;
+	}
+
 	getNovelTitleFromMeta(mdconf, novelID?)
 	{
-		let ls =  getNovelTitleFromMeta(mdconf, novelID)
+		let ls = getNovelTitleFromMeta(mdconf, novelID)
 		return ls
 	}
 
