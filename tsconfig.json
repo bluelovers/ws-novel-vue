@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "inlineSourceMap": false,
     "inlineSources": false,
-    "removeComments": true,
+    "removeComments": false,
     "skipLibCheck": true,
     "baseUrl": ".",
 

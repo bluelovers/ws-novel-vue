@@ -3,10 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router);
 
-const routeNovels = () =>
-{
-	return import(/* webpackChunkName: "novel" */ '@/views/novel/List.vue')
-};
+const routeNovels = () => import(/* webpackChunkName: "novel" */ '@/views/novel/List.vue');
 
 export default new Router({
 	mode: 'history',

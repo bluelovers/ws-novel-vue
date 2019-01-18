@@ -108,6 +108,8 @@ module.exports = {
 
 //		config.plugins.set(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/))
 
+		console.dir(config.toConfig());
+
 		config
 			.plugin('fork-ts-checker')
 			/*

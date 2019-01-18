@@ -52,6 +52,7 @@ module.exports = {
         },
     },
     chainWebpack(config) {
+        util_1.default.dir(config.toConfig());
         config
             .plugin('fork-ts-checker')
             .tap(function (...argv) {
