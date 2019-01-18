@@ -2,6 +2,10 @@
 
 	<v-container fluid grid-list-md>
 
+		<vue-headful
+			title="cjk-conv"
+		/>
+
 		<v-container>
 			<v-switch
 				:label="'目前為 ' + (opt_tw2cn ? 'tw2cn' : 'cn2tw')" v-model="opt_tw2cn"
