@@ -44,6 +44,7 @@
     "diff": "^4.0.1",
     "firebase": "^5.7.3",
     "iview": "^3.2.2",
+    "lodash-decorators": "^6.0.1",
     "node-novel-info": "^2.3.19",
     "regexp-cjk": "^2.0.18",
     "str-util": "^2.3.17",

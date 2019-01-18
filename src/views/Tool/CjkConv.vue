@@ -81,6 +81,8 @@ import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 
 import { tw2cn, cn2tw } from 'cjk-conv/lib/zh/convert';
 import { tw2cn_min, cn2tw_min } from 'cjk-conv/lib/zh/convert/min';
+import Throttle from 'lodash-decorators/throttle';
+import Debounce from 'lodash-decorators/debounce';
 
 @Component
 export default class CjkConv extends Vue
@@ -135,17 +137,18 @@ export default class CjkConv extends Vue
 			.replace(/^[\r\n]+/g, '')
 		;
 
-		if (!text)
+		if (text)
+		{
+			this.onChange(text);
+		}
+		else
 		{
 			this.value_input = '';
 			this.onWatchChange();
 		}
-		else
-		{
-			this.value_input = text;
-		}
 	}
 
+	@Debounce(200)
 	onChange(text: string)
 	{
 		let old = this.value_input;
@@ -153,9 +156,13 @@ export default class CjkConv extends Vue
 			.replace(/^[\r\n]+/g, '')
 		;
 
-		if (old != text || text == '')
+		if (old != text || text)
 		{
 			this.runConv(text);
+		}
+		else if (!text)
+		{
+			this.runConv('');
 		}
 
 	}

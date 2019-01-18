@@ -13,10 +13,16 @@
 				<v-spacer></v-spacer>
 				<FooterItems/>
 				<v-spacer></v-spacer>
-				<div class="mr-2">
-					<a :href="`${publicPath}static/novel-stat.json`" target="_blank" rel="noopener" @click="_ga('click', 'api', 'novel-stat.json')">novel-stat.json</a>
+				<div class="mx-2 hidden-sm-and-down">
+						<a
+							:href="`${publicPath}static/novel-stat.json`"
+							target="_blank" rel="noopener"
+							@click="_ga('click', 'api', 'novel-stat.json')"
+							class="d-inline-block mr-2"
+						>novel-stat.json</a>
+					<div class="d-inline-block">&copy; {{ updateDate }}　</div>
 				</div>
-				<div class="mr-2">&copy; {{ updateDate }}　</div>
+
 			</v-footer>
 		</v-app>
 		<vue-headful
