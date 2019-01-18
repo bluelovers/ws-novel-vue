@@ -15,16 +15,29 @@ export default new Router({
 	base: process.env.BASE_URL,
 	routes: [
 
+		/*
 		{
-			name: 'searchValue',
+			name: 'search',
 			path: '/search/:searchType/:searchValue',
 			component: routeNovels,
 		},
+		*/
+
 		{
-			name: 'searchType',
+			name: 'search',
 			path: '/search/:searchType',
 			component: routeNovels,
+
+			children: [
+				{
+					path: ':searchValue',
+				},
+				{
+					path: '*',
+				},
+			],
 		},
+
 		{
 			name: 'history',
 			path: '/history',

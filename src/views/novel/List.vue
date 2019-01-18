@@ -460,6 +460,7 @@ export default class List extends Vue
 	{
 		this._updateTitle();
 
+		// @ts-ignore
 		if (this.$route.params.searchType)
 		{
 			setTimeout(() => this.onRouterChanged(this.$route, null), 250);
