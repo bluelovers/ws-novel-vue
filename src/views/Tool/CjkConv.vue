@@ -10,12 +10,12 @@
 		<v-layout row wrap>
 			<v-flex>
 				<v-textarea
-					class="caption"
+					:class="`caption ${$style.mytextarea}`"
 					outline
-					auto-grow
 					autofocus
 					clearable
 					counter
+					auto-grow
 					:rows="rows"
 					:loading="loading"
 					prepend-inner-icon="translate"
@@ -30,12 +30,12 @@
 			</v-flex>
 			<v-flex>
 				<v-textarea
-					class="caption"
+					:class="`caption ${$style.mytextarea}`"
 					outline
-					auto-grow
 					autofocus
 					clearable
 					counter
+					auto-grow
 					:rows="rows"
 					:loading="loading"
 					prepend-inner-icon="subject"
@@ -57,7 +57,8 @@ import { tw2cn, cn2tw } from 'cjk-conv/lib/zh/convert';
 import { tw2cn_min, cn2tw_min } from 'cjk-conv/lib/zh/convert/min';
 
 @Component
-export default class CjkConv extends Vue {
+export default class CjkConv extends Vue
+{
 	loading = false;
 
 	rows = 10;
@@ -131,6 +132,13 @@ export default class CjkConv extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
-
+<style module lang="scss">
+.mytextarea
+{
+	textarea
+	{
+		max-height: 60vh !important;
+		overflow: auto;
+	}
+}
 </style>
