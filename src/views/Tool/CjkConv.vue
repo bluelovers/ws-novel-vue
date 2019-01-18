@@ -116,6 +116,8 @@ export default class CjkConv extends Vue
 
 			const old = text;
 
+			this.value_input = old;
+
 			text = fn(text);
 		}
 
@@ -131,11 +133,17 @@ export default class CjkConv extends Vue
 		this.runConv(this.value_input);
 	}
 
+	fnTrim(text: string)
+	{
+		return (text || '')
+			.replace(/^[\r\n]+/g, '')
+			.replace(/\n{2,}$/g, '\n')
+		;
+	}
+
 	onInput(text?: string)
 	{
-		text = (text || '')
-			.replace(/^[\r\n]+/g, '')
-		;
+		text = this.fnTrim(text);
 
 		if (text)
 		{
@@ -148,13 +156,12 @@ export default class CjkConv extends Vue
 		}
 	}
 
-	@Debounce(200)
+	@Debounce(500)
 	onChange(text: string)
 	{
 		let old = this.value_input;
-		text = this.value_input = text
-			.replace(/^[\r\n]+/g, '')
-		;
+		text = this.fnTrim(text);
+		this.value_input = text;
 
 		if (old != text || text)
 		{
@@ -162,9 +169,11 @@ export default class CjkConv extends Vue
 		}
 		else if (!text)
 		{
+			text = '';
 			this.runConv('');
 		}
 
+		this.value_input = text;
 	}
 }
 </script>
@@ -174,6 +183,16 @@ export default class CjkConv extends Vue
 	textarea {
 		max-height: 60vh !important;
 		overflow: auto;
+	}
+}
+
+@media (max-width: 450px)
+{
+	.mytextarea {
+		textarea {
+			max-height: 30vh !important;
+			overflow: auto;
+		}
 	}
 }
 </style>
