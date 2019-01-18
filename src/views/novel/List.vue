@@ -413,6 +413,8 @@ export default class List extends Vue
 			chapter_range.unshift(50);
 			chapter_range.unshift(20);
 			chapter_range.unshift(10);
+			chapter_range.unshift(5);
+			chapter_range.unshift(0);
 
 			let ls = [];
 
