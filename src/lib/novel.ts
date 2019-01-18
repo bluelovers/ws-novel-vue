@@ -113,6 +113,8 @@ export function dataAll()
 							data.publishers.push(novel.mdconf.novel.publisher);
 						}
 					}
+
+					data.max_chapter = Math.max(data.max_chapter, novel.cache.chapter | 0);
 				})
 			;
 
@@ -130,6 +132,8 @@ export function dataAll()
 			authors: [] as string[],
 
 			publishers: [] as string[],
+
+			max_chapter: 0,
 
 			data: datamap,
 		})
@@ -157,6 +161,8 @@ export enum EnumEventLabel
 	TAG = 'tag',
 	API = 'api',
 	PUBLISHER = 'publisher',
+
+	CHAPTER_RANGE = 'chapter_range',
 }
 
 export function novelLink(pathMain: string, novelID: string)

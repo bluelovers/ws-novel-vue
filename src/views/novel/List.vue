@@ -328,6 +328,18 @@
 				@reset="_searchResetPublisher"
 			></PanelFilterTag>
 
+			<PanelFilterTag2
+				title="Chapters"
+
+				icon="library_books"
+
+				:items="chapter_range"
+				:value="cur_chapter_range"
+
+				@click="_searchByChapterRange"
+				@reset="_searchResetChapterRange"
+			></PanelFilterTag2>
+
 			<v-divider></v-divider>
 
 		</v-navigation-drawer>
@@ -347,6 +359,7 @@ import { IVueComponent } from '@/lib/vue/index';
 
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 import PanelFilterTag from '@/components/Novel/PanelFilterTag.vue'
+import PanelFilterTag2 from '@/components/Novel/PanelFilterTag2.vue'
 
 import {
 	dataAll,
@@ -370,6 +383,7 @@ const lowSrcMap = new WeakMap();
 		NavToolbarItems,
 		Topbar,
 		PanelFilterTag,
+		PanelFilterTag2,
 	},
 })
 export default class List extends Vue
@@ -383,6 +397,39 @@ export default class List extends Vue
 	{
 		let page_size = 12;
 		let page = 1;
+
+		let chapter_range: unknown[] = [];
+
+		{
+			let len = Math.ceil(NovelData.max_chapter / 100);
+
+			let size = (len * 100).toString().length;
+
+			while (len--)
+			{
+				chapter_range[len] = (len + 1) * 100;
+			}
+
+			chapter_range.unshift(50);
+			chapter_range.unshift(20);
+			chapter_range.unshift(10);
+
+			let ls = [];
+
+			[0].concat(chapter_range as number[]).reduce(function (p, value)
+			{
+
+				ls.push({
+					value,
+					min: p,
+					label: `${String(p).padStart(size, '0')}-${String(value).padStart(size, '0')}`
+				});
+
+				return value + 1;
+			});
+
+			chapter_range = ls;
+		}
 
 		let data = {
 //			dialog: false,
@@ -398,6 +445,8 @@ export default class List extends Vue
 			contributes: [] as typeof NovelData["contributes"],
 			authors: NovelData["authors"],
 
+			chapter_range,
+			cur_chapter_range: 0,
 
 			novels_all: NovelData.novels,
 
@@ -532,11 +581,61 @@ export default class List extends Vue
 			case  EnumEventLabel.PUBLISHER:
 				this._searchByPublisher(searchValue);
 				break;
+			case  EnumEventLabel.CHAPTER_RANGE:
+				this._searchByChapterRange(searchValue as any);
+				break;
 			default:
 				throw new TypeError(`searchType not exists: ${searchType}`)
 		}
 
 		this._setTitle([searchValue, searchType]);
+	}
+
+	_searchByChapterRange(value: {
+		value: number,
+		min: number,
+		label: string,
+	} | string)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_len = 0;
+
+		let keyword: number[] = (typeof value === 'object') ? [value.min, value.value] : value.split(/[-,]/) as number[];
+
+		console.log('_searchByChapterRange', value);
+
+		this._searchStatReset();
+
+		this._ga(EnumEventAction.SEARCH, EnumEventLabel.CHAPTER_RANGE, keyword.join('-'));
+
+		this._searchUpdateRouter(EnumEventLabel.CHAPTER_RANGE, keyword.join('-'));
+
+		if (keyword.length == 2)
+		{
+			_this.cur_chapter_range = keyword[1];
+
+			let ls = NovelData.novels
+				.reduce(function (ls, novel)
+				{
+					let i = (novel.cache && novel.cache.chapter) | 0;
+
+					if (i >= keyword[0] && i <= keyword[1])
+					{
+						ls.push(novel)
+					}
+
+					return ls;
+				}, [])
+			;
+
+			this._updateList(ls);
+		}
+		else
+		{
+			this._updateList([]);
+		}
 	}
 
 	_searchByPublisher(value: string)
@@ -572,9 +671,14 @@ export default class List extends Vue
 		this._updateList(ls);
 	}
 
+	_searchResetChapterRange()
+	{
+		return this._searchReset(EnumEventLabel.CHAPTER_RANGE)
+	}
+
 	_searchResetPublisher()
 	{
-		this._searchReset(EnumEventLabel.PUBLISHER)
+		return this._searchReset(EnumEventLabel.PUBLISHER)
 	}
 
 	_searchReset(searchType: EnumEventLabel)
@@ -591,7 +695,7 @@ export default class List extends Vue
 		this._searchUpdateRouter(EnumEventLabel.KEYWORD, '')
 	}
 
-	_searchUpdateRouter(searchType: EnumEventLabel, searchValue: string)
+	_searchUpdateRouter(searchType: EnumEventLabel, searchValue: string | number)
 	{
 		if (searchValue)
 		{
@@ -604,7 +708,7 @@ export default class List extends Vue
 
 					path: `/${EnumEventAction.SEARCH}/${searchType}`,
 					query: {
-						searchValue: searchValue || '',
+						searchValue: searchValue as string || '',
 					},
 				});
 			}
@@ -757,6 +861,7 @@ export default class List extends Vue
 		_this.cur_keyword = '';
 		_this.cur_author = '';
 		_this.cur_publisher = '';
+		_this.cur_chapter_range = null;
 	}
 
 	_searchByAuthor(value: string)
@@ -800,9 +905,9 @@ export default class List extends Vue
 	 * 由於實際上 eventValue 只能是數字 所以只好放棄 eventCategory
 	 * @private
 	 */
-	_ga(eventAction: EnumEventAction, eventLabel: EnumEventLabel, eventValue: string)
+	_ga(eventAction: EnumEventAction, eventLabel: EnumEventLabel, eventValue: string | number)
 	{
-		this.$ga && this.$ga.event(eventAction, eventLabel, eventValue)
+		this.$ga && this.$ga.event(eventAction, eventLabel, eventValue as string)
 	}
 
 	_searchByContribute(value: string)
