@@ -36,14 +36,14 @@
 					</v-chip>
 				</v-card-text>
 			</v-card>
-			<v-container v-else>
-				<v-alert
-					:value="true"
-					type="error"
-				>
-					NONE
-				</v-alert>
-			</v-container>
+			<v-alert
+				v-else
+				:value="true"
+				type="error"
+				class="pa-1 ma-0"
+			>
+				NONE
+			</v-alert>
 		</v-expansion-panel-content>
 
 	</v-expansion-panel>
@@ -53,7 +53,8 @@
 import { Component, Prop, Vue, Prop } from 'vue-property-decorator';
 
 @Component
-export default class PanelFilterTag extends Vue {
+export default class PanelFilterTag extends Vue
+{
 	@Prop({
 		type: String,
 		default: '',

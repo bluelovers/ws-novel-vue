@@ -15,6 +15,12 @@
 			</v-btn>
 		</router-link>
 
+		<router-link to="/tool/cjk-conv" class="text-color-inherit" style="display: inline-block;">
+			<v-btn icon class="my-0">
+				<v-icon>build</v-icon>
+			</v-btn>
+		</router-link>
+
 	</v-toolbar-items>
 </template>
 

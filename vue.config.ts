@@ -29,9 +29,12 @@ module.exports = {
 
 		optimization: {
 
+			/*
 			splitChunks: {
 				chunks: 'all',
 			},
+			*/
+
 			minimize: production,
 			minimizer: [new TerserPlugin({
 				sourceMap: development,

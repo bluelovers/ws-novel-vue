@@ -40,6 +40,7 @@
     "@node-novel/cache-loader": "^1.0.8",
     "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.3",
+    "cjk-conv": "^1.1.9",
     "diff": "^4.0.1",
     "firebase": "^5.7.3",
     "iview": "^3.2.2",

@@ -17,9 +17,6 @@ module.exports = {
             new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
         ],
         optimization: {
-            splitChunks: {
-                chunks: 'all',
-            },
             minimize: production,
             minimizer: [new TerserPlugin({
                     sourceMap: development,

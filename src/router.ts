@@ -1,14 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-//import Home from './views/Home.vue'
-//import Novels from './views/novel/List.vue'
 
 Vue.use(Router);
 
-function routeNovels()
+const routeNovels = () =>
 {
-	return import('./views/novel/List.vue')
-}
+	return import(/* webpackChunkName: "novel" */ '@/views/novel/List.vue')
+};
 
 export default new Router({
 	mode: 'history',
@@ -36,13 +34,31 @@ export default new Router({
 					path: '*',
 				},
 			],
+
 		},
 
 		{
 			name: 'history',
 			path: '/history',
-			component: () => import('./views/novel/Hisory.vue'),
+			component: () => import(/* webpackChunkName: "history" */ '@/views/novel/Hisory.vue'),
 		},
+
+		{
+			name: 'tool',
+			path: '/tool',
+
+			component: () => import(/* webpackChunkName: "tool" */ '@/views/Tool/Tool.vue'),
+
+			children: [
+				{
+					name: 'cjk-conv',
+					path: 'cjk-conv',
+					component: () => import(/* webpackChunkName: "tool" */ '@/views/Tool/CjkConv.vue'),
+				},
+			],
+
+		},
+
 		{
 			path: '/',
 			name: 'Novels',
