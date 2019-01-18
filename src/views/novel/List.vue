@@ -275,144 +275,62 @@
 			app
 			v-model="drawer"
 		>
-			<v-expansion-panel
-				expand
-				focusable
-			>
-				<v-expansion-panel-content>
-					<div slot="header">
-						<v-chip
-							class="caption"
-							small
-							label
-							:selected="!!cur_tag"
-							:close="!!cur_tag"
-							:color="cur_tag ? 'pink' : ''"
-							:text-color="cur_tag ? 'white' : ''"
-							@input="_searchResetTag"
-						>
-							<v-icon left>label</v-icon>
-							Tag
-						</v-chip>
-					</div>
-					<v-card v-if="tags.length">
-						<v-card-text expand>
-							<v-chip v-for="name in tags" class="caption" @click="_searchByTag(name)"
-									small
-									:selected="name === cur_tag"
-									:close="name === cur_tag"
-									@input="_searchResetTag"
-									label
-									:color="name === cur_tag ? 'pink' : ''"
-									:text-color="name === cur_tag ? 'white' : ''"
-							>
-								<v-icon left v-if="name === cur_tag">label</v-icon>
-								{{ name }}
-							</v-chip>
-						</v-card-text>
-					</v-card>
-					<v-container v-else>
-						<v-alert
-							:value="true"
-							type="error"
-						>
-							NONE
-						</v-alert>
-					</v-container>
-				</v-expansion-panel-content>
-			</v-expansion-panel>
+
+			<PanelFilterTag
+				title="Tag"
+
+				icon="label"
+
+				:items="tags"
+				:value="cur_tag"
+
+				@click="_searchByTag"
+				@reset="_searchResetTag"
+			></PanelFilterTag>
 
 			<v-divider></v-divider>
 
-			<v-expansion-panel
-				expand
-				focusable
-			>
-				<v-expansion-panel-content>
-					<div slot="header">
-						<v-chip
-							class="caption"
-							small
-							label
-							:selected="!!cur_author"
-							:close="!!cur_author"
-							:color="cur_author ? 'pink' : ''"
-							:text-color="cur_author ? 'white' : ''"
-							@input="_searchResetAuthor"
-						>
-							<v-icon left>school</v-icon>
-							Authors
-						</v-chip>
+			<PanelFilterTag
+				title="Authors"
 
-					</div>
-					<v-card v-if="authors.length">
-						<v-card-text expand>
-							<v-chip v-for="name in authors" class="caption" @click="_searchByAuthor(name)"
-									small
-									:selected="name === cur_author"
-									:close="name === cur_author"
-									@input="_searchResetAuthor"
-									label
-									:color="name === cur_author ? 'pink' : ''"
-									:text-color="name === cur_author ? 'white' : ''"
-							>
-								<v-icon left v-if="name === cur_author">label</v-icon>
-								{{ name }}
-							</v-chip>
-						</v-card-text>
-					</v-card>
-					<v-container v-else>
-						<span>NONE</span>
-					</v-container>
-				</v-expansion-panel-content>
+				icon="school"
 
-			</v-expansion-panel>
+				:items="authors"
+				:value="cur_author"
+
+				@click="_searchByAuthor"
+				@reset="_searchResetAuthor"
+			></PanelFilterTag>
 
 			<v-divider></v-divider>
 
-			<v-expansion-panel
-				expand
-				focusable
-			>
-				<v-expansion-panel-content>
-					<div slot="header">
-						<v-chip
-							class="caption"
-							small
-							label
-							:selected="!!cur_contribute"
-							:close="!!cur_contribute"
-							:color="cur_contribute ? 'pink' : ''"
-							:text-color="cur_contribute ? 'white' : ''"
-							@input="_searchResetContribute"
-						>
-							<v-icon left>people</v-icon>
-							Contributes
-						</v-chip>
+			<PanelFilterTag
+				title="Contributes"
 
-					</div>
-					<v-card v-if="contributes.length">
-						<v-card-text expand>
-							<v-chip v-for="name in contributes" class="caption" @click="_searchByContribute(name)"
-									small
-									:selected="name === cur_contribute"
-									:close="name === cur_contribute"
-									@input="_searchResetContribute"
-									label
-									:color="name === cur_contribute ? 'pink' : ''"
-									:text-color="name === cur_contribute ? 'white' : ''"
-							>
-								<v-icon left v-if="name === cur_contribute">label</v-icon>
-								{{ name }}
-							</v-chip>
-						</v-card-text>
-					</v-card>
-					<v-container v-else>
-						<span>NONE</span>
-					</v-container>
-				</v-expansion-panel-content>
+				icon="people"
 
-			</v-expansion-panel>
+				:items="contributes"
+				:value="cur_contribute"
+
+				@click="_searchByContribute"
+				@reset="_searchResetContribute"
+			></PanelFilterTag>
+
+			<v-divider></v-divider>
+
+			<PanelFilterTag
+				title="Publisher"
+
+				icon="local_library"
+
+				:items="publishers"
+				:value="cur_publisher"
+
+				@click="_searchByPublisher"
+				@reset="_searchResetPublisher"
+			></PanelFilterTag>
+
+			<v-divider></v-divider>
 
 		</v-navigation-drawer>
 
@@ -430,6 +348,7 @@ import StrUtil from 'str-util';
 import { IVueComponent } from '@/lib/vue/index';
 
 import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
+import PanelFilterTag from '@/components/Novel/PanelFilterTag.vue'
 
 import {
 	dataAll,
@@ -451,6 +370,7 @@ const lowSrcMap = new WeakMap();
 	components: {
 		NavToolbarItems,
 		Topbar,
+		PanelFilterTag,
 	},
 })
 export default class List extends Vue
@@ -458,6 +378,7 @@ export default class List extends Vue
 	//$ga: IVueAnalytics$ga;
 
 	page: number;
+	drawer: boolean;
 
 	data()
 	{
@@ -478,6 +399,7 @@ export default class List extends Vue
 			contributes: [] as typeof NovelData["contributes"],
 			authors: NovelData["authors"],
 
+
 			novels_all: NovelData.novels,
 
 			cur_keyword: '',
@@ -487,6 +409,9 @@ export default class List extends Vue
 
 			cur_title: '',
 			title: '',
+
+			cur_publisher: '',
+			publishers: NovelData["publishers"],
 		};
 
 		this._data_init();
@@ -496,8 +421,6 @@ export default class List extends Vue
 
 	onDrawer(drawer: boolean)
 	{
-		console.log(777777, drawer);
-
 		this.drawer = drawer;
 	}
 
@@ -606,11 +529,52 @@ export default class List extends Vue
 			case  EnumEventLabel.KEYWORD:
 				this._searchByKeyword(searchValue);
 				break;
+			case  EnumEventLabel.PUBLISHER:
+				this._searchByPublisher(searchValue);
+				break;
 			default:
 				throw new TypeError(`searchType not exists: ${searchType}`)
 		}
 
 		this._setTitle([searchValue, searchType]);
+	}
+
+	_searchByPublisher(value: string)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_len = 0;
+
+		let keyword = value;
+
+		//console.log('_searchByTag', value);
+
+		this._searchStatReset();
+		_this.cur_publisher = keyword;
+
+		this._ga(EnumEventAction.SEARCH, EnumEventLabel.PUBLISHER, keyword);
+
+		this._searchUpdateRouter(EnumEventLabel.PUBLISHER, keyword);
+
+		let ls = NovelData.novels
+			.reduce(function (ls, novel)
+			{
+				if (novel.mdconf.novel && novel.mdconf.novel.publisher && novel.mdconf.novel.publisher === keyword)
+				{
+					ls.push(novel)
+				}
+
+				return ls;
+			}, [])
+		;
+
+		this._updateList(ls);
+	}
+
+	_searchResetPublisher()
+	{
+		this._searchReset(EnumEventLabel.PUBLISHER)
 	}
 
 	_searchReset(searchType: EnumEventLabel)
@@ -792,6 +756,7 @@ export default class List extends Vue
 		_this.cur_contribute = '';
 		_this.cur_keyword = '';
 		_this.cur_author = '';
+		_this.cur_publisher = '';
 	}
 
 	_searchByAuthor(value: string)

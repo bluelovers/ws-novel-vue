@@ -91,19 +91,27 @@ export function dataAll()
 						data.contributes.push(...novel.mdconf.contribute);
 					}
 
-					if (novel.mdconf.novel && novel.mdconf.novel.tags && novel.mdconf.novel.tags.length)
+					if (novel.mdconf.novel)
 					{
-						data.tags.push(...novel.mdconf.novel.tags);
-					}
+						if (novel.mdconf.novel.tags && novel.mdconf.novel.tags.length)
+						{
+							data.tags.push(...novel.mdconf.novel.tags);
+						}
 
-					if (novel.mdconf.novel && novel.mdconf.novel.author)
-					{
-						data.authors.push(novel.mdconf.novel.author);
-					}
+						if (novel.mdconf.novel.author)
+						{
+							data.authors.push(novel.mdconf.novel.author);
+						}
 
-					if (novel.mdconf.novel && novel.mdconf.novel.authors && novel.mdconf.novel.authors.length)
-					{
-						data.authors.push(...novel.mdconf.novel.authors);
+						if (novel.mdconf.novel.authors && novel.mdconf.novel.authors.length)
+						{
+							data.authors.push(...novel.mdconf.novel.authors);
+						}
+
+						if (novel.mdconf.novel.publisher)
+						{
+							data.publishers.push(novel.mdconf.novel.publisher);
+						}
 					}
 				})
 			;
@@ -121,6 +129,8 @@ export function dataAll()
 
 			authors: [] as string[],
 
+			publishers: [] as string[],
+
 			data: datamap,
 		})
 	;
@@ -128,6 +138,7 @@ export function dataAll()
 	ret.tags = array_unique(ret.tags);
 	ret.contributes = array_unique(ret.contributes);
 	ret.authors = array_unique(ret.authors).sort(cacheSortCallback);
+	ret.publishers = array_unique(ret.publishers).sort(cacheSortCallback);
 
 	return ret
 }
@@ -145,6 +156,7 @@ export enum EnumEventLabel
 	KEYWORD = 'keyword',
 	TAG = 'tag',
 	API = 'api',
+	PUBLISHER = 'publisher',
 }
 
 export function novelLink(pathMain: string, novelID: string)
