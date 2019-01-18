@@ -356,6 +356,7 @@ import {
 	toHalfWidthLocaleLowerCase,
 	NovelInfo,
 	getNovelTitleFromMeta,
+	cacheSortCallback,
 } from '@/lib/novel';
 import { img_unsplash } from '@/lib/util';
 import Topbar from '@/components/Nav/Topbar.vue'
@@ -902,7 +903,7 @@ export default class List extends Vue
 				return ls;
 			}, []);
 
-			_this.tags = array_unique(ls);
+			_this.tags = array_unique(ls).sort(cacheSortCallback);
 		}
 
 		{
@@ -916,7 +917,7 @@ export default class List extends Vue
 				return ls;
 			}, []);
 
-			_this.contributes = array_unique(ls);
+			_this.contributes = array_unique(ls).sort(cacheSortCallback);
 		}
 
 		this._updateTitle();

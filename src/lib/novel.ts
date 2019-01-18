@@ -14,7 +14,7 @@ import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
 
 let novelStatCache: NovelStatCache;
 
-export { IFilterNovelData, INovelStatCacheHistory, createMoment, NovelInfo }
+export { IFilterNovelData, INovelStatCacheHistory, createMoment, NovelInfo, cacheSortCallback }
 
 export function loadNovelStatCache(reload?: boolean)
 {
