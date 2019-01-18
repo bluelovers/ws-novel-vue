@@ -15,44 +15,13 @@ export default new Router({
 	base: process.env.BASE_URL,
 	routes: [
 
-//		{
-//			path: '/',
-//			name: 'home',
-//			component: Home,
-//		},
-//		{
-//			path: '/about',
-//			name: 'about',
-//			// route level code-splitting
-//			// this generates a separate chunk (about.[hash].js) for this route
-//			// which is lazy-loaded when the route is visited.
-//			component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-//		}
-//		,
-//		{
-//			path: '/vuesax',
-//			name: 'Vuesax',
-//			// route level code-splitting
-//			// this generates a separate chunk (about.[hash].js) for this route
-//			// which is lazy-loaded when the route is visited.
-//			component: () => import(/* webpackChunkName: "about" */ './views/Vuesax.vue'),
-//		},
-
-		/*
 		{
-			path: '/',
-			name: 'Novels',
-			component: Novels,
-		},
-		*/
-
-		{
-			name: 'search',
+			name: 'searchValue',
 			path: '/search/:searchType/:searchValue',
 			component: routeNovels,
 		},
 		{
-			name: 'search',
+			name: 'searchType',
 			path: '/search/:searchType',
 			component: routeNovels,
 		},
@@ -67,5 +36,6 @@ export default new Router({
 			component: routeNovels,
 			alias: '*',
 		},
+
 	],
 })

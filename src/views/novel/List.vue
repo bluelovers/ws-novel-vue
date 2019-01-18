@@ -34,11 +34,9 @@
 					></v-pagination>
 				</div>
 
-				{{ query }}
-
 				<v-container
 					v-if="cur_len"
-					v-bind="{ [`grid-list-${size}`]: true }"
+
 					align-center="true"
 					align-content-center="true"
 					justify-center="true"

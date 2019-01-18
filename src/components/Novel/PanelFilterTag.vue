@@ -54,34 +54,39 @@ import { Component, Prop, Vue, Prop } from 'vue-property-decorator';
 
 @Component
 export default class PanelFilterTag extends Vue {
-	@Prop(String)
+	@Prop({
+		type: String,
+		default: '',
+	})
 	icon?: string;
-	@Prop(String)
+	@Prop({
+		type: String,
+		default: '',
+	})
 	itemIcon?: string;
 	@Prop(String)
 	title: string;
-	@Prop(String)
+	@Prop({
+		type: String,
+		default: '',
+	})
 	value?: string;
-	@Prop(Array)
+	@Prop({
+		type: Array,
+		default: [],
+	})
 	items: string[];
 
-	@Prop(String)
+	@Prop({
+		type: String,
+		default: 'white',
+	})
 	textColor?: string;
-	@Prop(String)
+	@Prop({
+		type: String,
+		default: 'pink',
+	})
 	color?: string;
-
-	data()
-	{
-		return {
-			icon: '',
-			itemIcon: '',
-			title: '',
-			value: '',
-			items: [] as string[],
-			textColor: 'white',
-			color: 'pink',
-		}
-	}
 
 	onReset()
 	{
