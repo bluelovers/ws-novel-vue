@@ -448,7 +448,7 @@ export default class List extends Vue
 			authors: NovelData["authors"],
 
 			chapter_range,
-			cur_chapter_range: 0,
+			cur_chapter_range: null as number,
 
 			novels_all: NovelData.novels,
 
