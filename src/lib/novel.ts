@@ -165,10 +165,13 @@ export enum EnumEventLabel
 	CHAPTER_RANGE = 'chapter_range',
 }
 
-export function novelLink(pathMain: string, novelID: string)
+/**
+ * return gitee link
+ */
+export function novelLink(pathMain: string, novelID: string, ...argv)
 {
 	return url.resolve('https://gitee.com/bluelovers/novel/tree/master/', [
 		pathMain,
 		novelID,
-	].join('/'))
+	].join('/')) + '/';
 }

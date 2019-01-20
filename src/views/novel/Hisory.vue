@@ -116,6 +116,8 @@ import moment from 'moment';
 //import('moment/locale/zh-tw');
 //import('moment/locale/zh-cn');
 
+import url from 'url';
+
 @Component({
 	components: {
 		NavToolbarItems,
@@ -134,7 +136,7 @@ export default class History extends Vue
 
 	novelLink(pathMain: string, novelID: string)
 	{
-		return novelLink(pathMain, novelID)
+		return url.resolve(novelLink(pathMain, novelID), '導航目錄.md') + '#tree-holder';
 	}
 
 	data()

@@ -361,6 +361,8 @@ import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
 import PanelFilterTag from '@/components/Novel/PanelFilterTag.vue'
 import PanelFilterTag2 from '@/components/Novel/PanelFilterTag2.vue'
 
+import url from 'url';
+
 import {
 	dataAll,
 	EnumEventAction,
@@ -370,6 +372,7 @@ import {
 	NovelInfo,
 	getNovelTitleFromMeta,
 	cacheSortCallback,
+	novelLink,
 } from '@/lib/novel';
 import { img_unsplash } from '@/lib/util';
 import Topbar from '@/components/Nav/Topbar.vue'
@@ -725,10 +728,7 @@ export default class List extends Vue
 
 	novelLink(data: IFilterNovelData)
 	{
-		return url.resolve('https://gitee.com/bluelovers/novel/tree/master/', [
-			data.pathMain,
-			data.novelID,
-		].join('/'))
+		return novelLink(data.pathMain, data.novelID) + '#tree-holder';
 	}
 
 	_searchResetKeyword()
