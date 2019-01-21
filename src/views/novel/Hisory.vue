@@ -192,7 +192,7 @@ export default class History extends Vue
 
 							chapter_add: 0,
 
-							author: mdconf.novel.author,
+							author: mdconf && mdconf.novel && mdconf.novel.author,
 
 							titles: getNovelTitleFromMeta(mdconf, novelID)
 						};
