@@ -697,7 +697,9 @@ export default class List extends Vue
 
 		this._updateList(NovelData.novels);
 
-		this._searchUpdateRouter(EnumEventLabel.KEYWORD, '')
+		this._searchUpdateRouter(EnumEventLabel.KEYWORD, '');
+
+		this._setTitle('');
 	}
 
 	_searchUpdateRouter(searchType: EnumEventLabel, searchValue: string | number)
