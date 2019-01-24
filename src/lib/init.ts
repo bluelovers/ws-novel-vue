@@ -13,6 +13,31 @@ import '@/assets/style.scss'
 //import '../plugins/firebase'
 import { production, development } from './const'
 
+import VueSession from 'vue-session'
+Vue.use(VueSession);
+
+declare module 'vue/types/vue'
+{
+
+	interface IVueSession
+	{
+		set(key,value)
+		get(key)
+		has(key)
+		remove(key)
+	}
+
+	interface Vue
+	{
+		$session: IVueSession
+	}
+
+	interface VueConstructor
+	{
+		$session: IVueSession
+	}
+}
+
 //import Vue2TouchEvents from 'vue2-touch-events'
 //Vue.use(Vue2TouchEvents);
 

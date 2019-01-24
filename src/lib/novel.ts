@@ -10,6 +10,7 @@ import url from 'url';
 import StrUtil from 'str-util';
 
 import NovelInfo = require('node-novel-info');
+import { NodeNovelInfo } from 'node-novel-info/class'
 import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
 
 let novelStatCache: NovelStatCache;
@@ -57,9 +58,15 @@ export function dataAll()
 			Object.entries(novels)
 				.forEach(function ([novelID, novel])
 				{
+					// @ts-ignore
+					const metaInfo = new NodeNovelInfo(novel.mdconf, {
+						throw: false,
+						lowCheckLevel: true,
+					});
+
 					let ks = array_unique([
 						novelID,
-						...NovelInfo.getNovelTitleFromMeta(novel.mdconf)
+						...metaInfo.titles(),
 					].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
 					;
 
@@ -86,32 +93,14 @@ export function dataAll()
 
 					data.novels.push(novel);
 
-					if (novel.mdconf.contribute && novel.mdconf.contribute.length)
-					{
-						data.contributes.push(...novel.mdconf.contribute);
-					}
+					data.contributes.push(...(novel.mdconf.contribute = metaInfo.contributes()));
 
 					if (novel.mdconf.novel)
 					{
-						if (novel.mdconf.novel.tags && novel.mdconf.novel.tags.length)
-						{
-							data.tags.push(...novel.mdconf.novel.tags);
-						}
-
-						if (novel.mdconf.novel.author)
-						{
-							data.authors.push(novel.mdconf.novel.author);
-						}
-
-						if (novel.mdconf.novel.authors && novel.mdconf.novel.authors.length)
-						{
-							data.authors.push(...novel.mdconf.novel.authors);
-						}
-
-						if (novel.mdconf.novel.publisher)
-						{
-							data.publishers.push(novel.mdconf.novel.publisher);
-						}
+						data.tags.push(...(novel.mdconf.novel.tags = metaInfo.tags()));
+						data.authors.push(...(novel.mdconf.novel.authors = metaInfo.authors()));
+						data.publishers.push(...(novel.mdconf.novel.publishers = metaInfo.publishers()));
+						data.illusts.push(...(novel.mdconf.novel.illusts = metaInfo.illusts()));
 					}
 
 					data.max_chapter = Math.max(data.max_chapter, novel.cache.chapter | 0);
@@ -133,16 +122,19 @@ export function dataAll()
 
 			publishers: [] as string[],
 
+			illusts: [] as string[],
+
 			max_chapter: 0,
 
 			data: datamap,
 		})
 	;
 
-	ret.tags = array_unique(ret.tags);
-	ret.contributes = array_unique(ret.contributes);
-	ret.authors = array_unique(ret.authors).sort(cacheSortCallback);
-	ret.publishers = array_unique(ret.publishers).sort(cacheSortCallback);
+	ret.tags = arr_unique_filter(ret.tags);
+	ret.contributes = arr_unique_filter(ret.contributes);
+	ret.authors = arr_unique_filter(ret.authors).sort(cacheSortCallback);
+	ret.publishers = arr_unique_filter(ret.publishers).sort(cacheSortCallback);
+	ret.illusts = arr_unique_filter(ret.illusts).sort(cacheSortCallback);
 
 	return ret
 }
@@ -162,6 +154,8 @@ export enum EnumEventLabel
 	API = 'api',
 	PUBLISHER = 'publisher',
 
+	ILLUST = 'illust',
+
 	CHAPTER_RANGE = 'chapter_range',
 }
 
@@ -174,4 +168,9 @@ export function novelLink(pathMain: string, novelID: string, ...argv)
 		pathMain,
 		novelID,
 	].join('/')) + '/';
+}
+
+function arr_unique_filter<T extends any[]>(arr: T)
+{
+	return array_unique(arr).filter(v => v && v != null && String(v).trim())
 }

@@ -28,6 +28,28 @@
 				</v-tooltip>
 			</v-checkbox>
 
+			<v-checkbox
+				label="safe mode"
+				v-model="opt_safe"
+				class="my-0"
+			>
+				<v-tooltip lazy top slot="append">
+					<v-icon slot="activator">help</v-icon>
+					除非有必要否則不要變動此選項
+				</v-tooltip>
+			</v-checkbox>
+
+			<v-flex xs12 sm6 md3>
+				<v-text-field
+					label="自定忽略文字不轉換"
+					box
+					clearable
+					:value="opt_skip"
+					@change="onInputSkip"
+					@input="onInputSkip"
+				></v-text-field>
+			</v-flex>
+
 		</v-container>
 
 		<v-layout row wrap>
@@ -42,7 +64,7 @@
 					:rows="rows"
 					:loading="loading"
 					prepend-inner-icon="translate"
-					:prepend-inner-icon-cb="onWatchChange"
+					@click:prepend-inner="onWatchChange"
 					label="Input textarea"
 					:value="value_input"
 					persistent-hint
@@ -83,10 +105,13 @@
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 
-import { tw2cn, cn2tw } from 'cjk-conv/lib/zh/convert';
+import { tw2cn, cn2tw, IOptions } from 'cjk-conv/lib/zh/convert';
 import { tw2cn_min, cn2tw_min } from 'cjk-conv/lib/zh/convert/min';
 import Throttle from 'lodash-decorators/throttle';
 import Debounce from 'lodash-decorators/debounce';
+import Bind from 'lodash-decorators/bind';
+import UString = require('uni-string');
+import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
 
 @Component
 export default class CjkConv extends Vue
@@ -100,6 +125,9 @@ export default class CjkConv extends Vue
 
 	opt_tw2cn = false;
 	opt_minmode = true;
+	opt_safe = true;
+
+	opt_skip = this.$session.get('opt_skip') || '';
 
 	runConv(text: string)
 	{
@@ -122,7 +150,18 @@ export default class CjkConv extends Vue
 
 			this.value_input = old;
 
-			text = fn(text);
+			let fn_options: IOptions = {};
+
+			if (this.opt_skip)
+			{
+				fn_options.skip = this.opt_skip;
+			}
+
+			fn_options.safe = this.opt_safe;
+
+			//console.dir(fn_options);
+
+			text = fn(text, fn_options);
 		}
 
 		this.value_output = text;
@@ -132,6 +171,8 @@ export default class CjkConv extends Vue
 
 	@Watch('opt_minmode')
 	@Watch('opt_tw2cn')
+	@Watch('opt_skip')
+	@Watch('opt_safe')
 	onWatchChange()
 	{
 		this.runConv(this.value_input);
@@ -143,6 +184,20 @@ export default class CjkConv extends Vue
 			.replace(/^[\r\n]+/g, '')
 			.replace(/\n{2,}$/g, '\n')
 		;
+	}
+
+	onInputSkip(text?: string)
+	{
+		text = this.fnTrim(text).replace(/[\s+\w]/ig, '');
+
+		if (text)
+		{
+			text = array_unique(UString.split(text, '')).join('')
+		}
+
+		this.opt_skip = text || '';
+
+		this.$session.set('opt_skip', this.opt_skip);
 	}
 
 	onInput(text?: string)
@@ -161,6 +216,7 @@ export default class CjkConv extends Vue
 	}
 
 	@Debounce(500)
+	@Bind
 	onChange(text: string)
 	{
 		let old = this.value_input;

@@ -328,6 +328,18 @@
 				@reset="_searchResetPublisher"
 			></PanelFilterTag>
 
+			<PanelFilterTag
+				title="Illust"
+
+				icon="color_lens"
+
+				:items="illusts"
+				:value="cur_illust"
+
+				@click="_searchByIllust"
+				@reset="_searchResetIllust"
+			></PanelFilterTag>
+
 			<PanelFilterTag2
 				title="Chapters"
 
@@ -465,6 +477,9 @@ export default class List extends Vue
 
 			cur_publisher: '',
 			publishers: NovelData["publishers"],
+
+			cur_illust: '',
+			illusts: NovelData["illusts"],
 		};
 
 		this._data_init();
@@ -586,6 +601,9 @@ export default class List extends Vue
 			case  EnumEventLabel.PUBLISHER:
 				this._searchByPublisher(searchValue);
 				break;
+			case  EnumEventLabel.ILLUST:
+				this._searchByPublisher(searchValue);
+				break;
 			case  EnumEventLabel.CHAPTER_RANGE:
 				this._searchByChapterRange(searchValue as any);
 				break;
@@ -664,7 +682,7 @@ export default class List extends Vue
 		let ls = NovelData.novels
 			.reduce(function (ls, novel)
 			{
-				if (novel.mdconf.novel && novel.mdconf.novel.publisher && novel.mdconf.novel.publisher === keyword)
+				if (novel.mdconf.novel && novel.mdconf.novel.publishers && novel.mdconf.novel.publishers.includes(keyword))
 				{
 					ls.push(novel)
 				}
@@ -676,14 +694,52 @@ export default class List extends Vue
 		this._updateList(ls);
 	}
 
-	_searchResetChapterRange()
-	{
-		return this._searchReset(EnumEventLabel.CHAPTER_RANGE)
-	}
-
 	_searchResetPublisher()
 	{
 		return this._searchReset(EnumEventLabel.PUBLISHER)
+	}
+
+	_searchByIllust(value: string)
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_len = 0;
+
+		let keyword = value;
+
+		//console.log('_searchByTag', value);
+
+		this._searchStatReset();
+		_this.cur_illust = keyword;
+
+		this._ga(EnumEventAction.SEARCH, EnumEventLabel.ILLUST, keyword);
+
+		this._searchUpdateRouter(EnumEventLabel.ILLUST, keyword);
+
+		let ls = NovelData.novels
+			.reduce(function (ls, novel)
+			{
+				if (novel.mdconf.novel && novel.mdconf.novel.illusts && novel.mdconf.novel.illusts.includes(keyword))
+				{
+					ls.push(novel)
+				}
+
+				return ls;
+			}, [])
+		;
+
+		this._updateList(ls);
+	}
+
+	_searchResetIllust()
+	{
+		return this._searchReset(EnumEventLabel.ILLUST)
+	}
+
+	_searchResetChapterRange()
+	{
+		return this._searchReset(EnumEventLabel.CHAPTER_RANGE)
 	}
 
 	_searchReset(searchType: EnumEventLabel)
