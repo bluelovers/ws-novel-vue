@@ -3,6 +3,7 @@
  */
 
 import fetch from 'cross-fetch';
+import ProjectSetting from '../src/setting/index';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
@@ -11,7 +12,7 @@ import console from './util';
 // @ts-ignore
 fetch.Promise = Bluebird;
 
-export = fetch('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
+export = fetch(ProjectSetting.FETCH_API)
 	.then(res => res.json())
 	.then(json => {
 

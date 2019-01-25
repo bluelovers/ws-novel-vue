@@ -1,4 +1,5 @@
 
+import ProjectSetting from '../setting';
 import create, {
 	createFromJSON, INovelStatCache, IFilterNovelData, IFilterNovel, NovelStatCache,
 	INovelStatCacheHistory,
@@ -164,7 +165,7 @@ export enum EnumEventLabel
  */
 export function novelLink(pathMain: string, novelID: string, ...argv)
 {
-	return url.resolve('https://gitee.com/bluelovers/novel/tree/master/', [
+	return url.resolve(ProjectSetting.NOVEL_LINK, [
 		pathMain,
 		novelID,
 	].join('/')) + '/';

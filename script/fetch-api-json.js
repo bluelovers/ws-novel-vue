@@ -1,12 +1,13 @@
 "use strict";
 const tslib_1 = require("tslib");
 const cross_fetch_1 = tslib_1.__importDefault(require("cross-fetch"));
+const index_1 = tslib_1.__importDefault(require("../src/setting/index"));
 const Bluebird = require("bluebird");
 const fs = require("fs-extra");
 const path = require("path");
 const util_1 = tslib_1.__importDefault(require("./util"));
 cross_fetch_1.default.Promise = Bluebird;
-module.exports = cross_fetch_1.default('https://gitee.com/bluelovers/novel/raw/master/novel-stat.json')
+module.exports = cross_fetch_1.default(index_1.default.FETCH_API)
     .then(res => res.json())
     .then(json => {
     let s = JSON.stringify(json, null, 2);
