@@ -602,7 +602,7 @@ export default class List extends Vue
 				this._searchByPublisher(searchValue);
 				break;
 			case  EnumEventLabel.ILLUST:
-				this._searchByPublisher(searchValue);
+				this._searchByIllust(searchValue);
 				break;
 			case  EnumEventLabel.CHAPTER_RANGE:
 				this._searchByChapterRange(searchValue as any);
@@ -614,84 +614,95 @@ export default class List extends Vue
 		this._setTitle([searchValue, searchType]);
 	}
 
+	_searchStatReset()
+	{
+		// @ts-ignore
+		let _this = this as ReturnType<List["data"]>;
+
+		_this.cur_tag = '';
+		_this.cur_contribute = '';
+		_this.cur_keyword = '';
+		_this.cur_author = '';
+		_this.cur_publisher = '';
+		_this.cur_chapter_range = null;
+		_this.cur_illust = '';
+	}
+
 	_searchByChapterRange(value: {
 		value: number,
 		min: number,
 		label: string,
 	} | string)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
+		return this.__searchBy001<{
+			value: number,
+			min: number,
+			label: string,
+		} | string, number[]>({
+			searchType: EnumEventLabel.CHAPTER_RANGE,
+			searchValue: value,
 
-		_this.cur_len = 0;
+			data_cur_key: 'cur_chapter_range',
 
-		let keyword: number[] = (typeof value === 'object') ? [value.min, value.value] : value.split(/[-,]/) as number[];
+			handleValue(value): number[]
+			{
+				return ((
+					(typeof value === 'object')
+					? [value.min, value.value]
+					: (value as string).split(/[-,]/)
+				)  as number[]).map(v => v | 0);
+			},
 
-		console.log('_searchByChapterRange', value);
+			handleKeyword(value, handledValue)
+			{
+				return handledValue.join('-')
+			},
 
-		this._searchStatReset();
+			handleData(value, handledValue)
+			{
+				return handledValue[1]
+			},
 
-		this._ga(EnumEventAction.SEARCH, EnumEventLabel.CHAPTER_RANGE, keyword.join('-'));
+			eachFilter(novel: IFilterNovelData, cache)
+			{
+				let i = (novel.cache && novel.cache.chapter) | 0;
 
-		this._searchUpdateRouter(EnumEventLabel.CHAPTER_RANGE, keyword.join('-'));
-
-		if (keyword.length == 2)
-		{
-			_this.cur_chapter_range = keyword[1];
-
-			let ls = NovelData.novels
-				.reduce(function (ls, novel)
+				if (i >= cache.keyword[0] && i <= cache.keyword[1])
 				{
-					let i = (novel.cache && novel.cache.chapter) | 0;
+					return true;
+				}
+			},
 
-					if (i >= keyword[0] && i <= keyword[1])
-					{
-						ls.push(novel)
-					}
-
-					return ls;
-				}, [])
-			;
-
-			this._updateList(ls);
-		}
-		else
-		{
-			this._updateList([]);
-		}
+			onPreCheck({
+				keyword
+			})
+			{
+				return keyword.length == 2
+			},
+		});
 	}
 
 	_searchByPublisher(value: string)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
+		return this.__searchBy001({
+			searchType: EnumEventLabel.PUBLISHER,
+			searchValue: value,
 
-		_this.cur_len = 0;
+			data_cur_key: 'cur_publisher',
 
-		let keyword = value;
-
-		//console.log('_searchByTag', value);
-
-		this._searchStatReset();
-		_this.cur_publisher = keyword;
-
-		this._ga(EnumEventAction.SEARCH, EnumEventLabel.PUBLISHER, keyword);
-
-		this._searchUpdateRouter(EnumEventLabel.PUBLISHER, keyword);
-
-		let ls = NovelData.novels
-			.reduce(function (ls, novel)
+			eachFilter(novel: IFilterNovelData, cache
+			): boolean
 			{
-				if (novel.mdconf.novel && novel.mdconf.novel.publishers && novel.mdconf.novel.publishers.includes(keyword))
+				if (
+					novel.mdconf.novel
+					&& novel.mdconf.novel.publishers
+					&& novel.mdconf.novel.publishers.includes(cache.keyword)
+				)
 				{
-					ls.push(novel)
+					return true;
 				}
-
-				return ls;
-			}, [])
-		;
-
-		this._updateList(ls);
+			}
+		});
 	}
 
 	_searchResetPublisher()
@@ -699,37 +710,143 @@ export default class List extends Vue
 		return this._searchReset(EnumEventLabel.PUBLISHER)
 	}
 
-	_searchByIllust(value: string)
+	protected __searchBy001<V extends unknown | string | number, R extends unknown | string>(setting: {
+		searchType: EnumEventLabel,
+		searchValue: V,
+
+		data_cur_key: string,
+
+		handleValue?<T extends R>(value: V, handledValue?: T): R,
+		handleKeyword?<T extends R>(value: V, handledValue: T): string,
+		handleData?<T extends R>(value: V, handledValue: T),
+
+		onSearchReset?(this: List),
+
+		eachFilter(novel: IFilterNovelData, cache: {
+			searchValue: V,
+			keyword: R,
+			list: IFilterNovelData[],
+		}): boolean,
+
+		onPreCheck?(cache: {
+			searchValue: V,
+			keyword: R,
+		}): boolean,
+	})
 	{
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
+		let {
+			searchType,
+			searchValue,
+			data_cur_key,
+
+			handleValue,
+			handleKeyword,
+			handleData,
+			eachFilter,
+
+			onSearchReset,
+
+			onPreCheck,
+		} = setting;
+
 		_this.cur_len = 0;
 
-		let keyword = value;
+		let keyword = handleValue ? handleValue(searchValue) : searchValue;
 
-		//console.log('_searchByTag', value);
+		let keyword2: string;
+
+		if (handleKeyword || handleValue)
+		{
+			keyword2 = (handleKeyword ? handleKeyword : handleValue)(searchValue, keyword);
+		}
+		else
+		{
+			keyword2 = searchValue;
+		}
+
+		let keyword3;
+
+		if (handleData || handleKeyword || handleValue)
+		{
+			keyword3 = (handleData || handleKeyword || handleValue)(searchValue, keyword);
+		}
+		else
+		{
+			keyword3 = keyword2;
+		}
 
 		this._searchStatReset();
-		_this.cur_illust = keyword;
 
-		this._ga(EnumEventAction.SEARCH, EnumEventLabel.ILLUST, keyword);
+		// @ts-ignore
+		onSearchReset && onSearchReset.call(this as List);
 
-		this._searchUpdateRouter(EnumEventLabel.ILLUST, keyword);
+		_this[data_cur_key] = keyword3;
 
-		let ls = NovelData.novels
-			.reduce(function (ls, novel)
+		this._ga(EnumEventAction.SEARCH, searchType, keyword2);
+
+		this._searchUpdateRouter(searchType, keyword2);
+
+		const self = this;
+
+		if (!onPreCheck || onPreCheck && onPreCheck({
+			searchValue,
+			keyword,
+		}))
+		{
+			// @ts-ignore
+			process.nextTick(() =>
 			{
-				if (novel.mdconf.novel && novel.mdconf.novel.illusts && novel.mdconf.novel.illusts.includes(keyword))
+				let cache = NovelData.novels
+					.reduce(function (cache, novel)
+					{
+						let bool = eachFilter(novel, cache);
+
+						if (bool)
+						{
+							cache.list.push(novel)
+						}
+
+						return cache;
+					}, {
+						searchValue,
+						keyword,
+						list: [] as IFilterNovelData[],
+					})
+				;
+
+				self._updateList(cache.list);
+			});
+		}
+		else
+		{
+			self._updateList([]);
+		}
+	}
+
+	_searchByIllust(value: string)
+	{
+		return this.__searchBy001({
+			searchType: EnumEventLabel.ILLUST,
+			searchValue: value,
+
+			data_cur_key: 'cur_illust',
+
+			eachFilter(novel: IFilterNovelData, cache
+			): boolean
+			{
+				if (
+					novel.mdconf.novel
+					&& novel.mdconf.novel.illusts
+					&& novel.mdconf.novel.illusts.includes(cache.keyword)
+				)
 				{
-					ls.push(novel)
+					return true;
 				}
-
-				return ls;
-			}, [])
-		;
-
-		this._updateList(ls);
+			}
+		});
 	}
 
 	_searchResetIllust()
@@ -877,88 +994,50 @@ export default class List extends Vue
 
 	_searchByTag(value: string)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
+		return this.__searchBy001({
+			searchType: EnumEventLabel.TAG,
+			searchValue: value,
 
-		_this.cur_len = 0;
+			data_cur_key: 'cur_tag',
 
-		let keyword = value;
-
-		//console.log('_searchByTag', value);
-
-		this._searchStatReset();
-		_this.cur_tag = keyword;
-
-		this._ga(EnumEventAction.SEARCH, EnumEventLabel.TAG, keyword);
-
-		this._searchUpdateRouter(EnumEventLabel.TAG, keyword);
-
-		let ls = NovelData.novels
-			.reduce(function (ls, novel)
+			eachFilter(novel: IFilterNovelData, cache
+			): boolean
 			{
-				if (novel.mdconf.novel && novel.mdconf.novel.tags && novel.mdconf.novel.tags.length)
+				if (
+					novel.mdconf.novel
+					&& novel.mdconf.novel.tags
+					&& novel.mdconf.novel.tags.length
+					&& novel.mdconf.novel.tags.includes(cache.keyword)
+				)
 				{
-					if (novel.mdconf.novel.tags.includes(keyword))
-					{
-						ls.push(novel)
-					}
+					return true;
 				}
-
-				return ls;
-			}, [])
-		;
-
-		this._updateList(ls);
-	}
-
-	_searchStatReset()
-	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
-
-		_this.cur_tag = '';
-		_this.cur_contribute = '';
-		_this.cur_keyword = '';
-		_this.cur_author = '';
-		_this.cur_publisher = '';
-		_this.cur_chapter_range = null;
+			}
+		});
 	}
 
 	_searchByAuthor(value: string)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
+		return this.__searchBy001({
+			searchType: EnumEventLabel.AUTHOR,
+			searchValue: value,
 
-		_this.cur_len = 0;
+			data_cur_key: 'cur_author',
 
-		let keyword = value;
-
-		//console.log('_searchByContribute', value);
-
-		this._searchStatReset();
-
-		this._ga(EnumEventAction.SEARCH, EnumEventLabel.AUTHOR, keyword);
-		this._searchUpdateRouter(EnumEventLabel.AUTHOR, keyword);
-
-		_this.cur_author = keyword;
-
-		let ls = NovelData.novels
-			.reduce(function (ls, novel)
+			eachFilter(novel: IFilterNovelData, cache
+			): boolean
 			{
-				if (novel.mdconf.novel.author === keyword)
+				if (
+					novel.mdconf.novel
+					&& novel.mdconf.novel.authors
+					&& novel.mdconf.novel.authors.length
+					&& novel.mdconf.novel.authors.includes(cache.keyword)
+				)
 				{
-					ls.push(novel)
+					return true;
 				}
-				else if (novel.mdconf.novel.authors && novel.mdconf.novel.authors.length && novel.mdconf.novel.authors.includes(keyword))
-				{
-					ls.push(novel)
-				}
-
-				return ls;
-			}, [])
-		;
-
-		this._updateList(ls);
+			}
+		});
 	}
 
 	/**
@@ -972,38 +1051,26 @@ export default class List extends Vue
 
 	_searchByContribute(value: string)
 	{
-		// @ts-ignore
-		let _this = this as ReturnType<List["data"]>;
+		return this.__searchBy001({
+			searchType: EnumEventLabel.CONTRIBUTE,
+			searchValue: value,
 
-		_this.cur_len = 0;
+			data_cur_key: 'cur_contribute',
 
-		let keyword = value;
-
-		//console.log('_searchByContribute', value);
-
-		this._searchStatReset();
-		this._searchUpdateRouter(EnumEventLabel.CONTRIBUTE, keyword);
-
-		_this.cur_contribute = keyword;
-
-		this._ga(EnumEventAction.SEARCH, EnumEventLabel.CONTRIBUTE, keyword);
-
-		let ls = NovelData.novels
-			.reduce(function (ls, novel)
+			eachFilter(novel: IFilterNovelData, cache
+			): boolean
 			{
-				if (novel.mdconf.novel && novel.mdconf.contribute && novel.mdconf.contribute.length)
+				if (
+					novel.mdconf.novel
+					&& novel.mdconf.contribute
+					&& novel.mdconf.contribute.length
+					&& novel.mdconf.contribute.includes(cache.keyword)
+				)
 				{
-					if (novel.mdconf.contribute.includes(keyword))
-					{
-						ls.push(novel)
-					}
+					return true;
 				}
-
-				return ls;
-			}, [])
-		;
-
-		this._updateList(ls);
+			}
+		});
 	}
 
 	_searchResetTag(data?)
