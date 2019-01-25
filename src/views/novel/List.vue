@@ -439,7 +439,7 @@ export default class List extends Vue
 				ls.push({
 					value,
 					min: p,
-					label: `${String(p).padStart(size, '0')}-${String(value).padStart(size, '0')}`
+					label: `${String(p).padStart(size, '0')}-${String(value).padStart(size, '0')}`,
 				});
 
 				return value + 1;
@@ -648,9 +648,9 @@ export default class List extends Vue
 			{
 				return ((
 					(typeof value === 'object')
-					? [value.min, value.value]
-					: (value as string).split(/[-,]/)
-				)  as number[]).map(v => v | 0);
+						? [value.min, value.value]
+						: (value as string).split(/[-,]/)
+				) as number[]).map(v => v | 0);
 			},
 
 			handleKeyword(value, handledValue)
@@ -674,7 +674,7 @@ export default class List extends Vue
 			},
 
 			onPreCheck({
-				keyword
+				keyword,
 			})
 			{
 				return keyword.length == 2
@@ -690,7 +690,7 @@ export default class List extends Vue
 
 			data_cur_key: 'cur_publisher',
 
-			eachFilter(novel: IFilterNovelData, cache
+			eachFilter(novel: IFilterNovelData, cache,
 			): boolean
 			{
 				if (
@@ -701,7 +701,7 @@ export default class List extends Vue
 				{
 					return true;
 				}
-			}
+			},
 		});
 	}
 
@@ -796,29 +796,25 @@ export default class List extends Vue
 			keyword,
 		}))
 		{
-			// @ts-ignore
-			process.nextTick(() =>
-			{
-				let cache = NovelData.novels
-					.reduce(function (cache, novel)
+			let cache = NovelData.novels
+				.reduce(function (cache, novel)
+				{
+					let bool = eachFilter(novel, cache);
+
+					if (bool)
 					{
-						let bool = eachFilter(novel, cache);
+						cache.list.push(novel)
+					}
 
-						if (bool)
-						{
-							cache.list.push(novel)
-						}
+					return cache;
+				}, {
+					searchValue,
+					keyword,
+					list: [] as IFilterNovelData[],
+				})
+			;
 
-						return cache;
-					}, {
-						searchValue,
-						keyword,
-						list: [] as IFilterNovelData[],
-					})
-				;
-
-				self._updateList(cache.list);
-			});
+			self._updateList(cache.list);
 		}
 		else
 		{
@@ -834,7 +830,7 @@ export default class List extends Vue
 
 			data_cur_key: 'cur_illust',
 
-			eachFilter(novel: IFilterNovelData, cache
+			eachFilter(novel: IFilterNovelData, cache,
 			): boolean
 			{
 				if (
@@ -845,7 +841,7 @@ export default class List extends Vue
 				{
 					return true;
 				}
-			}
+			},
 		});
 	}
 
@@ -1000,7 +996,7 @@ export default class List extends Vue
 
 			data_cur_key: 'cur_tag',
 
-			eachFilter(novel: IFilterNovelData, cache
+			eachFilter(novel: IFilterNovelData, cache,
 			): boolean
 			{
 				if (
@@ -1012,7 +1008,7 @@ export default class List extends Vue
 				{
 					return true;
 				}
-			}
+			},
 		});
 	}
 
@@ -1024,7 +1020,7 @@ export default class List extends Vue
 
 			data_cur_key: 'cur_author',
 
-			eachFilter(novel: IFilterNovelData, cache
+			eachFilter(novel: IFilterNovelData, cache,
 			): boolean
 			{
 				if (
@@ -1036,7 +1032,7 @@ export default class List extends Vue
 				{
 					return true;
 				}
-			}
+			},
 		});
 	}
 
@@ -1057,7 +1053,7 @@ export default class List extends Vue
 
 			data_cur_key: 'cur_contribute',
 
-			eachFilter(novel: IFilterNovelData, cache
+			eachFilter(novel: IFilterNovelData, cache,
 			): boolean
 			{
 				if (
@@ -1069,7 +1065,7 @@ export default class List extends Vue
 				{
 					return true;
 				}
-			}
+			},
 		});
 	}
 
