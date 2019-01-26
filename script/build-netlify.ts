@@ -20,6 +20,7 @@ export const env = parseNetlifyEnv(getNetlifyEnv());
 	console.gray(`-`.repeat(10));
 	console.dir(env, {
 		depth: 5,
+		colors: true,
 	});
 
 	console.gray(`-`.repeat(10));

@@ -11,6 +11,7 @@ exports.env = netlify_env2_1.parseNetlifyEnv(netlify_env2_1.getNetlifyEnv());
     util_1.default.gray(`-`.repeat(10));
     util_1.default.dir(exports.env, {
         depth: 5,
+        colors: true,
     });
     util_1.default.gray(`-`.repeat(10));
     util_1.default.info(`check env and hook`);
