@@ -9,3 +9,15 @@ Access-Control-Allow-Headers: X-Requested-With, Content-Type, Accept
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
 Access-Control-Allow-Headers: X-Requested-With, Content-Type, Accept
+
+/*.js
+Cache-control: public, max-age=2592000
+
+/*.css
+Cache-control: public, max-age=2592000
+
+/**/*.js
+Cache-control: public, max-age=2592000
+
+/**/*.css
+Cache-control: public, max-age=2592000
