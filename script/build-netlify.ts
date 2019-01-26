@@ -87,9 +87,9 @@ export function skipBuild()
 		else if (json.event_type === 'merge_request')
 		{
 			// @ts-ignore
-			if (json.object_attributes != 'unchecked')
+			if (json.object_attributes && json.object_attributes.state == 'merged')
 			{
-
+				return Bluebird.delay(5000).thenReturn(false);
 			}
 		}
 
