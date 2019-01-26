@@ -11,12 +11,7 @@ const path = require("path");
 const cwd = path.join(__dirname, '..');
 module.exports = (async () => {
     await Promise.resolve().then(() => __importStar(require('./build/yarn-list')));
-    await cross_spawn_extra_1.async('node', [
-        path.join(__dirname, './fetch-api-json'),
-    ], {
-        cwd,
-        stdio: 'inherit',
-    });
+    await Promise.resolve().then(() => __importStar(require('./fetch-api-json')));
     await cross_spawn_extra_1.async('yarn', [
         'run',
         'build-base',

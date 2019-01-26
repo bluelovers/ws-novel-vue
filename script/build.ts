@@ -14,13 +14,16 @@ export = (async () =>
 {
 	await import('./build/yarn-list');
 
+	/*
 	await CrossSpawn('node', [
-		path.join(__dirname, './fetch-api-json'),
+		path.resolve(__dirname, './fetch-api-json'),
 	], {
 		cwd,
 		stdio: 'inherit',
 	})
 	;
+	*/
+	await import('./fetch-api-json');
 
 	await CrossSpawn('yarn', [
 		'run',

@@ -9,7 +9,9 @@ exports.env = netlify_env2_1.parseNetlifyEnv(netlify_env2_1.getNetlifyEnv());
 (async () => {
     util_1.default.debug(`NetlifyEnv：`);
     util_1.default.gray(`-`.repeat(10));
-    util_1.default.dir(exports.env);
+    util_1.default.dir(exports.env, {
+        depth: 5,
+    });
     util_1.default.gray(`-`.repeat(10));
     util_1.default.info(`check env and hook`);
     util_1.default.gray(`-`.repeat(10));
@@ -47,8 +49,12 @@ function skipBuild() {
                     }
                     break;
             }
-            return true;
         }
+        else if (json.event_type === 'merge_request') {
+            if (json.object_attributes != 'unchecked') {
+            }
+        }
+        return true;
     }
     return null;
 }

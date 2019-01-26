@@ -18,7 +18,9 @@ export const env = parseNetlifyEnv(getNetlifyEnv());
 
 	console.debug(`NetlifyEnv：`);
 	console.gray(`-`.repeat(10));
-	console.dir(env);
+	console.dir(env, {
+		depth: 5,
+	});
 
 	console.gray(`-`.repeat(10));
 
@@ -79,9 +81,18 @@ export function skipBuild()
 
 					break;
 			}
-
-			return true;
 		}
+		// @ts-ignore
+		else if (json.event_type === 'merge_request')
+		{
+			// @ts-ignore
+			if (json.object_attributes != 'unchecked')
+			{
+
+			}
+		}
+
+		return true;
 	}
 
 	return null;
