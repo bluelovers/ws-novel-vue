@@ -30,3 +30,5 @@ yarn-error.log*
 *.js.map
 !/vue.config.js
 /a.js
+
+!/src/setting/index.js
