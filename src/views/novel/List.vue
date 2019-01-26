@@ -899,7 +899,14 @@ export default class List extends Vue
 
 	novelLink(data: IFilterNovelData)
 	{
-		return novelLink(data.pathMain, data.novelID) + '#tree-holder';
+		let link = novelLink(data.pathMain, data.novelID);
+
+		if (data.cache && data.cache.chapter > 0)
+		{
+			link = url.resolve(link, '導航目錄.md')
+		}
+
+		return link + '#tree-holder';
 	}
 
 	_searchResetKeyword()
