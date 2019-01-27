@@ -92,6 +92,15 @@ export function skipBuild()
 				return Bluebird.delay(5000).thenReturn(false);
 			}
 		}
+		// @ts-ignore
+		else if (json.event_name === 'push')
+		{
+			// @ts-ignore
+			if (json.total_commits_count && json.ref == 'refs/heads/master')
+			{
+				return Bluebird.delay(5000).thenReturn(false);
+			}
+		}
 
 		return true;
 	}
