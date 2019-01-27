@@ -110,6 +110,12 @@ module.exports = {
 
 		console.dir(config.toConfig());
 
+		/*
+		config.optimization.splitChunks({
+			chunks: 'all',
+		});
+		*/
+
 		config
 			.plugin('fork-ts-checker')
 			/*

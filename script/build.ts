@@ -23,13 +23,13 @@ export = (async () =>
 	})
 	;
 	*/
-	await import('./fetch-api-json');
+	await import('./fetch-api-json').catch(e => null);
 
 	await CrossSpawn('yarn', [
 		'run',
 		'build-base',
-		'--',
-		'--report',
+		//'--',
+		//'--report',
 		//'--client-log-level',
 		//'none',
 	], {

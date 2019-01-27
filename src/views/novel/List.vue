@@ -274,7 +274,21 @@
 			v-model="drawer"
 		>
 
-			<PanelFilterTag
+			<PanelFilterTag3
+				title="Tag"
+
+				icon="label"
+
+				:items="tags"
+				:value="cur_tag"
+
+				:itemOptions="searchItemOptions('tag')"
+
+				@click="_searchByTag2"
+				@reset="_searchResetTag2"
+			></PanelFilterTag3>
+
+			<!--PanelFilterTag
 				title="Tag"
 
 				icon="label"
@@ -284,7 +298,7 @@
 
 				@click="_searchByTag"
 				@reset="_searchResetTag"
-			></PanelFilterTag>
+			></PanelFilterTag-->
 
 			<v-divider></v-divider>
 
@@ -361,33 +375,28 @@
 </template>
 
 <script lang="ts">
-import { IVueAnalytics$ga } from '@/plugins/vue-analytics';
+import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
+import Topbar from '@/components/Nav/Topbar.vue'
+import PanelFilterTag from '@/components/Novel/PanelFilterTag.vue'
+import PanelFilterTag2 from '@/components/Novel/PanelFilterTag2.vue'
+import PanelFilterTag3, { IVChipTagItem, IVChipTagOptions } from '@/components/Novel/PanelFilterTag3.vue'
+
+import {
+	cacheSortCallback,
+	dataAll,
+	EnumEventAction,
+	EnumEventLabel,
+	getNovelTitleFromMeta,
+	IFilterNovelData,
+	novelLink,
+	toHalfWidthLocaleLowerCase,
+} from '@/lib/novel';
+import { img_unsplash } from '@/lib/util';
+import { IVueComponent } from '@/lib/vue/index';
 import { array_unique } from 'array-hyper-unique'
 import url from 'url';
 import { Component, Vue, Watch } from 'vue-property-decorator';
 import { Route } from 'vue-router'
-import StrUtil from 'str-util';
-import { IVueComponent } from '@/lib/vue/index';
-
-import NavToolbarItems from '@/components/Nav/ToolbarItems.vue'
-import PanelFilterTag from '@/components/Novel/PanelFilterTag.vue'
-import PanelFilterTag2 from '@/components/Novel/PanelFilterTag2.vue'
-
-import url from 'url';
-
-import {
-	dataAll,
-	EnumEventAction,
-	EnumEventLabel,
-	IFilterNovelData,
-	toHalfWidthLocaleLowerCase,
-	NovelInfo,
-	getNovelTitleFromMeta,
-	cacheSortCallback,
-	novelLink,
-} from '@/lib/novel';
-import { img_unsplash } from '@/lib/util';
-import Topbar from '@/components/Nav/Topbar.vue'
 
 const NovelData = dataAll();
 
@@ -399,6 +408,7 @@ const lowSrcMap = new WeakMap();
 		Topbar,
 		PanelFilterTag,
 		PanelFilterTag2,
+		PanelFilterTag3,
 	},
 })
 export default class List extends Vue
@@ -468,7 +478,7 @@ export default class List extends Vue
 			novels_all: NovelData.novels,
 
 			cur_keyword: '',
-			cur_tag: '',
+			cur_tag: [],
 			cur_contribute: '',
 			cur_author: '',
 
@@ -778,6 +788,14 @@ export default class List extends Vue
 			keyword3 = keyword2;
 		}
 
+		/*
+		console.log({
+			keyword,
+			keyword2,
+			keyword3,
+		});
+		*/
+
 		this._searchStatReset();
 
 		// @ts-ignore
@@ -813,6 +831,8 @@ export default class List extends Vue
 					list: [] as IFilterNovelData[],
 				})
 			;
+
+			//console.log(cache);
 
 			self._updateList(cache.list);
 		}
@@ -873,6 +893,8 @@ export default class List extends Vue
 
 	_searchUpdateRouter(searchType: EnumEventLabel, searchValue: string | number)
 	{
+		//console.log('_searchUpdateRouter', searchType, searchValue);
+
 		if (searchValue)
 		{
 			let q = this._queryParams(this.$route);
@@ -995,13 +1017,108 @@ export default class List extends Vue
 		}
 	}
 
-	_searchByTag(value: string)
+	searchItemOptions(type: EnumEventLabel): IVChipTagOptions
+	{
+		if (type == EnumEventLabel.TAG)
+		{
+			return {
+				isSelected(item: IVChipTagItem, value): boolean
+				{
+					//console.log('searchItemOptions:isSelected', item, value);
+
+					if (Array.isArray(value))
+					{
+						return (value as any as string[]).includes(item.value)
+					}
+					else if (value != null && value == item.value)
+					{
+						return true;
+					}
+				},
+			}
+		}
+	}
+
+	_searchResetTag2(item, value)
+	{
+		//console.log('_searchResetTag2', item, value);
+
+		if (!item)
+		{
+			this._searchResetTag();
+		}
+		else if (Array.isArray(value))
+		{
+			value = value.filter(v => v != item.value)
+
+			if (value.length)
+			{
+				this._searchByTag(value)
+			}
+			else
+			{
+				this._searchResetTag();
+			}
+		}
+		else
+		{
+			this._searchResetTag();
+		}
+	}
+
+	_searchByTag2(item, value: string | string[])
+	{
+		//console.log('_searchByTag', item, value);
+
+		if (!value)
+		{
+			value = [];
+		}
+		else if (!Array.isArray(value))
+		{
+			value = value ? [value] : [];
+		}
+
+		if (Array.isArray(value))
+		{
+			// @ts-ignore
+			this._searchByTag([...value].concat(item.value));
+		}
+	}
+
+	_searchByTag(value: string | string[])
 	{
 		return this.__searchBy001({
 			searchType: EnumEventLabel.TAG,
 			searchValue: value,
 
+			handleValue(value)
+			{
+				if (value && value.length)
+				{
+					// @ts-ignore
+					let ret = Array.isArray(value) ? value : String(value).split(',');
+
+					return array_unique(ret).filter(v => v != null)
+				}
+			},
+
+			handleData(v, k)
+			{
+				return k;
+			},
+
+			handleKeyword(value, k)
+			{
+				return Array.isArray(k) && k.join(',') || value
+			},
+
 			data_cur_key: 'cur_tag',
+
+			onPreCheck(cache): boolean
+			{
+				return cache.keyword && cache.keyword.length && true
+			},
 
 			eachFilter(novel: IFilterNovelData, cache,
 			): boolean
@@ -1010,10 +1127,19 @@ export default class List extends Vue
 					novel.mdconf.novel
 					&& novel.mdconf.novel.tags
 					&& novel.mdconf.novel.tags.length
-					&& novel.mdconf.novel.tags.includes(cache.keyword)
 				)
 				{
-					return true;
+					if (Array.isArray(cache.keyword))
+					{
+						return (cache.keyword as string[]).every(v => {
+							let bool = novel.mdconf.novel.tags.includes(v);
+							return bool;
+						})
+					}
+					else
+					{
+						return novel.mdconf.novel.tags.includes(cache.keyword)
+					}
 				}
 			},
 		});

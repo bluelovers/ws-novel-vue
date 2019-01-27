@@ -10,6 +10,10 @@ cross_fetch_1.default.Promise = Bluebird;
 module.exports = cross_fetch_1.default(index_1.default.FETCH_API)
     .then(res => res.json())
     .then(json => {
+    if (!json.novels || !json.mdconf) {
+        util_1.default.error(`fail saved`, 'novel-stat.json');
+        return Promise.reject(new Error([`fail saved`, 'novel-stat.json'].join(' ')));
+    }
     let s = JSON.stringify(json, null, 2);
     let root = path.join(__dirname, '..');
     return Bluebird.all([

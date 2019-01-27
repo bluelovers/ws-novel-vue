@@ -22,7 +22,7 @@
   "scripts": {
     "build-netlify": "node ./script/build-netlify",
     "build": "node ./script/build",
-    "build-base": "vue-cli-service build",
+    "build-base": "vue-cli-service build --report",
     "build-modern": "vue-cli-service build --modern --color",
     "deploy-and-build": "vue-cli-ghpages",
     "deploy-ghpages": "vue-cli-ghpages",
@@ -46,7 +46,7 @@
     "iview": "^3.2.2",
     "lodash": "^4.17.11",
     "lodash-decorators": "^6.0.1",
-    "node-novel-info": "^2.3.22",
+    "node-novel-info": "^2.3.24",
     "regexp-cjk": "^2.0.19",
     "str-util": "^2.3.17",
     "uni-string": "^1.1.0",

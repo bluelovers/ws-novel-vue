@@ -16,6 +16,13 @@ export = fetch(ProjectSetting.FETCH_API)
 	.then(res => res.json())
 	.then(json => {
 
+		if (!json.novels || !json.mdconf)
+		{
+			console.error(`fail saved`, 'novel-stat.json');
+
+			return Promise.reject(new Error([`fail saved`, 'novel-stat.json'].join(' ')))
+		}
+
 		let s = JSON.stringify(json, null, 2);
 
 		let root = path.join(__dirname, '..');
