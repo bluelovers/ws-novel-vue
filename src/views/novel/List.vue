@@ -389,14 +389,15 @@ import {
 	getNovelTitleFromMeta,
 	IFilterNovelData,
 	novelLink,
-	toHalfWidthLocaleLowerCase,
-} from '@/lib/novel';
+	} from '@/lib/novel';
 import { img_unsplash } from '@/lib/util';
 import { IVueComponent } from '@/lib/vue/index';
 import { array_unique } from 'array-hyper-unique'
 import url from 'url';
 import { Component, Vue, Watch } from 'vue-property-decorator';
 import { Route } from 'vue-router'
+import { toHalfWidthLocaleLowerCase, handleSearchText } from '@/lib/conv';
+import { getZhRegExp, zhRegExpGreedy, zhRegExpGreedyMatchWords } from '@/lib/regexp';
 
 const NovelData = dataAll();
 
@@ -629,7 +630,7 @@ export default class List extends Vue
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
-		_this.cur_tag = '';
+		_this.cur_tag = null;
 		_this.cur_contribute = '';
 		_this.cur_keyword = '';
 		_this.cur_author = '';
@@ -734,6 +735,7 @@ export default class List extends Vue
 
 		eachFilter(novel: IFilterNovelData, cache: {
 			searchValue: V,
+			preCheckReturn: unknown,
 			keyword: R,
 			list: IFilterNovelData[],
 		}): boolean,
@@ -809,10 +811,13 @@ export default class List extends Vue
 
 		const self = this;
 
-		if (!onPreCheck || onPreCheck && onPreCheck({
+		let onPreCheckReturn: unknown;
+		let _cache = {
 			searchValue,
 			keyword,
-		}))
+		};
+
+		if (!onPreCheck || onPreCheck && (onPreCheckReturn = onPreCheck(_cache)))
 		{
 			let cache = NovelData.novels
 				.reduce(function (cache, novel)
@@ -826,8 +831,8 @@ export default class List extends Vue
 
 					return cache;
 				}, {
-					searchValue,
-					keyword,
+					..._cache,
+					preCheckReturn: onPreCheckReturn,
 					list: [] as IFilterNovelData[],
 				})
 			;
@@ -955,7 +960,7 @@ export default class List extends Vue
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
-		let ks = toHalfWidthLocaleLowerCase(keyword)
+		let ks = handleSearchText(toHalfWidthLocaleLowerCase(keyword))
 			.replace(/([\.\?])+/g, '$1')
 			.split(/[\s　#\-,@]+/)
 			.map(function (v: string)
@@ -983,12 +988,7 @@ export default class List extends Vue
 
 			try
 			{
-				// @ts-ignore
-				const zhRegExp = require('regexp-cjk').zhRegExp || RegExp as import('regexp-cjk').zhRegExp;
-
-				const r = new zhRegExp(ks.join('|'), 'iu', {
-					greedyTable: true,
-				});
+				const r = zhRegExpGreedy(ks);
 
 				//console.info(r);
 
@@ -1057,7 +1057,24 @@ export default class List extends Vue
 		}
 		else if (Array.isArray(value))
 		{
-			value = value.filter(v => v != item.value)
+			let iv = item.value;
+			let ivr = zhRegExpGreedyMatchWords(iv);
+
+			if (!ivr || typeof ivr === 'string')
+			{
+				ivr = null;
+			}
+
+			value = value.filter(v => {
+				let bool = v != iv;
+
+				if (bool && ivr)
+				{
+					bool = !(ivr as RegExp).test(v)
+				}
+
+				return bool;
+			});
 
 			if (value.length)
 			{
@@ -1096,7 +1113,10 @@ export default class List extends Vue
 
 	_searchByTag(value: string | string[])
 	{
-		return this.__searchBy001({
+		let _old_tags: string[] = [];
+		let _all_tags: string[] = [];
+
+		this.__searchBy001({
 			searchType: EnumEventLabel.TAG,
 			searchValue: value,
 
@@ -1118,14 +1138,26 @@ export default class List extends Vue
 
 			handleKeyword(value, k)
 			{
-				return Array.isArray(k) && k.join(',') || value
+				return Array.isArray(k) && (k as string[]).join(',') || value
 			},
 
 			data_cur_key: 'cur_tag',
 
 			onPreCheck(cache): boolean
 			{
-				return cache.keyword && cache.keyword.length && true
+				let bool = cache.keyword && cache.keyword.length && true;
+
+				if (Array.isArray(cache.keyword))
+				{
+					_old_tags = (cache.keyword as string[]).slice();
+
+					cache.keyword = (cache.keyword as string[]).map(function (v)
+					{
+						return zhRegExpGreedyMatchWords(v)
+					}) as any;
+				}
+
+				return bool
 			},
 
 			eachFilter(novel: IFilterNovelData, cache,
@@ -1140,7 +1172,29 @@ export default class List extends Vue
 					if (Array.isArray(cache.keyword))
 					{
 						return (cache.keyword as string[]).every(v => {
-							let bool = novel.mdconf.novel.tags.includes(v);
+
+							let bool: boolean;
+
+							if (typeof v === 'string')
+							{
+								bool = novel.mdconf.novel.tags.includes(v);
+							}
+							else if (v)
+							{
+								bool = novel.mdconf.novel.tags
+									.some(s => {
+										let bool = (v as RegExp).test(s);
+
+										if (bool)
+										{
+											_all_tags.push(s);
+										}
+
+										return bool;
+									})
+								;
+							}
+
 							return bool;
 						})
 					}
@@ -1151,6 +1205,16 @@ export default class List extends Vue
 				}
 			},
 		});
+
+		if (_old_tags && _old_tags.length && _all_tags && _all_tags.length)
+		{
+			_all_tags = array_unique(_all_tags);
+
+			// @ts-ignore
+			this.cur_tag = _all_tags;
+
+			//console.log(_old_tags, _all_tags);
+		}
 	}
 
 	_searchByAuthor(value: string)

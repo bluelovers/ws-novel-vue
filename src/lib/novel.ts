@@ -1,18 +1,18 @@
-
 import ProjectSetting from '../setting';
-import create, {
-	createFromJSON, INovelStatCache, IFilterNovelData, IFilterNovel, NovelStatCache,
-	INovelStatCacheHistory,
+import {
+	createFromJSON,
 	createMoment,
+	IFilterNovelData,
+	INovelStatCache,
+	INovelStatCacheHistory,
+	NovelStatCache,
 } from '@node-novel/cache-loader'
 import { cacheSortCallback } from '@node-novel/cache-loader/lib/util'
-import path = require('path');
 import url from 'url';
-import StrUtil from 'str-util';
-
-import NovelInfo = require('node-novel-info');
 import { NodeNovelInfo } from 'node-novel-info/class'
-import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
+import { array_unique } from 'array-hyper-unique'
+import { toHalfWidthLocaleLowerCase } from '@/lib/conv';
+import NovelInfo = require('node-novel-info');
 
 let novelStatCache: NovelStatCache;
 
@@ -30,11 +30,6 @@ export function loadNovelStatCache(reload?: boolean)
 	return novelStatCache = createFromJSON(novelStatJson, {
 		readonly: true,
 	});
-}
-
-export function toHalfWidthLocaleLowerCase(s: string)
-{
-	return StrUtil.toHalfWidth(s).toLocaleLowerCase()
 }
 
 export function getNovelTitleFromMeta(mdconf: NovelInfo.IMdconfMeta, novelID?: string)
