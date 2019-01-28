@@ -118,6 +118,8 @@ import moment from 'moment';
 
 import url from 'url';
 
+const novelStatCache = loadNovelStatCache();
+
 @Component({
 	components: {
 		NavToolbarItems,
@@ -136,13 +138,28 @@ export default class History extends Vue
 
 	novelLink(pathMain: string, novelID: string)
 	{
-		return url.resolve(novelLink(pathMain, novelID), '導航目錄.md') + '#tree-holder';
+		let novel = novelStatCache.novel(pathMain, novelID);
+
+		let link = novelLink(pathMain, novelID);
+
+		let hash = '#tree-holder';
+
+		if (novel && novel.chapter > 0)
+		{
+			link = url.resolve(link, '導航目錄.md');
+
+			hash = '#blob-content-holder';
+		}
+		else if (novel && novel.chapter === 0)
+		{
+			hash = '#readme';
+		}
+
+		return link + hash;
 	}
 
 	data()
 	{
-		const novelStatCache = loadNovelStatCache();
-
 		let _historys = novelStatCache.historys().reverse();
 
 		let { timestamp, todayTimestamp } = novelStatCache.data.meta;
