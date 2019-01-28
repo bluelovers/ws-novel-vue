@@ -36,7 +36,7 @@
     "test": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@bluelovers/tsconfig": "^1",
+    "@bluelovers/tsconfig": "^1.0.1",
     "@node-novel/cache-loader": "^1.0.9",
     "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.3",
@@ -103,6 +103,7 @@
     "yorkie": "^2.0.0"
   },
   "resolutions": {
+    "@bluelovers/tsconfig": "^1.0.1",
     "regexp-cjk": "^2.0.19",
     "cjk-conv": "^1.1.12",
     "node-novel-info": "^2.3.24",
