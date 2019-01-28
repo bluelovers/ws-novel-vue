@@ -1,6 +1,8 @@
 import zhRegExp from 'regexp-cjk';
 import { toHalfWidthLocaleLowerCase } from '@/lib/conv';
 
+let _err: boolean;
+
 export function getZhRegExp(): typeof zhRegExp
 {
 	try
@@ -12,6 +14,12 @@ export function getZhRegExp(): typeof zhRegExp
 	}
 	catch (e)
 	{
+		if (!_err)
+		{
+			console.exception(e);
+		}
+		_err = true;
+
 		// @ts-ignore
 		return RegExp
 	}
