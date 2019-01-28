@@ -10,7 +10,7 @@ const cross_spawn_extra_1 = require("cross-spawn-extra");
 const path = require("path");
 const cwd = path.join(__dirname, '..');
 module.exports = (async () => {
-    await Promise.resolve().then(() => __importStar(require('./build/yarn-list')));
+    await Promise.resolve().then(() => __importStar(require('./build/yarn-list'))).catch(e => null);
     await Promise.resolve().then(() => __importStar(require('./fetch-api-json'))).catch(e => null);
     await cross_spawn_extra_1.async('yarn', [
         'run',

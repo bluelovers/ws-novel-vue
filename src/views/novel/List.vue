@@ -923,12 +923,20 @@ export default class List extends Vue
 	{
 		let link = novelLink(data.pathMain, data.novelID);
 
+		let hash = '#tree-holder';
+
 		if (data.cache && data.cache.chapter > 0)
 		{
-			link = url.resolve(link, '導航目錄.md')
+			link = url.resolve(link, '導航目錄.md');
+
+			hash = '#blob-content-holder';
+		}
+		else if (data.cache && data.cache.chapter === 0)
+		{
+			hash = '#readme';
 		}
 
-		return link + '#tree-holder';
+		return link + hash;
 	}
 
 	_searchResetKeyword()

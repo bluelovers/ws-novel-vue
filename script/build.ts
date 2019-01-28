@@ -12,7 +12,7 @@ const cwd = path.join(__dirname, '..');
 
 export = (async () =>
 {
-	await import('./build/yarn-list');
+	await import('./build/yarn-list').catch(e => null);
 
 	/*
 	await CrossSpawn('node', [
@@ -35,6 +35,7 @@ export = (async () =>
 	], {
 		cwd,
 		stdio: 'inherit',
+		//env: process.env,
 	})
 	;
 
