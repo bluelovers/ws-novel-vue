@@ -988,7 +988,7 @@ export default class List extends Vue
 
 			try
 			{
-				const r = zhRegExpGreedy(ks);
+				const r = zhRegExpGreedy(ks, 'i');
 
 				console.info('_searchByKeyword', r);
 
@@ -1151,12 +1151,12 @@ export default class List extends Vue
 				{
 					_old_tags = (cache.keyword as string[]).slice();
 
-					cache.keyword = (cache.keyword as string[]).map(function (v)
+					cache.keyword = array_unique((cache.keyword as string[]).map(function (v)
 					{
 						return zhRegExpGreedyMatchWords(v)
-					}) as any;
+					})) as any;
 
-					console.log('_searchByTag', _old_tags, cache.keyword);
+					//console.log('_searchByTag', 1, _old_tags, cache.keyword);
 				}
 
 				return bool
@@ -1215,7 +1215,7 @@ export default class List extends Vue
 			// @ts-ignore
 			this.cur_tag = _all_tags;
 
-			//console.log(_old_tags, _all_tags);
+			//console.log('_searchByTag', 2, _old_tags, _all_tags);
 		}
 	}
 

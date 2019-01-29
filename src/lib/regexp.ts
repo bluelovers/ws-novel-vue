@@ -3,6 +3,7 @@ import { toHalfWidthLocaleLowerCase } from '@/lib/conv';
 import { array_unique } from 'array-hyper-unique'
 
 let _err: boolean;
+let _err2: boolean;
 
 export function getZhRegExp(): typeof zhRegExp
 {
@@ -20,8 +21,8 @@ export function getZhRegExp(): typeof zhRegExp
 		if (!_err)
 		{
 			console.error(e);
+			_err = true;
 		}
-		_err = true;
 
 		// @ts-ignore
 		return RegExp
@@ -57,13 +58,17 @@ export function zhRegExpGreedyMatchWords(input: string)
 
 		let k2 = `\^(${k})\$`;
 
-		console.log('zhRegExpGreedyMatchWords', k2, rs);
+		//console.log('zhRegExpGreedyMatchWords', k2, rs);
 
 		return zhRegExpGreedy(rs, 'ui')
 	}
 	catch (e)
 	{
-		console.error(e);
+		if (!_err2)
+		{
+			console.error(e);
+			_err2 = true;
+		}
 		return String(input);
 	}
 }
