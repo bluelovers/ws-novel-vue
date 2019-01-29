@@ -15,6 +15,7 @@ module.exports = cross_spawn_extra_1.async('yarn', [
         '*ts-loader*',
         'vue*',
         '*webpack*',
+        '*terser*',
     ])
         .filter(v => !/lodash|firebase|@types/i.test(v))
         .join('|'),

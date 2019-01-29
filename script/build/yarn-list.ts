@@ -21,6 +21,7 @@ export = CrossSpawn('yarn', [
 		'*ts-loader*',
 		'vue*',
 		'*webpack*',
+		'*terser*',
 	])
 		.filter(v => !/lodash|firebase|@types/i.test(v))
 		.join('|')

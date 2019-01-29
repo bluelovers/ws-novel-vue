@@ -47,7 +47,7 @@
     "lodash": "^4.17.11",
     "lodash-decorators": "^6.0.1",
     "node-novel-info": "^2.3.24",
-    "regexp-cjk": "^2.0.19",
+    "regexp-cjk": "^2.0.20",
     "str-util": "^2.3.17",
     "uni-string": "^1.1.0",
     "vue": "^2.5.22",
@@ -104,8 +104,10 @@
   },
   "resolutions": {
     "@bluelovers/tsconfig": "^1.0.1",
-    "regexp-cjk": "^2.0.19",
+    "regexp-cjk": "^2.0.20",
     "cjk-conv": "^1.1.12",
+    "regexp-parser-literal": "^1.0.2",
+    "regexpp2": "^1.1.2",
     "node-novel-info": "^2.3.24",
     "@types/node": "^10"
   },

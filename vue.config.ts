@@ -9,11 +9,13 @@ const development = !production;
 
 console.debug('NODE_ENV', process.env.NODE_ENV);
 
+let allowSourceMap: boolean = development;
+
 module.exports = {
 
 	publicPath: '/',
 
-	productionSourceMap: development,
+	productionSourceMap: allowSourceMap,
 
 	runtimeCompiler: true,
 
@@ -24,6 +26,7 @@ module.exports = {
 			 * https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
 			 */
 			new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
+			new webpack.IgnorePlugin(/zh[/\\]convert[/\\].*\.txt/, /cjk-conv/),
 		],
 //		devtool: !production,
 
@@ -35,11 +38,17 @@ module.exports = {
 			},
 			*/
 
+			runtimeChunk: {
+				name: entrypoint => `runtime~${entrypoint.name}`
+			},
+
 			minimize: production,
 			minimizer: [new TerserPlugin({
-				sourceMap: development,
+				sourceMap: allowSourceMap,
 
 				//parallel: true,
+
+				exclude: /regexp-cjk|regex/,
 
 				terserOptions: {
 					compress: {
@@ -55,7 +64,7 @@ module.exports = {
 						unused: false,
 						warnings: true,
 					},
-					sourceMap: production ? undefined : {
+					sourceMap: !allowSourceMap ? undefined : {
 						url: "includeSources",
 						includeSources: true,
 					},
@@ -161,7 +170,7 @@ module.exports = {
 		/**
 		 * 不要將 moudle 設為 true 否則插件的 CSS 全都會失敗 無法自動導入
 		 */
-		sourceMap: development,
+		sourceMap: allowSourceMap,
 	},
 
 	devServer: {

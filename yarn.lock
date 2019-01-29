@@ -2022,7 +2022,7 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-cjk-conv@^1.1.10, cjk-conv@^1.1.12, cjk-conv@^1.1.4:
+cjk-conv@^1.1.12, cjk-conv@^1.1.4:
   version "1.1.12"
   resolved "https://registry.yarnpkg.com/cjk-conv/-/cjk-conv-1.1.12.tgz#d62fdb811602fdba30b73f6ce72f215d466e4cd1"
   integrity sha512-RpQUrtmaMeFJZYyivGfWyVe74umfnrmbFkSSfyMx3bSKBH9LC8+HPTwx88QLjnSsMoYbhuGTvfcd8e+hjFz5lw==
@@ -3324,7 +3324,7 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-emoji-regex@^7.0.1:
+emoji-regex@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
   integrity sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
@@ -7936,19 +7936,19 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
-regexp-cjk@^2.0.19:
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/regexp-cjk/-/regexp-cjk-2.0.19.tgz#78555885dcbcff44e07e61005ee3addba9a58ef7"
-  integrity sha512-lLHptWo6wLM5xhdMPmWqPxXExadzXtU1W6mmXpu+jyGTAc9kgvIChRAunRL8lGJUQRWeeH29jcRixMHFJlQnkw==
+regexp-cjk@^2.0.20:
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/regexp-cjk/-/regexp-cjk-2.0.20.tgz#5490ce76dee9e20315eb5f16ab6887e3b9b333e8"
+  integrity sha512-ZtFfgs/l0ZhE94qDumNESb63ThZfqiSp+0TG/CN8VJ4ToH5k8N9tDiJR0f1ltphRXoSZbGiEmQJJvm4N9kFmxA==
   dependencies:
     array-hyper-unique "^1.0.7"
-    cjk-conv "^1.1.10"
+    cjk-conv "^1.1.12"
     regexp-helper "^1.0.7"
     regexp-parser-event "^1.0.2"
-    regexp-parser-literal "^1.0.1"
+    regexp-parser-literal "^1.0.2"
     regexp-range "^1.0.4"
     regexp-support "^1.0.23"
-    regexpp2 "^1.1.1"
+    regexpp2 "^1.1.2"
     uni-string "^1.1.0"
 
 regexp-helper-core@^1.0.5:
@@ -7972,15 +7972,15 @@ regexp-parser-event@^1.0.2:
     regexp-parser-literal "^1.0.1"
     regexpp2 "^1.1.1"
 
-regexp-parser-literal@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/regexp-parser-literal/-/regexp-parser-literal-1.0.1.tgz#ca37d8308083b4e0f5b3d5b7597cbdab24866ea1"
-  integrity sha512-+8HXh2aRAf/JamhdS/mzF3JsEJVmnlIPLjiE9jMDh8GoYzDQ1Xh9xfzY0S/chLQjrlq3Z5r3FAU0TWfjtNQ+6w==
+regexp-parser-literal@^1.0.1, regexp-parser-literal@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/regexp-parser-literal/-/regexp-parser-literal-1.0.2.tgz#722100ab977dc35ef15763da1b6284d7298c48e8"
+  integrity sha512-sf23m3WT2nJKUT80aexoFCJyWK1vAdYLdKdsPufDpZqSBi2ux/JVrt3xc9F8SLojgkFNQLApWnXb7uL3kuUr7Q==
   dependencies:
     array-hyper-unique "^1.0.7"
-    emoji-regex "^7.0.1"
-    regexpp2 "^1.1.1"
-    uni-string "^1.0.2"
+    emoji-regex "^7.0.3"
+    regexpp2 "^1.1.2"
+    uni-string "^1.1.0"
 
 regexp-range@^1.0.4:
   version "1.0.4"
@@ -7995,10 +7995,10 @@ regexp-support@^1.0.23:
   resolved "https://registry.yarnpkg.com/regexp-support/-/regexp-support-1.0.23.tgz#d32c052052fb0d7c5c644514010a42106046d931"
   integrity sha512-d8g7riW0bIVvMf0Xs23xts1lWirgjuwJ8PgpbR3iANTiz7e3hBQN3VcudJE8B/sm38EnZlZKwWiunfRdK6GSAg==
 
-regexpp2@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/regexpp2/-/regexpp2-1.1.1.tgz#b661626f726158142c69a308af0e6f51385a9389"
-  integrity sha512-zXl3atMBChP1ArgIMmIEQRdFCXmVc/5ye24n9DRs31PRJK6dk4gBvWUwIajPDD8DQRbKuYnZxWytmGiteA4nBQ==
+regexpp2@^1.1.1, regexpp2@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/regexpp2/-/regexpp2-1.1.2.tgz#0f867c9dfbb84dca5e87004946aa6b4d131ea0b6"
+  integrity sha512-Lp4bRHqJkYgFUKe631qcRVNzEpzBfFdnQRTY5iE7TAUNCGreVCcKEay3LzT79HyvMSSoucKF0QShrvzTA4JPBw==
 
 regexpu-core@^1.0.0:
   version "1.0.0"
@@ -9516,7 +9516,7 @@ undefsafe@^2.0.2:
   dependencies:
     debug "^2.2.0"
 
-uni-string@^1.0.2, uni-string@^1.1.0:
+uni-string@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/uni-string/-/uni-string-1.1.0.tgz#2c173921030d1f16579ad3108d52421c4ad97c94"
   integrity sha512-bebrOlV+BVSWGVeBvQmXsPE4gWcJMAm6FSbYQxmgqbxeeIIXAOI8YVWswWVzIc7o2hyd7bLF/fbYnRI1P7r2wQ==

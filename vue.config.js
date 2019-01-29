@@ -8,18 +8,24 @@ const util_1 = tslib_1.__importDefault(require("./script/util"));
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
 util_1.default.debug('NODE_ENV', process.env.NODE_ENV);
+let allowSourceMap = development;
 module.exports = {
     publicPath: '/',
-    productionSourceMap: development,
+    productionSourceMap: allowSourceMap,
     runtimeCompiler: true,
     configureWebpack: {
         plugins: [
             new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
+            new webpack.IgnorePlugin(/zh[/\\]convert[/\\].*\.txt/, /cjk-conv/),
         ],
         optimization: {
+            runtimeChunk: {
+                name: entrypoint => `runtime~${entrypoint.name}`
+            },
             minimize: production,
             minimizer: [new TerserPlugin({
-                    sourceMap: development,
+                    sourceMap: allowSourceMap,
+                    exclude: /regexp-cjk|regex/,
                     terserOptions: {
                         compress: {
                             dead_code: false,
@@ -34,7 +40,7 @@ module.exports = {
                             unused: false,
                             warnings: true,
                         },
-                        sourceMap: production ? undefined : {
+                        sourceMap: !allowSourceMap ? undefined : {
                             url: "includeSources",
                             includeSources: true,
                         },
@@ -75,7 +81,7 @@ module.exports = {
         });
     },
     css: {
-        sourceMap: development,
+        sourceMap: allowSourceMap,
     },
     devServer: {
         disableHostCheck: true,

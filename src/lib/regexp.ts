@@ -1,5 +1,6 @@
-import zhRegExp from 'regexp-cjk';
+import { zhRegExp } from 'regexp-cjk';
 import { toHalfWidthLocaleLowerCase } from '@/lib/conv';
+import { array_unique } from 'array-hyper-unique'
 
 let _err: boolean;
 
@@ -7,6 +8,8 @@ export function getZhRegExp(): typeof zhRegExp
 {
 	try
 	{
+		//return zhRegExp;
+
 		// @ts-ignore
 		let c: typeof import('regexp-cjk') = require('regexp-cjk');
 
@@ -16,7 +19,7 @@ export function getZhRegExp(): typeof zhRegExp
 	{
 		if (!_err)
 		{
-			console.exception(e);
+			console.error(e);
 		}
 		_err = true;
 
@@ -34,7 +37,7 @@ export function zhRegExpGreedy(input: unknown, flags?: string)
 		input = input.join('|')
 	}
 
-	return new zhRegExp(input as string, flags, {
+	return new zhRegExp(input as string, flags || '', {
 		greedyTable: true,
 	});
 }
@@ -45,15 +48,22 @@ export function zhRegExpGreedyMatchWords(input: string)
 	{
 		let k = input.replace(/[|\\{}()\[\]^$+*?.]/g, '\\$1');
 
-		let ks = [
+		let ks = array_unique([
 			k,
 			toHalfWidthLocaleLowerCase(k),
-		].join('|');
+		]).join('|');
 
-		return zhRegExpGreedy(`\^(?:${ks})\$`, 'i')
+		let rs = `\^(?:${ks})\$`;
+
+		let k2 = `\^(${k})\$`;
+
+		console.log('zhRegExpGreedyMatchWords', k2, rs);
+
+		return zhRegExpGreedy(rs, 'ui')
 	}
 	catch (e)
 	{
+		console.error(e);
 		return String(input);
 	}
 }

@@ -990,7 +990,7 @@ export default class List extends Vue
 			{
 				const r = zhRegExpGreedy(ks);
 
-				//console.info(r);
+				console.info('_searchByKeyword', r);
 
 				_this.cur_len = 0;
 
@@ -1155,6 +1155,8 @@ export default class List extends Vue
 					{
 						return zhRegExpGreedyMatchWords(v)
 					}) as any;
+
+					console.log('_searchByTag', _old_tags, cache.keyword);
 				}
 
 				return bool
