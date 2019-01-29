@@ -936,7 +936,7 @@ export default class List extends Vue
 
 			hash = '#blob-content-holder';
 		}
-		else if (data.cache && data.cache.chapter === 0)
+		else if (data.cache && !data.cache.chapter)
 		{
 			hash = '#readme';
 		}

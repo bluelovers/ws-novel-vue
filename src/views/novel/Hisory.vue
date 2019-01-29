@@ -150,7 +150,7 @@ export default class History extends Vue
 
 			hash = '#blob-content-holder';
 		}
-		else if (novel && novel.chapter === 0)
+		else if (novel && !novel.chapter)
 		{
 			hash = '#readme';
 		}
