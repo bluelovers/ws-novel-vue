@@ -135,10 +135,10 @@
 													</v-container>
 
 
-													<div slot="default">
-														<div v-for="title in getNovelTitleFromMeta(item.mdconf, item.novelID)">
+													<div slot="default" v-html="itemPopup(item)">
+														<!--div v-for="title in getNovelTitleFromMeta(item.mdconf, item.novelID)">
 															{{ title }}
-														</div>
+														</div-->
 													</div>
 
 												</v-tooltip>
@@ -222,57 +222,50 @@
 
 		</Topbar>
 
-		<!--v-toolbar
-			app
-			height="40" :clipped-left="$vuetify.breakpoint.lgAndUp"
-			fixed
-		>
-			<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-
-			<v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-				<router-link to="/" class="text-color-inherit top-bar-header-title">Novel</router-link>
-			</v-toolbar-title>
-
-			<v-text-field
-				flat
-				solo-inverted
-				hide-details
-				prepend-inner-icon="search"
-				label="Search"
-				class="caption"
-				browser-autocomplete="true"
-				clearable
-				placeholder="搜尋標題 (使用 regexp-cjk 支援自動轉換簡繁日字漢字，以及一部分的 REGEXP 語法，空白視為分隔)"
-				persistent-hint
-				:value="cur_keyword"
-				@change="_searchByKeyword"
-				@click:clear="_searchResetKeyword"
-
-				@keyup.left="_stopEvent"
-				@keyup.right="_stopEvent"
-
-				@keyup.page-up="_stopEvent"
-				@keyup.page-down="_stopEvent"
-
-			></v-text-field>
-
-			<v-spacer />
-
-			<v-toolbar-items>
-
-				<NavToolbarItems></NavToolbarItems>
-
-
-			</v-toolbar-items>
-
-
-		</v-toolbar-->
-
 		<v-navigation-drawer
 			:clipped="$vuetify.breakpoint.lgAndUp"
 			app
 			v-model="drawer"
 		>
+
+			<v-expansion-panel
+				expand
+				focusable
+			>
+				<v-expansion-panel-content>
+					<div slot="header">Options</div>
+					<v-card>
+						<v-card-text expand>
+
+							<v-layout align-center>
+								<v-checkbox class="shrink my-0 mr-2" label="update_date" v-model="searchOptions.update_date"></v-checkbox>
+								<v-checkbox class="my-0" v-model="searchOptions.update_date_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
+							</v-layout>
+
+							<v-layout align-center>
+								<v-checkbox class="shrink my-0 mr-2" label="epub_date" v-model="searchOptions.epub_date"></v-checkbox>
+								<v-checkbox class="my-0" v-model="searchOptions.epub_date_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
+							</v-layout>
+
+							<v-layout align-center>
+								<v-checkbox class="shrink my-0 mr-2" label="segment_date" v-model="searchOptions.segment_date"></v-checkbox>
+								<v-checkbox class="my-0" v-model="searchOptions.segment_date_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
+							</v-layout>
+
+							<v-layout align-center>
+								<v-checkbox class="shrink my-0 mr-2" label="title" v-model="searchOptions.title"></v-checkbox>
+								<v-checkbox class="my-0" v-model="searchOptions.title_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
+							</v-layout>
+
+							<v-layout align-center>
+								<v-checkbox class="shrink my-0 mr-2" label="chapter" v-model="searchOptions.chapter"></v-checkbox>
+								<v-checkbox class="my-0" v-model="searchOptions.chapter_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
+							</v-layout>
+
+						</v-card-text>
+					</v-card>
+				</v-expansion-panel-content>
+			</v-expansion-panel>
 
 			<PanelFilterTag3
 				title="Tag"
@@ -287,18 +280,6 @@
 				@click="_searchByTag2"
 				@reset="_searchResetTag2"
 			></PanelFilterTag3>
-
-			<!--PanelFilterTag
-				title="Tag"
-
-				icon="label"
-
-				:items="tags"
-				:value="cur_tag"
-
-				@click="_searchByTag"
-				@reset="_searchResetTag"
-			></PanelFilterTag-->
 
 			<v-divider></v-divider>
 
@@ -389,15 +370,18 @@ import {
 	getNovelTitleFromMeta,
 	IFilterNovelData,
 	novelLink,
-	} from '@/lib/novel';
+	createMoment, IFilterNovelDataPlus,
+} from '@/lib/novel';
 import { img_unsplash } from '@/lib/util';
 import { IVueComponent } from '@/lib/vue/index';
 import { array_unique } from 'array-hyper-unique'
 import url from 'url';
-import { Component, Vue, Watch } from 'vue-property-decorator';
+import { Component, Vue, Watch, Prop } from 'vue-property-decorator';
 import { Route } from 'vue-router'
 import { toHalfWidthLocaleLowerCase, handleSearchText } from '@/lib/conv';
 import { getZhRegExp, zhRegExpGreedy, zhRegExpGreedyMatchWords } from '@/lib/regexp';
+import Bind from 'lodash-decorators/bind';
+import { sortSeriesCallback } from '@/lib/util/sort';
 
 const NovelData = dataAll();
 
@@ -418,6 +402,25 @@ export default class List extends Vue
 
 	page: number;
 	drawer: boolean;
+
+	novels_all: IFilterNovelDataPlus[];
+
+	searchOptions: {
+		epub_date: boolean,
+		epub_date_reverse: boolean,
+
+		segment_date: boolean,
+		segment_date_reverse: boolean,
+
+		update_date: boolean,
+		update_date_reverse: boolean,
+
+		chapter: boolean,
+		chapter_reverse: boolean,
+
+		title: boolean,
+		title_reverse: boolean,
+	};
 
 	data()
 	{
@@ -491,11 +494,37 @@ export default class List extends Vue
 
 			cur_illust: '',
 			illusts: NovelData["illusts"],
+
+			searchOptions: Object.assign({
+				epub_date: false,
+				epub_date_reverse: false,
+
+				segment_date: false,
+				segment_date_reverse: false,
+
+				update_date: false,
+				update_date_reverse: false,
+
+				chapter: false,
+				chapter_reverse: false,
+
+				title: false,
+				title_reverse: false,
+			}, this.$session.get('searchOptions')),
 		};
 
-		this._data_init();
+		this.$nextTick(() => this._data_init());
 
 		return data;
+	}
+
+	itemPopup(item: IFilterNovelDataPlus)
+	{
+		return [
+			getNovelTitleFromMeta(item.mdconf, item.novelID).join('<br/>'),
+			// @ts-ignore
+			createMoment(item.update_date).format(),
+		].join('<br/>')
 	}
 
 	onDrawer(drawer: boolean)
@@ -548,6 +577,8 @@ export default class List extends Vue
 		}
 		else
 		{
+			this._updateSort();
+
 			setTimeout(() => this.updateResource(this.page), 250);
 		}
 	}
@@ -1065,7 +1096,8 @@ export default class List extends Vue
 				ivr = null;
 			}
 
-			value = value.filter(v => {
+			value = value.filter(v =>
+			{
 				let bool = v != iv;
 
 				if (bool && ivr)
@@ -1173,7 +1205,8 @@ export default class List extends Vue
 				{
 					if (Array.isArray(cache.keyword))
 					{
-						return (cache.keyword as string[]).every(v => {
+						return (cache.keyword as string[]).every(v =>
+						{
 
 							let bool: boolean;
 
@@ -1184,7 +1217,8 @@ export default class List extends Vue
 							else if (v)
 							{
 								bool = novel.mdconf.novel.tags
-									.some(s => {
+									.some(s =>
+									{
 										let bool = (v as RegExp).test(s);
 
 										if (bool)
@@ -1291,10 +1325,119 @@ export default class List extends Vue
 		this._searchReset(EnumEventLabel.CONTRIBUTE)
 	}
 
+	@Watch('searchOptions.update_date')
+	@Watch('searchOptions.update_date_reverse')
+	@Watch('searchOptions.segment_date')
+	@Watch('searchOptions.segment_date_reverse')
+	@Watch('searchOptions.epub_date')
+	@Watch('searchOptions.epub_date_reverse')
+	@Watch('searchOptions.chapter')
+	@Watch('searchOptions.chapter_reverse')
+	@Watch('searchOptions.title')
+	@Watch('searchOptions.title_reverse')
+	watchSort()
+	{
+		let bool = this._updateSort();
+
+		bool && this.updateResource(this.page);
+
+		// @ts-ignore
+		this.$session.set('searchOptions', this.searchOptions)
+	}
+
+	_updateSort(ls?: IFilterNovelDataPlus[])
+	{
+		// @ts-ignore
+		let _this = this;
+
+		// @ts-ignore
+		ls = (ls || _this.novels_all);
+
+		if (ls && ls.length)
+		{
+			ls = ls.sort(sortSeriesCallback<IFilterNovelDataPlus>([
+
+				_this.searchOptions.update_date && function (a, b): number
+				{
+					if (_this.searchOptions.update_date_reverse)
+					{
+						[a, b] = [b, a];
+					}
+
+					let n = (b.update_date) - (a.update_date);
+
+					return n
+				},
+
+				_this.searchOptions.epub_date && function (a, b): number
+				{
+					if (_this.searchOptions.epub_date_reverse)
+					{
+						[a, b] = [b, a];
+					}
+
+					let n = (b.epub_date || 0) - (a.epub_date || 0);
+
+					return n
+				},
+
+				_this.searchOptions.segment_date && function (a, b): number
+				{
+					if (_this.searchOptions.segment_date_reverse)
+					{
+						[a, b] = [b, a];
+					}
+
+					let n = (b.segment_date || 0) - (a.segment_date || 0);
+
+					return n
+				},
+
+				_this.searchOptions.title && function (a, b): number
+				{
+					if (_this.searchOptions.title_reverse)
+					{
+						[a, b] = [b, a];
+					}
+
+					return cacheSortCallback(a.mdconf.novel && a.mdconf.novel.title || '', b.mdconf.novel && b.mdconf.novel.title || '')
+				},
+
+				_this.searchOptions.chapter && function (a, b): number
+				{
+					if (_this.searchOptions.chapter_reverse)
+					{
+						[a, b] = [b, a];
+					}
+
+					let n = (b.cache.chapter || 0) - (a.cache.chapter || 0);
+
+					return n
+				},
+
+				function (a, b): number
+				{
+					return a._index - b._index
+				},
+			]));
+
+			// @ts-ignore
+			if (ls !== _this.novels_all)
+			{
+				// @ts-ignore
+				_this.novels_all = ls;
+			}
+
+			return true;
+		}
+	}
+
 	_updateList(ls: IFilterNovelData[])
 	{
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
+
+		this._updateSort(ls);
 
 		if (ls !== _this.novels_all)
 		{
@@ -1312,19 +1455,20 @@ export default class List extends Vue
 
 	_pageList(self: {
 		page: number,
-		page_size: number,
 	})
 	{
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
-		_this.pages = Math.ceil(_this.novels_all.length / self.page_size);
+		let page_size: number = _this.page_size;
+
+		_this.pages = Math.ceil(_this.novels_all.length / page_size);
 
 		self.page = Math.min(Math.max((self.page) | 0, 1), _this.pages);
 
-		let idx = (self.page - 1) * self.page_size;
+		let idx = (self.page - 1) * page_size;
 
-		_this.novels = _this.novels_all.slice(idx, idx + self.page_size);
+		_this.novels = _this.novels_all.slice(idx, idx + page_size);
 		_this.page = self.page;
 
 		{
@@ -1407,7 +1551,7 @@ export default class List extends Vue
 
 		self.novels = this._pageList({
 			page,
-			page_size: self.page_size,
+			//page_size: self.page_size,
 		});
 
 		this.$nextTick(() =>
@@ -1452,4 +1596,9 @@ export default class List extends Vue
 	white-space: pre-wrap;
 }
 
+</style>
+<style lang="scss">
+.v-input__slot, .v-input--selection-controls:not(.v-input--hide-details) .v-input__slot {
+	margin-bottom: 0;
+}
 </style>

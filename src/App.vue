@@ -22,8 +22,9 @@
 					target="_blank" rel="noopener"
 					@click="_ga('click', 'api', 'novel-stat.json')"
 					class="d-inline-block mr-2"
+					v-once
 				>novel-stat.json</a>
-				<div class="d-inline-block">&copy; {{ updateDate }}　</div>
+				<div class="d-inline-block" v-once>&copy; {{ updateDate }}　</div>
 			</div>
 		</v-footer>
 	</v-app>

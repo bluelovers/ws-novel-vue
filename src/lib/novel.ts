@@ -11,7 +11,7 @@ import { cacheSortCallback } from '@node-novel/cache-loader/lib/util'
 import url from 'url';
 import { NodeNovelInfo } from 'node-novel-info/class'
 import { array_unique } from 'array-hyper-unique'
-import { toHalfWidthLocaleLowerCase } from '@/lib/conv';
+import { toHalfWidthLocaleLowerCase } from './conv';
 import NovelInfo = require('node-novel-info');
 
 let novelStatCache: NovelStatCache;
@@ -40,6 +40,13 @@ export function getNovelTitleFromMeta(mdconf: NovelInfo.IMdconfMeta, novelID?: s
 	].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
 }
 
+export type IFilterNovelDataPlus = IFilterNovelData & {
+	_index: number,
+	update_date: number,
+	epub_date: number,
+	segment_date: number,
+};
+
 export function dataAll()
 {
 	novelStatCache = loadNovelStatCache();
@@ -54,6 +61,38 @@ export function dataAll()
 			Object.entries(novels)
 				.forEach(function ([novelID, novel])
 				{
+
+					novel.cache = novel.cache || {};
+
+					/*
+					if (novelID == 'ロリータ・ガンバレット　～魔弾幼女の異世界戦記～')
+					{
+						console.log(novel.cache);
+
+						novel.cache.update_date && console.log(createMoment(novel.cache.update_date).format());
+						novel.cache.init_date && console.log(createMoment(novel.cache.init_date).format());
+						novel.cache.segment_date && console.log(createMoment(novel.cache.segment_date).format());
+						novel.cache.epub_date && console.log(createMoment(novel.cache.epub_date).format());
+					}
+					*/
+
+					// @ts-ignore
+					novel.update_date = Math.max(
+						novel.cache.update_date || 0,
+						novel.cache.init_date || 0,
+						novel.cache.segment_date || 0,
+						novel.cache.epub_date || 0,
+						0,
+					);
+
+					// @ts-ignore
+					novel.update_date = novel.update_date && createMoment(novel.update_date).startOf('day').valueOf() || 0;
+
+					// @ts-ignore
+					novel.epub_date = novel.cache.epub_date && createMoment(novel.cache.epub_date).startOf('day').valueOf() || 0;
+					// @ts-ignore
+					novel.segment_date = novel.cache.segment_date && createMoment(novel.cache.segment_date).startOf('day').valueOf() || 0;
+
 					// @ts-ignore
 					const metaInfo = new NodeNovelInfo(novel.mdconf, {
 						throw: false,
@@ -70,7 +109,7 @@ export function dataAll()
 						.forEach(title => {
 							data.alias[title] = data.alias[title] || [];
 
-							data.alias[title].push(novel);
+							data.alias[title].push(novel as IFilterNovelDataPlus);
 						})
 					;
 
@@ -87,7 +126,7 @@ export function dataAll()
 						})
 					;
 
-					data.novels.push(novel);
+					data.novels.push(novel as IFilterNovelDataPlus);
 
 					data.contributes.push(...(novel.mdconf.contribute = metaInfo.contributes()));
 
@@ -107,9 +146,9 @@ export function dataAll()
 		}, {
 			pathMains: [] as string[],
 			alias: {} as {
-				[title: string]: IFilterNovelData[]
+				[title: string]: IFilterNovelDataPlus[]
 			},
-			novels: [] as IFilterNovelData[],
+			novels: [] as IFilterNovelDataPlus[],
 
 			tags: [] as string[],
 			contributes: [] as string[],
@@ -125,6 +164,11 @@ export function dataAll()
 			data: datamap,
 		})
 	;
+
+	ret.novels.forEach(function (novel, index)
+	{
+		novel._index = index;
+	});
 
 	ret.tags = arr_unique_filter(ret.tags);
 	ret.contributes = arr_unique_filter(ret.contributes);

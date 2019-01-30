@@ -1,6 +1,12 @@
 @import '~vuetify/src/stylus/settings/_variables'
 
 $font-size-root = 9pt;
+$chip-font-size = $font-size-root;
+$input-font-size = $font-size-root;
 
 @import '~vuetify/src/stylus/main'
 @import '~vuetify/src/stylus/app'
+
+.v-label, .v-input
+	font-size: $input-font-size
+
