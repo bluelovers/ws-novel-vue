@@ -258,6 +258,11 @@
 							</v-layout>
 
 							<v-layout align-center>
+								<v-checkbox class="shrink my-0 mr-2" label="volume" v-model="searchOptions.volume"></v-checkbox>
+								<v-checkbox class="my-0" v-model="searchOptions.volume_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
+							</v-layout>
+
+							<v-layout align-center>
 								<v-checkbox class="shrink my-0 mr-2" label="chapter" v-model="searchOptions.chapter"></v-checkbox>
 								<v-checkbox class="my-0" v-model="searchOptions.chapter_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
 							</v-layout>
@@ -420,6 +425,9 @@ export default class List extends Vue
 
 		title: boolean,
 		title_reverse: boolean,
+
+		volume: boolean,
+		volume_reverse: boolean,
 	};
 
 	data()
@@ -495,7 +503,7 @@ export default class List extends Vue
 			cur_illust: '',
 			illusts: NovelData["illusts"],
 
-			searchOptions: Object.assign({
+			searchOptions: {
 				epub_date: false,
 				epub_date_reverse: false,
 
@@ -510,7 +518,9 @@ export default class List extends Vue
 
 				title: false,
 				title_reverse: false,
-			}, this.$session.get('searchOptions')),
+
+				...(this.$session.get('searchOptions') || {})
+			} as List["searchOptions"],
 		};
 
 		this.$nextTick(() => this._data_init());
@@ -1333,6 +1343,8 @@ export default class List extends Vue
 	@Watch('searchOptions.epub_date_reverse')
 	@Watch('searchOptions.chapter')
 	@Watch('searchOptions.chapter_reverse')
+	@Watch('searchOptions.volume')
+	@Watch('searchOptions.volume_reverse')
 	@Watch('searchOptions.title')
 	@Watch('searchOptions.title_reverse')
 	watchSort()
@@ -1401,6 +1413,18 @@ export default class List extends Vue
 					}
 
 					return cacheSortCallback(a.mdconf.novel && a.mdconf.novel.title || '', b.mdconf.novel && b.mdconf.novel.title || '')
+				},
+
+				_this.searchOptions.volume && function (a, b): number
+				{
+					if (_this.searchOptions.volume_reverse)
+					{
+						[a, b] = [b, a];
+					}
+
+					let n = (b.cache.volume || 0) - (a.cache.volume || 0);
+
+					return n
 				},
 
 				_this.searchOptions.chapter && function (a, b): number
