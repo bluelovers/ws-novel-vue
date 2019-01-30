@@ -43,6 +43,7 @@ export function getNovelTitleFromMeta(mdconf: NovelInfo.IMdconfMeta, novelID?: s
 export type IFilterNovelDataPlus = IFilterNovelData & {
 	_index: number,
 	update_date: number,
+	update_date2: number,
 	epub_date: number,
 	segment_date: number,
 };
@@ -77,7 +78,7 @@ export function dataAll()
 					*/
 
 					// @ts-ignore
-					novel.update_date = Math.max(
+					novel.update_date2 = Math.max(
 						novel.cache.update_date || 0,
 						novel.cache.init_date || 0,
 						novel.cache.segment_date || 0,
@@ -86,7 +87,7 @@ export function dataAll()
 					);
 
 					// @ts-ignore
-					novel.update_date = novel.update_date && createMoment(novel.update_date).startOf('day').valueOf() || 0;
+					novel.update_date = novel.update_date2 && createMoment(novel.update_date2).startOf('day').valueOf() || 0;
 
 					// @ts-ignore
 					novel.epub_date = novel.cache.epub_date && createMoment(novel.cache.epub_date).startOf('day').valueOf() || 0;

@@ -533,7 +533,7 @@ export default class List extends Vue
 		return [
 			getNovelTitleFromMeta(item.mdconf, item.novelID).join('<br/>'),
 			// @ts-ignore
-			createMoment(item.update_date).format(),
+			createMoment(item.update_date2).format(),
 		].join('<br/>')
 	}
 
