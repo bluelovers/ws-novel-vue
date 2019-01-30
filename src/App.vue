@@ -1,34 +1,32 @@
 <template>
-	<div id="app">
-		<v-app dark class="caption">
-
-			<Topbar></Topbar>
-
-			<v-content>
-				<v-container fluid pa-0>
-				<router-view class="pa-0 py-2" />
-				</v-container>
-			</v-content>
-			<v-footer app>
-				<v-spacer></v-spacer>
-				<FooterItems/>
-				<v-spacer></v-spacer>
-				<div class="mx-2 hidden-sm-and-down">
-						<a
-							:href="`${publicPath}static/novel-stat.json`"
-							target="_blank" rel="noopener"
-							@click="_ga('click', 'api', 'novel-stat.json')"
-							class="d-inline-block mr-2"
-						>novel-stat.json</a>
-					<div class="d-inline-block">&copy; {{ updateDate }}　</div>
-				</div>
-
-			</v-footer>
-		</v-app>
+	<v-app id="app" dark class="caption">
 		<vue-headful
 			title="Novels"
 		/>
-	</div>
+
+		<Topbar></Topbar>
+
+		<v-content>
+			<v-container fluid pa-0>
+				<router-view class="pa-0 py-2" />
+			</v-container>
+		</v-content>
+
+		<v-footer app>
+			<v-spacer></v-spacer>
+			<FooterItems />
+			<v-spacer></v-spacer>
+			<div class="mx-2 hidden-sm-and-down">
+				<a
+					:href="`${publicPath}static/novel-stat.json`"
+					target="_blank" rel="noopener"
+					@click="_ga('click', 'api', 'novel-stat.json')"
+					class="d-inline-block mr-2"
+				>novel-stat.json</a>
+				<div class="d-inline-block">&copy; {{ updateDate }}　</div>
+			</div>
+		</v-footer>
+	</v-app>
 </template>
 
 <script lang="ts">
@@ -52,7 +50,8 @@ import {
 		Topbar,
 	},
 })
-export default class extends Vue {
+export default class extends Vue
+{
 
 	data()
 	{
@@ -70,7 +69,7 @@ export default class extends Vue {
 		}
 
 		return {
-			updateDate
+			updateDate,
 		}
 	}
 

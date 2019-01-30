@@ -22,7 +22,7 @@
   "scripts": {
     "build-netlify": "node ./script/build-netlify",
     "build": "node ./script/build",
-    "build-base": "vue-cli-service build --mode production --report --client-log-level none",
+    "build-base": "vue-cli-service build --mode production --report --client-log-level none  --color",
     "build-modern": "vue-cli-service build --modern --color",
     "deploy-and-build": "vue-cli-ghpages",
     "deploy-ghpages": "vue-cli-ghpages",
