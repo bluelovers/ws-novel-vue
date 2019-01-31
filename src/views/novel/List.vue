@@ -1356,7 +1356,7 @@ export default class List extends Vue
 		if (bool)
 		{
 			// @ts-ignore
-			this._ga(EnumEventAction.SEARCH, 'options', JSON.stringify(this.searchOptions));
+			this._ga('options', EnumEventAction.SEARCH, JSON.stringify(this.searchOptions));
 		}
 
 		// @ts-ignore
