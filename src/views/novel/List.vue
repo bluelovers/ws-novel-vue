@@ -1353,6 +1353,12 @@ export default class List extends Vue
 
 		bool && this.updateResource(this.page);
 
+		if (bool)
+		{
+			// @ts-ignore
+			this._ga(EnumEventAction.SEARCH, 'options', JSON.stringify(this.searchOptions));
+		}
+
 		// @ts-ignore
 		this.$session.set('searchOptions', this.searchOptions)
 	}

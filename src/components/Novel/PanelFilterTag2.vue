@@ -9,8 +9,8 @@
 					class="caption"
 					small
 					label
-					:selected="!!value"
-					:close="!!value"
+					:selected="(value != null) && (value !== '')"
+					:close="(value != null) && (value !== '')"
 					:color="value ? 'pink' : ''"
 					:text-color="value ? textColor : ''"
 					@input="onReset"
