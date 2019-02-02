@@ -21,6 +21,23 @@ module.exports = {
 
 	configureWebpack: {
 
+		/*
+		output: {
+			filename: 'js/[name].[hash].js',
+			chunkFilename: 'js/[id].bundle.[contenthash:8].js',
+		},
+		*/
+
+		/*
+		entry: {
+			tool: [
+				'./src/main.ts',
+			],
+		},
+		*/
+
+//		devtool: 'source-map',
+
 		plugins: [
 			/**
 			 * https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
@@ -32,72 +49,40 @@ module.exports = {
 
 		optimization: {
 
-			/*
-			splitChunks: {
-				chunks: 'all',
-			},
-			*/
+//			splitChunks: {
+//				chunks: 'all',
+//				minSize: 1048,
+//				maxSize: 0,
+//				name: true,
+
+//				cacheGroups: {
+////					tool: {
+////						test: /^tool$/,
+////					},
+////					cjk: {
+////						test: /cjk|japanese|chinese/,
+////						priority: 20,
+//////						reuseExistingChunk: true,
+////					},
+//					novel: {
+//						test: /novel/,
+////						priority: 10,
+////						reuseExistingChunk: true,
+//					},
+////					default: {
+////						minChunks: 2,
+////						priority: -20,
+//////						reuseExistingChunk: true
+////					},
+//				},
+//			},
 
 			runtimeChunk: {
 				name: entrypoint => `runtime~${entrypoint.name}`
 			},
 
-			minimize: production,
-			minimizer: [new TerserPlugin({
-				sourceMap: allowSourceMap,
-
-				//parallel: true,
-
-				exclude: /regexp-cjk|regex/,
-
-				terserOptions: {
-					compress: {
-						dead_code: false,
-						global_defs: {},
-						ecma: 8,
-						inline: true,
-						keep_classnames: true,
-						keep_fnames: true,
-						keep_infinity: true,
-						passes: 2,
-						pure_getters: false,
-						unused: false,
-						warnings: true,
-					},
-					sourceMap: !allowSourceMap ? undefined : {
-						url: "includeSources",
-						includeSources: true,
-					},
-					ecma: 8,
-					output: {
-						beautify: development,
-						indent_level: 0,
-						indent_start: 0,
-						comments: false,
-					},
-					keep_classnames: true,
-					keep_fnames: true,
-				},
-
-				/*
-				minify(file, sourceMap)
-				{
-					const uglifyJsOptions = {
-
-					};
-
-					if (sourceMap) {
-						// @ts-ignore
-						uglifyJsOptions.sourceMap = {
-							content: sourceMap,
-						};
-					}
-
-					return require('terser').minify(file, uglifyJsOptions);
-				},
-				*/
-
-			})],
+			minimize: true || production,
+			minimizer: [getTerserPlugin()],
 		},
 
 	},
@@ -183,3 +168,83 @@ module.exports = {
 	},
 
 };
+
+function getTerserPlugin()
+{
+	if (!production)
+	{
+		return new TerserPlugin({
+			sourceMap: allowSourceMap,
+
+			terserOptions: {
+
+				output: {
+					indent_level: 0,
+					indent_start: 0,
+					comments: false,
+				},
+
+				sourceMap: !allowSourceMap ? undefined : {
+					url: "includeSources",
+					includeSources: true,
+				},
+			},
+		});
+	}
+
+	return new TerserPlugin({
+		sourceMap: allowSourceMap,
+
+		//parallel: true,
+
+		//exclude: /regexp-cjk|regex/,
+
+		terserOptions: {
+			compress: {
+				dead_code: false,
+				global_defs: {},
+				ecma: 8,
+				inline: true,
+				keep_classnames: true,
+				keep_fnames: true,
+				keep_infinity: true,
+				passes: 2,
+				pure_getters: false,
+				unused: false,
+				warnings: true,
+			},
+			sourceMap: !allowSourceMap ? undefined : {
+				url: "includeSources",
+				includeSources: true,
+			},
+			ecma: 8,
+			output: {
+				beautify: development,
+				indent_level: 0,
+				indent_start: 0,
+				comments: false,
+			},
+			keep_classnames: true,
+			keep_fnames: true,
+		},
+
+		/*
+		minify(file, sourceMap)
+		{
+			const uglifyJsOptions = {
+
+			};
+
+			if (sourceMap) {
+				// @ts-ignore
+				uglifyJsOptions.sourceMap = {
+					content: sourceMap,
+				};
+			}
+
+			return require('terser').minify(file, uglifyJsOptions);
+		},
+		*/
+
+	})
+}
