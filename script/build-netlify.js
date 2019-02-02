@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Created by user on 2019/1/14/014.
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const netlify_env2_1 = require("netlify-env2");
@@ -51,12 +54,16 @@ function skipBuild() {
                     break;
             }
         }
+        // @ts-ignore
         else if (json.event_type === 'merge_request') {
+            // @ts-ignore
             if (json.object_attributes && json.object_attributes.state == 'merged') {
                 return Bluebird.delay(5000).thenReturn(false);
             }
         }
+        // @ts-ignore
         else if (json.event_name === 'push') {
+            // @ts-ignore
             if (json.total_commits_count && json.ref == 'refs/heads/master') {
                 return Bluebird.delay(5000).thenReturn(false);
             }

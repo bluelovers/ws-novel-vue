@@ -1,8 +1,12 @@
 "use strict";
+/**
+ * Created by user on 2019/1/13/013.
+ */
 const tslib_1 = require("tslib");
 const cross_spawn_extra_1 = require("cross-spawn-extra");
 const project_config_1 = tslib_1.__importDefault(require("../../project.config"));
 const array_hyper_unique_1 = require("array-hyper-unique");
+const util_1 = tslib_1.__importDefault(require("../util"));
 const PackageJson = require("../../package.json");
 module.exports = cross_spawn_extra_1.async('yarn', [
     'list',
@@ -23,8 +27,8 @@ module.exports = cross_spawn_extra_1.async('yarn', [
     cwd: project_config_1.default.ProjectRoot,
     stdio: 'inherit',
 })
-    .tap(function () {
-    return cross_spawn_extra_1.sync('yarn', [
+    .tap(async function () {
+    return await cross_spawn_extra_1.sync('yarn', [
         'run',
         'vue',
         'info',
@@ -33,5 +37,5 @@ module.exports = cross_spawn_extra_1.async('yarn', [
         stdio: 'inherit',
     });
 })
-    .catch(e => null);
+    .catch(e => util_1.default.error(e));
 //# sourceMappingURL=yarn-list.js.map

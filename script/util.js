@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Created by user on 2019/1/14/014.
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 const debug_color2_1 = require("debug-color2");
 const console = new debug_color2_1.Console2();

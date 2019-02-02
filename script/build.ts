@@ -7,12 +7,13 @@ import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
 import console from './util';
+import ProjectConfig, { ProjectRoot } from '../project.config';
 
-const cwd = path.join(__dirname, '..');
+const cwd = ProjectConfig.ProjectRoot;
 
 export = (async () =>
 {
-	await import('./build/yarn-list').catch(e => null);
+	await import('./build/yarn-list').catch(e => console.error(e));
 
 	/*
 	await CrossSpawn('node', [
@@ -23,7 +24,11 @@ export = (async () =>
 	})
 	;
 	*/
-	await import('./fetch-api-json').catch(e => null);
+	await import('./fetch-api-json').catch(e => console.error(e));
+
+	//await Bluebird.delay(5000);
+
+	await import('./build/build-cache').catch(e => console.error(e));
 
 	await CrossSpawn('yarn', [
 		'run',

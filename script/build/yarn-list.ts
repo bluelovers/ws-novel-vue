@@ -30,9 +30,9 @@ export = CrossSpawn('yarn', [
 	cwd: ProjectConfig.ProjectRoot,
 	stdio: 'inherit',
 })
-	.tap(function ()
+	.tap(async function ()
 	{
-		return CrossSpawnSync('yarn', [
+		return await CrossSpawnSync('yarn', [
 				'run',
 				'vue',
 				'info',
@@ -41,5 +41,5 @@ export = CrossSpawn('yarn', [
 				stdio: 'inherit',
 			})
 	})
-	.catch(e => null)
+	.catch(e => console.error(e))
 ;

@@ -14,7 +14,8 @@ fetch.Promise = Bluebird;
 
 export = fetch(ProjectSetting.FETCH_API)
 	.then(res => res.json())
-	.then(json => {
+	.then(async (json) =>
+	{
 
 		if (!json.novels || !json.mdconf)
 		{
@@ -28,14 +29,16 @@ export = fetch(ProjectSetting.FETCH_API)
 		let root = path.join(__dirname, '..');
 
 		return Bluebird.all([
-			fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.json'), s),
-				fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.js'), s),
-			fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.json'), s),
-				fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.js'), s),
-		])
+				await fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.json'), s),
+				await fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.js'), s),
+				await fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.json'), s),
+				await fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.js'), s),
+			])
 			.tap(function ()
 			{
 				console.success(`saved`, 'novel-stat.json');
+
+				return Bluebird.delay(1000);
 			})
 	})
-;
+	;

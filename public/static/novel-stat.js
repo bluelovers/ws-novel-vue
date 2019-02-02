@@ -1,7 +1,7 @@
 {
   "meta": {
-    "todayTimestamp": 1548777600000,
-    "timestamp": 1548805636010,
+    "todayTimestamp": 1549036800000,
+    "timestamp": 1549064965243,
     "sourceUrl": "https://gitlab.com/novel-group/txt-source/blob/master",
     "outputUrl": "https://gitlab.com/demonovel/epub-txt/blob/master"
   },
@@ -1248,6 +1248,330 @@
           }
         ]
       ]
+    },
+    "1548864000000": {
+      "segment_count": 2,
+      "segment": [
+        [
+          "syosetu",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 18,
+            "chapter": 82,
+            "segment_date": 1548903323356,
+            "segment_old": 0,
+            "segment": 75,
+            "epub_date": 1548903382615,
+            "volume_old": 0,
+            "volume": 5,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "update_date": 1548864000000,
+            "update_count": 1
+          }
+        ],
+        [
+          "syosetu",
+          "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～",
+          {
+            "segment_date": 1548891171896,
+            "segment_old": 0,
+            "segment": 7,
+            "init_date": 1548864000000,
+            "epub_date": 1548903384536,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 3,
+            "chapter": 11,
+            "epub_basename": "原世界第一玩家的小號練成日記.epub",
+            "update_date": 1548864000000,
+            "update_count": 1
+          }
+        ]
+      ],
+      "epub_count": 5,
+      "epub": [
+        [
+          "cm",
+          "姫騎士がクラスメート！　〜異世界チートで奴隷化ハーレム〜",
+          {
+            "init_date": 1545494400000,
+            "segment_date": 1546393553093,
+            "segment_old": 0,
+            "segment": 13,
+            "epub_date": 1548903379882,
+            "volume_old": 3,
+            "chapter_old": 72,
+            "volume": 3,
+            "chapter": 72,
+            "epub_basename": "我的同學是姬騎士.epub",
+            "update_date": 1548864000000,
+            "update_count": 3,
+            "novel_status": 770
+          }
+        ],
+        [
+          "syosetu",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 18,
+            "chapter": 82,
+            "segment_date": 1548903323356,
+            "segment_old": 0,
+            "segment": 75,
+            "epub_date": 1548903382615,
+            "volume_old": 0,
+            "volume": 5,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "update_date": 1548864000000,
+            "update_count": 1
+          }
+        ],
+        [
+          "syosetu",
+          "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～",
+          {
+            "segment_date": 1548891171896,
+            "segment_old": 0,
+            "segment": 7,
+            "init_date": 1548864000000,
+            "epub_date": 1548903384536,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 3,
+            "chapter": 11,
+            "epub_basename": "原世界第一玩家的小號練成日記.epub",
+            "update_date": 1548864000000,
+            "update_count": 1
+          }
+        ],
+        [
+          "user_out",
+          "你這種傢伙別想打贏魔王",
+          {
+            "init_date": 1545494400000,
+            "txt_basename": "你這種傢伙別想打贏魔王.out.txt",
+            "epub_date": 1548903387458,
+            "volume_old": 9,
+            "chapter_old": 87,
+            "volume": 10,
+            "chapter": 90,
+            "epub_basename": "你這種傢伙別想打贏魔王.epub",
+            "update_date": 1548864000000,
+            "update_count": 8
+          }
+        ],
+        [
+          "yandere",
+          "転生ごときで逃げられるとでも、兄さん？",
+          {
+            "segment_date": 1548805600329,
+            "segment_old": 69,
+            "segment": 1,
+            "init_date": 1548604800000,
+            "epub_date": 1548903390867,
+            "volume_old": 5,
+            "chapter_old": 79,
+            "volume": 5,
+            "chapter": 79,
+            "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
+            "update_date": 1548864000000,
+            "update_count": 3
+          }
+        ]
+      ]
+    },
+    "1548950400000": {
+      "segment_count": 1,
+      "segment": [
+        [
+          "syosetu",
+          "絕對不想工作的地下城城主想睡懶覺",
+          {
+            "segment_date": 1548977705773,
+            "segment_old": 0,
+            "segment": 117,
+            "init_date": 1548977705773,
+            "epub_date": 1548977883964,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 23,
+            "chapter": 169,
+            "epub_basename": "絕對不想工作的地下城城主想睡懶覺.epub",
+            "update_date": 1548950400000,
+            "update_count": 1
+          }
+        ]
+      ],
+      "epub_count": 7,
+      "epub": [
+        [
+          "cm",
+          "姫騎士がクラスメート！　〜異世界チートで奴隷化ハーレム〜",
+          {
+            "init_date": 1545494400000,
+            "segment_date": 1546393553093,
+            "segment_old": 0,
+            "segment": 13,
+            "epub_date": 1548977869825,
+            "volume_old": 3,
+            "chapter_old": 72,
+            "volume": 3,
+            "chapter": 72,
+            "epub_basename": "我的同學是姬騎士.epub",
+            "update_date": 1548950400000,
+            "update_count": 4,
+            "novel_status": 770
+          }
+        ],
+        [
+          "syosetu",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 82,
+            "chapter": 82,
+            "segment_date": 1548903323356,
+            "segment_old": 0,
+            "segment": 75,
+            "epub_date": 1548977872411,
+            "volume_old": 5,
+            "volume": 5,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "update_date": 1548950400000,
+            "update_count": 2
+          }
+        ],
+        [
+          "syosetu",
+          "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～",
+          {
+            "segment_date": 1548891171896,
+            "segment_old": 0,
+            "segment": 7,
+            "init_date": 1548864000000,
+            "epub_date": 1548977874438,
+            "volume_old": 3,
+            "chapter_old": 11,
+            "volume": 3,
+            "chapter": 11,
+            "epub_basename": "原世界第一玩家的小號練成日記.epub",
+            "update_date": 1548950400000,
+            "update_count": 2
+          }
+        ],
+        [
+          "syosetu",
+          "絕對不想工作的地下城城主想睡懶覺",
+          {
+            "segment_date": 1548977705773,
+            "segment_old": 0,
+            "segment": 117,
+            "init_date": 1548977705773,
+            "epub_date": 1548977883964,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 23,
+            "chapter": 169,
+            "epub_basename": "絕對不想工作的地下城城主想睡懶覺.epub",
+            "update_date": 1548950400000,
+            "update_count": 1
+          }
+        ],
+        [
+          "user_out",
+          "你這種傢伙別想打贏魔王",
+          {
+            "init_date": 1545494400000,
+            "txt_basename": "你這種傢伙別想打贏魔王.out.txt",
+            "epub_date": 1548977886914,
+            "volume_old": 10,
+            "chapter_old": 90,
+            "volume": 10,
+            "chapter": 90,
+            "epub_basename": "你這種傢伙別想打贏魔王.epub",
+            "update_date": 1548950400000,
+            "update_count": 9
+          }
+        ],
+        [
+          "user_out",
+          "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～",
+          {
+            "init_date": 1545494400000,
+            "txt_basename": "暗黒騎士物語　～勇者を倒すために魔王に召.out.txt",
+            "epub_date": 1548977891891,
+            "volume_old": 9,
+            "chapter_old": 180,
+            "volume": 9,
+            "chapter": 181,
+            "epub_basename": "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～.epub",
+            "update_date": 1548950400000,
+            "update_count": 8
+          }
+        ],
+        [
+          "yandere",
+          "転生ごときで逃げられるとでも、兄さん？",
+          {
+            "segment_date": 1548805600329,
+            "segment_old": 69,
+            "segment": 1,
+            "init_date": 1548604800000,
+            "epub_date": 1548977895318,
+            "volume_old": 5,
+            "chapter_old": 79,
+            "volume": 5,
+            "chapter": 79,
+            "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
+            "update_date": 1548950400000,
+            "update_count": 4
+          }
+        ]
+      ]
+    },
+    "1549036800000": {
+      "segment_count": 1,
+      "segment": [
+        [
+          "yandere",
+          "転生ごときで逃げられるとでも、兄さん？",
+          {
+            "segment_date": 1549064936964,
+            "segment_old": 4,
+            "segment": 14,
+            "init_date": 1548604800000,
+            "epub_date": 1548977895318,
+            "volume_old": 5,
+            "chapter_old": 79,
+            "volume": 5,
+            "chapter": 79,
+            "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
+            "update_date": 1549036800000,
+            "update_count": 5
+          }
+        ]
+      ],
+      "epub_count": 1,
+      "epub": [
+        [
+          "yandere_out",
+          "転生ごときで逃げられるとでも、兄さん？",
+          {
+            "txt_basename": "以為轉個生就能逃掉嗎，哥哥？.out.txt",
+            "epub_date": 1549064955897,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 5,
+            "chapter": 80,
+            "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
+            "init_date": 1549036800000,
+            "update_date": 1549036800000,
+            "update_count": 1
+          }
+        ]
+      ]
     }
   },
   "novels": {
@@ -1328,8 +1652,17 @@
       },
       "乙女ゲー世界はモブに厳しい世界です": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 18
+        "chapter_old": 82,
+        "chapter": 82,
+        "segment_date": 1548903323356,
+        "segment_old": 0,
+        "segment": 75,
+        "epub_date": 1548977872411,
+        "volume_old": 5,
+        "volume": 5,
+        "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+        "update_date": 1548950400000,
+        "update_count": 2
       },
       "大叔撿到了勇者和魔王": {
         "init_date": 1545494400000,
@@ -1462,6 +1795,34 @@
         "epub_basename": "宇宙軍士官，成為冒險者.epub",
         "update_date": 1548432000000,
         "update_count": 3
+      },
+      "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～": {
+        "segment_date": 1548891171896,
+        "segment_old": 0,
+        "segment": 7,
+        "init_date": 1548864000000,
+        "epub_date": 1548977874438,
+        "volume_old": 3,
+        "chapter_old": 11,
+        "volume": 3,
+        "chapter": 11,
+        "epub_basename": "原世界第一玩家的小號練成日記.epub",
+        "update_date": 1548950400000,
+        "update_count": 2
+      },
+      "絕對不想工作的地下城城主想睡懶覺": {
+        "segment_date": 1548977705773,
+        "segment_old": 0,
+        "segment": 117,
+        "init_date": 1548950400000,
+        "epub_date": 1548977883964,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 23,
+        "chapter": 169,
+        "epub_basename": "絕對不想工作的地下城城主想睡懶覺.epub",
+        "update_date": 1548950400000,
+        "update_count": 1
       }
     },
     "user": {
@@ -1665,14 +2026,14 @@
       "你這種傢伙別想打贏魔王": {
         "init_date": 1545494400000,
         "txt_basename": "你這種傢伙別想打贏魔王.out.txt",
-        "epub_date": 1548511755676,
-        "volume_old": 9,
-        "chapter_old": 86,
-        "volume": 9,
-        "chapter": 87,
+        "epub_date": 1548977886914,
+        "volume_old": 10,
+        "chapter_old": 90,
+        "volume": 10,
+        "chapter": 90,
         "epub_basename": "你這種傢伙別想打贏魔王.epub",
-        "update_date": 1548432000000,
-        "update_count": 7
+        "update_date": 1548950400000,
+        "update_count": 9
       },
       "奪う者　奪われる者": {
         "init_date": 1545494400000,
@@ -1861,14 +2222,14 @@
       "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～": {
         "init_date": 1545494400000,
         "txt_basename": "暗黒騎士物語　～勇者を倒すために魔王に召.out.txt",
-        "epub_date": 1548649046324,
+        "epub_date": 1548977891891,
         "volume_old": 9,
-        "chapter_old": 178,
+        "chapter_old": 180,
         "volume": 9,
-        "chapter": 180,
+        "chapter": 181,
         "epub_basename": "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～.epub",
-        "update_date": 1548604800000,
-        "update_count": 7
+        "update_date": 1548950400000,
+        "update_count": 8
       },
       "転生したら剣でした": {
         "init_date": 1545494400000,
@@ -2324,14 +2685,15 @@
         "segment_date": 1546393553093,
         "segment_old": 0,
         "segment": 13,
-        "epub_date": 1546475293509,
+        "epub_date": 1548977869825,
         "volume_old": 3,
         "chapter_old": 72,
         "volume": 3,
         "chapter": 72,
         "epub_basename": "我的同學是姬騎士.epub",
-        "update_date": 1546444800000,
-        "update_count": 2
+        "update_date": 1548950400000,
+        "update_count": 4,
+        "novel_status": 770
       },
       "異世界人の手引き書": {
         "init_date": 1545494400000,
@@ -2815,18 +3177,18 @@
     },
     "yandere": {
       "転生ごときで逃げられるとでも、兄さん？": {
-        "segment_date": 1548805600329,
-        "segment_old": 69,
-        "segment": 1,
+        "segment_date": 1549064936964,
+        "segment_old": 4,
+        "segment": 14,
         "init_date": 1548604800000,
-        "epub_date": 1548805625710,
+        "epub_date": 1548977895318,
         "volume_old": 5,
         "chapter_old": 79,
         "volume": 5,
         "chapter": 79,
         "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
-        "update_date": 1548777600000,
-        "update_count": 2
+        "update_date": 1549036800000,
+        "update_count": 5
       }
     },
     "mirronight_out": {
@@ -2840,6 +3202,20 @@
         "epub_basename": "只有無職是不會辭掉的.epub",
         "init_date": 1548691200000,
         "update_date": 1548691200000,
+        "update_count": 1
+      }
+    },
+    "yandere_out": {
+      "転生ごときで逃げられるとでも、兄さん？": {
+        "txt_basename": "以為轉個生就能逃掉嗎，哥哥？.out.txt",
+        "epub_date": 1549064955897,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 5,
+        "chapter": 80,
+        "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
+        "init_date": 1549036800000,
+        "update_date": 1549036800000,
         "update_count": 1
       }
     }
@@ -2874,15 +3250,21 @@
           "title_zh": "我的同學是姬騎士",
           "title_zh2": "姬騎士是同班同學",
           "author": "ＥＫＺ",
+          "illust": "吉沢メガネ",
+          "illusts": [
+            "吉沢メガネ",
+            "NO.ゴメス"
+          ],
           "source": "http://novel18.syosetu.com/n0153ce/",
           "cover": "https://lightnovelstranslations.com/wp-content/uploads/2017/03/Volume-1-cover.jpg",
           "publisher": "syosetu",
           "date": "2016-10-31T22:05:00+08:00",
           "status": "連載",
+          "novel_status": 770,
           "series": {
             "name": "姫騎士がクラスメート！　〜異世界チートで奴隷化ハーレム〜"
           },
-          "preface": "小田森トオル (Oda-mori tōru), 男高中生 (沒有朋友, 在班上如同空氣般的存在)\n修學旅行途中發生意外事故\n死後遇到神\n以原本的年齡與長相轉生到異世界\n成為一名魔隸術師\n在異世界抓村娘與女冒險者作為魔隸(性奴隸)\n一個月後, 王國因為多起失蹤事件, 而派出姬騎士進行討伐\n當姬騎士與魔隸術師見面後\n沒想到姬騎士竟然是前世的班級委員(女班長) \n\n友達のいない男子高校生、小田森トオルは、修学旅行のバス事故でファンタジー異世界へと転生することに。そこで引き当てたジョブは、他人を言いなりにできるチート職業『魔隷術師』。さっそくその力で女たちを奴隷にし始めるトオル。だが同じく転生したクラスメートの美少女、姫野桐華が正義の『姫騎士』としてトオルの前に現れて——！？　「こうなったら元クラスメートも冒険者も、エルフも魔族もお姫様も、まとめて奴隷にしてやるぜ！」【※書籍版１〜３巻、キルタイムコミュニケーション様『ビギニングノベルズ』から発売中！　漫画版『コミックヴァルキリーWeb』にて連載中、コミックス１巻発売中！　書籍版最新４巻、１０／４発売予定！】",
+          "preface": "轉生成為魔隸術師的主角，是一個相當縱欲的“紳hen士tai”。沒有朋友的男子高中生，小田森透，在修學旅行的公交車事故裡，轉生到了幻想異世界。在那裡獲得的職業是，能使人打從心底服從的外掛職業魔隸術師。於是馬上用那個力量開始將女人們變成奴隸的透。但是同時也獲得轉生的同班的美少女，姫野桐華卻作為正義的《姬騎士》出現在透面前——！？“這樣的話管她是原同班同學，冒險者也好，精靈也好，魔族也好，公主也好，全部變成我的奴隸吧\n\n小田森トオル (Oda-mori tōru), 男高中生 (沒有朋友, 在班上如同空氣般的存在)\n修學旅行途中發生意外事故\n死後遇到神\n以原本的年齡與長相轉生到異世界\n成為一名魔隸術師\n在異世界抓村娘與女冒險者作為魔隸(性奴隸)\n一個月後, 王國因為多起失蹤事件, 而派出姬騎士進行討伐\n當姬騎士與魔隸術師見面後\n沒想到姬騎士竟然是前世的班級委員(女班長) \n\n友達のいない男子高校生、小田森トオルは、修学旅行のバス事故でファンタジー異世界へと転生することに。そこで引き当てたジョブは、他人を言いなりにできるチート職業『魔隷術師』。さっそくその力で女たちを奴隷にし始めるトオル。だが同じく転生したクラスメートの美少女、姫野桐華が正義の『姫騎士』としてトオルの前に現れて——！？　「こうなったら元クラスメートも冒険者も、エルフも魔族もお姫様も、まとめて奴隷にしてやるぜ！」【※書籍版１〜３巻、キルタイムコミュニケーション様『ビギニングノベルズ』から発売中！　漫画版『コミックヴァルキリーWeb』にて連載中、コミックス１巻発売中！　書籍版最新４巻、１０／４発売予定！】",
           "tags": [
             "node-novel",
             "novel18",
@@ -2897,7 +3279,8 @@
             "男性視点",
             "異世界",
             "魔法"
-          ]
+          ],
+          "title_zh3": "姬騎士是同班同學！　〜異世界外掛的奴隸化後宮〜"
         },
         "contribute": [
           "812843924",
@@ -2926,7 +3309,10 @@
           "[dip.jp](https://narou18.dip.jp/search.php?text=n0153ce&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[我的同学是姬骑士吧](https://tieba.baidu.com/f?kw=%E6%88%91%E7%9A%84%E5%90%8C%E5%AD%A6%E6%98%AF%E5%A7%AC%E9%AA%91%E5%A3%AB&ie=utf-8 \"我的同学是姬骑士\")",
           "[姫騎士がクラスメート！　THE COMIC](http://www.comic-valkyrie.com/modules/web_valkyrie/classmate/)",
-          "https://www.lightnovel.cn/forum.php?mod=viewthread&tid=922044"
+          "https://www.lightnovel.cn/forum.php?mod=viewthread&tid=922044",
+          "[dm5](http://www.dm5.com/manhua-wodetongxueshijiqishi/)",
+          "[manhuagui](https://tw.manhuagui.com/comic/26586/)",
+          "https://www.lightnovel.cn/thread-930229-1-1.html"
         ]
       },
       "捨てられた勇者は魔王となりて死に戻る（旧題：捨てられた勇者の英雄譚）": {
@@ -7318,7 +7704,7 @@
           "source": "http://ncode.syosetu.com/n3191eh/",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/912nndTR2SL.jpg",
           "publisher": "syosetu",
-          "date": "2018-11-06T00:00:00+08:00",
+          "date": "2019-01-26T16:52:00+08:00",
           "status": "連載",
           "series": {
             "name": "連載中"
@@ -7346,12 +7732,24 @@
           ]
         },
         "contribute": [
+          "-流流年华",
           "6969letsex",
+          "Miigen",
           "davidwwb123",
           "electricfan_bk",
           "homtsai",
+          "jt00743672",
+          "ロ吻",
+          "东山奈央",
+          "回眸一笑",
+          "土之女神",
+          "月影破云出",
           "火烤de泡泡",
-          "灰常瞴语"
+          "灰常瞴语",
+          "神楽坂秀吉",
+          "空儚2383",
+          "萩丶枼",
+          "虹夢璀璨"
         ],
         "options": {
           "downloadOptions": {
@@ -7371,7 +7769,81 @@
           "[dip.jp](https://narou.nar.jp/search.php?text=n3191eh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[乙女游戏世界对路人角色太严厉吧](https://tieba.baidu.com/f?kw=%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C%E5%AF%B9%E8%B7%AF%E4%BA%BA%E8%A7%92%E8%89%B2%E5%A4%AA%E4%B8%A5%E5%8E%89&ie=utf-8&tp=0 \"乙女游戏世界对路人角色太严厉\")",
           "[dmzj](https://manhua.dmzj.com/yinvyouxishijieduilurenjuesehenbuyouhao/)",
-          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_FS01200541010000_68/)"
+          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_FS01200541010000_68/)",
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=60&page=1)"
+        ]
+      },
+      "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～": {
+        "novel": {
+          "title": "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～",
+          "title_zh": "原世界第一玩家的小號練成日記",
+          "title_zh1": "原・世界第一玩家的小號練成日記 ～廢人玩家、異世界攻略中～",
+          "author": "沢村治太郎(合成酵素)",
+          "illust": "",
+          "illusts": [
+            "まろ",
+            "前田理想"
+          ],
+          "source": "http://ncode.syosetu.com/n6774eh/",
+          "cover": "https://lohas.nicoseiga.jp/material/603cc7/8801618",
+          "publisher": "syosetu",
+          "date": "2019-01-28T19:12:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～"
+          },
+          "preface": "初中和高中都不出席，成人之後也不工作，整天都沉迷於網遊。對世界排名第1位的他來說，網遊就是人生本身。\n那樣的某日，他的角色突然被破壞了。修復是不可能。沒有辦法。失去了賭上人生的全部持續君臨世界首位寶座的他，在過度的絕望下嘗試自殺。醒來後，已經置身於網遊中。不，是和網路遊戲一模一樣的現實世界中。在那裡他，作為過去放置的高級收費的造型輔助角色轉生。\n世界首位的廢人脫胎換骨後，在與網遊一模一樣的異世界。他的傳說即將再次開幕。廢人，貓，黑暗精靈等，與眾多有個性的伙伴們一起，取回他「世界首位」的冒險現在開始。\n\n（原題：世界一位の異世界サブキャラ育成日記）\n\n　中学も高校もろくに通わず、成人しても働かず、朝昼晩とネットゲーム。世界ランキング１位の彼にとって、ネトゲはまさしく人生そのものであった。\n　そんなある日、彼のキャラクターが突如としてクラックされる。復旧は不可能。どうしようもなかった。人生の全てを賭けて君臨し続けていた世界一位の座を失った彼は、あまりの絶望に自殺を試みてしまう。\n　目が覚めると、そこはネットゲームの中。否、ネットゲームそっくりな現実世界の中。そこで彼は、過去に作成したきり放置していたプレミアム課金アバターのサブキャラに転生していた。\n　世界一位の廃人が、ネトゲそっくりの異世界に生まれ変わる。それは途轍もない伝説の幕開けであった。\n　ぽんこつ、ネコ、ダークエルフなど、大勢の個性的な仲間たちと共に、彼の「世界一位」を取り戻す育成が今始まる。\n　\n第一章：女騎士編　\n第二章：魔術学校編　\n第三章：奴隷編　\n第四章：精霊大王編　\n第五章：暗黒狼編　\n第六章：政争編　\n第七章：タイトル争奪編　\n第八章：聖女編　\n第九章：刀八ノ国編　\n第十章：タイトル防衛編　\n第十一章：帝国編　\n第十二章：",
+          "tags": [
+            "R15",
+            "VRMMO",
+            "node-novel",
+            "syosetu",
+            "スキル",
+            "ダンジョン",
+            "ダークエルフ",
+            "ハーレム",
+            "メイド",
+            "主人公最強",
+            "冒険",
+            "剣と魔法",
+            "女騎士",
+            "奴隷",
+            "日常",
+            "残酷な描写あり",
+            "獣人",
+            "男主人公",
+            "異世界転移",
+            "穿越",
+            "精霊",
+            "網遊"
+          ],
+          "title_jp2": "世界一位の異世界サブキャラ育成日記"
+        },
+        "contribute": [
+          "勤奋的懒惰的羊",
+          "章魚子",
+          "缥缈浣纱"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n6774eh"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n6774eh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[原世界第一玩家的小号练成日记吧](https://tieba.baidu.com/f?kw=%E5%8E%9F%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%8E%A9%E5%AE%B6%E7%9A%84%E5%B0%8F%E5%8F%B7%E7%BB%83%E6%88%90%E6%97%A5%E8%AE%B0&ie=utf-8&tp=0 \"原世界第一玩家的小号练成日记\")",
+          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_KS01200682010000_68/)",
+          "[seiga.nicovideo.jp](http://seiga.nicovideo.jp/comic/38266)",
+          "[dm5 漫画](http://www.dm5.com/manhua-yuan-shijiediyiwanjiadexiaohaolianchengriji-feirenwanjia-yishijiegongluezhong/)"
         ]
       },
       "大叔撿到了勇者和魔王": {
@@ -7706,6 +8178,89 @@
           "[dip.jp](https://narou.nar.jp/search.php?text=n2056dn&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[父为英雄母为精灵女儿为转生者吧](https://tieba.baidu.com/f?kw=%E7%88%B6%E4%B8%BA%E8%8B%B1%E9%9B%84%E6%AF%8D%E4%B8%BA%E7%B2%BE%E7%81%B5%E5%A5%B3%E5%84%BF%E4%B8%BA%E8%BD%AC%E7%94%9F%E8%80%85&ie=utf-8 \"父为英雄母为精灵女儿为转生者\")",
           "[dmzj](https://manhua.dmzj.com/dieqiangmamengwowudi/)"
+        ]
+      },
+      "絕對不想工作的地下城城主想睡懶覺": {
+        "novel": {
+          "title": "絶対に働きたくないダンジョンマスターが惰眠をむさぼるまで",
+          "title_zh1": "絕對不想工作的地下城城主想睡懶覺",
+          "title_zh2": "不工作的地城主想睡懶覺",
+          "author": "鬼影スパナ",
+          "illust": "よう太",
+          "illusts": [
+            "七六"
+          ],
+          "source": "http://ncode.syosetu.com/n5490cq/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91ZCsHrplUL.jpg",
+          "publisher": "syosetu",
+          "date": "2019-01-29T21:51:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "絶対に働きたくないダンジョンマスター"
+          },
+          "preface": "「我不想工作Zzzz」\n　即將被召喚到異世界的增田桂馬、神明大人說可以聽取他一個條件時、桂馬如此回答了。\n　......不過、異世界好像並沒有這等好事。接着神明大人呆然地說「......那我期待下一個人吧...」、然後桂馬就這樣被祂目送着穿越到了異世界。\n　召喚桂馬的是被稱為第695號地城核心的金髮蘿莉幼女。接着不知怎的桂馬突然被登錄為了地城主、什麼......、這個地城就只有1個房間，而且那個房間還被山賊佔領了......？\n　------那麼究竟桂馬能不能顛覆這個突如其來的困境、然後實現可以睡懶覺而又不用工作的生活呢？！\n\n「働きたくない」\n　異世界召喚される中、神様が一つだけ条件を聞いてくれるということで、増田桂馬はそう答えた。\n　……だが、さすがにそううまい話はないらしい。呆れられて「次の人に期待する」という神様に見送られ、桂馬はそのまま召喚された。\n　召喚したのは第６９５番ダンジョンコアと名乗る金髪ロリ幼女。そしてなんか流れでダンジョンマスターになったけど、あれ、このダンジョン１部屋しかない上に山賊に制圧されてね……？\n　はたして桂馬はいきなり詰んでるこの状況を覆し、惰眠をむさぼる働かない生活を手に入れることはできるのか？！\n\n（2018年11月25日　書籍９巻発売。コミカライズもしました→https://over-lap.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=ZG0023）",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ダンジョン",
+            "ダンジョンマスター",
+            "ダンジョン経営",
+            "ダンジョン運営",
+            "ファンタジー",
+            "地下城",
+            "奴隷",
+            "幼女",
+            "残酷な描写あり",
+            "異世界",
+            "異世界転移",
+            "経営",
+            "運営",
+            "魔法"
+          ]
+        },
+        "contribute": [
+          "ALEXY",
+          "elsun87108",
+          "giligili_eve",
+          "iam_hungry",
+          "m51352004",
+          "on哥",
+          "初级侬侬",
+          "吉村理葛代",
+          "夜幕壟罩",
+          "崇雨沛風",
+          "新筆芯",
+          "暗風月",
+          "水中浮云月",
+          "試用版beta",
+          "路人_鋒",
+          "長谷川無用男",
+          "阿李猫猫cat",
+          "雪隐鬼狐",
+          "鳥鈴司",
+          "黑尋亦"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n5490cq"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n5490cq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[不工作的地城主想睡懒觉吧](https://tieba.baidu.com/f?kw=%E4%B8%8D%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E5%9F%8E%E4%B8%BB%E6%83%B3%E7%9D%A1%E6%87%92%E8%A7%89&ie=utf-8 \"不工作的地城主想睡懒觉\")",
+          "[石墨整合帖](https://shimo.im/docs/QVS5Zmgs85QzmDKB)",
+          "[真白小鎮](https://masiro.moe/forum.php?mod=forumdisplay&fid=97)",
+          "[dm5 漫畫](http://www.dm5.com/manhua-jueduibuxianggongzuodedixiachengchengzhuxiangshuilanjue/)"
         ]
       },
       "自称！平凡魔族の英雄ライフ": {
@@ -8449,7 +9004,7 @@
           "series": {
             "name": "お前ごときが魔王に勝てると思うな"
           },
-          "preface": "少女芙拉姆，因為神的指示，被選為討伐魔王旅程的一員。\n全員都擁有一流能力的勇者一行。但是，不知為何只有芙拉姆不具戰鬥能力，所有狀態值皆為0。\n於是在某一天，被隊伍中的一人騙說「已經不需要妳了」後賣給了奴隸商人\n在身為奴隸的惡劣環境中，芙拉姆為了生存而被迫堅強。\n但是她在那與“受詛之劍”相遇、知道了最弱能力“反轉”的真正價值。\n得到戰鬥能力的她，老實說已經覺得魔王什麼的怎樣都好了，決定和遇到的奴隸少女一起當冒險者安穩的生活下去。\n\n－－－這就是一位少女，為了取回平穩的日常而從深淵底下爬上來的戰鬥故事。\n\n少女フラムは、神の予言により、魔王討伐の旅の一員として選ばれることとなった。\n全員が一流の力を持つ勇者一行。しかし、なぜかフラムだけは戦う力を持たず、ステータスも全て0。\n肩身の狭い思いをしながら、それでも彼女は勇者たちの役に立とうと努力を続ける。\nだがある日、パーティのうちの1人から騙され「もうお前は必要ない」と奴隷商人に売り飛ばされてしまう。\n奴隷として劣悪な環境の中で生きることを強いられたフラム。\nしかし彼女は、そこで”呪いの剣”と出会い、最弱の能力”反転”の真価を知る。\n戦う力を得た彼女は、正直もう魔王とかどうでもいいので、出会った奴隷の少女と共に冒険者として平穏に暮らすことを決めるのだった。\n――これは一人の少女が、平穏な日常を取り戻すためにどん底から這い上がってゆく、戦いの物語である。\n\n日間最高１位、週間最高１位、月間最高２位にランクインしました。みなさんの応援のおかげです、ありがとうございます！\n\nGCノベルズ様から書籍化決定しました！　発売日はまだ未定です。\n\nカクヨムとマルチ投稿してます。",
+          "preface": "少女芙拉姆，因為神的指示，被選為討伐魔王旅程的一員。\n全員都擁有一流能力的勇者一行。但是，不知為何只有芙拉姆不具戰鬥能力，所有狀態值皆為0。\n於是在某一天，被隊伍中的一人騙說「已經不需要妳了」後賣給了奴隸商人\n在身為奴隸的惡劣環境中，芙拉姆為了生存而被迫堅強。\n但是她在那與“受詛之劍”相遇、知道了最弱能力“反轉”的真正價值。\n得到戰鬥能力的她，老實說已經覺得魔王什麼的怎樣都好了，決定和遇到的奴隸少女一起當冒險者安穩的生活下去。\n\n――這就是一位少女，為了取回平穩的日常而從深淵底下爬上來的戰鬥故事。\n\n少女フラムは、神の予言により、魔王討伐の旅の一員として選ばれることとなった。\n全員が一流の力を持つ勇者一行。しかし、なぜかフラムだけは戦う力を持たず、ステータスも全て0。\n肩身の狭い思いをしながら、それでも彼女は勇者たちの役に立とうと努力を続ける。\nだがある日、パーティのうちの1人から騙され「もうお前は必要ない」と奴隷商人に売り飛ばされてしまう。\n奴隷として劣悪な環境の中で生きることを強いられたフラム。\nしかし彼女は、そこで”呪いの剣”と出会い、最弱の能力”反転”の真価を知る。\n戦う力を得た彼女は、正直もう魔王とかどうでもいいので、出会った奴隷の少女と共に冒険者として平穏に暮らすことを決めるのだった。\n――これは一人の少女が、平穏な日常を取り戻すためにどん底から這い上がってゆく、戦いの物語である。\n\n日間最高１位、週間最高１位、月間最高２位にランクインしました。みなさんの応援のおかげです、ありがとうございます！\n\nGCノベルズ様から書籍化決定しました！　発売日はまだ未定です。\n\nカクヨムとマルチ投稿してます。",
           "tags": [
             "R15",
             "node-novel",
@@ -8481,6 +9036,7 @@
           "十六夜的犬咲夜",
           "千恋",
           "卢浮宫卖包子",
+          "吾乃良民hehe",
           "回元",
           "无水灬天际",
           "爱布丁的梨",
@@ -9300,9 +9856,10 @@
       "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～": {
         "novel": {
           "title": "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～",
+          "title_zh1": "暗黒騎士物語　～為了打敗勇者，被魔王召喚了～",
           "author": "根崎タケル",
           "source": "https://ncode.syosetu.com/n8961ch/",
-          "cover": "http://souku.jp/information/campaign/nanana/img/bu99992572.jpg",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81TiGgMmRqL.jpg",
           "preface": "译名：暗黒騎士物語  ~为了打败勇者，被魔王召唤了~\n\n这是主人公作为暗黑骑士，为了阻止勇者保护魔王而被召唤的故事。\n\n突然被召唤到异世界的黑树，以及召唤了黑树的魔王莫德斯。然后，现在魔王所支配的国家正处在眼看就要被勇者毁灭的时候。\n拥有凶恶外表的魔王莫德斯，向黑树地下了头。\n\n「拜托您救救我吧！！救世主大人！！」  \n\n于是黑树顺势成为了暗黑骑士去帮助魔王。",
           "tags": [
             "R15",
@@ -9346,6 +9903,10 @@
           "鬼之幻魔"
         ],
         "options": {
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n8961ch"
+          },
           "textlayout": {}
         },
         "link": [
@@ -11190,7 +11751,7 @@
         ]
       }
     },
-    "yandere": {
+    "yandere_out": {
       "転生ごときで逃げられるとでも、兄さん？": {
         "novel": {
           "title": "転生ごときで逃げられるとでも、兄さん？",
@@ -11200,7 +11761,7 @@
           "author": "紙城境介",
           "illust": "",
           "source": "http://ncode.syosetu.com/n7437dj/",
-          "cover": "",
+          "cover": "https://iwiz-chie.c.yimg.jp/im_siggZEOsvSlv5Jd1oYt7bF9YIA---x320-y320-exp5m-n1/d/iwiz-chie/que-12144150507",
           "publisher": "syosetu",
           "date": "2018-12-08T11:31:00+08:00",
           "status": "連載",
@@ -11220,6 +11781,7 @@
             "チート",
             "ブラコン妹（最凶）",
             "ヤンデレ",
+            "妹",
             "学園",
             "幼馴染（デレデレ）",
             "恋愛",
@@ -11565,6 +12127,64 @@
         "link": [
           "[dip.jp](https://narou.nar.jp/search.php?text=n7216dr&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[最强鉴定师在说谁呢吧](https://tieba.baidu.com/f?kw=%E6%9C%80%E5%BC%BA%E9%89%B4%E5%AE%9A%E5%B8%88%E5%9C%A8%E8%AF%B4%E8%B0%81%E5%91%A2&ie=utf-8 \"最强鉴定师在说谁呢\")"
+        ]
+      },
+      "生き残り錬金術師は街で静かに暮らしたい": {
+        "novel": {
+          "title": "生き残り錬金術師は街で静かに暮らしたい",
+          "title_zh": "倖存錬金術師想在城裏靜靜生活",
+          "title_zh1": "幸存煉金術師想在城裡靜靜生活",
+          "author": "のの原兎太",
+          "illust": "ox",
+          "illusts": [
+            "溝口ぐる"
+          ],
+          "source": "http://ncode.syosetu.com/n4764du/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81XgOGd-PnL.jpg",
+          "publisher": "syosetu",
+          "date": "2019-01-23T11:47:00+08:00",
+          "status": "完結済",
+          "novel_status": 769,
+          "series": {
+            "name": "生き残り錬金術師は街で静かに暮らしたい"
+          },
+          "preface": "恩达鲁齐亚王国，因为「魔物森林」的泛滥暴走而毁灭了。 \n炼金术师玛丽艾菈，用『假死魔法阵』逃过一劫，但是因为一点小粗心，醒来的时候已经是200年后，炼金术师早已死绝的世界了。 \n为了管理由暴走而产生的迷宫和魔物森林，王国的遗迹上建造起了迷宫都市。但迷宫都市内仅存的药水水都是封存保管了数十数百年的劣化药水，由于严重的供给不足，价格已经涨到了原来的100倍。 \n这是一个在迷宫都市中仅存的能制作药水的炼金术师玛丽艾菈，偷偷的贩卖药水，享受在迷宫都市的生活的故事\n\nエンダルジア王国は、「魔の森」のスタンピードによって滅びた。\n錬金術師のマリエラは、『仮死の魔法陣』のおかげで難を逃れるが、ちょっとしたうっかりから、目覚めたのは200年後の錬金術師が死に絶えた世界だった。\nスタンピードで出現した迷宮と、魔の森を管理するために王国跡に作られた迷宮都市には、ポーションは数十年前から保管されている劣化した物しかなく、超供給不足で値段は高騰。\nポーションを作れる都市で唯一の錬金術師になってしまったマリエラが、こっそりポーションを販売したり、迷宮都市での暮らしをのんびり楽しんだりするお話です。\n☆★☆KADOKAWA/エンターブレイン様より小説５巻1/18発売です☆★☆B's Log COMICSでコミカライズ連載中！　コミックス１巻も発売中です。☆★☆ＴＶＣＭ第２段を作成して頂きました！　今度はジークverです。→https://youtu.be/QLXE8LgvYCs 　youtubeにUP頂いておりますので、よろしければご覧ください。第１弾マリエラverはコチラ→https://youtu.be/ip30XatO6_8　☆★☆",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "女主人公",
+            "奴隷",
+            "残酷な描写あり",
+            "生産系",
+            "異世界",
+            "錬金術師",
+            "魔法"
+          ]
+        },
+        "contribute": [
+          "joseph261059"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n4764du"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n4764du&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[幸存炼金术师想在城里静静生活吧](https://tieba.baidu.com/f?kw=%E5%B9%B8%E5%AD%98%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88%E6%83%B3%E5%9C%A8%E5%9F%8E%E9%87%8C%E9%9D%99%E9%9D%99%E7%94%9F%E6%B4%BB&ie=utf-8 \"幸存炼金术师想在城里静静生活\")",
+          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_EB03200101010000_68/)",
+          "[epub](https://mega.nz/#F!4x9RVZLT!Tucgvy-PK--6YV13oaC2LA) - joseph261059",
+          "[dm5 漫画](http://www.dm5.com/manhua-xingcunlianjinshushixiangzaichenglijingjingshenghuo/ \"幸存炼金术师想在城里静静生活\")"
         ]
       },
       "破滅の魔導王とゴーレムの蛮妃": {

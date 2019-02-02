@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Created by user on 2019/1/13/013.
+ */
 const tslib_1 = require("tslib");
 const FastGlob = require("fast-glob");
 const project_config_1 = tslib_1.__importDefault(require("../../project.config"));
@@ -17,6 +20,7 @@ module.exports = Bluebird.resolve(FastGlob.async([
     cwd: project_config_1.default.publicPath,
     deep: true,
     onlyFiles: true,
+    //followSymlinkedDirectories: true,
     ignore: [
         'index.html',
         'index.htm',
