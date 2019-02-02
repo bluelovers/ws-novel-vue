@@ -49,33 +49,48 @@ module.exports = {
 
 		optimization: {
 
-//			splitChunks: {
-//				chunks: 'all',
+			splitChunks: {
+				chunks: 'all',
 //				minSize: 1048,
 //				maxSize: 0,
-//				name: true,
+				name: true,
 
-//				cacheGroups: {
-////					tool: {
-////						test: /^tool$/,
-////					},
-////					cjk: {
-////						test: /cjk|japanese|chinese/,
-////						priority: 20,
-//////						reuseExistingChunk: true,
-////					},
-//					novel: {
-//						test: /novel/,
-////						priority: 10,
+				cacheGroups: {
+//					tool: {
+//						test: /^tool$/,
+//					},
+//					cjk: {
+//						test: /cjk|japanese|chinese/,
+//						priority: 20,
 ////						reuseExistingChunk: true,
 //					},
-////					default: {
-////						minChunks: 2,
-////						priority: -20,
-//////						reuseExistingChunk: true
-////					},
-//				},
-//			},
+					'novel-stat-json': {
+						test: /build\.json$|novel-stat\.json$/,
+						priority: 20,
+//						reuseExistingChunk: true,
+					},
+//					'novel': {
+//						test: /-cjk|cjk-|japanese|chinese|regexp+-|uni-string|regexpp|mdconf|novel-|node-novel|str-util/,
+//						priority: 10,
+////						reuseExistingChunk: true,
+//					},
+//					'vendor': {
+//						test: /node_modules/,
+//						priority: 0,
+////						reuseExistingChunk: true,
+//					},
+//					'build-json': {
+//						test: /setting[\/\\]build.json/,
+//						priority: 10,
+////						reuseExistingChunk: true,
+//					},
+//					default: {
+//						minChunks: 2,
+//						priority: -20,
+////						reuseExistingChunk: true
+//					},
+				},
+			},
 
 			runtimeChunk: {
 				name: entrypoint => `runtime~${entrypoint.name}`

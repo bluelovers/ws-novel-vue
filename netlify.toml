@@ -6,7 +6,7 @@ command = "yarn run build-netlify"
   YARN_VERSION = "1.13.0"
 #  YARN_FLAGS = "--no-lockfile"
   FORCE_COLOR = "1"
-  NODE_ENV = "production"
+#  NODE_ENV = "production"
 
 
 

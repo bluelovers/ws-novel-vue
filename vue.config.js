@@ -37,32 +37,26 @@ module.exports = {
         ],
         //		devtool: !production,
         optimization: {
-            //			splitChunks: {
-            //				chunks: 'all',
-            //				minSize: 1048,
-            //				maxSize: 0,
-            //				name: true,
-            //				cacheGroups: {
-            ////					tool: {
-            ////						test: /^tool$/,
-            ////					},
-            ////					cjk: {
-            ////						test: /cjk|japanese|chinese/,
-            ////						priority: 20,
-            //////						reuseExistingChunk: true,
-            ////					},
-            //					novel: {
-            //						test: /novel/,
-            ////						priority: 10,
-            ////						reuseExistingChunk: true,
-            //					},
-            ////					default: {
-            ////						minChunks: 2,
-            ////						priority: -20,
-            //////						reuseExistingChunk: true
-            ////					},
-            //				},
-            //			},
+            splitChunks: {
+                chunks: 'all',
+                //				minSize: 1048,
+                //				maxSize: 0,
+                name: true,
+                cacheGroups: {
+                    //					tool: {
+                    //						test: /^tool$/,
+                    //					},
+                    //					cjk: {
+                    //						test: /cjk|japanese|chinese/,
+                    //						priority: 20,
+                    ////						reuseExistingChunk: true,
+                    //					},
+                    'novel-stat-json': {
+                        test: /build\.json$|novel-stat\.json$/,
+                        priority: 20,
+                    },
+                },
+            },
             runtimeChunk: {
                 name: entrypoint => `runtime~${entrypoint.name}`
             },
