@@ -16,16 +16,28 @@
 			<v-spacer></v-spacer>
 			<FooterItems />
 			<v-spacer></v-spacer>
-			<div class="mx-2 hidden-sm-and-down">
-				<a
-					:href="`${publicPath}static/novel-stat.json`"
-					target="_blank" rel="noopener"
-					@click="_ga('click', 'api', 'novel-stat.json')"
-					class="d-inline-block mr-2"
-					v-once
-				>novel-stat.json</a>
-				<div class="d-inline-block" v-once>&copy; {{ updateDate }}　</div>
-			</div>
+			<v-tooltip lazy top>
+				<div class="mx-2 hidden-sm-and-down" slot="activator">
+					<a
+						:href="`${publicPath}static/novel-stat.json`"
+						target="_blank" rel="noopener"
+						@click="_ga('click', 'api', 'novel-stat.json')"
+						class="d-inline-block mr-2"
+						v-once
+					>novel-stat.json</a>
+					<div class="d-inline-block" v-once>&copy; {{ updateDate }}　</div>
+				</div>
+				<table class="footer-api-info">
+					<tr>
+						<td>build</td>
+						<td>{{ buildDate }}</td>
+					</tr>
+					<tr>
+						<td>api</td>
+						<td>{{ updateDate }}</td>
+					</tr>
+				</table>
+			</v-tooltip>
 		</v-footer>
 	</v-app>
 </template>
@@ -56,7 +68,10 @@ export default class extends Vue
 
 	data()
 	{
-		let timestamp = loadNovelStatCache().data.meta.timestamp || null;
+		// @ts-ignore
+		const buildCache: typeof import('./setting/build.json') = require('@/setting/build.json');
+
+		let timestamp = buildCache.meta.timestamp || null;
 		let date = createMoment(timestamp || undefined);
 		let updateDate: string;
 
@@ -70,6 +85,7 @@ export default class extends Vue
 		}
 
 		return {
+			buildDate: createMoment(buildCache.buildTimestamp).format(),
 			updateDate,
 		}
 	}
@@ -85,6 +101,10 @@ export default class extends Vue
 
 }
 </script>
+
+<style scoped lang="scss">
+
+</style>
 
 <style lang="scss">
 #app {

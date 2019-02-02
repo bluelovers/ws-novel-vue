@@ -105,12 +105,13 @@
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 
-import { tw2cn, cn2tw, IOptions } from 'cjk-conv/lib/zh/convert';
-import { tw2cn_min, cn2tw_min } from 'cjk-conv/lib/zh/convert/min';
+import { IOptions } from 'cjk-conv/lib/zh/convert';
+//import { tw2cn, cn2tw } from 'cjk-conv/lib/zh/convert';
+//import { tw2cn_min, cn2tw_min } from 'cjk-conv/lib/zh/convert/min';
 import Throttle from 'lodash-decorators/throttle';
 import Debounce from 'lodash-decorators/debounce';
 import Bind from 'lodash-decorators/bind';
-import UString = require('uni-string');
+//import UString = require('uni-string');
 import { array_unique, array_unique_overwrite } from 'array-hyper-unique'
 
 @Component
@@ -129,7 +130,7 @@ export default class CjkConv extends Vue
 
 	opt_skip = this.$session.get('opt_skip') || '';
 
-	runConv(text: string)
+	async runConv(text: string)
 	{
 		this.loading = true;
 
@@ -139,10 +140,14 @@ export default class CjkConv extends Vue
 
 			if (this.opt_minmode)
 			{
+				let { tw2cn_min, cn2tw_min } = await import('cjk-conv/lib/zh/convert/min');
+
 				fn = this.opt_tw2cn ? tw2cn_min : cn2tw_min;
 			}
 			else
 			{
+				let { tw2cn, cn2tw } = await import('cjk-conv/lib/zh/convert');
+
 				fn = this.opt_tw2cn ? tw2cn : cn2tw;
 			}
 
@@ -175,7 +180,7 @@ export default class CjkConv extends Vue
 	@Watch('opt_safe')
 	onWatchChange()
 	{
-		this.runConv(this.value_input);
+		return this.runConv(this.value_input);
 	}
 
 	fnTrim(text: string)
@@ -186,12 +191,14 @@ export default class CjkConv extends Vue
 		;
 	}
 
-	onInputSkip(text?: string)
+	async onInputSkip(text?: string)
 	{
 		text = this.fnTrim(text).replace(/[\s+\w]/ig, '');
 
 		if (text)
 		{
+			let UString = await import('uni-string');
+
 			text = array_unique(UString.split(text, '')).join('')
 		}
 
@@ -206,12 +213,12 @@ export default class CjkConv extends Vue
 
 		if (text)
 		{
-			this.onChange(text);
+			return this.onChange(text);
 		}
 		else
 		{
 			this.value_input = '';
-			this.onWatchChange();
+			return this.onWatchChange();
 		}
 	}
 

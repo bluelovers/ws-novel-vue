@@ -388,7 +388,7 @@ import { getZhRegExp, zhRegExpGreedy, zhRegExpGreedyMatchWords } from '@/lib/reg
 import Bind from 'lodash-decorators/bind';
 import { sortSeriesCallback } from '@/lib/util/sort';
 
-const NovelData = dataAll();
+let NovelData: ReturnType<typeof dataAll>;
 
 const lowSrcMap = new WeakMap();
 
@@ -432,6 +432,11 @@ export default class List extends Vue
 
 	data()
 	{
+		if (!NovelData)
+		{
+			NovelData = dataAll();
+		}
+
 		let page_size = 12;
 		let page = 1;
 
