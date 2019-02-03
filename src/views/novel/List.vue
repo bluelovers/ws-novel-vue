@@ -24,15 +24,20 @@
 		>
 			<v-flex sm10 offset-sm1>
 
-				<div>
+				<v-flex
+					align-center
+					align-content-center
+					justify-center
+					class="pagination-div"
+				>
 					<v-pagination
 						:length="pages"
-						:value="page"
+						v-model="page"
 						:total-visible="7"
 						circle
 						@input="updateResource"
 					></v-pagination>
-				</div>
+				</v-flex>
 
 				<v-container
 					v-if="cur_len"
@@ -182,15 +187,20 @@
 					color="purple"
 				></v-progress-circular>
 
-				<div>
+				<v-flex
+					align-center
+					align-content-center
+					justify-center
+					class="pagination-div"
+				>
 					<v-pagination
 						:length="pages"
-						:value="page"
+						v-model="page"
 						:total-visible="7"
 						circle
 						@input="updateResource"
 					></v-pagination>
-				</div>
+				</v-flex>
 
 			</v-flex>
 		</v-layout>
@@ -1629,6 +1639,11 @@ export default class List extends Vue
 
 .pre-wrap {
 	white-space: pre-wrap;
+}
+
+.pagination-div
+{
+	text-align: center;
 }
 
 </style>

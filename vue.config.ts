@@ -96,7 +96,7 @@ module.exports = {
 				name: entrypoint => `runtime~${entrypoint.name}`
 			},
 
-			minimize: true || production,
+			minimize: production,
 			minimizer: [getTerserPlugin()],
 		},
 
