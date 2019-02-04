@@ -91,7 +91,7 @@
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "terser": "^3.16.0",
+    "terser": "3.14.1",
     "terser-webpack-plugin": "^1.2.1",
     "ts-node": "^8.0.2",
     "typescript": "^3.3.1",
@@ -104,12 +104,17 @@
     "yorkie": "^2.0.0"
   },
   "resolutions": {
+    "strip-ansi": "^5",
+    "deep-eql": "^3",
+    "is-number": "^7",
+    "moment": "^2.24.0",
     "@bluelovers/tsconfig": "^1.0.1",
-    "regexp-cjk": "^2.0.21",
-    "cjk-conv": "^1.1.13",
+    "regexp-cjk": "^2.0.20",
+    "cjk-conv": "^1.1.12",
     "regexp-parser-literal": "^1.0.2",
     "regexpp2": "^1.1.2",
-    "node-novel-info": "^2.3.27",
+    "terser": "3.14.1",
+    "node-novel-info": "^2.3.24",
     "@types/node": "^10"
   },
   "gitHooks": {
