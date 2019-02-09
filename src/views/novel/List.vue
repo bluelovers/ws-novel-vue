@@ -175,7 +175,7 @@
 						type="error"
 						dismissible
 						style="max-width: 250px;border-radius: 10px;"
-						@input="_searchResetKeyword"
+						@input="_searchResetButton"
 					>
 						NONE
 					</v-alert>
@@ -219,8 +219,8 @@
 				placeholder="搜尋標題 (使用 regexp-cjk 支援自動轉換簡繁日字漢字，以及一部分的 REGEXP 語法，空白視為分隔)"
 				persistent-hint
 				:value="cur_keyword"
-				@change="_searchByKeyword"
-				@click:clear="_searchResetKeyword"
+				@change="searchByKeyword"
+				@click:clear="_searchResetButton"
 
 				@keyup.left="_stopEvent"
 				@keyup.right="_stopEvent"
@@ -275,6 +275,21 @@
 							<v-layout align-center>
 								<v-checkbox class="shrink my-0 mr-2" label="chapter" v-model="searchOptions.chapter"></v-checkbox>
 								<v-checkbox class="my-0" v-model="searchOptions.chapter_reverse" on-icon="trending_down" off-icon="trending_up"></v-checkbox>
+							</v-layout>
+
+							<v-layout align-center>
+								<v-expansion-panel popout class="novel_status-area">
+									<v-expansion-panel-content>
+										<div slot="header"><v-checkbox class="shrink my-0 mr-2" label="novel_status" v-model="searchOptions.novel_status"></v-checkbox></div>
+										<v-card>
+											<OptionFilterEnumNovelStatus
+												v-model="searchOptions.novel_status_value"
+												:value="searchOptions.novel_status_value"
+												@input="searchOptions.novel_status_value = $event"
+											></OptionFilterEnumNovelStatus>
+										</v-card>
+									</v-expansion-panel-content>
+								</v-expansion-panel>
 							</v-layout>
 
 						</v-card-text>
@@ -376,26 +391,28 @@ import Topbar from '@/components/Nav/Topbar.vue'
 import PanelFilterTag from '@/components/Novel/PanelFilterTag.vue'
 import PanelFilterTag2 from '@/components/Novel/PanelFilterTag2.vue'
 import PanelFilterTag3, { IVChipTagItem, IVChipTagOptions } from '@/components/Novel/PanelFilterTag3.vue'
+import { EnumNovelStatus } from 'node-novel-info/lib/const'
+import OptionFilterEnumNovelStatus from '@/components/Novel/OptionFilterEnumNovelStatus.vue'
 
 import {
 	cacheSortCallback,
+	createMoment,
 	dataAll,
 	EnumEventAction,
 	EnumEventLabel,
 	getNovelTitleFromMeta,
 	IFilterNovelData,
+	IFilterNovelDataPlus,
 	novelLink,
-	createMoment, IFilterNovelDataPlus,
 } from '@/lib/novel';
 import { img_unsplash } from '@/lib/util';
 import { IVueComponent } from '@/lib/vue/index';
 import { array_unique } from 'array-hyper-unique'
 import url from 'url';
-import { Component, Vue, Watch, Prop } from 'vue-property-decorator';
+import { Component, Vue, Watch } from 'vue-property-decorator';
 import { Route } from 'vue-router'
-import { toHalfWidthLocaleLowerCase, handleSearchText } from '@/lib/conv';
-import { getZhRegExp, zhRegExpGreedy, zhRegExpGreedyMatchWords } from '@/lib/regexp';
-import Bind from 'lodash-decorators/bind';
+import { handleSearchText, toHalfWidthLocaleLowerCase } from '@/lib/conv';
+import { zhRegExpGreedy, zhRegExpGreedyMatchWords } from '@/lib/regexp';
 import { sortSeriesCallback } from '@/lib/util/sort';
 
 let NovelData: ReturnType<typeof dataAll>;
@@ -409,6 +426,7 @@ const lowSrcMap = new WeakMap();
 		PanelFilterTag,
 		PanelFilterTag2,
 		PanelFilterTag3,
+		OptionFilterEnumNovelStatus,
 	},
 })
 export default class List extends Vue
@@ -438,6 +456,9 @@ export default class List extends Vue
 
 		volume: boolean,
 		volume_reverse: boolean,
+
+		novel_status: boolean,
+		novel_status_value: EnumNovelStatus | number,
 	};
 
 	data()
@@ -534,8 +555,13 @@ export default class List extends Vue
 				title: false,
 				title_reverse: false,
 
+				novel_status: false,
+				novel_status_value: 0 as EnumNovelStatus | number,
+
 				...(this.$session.get('searchOptions') || {})
 			} as List["searchOptions"],
+
+			EnumNovelStatus,
 		};
 
 		this.$nextTick(() => this._data_init());
@@ -649,6 +675,8 @@ export default class List extends Vue
 		}
 	}
 
+	EnumEventLabel = EnumEventLabel;
+
 	_search(searchType: EnumEventLabel, searchValue: string)
 	{
 		switch (searchType)
@@ -679,6 +707,9 @@ export default class List extends Vue
 		}
 
 		this._setTitle([searchValue, searchType]);
+
+		this._updateSort(null, true);
+		this.$session.set('searchOptions', this.searchOptions);
 	}
 
 	_searchStatReset()
@@ -693,6 +724,8 @@ export default class List extends Vue
 		_this.cur_publisher = '';
 		_this.cur_chapter_range = null;
 		_this.cur_illust = '';
+
+		this.searchOptions.novel_status = false;
 	}
 
 	_searchByChapterRange(value: {
@@ -1000,6 +1033,15 @@ export default class List extends Vue
 		return link + hash;
 	}
 
+	_searchResetButton()
+	{
+		this._searchResetKeyword();
+
+		this.searchOptions.novel_status = false;
+
+		this.watchSort();
+	}
+
 	_searchResetKeyword()
 	{
 		this._searchReset(EnumEventLabel.KEYWORD)
@@ -1009,6 +1051,11 @@ export default class List extends Vue
 	{
 		console.log('beforeRouteUpdate', to, from, next);
 		next();
+	}
+
+	searchByKeyword(keyword: string)
+	{
+		return this._search(EnumEventLabel.KEYWORD, keyword)
 	}
 
 	_searchByKeyword(keyword: string)
@@ -1350,6 +1397,28 @@ export default class List extends Vue
 		this._searchReset(EnumEventLabel.CONTRIBUTE)
 	}
 
+	@Watch('searchOptions.novel_status')
+	@Watch('searchOptions.novel_status_value')
+	onWatchFilter()
+	{
+		let old = this.$session.get('searchOptions');
+
+		if (old.novel_status)
+		{
+			this.$session.set('searchOptions', this.searchOptions);
+
+			this.onRouterChanged(this.$route);
+			this.watchSort();
+		}
+		else if (this.searchOptions.novel_status)
+		{
+			this.watchSort();
+		}
+
+		// @ts-ignore
+		this.$session.set('searchOptions', this.searchOptions)
+	}
+
 	@Watch('searchOptions.update_date')
 	@Watch('searchOptions.update_date_reverse')
 	@Watch('searchOptions.segment_date')
@@ -1366,7 +1435,7 @@ export default class List extends Vue
 	{
 		let bool = this._updateSort();
 
-		bool && this.updateResource(this.page);
+		this.updateResource(this.page);
 
 		if (bool)
 		{
@@ -1378,7 +1447,7 @@ export default class List extends Vue
 		this.$session.set('searchOptions', this.searchOptions)
 	}
 
-	_updateSort(ls?: IFilterNovelDataPlus[])
+	_updateSort(ls?: IFilterNovelDataPlus[] | IFilterNovelData[], noUpdateAll?: boolean)
 	{
 		// @ts-ignore
 		let _this = this;
@@ -1388,6 +1457,17 @@ export default class List extends Vue
 
 		if (ls && ls.length)
 		{
+			if (this.searchOptions.novel_status)
+			{
+				let flags = this.searchOptions.novel_status_value;
+				ls = ls.filter(function (a)
+				{
+					return (a.mdconf.novel && flags &&
+						(a.mdconf.novel.novel_status & flags) === flags
+					)
+				});
+			}
+
 			ls = ls.sort(sortSeriesCallback<IFilterNovelDataPlus>([
 
 				_this.searchOptions.update_date && function (a, b): number
@@ -1466,14 +1546,17 @@ export default class List extends Vue
 				},
 			]));
 
-			// @ts-ignore
-			if (ls !== _this.novels_all)
+			if (!noUpdateAll)
 			{
 				// @ts-ignore
-				_this.novels_all = ls;
+				if (ls !== _this.novels_all)
+				{
+					// @ts-ignore
+					_this.novels_all = ls;
+				}
 			}
 
-			return true;
+			return ls;
 		}
 	}
 
@@ -1482,10 +1565,11 @@ export default class List extends Vue
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
-		this._updateSort(ls);
-
 		if (ls !== _this.novels_all)
 		{
+			// @ts-ignore
+			this._updateSort(ls);
+
 			_this.cur_len = 0;
 			_this.page = 1;
 			_this.novels_all = ls;
@@ -1494,6 +1578,9 @@ export default class List extends Vue
 		}
 		else if (!_this.cur_len)
 		{
+			// @ts-ignore
+			this._updateSort(ls);
+
 			this.updateResource(_this.page)
 		}
 	}
@@ -1650,5 +1737,24 @@ export default class List extends Vue
 <style lang="scss">
 .v-input__slot, .v-input--selection-controls:not(.v-input--hide-details) .v-input__slot {
 	margin-bottom: 0;
+}
+
+.novel_status-area
+{
+	.v-expansion-panel__header
+	{
+		max-width: unset;
+		padding: 0;
+	}
+
+	.v-expansion-panel__container
+	{
+		max-width: unset;
+	}
+
+	.v-expansion-panel__container--active, .v-expansion-panel__container--active
+	{
+		margin: 0;
+	}
 }
 </style>
