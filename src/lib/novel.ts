@@ -36,7 +36,7 @@ export function getNovelTitleFromMeta(mdconf: NovelInfo.IMdconfMeta, novelID?: s
 {
 	return array_unique([
 		novelID,
-		...NovelInfo.getNovelTitleFromMeta(mdconf)
+		...NovelInfo.getNovelTitleFromMeta(mdconf),
 	].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
 }
 
@@ -92,7 +92,9 @@ export function dataAll()
 					// @ts-ignore
 					novel.epub_date = novel.cache.epub_date && createMoment(novel.cache.epub_date).startOf('day').valueOf() || 0;
 					// @ts-ignore
-					novel.segment_date = novel.cache.segment_date && createMoment(novel.cache.segment_date).startOf('day').valueOf() || 0;
+					novel.segment_date = novel.cache.segment_date && createMoment(novel.cache.segment_date)
+						.startOf('day')
+						.valueOf() || 0;
 
 					// @ts-ignore
 					const metaInfo = new NodeNovelInfo(novel.mdconf, {
@@ -101,20 +103,23 @@ export function dataAll()
 					});
 
 					let ks = array_unique([
-						novelID,
-						...metaInfo.titles(),
-					].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
+							novelID,
+							...metaInfo.titles(),
+							...metaInfo.series_titles(),
+						].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
 					;
 
 					ks
-						.forEach(title => {
+						.forEach(title =>
+						{
 							data.alias[title] = data.alias[title] || [];
 
 							data.alias[title].push(novel as IFilterNovelDataPlus);
 						})
 					;
 
-					let alllist = array_unique(array_unique(ks.map(title => data.alias[title])).reduce((ls, list) => {
+					let alllist = array_unique(array_unique(ks.map(title => data.alias[title])).reduce((ls, list) =>
+					{
 
 						ls.push(...list);
 
@@ -122,7 +127,8 @@ export function dataAll()
 					}, []));
 
 					ks
-						.forEach(title => {
+						.forEach(title =>
+						{
 							data.alias[title] = alllist;
 						})
 					;
