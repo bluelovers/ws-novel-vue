@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <title>node-novel</title>
+  <updated>2019-03-08T18:55:03.017Z</updated>
+  <entry>
+    <title>傀儡契約</title>
+    <updated>2019-03-04T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl/%E5%82%80%E5%84%A1%E5%A5%91%E7%B4%84.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <author>
+      <name>kiki</name>
+    </author>
+  </entry>
+  <entry>
+    <title>事與願違的不死冒險者</title>
+    <updated>2019-03-04T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E4%BA%8B%E8%88%87%E9%A1%98%E9%81%95%E7%9A%84%E4%B8%8D%E6%AD%BB%E5%86%92%E9%9A%AA%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E4%BA%8B%E8%88%87%E9%A1%98%E9%81%95%E7%9A%84%E4%B8%8D%E6%AD%BB%E5%86%92%E9%9A%AA%E8%80%85.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91HFHrtpF0L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>丘/丘野　優</name>
+    </author>
+  </entry>
+  <entry>
+    <title>以為轉個生就能逃掉嗎，哥哥？</title>
+    <updated>2019-03-04T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/yandere_out/%E4%BB%A5%E7%82%BA%E8%BD%89%E5%80%8B%E7%94%9F%E5%B0%B1%E8%83%BD%E9%80%83%E6%8E%89%E5%97%8E%EF%BC%8C%E5%93%A5%E5%93%A5%EF%BC%9F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/yandere_out/out/%E4%BB%A5%E7%82%BA%E8%BD%89%E5%80%8B%E7%94%9F%E5%B0%B1%E8%83%BD%E9%80%83%E6%8E%89%E5%97%8E%EF%BC%8C%E5%93%A5%E5%93%A5%EF%BC%9F.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://iwiz-chie.c.yimg.jp/im_siggZEOsvSlv5Jd1oYt7bF9YIA---x320-y320-exp5m-n1/d/iwiz-chie/que-12144150507" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>紙城境介</name>
+    </author>
+  </entry>
+  <entry>
+    <title>利貝提姆皇國的豚草姫</title>
+    <updated>2019-03-03T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/cm_out/%E5%88%A9%E8%B2%9D%E6%8F%90%E5%A7%86%E7%9A%87%E5%9C%8B%E7%9A%84%E8%B1%9A%E8%8D%89%E5%A7%AB.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/cm_out/out/%E5%88%A9%E8%B2%9D%E6%8F%90%E5%A7%86%E7%9A%87%E5%9C%8B%E7%9A%84%E8%B1%9A%E8%8D%89%E5%A7%AB.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81eeB8bC59L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>佐崎　一路</name>
+    </author>
+  </entry>
+  <entry>
+    <title>轉生成蜘蛛又怎樣！</title>
+    <updated>2019-03-03T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/dmzj_out/%E8%BD%89%E7%94%9F%E6%88%90%E8%9C%98%E8%9B%9B%E5%8F%88%E6%80%8E%E6%A8%A3%EF%BC%81.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/dmzj_out/out/%E8%BD%89%E7%94%9F%E6%88%90%E8%9C%98%E8%9B%9B%E5%8F%88%E6%80%8E%E6%A8%A3%EF%BC%81.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91nqVIviCLL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>馬場翁</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Genocide Online ～極惡千金的玩遊戲日記～</title>
+    <updated>2019-03-03T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl/Genocide%20Online%20%EF%BD%9E%E6%A5%B5%E6%83%A1%E5%8D%83%E9%87%91%E7%9A%84%E7%8E%A9%E9%81%8A%E6%88%B2%E6%97%A5%E8%A8%98%EF%BD%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://pbs.twimg.com/media/Dy6akWDVYAApNtb.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>たけのこ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>俺　VS　人類　～使役不死者去襲擊王國的俺～</title>
+    <updated>2019-03-03T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E4%BF%BA%E3%80%80VS%E3%80%80%E4%BA%BA%E9%A1%9E%E3%80%80%EF%BD%9E%E4%BD%BF%E5%BD%B9%E4%B8%8D%E6%AD%BB%E8%80%85%E5%8E%BB%E8%A5%B2%E6%93%8A%E7%8E%8B%E5%9C%8B%E7%9A%84%E4%BF%BA%EF%BD%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E4%BF%BA%E3%80%80VS%E3%80%80%E4%BA%BA%E9%A1%9E%E3%80%80%EF%BD%9E%E4%BD%BF%E5%BD%B9%E4%B8%8D%E6%AD%BB%E8%80%85%E5%8E%BB%E8%A5%B2%E6%93%8A%E7%8E%8B%E5%9C%8B%E7%9A%84.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://img1.mitemin.net/ae/0w/ddthkl4dwwlfc9m245d68op5ov6_iyg_15o_1mu_8yhc.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>もこもこ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>没落予定なので、鍛治職人を目指す</title>
+    <updated>2019-03-03T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E6%B2%A1%E8%90%BD%E4%BA%88%E5%AE%9A%E3%81%AA%E3%81%AE%E3%81%A7%E3%80%81%E9%8D%9B%E6%B2%BB%E8%81%B7%E4%BA%BA%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%99.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E6%B2%A1%E8%90%BD%E4%BA%88%E5%AE%9A%E3%81%AA%E3%81%AE%E3%81%A7%E3%80%81%E9%8D%9B%E6%B2%BB%E8%81%B7%E4%BA%BA%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%99.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://shop.r10s.jp/book/cabinet/0142/9784040720142.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>CK</name>
+    </author>
+  </entry>
+  <entry>
+    <title>復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい</title>
+    <updated>2019-03-02T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E5%BE%A9%E8%AE%90%E3%81%AF%E5%A4%A9%E7%BD%B0%E3%82%92%E5%91%BC%E3%81%B3%E3%80%81%E9%AD%94%E8%A1%93%E5%A3%AB%E3%81%AF%E3%81%BD%E3%82%84%E3%81%BD%E3%82%84%E3%82%92%E6%A5%BD%E3%81%97%E3%81%BF%E3%81%9F%E3%81%84.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/715eFp4JVtL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>月汰元</name>
+    </author>
+  </entry>
+  <entry>
+    <title>沃特尼亞戰記</title>
+    <updated>2019-03-02T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E6%B2%83%E7%89%B9%E5%B0%BC%E4%BA%9E%E6%88%B0%E8%A8%98.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E6%B2%83%E7%89%B9%E5%B0%BC%E4%BA%9E%E6%88%B0%E8%A8%98.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/71tf4OYkOsL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>ホー</name>
+    </author>
+    <author>
+      <name>保利亮太</name>
+    </author>
+  </entry>
+  <entry>
+    <title>JKハルは異世界で娼婦になった</title>
+    <updated>2019-03-01T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl/JK%E3%83%8F%E3%83%AB%E3%81%AF%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%A7%E5%A8%BC%E5%A9%A6%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/71XlScA93zL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>平鳥コウ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>魔彈蘿莉的異世界戰記</title>
+    <updated>2019-02-26T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E9%AD%94%E5%BD%88%E8%98%BF%E8%8E%89%E7%9A%84%E7%95%B0%E4%B8%96%E7%95%8C%E6%88%B0%E8%A8%98.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E9%AD%94%E5%BD%88%E8%98%BF%E8%8E%89%E7%9A%84%E7%95%B0%E4%B8%96%E7%95%8C%E6%88%B0%E8%A8%98.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://img2.tapimg.com/bbcode/images/8379227cbddbad33d60c3a8b380c86b7.png?imageView2/2/w/1320/q/80/format/jpg/interlace/1/ignore-error/1" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>すてるすねこ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>最強呪族転生</title>
+    <updated>2019-02-26T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E6%9C%80%E5%BC%B7%E5%91%AA%E6%97%8F%E8%BB%A2%E7%94%9F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E6%9C%80%E5%BC%B7%E5%91%AA%E6%97%8F%E8%BB%A2%E7%94%9F.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91a8PRZX39L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>猫子</name>
+    </author>
+  </entry>
+  <entry>
+    <title>幼女転生</title>
+    <updated>2019-02-25T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/ts_out/%E5%B9%BC%E5%A5%B3%E8%BB%A2%E7%94%9F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/ts_out/out/%E5%B9%BC%E5%A5%B3%E8%BB%A2%E7%94%9F.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="http://www.klieqi.com/img/aHR0cDovL2ltZzMuaW1ndG4uYmRpbWcuY29tL2l0L3U9MTI4MTAwODg1NiwxNTA5MjQyMTMmZm09MjYmZ3A9MC5qcGc=.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>デブリ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Ａ級冒險者的悠閒生活</title>
+    <updated>2019-02-24T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/cm/%EF%BC%A1%E7%B4%9A%E5%86%92%E9%9A%AA%E8%80%85%E7%9A%84%E6%82%A0%E9%96%92%E7%94%9F%E6%B4%BB.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81CyNLo%2BPHL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>錬金王(影太郎)</name>
+    </author>
+  </entry>
+  <entry>
+    <title>我的同學是姬騎士</title>
+    <updated>2019-02-24T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/cm/%E6%88%91%E7%9A%84%E5%90%8C%E5%AD%B8%E6%98%AF%E5%A7%AC%E9%A8%8E%E5%A3%AB.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://lightnovelstranslations.com/wp-content/uploads/2017/03/Volume-1-cover.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>ＥＫＺ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>異世界迷宮の最深部を目指そう</title>
+    <updated>2019-02-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E7%95%B0%E4%B8%96%E7%95%8C%E8%BF%B7%E5%AE%AE%E3%81%AE%E6%9C%80%E6%B7%B1%E9%83%A8%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%9D%E3%81%86.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E7%95%B0%E4%B8%96%E7%95%8C%E8%BF%B7%E5%AE%AE%E3%81%AE%E6%9C%80%E6%B7%B1%E9%83%A8%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%9D%E3%81%86.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://c.bookwalker.jp/coverImage_1124471.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>割内＠タリサ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>王国へ続く道</title>
+    <updated>2019-02-21T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/cm/%E7%8E%8B%E5%9B%BD%E3%81%B8%E7%B6%9A%E3%81%8F%E9%81%93.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-fe.ssl-images-amazon.com/images/I/51k%2B-fZ8RVL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>湯水　快</name>
+    </author>
+  </entry>
+  <entry>
+    <title>你這種傢伙別想打贏魔王</title>
+    <updated>2019-02-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl_out/%E4%BD%A0%E9%80%99%E7%A8%AE%E5%82%A2%E4%BC%99%E5%88%A5%E6%83%B3%E6%89%93%E8%B4%8F%E9%AD%94%E7%8E%8B.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl_out/out/%E4%BD%A0%E9%80%99%E7%A8%AE%E5%82%A2%E4%BC%99%E5%88%A5%E6%83%B3%E6%89%93%E8%B4%8F%E9%AD%94%E7%8E%8B.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91A8RvS10uL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>kiki</name>
+    </author>
+  </entry>
+  <entry>
+    <title>想要成為影之實力者</title>
+    <updated>2019-02-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E6%83%B3%E8%A6%81%E6%88%90%E7%82%BA%E5%BD%B1%E4%B9%8B%E5%AF%A6%E5%8A%9B%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E6%83%B3%E8%A6%81%E6%88%90%E7%82%BA%E5%BD%B1%E4%B9%8B%E5%AF%A6%E5%8A%9B%E8%80%85.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81-PA9bnu7L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>あかさたな</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Free Life Fantasy Online ～人外姫様、始めました～</title>
+    <updated>2019-02-18T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl/Free%20Life%20Fantasy%20Online%20%EF%BD%9E%E4%BA%BA%E5%A4%96%E5%A7%AB%E6%A7%98%E3%80%81%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F%EF%BD%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/71f7YyNF2eL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>子日あきすず</name>
+    </author>
+  </entry>
+  <entry>
+    <title>今度こそ幸せになります！</title>
+    <updated>2019-02-18T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl/%E4%BB%8A%E5%BA%A6%E3%81%93%E3%81%9D%E5%B9%B8%E3%81%9B%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%EF%BC%81.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/51HKajLvMnL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>斎木 リコ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>平凡職業造就世界最強</title>
+    <updated>2019-02-18T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/wenku8_out/%E5%B9%B3%E5%87%A1%E8%81%B7%E6%A5%AD%E9%80%A0%E5%B0%B1%E4%B8%96%E7%95%8C%E6%9C%80%E5%BC%B7.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/wenku8_out/out/%E5%B9%B3%E5%87%A1%E8%81%B7%E6%A5%AD%E9%80%A0%E5%B0%B1%E4%B8%96%E7%95%8C%E6%9C%80%E5%BC%B7.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="http://img.wkcdn.com/image/2/2080/2080s.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>厨二好き/白米良</name>
+    </author>
+  </entry>
+  <entry>
+    <title>豚公爵に転生したから、今度は君に好きと言いたい</title>
+    <updated>2019-02-17T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E8%B1%9A%E5%85%AC%E7%88%B5%E3%81%AB%E8%BB%A2%E7%94%9F%E3%81%97%E3%81%9F%E3%81%8B%E3%82%89%E3%80%81%E4%BB%8A%E5%BA%A6%E3%81%AF%E5%90%9B%E3%81%AB%E5%A5%BD%E3%81%8D%E3%81%A8%E8%A8%80%E3%81%84%E3%81%9F%E3%81%84.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E8%B1%9A%E5%85%AC%E7%88%B5%E3%81%AB%E8%BB%A2%E7%94%9F%E3%81%97%E3%81%9F%E3%81%8B%E3%82%89%E3%80%81%E4%BB%8A%E5%BA%A6%E3%81%AF%E5%90%9B%E3%81%AB%E5%A5%BD%E3%81%8D%E3%81%A8%E8%A8%80.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81fy9B30leL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>合田拍子（グルグル魔）</name>
+    </author>
+  </entry>
+  <entry>
+    <title>自称贤者弟子的贤者</title>
+    <updated>2019-02-16T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E8%87%AA%E7%A7%B0%E8%B4%A4%E8%80%85%E5%BC%9F%E5%AD%90%E7%9A%84%E8%B4%A4%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E8%87%AA%E7%A7%B0%E8%B4%A4%E8%80%85%E5%BC%9F%E5%AD%90%E7%9A%84%E8%B4%A4%E8%80%85.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91Qk3leml-L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>りゅうせんひろつぐ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>魔王様、リトライ！</title>
+    <updated>2019-02-16T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E9%AD%94%E7%8E%8B%E6%A7%98%E3%80%81%E3%83%AA%E3%83%88%E3%83%A9%E3%82%A4%EF%BC%81.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E9%AD%94%E7%8E%8B%E6%A7%98%E3%80%81%E3%83%AA%E3%83%88%E3%83%A9%E3%82%A4%EF%BC%81.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="http://1.bp.blogspot.com/-8T7bmTGvhi8/Wfig3_jSYrI/AAAAAAADUxE/fPMNhAwtTUYxuPHv-LVSG-edussPsxMQACHMYCw/s0/Maou-sama,_Retry!.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>神埼　黒音</name>
+    </author>
+  </entry>
+  <entry>
+    <title>無論是被當作神，還是被當作魔王</title>
+    <updated>2019-02-09T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/girl/%E7%84%A1%E8%AB%96%E6%98%AF%E8%A2%AB%E7%95%B6%E4%BD%9C%E7%A5%9E%EF%BC%8C%E9%82%84%E6%98%AF%E8%A2%AB%E7%95%B6%E4%BD%9C%E9%AD%94%E7%8E%8B.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://puarts.com/blog/images/FehHeroThumbs/Winter-Tharja-large.png" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>しまもん</name>
+    </author>
+  </entry>
+  <entry>
+    <title>咦、不是穿越到異世界……而是俄羅斯……？</title>
+    <updated>2019-02-09T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/modern/%E5%92%A6%E3%80%81%E4%B8%8D%E6%98%AF%E7%A9%BF%E8%B6%8A%E5%88%B0%E7%95%B0%E4%B8%96%E7%95%8C%E2%80%A6%E2%80%A6%E8%80%8C%E6%98%AF%E4%BF%84%E7%BE%85%E6%96%AF%E2%80%A6%E2%80%A6%EF%BC%9F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="http://himg2.huanqiu.com/attachment2010/2017/0904/20170904092412584.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>とはるみな</name>
+    </author>
+  </entry>
+  <entry>
+    <title>俺は星間国家の悪徳領主！</title>
+    <updated>2019-02-08T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E4%BF%BA%E3%81%AF%E6%98%9F%E9%96%93%E5%9B%BD%E5%AE%B6%E3%81%AE%E6%82%AA%E5%BE%B3%E9%A0%98%E4%B8%BB%EF%BC%81.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <author>
+      <name>わい／三嶋　与夢</name>
+    </author>
+  </entry>
+  <entry>
+    <title>破滅之魔導王與魔偶蠻妃</title>
+    <updated>2019-02-08T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E7%A0%B4%E6%BB%85%E4%B9%8B%E9%AD%94%E5%B0%8E%E7%8E%8B%E8%88%87%E9%AD%94%E5%81%B6%E8%A0%BB%E5%A6%83.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91n5c9r2xvL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>北下路 来名</name>
+    </author>
+  </entry>
+  <entry>
+    <title>宇宙軍士官，成為冒險者</title>
+    <updated>2019-02-08T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E5%AE%87%E5%AE%99%E8%BB%8D%E5%A3%AB%E5%AE%98%EF%BC%8C%E6%88%90%E7%82%BA%E5%86%92%E9%9A%AA%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/71VwAWPbp3L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>a_itoh（伊藤 暖彦）</name>
+    </author>
+  </entry>
+  <entry>
+    <title>黑之魔王</title>
+    <updated>2019-02-08T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E9%BB%91%E4%B9%8B%E9%AD%94%E7%8E%8B.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E9%BB%91%E4%B9%8B%E9%AD%94%E7%8E%8B.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://2.bp.blogspot.com/-qG7giNZTRuI/VkpMgj44IfI/AAAAAAAAAL4/MldUKuehBaE/s1600/volumen-1-0.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>菱影代理</name>
+    </author>
+  </entry>
+  <entry>
+    <title>關於成為魔王這件事</title>
+    <updated>2019-02-07T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/mirronight/%E9%97%9C%E6%96%BC%E6%88%90%E7%82%BA%E9%AD%94%E7%8E%8B%E9%80%99%E4%BB%B6%E4%BA%8B.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://truth.bahamut.com.tw/s01/201901/d1177dfa467dbe356fdf245087a86535.JPG" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>貓寬／貓耳寬</name>
+    </author>
+  </entry>
+  <entry>
+    <title>打造魔王大人的城鎮（魔王築城記）</title>
+    <updated>2019-02-03T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/mirronight/%E6%89%93%E9%80%A0%E9%AD%94%E7%8E%8B%E5%A4%A7%E4%BA%BA%E7%9A%84%E5%9F%8E%E9%8E%AE%EF%BC%88%E9%AD%94%E7%8E%8B%E7%AF%89%E5%9F%8E%E8%A8%98%EF%BC%89.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/71D%2BwHmvu-L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>月夜　涙（るい）</name>
+    </author>
+  </entry>
+  <entry>
+    <title>乙女遊戲世界對路人角色太嚴厲</title>
+    <updated>2019-01-31T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E4%B9%99%E5%A5%B3%E9%81%8A%E6%88%B2%E4%B8%96%E7%95%8C%E5%B0%8D%E8%B7%AF%E4%BA%BA%E8%A7%92%E8%89%B2%E5%A4%AA%E5%9A%B4%E5%8E%B2.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/912nndTR2SL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>わい／三嶋　与夢</name>
+    </author>
+  </entry>
+  <entry>
+    <title>原世界第一玩家的小號練成日記</title>
+    <updated>2019-01-31T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E5%8E%9F%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%8E%A9%E5%AE%B6%E7%9A%84%E5%B0%8F%E8%99%9F%E7%B7%B4%E6%88%90%E6%97%A5%E8%A8%98.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://lohas.nicoseiga.jp/material/603cc7/8801618" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>沢村治太郎(合成酵素)</name>
+    </author>
+  </entry>
+  <entry>
+    <title>絕對不想工作的地下城城主想睡懶覺</title>
+    <updated>2019-01-31T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E7%B5%95%E5%B0%8D%E4%B8%8D%E6%83%B3%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%9F%8E%E4%B8%BB%E6%83%B3%E7%9D%A1%E6%87%B6%E8%A6%BA.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91ZCsHrplUL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>鬼影スパナ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>暗黒騎士物語　～勇者を倒すために魔王に召喚されました～</title>
+    <updated>2019-01-31T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E6%9A%97%E9%BB%92%E9%A8%8E%E5%A3%AB%E7%89%A9%E8%AA%9E%E3%80%80%EF%BD%9E%E5%8B%87%E8%80%85%E3%82%92%E5%80%92%E3%81%99%E3%81%9F%E3%82%81%E3%81%AB%E9%AD%94%E7%8E%8B%E3%81%AB%E5%8F%AC%E5%96%9A%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F%EF%BD%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E6%9A%97%E9%BB%92%E9%A8%8E%E5%A3%AB%E7%89%A9%E8%AA%9E%E3%80%80%EF%BD%9E%E5%8B%87%E8%80%85%E3%82%92%E5%80%92%E3%81%99%E3%81%9F%E3%82%81%E3%81%AB%E9%AD%94%E7%8E%8B%E3%81%AB%E5%8F%AC.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81TiGgMmRqL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>根崎タケル</name>
+    </author>
+  </entry>
+  <entry>
+    <title>只有無職是不會辭掉的</title>
+    <updated>2019-01-28T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/mirronight_out/%E5%8F%AA%E6%9C%89%E7%84%A1%E8%81%B7%E6%98%AF%E4%B8%8D%E6%9C%83%E8%BE%AD%E6%8E%89%E7%9A%84.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/mirronight_out/out/%E5%8F%AA%E6%9C%89%E7%84%A1%E8%81%B7%E6%98%AF%E4%B8%8D%E6%9C%83%E8%BE%AD%E6%8E%89%E7%9A%84.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91ioKJyGO%2BL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>時野洋輔</name>
+    </author>
+  </entry>
+  <entry>
+    <title>魔王学院の不適合者</title>
+    <updated>2019-01-28T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E9%AD%94%E7%8E%8B%E5%AD%A6%E9%99%A2%E3%81%AE%E4%B8%8D%E9%81%A9%E5%90%88%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E9%AD%94%E7%8E%8B%E5%AD%A6%E9%99%A2%E3%81%AE%E4%B8%8D%E9%81%A9%E5%90%88%E8%80%85.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="http://epub-tw.com/reader/bookshelf/20180401/04893681A07632600000/item/image/cover.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>秋</name>
+    </author>
+  </entry>
+  <entry>
+    <title>被死神撫養的少女懷抱漆黑之劍</title>
+    <updated>2019-01-27T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/wenku8/%E8%A2%AB%E6%AD%BB%E7%A5%9E%E6%92%AB%E9%A4%8A%E7%9A%84%E5%B0%91%E5%A5%B3%E6%87%B7%E6%8A%B1%E6%BC%86%E9%BB%91%E4%B9%8B%E5%8A%8D.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/913bXPDjrFL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>彩峰舞人</name>
+    </author>
+  </entry>
+  <entry>
+    <title>在喪屍橫行的世界裡唯獨我不被襲擊</title>
+    <updated>2019-01-25T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/h/%E5%9C%A8%E5%96%AA%E5%B1%8D%E6%A9%AB%E8%A1%8C%E7%9A%84%E4%B8%96%E7%95%8C%E8%A3%A1%E5%94%AF%E7%8D%A8%E6%88%91%E4%B8%8D%E8%A2%AB%E8%A5%B2%E6%93%8A.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91mMNbCEqcL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>裏路地</name>
+    </author>
+  </entry>
+  <entry>
+    <title>注意到的時候ＴＳ成了精靈</title>
+    <updated>2019-01-25T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E6%B3%A8%E6%84%8F%E5%88%B0%E7%9A%84%E6%99%82%E5%80%99%EF%BC%B4%EF%BC%B3%E6%88%90%E4%BA%86%E7%B2%BE%E9%9D%88.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E6%B3%A8%E6%84%8F%E5%88%B0%E7%9A%84%E6%99%82%E5%80%99%EF%BC%B4%EF%BC%B3%E6%88%90%E4%BA%86%E7%B2%BE%E9%9D%88.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://lohas.nicoseiga.jp//thumb/6654834p?1492803546" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>夏目</name>
+    </author>
+  </entry>
+  <entry>
+    <title>不吉波普系列</title>
+    <updated>2019-01-25T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/wenku8/%E4%B8%8D%E5%90%89%E6%B3%A2%E6%99%AE%E7%B3%BB%E5%88%97.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="http://img.wkcdn.com/image/0/855/855s.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>上遠野浩平</name>
+    </author>
+  </entry>
+  <entry>
+    <title>打倒女神勇者的下流手段</title>
+    <updated>2019-01-25T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/wenku8/%E6%89%93%E5%80%92%E5%A5%B3%E7%A5%9E%E5%8B%87%E8%80%85%E7%9A%84%E4%B8%8B%E6%B5%81%E6%89%8B%E6%AE%B5.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://cdn.kdkw.jp/cover_1000/321610/321610000327.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>笹木さくま（夏希のたね）</name>
+    </author>
+  </entry>
+  <entry>
+    <title>不是真正同伴的我被逐出了勇者隊伍，因此決定在邊境過上慢生活</title>
+    <updated>2019-01-23T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/dmzj_out/%E4%B8%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E5%90%8C%E4%BC%B4%E7%9A%84%E6%88%91%E8%A2%AB%E9%80%90%E5%87%BA%E4%BA%86%E5%8B%87%E8%80%85%E9%9A%8A%E4%BC%8D%EF%BC%8C%E5%9B%A0%E6%AD%A4%E6%B1%BA%E5%AE%9A%E5%9C%A8%E9%82%8A%E5%A2%83%E9%81%8E%E4%B8%8A%E6%85%A2%E7%94%9F%E6%B4%BB.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/dmzj_out/out/%E4%B8%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E5%90%8C%E4%BC%B4%E7%9A%84%E6%88%91%E8%A2%AB%E9%80%90%E5%87%BA%E4%BA%86%E5%8B%87%E8%80%85%E9%9A%8A%E4%BC%8D%EF%BC%8C%E5%9B%A0%E6%AD%A4%E6%B1%BA.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81ATStI2v8L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>ざっぽん</name>
+    </author>
+  </entry>
+  <entry>
+    <title>絕對想被打倒的魔王＆絕對不想戰鬥的勇者</title>
+    <updated>2019-01-23T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/other/%E7%B5%95%E5%B0%8D%E6%83%B3%E8%A2%AB%E6%89%93%E5%80%92%E7%9A%84%E9%AD%94%E7%8E%8B%EF%BC%86%E7%B5%95%E5%B0%8D%E4%B8%8D%E6%83%B3%E6%88%B0%E9%AC%A5%E7%9A%84%E5%8B%87%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+  </entry>
+  <entry>
+    <title>勇者「都打倒魔王了來回家吧」</title>
+    <updated>2019-01-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/other/%E5%8B%87%E8%80%85%E3%80%8C%E9%83%BD%E6%89%93%E5%80%92%E9%AD%94%E7%8E%8B%E4%BA%86%E4%BE%86%E5%9B%9E%E5%AE%B6%E5%90%A7%E3%80%8D.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="http://yuba.roheisen.net/wp-content/uploads/2011/09/1.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>湯葉</name>
+    </author>
+  </entry>
+  <entry>
+    <title>四度目は嫌な死属性魔術師</title>
+    <updated>2019-01-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E5%9B%9B%E5%BA%A6%E7%9B%AE%E3%81%AF%E5%AB%8C%E3%81%AA%E6%AD%BB%E5%B1%9E%E6%80%A7%E9%AD%94%E8%A1%93%E5%B8%AB.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E5%9B%9B%E5%BA%A6%E7%9B%AE%E3%81%AF%E5%AB%8C%E3%81%AA%E6%AD%BB%E5%B1%9E%E6%80%A7%E9%AD%94%E8%A1%93%E5%B8%AB.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="http://www.hifumi.co.jp/books/lineup/images/view/9784891994082.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>デンスケ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>回復術士重來人生</title>
+    <updated>2019-01-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E5%9B%9E%E5%BE%A9%E8%A1%93%E5%A3%AB%E9%87%8D%E4%BE%86%E4%BA%BA%E7%94%9F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E5%9B%9E%E5%BE%A9%E8%A1%93%E5%A3%AB%E9%87%8D%E4%BE%86%E4%BA%BA%E7%94%9F.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="http://img1.reactor.cc/pics/post/full/shiokonbu-Anime-Art-Anime-Anime-Ero-4194795.jpeg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>月夜　涙（るい）</name>
+    </author>
+  </entry>
+  <entry>
+    <title>歸來的原勇者</title>
+    <updated>2019-01-21T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E6%AD%B8%E4%BE%86%E7%9A%84%E5%8E%9F%E5%8B%87%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E6%AD%B8%E4%BE%86%E7%9A%84%E5%8E%9F%E5%8B%87%E8%80%85.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/71qeffd0DaL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>ニシ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>重生的貓騎士與精靈娘的日常</title>
+    <updated>2019-01-21T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E9%87%8D%E7%94%9F%E7%9A%84%E8%B2%93%E9%A8%8E%E5%A3%AB%E8%88%87%E7%B2%BE%E9%9D%88%E5%A8%98%E7%9A%84%E6%97%A5%E5%B8%B8.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E9%87%8D%E7%94%9F%E7%9A%84%E8%B2%93%E9%A8%8E%E5%A3%AB%E8%88%87%E7%B2%BE%E9%9D%88%E5%A8%98%E7%9A%84%E6%97%A5%E5%B8%B8.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="http://imgsrc.baidu.com/forum/pic/item/73246fca7bcb0a465748e5576663f6246a60af4a.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>銀翼のぞみ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>在異世界轉移從女神大人那兒得到祝福</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/mirronight/%E5%9C%A8%E7%95%B0%E4%B8%96%E7%95%8C%E8%BD%89%E7%A7%BB%E5%BE%9E%E5%A5%B3%E7%A5%9E%E5%A4%A7%E4%BA%BA%E9%82%A3%E5%85%92%E5%BE%97%E5%88%B0%E7%A5%9D%E7%A6%8F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://raikou2.donmai.us/2d/1d/__aqua_emilia_puck_and_satou_kazuma_kono_subarashii_sekai_ni_shukufuku_wo_and_etc_drawn_by_imaizumi_naoko_and_sakai_kyuuta__2d1d0c38a46465bc531720f40bb568c4.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>コーダ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>侯爵嫡男好色物語</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/h/%E4%BE%AF%E7%88%B5%E5%AB%A1%E7%94%B7%E5%A5%BD%E8%89%B2%E7%89%A9%E8%AA%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <author>
+      <name>AL</name>
+    </author>
+  </entry>
+  <entry>
+    <title>異世界の男は全滅したようです</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/h/%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%AE%E7%94%B7%E3%81%AF%E5%85%A8%E6%BB%85%E3%81%97%E3%81%9F%E3%82%88%E3%81%86%E3%81%A7%E3%81%99.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <author>
+      <name>夢路屋</name>
+    </author>
+  </entry>
+  <entry>
+    <title>勇者，不幹了　～下一個職場是魔王城～</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/kakuyomu/%E5%8B%87%E8%80%85%EF%BC%8C%E4%B8%8D%E5%B9%B9%E4%BA%86%E3%80%80%EF%BD%9E%E4%B8%8B%E4%B8%80%E5%80%8B%E8%81%B7%E5%A0%B4%E6%98%AF%E9%AD%94%E7%8E%8B%E5%9F%8E%EF%BD%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://cdn.kdkw.jp/cover_1000/321708/321708000583.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>クオンタム</name>
+    </author>
+  </entry>
+  <entry>
+    <title>除了成為奴隸商人以外別無選擇喲？～後宮？那好吃嗎？</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E9%99%A4%E4%BA%86%E6%88%90%E7%82%BA%E5%A5%B4%E9%9A%B8%E5%95%86%E4%BA%BA%E4%BB%A5%E5%A4%96%E5%88%A5%E7%84%A1%E9%81%B8%E6%93%87%E5%96%B2%EF%BC%9F%EF%BD%9E%E5%BE%8C%E5%AE%AE%EF%BC%9F%E9%82%A3%E5%A5%BD%E5%90%83%E5%97%8E%EF%BC%9F.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91sSsOf1oqL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>カラユミ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>不知我的死亡flag将于何处停止</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E4%B8%8D%E7%9F%A5%E6%88%91%E7%9A%84%E6%AD%BB%E4%BA%A1flag%E5%B0%86%E4%BA%8E%E4%BD%95%E5%A4%84%E5%81%9C%E6%AD%A2.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E4%B8%8D%E7%9F%A5%E6%88%91%E7%9A%84%E6%AD%BB%E4%BA%A1flag%E5%B0%86%E4%BA%8E%E4%BD%95%E5%A4%84%E5%81%9C%E6%AD%A2.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81vLZRct-ZL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>泉</name>
+    </author>
+  </entry>
+  <entry>
+    <title>呪術師は勇者になれない</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E5%91%AA%E8%A1%93%E5%B8%AB%E3%81%AF%E5%8B%87%E8%80%85%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%AA%E3%81%84.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E5%91%AA%E8%A1%93%E5%B8%AB%E3%81%AF%E5%8B%87%E8%80%85%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%AA%E3%81%84.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91yzBCP%2BeUL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>菱影代理</name>
+    </author>
+  </entry>
+  <entry>
+    <title>破壊の御子</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E7%A0%B4%E5%A3%8A%E3%81%AE%E5%BE%A1%E5%AD%90.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E7%A0%B4%E5%A3%8A%E3%81%AE%E5%BE%A1%E5%AD%90.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/716jgWTJCAL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>無銘工房</name>
+    </author>
+  </entry>
+  <entry>
+    <title>關於人類是最強種族這件事</title>
+    <updated>2019-01-19T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/wenku8/%E9%97%9C%E6%96%BC%E4%BA%BA%E9%A1%9E%E6%98%AF%E6%9C%80%E5%BC%B7%E7%A8%AE%E6%97%8F%E9%80%99%E4%BB%B6%E4%BA%8B.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/A1NudsJloDL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>柑橘ゆすら</name>
+    </author>
+  </entry>
+  <entry>
+    <title>暇人、魔王の姿で異世界へ</title>
+    <updated>2019-01-18T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E6%9A%87%E4%BA%BA%E3%80%81%E9%AD%94%E7%8E%8B%E3%81%AE%E5%A7%BF%E3%81%A7%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%B8.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E6%9A%87%E4%BA%BA%E3%80%81%E9%AD%94%E7%8E%8B%E3%81%AE%E5%A7%BF%E3%81%A7%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%B8.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81lL3xQjiPL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>藍敦</name>
+    </author>
+  </entry>
+  <entry>
+    <title>月桂樹の唄</title>
+    <updated>2019-01-17T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E6%9C%88%E6%A1%82%E6%A8%B9%E3%81%AE%E5%94%84.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="http://gmom04-res.cloudinary.com/image/upload/v1491893744/dlynaizfnjybuo87uotj.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>松山 京平</name>
+    </author>
+  </entry>
+  <entry>
+    <title>變成了美少女、但也成了網游廢人。</title>
+    <updated>2019-01-17T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E8%AE%8A%E6%88%90%E4%BA%86%E7%BE%8E%E5%B0%91%E5%A5%B3%E3%80%81%E4%BD%86%E4%B9%9F%E6%88%90%E4%BA%86%E7%B6%B2%E6%B8%B8%E5%BB%A2%E4%BA%BA%E3%80%82.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://21485.mitemin.net/userpageimage/viewimagebig/icode/i246294/" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>星屑ぽんぽん</name>
+    </author>
+  </entry>
+  <entry>
+    <title>秒殺外掛太強了，異世界的家伙們根本就不是對手</title>
+    <updated>2019-01-14T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E7%A7%92%E6%AE%BA%E5%A4%96%E6%8E%9B%E5%A4%AA%E5%BC%B7%E4%BA%86%EF%BC%8C%E7%95%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%AE%B6%E4%BC%99%E5%80%91%E6%A0%B9%E6%9C%AC%E5%B0%B1%E4%B8%8D%E6%98%AF%E5%B0%8D%E6%89%8B.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E7%A7%92%E6%AE%BA%E5%A4%96%E6%8E%9B%E5%A4%AA%E5%BC%B7%E4%BA%86%EF%BC%8C%E7%95%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%AE%B6%E4%BC%99%E5%80%91%E6%A0%B9%E6%9C%AC%E5%B0%B1%E4%B8%8D%E6%98%AF.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81j6oDh7GQL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>藤孝剛志</name>
+    </author>
+  </entry>
+  <entry>
+    <title>因為校工桑並不是勇者</title>
+    <updated>2019-01-12T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E5%9B%A0%E7%82%BA%E6%A0%A1%E5%B7%A5%E6%A1%91%E4%B8%A6%E4%B8%8D%E6%98%AF%E5%8B%87%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E5%9B%A0%E7%82%BA%E6%A0%A1%E5%B7%A5%E6%A1%91%E4%B8%A6%E4%B8%8D%E6%98%AF%E5%8B%87%E8%80%85.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81gC4iaNlGL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>棚花尋平</name>
+    </author>
+  </entry>
+  <entry>
+    <title>想自由生活的魔王默示錄</title>
+    <updated>2019-01-09T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E6%83%B3%E8%87%AA%E7%94%B1%E7%94%9F%E6%B4%BB%E7%9A%84%E9%AD%94%E7%8E%8B%E9%BB%98%E7%A4%BA%E9%8C%84.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E6%83%B3%E8%87%AA%E7%94%B1%E7%94%9F%E6%B4%BB%E7%9A%84%E9%AD%94%E7%8E%8B%E9%BB%98%E7%A4%BA%E9%8C%84.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91r6R0%2B9L5L.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>流優</name>
+    </author>
+  </entry>
+  <entry>
+    <title>為鮮血獻上吻　～從沒用技能開始的逆轉人生～</title>
+    <updated>2019-01-09T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E7%82%BA%E9%AE%AE%E8%A1%80%E7%8D%BB%E4%B8%8A%E5%90%BB%E3%80%80%EF%BD%9E%E5%BE%9E%E6%B2%92%E7%94%A8%E6%8A%80%E8%83%BD%E9%96%8B%E5%A7%8B%E7%9A%84%E9%80%86%E8%BD%89%E4%BA%BA%E7%94%9F%EF%BD%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E7%82%BA%E9%AE%AE%E8%A1%80%E7%8D%BB%E4%B8%8A%E5%90%BB%E3%80%80%EF%BD%9E%E5%BE%9E%E6%B2%92%E7%94%A8%E6%8A%80%E8%83%BD%E9%96%8B%E5%A7%8B%E7%9A%84%E9%80%86%E8%BD%89%E4%BA%BA%E7%94%9F.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/61MQi1teYcL._SX338_BO1,204,203,200_.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>りょうと　かえ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>誰都能做到的暗中協助魔王討伐</title>
+    <updated>2019-01-07T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E8%AA%B0%E9%83%BD%E8%83%BD%E5%81%9A%E5%88%B0%E7%9A%84%E6%9A%97%E4%B8%AD%E5%8D%94%E5%8A%A9%E9%AD%94%E7%8E%8B%E8%A8%8E%E4%BC%90.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E8%AA%B0%E9%83%BD%E8%83%BD%E5%81%9A%E5%88%B0%E7%9A%84%E6%9A%97%E4%B8%AD%E5%8D%94%E5%8A%A9%E9%AD%94%E7%8E%8B%E8%A8%8E%E4%BC%90.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81iY8SzcvtL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>槻影</name>
+    </author>
+  </entry>
+  <entry>
+    <title>死憶の異世界傾国姫</title>
+    <updated>2019-01-02T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E6%AD%BB%E6%86%B6%E3%81%AE%E7%95%B0%E4%B8%96%E7%95%8C%E5%82%BE%E5%9B%BD%E5%A7%AB.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E6%AD%BB%E6%86%B6%E3%81%AE%E7%95%B0%E4%B8%96%E7%95%8C%E5%82%BE%E5%9B%BD%E5%A7%AB.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr117/auc0303/users/7/2/5/1/readiohead2001-img377x600-146211377806bqxr19050.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>ぎむねま</name>
+    </author>
+  </entry>
+  <entry>
+    <title>人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～</title>
+    <updated>2019-01-01T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E4%BA%BA%E5%96%B0%E3%81%84%E8%BB%A2%E7%A7%BB%E8%80%85%E3%81%AE%E7%95%B0%E4%B8%96%E7%95%8C%E5%BE%A9%E8%AE%90%E8%AD%9A%E3%80%80%EF%BD%9E%E7%84%A1%E8%83%BD%E3%81%AF%E3%82%B9%E3%82%AD%E3%83%AB%E3%80%8E%E6%8D%95%E9%A3%9F%E3%80%8F%E3%81%A7%E6%88%90%E3%82%8A%E4%B8%8A%E3%81%8C%E3%82%8B%EF%BD%9E.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E4%BA%BA%E5%96%B0%E3%81%84%E8%BB%A2%E7%A7%BB%E8%80%85%E3%81%AE%E7%95%B0%E4%B8%96%E7%95%8C%E5%BE%A9%E8%AE%90%E8%AD%9A%E3%80%80%EF%BD%9E%E7%84%A1%E8%83%BD%E3%81%AF%E3%82%B9%E3%82%AD.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <author>
+      <name>kiki</name>
+    </author>
+  </entry>
+  <entry>
+    <title>身為暗殺者的我明顯比勇者還強</title>
+    <updated>2018-12-31T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu/%E8%BA%AB%E7%82%BA%E6%9A%97%E6%AE%BA%E8%80%85%E7%9A%84%E6%88%91%E6%98%8E%E9%A1%AF%E6%AF%94%E5%8B%87%E8%80%85%E9%82%84%E5%BC%B7.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-fe.ssl-images-amazon.com/images/I/61UFSKi0JTL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>赤井まつり</name>
+    </author>
+  </entry>
+  <entry>
+    <title>奪う者　奪われる者</title>
+    <updated>2018-12-29T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E5%A5%AA%E3%81%86%E8%80%85%E3%80%80%E5%A5%AA%E3%82%8F%E3%82%8C%E3%82%8B%E8%80%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/out/%E5%A5%AA%E3%81%86%E8%80%85%E3%80%80%E5%A5%AA%E3%82%8F%E3%82%8C%E3%82%8B%E8%80%85.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://images-fe.ssl-images-amazon.com/images/I/61vxzl9a-qL._SY346_.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>mino</name>
+    </author>
+  </entry>
+  <entry>
+    <title>如何在異世界殺死一個死宅</title>
+    <updated>2018-12-26T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/zh/%E5%A6%82%E4%BD%95%E5%9C%A8%E7%95%B0%E4%B8%96%E7%95%8C%E6%AE%BA%E6%AD%BB%E4%B8%80%E5%80%8B%E6%AD%BB%E5%AE%85.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://xs.dmzj.com/img/webpic/23/sizhai1217l.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>果冻小超人</name>
+    </author>
+  </entry>
+  <entry>
+    <title>異常狀態是絕望</title>
+    <updated>2018-12-23T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/%E7%95%B0%E5%B8%B8%E7%8B%80%E6%85%8B%E6%98%AF%E7%B5%95%E6%9C%9B.epub" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/syosetu_out/out/%E7%95%B0%E5%B8%B8%E7%8B%80%E6%85%8B%E6%98%AF%E7%B5%95%E6%9C%9B.out.txt" rel="http://opds-spec.org/acquisition" type="text/plain"/>
+    <link href="https://www.melonbooks.co.jp/special/b/0/fair_shoseki/201807_overlap_fair/images/cover.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>猫倶楽部</name>
+    </author>
+  </entry>
+  <entry>
+    <title>吃掉死神的少女</title>
+    <updated>2018-12-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/dmzj_out/%E5%90%83%E6%8E%89%E6%AD%BB%E7%A5%9E%E7%9A%84%E5%B0%91%E5%A5%B3" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/91bKocLHrKL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>七沢またり</name>
+    </author>
+  </entry>
+  <entry>
+    <title>異世界で魅了チートを使って奴隷ハーレムをつくってみた</title>
+    <updated>2018-12-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/epub_out/%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%A7%E9%AD%85%E4%BA%86%E3%83%81%E3%83%BC%E3%83%88%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%A5%B4%E9%9A%B7%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%E3%82%92%E3%81%A4%E3%81%8F%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81nlCSm2fkL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>大石ねがい</name>
+    </author>
+  </entry>
+  <entry>
+    <title>只是被勇者消滅的簡單工作</title>
+    <updated>2018-12-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/lost_out/%E5%8F%AA%E6%98%AF%E8%A2%AB%E5%8B%87%E8%80%85%E6%B6%88%E6%BB%85%E7%9A%84%E7%B0%A1%E5%96%AE%E5%B7%A5%E4%BD%9C" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://cdn-image.alphapolis.co.jp/cover/610067740/500x711/57b13f60-f728-4d7d-a747-7128ac113c02" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>天野 ハザマ</name>
+    </author>
+  </entry>
+  <entry>
+    <title>火輪を抱いた少女</title>
+    <updated>2018-12-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/user_out/%E7%81%AB%E8%BC%AA%E3%82%92%E6%8A%B1%E3%81%84%E3%81%9F%E5%B0%91%E5%A5%B3" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="https://images-na.ssl-images-amazon.com/images/I/81EZfLLXYJL.jpg" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>七沢またり</name>
+    </author>
+  </entry>
+  <entry>
+    <title>勇者、或いは化物と呼ばれた少女</title>
+    <updated>2018-12-22T16:00:00.000Z</updated>
+    <link href="https://gitlab.com/demonovel/epub-txt/blob/master/wenku8_out/%E5%8B%87%E8%80%85%E3%80%81%E6%88%96%E3%81%84%E3%81%AF%E5%8C%96%E7%89%A9%E3%81%A8%E5%91%BC%E3%81%B0%E3%82%8C%E3%81%9F%E5%B0%91%E5%A5%B3" rel="http://opds-spec.org/acquisition" type="application/epub+zip"/>
+    <link href="http://postfiles1.naver.net/MjAxNzAxMzBfMjMx/MDAxNDg1NzY5MjIyODA4.VEV4HSI-EcCSN0CHE1jOaKVmKipMaacEFxfsaz3Wb8wg.fIhocpMb99nXp92tZYx4KXkSzhzdIxXNjlcBTg_p_TMg.JPEG.sonuy3/61PUZ2es18L-horz.jpg?type=w1" rel="http://opds-spec.org/image" type="image/jpeg"/>
+    <author>
+      <name>七沢またり</name>
+    </author>
+  </entry>
+</feed>

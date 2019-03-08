@@ -39,6 +39,11 @@ export = (async () =>
 		.catch(e => console.error(e))
 	;
 
+	await import('./build/build-opds')
+		.then(awaitImport)
+		.catch(e => console.error(e))
+	;
+
 	//process.exit();
 
 	await CrossSpawn('yarn', [

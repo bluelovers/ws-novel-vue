@@ -24,6 +24,8 @@ module.exports = (async () => {
     //await Bluebird.delay(5000);
     await Promise.resolve().then(() => tslib_1.__importStar(require('./build/build-cache'))).then(util_1.awaitImport)
         .catch(e => util_1.default.error(e));
+    await Promise.resolve().then(() => tslib_1.__importStar(require('./build/build-opds'))).then(util_1.awaitImport)
+        .catch(e => util_1.default.error(e));
     //process.exit();
     await cross_spawn_extra_1.async('yarn', [
         'run',

@@ -47,6 +47,7 @@ export type IFilterNovelDataPlus = IFilterNovelData & {
 	update_date2: number,
 	epub_date: number,
 	segment_date: number,
+	title: string,
 };
 
 export function dataAll()
