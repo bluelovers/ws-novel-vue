@@ -6,14 +6,17 @@ import { async as CrossSpawn } from 'cross-spawn-extra';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
 import path = require('path');
-import console from './util';
+import console, { awaitImport } from './util';
 import ProjectConfig, { ProjectRoot } from '../project.config';
 
 const cwd = ProjectConfig.ProjectRoot;
 
 export = (async () =>
 {
-	await import('./build/yarn-list').catch(e => console.error(e));
+	await import('./build/yarn-list')
+		.then(awaitImport)
+		.catch(e => console.error(e))
+	;
 
 	/*
 	await CrossSpawn('node', [
@@ -24,11 +27,19 @@ export = (async () =>
 	})
 	;
 	*/
-	await import('./fetch-api-json').catch(e => console.error(e));
+	await import('./fetch-api-json')
+		.then(awaitImport)
+		.catch(e => console.error(e))
+	;
 
 	//await Bluebird.delay(5000);
 
-	await import('./build/build-cache').catch(e => console.error(e));
+	await import('./build/build-cache')
+		.then(awaitImport)
+		.catch(e => console.error(e))
+	;
+
+	//process.exit();
 
 	await CrossSpawn('yarn', [
 		'run',
@@ -44,7 +55,7 @@ export = (async () =>
 	})
 	;
 
-	await import('./build/copy-missed-static');
-	await import('./build/check-dist');
+	await import('./build/copy-missed-static').then(awaitImport);
+	await import('./build/check-dist').then(awaitImport);
 
 })();

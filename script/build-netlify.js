@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const netlify_env2_1 = require("netlify-env2");
 const gitee_1 = require("netlify-env2/lib/gitee");
-const util_1 = tslib_1.__importDefault(require("./util"));
+const util_1 = tslib_1.__importStar(require("./util"));
 const Bluebird = require("bluebird");
 exports.env = netlify_env2_1.parseNetlifyEnv(netlify_env2_1.getNetlifyEnv());
 (async () => {
@@ -28,7 +28,7 @@ exports.env = netlify_env2_1.parseNetlifyEnv(netlify_env2_1.getNetlifyEnv());
     util_1.default.gray(`-`.repeat(10));
     util_1.default.info(`START BUILD`);
     util_1.default.gray(`-`.repeat(10));
-    await Promise.resolve().then(() => tslib_1.__importStar(require('./build')));
+    await Promise.resolve().then(() => tslib_1.__importStar(require('./build'))).then(util_1.awaitImport);
 })();
 function skipBuild() {
     if (exports.env.INCOMING_HOOK_BODY_JSON) {

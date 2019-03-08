@@ -12,33 +12,42 @@ import console from './util';
 // @ts-ignore
 fetch.Promise = Bluebird;
 
-export = fetch(ProjectSetting.FETCH_API)
-	.then(res => res.json())
-	.then(async (json) =>
-	{
+function fetchApiJson()
+{
+	console.success(`fetch`, 'novel-stat.json');
 
-		if (!json.novels || !json.mdconf)
+	return fetch(ProjectSetting.FETCH_API)
+		.then(res => res.json())
+		.then(async (json) =>
 		{
-			console.error(`fail saved`, 'novel-stat.json');
 
-			return Promise.reject(new Error([`fail saved`, 'novel-stat.json'].join(' ')))
-		}
-
-		let s = JSON.stringify(json, null, 2);
-
-		let root = path.join(__dirname, '..');
-
-		return Bluebird.all([
-				await fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.json'), s),
-				await fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.js'), s),
-				await fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.json'), s),
-				await fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.js'), s),
-			])
-			.tap(function ()
+			if (!json.novels || !json.mdconf)
 			{
-				console.success(`saved`, 'novel-stat.json');
+				console.error(`fail saved`, 'novel-stat.json');
 
-				return Bluebird.delay(1000);
-			})
-	})
+				return Promise.reject(new Error([`fail saved`, 'novel-stat.json'].join(' ')))
+			}
+
+			let s = JSON.stringify(json, null, 2);
+
+			let root = path.join(__dirname, '..');
+
+			return Bluebird.all([
+					await fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.json'), s),
+					await fs.outputFile(path.join(root, 'public', 'static', 'novel-stat.js'), s),
+					await fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.json'), s),
+					await fs.outputFile(path.join(root, 'dist', 'static', 'novel-stat.js'), s),
+				])
+				.tap(function ()
+				{
+					console.success(`saved`, 'novel-stat.json');
+
+					return Bluebird.delay(1000);
+				})
+		})
 	;
+}
+
+let p = fetchApiJson();
+
+export = p

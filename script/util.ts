@@ -3,6 +3,7 @@
  */
 
 import { Console2 } from 'debug-color2';
+import Bluebird = require('bluebird');
 
 const console = new Console2();
 
@@ -11,5 +12,33 @@ console.inspectOptions.colors = true;
 console.enabledColor = true;
 
 export { console }
+
+export function awaitImport<T>(m: T, skipError?: boolean)
+{
+	let p = Bluebird.resolve().then(async function ()
+	{
+		let r = await m;
+		//console.log('import', r);
+
+		// @ts-ignore
+		if (m && m.default)
+		{
+			// @ts-ignore
+			let r2 = await m.default;
+
+			//console.log('import.default', r2);
+		}
+
+		return m;
+	});
+
+	if (skipError)
+	{
+		// @ts-ignore
+		p = p.catch(e => console.error(e))
+	}
+
+	return p;
+}
 
 export default console

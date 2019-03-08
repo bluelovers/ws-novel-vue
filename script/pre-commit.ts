@@ -10,7 +10,7 @@ import sortPackageJson = require('sort-package-json');
 
 const cwd = path.join(__dirname, '..');
 
-(async () =>
+export = (async () =>
 {
 
 	await CrossSpawn('yarn', [

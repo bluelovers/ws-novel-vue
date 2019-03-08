@@ -9,7 +9,7 @@ import {
 	EnumNetlifyHookBodyGiteeMergeStatus,
 	EnumNetlifyHookBodyGiteePullRequestStatus,
 } from 'netlify-env2/lib/gitee';
-import console from './util';
+import console, { awaitImport } from './util';
 import Bluebird = require('bluebird');
 
 export const env = parseNetlifyEnv(getNetlifyEnv());
@@ -44,7 +44,7 @@ export const env = parseNetlifyEnv(getNetlifyEnv());
 
 	console.gray(`-`.repeat(10));
 
-	await import('./build');
+	await import('./build').then(awaitImport);
 
 })();
 
