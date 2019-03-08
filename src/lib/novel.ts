@@ -13,6 +13,7 @@ import { NodeNovelInfo } from 'node-novel-info/class'
 import { array_unique } from 'array-hyper-unique'
 import { toHalfWidthLocaleLowerCase } from './conv';
 import NovelInfo = require('node-novel-info');
+import { slugify } from 'cjk-conv/lib/zh/table/list';
 
 let novelStatCache: NovelStatCache;
 
@@ -102,11 +103,21 @@ export function dataAll()
 						lowCheckLevel: true,
 					});
 
+					// @ts-ignore
+					novel.title = metaInfo.title(novelID);
+
 					let ks = array_unique([
 							novelID,
 							...metaInfo.titles(),
 							...metaInfo.series_titles(),
-						].map(v => toHalfWidthLocaleLowerCase(v)).filter(v => v))
+						].reduce((a, v) =>
+						{
+							a.push(toHalfWidthLocaleLowerCase(v));
+							a.push(toHalfWidthLocaleLowerCase(slugify(v, true)));
+
+							return a;
+
+						}, [] as string[]).filter(v => v))
 					;
 
 					ks

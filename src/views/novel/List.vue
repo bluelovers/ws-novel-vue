@@ -134,7 +134,7 @@
 													>
 														<v-layout fill-height>
 															<v-flex xs12 align-end flexbox overflow-hidden class="text-no-wrap text-truncate">
-																<span v-text="item.novelID"></span>
+																<span v-text="item.title"></span>
 															</v-flex>
 														</v-layout>
 													</v-container>
