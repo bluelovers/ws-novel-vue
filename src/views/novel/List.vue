@@ -162,6 +162,29 @@
 						</v-flex>
 
 					</v-layout>
+
+					<v-layout
+						row wrap
+						align-center="true"
+						align-content-center="true"
+						class="mt-2"
+					>
+						<div style="text-align: center">
+						<router-link
+							v-for="author in cur_author_list"
+							:to="`/search/author?searchValue=${author}`" class="text-color-inherit"
+						>
+							<v-chip
+								small
+								class="caption"
+								label
+								color="pink accent-4" text-color="white"
+							>{{ author }}
+							</v-chip>
+						</router-link>
+						</div>
+					</v-layout>
+
 				</v-container>
 
 				<v-container
@@ -280,7 +303,9 @@
 							<v-layout align-center>
 								<v-expansion-panel popout class="novel_status-area">
 									<v-expansion-panel-content>
-										<div slot="header"><v-checkbox class="shrink my-0 mr-2" label="novel_status" v-model="searchOptions.novel_status"></v-checkbox></div>
+										<div slot="header">
+											<v-checkbox class="shrink my-0 mr-2" label="novel_status" v-model="searchOptions.novel_status"></v-checkbox>
+										</div>
 										<v-card>
 											<OptionFilterEnumNovelStatus
 												v-model="searchOptions.novel_status_value"
@@ -393,6 +418,7 @@ import PanelFilterTag2 from '@/components/Novel/PanelFilterTag2.vue'
 import PanelFilterTag3, { IVChipTagItem, IVChipTagOptions } from '@/components/Novel/PanelFilterTag3.vue'
 import { EnumNovelStatus } from 'node-novel-info/lib/const'
 import OptionFilterEnumNovelStatus from '@/components/Novel/OptionFilterEnumNovelStatus.vue'
+import { NodeNovelInfo } from 'node-novel-info/class'
 
 import {
 	cacheSortCallback,
@@ -530,6 +556,8 @@ export default class List extends Vue
 			cur_contribute: '',
 			cur_author: '',
 
+			cur_author_list: [] as string[],
+
 			cur_title: '',
 			title: '',
 
@@ -558,7 +586,7 @@ export default class List extends Vue
 				novel_status: false,
 				novel_status_value: 0 as EnumNovelStatus | number,
 
-				...(this.$session.get('searchOptions') || {})
+				...(this.$session.get('searchOptions') || {}),
 			} as List["searchOptions"],
 
 			EnumNovelStatus,
@@ -1572,6 +1600,7 @@ export default class List extends Vue
 
 			_this.cur_len = 0;
 			_this.page = 1;
+			// @ts-ignore
 			_this.novels_all = ls;
 
 			this.updateResource(_this.page)
@@ -1603,33 +1632,22 @@ export default class List extends Vue
 		_this.novels = _this.novels_all.slice(idx, idx + page_size);
 		_this.page = self.page;
 
+		_this.cur_author_list = [];
+		_this.tags = [];
+		_this.contributes = [];
+
+		_this.novels.forEach(function (data)
 		{
-			let ls = _this.novels.reduce(function (ls, data)
-			{
-				if (data.mdconf.novel && data.mdconf.novel.tags && data.mdconf.novel.tags.length)
-				{
-					ls.push(...data.mdconf.novel.tags);
-				}
+			let _o = new NodeNovelInfo(data.mdconf);
 
-				return ls;
-			}, []);
+			_this.tags.push(..._o.tags());
+			_this.cur_author_list.push(..._o.authors());
+			_this.contributes.push(..._o.contributes());
+		});
 
-			_this.tags = array_unique(ls).sort(cacheSortCallback);
-		}
-
-		{
-			let ls = _this.novels.reduce(function (ls, data)
-			{
-				if (data.mdconf.contribute && data.mdconf.contribute.length)
-				{
-					ls.push(...data.mdconf.contribute);
-				}
-
-				return ls;
-			}, []);
-
-			_this.contributes = array_unique(ls).sort(cacheSortCallback);
-		}
+		_this.cur_author_list = array_unique(_this.cur_author_list).sort(cacheSortCallback);
+		_this.tags = array_unique(_this.tags).sort(cacheSortCallback);
+		_this.contributes = array_unique(_this.contributes).sort(cacheSortCallback);
 
 		this._updateTitle();
 
@@ -1728,8 +1746,7 @@ export default class List extends Vue
 	white-space: pre-wrap;
 }
 
-.pagination-div
-{
+.pagination-div {
 	text-align: center;
 }
 
@@ -1739,21 +1756,17 @@ export default class List extends Vue
 	margin-bottom: 0;
 }
 
-.novel_status-area
-{
-	.v-expansion-panel__header
-	{
+.novel_status-area {
+	.v-expansion-panel__header {
 		max-width: unset;
 		padding: 0;
 	}
 
-	.v-expansion-panel__container
-	{
+	.v-expansion-panel__container {
 		max-width: unset;
 	}
 
-	.v-expansion-panel__container--active, .v-expansion-panel__container--active
-	{
+	.v-expansion-panel__container--active, .v-expansion-panel__container--active {
 		margin: 0;
 	}
 }
