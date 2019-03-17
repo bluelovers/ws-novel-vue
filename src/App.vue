@@ -16,6 +16,15 @@
 			<v-spacer></v-spacer>
 			<FooterItems />
 			<v-spacer></v-spacer>
+			<div class="mx-2">
+				<a
+					:href="`${publicPath}static/opds.xml`"
+					target="_blank" rel="noopener"
+					@click="_ga('click', 'api', 'opds.xml')"
+					class="d-inline-block mr-2"
+					v-once
+				>OPDS</a>
+			</div>
 			<v-tooltip lazy top>
 				<div class="mx-2 hidden-sm-and-down" slot="activator">
 					<a
