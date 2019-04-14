@@ -13,9 +13,19 @@
 		</v-content>
 
 		<v-footer app>
+
+			<v-btn
+				onclick="window.open('https://discord.gg/MnXkpmX', 'discordapp467794087769014273')"
+				@click="_ga('click', 'api', 'discord')"
+				class="hidden-md-and-up"
+			>
+				<img src="https://discordapp.com/api/guilds/467794087769014273/embed.png"/>
+			</v-btn>
+
 			<v-spacer></v-spacer>
 			<FooterItems />
 			<v-spacer></v-spacer>
+
 			<div class="mx-2">
 				<a
 					:href="`${publicPath}static/opds.xml`"
