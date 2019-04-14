@@ -1,6 +1,16 @@
 <template>
 	<v-toolbar-items>
 
+		<v-btn
+			onclick="window.open('https://discord.gg/MnXkpmX', 'discordapp467794087769014273')"
+			@click="_ga('click', 'api', 'discord')"
+			class="hidden-sm-and-down"
+		>
+			<img src="https://discordapp.com/api/guilds/467794087769014273/embed.png"/>
+		</v-btn>
+
+		<v-spacer />
+
 		<v-btn icon onclick="window.location.reload(true)" @click="_ga('click', 'api', 'reload')">
 			<v-icon>refresh</v-icon>
 		</v-btn>
