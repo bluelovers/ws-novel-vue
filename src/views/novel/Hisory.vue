@@ -192,7 +192,7 @@ export default class History extends Vue
 				from: m.fromNow(),
 				date: m.format(),
 
-				epub: Object.entries(history.epub)
+				epub: Object.entries(history.epub || {})
 					.reduce(function (ls, [k, epub])
 					{
 						const pathMain: string = epub[0];
@@ -225,8 +225,6 @@ export default class History extends Vue
 					}, []),
 
 			};
-
-
 
 			if (data.epub.length)
 			{
