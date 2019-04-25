@@ -39,12 +39,12 @@
     "test": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@bluelovers/tsconfig": "^1.0.1",
+    "@bluelovers/tsconfig": "^1.0.2",
     "@node-novel/cache-loader": "^1.0.11",
     "@node-novel/opds-builder": "^1.0.7",
     "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.4",
-    "cjk-conv": "^1.1.35",
+    "cjk-conv": "^1.1.37",
     "diff": "^4.0.1",
     "iview": "^3.4.0",
     "lodash": "^4.17.11",
@@ -66,7 +66,7 @@
     "vuebar": "^0.0.20",
     "vuefire": "next",
     "vuesax": "^3.8.61",
-    "vuetify": "^1.5.12"
+    "vuetify": "^1.5.13"
   },
   "devDependencies": {
     "@types/bluebird": "^3",
@@ -107,11 +107,11 @@
     "yorkie": "^2.0.0"
   },
   "resolutions": {
-    "@bluelovers/tsconfig": "^1.0.1",
+    "@bluelovers/tsconfig": "^1.0.2",
     "@types/node": "^11",
     "arr-diff": "^4",
     "array-differ": "^2",
-    "cjk-conv": "^1.1.35",
+    "cjk-conv": "^1.1.37",
     "deep-eql": "^3",
     "diff": "^4",
     "fs-extra": "^7",
