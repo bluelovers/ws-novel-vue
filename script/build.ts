@@ -44,11 +44,6 @@ export = (async () =>
 		.catch(e => console.error(e))
 	;
 
-	await import('./build/build-sitemap')
-		.then(awaitImport)
-		.catch(e => console.error(e))
-	;
-
 	await CrossSpawn('yarn', [
 		'run',
 		'build-sitemap',
