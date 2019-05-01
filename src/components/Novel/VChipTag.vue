@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Prop, Watch } from 'vue-property-decorator';
+import { Component, Vue, Prop, Watch } from 'vue-property-decorator';
 
 export interface IVChipTagItem<T>
 {

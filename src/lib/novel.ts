@@ -233,3 +233,43 @@ function arr_unique_filter<T extends any[]>(arr: T)
 {
 	return array_unique(arr).filter(v => v && v != null && String(v).trim())
 }
+
+export function listChapterRange(max_chapter: number)
+{
+	let len = Math.ceil(max_chapter / 100);
+
+	let size = (len * 100).toString().length;
+
+	let chapter_range: number[] = [];
+
+	while (len--)
+	{
+		chapter_range[len] = (len + 1) * 100;
+	}
+
+	chapter_range.unshift(50);
+	chapter_range.unshift(20);
+	chapter_range.unshift(10);
+	chapter_range.unshift(5);
+	chapter_range.unshift(0);
+
+	let ls: {
+		value: number,
+		min: number,
+		label: string
+	}[] = [];
+
+	[0].concat(chapter_range as number[]).reduce(function (p, value)
+	{
+
+		ls.push({
+			value,
+			min: p,
+			label: `${String(p).padStart(size, '0')}-${String(value).padStart(size, '0')}`,
+		});
+
+		return value + 1;
+	});
+
+	return ls
+}

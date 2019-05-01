@@ -428,7 +428,7 @@ import {
 	EnumEventLabel,
 	getNovelTitleFromMeta,
 	IFilterNovelData,
-	IFilterNovelDataPlus,
+	IFilterNovelDataPlus, listChapterRange,
 	novelLink,
 } from '@/lib/novel';
 import { img_unsplash } from '@/lib/util';
@@ -497,40 +497,7 @@ export default class List extends Vue
 		let page_size = 12;
 		let page = 1;
 
-		let chapter_range: unknown[] = [];
-
-		{
-			let len = Math.ceil(NovelData.max_chapter / 100);
-
-			let size = (len * 100).toString().length;
-
-			while (len--)
-			{
-				chapter_range[len] = (len + 1) * 100;
-			}
-
-			chapter_range.unshift(50);
-			chapter_range.unshift(20);
-			chapter_range.unshift(10);
-			chapter_range.unshift(5);
-			chapter_range.unshift(0);
-
-			let ls = [];
-
-			[0].concat(chapter_range as number[]).reduce(function (p, value)
-			{
-
-				ls.push({
-					value,
-					min: p,
-					label: `${String(p).padStart(size, '0')}-${String(value).padStart(size, '0')}`,
-				});
-
-				return value + 1;
-			});
-
-			chapter_range = ls;
-		}
+		let chapter_range = listChapterRange(NovelData.max_chapter);
 
 		let data = {
 //			dialog: false,
