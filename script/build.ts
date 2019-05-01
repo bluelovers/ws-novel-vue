@@ -49,6 +49,17 @@ export = (async () =>
 		.catch(e => console.error(e))
 	;
 
+	await CrossSpawn('yarn', [
+		'run',
+		'build-sitemap',
+	], {
+		cwd,
+		stdio: 'inherit',
+		//env: process.env,
+	})
+		.catch(e => null)
+	;
+
 	//process.exit();
 
 	await CrossSpawn('yarn', [

@@ -11,10 +11,24 @@ import {
 } from 'netlify-env2/lib/gitee';
 import console, { awaitImport } from './util';
 import Bluebird = require('bluebird');
+import { async as CrossSpawn } from 'cross-spawn-extra';
 
 export const env = parseNetlifyEnv(getNetlifyEnv());
 
 (async () => {
+
+	/*
+	await CrossSpawn('yarn', [
+		'add',
+		'ts-node',
+	], {
+		cwd: process.cwd(),
+		stdio: 'inherit',
+		//env: process.env,
+	})
+		.catch(e => null)
+	;
+	*/
 
 	console.debug(`NetlifyEnv：`);
 	console.gray(`-`.repeat(10));

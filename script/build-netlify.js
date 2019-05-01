@@ -10,6 +10,18 @@ const util_1 = tslib_1.__importStar(require("./util"));
 const Bluebird = require("bluebird");
 exports.env = netlify_env2_1.parseNetlifyEnv(netlify_env2_1.getNetlifyEnv());
 (async () => {
+    /*
+    await CrossSpawn('yarn', [
+        'add',
+        'ts-node',
+    ], {
+        cwd: process.cwd(),
+        stdio: 'inherit',
+        //env: process.env,
+    })
+        .catch(e => null)
+    ;
+    */
     util_1.default.debug(`NetlifyEnv：`);
     util_1.default.gray(`-`.repeat(10));
     util_1.default.dir(exports.env, {

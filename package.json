@@ -27,6 +27,7 @@
     "build-base": "vue-cli-service build --mode production --report --client-log-level none  --color",
     "build-modern": "vue-cli-service build --modern --color",
     "build-netlify": "node ./script/build-netlify",
+    "build-sitemap": "ts-node ./script/build/build-sitemap",
     "deploy-and-build": "vue-cli-ghpages",
     "deploy-ghpages": "vue-cli-ghpages",
     "fetch-and-build": "yarn run build & yarn run deploy-ghpages",
