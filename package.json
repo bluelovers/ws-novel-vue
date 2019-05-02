@@ -23,6 +23,7 @@
     "test": "test"
   },
   "scripts": {
+    "check-updates": "npx npm-check-updates -u && npx npm-check-updates -u ../../package.json",
     "yarn-install-latest": "node ./script/yarn-install",
     "build": "node ./script/build",
     "build-base": "vue-cli-service build --mode production --report --client-log-level none  --color",
@@ -47,7 +48,7 @@
     "@node-novel/opds-builder": "^1.0.7",
     "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.4",
-    "cjk-conv": "^1.1.41",
+    "cjk-conv": "^1.1.42",
     "diff": "^4.0.1",
     "iview": "^3.4.1",
     "lodash": "^4.17.11",

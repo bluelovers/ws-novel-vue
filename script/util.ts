@@ -5,13 +5,20 @@
 import { Console2 } from 'debug-color2';
 import Bluebird = require('bluebird');
 
-const console = new Console2();
+export const console = new Console2();
 
 console.inspectOptions = console.inspectOptions || {};
 console.inspectOptions.colors = true;
 console.enabledColor = true;
 
-export { console }
+export const consoleDebug = new Console2(null, {
+	label: true,
+	time: true,
+});
+
+consoleDebug.inspectOptions = console.inspectOptions || {};
+consoleDebug.inspectOptions.colors = true;
+consoleDebug.enabledColor = true;
 
 export function awaitImport<T>(m: T, skipError?: boolean)
 {

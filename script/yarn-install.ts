@@ -4,7 +4,7 @@
 
 import { async as CrossSpawn } from 'cross-spawn-extra';
 import Bluebird = require('bluebird');
-import console, { awaitImport } from './util';
+import console, { awaitImport, consoleDebug } from './util';
 
 export = (async () => {
 
@@ -12,32 +12,16 @@ export = (async () => {
 		'add',
 		'regexp-cjk@latest',
 		'cjk-conv@latest',
-	];
-
-	console.info(`yarn ${cmds.join(' ')}`);
-
-	await CrossSpawn('yarn', cmds, {
-		stdio: 'inherit'
-	})
-		.catch(e => {
-			console.error(e.message);
-			return null
-		})
-	;
-
-	cmds = [
-		'add',
-		'-D',
 		'yarn-tool@latest',
 	];
 
-	console.info(`yarn ${cmds.join(' ')}`);
+	consoleDebug.info(`yarn ${cmds.join(' ')}`);
 
 	await CrossSpawn('yarn', cmds, {
 		stdio: 'inherit'
 	})
 		.catch(e => {
-			console.error(e.message);
+			consoleDebug.error(e.message);
 			return null
 		})
 	;
@@ -46,13 +30,13 @@ export = (async () => {
 		'install',
 	];
 
-	console.info(`yarn-tool ${cmds.join(' ')}`);
+	consoleDebug.info(`yarn-tool ${cmds.join(' ')}`);
 
 	await CrossSpawn('yarn-tool', cmds, {
 		stdio: 'inherit'
 	})
 		.catch(e => {
-			console.error(e.message);
+			consoleDebug.error(e.message);
 			return null
 		})
 	;

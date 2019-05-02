@@ -1970,10 +1970,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-cjk-conv@^1.1.22, cjk-conv@^1.1.37, cjk-conv@^1.1.41:
-  version "1.1.41"
-  resolved "https://registry.yarnpkg.com/cjk-conv/-/cjk-conv-1.1.41.tgz#5c4df37787b84c9941a1d0b6951ce43662ce8963"
-  integrity sha512-+wMxXNhmpwavPmqo5ahi7X8eBD1RHMkMayi7uFI/FvQT3NtlmK00iW8e1n8zqw1TQWXHrAZzwAI5S/U75GekVA==
+cjk-conv@^1.1.22, cjk-conv@^1.1.37, cjk-conv@^1.1.41, cjk-conv@^1.1.42:
+  version "1.1.42"
+  resolved "https://registry.yarnpkg.com/cjk-conv/-/cjk-conv-1.1.42.tgz#78f68df48620bb72c6c620bdb50f4d7410ef35a8"
+  integrity sha512-h9kATGPKr1TRqHWIvJtUGC0PU2llmSecjI69KVxCaGcebhknrK20C0XhE/eHeEJPpQw5yBBgXxtekqUEmxdGew==
   dependencies:
     array-hyper-unique "^1.0.7"
     chinese_convert "1.0.8"
@@ -3967,7 +3967,7 @@ fs-exists-sync@^0.1.0:
   resolved "https://registry.yarnpkg.com/fs-exists-sync/-/fs-exists-sync-0.1.0.tgz#982d6893af918e72d08dec9e8673ff2b5a8d6add"
   integrity sha1-mC1ok6+RjnLQjeyehnP/K1qNat0=
 
-fs-extra@^7, fs-extra@^7.0.1:
+fs-extra@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
   integrity sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
