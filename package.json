@@ -23,6 +23,7 @@
     "test": "test"
   },
   "scripts": {
+    "yarn-install-latest": "node ./script/yarn-install",
     "build": "node ./script/build",
     "build-base": "vue-cli-service build --mode production --report --client-log-level none  --color",
     "build-modern": "vue-cli-service build --modern --color",
@@ -46,13 +47,13 @@
     "@node-novel/opds-builder": "^1.0.7",
     "array-hyper-unique": "^1.0.7",
     "bluebird": "^3.5.4",
-    "cjk-conv": "^1.1.40",
+    "cjk-conv": "^1.1.41",
     "diff": "^4.0.1",
     "iview": "^3.4.1",
     "lodash": "^4.17.11",
     "lodash-decorators": "^6.0.1",
     "node-novel-info": "^2.3.33",
-    "regexp-cjk": "^3.0.3",
+    "regexp-cjk": "^3.0.4",
     "str-util": "^2.3.19",
     "uni-string": "^1.1.0",
     "vue": "^2.6.10",
@@ -64,7 +65,7 @@
     "vue-router": "^3.0.6",
     "vue-session": "^1.0.0",
     "vue2-touch-events": "^2.0.0",
-    "vuesax": "^3.8.61",
+    "vuesax": "^3.8.62",
     "vuetify": "^1.5.14"
   },
   "devDependencies": {
@@ -109,18 +110,12 @@
     "@types/node": "^11",
     "arr-diff": "^4",
     "array-differ": "^2",
-    "cjk-conv": "^1.1.40",
     "deep-eql": "^3",
     "diff": "^4",
     "fs-extra": "^7",
     "is-number": "^7",
-    "moment": "^2.24.0",
-    "node-novel-info": "^2.3.33",
-    "regexp-cjk": "^3.0.3",
-    "regexp-parser-literal": "^1.0.2",
-    "regexpp2": "^1.1.2",
-    "strip-ansi": "^5",
-    "terser": "3.17.0"
+    "regexp-cjk": "^3",
+    "strip-ansi": "^5"
   },
   "gitHooks": {
     "pre-commit": "node ./script/pre-commit"
