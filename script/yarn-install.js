@@ -19,5 +19,29 @@ module.exports = (async () => {
         util_1.default.error(e.message);
         return null;
     });
+    cmds = [
+        'add',
+        '-D',
+        'yarn-tool@latest',
+    ];
+    util_1.default.info(`yarn ${cmds.join(' ')}`);
+    await cross_spawn_extra_1.async('yarn', cmds, {
+        stdio: 'inherit'
+    })
+        .catch(e => {
+        util_1.default.error(e.message);
+        return null;
+    });
+    cmds = [
+        'install',
+    ];
+    util_1.default.info(`yarn-tool ${cmds.join(' ')}`);
+    await cross_spawn_extra_1.async('yarn-tool', cmds, {
+        stdio: 'inherit'
+    })
+        .catch(e => {
+        util_1.default.error(e.message);
+        return null;
+    });
 })();
 //# sourceMappingURL=yarn-install.js.map

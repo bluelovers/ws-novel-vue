@@ -25,4 +25,36 @@ export = (async () => {
 		})
 	;
 
+	cmds = [
+		'add',
+		'-D',
+		'yarn-tool@latest',
+	];
+
+	console.info(`yarn ${cmds.join(' ')}`);
+
+	await CrossSpawn('yarn', cmds, {
+		stdio: 'inherit'
+	})
+		.catch(e => {
+			console.error(e.message);
+			return null
+		})
+	;
+
+	cmds = [
+		'install',
+	];
+
+	console.info(`yarn-tool ${cmds.join(' ')}`);
+
+	await CrossSpawn('yarn-tool', cmds, {
+		stdio: 'inherit'
+	})
+		.catch(e => {
+			console.error(e.message);
+			return null
+		})
+	;
+
 })();
