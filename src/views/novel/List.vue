@@ -626,6 +626,8 @@ export default class List extends Vue
 		{
 			let k = refdata.keywords.join(' ');
 
+			console.log(`檢測到 referrer 關鍵字`, refdata, k);
+
 			setTimeout(() => this._search(EnumEventLabel.KEYWORD, k), 250);
 		}
 		else
