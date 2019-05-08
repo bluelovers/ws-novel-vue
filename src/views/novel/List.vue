@@ -431,7 +431,7 @@ import {
 	IFilterNovelDataPlus, listChapterRange,
 	novelLink,
 } from '@/lib/novel';
-import { img_unsplash } from '@/lib/util';
+import { img_unsplash, referrer_search } from '@/lib/util';
 import { IVueComponent } from '@/lib/vue/index';
 import { array_unique } from 'array-hyper-unique'
 import url from 'url';
@@ -615,11 +615,18 @@ export default class List extends Vue
 	_data_init()
 	{
 		this._updateTitle();
+		let refdata = referrer_search();
 
 		// @ts-ignore
 		if (this.$route.params.searchType)
 		{
 			setTimeout(() => this.onRouterChanged(this.$route, null), 250);
+		}
+		else if (refdata && refdata.keywords.length)
+		{
+			let k = refdata.keywords.join(' ');
+
+			setTimeout(() => this._search(EnumEventLabel.KEYWORD, k), 250);
 		}
 		else
 		{
@@ -1097,6 +1104,7 @@ export default class List extends Vue
 					{
 						if (r.test(title))
 						{
+							// @ts-ignore
 							ls.push(...list);
 						}
 
