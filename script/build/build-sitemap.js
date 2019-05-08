@@ -17,26 +17,85 @@ async function runBuild() {
         urls: [],
     });
     let NovelData = novel_1.dataAll();
-    NovelData.publishers.forEach(title => {
-        sitemap.add(createVueLink(title, novel_1.EnumEventLabel.AUTHOR));
+    sitemap.add({
+        url: url_1.default.resolve(project_config_1.siteUrl, `history`),
+        changefreq: 'daily',
+        priority: 0.3,
+    });
+    sitemap.add({
+        url: url_1.default.resolve(project_config_1.siteUrl, `tool/cjk-conv`),
+        changefreq: 'monthly',
+        priority: 0.3,
+    });
+    sitemap.add({
+        url: url_1.default.resolve(project_config_1.siteUrl, `static/opds.xml`),
+        changefreq: 'daily',
+        priority: 0.3,
     });
     novel_1.listChapterRange(NovelData.max_chapter)
         .forEach(row => {
-        sitemap.add(createVueLink(row.label, novel_1.EnumEventLabel.CHAPTER_RANGE));
+        sitemap.add({
+            url: createVueLink(row.label, novel_1.EnumEventLabel.CHAPTER_RANGE),
+            changefreq: 'daily',
+            priority: 0.5,
+        });
     });
     NovelData.tags
         .forEach(title => {
-        sitemap.add(createVueLink(title, novel_1.EnumEventLabel.TAG));
+        sitemap.add({
+            url: createVueLink(title, novel_1.EnumEventLabel.TAG),
+            changefreq: 'daily',
+            priority: 0.8,
+        });
     });
     NovelData.authors
         .forEach(title => {
-        sitemap.add(createVueLink(title, novel_1.EnumEventLabel.AUTHOR));
+        sitemap.add({
+            url: createVueLink(title, novel_1.EnumEventLabel.AUTHOR),
+            changefreq: 'daily',
+            priority: 0.8,
+        });
     });
-    /*
+    NovelData.publishers.forEach(title => {
+        sitemap.add({
+            url: createVueLink(title, novel_1.EnumEventLabel.AUTHOR),
+            changefreq: 'monthly',
+            priority: 0.9,
+        });
+    });
     Object.keys(NovelData.alias).forEach(title => {
-        sitemap.add(createVueLink(title))
+        let data = NovelData.alias[title].sort((a, b) => {
+            return a.update_date - b.update_date;
+        })[0];
+        let _append = {};
+        try {
+            if (data.mdconf.novel.cover) {
+                _append.img = [
+                    {
+                        url: data.mdconf.novel.cover,
+                        caption: data.title,
+                        title: data.title,
+                    }
+                ];
+            }
+        }
+        catch (e) {
+        }
+        sitemap.add({
+            url: createVueLink(title),
+            changefreq: 'daily',
+            priority: 1,
+            lastmod: novel_1.createMoment(data.update_date).toDate(),
+            ..._append,
+        });
     });
-    */
+    NovelData.illusts.forEach(title => {
+        sitemap.add({
+            url: createVueLink(title, novel_1.EnumEventLabel.ILLUST),
+            changefreq: 'monthly',
+            priority: 0.6,
+        });
+    });
     let xml = sitemap.toXML();
     //console.log(xml);
     util_1.default.success(`[build] sitemap.xml`);
