@@ -39,7 +39,7 @@ export function zhRegExpGreedy(input: unknown, flags?: string)
 	}
 
 	return new zhRegExp(input as string, flags || '', {
-		greedyTable: true,
+		greedyTable: 2,
 	});
 }
 
