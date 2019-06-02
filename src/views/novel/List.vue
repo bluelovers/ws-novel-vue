@@ -105,6 +105,7 @@
 																class="text-xs-right caption"
 																label
 																color="pink accent-4" text-color="white"
+																@click.prevent="_searchByAuthor(item.mdconf.novel.author)"
 															>{{ item.mdconf.novel.author }}
 															</v-chip>
 
@@ -113,6 +114,11 @@
 																class="text-xs-right caption"
 																label
 																color="purple darken-4" text-color="white"
+
+																:href="novelLink(item, true)"
+																target="_blank"
+																rel="noopener"
+																@click.self="_ga('click', item.pathMain, 'pathMain')"
 
 															>{{ item.pathMain }}
 															</v-chip>
@@ -430,6 +436,7 @@ import {
 	IFilterNovelData,
 	IFilterNovelDataPlus, listChapterRange,
 	novelLink,
+	novelLinkPathMain,
 } from '@/lib/novel';
 import { img_unsplash, referrer_search } from '@/lib/util';
 import { IVueComponent } from '@/lib/vue/index';
@@ -800,6 +807,7 @@ export default class List extends Vue
 				if (
 					novel.mdconf.novel
 					&& novel.mdconf.novel.publishers
+					// @ts-ignore
 					&& novel.mdconf.novel.publishers.includes(cache.keyword)
 				)
 				{
@@ -865,10 +873,12 @@ export default class List extends Vue
 
 		if (handleKeyword || handleValue)
 		{
+			// @ts-ignore
 			keyword2 = (handleKeyword ? handleKeyword : handleValue)(searchValue, keyword);
 		}
 		else
 		{
+			// @ts-ignore
 			keyword2 = searchValue;
 		}
 
@@ -876,6 +886,7 @@ export default class List extends Vue
 
 		if (handleData || handleKeyword || handleValue)
 		{
+			// @ts-ignore
 			keyword3 = (handleData || handleKeyword || handleValue)(searchValue, keyword);
 		}
 		else
@@ -910,11 +921,13 @@ export default class List extends Vue
 			keyword,
 		};
 
+		// @ts-ignore
 		if (!onPreCheck || onPreCheck && (onPreCheckReturn = onPreCheck(_cache)))
 		{
 			let cache = NovelData.novels
 				.reduce(function (cache, novel)
 				{
+					// @ts-ignore
 					let bool = eachFilter(novel, cache);
 
 					if (bool)
@@ -1017,9 +1030,18 @@ export default class List extends Vue
 		}
 	}
 
-	novelLink(data: IFilterNovelData)
+	novelLink(data: IFilterNovelData, pathMainOnly?: boolean)
 	{
-		let link = novelLink(data.pathMain, data.novelID);
+		let link: string;
+
+		if (pathMainOnly)
+		{
+			link = novelLinkPathMain(data.pathMain);
+		}
+		else
+		{
+			link = novelLink(data.pathMain, data.novelID);
+		}
 
 		let hash = '#tree-holder';
 
@@ -1345,6 +1367,7 @@ export default class List extends Vue
 					novel.mdconf.novel
 					&& novel.mdconf.novel.authors
 					&& novel.mdconf.novel.authors.length
+					// @ts-ignore
 					&& novel.mdconf.novel.authors.includes(cache.keyword)
 				)
 				{

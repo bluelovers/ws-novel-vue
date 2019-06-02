@@ -229,6 +229,14 @@ export function novelLink(pathMain: string, novelID: string, ...argv)
 	].join('/')) + '/';
 }
 
+export function novelLinkPathMain(pathMain: string, ...argv)
+{
+	return url.resolve(ProjectSetting.NOVEL_LINK, [
+		pathMain,
+	].join('/')) + '/';
+}
+
+
 function arr_unique_filter<T extends any[]>(arr: T)
 {
 	return array_unique(arr).filter(v => v && v != null && String(v).trim())
