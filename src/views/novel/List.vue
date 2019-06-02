@@ -1861,7 +1861,7 @@ export default class List extends Vue
 		setTimeout(() =>
 		{
 			this._updateRouterPage();
-		}, 500);
+		}, 100);
 
 		this._updateTitle();
 

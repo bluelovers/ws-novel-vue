@@ -3,6 +3,8 @@ import TerserPlugin = require('terser-webpack-plugin');
 import webpack = require('webpack');
 import path = require('path');
 import console from './script/util';
+import PrerenderSPAPlugin from 'prerender-spa-plugin'
+import JsDomRenderer from '@prerenderer/renderer-jsdom'
 
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
@@ -10,6 +12,8 @@ const development = !production;
 console.debug('NODE_ENV', process.env.NODE_ENV);
 
 let allowSourceMap: boolean = development;
+
+const ROOT = path.join(__dirname);
 
 module.exports = {
 
@@ -44,6 +48,50 @@ module.exports = {
 			 */
 			new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
 			new webpack.IgnorePlugin(/zh[/\\]convert[/\\].*\.txt/, /cjk-conv/),
+
+			new PrerenderSPAPlugin({
+				staticDir: path.join(ROOT, 'dist'),
+				indexPath: path.join(ROOT, 'dist', 'index.html'),
+				routes: [
+					'/',
+
+					...[
+						1, 2, 3, 4, 5
+					].reduce(function (a, n)
+					{
+						//a.push(`?page=${n}`);
+
+						//a.push(`/search/tag?searchValue=百合`);
+						a.push(`/search/author/kiki`);
+						//a.push(`/search/tag?searchValue=novel18`);
+
+						return a
+					}, [] as string[]),
+
+					'/history',
+					'/tool/cjk-conv',
+				],
+				renderer: new JsDomRenderer({
+					//renderAfterDocumentEvent: 'onload',
+					//renderAfterElementExists: '#nav',
+					renderAfterTime: 10000,
+					headless: false
+				}),
+				/*
+				postProcessHtml: function (context) {
+					var titles = {
+						'/': 'Home',
+						'/about': 'Our Story',
+						'/history': 'History'
+					}
+					return context.html.replace(
+						/<title>[^<]*<\/title>/i,
+						'<title>' + titles[context.route] + '</title>'
+					)
+				}
+				 */
+			})
+
 		],
 //		devtool: !production,
 

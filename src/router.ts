@@ -37,6 +37,7 @@ export default new Router({
 		{
 			name: 'history',
 			path: '/history',
+			// @ts-ignore
 			component: () => import(/* webpackChunkName: "history" */ '@/views/novel/Hisory.vue'),
 		},
 
@@ -44,12 +45,14 @@ export default new Router({
 			name: 'tool',
 			path: '/tool',
 
+			// @ts-ignore
 			component: () => import(/* webpackChunkName: "tool" */ '@/views/Tool/Tool.vue'),
 
 			children: [
 				{
 					name: 'cjk-conv',
 					path: 'cjk-conv',
+					// @ts-ignore
 					component: () => import(/* webpackChunkName: "tool" */ '@/views/Tool/CjkConv.vue'),
 				},
 			],

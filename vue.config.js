@@ -5,10 +5,13 @@ const TerserPlugin = require("terser-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 const util_1 = tslib_1.__importDefault(require("./script/util"));
+const prerender_spa_plugin_1 = tslib_1.__importDefault(require("prerender-spa-plugin"));
+const renderer_jsdom_1 = tslib_1.__importDefault(require("@prerenderer/renderer-jsdom"));
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
 util_1.default.debug('NODE_ENV', process.env.NODE_ENV);
 let allowSourceMap = development;
+const ROOT = path.join(__dirname);
 module.exports = {
     publicPath: '/',
     productionSourceMap: allowSourceMap,
@@ -34,6 +37,30 @@ module.exports = {
              */
             new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
             new webpack.IgnorePlugin(/zh[/\\]convert[/\\].*\.txt/, /cjk-conv/),
+            new prerender_spa_plugin_1.default({
+                staticDir: path.join(ROOT, 'dist'),
+                indexPath: path.join(ROOT, 'dist', 'index.html'),
+                routes: [
+                    '/',
+                    ...[
+                        1, 2, 3, 4, 5
+                    ].reduce(function (a, n) {
+                        //a.push(`?page=${n}`);
+                        //a.push(`/search/tag?searchValue=百合`);
+                        a.push(`/search/author/kiki`);
+                        //a.push(`/search/tag?searchValue=novel18`);
+                        return a;
+                    }, []),
+                    '/history',
+                    '/tool/cjk-conv',
+                ],
+                renderer: new renderer_jsdom_1.default({
+                    //renderAfterDocumentEvent: 'onload',
+                    //renderAfterElementExists: '#nav',
+                    renderAfterTime: 10000,
+                    headless: false
+                }),
+            })
         ],
         //		devtool: !production,
         optimization: {
@@ -172,4 +199,3 @@ function getTerserPlugin() {
         },
     });
 }
-//# sourceMappingURL=vue.config.js.map

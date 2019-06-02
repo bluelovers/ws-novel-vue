@@ -1,650 +1,417 @@
 {
   "meta": {
-    "todayTimestamp": 1551715200000,
-    "timestamp": 1551743479582,
+    "todayTimestamp": 1559318400000,
+    "timestamp": 1559344387658,
     "sourceUrl": "https://gitlab.com/novel-group/txt-source/blob/master",
     "outputUrl": "https://gitlab.com/demonovel/epub-txt/blob/master"
   },
   "history": {
-    "1550764800000": {
+    "1557849600000": {
       "epub_count": 1,
       "epub": [
         [
-          "cm",
-          "王国へ続く道",
+          "user_out",
+          "黑之魔王",
           {
-            "init_date": 1550419200000,
-            "epub_date": 1550792949579,
-            "volume_old": 1,
-            "chapter_old": 4,
-            "volume": 1,
-            "chapter": 5,
-            "epub_basename": "王国へ続く道.epub",
-            "update_date": 1550764800000,
-            "update_count": 4,
-            "novel_status": 256,
-            "segment_date": 1550620118268,
-            "segment_old": 0,
-            "segment": 1
+            "epub_date": 1557882504717,
+            "volume_old": 31,
+            "chapter_old": 579,
+            "volume": 31,
+            "chapter": 582,
+            "init_date": 1545261469203,
+            "epub_basename": "黑之魔王.epub",
+            "txt_basename": "黑之魔王.out.txt",
+            "update_date": 1557849600000,
+            "update_count": 21,
+            "novel_status": 768
           }
         ]
       ]
     },
-    "1550851200000": {
-      "segment_count": 2,
+    "1557936000000": {
+      "segment_count": 1,
       "segment": [
         [
-          "syosetu",
-          "アラフォー賢者の異世界生活日記",
+          "wenku8",
+          "平凡職業造就世界最強",
           {
-            "segment_date": 1550879157284,
-            "segment_old": 6,
-            "segment": 23,
-            "init_date": 1547568000000,
-            "update_date": 1550851200000,
-            "update_count": 3
+            "segment_date": 1557962296979,
+            "segment_old": 150,
+            "segment": 72,
+            "init_date": 1548345600000,
+            "epub_date": 1549842429160,
+            "volume_old": 13,
+            "chapter_old": 109,
+            "volume": 27,
+            "chapter": 456,
+            "epub_basename": "平凡職業造就世界最強.epub",
+            "update_date": 1557936000000,
+            "update_count": 18,
+            "novel_status": 1792
+          }
+        ]
+      ],
+      "epub_count": 2,
+      "epub": [
+        [
+          "user_out",
+          "誰にでもできる影から助ける魔王討伐",
+          {
+            "init_date": 1545494400000,
+            "txt_basename": "誰都能做到的暗中協助魔王討伐.out.txt",
+            "epub_date": 1557962352772,
+            "volume_old": 13,
+            "chapter_old": 62,
+            "volume": 15,
+            "chapter": 72,
+            "epub_basename": "誰都能做到的暗中協助魔王討伐.epub",
+            "update_date": 1557936000000,
+            "update_count": 6,
+            "novel_status": 768
+          }
+        ],
+        [
+          "wenku8_out",
+          "平凡職業造就世界最強",
+          {
+            "txt_basename": "平凡職業造就世界最強.out.txt",
+            "epub_date": 1557962377154,
+            "volume_old": 27,
+            "chapter_old": 462,
+            "volume": 27,
+            "chapter": 464,
+            "epub_basename": "平凡職業造就世界最強.epub",
+            "novel_status": 1792,
+            "init_date": 1549900800000,
+            "update_date": 1557936000000,
+            "update_count": 10
+          }
+        ]
+      ]
+    },
+    "1558022400000": {
+      "segment_count": 3,
+      "segment": [
+        [
+          "dmzj",
+          "魔法師塔塔",
+          {
+            "segment_date": 1558050396278,
+            "segment_old": 12,
+            "segment": 9,
+            "init_date": 1557763200000,
+            "txt_basename": "魔法師塔塔.out.txt",
+            "epub_date": 1558050571138,
+            "volume_old": 1,
+            "chapter_old": 12,
+            "volume": 1,
+            "chapter": 12,
+            "epub_basename": "魔法師塔塔.epub",
+            "novel_status": 256,
+            "update_date": 1558022400000,
+            "update_count": 2
+          }
+        ],
+        [
+          "girl",
+          "王女殿下はお怒りのようです",
+          {
+            "segment_date": 1558050406195,
+            "segment_old": 26,
+            "segment": 1,
+            "init_date": 1557763200000,
+            "txt_basename": "王女殿下はお怒りのようです.out.txt",
+            "epub_date": 1557791097053,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 26,
+            "epub_basename": "王女殿下はお怒りのようです.epub",
+            "novel_status": 256,
+            "update_date": 1558022400000,
+            "update_count": 2
           }
         ],
         [
           "user",
-          "異世界迷宮の最深部を目指そう",
+          "誰にでもできる影から助ける魔王討伐",
           {
-            "init_date": 1546963200000,
-            "segment_date": 1550879368725,
-            "segment_old": 191,
-            "segment": 14,
-            "update_date": 1550851200000,
-            "update_count": 5
+            "segment_date": 1558050519923,
+            "segment_old": 27,
+            "segment": 3,
+            "init_date": 1546302072698,
+            "update_date": 1558022400000,
+            "update_count": 2
           }
         ]
       ],
       "epub_count": 2,
       "epub": [
         [
-          "ts_out",
-          "幼女転生",
+          "dmzj",
+          "魔法師塔塔",
           {
-            "txt_basename": "幼女転生.out.txt",
-            "epub_date": 1550879391418,
-            "volume_old": 0,
-            "chapter_old": 0,
-            "volume": 5,
-            "chapter": 61,
-            "epub_basename": "幼女転生.epub",
-            "init_date": 1550879391418,
-            "update_date": 1550851200000,
-            "update_count": 1
-          }
-        ],
-        [
-          "user_out",
-          "異世界迷宮の最深部を目指そう",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "異世界迷宮の最深部を目指そう.out.txt",
-            "epub_date": 1550879407909,
-            "volume_old": 28,
-            "chapter_old": 393,
-            "volume": 28,
-            "chapter": 395,
-            "epub_basename": "異世界迷宮の最深部を目指そう.epub",
-            "update_date": 1550851200000,
-            "update_count": 5
-          }
-        ]
-      ]
-    },
-    "1550937600000": {
-      "epub_count": 2,
-      "epub": [
-        [
-          "cm",
-          "Ａランク冒険者のスローライフ",
-          {
-            "init_date": 1550937600000,
-            "epub_date": 1550965597773,
-            "volume_old": 0,
-            "chapter_old": 0,
-            "volume": 1,
-            "chapter": 1,
-            "epub_basename": "Ａランク冒険者のスローライフ.epub",
-            "novel_status": 256,
-            "update_date": 1550937600000,
-            "update_count": 1
-          }
-        ],
-        [
-          "cm",
-          "姫騎士がクラスメート！　〜異世界チートで奴隷化ハーレム〜",
-          {
-            "init_date": 1545494400000,
-            "segment_date": 1549669096100,
-            "segment_old": 13,
-            "segment": 2,
-            "epub_date": 1550965597271,
-            "volume_old": 4,
-            "chapter_old": 77,
-            "volume": 4,
-            "chapter": 80,
-            "epub_basename": "我的同學是姬騎士.epub",
-            "update_date": 1550937600000,
-            "update_count": 8,
-            "novel_status": 770
-          }
-        ]
-      ]
-    },
-    "1551024000000": {
-      "epub_count": 2,
-      "epub": [
-        [
-          "cm",
-          "Ａランク冒険者のスローライフ",
-          {
-            "init_date": 1550937600000,
-            "epub_date": 1551051972621,
+            "segment_date": 1558050396278,
+            "segment_old": 12,
+            "segment": 9,
+            "init_date": 1557763200000,
+            "txt_basename": "魔法師塔塔.out.txt",
+            "epub_date": 1558050571138,
             "volume_old": 1,
-            "chapter_old": 1,
+            "chapter_old": 12,
             "volume": 1,
-            "chapter": 3,
-            "epub_basename": "Ａ級冒險者的悠閒生活.epub",
+            "chapter": 12,
+            "epub_basename": "魔法師塔塔.epub",
             "novel_status": 256,
-            "update_date": 1551024000000,
+            "update_date": 1558022400000,
             "update_count": 2
           }
         ],
         [
-          "cm",
-          "姫騎士がクラスメート！　〜異世界チートで奴隷化ハーレム〜",
+          "girl_out",
+          "王女殿下はお怒りのようです",
           {
-            "init_date": 1545494400000,
-            "segment_date": 1549669096100,
-            "segment_old": 13,
-            "segment": 2,
-            "epub_date": 1551051972101,
-            "volume_old": 4,
-            "chapter_old": 80,
-            "volume": 4,
-            "chapter": 80,
-            "epub_basename": "我的同學是姬騎士.epub",
-            "update_date": 1551024000000,
-            "update_count": 9,
-            "novel_status": 770
+            "txt_basename": "王女殿下はお怒りのようです.out.txt",
+            "epub_date": 1558050572831,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 26,
+            "epub_basename": "王女殿下はお怒りのようです.epub",
+            "novel_status": 256,
+            "init_date": 1558050572831,
+            "update_date": 1558022400000,
+            "update_count": 1
           }
         ]
       ]
     },
-    "1551110400000": {
-      "segment_count": 1,
+    "1558368000000": {
+      "segment_count": 5,
       "segment": [
         [
-          "girl",
-          "Genocide Online ～極惡千金的玩遊戲日記～",
+          "dmzj",
+          "食銹末世錄",
           {
-            "segment_date": 1551138386796,
-            "segment_old": 4,
-            "segment": 1,
-            "init_date": 1549641600000,
-            "epub_date": 1551138430092,
+            "segment_date": 1558393580729,
+            "segment_old": 23,
+            "segment": 9,
+            "init_date": 1557763200000,
+            "txt_basename": "食銹末世錄.out.txt",
+            "epub_date": 1558393815078,
             "volume_old": 1,
-            "chapter_old": 21,
+            "chapter_old": 23,
             "volume": 1,
-            "chapter": 34,
-            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
+            "chapter": 23,
+            "epub_basename": "食銹末世錄.epub",
             "novel_status": 256,
-            "update_date": 1551110400000,
-            "update_count": 4
-          }
-        ]
-      ],
-      "epub_count": 2,
-      "epub": [
-        [
-          "girl",
-          "Genocide Online ～極惡千金的玩遊戲日記～",
-          {
-            "segment_date": 1551138386796,
-            "segment_old": 4,
-            "segment": 1,
-            "init_date": 1549641600000,
-            "epub_date": 1551138430092,
-            "volume_old": 1,
-            "chapter_old": 21,
-            "volume": 1,
-            "chapter": 34,
-            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
-            "novel_status": 256,
-            "update_date": 1551110400000,
-            "update_count": 4
+            "update_date": 1558368000000,
+            "update_count": 2
           }
         ],
         [
-          "ts_out",
-          "幼女転生",
+          "girl",
+          "Genocide Online ～極惡千金的玩遊戲日記～",
           {
-            "txt_basename": "幼女転生.out.txt",
-            "epub_date": 1551138433293,
-            "volume_old": 5,
-            "chapter_old": 61,
-            "volume": 5,
-            "chapter": 61,
-            "epub_basename": "幼女転生.epub",
-            "init_date": 1550851200000,
-            "update_date": 1551110400000,
+            "segment_date": 1558393606088,
+            "segment_old": 1,
+            "segment": 1,
+            "init_date": 1549641600000,
+            "epub_date": 1558393818819,
+            "volume_old": 1,
+            "chapter_old": 108,
+            "volume": 1,
+            "chapter": 115,
+            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
+            "novel_status": 256,
+            "update_date": 1558368000000,
+            "update_count": 19,
+            "txt_basename": "Genocide Online ～極惡千.out.txt"
+          }
+        ],
+        [
+          "girl",
+          "你這種傢伙別想打贏魔王",
+          {
+            "init_date": 1550505600000,
+            "segment_date": 1558393664176,
+            "segment_old": 9,
+            "segment": 2,
+            "update_date": 1558368000000,
+            "update_count": 7
+          }
+        ],
+        [
+          "syosetu",
+          "昏き宮殿の死者の王",
+          {
+            "segment_date": 1558393700053,
+            "segment_old": 0,
+            "segment": 2,
+            "init_date": 1558393700053,
+            "txt_basename": "昏き宮殿の死者の王.out.txt",
+            "epub_date": 1558393820027,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 2,
+            "epub_basename": "昏き宮殿の死者の王.epub",
+            "update_date": 1558368000000,
+            "update_count": 1
+          }
+        ],
+        [
+          "syosetu",
+          "願わくばこの手に幸福を",
+          {
+            "segment_date": 1558393706126,
+            "segment_old": 1,
+            "segment": 17,
+            "init_date": 1557763200000,
+            "txt_basename": "願わくばこの手に幸福を.out.txt",
+            "epub_date": 1558393820884,
+            "volume_old": 1,
+            "chapter_old": 1,
+            "volume": 2,
+            "chapter": 18,
+            "epub_basename": "願わくばこの手に幸福を.epub",
+            "novel_status": 768,
+            "update_date": 1558368000000,
             "update_count": 2
           }
         ]
-      ]
-    },
-    "1551196800000": {
-      "epub_count": 4,
+      ],
+      "epub_count": 8,
       "epub": [
         [
-          "cm_out",
-          "リビティウム皇国のブタクサ姫",
+          "dmzj",
+          "食銹末世錄",
           {
-            "epub_date": 1551225027899,
-            "volume_old": 7,
-            "chapter_old": 214,
-            "volume": 7,
-            "chapter": 217,
-            "epub_basename": "利貝提姆皇國的豚草姫.epub",
-            "init_date": 1545548908164,
-            "txt_basename": "利貝提姆皇國的豚草姫.out.txt",
-            "update_date": 1551196800000,
-            "update_count": 14
+            "segment_date": 1558393580729,
+            "segment_old": 23,
+            "segment": 9,
+            "init_date": 1557763200000,
+            "txt_basename": "食銹末世錄.out.txt",
+            "epub_date": 1558393815078,
+            "volume_old": 1,
+            "chapter_old": 23,
+            "volume": 1,
+            "chapter": 23,
+            "epub_basename": "食銹末世錄.epub",
+            "novel_status": 256,
+            "update_date": 1558368000000,
+            "update_count": 2
+          }
+        ],
+        [
+          "girl",
+          "Genocide Online ～極惡千金的玩遊戲日記～",
+          {
+            "segment_date": 1558393606088,
+            "segment_old": 1,
+            "segment": 1,
+            "init_date": 1549641600000,
+            "epub_date": 1558393818819,
+            "volume_old": 1,
+            "chapter_old": 108,
+            "volume": 1,
+            "chapter": 115,
+            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
+            "novel_status": 256,
+            "update_date": 1558368000000,
+            "update_count": 19,
+            "txt_basename": "Genocide Online ～極惡千.out.txt"
+          }
+        ],
+        [
+          "girl",
+          "ポンコツ少女の電脳世界救世記",
+          {
+            "init_date": 1554739200000,
+            "txt_basename": "廢柴少女的電腦世界救世記　～不中用的技能.out.txt",
+            "epub_date": 1558393819582,
+            "volume_old": 1,
+            "chapter_old": 13,
+            "volume": 1,
+            "chapter": 15,
+            "epub_basename": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～.epub",
+            "novel_status": 1,
+            "update_date": 1558368000000,
+            "update_count": 8,
+            "segment_date": 1556151336714,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "syosetu",
+          "昏き宮殿の死者の王",
+          {
+            "segment_date": 1558393700053,
+            "segment_old": 0,
+            "segment": 2,
+            "init_date": 1558393700053,
+            "txt_basename": "昏き宮殿の死者の王.out.txt",
+            "epub_date": 1558393820027,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 2,
+            "epub_basename": "昏き宮殿の死者の王.epub",
+            "update_date": 1558368000000,
+            "update_count": 1
+          }
+        ],
+        [
+          "syosetu",
+          "願わくばこの手に幸福を",
+          {
+            "segment_date": 1558393706126,
+            "segment_old": 1,
+            "segment": 17,
+            "init_date": 1557763200000,
+            "txt_basename": "願わくばこの手に幸福を.out.txt",
+            "epub_date": 1558393820884,
+            "volume_old": 1,
+            "chapter_old": 1,
+            "volume": 2,
+            "chapter": 18,
+            "epub_basename": "願わくばこの手に幸福を.epub",
+            "novel_status": 768,
+            "update_date": 1558368000000,
+            "update_count": 2
           }
         ],
         [
           "syosetu_out",
           "ロリータ・ガンバレット　～魔弾幼女の異世界戦記～",
           {
-            "epub_date": 1551225034439,
+            "epub_date": 1558393825084,
             "volume_old": 6,
-            "chapter_old": 103,
+            "chapter_old": 105,
             "volume": 6,
-            "chapter": 105,
+            "chapter": 107,
             "init_date": 1545261458252,
             "txt_basename": "魔彈蘿莉的異世界戰記.out.txt",
             "epub_basename": "魔彈蘿莉的異世界戰記.epub",
-            "update_date": 1551196800000,
-            "update_count": 1
+            "update_date": 1558368000000,
+            "update_count": 3
           }
         ],
         [
-          "syosetu_out",
-          "最強呪族転生",
+          "ts_out",
+          "幼女転生",
           {
-            "init_date": 1545494400000,
-            "txt_basename": "最強呪族転生.out.txt",
-            "epub_date": 1551225039041,
-            "volume_old": 6,
-            "chapter_old": 230,
-            "volume": 6,
-            "chapter": 236,
-            "epub_basename": "最強呪族転生.epub",
-            "update_date": 1551196800000,
+            "txt_basename": "幼女転生.out.txt",
+            "epub_date": 1558393827946,
+            "volume_old": 5,
+            "chapter_old": 61,
+            "volume": 5,
+            "chapter": 63,
+            "epub_basename": "幼女転生.epub",
+            "init_date": 1550851200000,
+            "update_date": 1558368000000,
             "update_count": 4
-          }
-        ],
-        [
-          "user_out",
-          "ウォルテニア戦記",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "沃特尼亞戰記.out.txt",
-            "epub_date": 1551225043205,
-            "volume_old": 5,
-            "chapter_old": 177,
-            "volume": 5,
-            "chapter": 184,
-            "epub_basename": "沃特尼亞戰記.epub",
-            "update_date": 1551196800000,
-            "update_count": 7,
-            "novel_status": 768
-          }
-        ]
-      ]
-    },
-    "1551369600000": {
-      "segment_count": 1,
-      "segment": [
-        [
-          "user",
-          "ウォルテニア戦記",
-          {
-            "segment_date": 1551397699771,
-            "segment_old": 2,
-            "segment": 9,
-            "init_date": 1546044567479,
-            "update_date": 1551369600000,
-            "update_count": 8
-          }
-        ]
-      ],
-      "epub_count": 1,
-      "epub": [
-        [
-          "user_out",
-          "ウォルテニア戦記",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "沃特尼亞戰記.out.txt",
-            "epub_date": 1551397720605,
-            "volume_old": 5,
-            "chapter_old": 184,
-            "volume": 5,
-            "chapter": 184,
-            "epub_basename": "沃特尼亞戰記.epub",
-            "update_date": 1551369600000,
-            "update_count": 8,
-            "novel_status": 768
-          }
-        ]
-      ]
-    },
-    "1551456000000": {
-      "segment_count": 1,
-      "segment": [
-        [
-          "girl",
-          "JKハルは異世界で娼婦になった",
-          {
-            "segment_date": 1551484322490,
-            "segment_old": 0,
-            "segment": 5,
-            "init_date": 1551484322490,
-            "epub_date": 1551484358151,
-            "volume_old": 0,
-            "chapter_old": 0,
-            "volume": 1,
-            "chapter": 5,
-            "epub_basename": "JKハルは異世界で娼婦になった.epub",
-            "novel_status": 257,
-            "update_date": 1551456000000,
-            "update_count": 1
-          }
-        ]
-      ],
-      "epub_count": 2,
-      "epub": [
-        [
-          "dmzj_out",
-          "蜘蛛ですが、なにか？",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "轉生成蜘蛛又怎樣！.out.txt",
-            "epub_date": 1551484357333,
-            "volume_old": 16,
-            "chapter_old": 778,
-            "volume": 17,
-            "chapter": 813,
-            "epub_basename": "轉生成蜘蛛又怎樣！.epub",
-            "update_date": 1551456000000,
-            "update_count": 9,
-            "novel_status": 1792
-          }
-        ],
-        [
-          "girl",
-          "JKハルは異世界で娼婦になった",
-          {
-            "segment_date": 1551484322490,
-            "segment_old": 0,
-            "segment": 5,
-            "init_date": 1551484322490,
-            "epub_date": 1551484358151,
-            "volume_old": 0,
-            "chapter_old": 0,
-            "volume": 1,
-            "chapter": 5,
-            "epub_basename": "JKハルは異世界で娼婦になった.epub",
-            "novel_status": 257,
-            "update_date": 1551456000000,
-            "update_count": 1
-          }
-        ]
-      ]
-    },
-    "1551542400000": {
-      "segment_count": 2,
-      "segment": [
-        [
-          "dmzj",
-          "蜘蛛ですが、なにか？",
-          {
-            "segment_date": 1551570624863,
-            "segment_old": 12,
-            "segment": 31,
-            "init_date": 1545779972577,
-            "update_date": 1551542400000,
-            "update_count": 13
-          }
-        ],
-        [
-          "user",
-          "ウォルテニア戦記",
-          {
-            "segment_date": 1551570696591,
-            "segment_old": 9,
-            "segment": 4,
-            "init_date": 1546044567479,
-            "update_date": 1551542400000,
-            "update_count": 9
-          }
-        ]
-      ],
-      "epub_count": 2,
-      "epub": [
-        [
-          "syosetu",
-          "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい",
-          {
-            "init_date": 1551542400000,
-            "epub_date": 1551570714599,
-            "volume_old": 0,
-            "chapter_old": 0,
-            "volume": 1,
-            "chapter": 3,
-            "epub_basename": "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい.epub",
-            "novel_status": 256,
-            "update_date": 1551542400000,
-            "update_count": 1
-          }
-        ],
-        [
-          "user_out",
-          "ウォルテニア戦記",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "沃特尼亞戰記.out.txt",
-            "epub_date": 1551570719280,
-            "volume_old": 5,
-            "chapter_old": 184,
-            "volume": 5,
-            "chapter": 184,
-            "epub_basename": "沃特尼亞戰記.epub",
-            "update_date": 1551542400000,
-            "update_count": 9,
-            "novel_status": 768
-          }
-        ]
-      ]
-    },
-    "1551628800000": {
-      "epub_count": 6,
-      "epub": [
-        [
-          "cm_out",
-          "リビティウム皇国のブタクサ姫",
-          {
-            "epub_date": 1551657372617,
-            "volume_old": 7,
-            "chapter_old": 217,
-            "volume": 7,
-            "chapter": 218,
-            "epub_basename": "利貝提姆皇國的豚草姫.epub",
-            "init_date": 1545548908164,
-            "txt_basename": "利貝提姆皇國的豚草姫.out.txt",
-            "update_date": 1551628800000,
-            "update_count": 15
-          }
-        ],
-        [
-          "dmzj_out",
-          "蜘蛛ですが、なにか？",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "轉生成蜘蛛又怎樣！.out.txt",
-            "epub_date": 1551657388422,
-            "volume_old": 17,
-            "chapter_old": 813,
-            "volume": 17,
-            "chapter": 813,
-            "epub_basename": "轉生成蜘蛛又怎樣！.epub",
-            "update_date": 1551628800000,
-            "update_count": 10,
-            "novel_status": 1792
-          }
-        ],
-        [
-          "girl",
-          "Genocide Online ～極惡千金的玩遊戲日記～",
-          {
-            "segment_date": 1551138386796,
-            "segment_old": 4,
-            "segment": 1,
-            "init_date": 1549641600000,
-            "epub_date": 1551657389749,
-            "volume_old": 1,
-            "chapter_old": 34,
-            "volume": 1,
-            "chapter": 40,
-            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
-            "novel_status": 256,
-            "update_date": 1551628800000,
-            "update_count": 5
-          }
-        ],
-        [
-          "syosetu_out",
-          "俺　VS　人類　～アンデッドを使役して王国を襲う俺～",
-          {
-            "epub_date": 1551657394414,
-            "volume_old": 4,
-            "chapter_old": 120,
-            "volume": 4,
-            "chapter": 120,
-            "epub_basename": "俺　VS　人類　～使役不死者去襲擊王國的俺～.epub",
-            "novel_status": 1,
-            "init_date": 1545548928688,
-            "txt_basename": "俺　VS　人類　～使役不死者去襲擊王國的.out.txt",
-            "update_date": 1551628800000,
-            "update_count": 4
-          }
-        ],
-        [
-          "syosetu_out",
-          "望まぬ不死の冒険者",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "事與願違的不死冒險者.out.txt",
-            "epub_date": 1551657399592,
-            "volume_old": 11,
-            "chapter_old": 200,
-            "volume": 13,
-            "chapter": 255,
-            "epub_basename": "事與願違的不死冒險者.epub",
-            "update_date": 1551628800000,
-            "update_count": 10,
-            "novel_status": 768
-          }
-        ],
-        [
-          "user_out",
-          "没落予定なので、鍛治職人を目指す",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "没落予定なので、鍛治職人を目指す.out.txt",
-            "epub_date": 1551657403531,
-            "volume_old": 8,
-            "chapter_old": 147,
-            "volume": 8,
-            "chapter": 157,
-            "epub_basename": "没落予定なので、鍛治職人を目指す.epub",
-            "update_date": 1551628800000,
-            "update_count": 4,
-            "novel_status": 768
-          }
-        ]
-      ]
-    },
-    "1551715200000": {
-      "segment_count": 2,
-      "segment": [
-        [
-          "syosetu",
-          "望まぬ不死の冒険者",
-          {
-            "segment_date": 1551743416338,
-            "segment_old": 4,
-            "segment": 10,
-            "init_date": 1545607102002,
-            "update_date": 1551715200000,
-            "update_count": 9
-          }
-        ],
-        [
-          "yandere",
-          "転生ごときで逃げられるとでも、兄さん？",
-          {
-            "segment_date": 1551743436809,
-            "segment_old": 2,
-            "segment": 1,
-            "init_date": 1548604800000,
-            "epub_date": 1548977895318,
-            "volume_old": 5,
-            "chapter_old": 79,
-            "volume": 5,
-            "chapter": 79,
-            "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
-            "update_date": 1551715200000,
-            "update_count": 8
-          }
-        ]
-      ],
-      "epub_count": 3,
-      "epub": [
-        [
-          "girl",
-          "傀儡契約_(n4719ff)",
-          {
-            "init_date": 1551715200000,
-            "epub_date": 1551743458095,
-            "volume_old": 0,
-            "chapter_old": 0,
-            "volume": 1,
-            "chapter": 1,
-            "epub_basename": "傀儡契約.epub",
-            "update_date": 1551715200000,
-            "update_count": 1
-          }
-        ],
-        [
-          "syosetu_out",
-          "望まぬ不死の冒険者",
-          {
-            "init_date": 1545494400000,
-            "txt_basename": "事與願違的不死冒險者.out.txt",
-            "epub_date": 1551743463914,
-            "volume_old": 13,
-            "chapter_old": 255,
-            "volume": 13,
-            "chapter": 255,
-            "epub_basename": "事與願違的不死冒險者.epub",
-            "update_date": 1551715200000,
-            "update_count": 11,
-            "novel_status": 768
           }
         ],
         [
@@ -652,15 +419,832 @@
           "転生ごときで逃げられるとでも、兄さん？",
           {
             "txt_basename": "以為轉個生就能逃掉嗎，哥哥？.out.txt",
-            "epub_date": 1551743467474,
+            "epub_date": 1558393833255,
             "volume_old": 5,
-            "chapter_old": 84,
+            "chapter_old": 115,
             "volume": 5,
-            "chapter": 90,
+            "chapter": 117,
             "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
             "init_date": 1549036800000,
-            "update_date": 1551715200000,
-            "update_count": 5
+            "update_date": 1558368000000,
+            "update_count": 11
+          }
+        ]
+      ]
+    },
+    "1558454400000": {
+      "epub_count": 6,
+      "epub": [
+        [
+          "dmzj",
+          "食銹末世錄",
+          {
+            "segment_date": 1558393580729,
+            "segment_old": 23,
+            "segment": 9,
+            "init_date": 1557763200000,
+            "txt_basename": "食銹末世錄.out.txt",
+            "epub_date": 1558480176406,
+            "volume_old": 1,
+            "chapter_old": 23,
+            "volume": 1,
+            "chapter": 23,
+            "epub_basename": "食銹末世錄.epub",
+            "novel_status": 256,
+            "update_date": 1558454400000,
+            "update_count": 3
+          }
+        ],
+        [
+          "girl",
+          "Genocide Online ～極惡千金的玩遊戲日記～",
+          {
+            "segment_date": 1558393606088,
+            "segment_old": 1,
+            "segment": 1,
+            "init_date": 1549641600000,
+            "epub_date": 1558480180642,
+            "volume_old": 1,
+            "chapter_old": 115,
+            "volume": 1,
+            "chapter": 116,
+            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
+            "novel_status": 256,
+            "update_date": 1558454400000,
+            "update_count": 20,
+            "txt_basename": "Genocide Online ～極惡千.out.txt"
+          }
+        ],
+        [
+          "girl",
+          "ポンコツ少女の電脳世界救世記",
+          {
+            "init_date": 1554739200000,
+            "txt_basename": "廢柴少女的電腦世界救世記　～不中用的技能.out.txt",
+            "epub_date": 1558480181459,
+            "volume_old": 1,
+            "chapter_old": 15,
+            "volume": 1,
+            "chapter": 16,
+            "epub_basename": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～.epub",
+            "novel_status": 1,
+            "update_date": 1558454400000,
+            "update_count": 9,
+            "segment_date": 1556151336714,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "syosetu",
+          "昏き宮殿の死者の王",
+          {
+            "segment_date": 1558393700053,
+            "segment_old": 0,
+            "segment": 2,
+            "init_date": 1558368000000,
+            "txt_basename": "昏き宮殿の死者の王.out.txt",
+            "epub_date": 1558480181733,
+            "volume_old": 1,
+            "chapter_old": 2,
+            "volume": 1,
+            "chapter": 2,
+            "epub_basename": "昏き宮殿の死者の王.epub",
+            "update_date": 1558454400000,
+            "update_count": 2
+          }
+        ],
+        [
+          "syosetu",
+          "願わくばこの手に幸福を",
+          {
+            "segment_date": 1558393706126,
+            "segment_old": 1,
+            "segment": 17,
+            "init_date": 1557763200000,
+            "txt_basename": "願わくばこの手に幸福を.out.txt",
+            "epub_date": 1558480182587,
+            "volume_old": 2,
+            "chapter_old": 18,
+            "volume": 2,
+            "chapter": 18,
+            "epub_basename": "願わくばこの手に幸福を.epub",
+            "novel_status": 768,
+            "update_date": 1558454400000,
+            "update_count": 3
+          }
+        ],
+        [
+          "user_out",
+          "カルマの塔",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 234,
+            "chapter": 244,
+            "txt_basename": "業之塔.out.txt",
+            "volume_old": 5,
+            "volume": 5,
+            "epub_basename": "業之塔.epub",
+            "update_date": 1558454400000,
+            "update_count": 2,
+            "epub_date": 1558480188514
+          }
+        ]
+      ]
+    },
+    "1558540800000": {
+      "segment_count": 1,
+      "segment": [
+        [
+          "syosetu",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 82,
+            "chapter": 82,
+            "segment_date": 1558566477075,
+            "segment_old": 75,
+            "segment": 2,
+            "epub_date": 1548977872411,
+            "volume_old": 5,
+            "volume": 5,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "update_date": 1558540800000,
+            "update_count": 4,
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt"
+          }
+        ]
+      ],
+      "epub_count": 1,
+      "epub": [
+        [
+          "syosetu_out",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt",
+            "epub_date": 1558566530368,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 6,
+            "chapter": 149,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "novel_status": 768,
+            "init_date": 1558566530368,
+            "update_date": 1558540800000,
+            "update_count": 1
+          }
+        ]
+      ]
+    },
+    "1558627200000": {
+      "segment_count": 2,
+      "segment": [
+        [
+          "girl",
+          "惡役轉生但是為什麼會變成這樣",
+          {
+            "init_date": 1557331200000,
+            "txt_basename": "惡役轉生但是為什麼會變成這樣.out.txt",
+            "epub_date": 1557361605355,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 10,
+            "chapter": 148,
+            "epub_basename": "惡役轉生但是為什麼會變成這樣.epub",
+            "novel_status": 256,
+            "update_date": 1558627200000,
+            "update_count": 2,
+            "segment_date": 1558652965960,
+            "segment_old": 0,
+            "segment": 1
+          }
+        ],
+        [
+          "syosetu",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 82,
+            "chapter": 82,
+            "segment_date": 1558653007351,
+            "segment_old": 2,
+            "segment": 33,
+            "epub_date": 1548977872411,
+            "volume_old": 5,
+            "volume": 5,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "update_date": 1558627200000,
+            "update_count": 5,
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt"
+          }
+        ]
+      ],
+      "epub_count": 2,
+      "epub": [
+        [
+          "girl_out",
+          "惡役轉生但是為什麼會變成這樣",
+          {
+            "txt_basename": "惡役轉生但是為什麼會變成這樣.out.txt",
+            "epub_date": 1558653061173,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 10,
+            "chapter": 148,
+            "epub_basename": "惡役轉生但是為什麼會變成這樣.epub",
+            "novel_status": 256,
+            "init_date": 1558653061173,
+            "update_date": 1558627200000,
+            "update_count": 1
+          }
+        ],
+        [
+          "syosetu_out",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt",
+            "epub_date": 1558653067261,
+            "volume_old": 6,
+            "chapter_old": 149,
+            "volume": 6,
+            "chapter": 149,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "novel_status": 768,
+            "init_date": 1558540800000,
+            "update_date": 1558627200000,
+            "update_count": 2
+          }
+        ]
+      ]
+    },
+    "1558713600000": {
+      "epub_count": 7,
+      "epub": [
+        [
+          "girl",
+          "Genocide Online ～極惡千金的玩遊戲日記～",
+          {
+            "segment_date": 1558393606088,
+            "segment_old": 1,
+            "segment": 1,
+            "init_date": 1549641600000,
+            "epub_date": 1558743615905,
+            "volume_old": 1,
+            "chapter_old": 116,
+            "volume": 1,
+            "chapter": 120,
+            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
+            "novel_status": 256,
+            "update_date": 1558713600000,
+            "update_count": 21,
+            "txt_basename": "Genocide Online ～極惡千.out.txt"
+          }
+        ],
+        [
+          "girl",
+          "エリナの成長物語（引き籠り女神の転生）",
+          {
+            "init_date": 1552492800000,
+            "txt_basename": "エリナの成長物語（引き籠り女神の転生）.out.txt",
+            "epub_date": 1558743616844,
+            "volume_old": 1,
+            "chapter_old": 17,
+            "volume": 1,
+            "chapter": 19,
+            "epub_basename": "エリナの成長物語（引き籠り女神の転生）.epub",
+            "update_date": 1558713600000,
+            "update_count": 9,
+            "segment_date": 1558742465927,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "girl",
+          "ポンコツ少女の電脳世界救世記",
+          {
+            "init_date": 1554739200000,
+            "txt_basename": "廢柴少女的電腦世界救世記　～不中用的技能.out.txt",
+            "epub_date": 1558743617779,
+            "volume_old": 1,
+            "chapter_old": 16,
+            "volume": 2,
+            "chapter": 20,
+            "epub_basename": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～.epub",
+            "novel_status": 1,
+            "update_date": 1558713600000,
+            "update_count": 10,
+            "segment_date": 1558742473531,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "girl_out",
+          "惡役轉生但是為什麼會變成這樣",
+          {
+            "txt_basename": "惡役轉生但是為什麼會變成這樣.out.txt",
+            "epub_date": 1558739347435,
+            "volume_old": 10,
+            "chapter_old": 148,
+            "volume": 10,
+            "chapter": 148,
+            "epub_basename": "惡役轉生但是為什麼會變成這樣.epub",
+            "novel_status": 256,
+            "init_date": 1558627200000,
+            "update_date": 1558713600000,
+            "update_count": 2
+          }
+        ],
+        [
+          "syosetu_out",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt",
+            "epub_date": 1558743623439,
+            "volume_old": 6,
+            "chapter_old": 149,
+            "volume": 6,
+            "chapter": 149,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "novel_status": 768,
+            "init_date": 1558540800000,
+            "update_date": 1558713600000,
+            "update_count": 3
+          }
+        ],
+        [
+          "ts_out",
+          "自称贤者弟子的贤者",
+          {
+            "txt_basename": "自称贤者弟子的贤者.out.txt",
+            "epub_date": 1558743632483,
+            "volume_old": 7,
+            "chapter_old": 313,
+            "volume": 7,
+            "chapter": 315,
+            "epub_basename": "自称贤者弟子的贤者.epub",
+            "novel_status": 768,
+            "init_date": 1556812800000,
+            "update_date": 1558713600000,
+            "update_count": 3
+          }
+        ],
+        [
+          "wenku8_out",
+          "平凡職業造就世界最強",
+          {
+            "txt_basename": "平凡職業造就世界最強.out.txt",
+            "epub_date": 1558743655916,
+            "volume_old": 27,
+            "chapter_old": 464,
+            "volume": 28,
+            "chapter": 477,
+            "epub_basename": "平凡職業造就世界最強.epub",
+            "novel_status": 1792,
+            "init_date": 1549900800000,
+            "update_date": 1558713600000,
+            "update_count": 11
+          }
+        ]
+      ],
+      "segment_count": 6,
+      "segment": [
+        [
+          "cm",
+          "リビティウム皇国のブタクサ姫",
+          {
+            "segment_date": 1558742428874,
+            "segment_old": 1,
+            "segment": 25,
+            "init_date": 1545521021481,
+            "update_date": 1558713600000,
+            "update_count": 7
+          }
+        ],
+        [
+          "girl",
+          "エリナの成長物語（引き籠り女神の転生）",
+          {
+            "init_date": 1552492800000,
+            "txt_basename": "エリナの成長物語（引き籠り女神の転生）.out.txt",
+            "epub_date": 1558743616844,
+            "volume_old": 1,
+            "chapter_old": 17,
+            "volume": 1,
+            "chapter": 19,
+            "epub_basename": "エリナの成長物語（引き籠り女神の転生）.epub",
+            "update_date": 1558713600000,
+            "update_count": 9,
+            "segment_date": 1558742465927,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "girl",
+          "ポンコツ少女の電脳世界救世記",
+          {
+            "init_date": 1554739200000,
+            "txt_basename": "廢柴少女的電腦世界救世記　～不中用的技能.out.txt",
+            "epub_date": 1558743617779,
+            "volume_old": 1,
+            "chapter_old": 16,
+            "volume": 2,
+            "chapter": 20,
+            "epub_basename": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～.epub",
+            "novel_status": 1,
+            "update_date": 1558713600000,
+            "update_count": 10,
+            "segment_date": 1558742473531,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "girl",
+          "你這種傢伙別想打贏魔王",
+          {
+            "init_date": 1550505600000,
+            "segment_date": 1558742528291,
+            "segment_old": 2,
+            "segment": 10,
+            "update_date": 1558713600000,
+            "update_count": 8
+          }
+        ],
+        [
+          "syosetu",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 82,
+            "chapter": 82,
+            "segment_date": 1558742573453,
+            "segment_old": 33,
+            "segment": 1,
+            "epub_date": 1548977872411,
+            "volume_old": 5,
+            "volume": 5,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "update_date": 1558713600000,
+            "update_count": 6,
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt"
+          }
+        ],
+        [
+          "ts",
+          "自称贤者弟子的贤者",
+          {
+            "segment_date": 1558742821974,
+            "segment_old": 76,
+            "segment": 19,
+            "init_date": 1556812800000,
+            "update_date": 1558713600000,
+            "update_count": 2
+          }
+        ]
+      ]
+    },
+    "1558886400000": {
+      "segment_count": 1,
+      "segment": [
+        [
+          "girl",
+          "謙虚、堅実をモットーに生きております！",
+          {
+            "segment_date": 1558912286691,
+            "segment_old": 0,
+            "segment": 5,
+            "init_date": 1558912286691,
+            "update_date": 1558886400000,
+            "update_count": 1
+          }
+        ]
+      ],
+      "epub_count": 1,
+      "epub": [
+        [
+          "girl_out",
+          "謙虚、堅実をモットーに生きております！",
+          {
+            "txt_basename": "謙虛踏實的生活下去.out.txt",
+            "epub_date": 1558912312503,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 299,
+            "epub_basename": "謙虛踏實的生活下去.epub",
+            "init_date": 1558912312503,
+            "update_date": 1558886400000,
+            "update_count": 1
+          }
+        ]
+      ]
+    },
+    "1559059200000": {
+      "segment_count": 1,
+      "segment": [
+        [
+          "h",
+          "俺が淫魔術で奴隷ハーレムを作る話",
+          {
+            "segment_date": 1559085020423,
+            "segment_old": 2,
+            "segment": 2,
+            "init_date": 1556294400000,
+            "txt_basename": "我仰賴淫魔術建立了奴隸後宮.out.txt",
+            "epub_date": 1559085040608,
+            "volume_old": 1,
+            "chapter_old": 6,
+            "volume": 1,
+            "chapter": 7,
+            "epub_basename": "我仰賴淫魔術建立了奴隸後宮.epub",
+            "novel_status": 256,
+            "update_date": 1559059200000,
+            "update_count": 3
+          }
+        ]
+      ],
+      "epub_count": 1,
+      "epub": [
+        [
+          "h",
+          "俺が淫魔術で奴隷ハーレムを作る話",
+          {
+            "segment_date": 1559085020423,
+            "segment_old": 2,
+            "segment": 2,
+            "init_date": 1556294400000,
+            "txt_basename": "我仰賴淫魔術建立了奴隸後宮.out.txt",
+            "epub_date": 1559085040608,
+            "volume_old": 1,
+            "chapter_old": 6,
+            "volume": 1,
+            "chapter": 7,
+            "epub_basename": "我仰賴淫魔術建立了奴隸後宮.epub",
+            "novel_status": 256,
+            "update_date": 1559059200000,
+            "update_count": 3
+          }
+        ]
+      ]
+    },
+    "1559145600000": {
+      "segment_count": 4,
+      "segment": [
+        [
+          "girl",
+          "「「神と呼ばれ、魔王と呼ばれても」」",
+          {
+            "segment_date": 1559171497172,
+            "segment_old": 71,
+            "segment": 24,
+            "init_date": 1549641600000,
+            "epub_date": 1559171797642,
+            "volume_old": 1,
+            "chapter_old": 72,
+            "volume": 1,
+            "chapter": 81,
+            "epub_basename": "無論是被當作神，還是被當作魔王.epub",
+            "novel_status": 1,
+            "update_date": 1559145600000,
+            "update_count": 5,
+            "txt_basename": "無論是被當作神，還是被當作魔王.out.txt"
+          }
+        ],
+        [
+          "girl",
+          "ポンコツ少女の電脳世界救世記",
+          {
+            "init_date": 1554739200000,
+            "txt_basename": "廢柴少女的電腦世界救世記　～不中用的技能.out.txt",
+            "epub_date": 1559171798836,
+            "volume_old": 2,
+            "chapter_old": 20,
+            "volume": 2,
+            "chapter": 25,
+            "epub_basename": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～.epub",
+            "novel_status": 1,
+            "update_date": 1559145600000,
+            "update_count": 11,
+            "segment_date": 1559171506322,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "girl",
+          "勿論、慰謝料請求いたします！",
+          {
+            "segment_date": 1559171513130,
+            "segment_old": 0,
+            "segment": 30,
+            "init_date": 1559171513130,
+            "txt_basename": "勿論、慰謝料請求いたします！.out.txt",
+            "epub_date": 1559171802314,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 30,
+            "epub_basename": "勿論、慰謝料請求いたします！.epub",
+            "novel_status": 768,
+            "update_date": 1559145600000,
+            "update_count": 1
+          }
+        ],
+        [
+          "ts",
+          "自称贤者弟子的贤者",
+          {
+            "segment_date": 1559171764436,
+            "segment_old": 19,
+            "segment": 4,
+            "init_date": 1556812800000,
+            "update_date": 1559145600000,
+            "update_count": 3
+          }
+        ]
+      ],
+      "epub_count": 6,
+      "epub": [
+        [
+          "girl",
+          "Genocide Online ～極惡千金的玩遊戲日記～",
+          {
+            "segment_date": 1558393606088,
+            "segment_old": 1,
+            "segment": 1,
+            "init_date": 1549641600000,
+            "epub_date": 1559171788669,
+            "volume_old": 1,
+            "chapter_old": 120,
+            "volume": 1,
+            "chapter": 125,
+            "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
+            "novel_status": 256,
+            "update_date": 1559145600000,
+            "update_count": 22,
+            "txt_basename": "Genocide Online ～極惡千.out.txt"
+          }
+        ],
+        [
+          "girl",
+          "「「神と呼ばれ、魔王と呼ばれても」」",
+          {
+            "segment_date": 1559171497172,
+            "segment_old": 71,
+            "segment": 24,
+            "init_date": 1549641600000,
+            "epub_date": 1559171797642,
+            "volume_old": 1,
+            "chapter_old": 72,
+            "volume": 1,
+            "chapter": 81,
+            "epub_basename": "無論是被當作神，還是被當作魔王.epub",
+            "novel_status": 1,
+            "update_date": 1559145600000,
+            "update_count": 5,
+            "txt_basename": "無論是被當作神，還是被當作魔王.out.txt"
+          }
+        ],
+        [
+          "girl",
+          "ポンコツ少女の電脳世界救世記",
+          {
+            "init_date": 1554739200000,
+            "txt_basename": "廢柴少女的電腦世界救世記　～不中用的技能.out.txt",
+            "epub_date": 1559171798836,
+            "volume_old": 2,
+            "chapter_old": 20,
+            "volume": 2,
+            "chapter": 25,
+            "epub_basename": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～.epub",
+            "novel_status": 1,
+            "update_date": 1559145600000,
+            "update_count": 11,
+            "segment_date": 1559171506322,
+            "segment_old": 1,
+            "segment": 1
+          }
+        ],
+        [
+          "girl",
+          "勿論、慰謝料請求いたします！",
+          {
+            "segment_date": 1559171513130,
+            "segment_old": 0,
+            "segment": 30,
+            "init_date": 1559171513130,
+            "txt_basename": "勿論、慰謝料請求いたします！.out.txt",
+            "epub_date": 1559171802314,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 30,
+            "epub_basename": "勿論、慰謝料請求いたします！.epub",
+            "novel_status": 768,
+            "update_date": 1559145600000,
+            "update_count": 1
+          }
+        ],
+        [
+          "girl",
+          "自覚なし聖女の異世界モフモフ道中",
+          {
+            "init_date": 1559145600000,
+            "txt_basename": "無自覺聖女的摸呼摸呼旅程.out.txt",
+            "epub_date": 1559171802466,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 1,
+            "chapter": 1,
+            "epub_basename": "無自覺聖女的摸呼摸呼旅程.epub",
+            "update_date": 1559145600000,
+            "update_count": 1
+          }
+        ],
+        [
+          "ts_out",
+          "自称贤者弟子的贤者",
+          {
+            "txt_basename": "自称贤者弟子的贤者.out.txt",
+            "epub_date": 1559171811769,
+            "volume_old": 7,
+            "chapter_old": 315,
+            "volume": 7,
+            "chapter": 316,
+            "epub_basename": "自称贤者弟子的贤者.epub",
+            "novel_status": 768,
+            "init_date": 1556812800000,
+            "update_date": 1559145600000,
+            "update_count": 4
+          }
+        ]
+      ]
+    },
+    "1559232000000": {
+      "epub_count": 1,
+      "epub": [
+        [
+          "syosetu_out",
+          "願わくばこの手に幸福を",
+          {
+            "txt_basename": "願わくばこの手に幸福を.out.txt",
+            "epub_date": 1559258025861,
+            "volume_old": 0,
+            "chapter_old": 0,
+            "volume": 4,
+            "chapter": 30,
+            "epub_basename": "願わくばこの手に幸福を.epub",
+            "novel_status": 768,
+            "init_date": 1559258025861,
+            "update_date": 1559232000000,
+            "update_count": 1
+          }
+        ]
+      ]
+    },
+    "1559318400000": {
+      "segment_count": 1,
+      "segment": [
+        [
+          "syosetu",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "init_date": 1545494400000,
+            "chapter_old": 82,
+            "chapter": 82,
+            "segment_date": 1559344352585,
+            "segment_old": 1,
+            "segment": 1,
+            "epub_date": 1548977872411,
+            "volume_old": 5,
+            "volume": 5,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "update_date": 1559318400000,
+            "update_count": 7,
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt"
+          }
+        ]
+      ],
+      "epub_count": 1,
+      "epub": [
+        [
+          "syosetu_out",
+          "乙女ゲー世界はモブに厳しい世界です",
+          {
+            "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt",
+            "epub_date": 1559344376502,
+            "volume_old": 6,
+            "chapter_old": 149,
+            "volume": 6,
+            "chapter": 149,
+            "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+            "novel_status": 768,
+            "init_date": 1558540800000,
+            "update_date": 1559318400000,
+            "update_count": 4
           }
         ]
       ]
@@ -681,7 +1265,7 @@
       "身為暗殺者的我明顯比勇者還強": {
         "epub_date": 1546302201554,
         "volume_old": 1,
-        "chapter_old": 16,
+        "chapter_old": 20,
         "volume": 1,
         "chapter": 20,
         "init_date": 1545347808133,
@@ -689,8 +1273,9 @@
         "segment_old": 0,
         "segment": 3,
         "epub_basename": "身為暗殺者的我明顯比勇者還強.epub",
-        "update_date": 1546302201554,
-        "update_count": 4
+        "update_date": 1552060800000,
+        "update_count": 5,
+        "txt_basename": "身為暗殺者的我明顯比勇者還強.out.txt"
       },
       "俺　VS　人類　～アンデッドを使役して王国を襲う俺～": {
         "segment_date": 1545693553722,
@@ -715,69 +1300,112 @@
         "init_date": 1545521307326
       },
       "陰の実力者になりたくて！_(n0611em)": {
-        "segment_date": 1550620176729,
-        "segment_old": 1,
-        "segment": 3,
+        "segment_date": 1556064913835,
+        "segment_old": 3,
+        "segment": 14,
         "init_date": 1545521322627,
-        "update_date": 1550592000000,
-        "update_count": 5
+        "update_date": 1556035200000,
+        "update_count": 6
       },
       "最強職《竜騎士》から初級職《運び屋》": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 82
+        "chapter_old": 82,
+        "chapter": 82,
+        "txt_basename": "明明從最強職《竜騎士》成為初級職《送貨人.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "明明從最強職《竜騎士》成為初級職《送貨人》，為何依然備受勇者們的青睞.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "自称！平凡魔族の英雄ライフ": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 10
+        "chapter_old": 10,
+        "chapter": 10,
+        "txt_basename": "自称！平凡魔族の英雄ライフ.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "自称！平凡魔族の英雄ライフ.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "世界最強の後衛　～迷宮国の新人探索者～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 2
+        "chapter_old": 2,
+        "chapter": 2,
+        "txt_basename": "世界最強の後衛　～迷宮国の新人探索者～.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "世界最強の後衛　～迷宮国の新人探索者～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "婚約者は、私の妹に恋をする": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 5
+        "chapter_old": 5,
+        "chapter": 5,
+        "txt_basename": "婚約者は、私の妹に恋をする.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "婚約者は、私の妹に恋をする.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "乙女ゲー世界はモブに厳しい世界です": {
         "init_date": 1545494400000,
         "chapter_old": 82,
         "chapter": 82,
-        "segment_date": 1548903323356,
-        "segment_old": 0,
-        "segment": 75,
+        "segment_date": 1559344352585,
+        "segment_old": 1,
+        "segment": 1,
         "epub_date": 1548977872411,
         "volume_old": 5,
         "volume": 5,
         "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
-        "update_date": 1548950400000,
-        "update_count": 2
+        "update_date": 1559318400000,
+        "update_count": 7,
+        "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt"
       },
       "大叔撿到了勇者和魔王": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 2
+        "chapter_old": 2,
+        "chapter": 2,
+        "txt_basename": "大叔撿到了勇者和魔王.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "大叔撿到了勇者和魔王.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "父は英雄、母は精霊、娘の私は転生者。": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 5
+        "chapter_old": 5,
+        "chapter": 5,
+        "txt_basename": "父は英雄、母は精霊、娘の私は転生者。.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "父は英雄、母は精霊、娘の私は転生者。.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 1
+        "chapter_old": 1,
+        "chapter": 1,
+        "txt_basename": "ニトの怠惰な異世界症候群～最弱職〈ヒーラ.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "望まぬ不死の冒険者": {
-        "segment_date": 1551743416338,
-        "segment_old": 4,
-        "segment": 10,
+        "segment_date": 1555287331792,
+        "segment_old": 13,
+        "segment": 12,
         "init_date": 1545607102002,
-        "update_date": 1551715200000,
-        "update_count": 9
+        "update_date": 1555257600000,
+        "update_count": 11
       },
       "異常狀態是絕望": {
         "segment_date": 1545867724522,
@@ -824,12 +1452,20 @@
         "init_date": 1547481600000
       },
       "アラフォー賢者の異世界生活日記": {
-        "segment_date": 1550879157284,
-        "segment_old": 6,
-        "segment": 23,
+        "segment_date": 1553732097937,
+        "segment_old": 23,
+        "segment": 13,
         "init_date": 1547568000000,
-        "update_date": 1550851200000,
-        "update_count": 3
+        "update_date": 1553702400000,
+        "update_count": 4,
+        "txt_basename": "賢者大叔的異世界生活日記.out.txt",
+        "epub_date": 1553732118922,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 70,
+        "epub_basename": "賢者大叔的異世界生活日記.epub",
+        "novel_status": 256
       },
       "月桂樹の唄": {
         "segment_date": 1547681305369,
@@ -842,8 +1478,9 @@
         "volume": 3,
         "chapter": 14,
         "epub_basename": "月桂樹の唄.epub",
-        "update_date": 1547740800000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3,
+        "txt_basename": "月桂樹の唄.out.txt"
       },
       "變成了美少女、但也成了網游廢人。": {
         "segment_date": 1547681311766,
@@ -856,20 +1493,22 @@
         "volume": 1,
         "chapter": 9,
         "epub_basename": "變成了美少女、但也成了網游廢人。.epub",
-        "update_date": 1547740800000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3,
+        "txt_basename": "變成了美少女、但也成了網游廢人。.out.txt"
       },
       "奴隷商人しか選択肢がないですよ？　～ハーレム？　なにそれおいしいの？～": {
         "init_date": 1547913600000,
-        "epub_date": 1547940769808,
-        "volume_old": 0,
-        "chapter_old": 0,
-        "volume": 1,
-        "chapter": 1,
+        "epub_date": 1556584009356,
+        "volume_old": 1,
+        "chapter_old": 1,
+        "volume": 2,
+        "chapter": 32,
         "epub_basename": "除了成為奴隸商人以外別無選擇喲？～後宮？那好吃嗎？.epub",
-        "novel_status": 1,
-        "update_date": 1547913600000,
-        "update_count": 1
+        "novel_status": 769,
+        "update_date": 1556553600000,
+        "update_count": 3,
+        "txt_basename": "除了成為奴隸商人以外別無選擇喲？～後宮？.out.txt"
       },
       "帰ってきた元勇者": {
         "init_date": 1548086400000
@@ -881,12 +1520,13 @@
         "init_date": 1548259200000,
         "epub_date": 1549669434339,
         "volume_old": 1,
-        "chapter_old": 9,
+        "chapter_old": 19,
         "volume": 1,
         "chapter": 19,
         "epub_basename": "宇宙軍士官，成為冒險者.epub",
-        "update_date": 1549641600000,
-        "update_count": 4
+        "update_date": 1552060800000,
+        "update_count": 5,
+        "txt_basename": "宇宙軍士官，成為冒險者.out.txt"
       },
       "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～": {
         "segment_date": 1548891171896,
@@ -899,8 +1539,9 @@
         "volume": 3,
         "chapter": 11,
         "epub_basename": "原世界第一玩家的小號練成日記.epub",
-        "update_date": 1548950400000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3,
+        "txt_basename": "原世界第一玩家的小號練成日記.out.txt"
       },
       "絕對不想工作的地下城城主想睡懶覺": {
         "segment_date": 1548977705773,
@@ -908,13 +1549,14 @@
         "segment": 117,
         "init_date": 1548950400000,
         "epub_date": 1548977883964,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 23,
+        "chapter_old": 169,
         "volume": 23,
         "chapter": 169,
         "epub_basename": "絕對不想工作的地下城城主想睡懶覺.epub",
-        "update_date": 1548950400000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "絕對不想工作的地下城城主想睡懶覺.out.txt"
       },
       "俺は星間国家の悪徳領主！": {
         "segment_date": 1549669117723,
@@ -922,13 +1564,14 @@
         "segment": 6,
         "init_date": 1549641600000,
         "epub_date": 1549669433186,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 6,
         "volume": 1,
         "chapter": 6,
         "epub_basename": "俺は星間国家の悪徳領主！.epub",
-        "update_date": 1549641600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "俺は星間国家の悪徳領主！.out.txt"
       },
       "破滅の魔導王とゴーレムの蛮妃": {
         "segment_date": 1549669122175,
@@ -936,36 +1579,229 @@
         "segment": 5,
         "init_date": 1549641600000,
         "epub_date": 1549669433737,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 5,
         "volume": 1,
         "chapter": 5,
         "epub_basename": "破滅之魔導王與魔偶蠻妃.epub",
         "novel_status": 256,
-        "update_date": 1549641600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "破滅之魔導王與魔偶蠻妃.out.txt"
       },
       "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい": {
         "init_date": 1551542400000,
         "epub_date": 1551570714599,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 3,
         "volume": 1,
         "chapter": 3,
         "epub_basename": "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい.epub",
         "novel_status": 256,
-        "update_date": 1551542400000,
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "復讐は天罰を呼び、魔術士はぽやぽやを楽し.out.txt"
+      },
+      "転生少女の履歴書": {
+        "segment_date": 1552521246585,
+        "segment_old": 0,
+        "segment": 5,
+        "init_date": 1552492800000,
+        "update_date": 1552492800000,
         "update_count": 1
+      },
+      "継続は魔力なり《無能魔法が便利魔法に》": {
+        "init_date": 1552579200000,
+        "txt_basename": "継続は魔力なり《無能魔法が便利魔法に》.out.txt",
+        "epub_date": 1552607690877,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 2,
+        "chapter": 14,
+        "epub_basename": "継続は魔力なり《無能魔法が便利魔法に》.epub",
+        "novel_status": 768,
+        "update_date": 1552579200000,
+        "update_count": 1
+      },
+      "極星から零れた少女": {
+        "segment_date": 1552686632959,
+        "segment_old": 0,
+        "segment": 21,
+        "init_date": 1552665600000,
+        "update_date": 1552665600000,
+        "update_count": 1
+      },
+      "悠閑農家與亂碼技能": {
+        "init_date": 1552752000000,
+        "txt_basename": "悠閑農家與亂碼技能　在異世界網購雜貨.out.txt",
+        "epub_date": 1556151462969,
+        "volume_old": 1,
+        "chapter_old": 90,
+        "volume": 1,
+        "chapter": 100,
+        "epub_basename": "悠閑農家與亂碼技能　在異世界網購雜貨.epub",
+        "update_date": 1556121600000,
+        "update_count": 3,
+        "segment_date": 1556151353031,
+        "segment_old": 20,
+        "segment": 4,
+        "novel_status": 256
+      },
+      "美女と賢者と魔人の剣": {
+        "init_date": 1552752000000,
+        "txt_basename": "美女と賢者と魔人の剣.out.txt",
+        "epub_date": 1555028525065,
+        "volume_old": 2,
+        "chapter_old": 2,
+        "volume": 2,
+        "chapter": 4,
+        "epub_basename": "美女と賢者と魔人の剣.epub",
+        "novel_status": 769,
+        "update_date": 1554998400000,
+        "update_count": 2
+      },
+      "レベル１の最強賢者": {
+        "init_date": 1553270400000,
+        "txt_basename": "等級１的最強賢者.out.txt",
+        "epub_date": 1557704218098,
+        "volume_old": 3,
+        "chapter_old": 20,
+        "volume": 4,
+        "chapter": 37,
+        "epub_basename": "等級１的最強賢者.epub",
+        "update_date": 1557676800000,
+        "update_count": 4,
+        "segment_date": 1557704077189,
+        "segment_old": 0,
+        "segment": 15
+      },
+      "転生！異世界より愛をこめて": {
+        "init_date": 1553356800000,
+        "txt_basename": "転生！異世界より愛をこめて.out.txt",
+        "epub_date": 1553385524539,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 5,
+        "chapter": 43,
+        "epub_basename": "転生！異世界より愛をこめて.epub",
+        "novel_status": 257,
+        "update_date": 1553356800000,
+        "update_count": 1
+      },
+      "宵の国戦記": {
+        "init_date": 1556294400000,
+        "txt_basename": "宵の国戦記.out.txt",
+        "epub_date": 1556324211699,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 6,
+        "epub_basename": "宵の国戦記.epub",
+        "novel_status": 256,
+        "update_date": 1556294400000,
+        "update_count": 1
+      },
+      "世界最高の暗殺者、異世界貴族に転生する": {
+        "segment_date": 1556410658049,
+        "segment_old": 0,
+        "segment": 31,
+        "init_date": 1556380800000,
+        "txt_basename": "世界最高の暗殺者、異世界貴族に転生する.out.txt",
+        "epub_date": 1556497054616,
+        "volume_old": 2,
+        "chapter_old": 32,
+        "volume": 2,
+        "chapter": 32,
+        "epub_basename": "世界最高の暗殺者、異世界貴族に転生する.epub",
+        "novel_status": 768,
+        "update_date": 1556467200000,
+        "update_count": 2
+      },
+      "Ｌｖ２からチートだった元勇者候補のまったり異世界ライフ": {
+        "segment_date": 1556410672038,
+        "segment_old": 0,
+        "segment": 3,
+        "init_date": 1556380800000,
+        "txt_basename": "從Lv2開始開掛的原勇者候補悠閑的異世界.out.txt",
+        "epub_date": 1556410696792,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 17,
+        "chapter": 81,
+        "epub_basename": "從Lv2開始開掛的原勇者候補悠閑的異世界生活.epub",
+        "novel_status": 768,
+        "update_date": 1556380800000,
+        "update_count": 1
+      },
+      "ガチャを回して仲間を増やす　最強の美少女軍団を作り上げろ": {
+        "segment_date": 1556756344667,
+        "segment_old": 0,
+        "segment": 24,
+        "init_date": 1556726400000,
+        "txt_basename": "通過扭蛋增加同伴　建立最強美少女軍團.out.txt",
+        "epub_date": 1556756369746,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 194,
+        "epub_basename": "通過扭蛋增加同伴　建立最強美少女軍團.epub",
+        "novel_status": 768,
+        "update_date": 1556726400000,
+        "update_count": 1
+      },
+      "リアリスト魔王による聖域なき異世界改革": {
+        "init_date": 1556812800000,
+        "txt_basename": "現實主義魔王的異世界改革.out.txt",
+        "epub_date": 1556843727220,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 1,
+        "epub_basename": "現實主義魔王的異世界改革.epub",
+        "novel_status": 768,
+        "update_date": 1556812800000,
+        "update_count": 1
+      },
+      "願わくばこの手に幸福を": {
+        "segment_date": 1558393706126,
+        "segment_old": 1,
+        "segment": 17,
+        "init_date": 1557763200000,
+        "txt_basename": "願わくばこの手に幸福を.out.txt",
+        "epub_date": 1558480182587,
+        "volume_old": 2,
+        "chapter_old": 18,
+        "volume": 2,
+        "chapter": 18,
+        "epub_basename": "願わくばこの手に幸福を.epub",
+        "novel_status": 768,
+        "update_date": 1558454400000,
+        "update_count": 3
+      },
+      "昏き宮殿の死者の王": {
+        "segment_date": 1558393700053,
+        "segment_old": 0,
+        "segment": 2,
+        "init_date": 1558368000000,
+        "txt_basename": "昏き宮殿の死者の王.out.txt",
+        "epub_date": 1558480181733,
+        "volume_old": 1,
+        "chapter_old": 2,
+        "volume": 1,
+        "chapter": 2,
+        "epub_basename": "昏き宮殿の死者の王.epub",
+        "update_date": 1558454400000,
+        "update_count": 2
       }
     },
     "user": {
       "黑之魔王": {
-        "segment_date": 1549669315951,
-        "segment_old": 50,
-        "segment": 164,
+        "segment_date": 1556583962897,
+        "segment_old": 26,
+        "segment": 5,
         "init_date": 1545261427757,
-        "update_date": 1549641600000,
-        "update_count": 14
+        "update_date": 1556553600000,
+        "update_count": 16
       },
       "火輪を抱いた少女": {
         "segment_date": 1545548707385,
@@ -974,40 +1810,64 @@
         "init_date": 1545521341885
       },
       "魔王様、リトライ！": {
-        "segment_date": 1550361110020,
-        "segment_old": 3,
-        "segment": 24,
+        "segment_date": 1556929213468,
+        "segment_old": 24,
+        "segment": 7,
         "init_date": 1545521369284,
-        "update_date": 1550332800000,
-        "update_count": 5
+        "update_date": 1556899200000,
+        "update_count": 6
       },
       "虫虫酱むいむいたん": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 2
+        "chapter_old": 2,
+        "chapter": 2,
+        "txt_basename": "虫虫酱むいむいたん.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "虫虫酱むいむいたん.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "魔王の始め方": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 2
+        "chapter_old": 2,
+        "chapter": 2,
+        "txt_basename": "魔王の始め方.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "魔王の始め方.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "駆除人": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 20
+        "chapter_old": 20,
+        "chapter": 20,
+        "txt_basename": "駆除人.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "駆除人.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "魔拳のデイドリーマー": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 34
+        "chapter_old": 34,
+        "chapter": 34,
+        "txt_basename": "魔拳のデイドリーマー.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "魔拳のデイドリーマー.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "豚公爵に転生したから、今度は君に好きと言いたい": {
-        "segment_date": 1550537804715,
+        "segment_date": 1554768656152,
         "segment_old": 1,
-        "segment": 1,
+        "segment": 5,
         "init_date": 1545607228123,
-        "update_date": 1550505600000,
-        "update_count": 10
+        "update_date": 1554739200000,
+        "update_count": 11
       },
       "自称贤者弟子的贤者": {
         "segment_date": 1550360967413,
@@ -1053,20 +1913,20 @@
         "update_count": 1
       },
       "四度目は嫌な死属性魔術師": {
-        "segment_date": 1548503095624,
-        "segment_old": 14,
-        "segment": 2,
+        "segment_date": 1556843688195,
+        "segment_old": 16,
+        "segment": 14,
         "init_date": 1546302039608,
-        "update_date": 1548432000000,
-        "update_count": 8
+        "update_date": 1556812800000,
+        "update_count": 13
       },
       "誰にでもできる影から助ける魔王討伐": {
-        "segment_date": 1546302072698,
-        "segment_old": 0,
-        "segment": 27,
+        "segment_date": 1558050519923,
+        "segment_old": 27,
+        "segment": 3,
         "init_date": 1546302072698,
-        "update_date": 1546302072698,
-        "update_count": 1
+        "update_date": 1558022400000,
+        "update_count": 2
       },
       "没落予定なので、鍛治職人を目指す": {
         "segment_date": 1546388791522,
@@ -1078,14 +1938,19 @@
       },
       "異世界迷宮の最深部を目指そう": {
         "init_date": 1546963200000,
-        "segment_date": 1550879368725,
-        "segment_old": 191,
-        "segment": 14,
-        "update_date": 1550851200000,
-        "update_count": 5
+        "segment_date": 1554336426407,
+        "segment_old": 14,
+        "segment": 15,
+        "update_date": 1554307200000,
+        "update_count": 6
       },
       "俺の死亡フラグが留まるところを知らない": {
-        "init_date": 1547913600000
+        "init_date": 1547913600000,
+        "segment_date": 1557704168193,
+        "segment_old": 1,
+        "segment": 30,
+        "update_date": 1557676800000,
+        "update_count": 2
       },
       "呪術師は勇者になれない": {
         "init_date": 1547913600000
@@ -1095,67 +1960,105 @@
       },
       "回復術士のやり直し～即死魔法とスキルコピーの超越ヒール～": {
         "init_date": 1548172800000
+      },
+      "その者。のちに・・・": {
+        "txt_basename": "その者。のちに・・・.out.txt",
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 2,
+        "epub_basename": "その者。のちに・・・.epub",
+        "init_date": 1552060800000,
+        "update_date": 1552060800000,
+        "update_count": 1
+      },
+      "野生のラスボスが現れた！": {
+        "txt_basename": "野生のラスボスが現れた！.out.txt",
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 5,
+        "chapter": 80,
+        "epub_basename": "野生のラスボスが現れた！.epub",
+        "init_date": 1552060800000,
+        "update_date": 1552060800000,
+        "update_count": 1
+      },
+      "２９歳独身は異世界で自由に生きた…かった。": {
+        "segment_date": 1555287613780,
+        "segment_old": 24,
+        "segment": 3,
+        "init_date": 1553184000000,
+        "update_date": 1555257600000,
+        "update_count": 3
+      },
+      "カルマの塔": {
+        "init_date": 1558454400000
       }
     },
     "user_out": {
       "黑之魔王": {
-        "epub_date": 1549669447798,
-        "volume_old": 29,
-        "chapter_old": 556,
-        "volume": 30,
-        "chapter": 561,
+        "epub_date": 1557882504717,
+        "volume_old": 31,
+        "chapter_old": 579,
+        "volume": 31,
+        "chapter": 582,
         "init_date": 1545261469203,
         "epub_basename": "黑之魔王.epub",
         "txt_basename": "黑之魔王.out.txt",
-        "update_date": 1549641600000,
-        "update_count": 15
+        "update_date": 1557849600000,
+        "update_count": 21,
+        "novel_status": 768
       },
       "火輪を抱いた少女": {
         "epub_date": 1545548942271,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 48,
         "volume": 1,
         "chapter": 48,
-        "epub_basename": "火輪を抱いた少女",
+        "epub_basename": "火輪を抱いた少女.epub",
         "novel_status": 16,
-        "init_date": 1545548942271
+        "init_date": 1545548942271,
+        "txt_basename": "火輪を抱いた少女.out.txt",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "魔王様、リトライ！": {
-        "epub_date": 1550361631539,
+        "epub_date": 1555028533604,
         "volume_old": 9,
-        "chapter_old": 116,
-        "volume": 9,
-        "chapter": 118,
+        "chapter_old": 118,
+        "volume": 10,
+        "chapter": 125,
         "epub_basename": "魔王様、リトライ！.epub",
         "init_date": 1545548944955,
         "txt_basename": "魔王様、リトライ！.out.txt",
-        "update_date": 1550332800000,
-        "update_count": 4
+        "update_date": 1554998400000,
+        "update_count": 6,
+        "novel_status": 768
       },
       "没落予定なので、鍛治職人を目指す": {
         "init_date": 1545494400000,
         "txt_basename": "没落予定なので、鍛治職人を目指す.out.txt",
-        "epub_date": 1551657403531,
+        "epub_date": 1555200826018,
         "volume_old": 8,
-        "chapter_old": 147,
+        "chapter_old": 162,
         "volume": 8,
-        "chapter": 157,
+        "chapter": 162,
         "epub_basename": "没落予定なので、鍛治職人を目指す.epub",
-        "update_date": 1551628800000,
-        "update_count": 4,
+        "update_date": 1555171200000,
+        "update_count": 9,
         "novel_status": 768
       },
       "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～": {
         "init_date": 1545494400000,
         "txt_basename": "人喰い転移者の異世界復讐譚　～無能はスキ.out.txt",
         "epub_date": 1546393637093,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 3,
+        "chapter_old": 58,
         "volume": 3,
         "chapter": 58,
         "epub_basename": "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～.epub",
-        "update_date": 1546358400000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "你這種傢伙別想打贏魔王": {
         "init_date": 1545494400000,
@@ -1173,43 +2076,50 @@
         "init_date": 1545494400000,
         "txt_basename": "奪う者　奪われる者.out.txt",
         "epub_date": 1546130732122,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 15,
+        "chapter_old": 272,
         "volume": 15,
         "chapter": 272,
         "epub_basename": "奪う者　奪われる者.epub",
-        "update_date": 1546130732122,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "由于世界魔物满载": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 45
+        "chapter_old": 45,
+        "chapter": 45,
+        "txt_basename": "由于世界魔物满载.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "由于世界魔物满载.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "自称贤者弟子的贤者": {
         "init_date": 1545494400000,
         "txt_basename": "自称贤者弟子的贤者.out.txt",
         "epub_date": 1550361625532,
-        "volume_old": 6,
-        "chapter_old": 299,
+        "volume_old": 7,
+        "chapter_old": 301,
         "volume": 7,
-        "chapter": 301,
+        "chapter": 304,
         "epub_basename": "自称贤者弟子的贤者.epub",
-        "update_date": 1550332800000,
-        "update_count": 3,
+        "update_date": 1552060800000,
+        "update_count": 4,
         "novel_status": 768
       },
       "四度目は嫌な死属性魔術師": {
         "init_date": 1545494400000,
         "txt_basename": "四度目は嫌な死属性魔術師.out.txt",
-        "epub_date": 1548200245461,
-        "volume_old": 17,
-        "chapter_old": 278,
+        "epub_date": 1552781716663,
+        "volume_old": 18,
+        "chapter_old": 279,
         "volume": 18,
-        "chapter": 279,
+        "chapter": 282,
         "epub_basename": "四度目は嫌な死属性魔術師.epub",
-        "update_date": 1548172800000,
-        "update_count": 3
+        "update_date": 1552752000000,
+        "update_count": 5,
+        "novel_status": 768
       },
       "その者。のちに・・・": {
         "init_date": 1545494400000,
@@ -1225,14 +2135,22 @@
         "volume": 5,
         "chapter": 184,
         "epub_basename": "沃特尼亞戰記.epub",
-        "update_date": 1551542400000,
-        "update_count": 9,
+        "update_date": 1552060800000,
+        "update_count": 10,
         "novel_status": 768
       },
       "２９歳独身は異世界で自由に生きた…かった。": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 110
+        "chapter_old": 131,
+        "chapter": 131,
+        "txt_basename": "２９歲單身漢在異世界想自由生活卻事與願違.out.txt",
+        "volume_old": 14,
+        "volume": 14,
+        "epub_basename": "２９歲單身漢在異世界想自由生活卻事與願違！？.epub",
+        "update_date": 1555257600000,
+        "update_count": 4,
+        "epub_date": 1555288339119,
+        "novel_status": 256
       },
       "暴食のベルセルク": {
         "init_date": 1545494400000,
@@ -1241,62 +2159,105 @@
       },
       "最下位職から最強まで成り上がる～地道な努力はチートでした～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 57
+        "chapter_old": 57,
+        "chapter": 57,
+        "txt_basename": "最下位職から最強まで成り上がる～地道な努.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "最下位職から最強まで成り上がる～地道な努力はチートでした～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "蘇りの魔王": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 82
+        "chapter_old": 82,
+        "chapter": 82,
+        "txt_basename": "蘇りの魔王.out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "蘇りの魔王.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "呼び出された殺戮者": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 246
+        "chapter_old": 246,
+        "chapter": 246,
+        "txt_basename": "召喚出的殺戮者.out.txt",
+        "volume_old": 0,
+        "volume": 21,
+        "epub_basename": "召喚出的殺戮者.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "異世界迷宮の最深部を目指そう": {
         "init_date": 1545494400000,
         "txt_basename": "異世界迷宮の最深部を目指そう.out.txt",
-        "epub_date": 1550879407909,
+        "epub_date": 1554509344181,
         "volume_old": 28,
-        "chapter_old": 393,
+        "chapter_old": 404,
         "volume": 28,
-        "chapter": 395,
+        "chapter": 404,
         "epub_basename": "異世界迷宮の最深部を目指そう.epub",
-        "update_date": 1550851200000,
-        "update_count": 5
+        "update_date": 1554480000000,
+        "update_count": 9
       },
       "豚公爵に転生したから、今度は君に好きと言いたい": {
         "init_date": 1545494400000,
         "txt_basename": "豚公爵に転生したから、今度は君に好きと言.out.txt",
-        "epub_date": 1550447325271,
-        "volume_old": 7,
-        "chapter_old": 184,
-        "volume": 7,
-        "chapter": 184,
+        "epub_date": 1557617967999,
+        "volume_old": 6,
+        "chapter_old": 195,
+        "volume": 6,
+        "chapter": 202,
         "epub_basename": "豚公爵に転生したから、今度は君に好きと言いたい.epub",
-        "update_date": 1550419200000,
-        "update_count": 8
+        "update_date": 1557590400000,
+        "update_count": 11
       },
       "悠久の愚者アズリーの、賢者のすゝめ": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 31
+        "chapter_old": 31,
+        "chapter": 31,
+        "txt_basename": "悠久の愚者アズリーの、賢者のすゝめ.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "悠久の愚者アズリーの、賢者のすゝめ.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "再臨勇者の復讐譚　～失望しました、勇者やめて元魔王と組みます～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 62
+        "chapter_old": 62,
+        "chapter": 62,
+        "txt_basename": "再臨勇者の復讐譚　～失望しました、勇者や.out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "再臨勇者の復讐譚　～失望しました、勇者やめて元魔王と組みます～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "NO FATIGUE 24時間戦える男の転生譚": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 67
+        "chapter_old": 67,
+        "chapter": 67,
+        "txt_basename": "NO FATIGUE 24時間戦える男の.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "NO FATIGUE 24時間戦える男の転生譚.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "カルマの塔": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 234
+        "chapter_old": 234,
+        "chapter": 244,
+        "txt_basename": "業之塔.out.txt",
+        "volume_old": 5,
+        "volume": 5,
+        "epub_basename": "業之塔.epub",
+        "update_date": 1558454400000,
+        "update_count": 2,
+        "epub_date": 1558480188514
       },
       "神竜転生 ～普通の人間SSS～": {
         "init_date": 1545494400000,
@@ -1305,169 +2266,278 @@
       },
       "黒の創造召喚師": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 82
+        "chapter_old": 82,
+        "chapter": 82,
+        "txt_basename": "黒の創造召喚師.out.txt",
+        "volume_old": 0,
+        "volume": 5,
+        "epub_basename": "黒の創造召喚師.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "物語の中の銀の髪": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 80
+        "chapter_old": 80,
+        "chapter": 80,
+        "txt_basename": "物語の中の銀の髪.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "物語の中の銀の髪.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "自分が異世界に転移するなら": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 131
+        "chapter_old": 131,
+        "chapter": 131,
+        "txt_basename": "轮到自己转移去异世界.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "轮到自己转移去异世界.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "エルフ転生からのチート建国記": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 77
+        "chapter_old": 77,
+        "chapter": 77,
+        "txt_basename": "エルフ転生からのチート建国記.out.txt",
+        "volume_old": 0,
+        "volume": 5,
+        "epub_basename": "エルフ転生からのチート建国記.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "回復術士のやり直し～即死魔法とスキルコピーの超越ヒール～": {
         "init_date": 1545494400000,
-        "chapter_old": 143,
-        "chapter": 143,
+        "chapter_old": 146,
+        "chapter": 167,
         "txt_basename": "回復術士重來人生.out.txt",
-        "epub_date": 1548200249595,
-        "volume_old": 0,
-        "volume": 7,
+        "epub_date": 1557444901226,
+        "volume_old": 7,
+        "volume": 8,
         "epub_basename": "回復術士重來人生.epub",
-        "update_date": 1548172800000,
-        "update_count": 1
+        "update_date": 1557417600000,
+        "update_count": 4
       },
       "帰ってきてもファンタジー！？": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 18
+        "chapter_old": 18,
+        "chapter": 18,
+        "txt_basename": "帰ってきてもファンタジー！？.out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "帰ってきてもファンタジー！？.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "在這個世界排行第九的我": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 29
+        "chapter_old": 29,
+        "chapter": 29,
+        "txt_basename": "在這個世界排行第九的我.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "在這個世界排行第九的我.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "異世界支配のスキルテイカー　～　ゼロから始める奴隷ハーレム　～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 187
+        "chapter_old": 187,
+        "chapter": 187,
+        "txt_basename": "支配异世界的技能掠夺者.out.txt",
+        "volume_old": 0,
+        "volume": 6,
+        "epub_basename": "支配异世界的技能掠夺者.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "雪色エトランゼ": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 115
+        "chapter_old": 115,
+        "chapter": 115,
+        "txt_basename": "雪色エトランゼ.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "雪色エトランゼ.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～": {
         "init_date": 1545494400000,
         "txt_basename": "暗黒騎士物語　～勇者を倒すために魔王に召.out.txt",
         "epub_date": 1548977891891,
         "volume_old": 9,
-        "chapter_old": 180,
+        "chapter_old": 181,
         "volume": 9,
         "chapter": 181,
         "epub_basename": "暗黒騎士物語　～勇者を倒すために魔王に召喚されました～.epub",
-        "update_date": 1548950400000,
-        "update_count": 8
+        "update_date": 1552060800000,
+        "update_count": 9
       },
       "転生したら剣でした": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 453
+        "chapter_old": 453,
+        "chapter": 453,
+        "txt_basename": "転生したら剣でした.out.txt",
+        "volume_old": 0,
+        "volume": 6,
+        "epub_basename": "転生したら剣でした.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "誰にでもできる影から助ける魔王討伐": {
         "init_date": 1545494400000,
         "txt_basename": "誰都能做到的暗中協助魔王討伐.out.txt",
-        "epub_date": 1546903882033,
-        "volume_old": 10,
-        "chapter_old": 34,
-        "volume": 10,
-        "chapter": 40,
+        "epub_date": 1557962352772,
+        "volume_old": 13,
+        "chapter_old": 62,
+        "volume": 15,
+        "chapter": 72,
         "epub_basename": "誰都能做到的暗中協助魔王討伐.epub",
-        "update_date": 1546876800000,
-        "update_count": 2
+        "update_date": 1557936000000,
+        "update_count": 6,
+        "novel_status": 768
       },
       "俺の死亡フラグが留まるところを知らない": {
         "init_date": 1545494400000,
-        "txt_basename": "不知我的死亡flag将于何处停止.out.txt",
-        "epub_date": 1547940775517,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "txt_basename": "不知我的死亡flag將於何處停止.out.txt",
+        "epub_date": 1557791121268,
+        "volume_old": 5,
+        "chapter_old": 105,
         "volume": 5,
-        "chapter": 104,
-        "epub_basename": "不知我的死亡flag将于何处停止.epub",
-        "update_date": 1547913600000,
-        "update_count": 1
+        "chapter": 107,
+        "epub_basename": "不知我的死亡flag將於何處停止.epub",
+        "update_date": 1557763200000,
+        "update_count": 4,
+        "novel_status": 256
       },
       "破壊の御子": {
         "init_date": 1545494400000,
         "txt_basename": "破壊の御子.out.txt",
         "epub_date": 1547940777904,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 71,
         "volume": 1,
         "chapter": 71,
         "epub_basename": "破壊の御子.epub",
-        "update_date": 1547913600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "元将軍のアンデッドナイト": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 114
+        "chapter_old": 114,
+        "chapter": 114,
+        "txt_basename": "元将軍のアンデッドナイト.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "元将軍のアンデッドナイト.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "強欲の花": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 116
+        "chapter_old": 116,
+        "chapter": 116,
+        "txt_basename": "強欲の花.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "強欲の花.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "天才魔法使與原娼婦新娘": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 61
+        "chapter_old": 61,
+        "chapter": 61,
+        "txt_basename": "天才魔法使與原娼婦新娘.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "天才魔法使與原娼婦新娘.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "乙女ゲームの悪（中略）ヒロインが鬼畜女装野郎だったので、助けて下さい": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 70
+        "chapter_old": 70,
+        "chapter": 70,
+        "txt_basename": "乙女ゲームの悪（中略）ヒロインが鬼畜女装.out.txt",
+        "volume_old": 0,
+        "volume": 5,
+        "epub_basename": "乙女ゲームの悪（中略）ヒロインが鬼畜女装野郎だったので、助けて下さい.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "俺の異世界姉妹が自重しない！": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 141
+        "chapter_old": 141,
+        "chapter": 141,
+        "txt_basename": "俺の異世界姉妹が自重しない！.out.txt",
+        "volume_old": 0,
+        "volume": 6,
+        "epub_basename": "俺の異世界姉妹が自重しない！.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "病娇女神の箱庭": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 24
+        "chapter_old": 24,
+        "chapter": 24,
+        "txt_basename": "病娇女神の箱庭.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "病娇女神の箱庭.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "呪術師は勇者になれない": {
         "init_date": 1545494400000,
         "txt_basename": "呪術師は勇者になれない.out.txt",
-        "epub_date": 1547940776291,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "epub_date": 1555028525987,
+        "volume_old": 2,
+        "chapter_old": 10,
         "volume": 2,
-        "chapter": 10,
+        "chapter": 14,
         "epub_basename": "呪術師は勇者になれない.epub",
-        "update_date": 1547913600000,
-        "update_count": 1
+        "update_date": 1554998400000,
+        "update_count": 3
       },
       "百魔の主": {
         "init_date": 1545494400000,
+        "chapter_old": 54,
+        "chapter": 54,
+        "txt_basename": "百魔の主.out.txt",
+        "volume_old": 0,
+        "volume": 6,
+        "epub_basename": "百魔の主.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
+      },
+      "野生のラスボスが現れた！": {
+        "txt_basename": "野生のラスボスが現れた！.out.txt",
+        "volume_old": 0,
         "chapter_old": 0,
-        "chapter": 54
+        "volume": 5,
+        "chapter": 80,
+        "epub_basename": "野生のラスボスが現れた！.epub",
+        "init_date": 1552060800000,
+        "update_date": 1552060800000,
+        "update_count": 1
       }
     },
     "syosetu_out": {
       "ロリータ・ガンバレット　～魔弾幼女の異世界戦記～": {
-        "epub_date": 1551225034439,
+        "epub_date": 1558393825084,
         "volume_old": 6,
-        "chapter_old": 103,
+        "chapter_old": 105,
         "volume": 6,
-        "chapter": 105,
+        "chapter": 107,
         "init_date": 1545261458252,
         "txt_basename": "魔彈蘿莉的異世界戰記.out.txt",
         "epub_basename": "魔彈蘿莉的異世界戰記.epub",
-        "update_date": 1551196800000,
-        "update_count": 1
+        "update_date": 1558368000000,
+        "update_count": 3
       },
       "俺　VS　人類　～アンデッドを使役して王国を襲う俺～": {
         "epub_date": 1551657394414,
@@ -1479,11 +2549,11 @@
         "novel_status": 1,
         "init_date": 1545548928688,
         "txt_basename": "俺　VS　人類　～使役不死者去襲擊王國的.out.txt",
-        "update_date": 1551628800000,
-        "update_count": 4
+        "update_date": 1552060800000,
+        "update_count": 5
       },
       "用務員さんは勇者じゃありませんので": {
-        "epub_date": 1547335778959,
+        "epub_date": 1553299329494,
         "volume_old": 4,
         "chapter_old": 63,
         "volume": 4,
@@ -1491,8 +2561,9 @@
         "epub_basename": "因為校工桑並不是勇者.epub",
         "init_date": 1545548930185,
         "txt_basename": "因為校工桑並不是勇者.out.txt",
-        "update_date": 1547308800000,
-        "update_count": 2
+        "update_date": 1553270400000,
+        "update_count": 4,
+        "novel_status": 256
       },
       "異常狀態是絕望": {
         "epub_date": 1545607422008,
@@ -1503,97 +2574,145 @@
         "epub_basename": "異常狀態是絕望.epub",
         "init_date": 1545548935642,
         "txt_basename": "異常狀態是絕望.out.txt",
-        "update_date": 1545607422008,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "重生的貓騎士與精靈娘的日常": {
         "epub_date": 1548127693356,
         "volume_old": 3,
-        "chapter_old": 48,
+        "chapter_old": 62,
         "volume": 3,
         "chapter": 62,
         "epub_basename": "重生的貓騎士與精靈娘的日常.epub",
         "init_date": 1545548938005,
         "txt_basename": "重生的貓騎士與精靈娘的日常.out.txt",
-        "update_date": 1548086400000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "陰の実力者になりたくて！_(n0611em)": {
-        "epub_date": 1550620205688,
+        "epub_date": 1556064941282,
         "volume_old": 9,
-        "chapter_old": 170,
+        "chapter_old": 179,
         "volume": 9,
-        "chapter": 179,
+        "chapter": 189,
         "epub_basename": "想要成為影之實力者.epub",
         "init_date": 1545548940691,
         "txt_basename": "想要成為影之實力者.out.txt",
-        "update_date": 1550592000000,
-        "update_count": 5,
+        "update_date": 1556035200000,
+        "update_count": 7,
         "novel_status": 768
       },
       "勇者的活躍從現在才開始！": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 17
+        "chapter_old": 17,
+        "chapter": 17,
+        "txt_basename": "勇者的活躍從現在才開始！.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "勇者的活躍從現在才開始！.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "World's End Online": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 30
+        "chapter_old": 30,
+        "chapter": 30,
+        "txt_basename": "World's End Online.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "World's End Online.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "你們先走我斷後": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 24
+        "chapter_old": 24,
+        "chapter": 24,
+        "txt_basename": "快走！這裡就交給我了！這樣說的十年過後，.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "快走！這裡就交給我了！這樣說的十年過後，成了傳說.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "再召喚された勇者は一般人として生きていく？": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 78
+        "chapter_old": 78,
+        "chapter": 78,
+        "txt_basename": "再臨勇者想當普通人.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "再臨勇者想當普通人.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "死憶の異世界傾国姫　～究極の悲劇のヒロインめざしてTS転生～": {
         "init_date": 1545494400000,
         "txt_basename": "死憶の異世界傾国姫.out.txt",
-        "epub_date": 1546475295798,
+        "epub_date": 1553471934794,
         "volume_old": 3,
         "chapter_old": 45,
         "volume": 3,
-        "chapter": 45,
+        "chapter": 48,
         "epub_basename": "死憶の異世界傾国姫.epub",
-        "update_date": 1546444800000,
-        "update_count": 3
+        "update_date": 1553443200000,
+        "update_count": 5
       },
       "チートで賢者な俺は異世界に革命を起こす": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 6
+        "chapter_old": 6,
+        "chapter": 6,
+        "txt_basename": "開掛賢者的我在異世界發起改革.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "開掛賢者的我在異世界發起改革.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "魔人勇者（自称）サトゥン": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 31
+        "chapter_old": 31,
+        "chapter": 31,
+        "txt_basename": "魔人勇者（自称）サトゥン.out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "魔人勇者（自称）サトゥン.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "稍微去毀滅世界": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 40
+        "chapter_old": 40,
+        "chapter": 40,
+        "txt_basename": "稍微去毀滅世界.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "稍微去毀滅世界.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "紅き血に口づけを　～外れスキルからの逆転人生～": {
         "init_date": 1545494400000,
         "txt_basename": "為鮮血獻上吻　～從沒用技能開始的逆轉人生.out.txt",
         "epub_date": 1547076306155,
         "volume_old": 1,
-        "chapter_old": 19,
+        "chapter_old": 21,
         "volume": 1,
         "chapter": 21,
         "epub_basename": "為鮮血獻上吻　～從沒用技能開始的逆轉人生～.epub",
-        "update_date": 1547049600000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3
       },
       "無口な天使_(n3462bz)": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 38
+        "chapter_old": 38,
+        "chapter": 38,
+        "txt_basename": "無口な天使_(n3462bz).out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "無口な天使_(n3462bz).epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "帰ってきた元勇者": {
         "init_date": 1545494400000,
@@ -1601,84 +2720,159 @@
         "chapter": 240,
         "txt_basename": "歸來的原勇者.out.txt",
         "epub_date": 1548127690530,
-        "volume_old": 0,
+        "volume_old": 36,
         "volume": 36,
         "epub_basename": "歸來的原勇者.epub",
-        "update_date": 1548086400000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "英雄の隠し子の英雄譚": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 23
+        "chapter_old": 23,
+        "chapter": 23,
+        "txt_basename": "英雄の隠し子の英雄譚.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "英雄の隠し子の英雄譚.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "極星から零れた少女": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 18
+        "chapter_old": 18,
+        "chapter": 22,
+        "txt_basename": "從極星飄落的少女.out.txt",
+        "volume_old": 1,
+        "volume": 1,
+        "epub_basename": "從極星飄落的少女.epub",
+        "update_date": 1552665600000,
+        "update_count": 2,
+        "epub_date": 1552694089977
       },
       "望まぬ不死の冒険者": {
         "init_date": 1545494400000,
         "txt_basename": "事與願違的不死冒險者.out.txt",
-        "epub_date": 1551743463914,
-        "volume_old": 13,
-        "chapter_old": 255,
-        "volume": 13,
-        "chapter": 255,
+        "epub_date": 1557791109158,
+        "volume_old": 14,
+        "chapter_old": 307,
+        "volume": 14,
+        "chapter": 350,
         "epub_basename": "事與願違的不死冒險者.epub",
-        "update_date": 1551715200000,
-        "update_count": 11,
+        "update_date": 1557763200000,
+        "update_count": 14,
         "novel_status": 768
       },
       "無職の英雄　(n6683ej)": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 134
+        "chapter_old": 134,
+        "chapter": 134,
+        "txt_basename": "無職的英雄　～本來也沒想要技能的說～.out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "無職的英雄　～本來也沒想要技能的說～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "邪神無双　(n2123do)": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 77
+        "chapter_old": 77,
+        "chapter": 77,
+        "txt_basename": "邪神無双　(n2123do).out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "邪神無双　(n2123do).epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "玩了VR工口遊戲轉生到異世界": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 9
+        "chapter_old": 9,
+        "chapter": 9,
+        "txt_basename": "玩了VR工口遊戲轉生到異世界、將美少女魔.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "玩了VR工口遊戲轉生到異世界、將美少女魔王奴隸化〜跨越世界的救世主〜.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "吸血姫は薔薇色の夢をみる": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 160
+        "chapter_old": 160,
+        "chapter": 160,
+        "txt_basename": "吸血姫作著薔薇色的夢.out.txt",
+        "volume_old": 0,
+        "volume": 9,
+        "epub_basename": "吸血姫作著薔薇色的夢.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "得到一半世界後投靠魔王的勇者": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 39
+        "chapter_old": 39,
+        "chapter": 39,
+        "txt_basename": "得到一半世界後投靠魔王的勇者.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "得到一半世界後投靠魔王的勇者.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "異世界で孤児院を開いたけど": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 28
+        "chapter_old": 28,
+        "chapter": 28,
+        "txt_basename": "在異世界開了孤兒院，但不知為何沒有一個人.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "在異世界開了孤兒院，但不知為何沒有一個人想離開.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "英雄の中の英雄の物語　〜アレスティア建国記〜": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 5
+        "chapter_old": 5,
+        "chapter": 5,
+        "txt_basename": "英雄の中の英雄の物語　〜アレスティア建国.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "英雄の中の英雄の物語　〜アレスティア建国記〜.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "甜點転生": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 12
+        "chapter_old": 12,
+        "chapter": 12,
+        "txt_basename": "甜點轉生.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "甜點轉生.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "カット＆ペーストでこの世界を生きていく": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 9
+        "chapter_old": 9,
+        "chapter": 9,
+        "txt_basename": "以複製貼上在這個世界生活.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "以複製貼上在這個世界生活.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "転生少女の履歴書": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 154
+        "chapter_old": 154,
+        "chapter": 154,
+        "txt_basename": "転生少女の履歴書.out.txt",
+        "volume_old": 3,
+        "volume": 3,
+        "epub_basename": "転生少女の履歴書.epub",
+        "update_date": 1552492800000,
+        "update_count": 2,
+        "epub_date": 1552521271604,
+        "novel_status": 256
       },
       "注意到的時候ＴＳ成了精靈": {
         "init_date": 1545494400000,
@@ -1689,138 +2883,249 @@
         "volume": 1,
         "chapter": 26,
         "epub_basename": "注意到的時候ＴＳ成了精靈.epub",
-        "update_date": 1548432000000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3
       },
       "異空のレクスオール": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 74
+        "chapter_old": 74,
+        "chapter": 74,
+        "txt_basename": "異空のレクスオール.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "異空のレクスオール.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "神スキル【呼吸】するだけでレベルアップする僕は、神々のダンジョンへ挑む。": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 16
+        "chapter_old": 16,
+        "chapter": 16,
+        "txt_basename": "只靠神技【呼吸】就能升級的我，挑戰眾神迷.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "只靠神技【呼吸】就能升級的我，挑戰眾神迷宮.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "アラフォー賢者の異世界生活日記": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 42
+        "chapter_old": 42,
+        "chapter": 42,
+        "txt_basename": "賢者大叔的異世界生活日記.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "賢者大叔的異世界生活日記.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "病弱少女は自分より強い人に嫁ぎたい": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 14
+        "chapter_old": 14,
+        "chapter": 14,
+        "txt_basename": "病弱少女想嫁给比自己强大的人.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "病弱少女想嫁给比自己强大的人.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "被捨棄的勇者的英雄譚_(n0878cb)": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 73
+        "chapter_old": 73,
+        "chapter": 73,
+        "txt_basename": "被捨棄的勇者變成魔王從死亡中歸來了.out.txt",
+        "volume_old": 0,
+        "volume": 5,
+        "epub_basename": "被捨棄的勇者變成魔王從死亡中歸來了.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "大陸英雄戦記": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 35
+        "chapter_old": 35,
+        "chapter": 35,
+        "txt_basename": "大陸英雄戦記.out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "大陸英雄戦記.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "隻腕の鉄姫兵団": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 66
+        "chapter_old": 66,
+        "chapter": 66,
+        "txt_basename": "隻腕の鉄姫兵団.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "隻腕の鉄姫兵団.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "討伐魔王後當了公會會長": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 2
+        "chapter_old": 2,
+        "chapter": 2,
+        "txt_basename": "討伐魔王後當了公會會長.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "討伐魔王後當了公會會長.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "堕落の王": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 73
+        "chapter_old": 73,
+        "chapter": 73,
+        "txt_basename": "堕落の王.out.txt",
+        "volume_old": 0,
+        "volume": 22,
+        "epub_basename": "堕落の王.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "想自由生活的魔王默示錄": {
         "init_date": 1545494400000,
         "txt_basename": "想自由生活的魔王默示錄.out.txt",
         "epub_date": 1547076305202,
-        "volume_old": 6,
-        "chapter_old": 54,
+        "volume_old": 7,
+        "chapter_old": 71,
         "volume": 7,
         "chapter": 71,
         "epub_basename": "想自由生活的魔王默示錄.epub",
-        "update_date": 1547049600000,
-        "update_count": 3
+        "update_date": 1552060800000,
+        "update_count": 4
       },
       "俺だけ入れる隠しダンジョン　〜こっそり鍛えて世界最強〜": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 60
+        "chapter_old": 60,
+        "chapter": 60,
+        "txt_basename": "只有我進入的隱藏地下城～悄悄鍛煉成為世界.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "只有我進入的隱藏地下城～悄悄鍛煉成為世界最強～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "最強呪族転生": {
         "init_date": 1545494400000,
         "txt_basename": "最強呪族転生.out.txt",
-        "epub_date": 1551225039041,
+        "epub_date": 1556151469269,
         "volume_old": 6,
-        "chapter_old": 230,
-        "volume": 6,
-        "chapter": 236,
+        "chapter_old": 249,
+        "volume": 8,
+        "chapter": 307,
         "epub_basename": "最強呪族転生.epub",
-        "update_date": 1551196800000,
-        "update_count": 4
+        "update_date": 1556121600000,
+        "update_count": 7
       },
       "魔王学院の不適合者": {
         "init_date": 1545494400000,
-        "chapter_old": 45,
+        "chapter_old": 54,
         "chapter": 54,
         "txt_basename": "魔王学院の不適合者.out.txt",
         "epub_date": 1548719230179,
-        "volume_old": 0,
+        "volume_old": 2,
         "volume": 2,
         "epub_basename": "魔王学院の不適合者.epub",
-        "update_date": 1548691200000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "魔王軍最強の魔術師は人間だった": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 31
+        "chapter_old": 31,
+        "chapter": 31,
+        "txt_basename": "魔王軍最強の魔術師は人間だった.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "魔王軍最強の魔術師は人間だった.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "暇人、魔王の姿で異世界へ": {
         "init_date": 1545494400000,
         "txt_basename": "暇人、魔王の姿で異世界へ.out.txt",
-        "epub_date": 1547854355602,
+        "epub_date": 1552350025305,
         "volume_old": 10,
-        "chapter_old": 224,
+        "chapter_old": 225,
         "volume": 10,
-        "chapter": 225,
+        "chapter": 226,
         "epub_basename": "暇人、魔王の姿で異世界へ.epub",
-        "update_date": 1547827200000,
-        "update_count": 3
+        "update_date": 1552320000000,
+        "update_count": 5
       },
       "即死チートが最強すぎて、異世界のやつらがまるで相手にならないんですが。_(n5691dd)": {
         "init_date": 1545494400000,
         "txt_basename": "秒殺外掛太強了，異世界的家伙們根本就不是.out.txt",
         "epub_date": 1547528005636,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 2,
+        "chapter_old": 21,
         "volume": 2,
         "chapter": 21,
         "epub_basename": "秒殺外掛太強了，異世界的家伙們根本就不是對手.epub",
-        "update_date": 1547481600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       },
       "賢者の剣": {
         "init_date": 1545494400000,
+        "chapter_old": 261,
+        "chapter": 261,
+        "txt_basename": "賢者の剣.out.txt",
+        "volume_old": 0,
+        "volume": 7,
+        "epub_basename": "賢者の剣.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
+      },
+      "自称！平凡魔族の英雄ライフ": {
+        "txt_basename": "自稱！平凡魔族的英雄生活～明明是Ｂ級魔族.out.txt",
+        "epub_date": 1552521267749,
+        "volume_old": 0,
         "chapter_old": 0,
-        "chapter": 261
+        "volume": 1,
+        "chapter": 10,
+        "epub_basename": "自稱！平凡魔族的英雄生活～明明是Ｂ級魔族卻創造了作弊級地下城的結果～.epub",
+        "novel_status": 768,
+        "init_date": 1552492800000,
+        "update_date": 1552492800000,
+        "update_count": 1
+      },
+      "乙女ゲー世界はモブに厳しい世界です": {
+        "txt_basename": "乙女遊戲世界對路人角色太嚴厲.out.txt",
+        "epub_date": 1559344376502,
+        "volume_old": 6,
+        "chapter_old": 149,
+        "volume": 6,
+        "chapter": 149,
+        "epub_basename": "乙女遊戲世界對路人角色太嚴厲.epub",
+        "novel_status": 768,
+        "init_date": 1558540800000,
+        "update_date": 1559318400000,
+        "update_count": 4
+      },
+      "願わくばこの手に幸福を": {
+        "txt_basename": "願わくばこの手に幸福を.out.txt",
+        "epub_date": 1559258025861,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 4,
+        "chapter": 30,
+        "epub_basename": "願わくばこの手に幸福を.epub",
+        "novel_status": 768,
+        "init_date": 1559232000000,
+        "update_date": 1559232000000,
+        "update_count": 1
       }
     },
     "cm": {
       "リビティウム皇国のブタクサ姫": {
-        "segment_date": 1550360601897,
-        "segment_old": 2,
-        "segment": 3,
+        "segment_date": 1558742428874,
+        "segment_old": 1,
+        "segment": 25,
         "init_date": 1545521021481,
-        "update_date": 1550332800000,
-        "update_count": 5
+        "update_date": 1558713600000,
+        "update_count": 7
       },
       "姫騎士がクラスメート！　〜異世界チートで奴隷化ハーレム〜": {
         "init_date": 1545494400000,
@@ -1833,24 +3138,43 @@
         "volume": 4,
         "chapter": 80,
         "epub_basename": "我的同學是姬騎士.epub",
-        "update_date": 1551024000000,
-        "update_count": 9,
-        "novel_status": 770
+        "update_date": 1552060800000,
+        "update_count": 10,
+        "novel_status": 770,
+        "txt_basename": "我的同學是姬騎士.out.txt"
       },
       "異世界人の手引き書": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 30
+        "chapter_old": 30,
+        "chapter": 30,
+        "txt_basename": "異世界人の手引き書.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "異世界人の手引き書.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "現実主義勇者の大国建造記": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 1
+        "chapter_old": 1,
+        "chapter": 1,
+        "txt_basename": "現実主義勇者の大国建造記.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "現実主義勇者の大国建造記.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "モンスターがあふれる世界になったので、好きに生きたいと思います": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 54
+        "chapter_old": 54,
+        "chapter": 54,
+        "txt_basename": "由于世界魔物满载.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "由于世界魔物满载.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "異世界転移で女神様から祝福を！　～いえ、手持ちの異能があるので結構です～": {
         "init_date": 1545494400000,
@@ -1860,21 +3184,34 @@
         "volume": 5,
         "chapter": 102,
         "epub_basename": "異世界転移で女神様から祝福を！　～いえ、手持ちの異能があるので結構です～.epub",
-        "update_date": 1547568000000,
-        "update_count": 2,
+        "update_date": 1552060800000,
+        "update_count": 3,
         "segment_date": 1547527524592,
         "segment_old": 0,
-        "segment": 35
+        "segment": 35,
+        "txt_basename": "異世界転移で女神様から祝福を！　～いえ、.out.txt"
       },
       "聖者無双　～サラリーマン、異世界で生き残るために歩む道～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 73
+        "chapter_old": 73,
+        "chapter": 73,
+        "txt_basename": "聖者無双　～サラリーマン、異世界で生き残.out.txt",
+        "volume_old": 0,
+        "volume": 6,
+        "epub_basename": "聖者無双　～サラリーマン、異世界で生き残るために歩む道～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "最強ギルドマスターの一週間建国記": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 40
+        "chapter_old": 40,
+        "chapter": 40,
+        "txt_basename": "最強ギルドマスターの一週間建国記.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "最強ギルドマスターの一週間建国記.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "捨てられた勇者は魔王となりて死に戻る（旧題：捨てられた勇者の英雄譚）": {
         "init_date": 1545494400000,
@@ -1883,45 +3220,81 @@
       },
       "魔王の始め方": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 8
+        "chapter_old": 8,
+        "chapter": 8,
+        "txt_basename": "魔王の始め方.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "魔王の始め方.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "異世界の気象予報士～世界最強の天属性魔法術師～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 9
+        "chapter_old": 9,
+        "chapter": 9,
+        "txt_basename": "異世界の気象予報士～世界最強の天属性魔法.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "異世界の気象予報士～世界最強の天属性魔法術師～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "英雄の娘として生まれ変わった英雄は再び英雄を目指す": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 112
+        "chapter_old": 112,
+        "chapter": 112,
+        "txt_basename": "英雄の娘として生まれ変わった英雄は再び英.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "英雄の娘として生まれ変わった英雄は再び英雄を目指す.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "王国へ続く道": {
         "init_date": 1550419200000,
-        "epub_date": 1550792949579,
+        "epub_date": 1555805637929,
         "volume_old": 1,
-        "chapter_old": 4,
+        "chapter_old": 5,
         "volume": 1,
-        "chapter": 5,
+        "chapter": 6,
         "epub_basename": "王国へ続く道.epub",
-        "update_date": 1550764800000,
-        "update_count": 4,
+        "update_date": 1555776000000,
+        "update_count": 6,
         "novel_status": 256,
         "segment_date": 1550620118268,
         "segment_old": 0,
-        "segment": 1
+        "segment": 1,
+        "txt_basename": "王国へ続く道.out.txt"
       },
       "Ａランク冒険者のスローライフ": {
         "init_date": 1550937600000,
         "epub_date": 1551051972621,
         "volume_old": 1,
-        "chapter_old": 1,
+        "chapter_old": 3,
         "volume": 1,
         "chapter": 3,
         "epub_basename": "Ａ級冒險者的悠閒生活.epub",
         "novel_status": 256,
-        "update_date": 1551024000000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3,
+        "txt_basename": "Ａ級冒險者的悠閒生活.out.txt"
+      },
+      "転生魔術師が運営するタワーダンジョン　～罠にかけてエロいことをしよう！～": {
+        "init_date": 1555603200000,
+        "txt_basename": "轉生魔術師營運的迷宮塔.out.txt",
+        "epub_date": 1555719371062,
+        "volume_old": 1,
+        "chapter_old": 1,
+        "volume": 2,
+        "chapter": 2,
+        "epub_basename": "轉生魔術師營運的迷宮塔.epub",
+        "novel_status": 256,
+        "update_date": 1555689600000,
+        "update_count": 2,
+        "segment_date": 1555719185739,
+        "segment_old": 0,
+        "segment": 1
       }
     },
     "mirronight": {
@@ -1931,13 +3304,14 @@
         "segment": 80,
         "init_date": 1545521161792,
         "epub_date": 1549237066318,
-        "volume_old": 9,
-        "chapter_old": 200,
+        "volume_old": 10,
+        "chapter_old": 218,
         "volume": 10,
         "chapter": 218,
         "epub_basename": "打造魔王大人的城鎮（魔王築城記）.epub",
-        "update_date": 1549209600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "打造魔王大人的城鎮（魔王築城記）.out.txt"
       },
       "在異世界轉移從女人大人那兒得到祝福": {
         "epub_date": 1547767632259,
@@ -1956,13 +3330,14 @@
       "在異世界轉移從女神大人那兒得到祝福": {
         "init_date": 1547913600000,
         "epub_date": 1547940769136,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 2,
+        "chapter_old": 40,
         "volume": 2,
         "chapter": 40,
         "epub_basename": "在異世界轉移從女神大人那兒得到祝福.epub",
-        "update_date": 1547913600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "在異世界轉移從女神大人那兒得到祝福.out.txt"
       },
       "只有無職是不會辭掉的": {
         "segment_date": 1548043614537,
@@ -1987,14 +3362,15 @@
         "segment_old": 232,
         "segment": 408,
         "epub_date": 1549582817072,
-        "volume_old": 1,
-        "chapter_old": 403,
+        "volume_old": 6,
+        "chapter_old": 604,
         "volume": 6,
         "chapter": 604,
         "epub_basename": "關於成為魔王這件事.epub",
         "novel_status": 256,
-        "update_date": 1549555200000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3,
+        "txt_basename": "關於成為魔王這件事.out.txt"
       }
     },
     "wenku8": {
@@ -2006,8 +3382,14 @@
       },
       "钱进战国雄霸天下": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 44
+        "chapter_old": 44,
+        "chapter": 44,
+        "txt_basename": "钱进战国雄霸天下.out.txt",
+        "volume_old": 0,
+        "volume": 2,
+        "epub_basename": "钱进战国雄霸天下.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "打倒女神勇者的下流手段": {
         "segment_date": 1548503365559,
@@ -2021,8 +3403,9 @@
         "chapter": 9,
         "epub_basename": "打倒女神勇者的下流手段.epub",
         "novel_status": 1,
-        "update_date": 1548432000000,
-        "update_count": 6
+        "update_date": 1552060800000,
+        "update_count": 7,
+        "txt_basename": "打倒女神勇者的下流手段.out.txt"
       },
       "關於人類是最強種族這件事": {
         "segment_date": 1547940721492,
@@ -2030,32 +3413,34 @@
         "segment": 52,
         "init_date": 1547913600000,
         "epub_date": 1547975253224,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 4,
+        "chapter_old": 52,
         "volume": 4,
         "chapter": 52,
         "epub_basename": "關於人類是最強種族這件事.epub",
-        "update_date": 1547913600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "關於人類是最強種族這件事.out.txt"
       },
       "不吉波普系列": {
-        "segment_date": 1548373108569,
-        "segment_old": 2,
-        "segment": 2,
+        "segment_date": 1553212833370,
+        "segment_old": 1,
+        "segment": 10,
         "init_date": 1548172800000,
-        "epub_date": 1548511773797,
-        "volume_old": 3,
-        "chapter_old": 25,
-        "volume": 3,
-        "chapter": 25,
+        "epub_date": 1553212870216,
+        "volume_old": 6,
+        "chapter_old": 47,
+        "volume": 6,
+        "chapter": 47,
         "epub_basename": "不吉波普系列.epub",
-        "update_date": 1548432000000,
-        "update_count": 4
+        "update_date": 1553184000000,
+        "update_count": 7,
+        "txt_basename": "不吉波普系列.out.txt"
       },
       "平凡職業造就世界最強": {
-        "segment_date": 1550538241062,
-        "segment_old": 1,
-        "segment": 1,
+        "segment_date": 1557962296979,
+        "segment_old": 150,
+        "segment": 72,
         "init_date": 1548345600000,
         "epub_date": 1549842429160,
         "volume_old": 13,
@@ -2063,8 +3448,8 @@
         "volume": 27,
         "chapter": 456,
         "epub_basename": "平凡職業造就世界最強.epub",
-        "update_date": 1550505600000,
-        "update_count": 16,
+        "update_date": 1557936000000,
+        "update_count": 18,
         "novel_status": 1792
       },
       "被死神撫養的少女懷抱漆黑之劍": {
@@ -2078,65 +3463,122 @@
         "volume": 3,
         "chapter": 19,
         "epub_basename": "被死神撫養的少女懷抱漆黑之劍.epub",
-        "update_date": 1548604800000,
-        "update_count": 4
+        "update_date": 1552060800000,
+        "update_count": 5,
+        "txt_basename": "被死神撫養的少女懷抱漆黑之劍.out.txt"
+      },
+      "森の魔獣に花束を": {
+        "init_date": 1552838400000,
+        "txt_basename": "森の魔獣に花束を.out.txt",
+        "epub_date": 1552953408882,
+        "volume_old": 1,
+        "chapter_old": 11,
+        "volume": 1,
+        "chapter": 11,
+        "epub_basename": "森の魔獣に花束を.epub",
+        "novel_status": 256,
+        "update_date": 1552924800000,
+        "update_count": 2
+      },
+      "書姬吟游錄": {
+        "init_date": 1554220800000,
+        "txt_basename": "書姬吟遊錄.out.txt",
+        "epub_date": 1555028548489,
+        "volume_old": 4,
+        "chapter_old": 19,
+        "volume": 4,
+        "chapter": 19,
+        "epub_basename": "書姬吟遊錄.epub",
+        "novel_status": 256,
+        "update_date": 1554998400000,
+        "update_count": 3,
+        "segment_date": 1555028504513,
+        "segment_old": 6,
+        "segment": 9
       }
     },
     "cm_out": {
       "リビティウム皇国のブタクサ姫": {
-        "epub_date": 1551657372617,
+        "epub_date": 1555288318701,
         "volume_old": 7,
-        "chapter_old": 217,
+        "chapter_old": 224,
         "volume": 7,
-        "chapter": 218,
+        "chapter": 225,
         "epub_basename": "利貝提姆皇國的豚草姫.epub",
         "init_date": 1545548908164,
         "txt_basename": "利貝提姆皇國的豚草姫.out.txt",
-        "update_date": 1551628800000,
-        "update_count": 15
+        "update_date": 1555257600000,
+        "update_count": 19
       }
     },
     "dmzj_out": {
       "吃掉死神的少女": {
         "epub_date": 1545548909747,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 3,
+        "chapter_old": 39,
         "volume": 3,
         "chapter": 39,
-        "epub_basename": "吃掉死神的少女",
-        "init_date": 1545548909747
+        "epub_basename": "吃掉死神的少女.epub",
+        "init_date": 1545548909747,
+        "txt_basename": "吃掉死神的少女.out.txt",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "不是真正同伴的我被逐出了勇者隊伍，因此決定在邊境過上慢生活": {
         "init_date": 1545494400000,
-        "chapter_old": 20,
+        "chapter_old": 21,
         "chapter": 21,
         "txt_basename": "不是真正同伴的我被逐出了勇者隊伍，因此決.out.txt",
         "epub_date": 1548286802896,
         "volume_old": 2,
         "volume": 2,
         "epub_basename": "不是真正同伴的我被逐出了勇者隊伍，因此決定在邊境過上慢生活.epub",
-        "update_date": 1548259200000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3
       },
       "努力過頭的世界最強武鬥家": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 10
+        "chapter_old": 10,
+        "chapter": 10,
+        "txt_basename": "努力过头的世界最强武斗家，在魔法世界轻松.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "努力过头的世界最强武斗家，在魔法世界轻松过生活.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "虛弱的高中生的異世界修行日記": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 31
+        "chapter_old": 31,
+        "chapter": 31,
+        "txt_basename": "虛弱的高中生的異世界修行日記.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "虛弱的高中生的異世界修行日記.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "幻想世界的愛麗絲緹露": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 151
+        "chapter_old": 151,
+        "chapter": 151,
+        "txt_basename": "幻想世界的愛麗絲緹露.out.txt",
+        "volume_old": 0,
+        "volume": 11,
+        "epub_basename": "幻想世界的愛麗絲緹露.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "哥布林殺手": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 124
+        "chapter_old": 124,
+        "chapter": 124,
+        "txt_basename": "哥布林殺手.out.txt",
+        "volume_old": 0,
+        "volume": 9,
+        "epub_basename": "哥布林殺手.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "蜘蛛ですが、なにか？": {
         "init_date": 1545494400000,
@@ -2147,54 +3589,72 @@
         "volume": 17,
         "chapter": 813,
         "epub_basename": "轉生成蜘蛛又怎樣！.epub",
-        "update_date": 1551628800000,
-        "update_count": 10,
+        "update_date": 1552060800000,
+        "update_count": 11,
         "novel_status": 1792
       }
     },
     "lost_out": {
       "只是被勇者消滅的簡單工作": {
         "epub_date": 1545548919768,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 311,
         "volume": 1,
         "chapter": 311,
-        "epub_basename": "只是被勇者消滅的簡單工作",
-        "init_date": 1545548919768
+        "epub_basename": "只是被勇者消滅的簡單工作.epub",
+        "init_date": 1545548919768,
+        "txt_basename": "只是被勇者消滅的簡單工作.out.txt",
+        "update_date": 1552060800000,
+        "update_count": 1
       }
     },
     "wenku8_out": {
       "勇者、或いは化物と呼ばれた少女": {
         "epub_date": 1545548957577,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 3,
+        "chapter_old": 13,
         "volume": 3,
         "chapter": 13,
-        "epub_basename": "勇者、或いは化物と呼ばれた少女",
-        "init_date": 1545548957577
+        "epub_basename": "勇者、或いは化物と呼ばれた少女.epub",
+        "init_date": 1545548957577,
+        "txt_basename": "勇者、或いは化物と呼ばれた少女.out.txt",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "OVERLORD不死者之王": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 107
+        "chapter_old": 107,
+        "chapter": 107,
+        "txt_basename": "OVERLORD不死者之王.out.txt",
+        "volume_old": 0,
+        "volume": 15,
+        "epub_basename": "OVERLORD不死者之王.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "瀆神之主": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 46
+        "chapter_old": 46,
+        "chapter": 46,
+        "txt_basename": "瀆神之主.out.txt",
+        "volume_old": 0,
+        "volume": 10,
+        "epub_basename": "瀆神之主.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "平凡職業造就世界最強": {
         "txt_basename": "平凡職業造就世界最強.out.txt",
-        "epub_date": 1550538300427,
+        "epub_date": 1558743655916,
         "volume_old": 27,
-        "chapter_old": 456,
-        "volume": 27,
-        "chapter": 457,
+        "chapter_old": 464,
+        "volume": 28,
+        "chapter": 477,
         "epub_basename": "平凡職業造就世界最強.epub",
         "novel_status": 1792,
         "init_date": 1549900800000,
-        "update_date": 1550505600000,
-        "update_count": 6
+        "update_date": 1558713600000,
+        "update_count": 11
       }
     },
     "epub": {
@@ -2205,55 +3665,114 @@
     "epub_out": {
       "異世界で魅了チートを使って奴隷ハーレムをつくってみた": {
         "epub_date": 1545552687196,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 4,
+        "chapter_old": 36,
         "volume": 4,
         "chapter": 36,
-        "epub_basename": "異世界で魅了チートを使って奴隷ハーレムをつくってみた",
-        "init_date": 1545552687196
+        "epub_basename": "異世界で魅了チートを使って奴隷ハーレムをつくってみた.epub",
+        "init_date": 1545552687196,
+        "txt_basename": "異世界で魅了チートを使って奴隷ハーレムを.out.txt",
+        "update_date": 1552060800000,
+        "update_count": 1
       }
     },
     "h_out": {
       "勇者は犯されたい": {
         "init_date": 1545494400000,
+        "chapter_old": 49,
+        "chapter": 49,
+        "txt_basename": "想被侵犯的勇者.out.txt",
+        "volume_old": 1,
+        "volume": 1,
+        "epub_basename": "想被侵犯的勇者.epub",
+        "update_date": 1553270400000,
+        "update_count": 2,
+        "epub_date": 1553299326902,
+        "novel_status": 257
+      },
+      "玩了VR工口遊戲轉生到異世界": {
+        "txt_basename": "玩了VR工口遊戲轉生到異世界、將美少女魔.out.txt",
+        "epub_date": 1556843719787,
+        "volume_old": 0,
         "chapter_old": 0,
-        "chapter": 49
+        "volume": 1,
+        "chapter": 9,
+        "epub_basename": "玩了VR工口遊戲轉生到異世界、將美少女魔王奴隸化〜跨越世界的救世主〜.epub",
+        "init_date": 1556812800000,
+        "update_date": 1556812800000,
+        "update_count": 1
       }
     },
     "kakuyomu_out": {
       "惡魔支配者　～想定時回家的男人之瘋狂升級～": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 21
+        "chapter_old": 21,
+        "chapter": 21,
+        "txt_basename": "惡魔支配者　～想定時回家的男人之瘋狂升級.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "惡魔支配者　～想定時回家的男人之瘋狂升級～.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "辺境都市の育成者": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 21
+        "chapter_old": 21,
+        "chapter": 21,
+        "txt_basename": "辺境都市の育成者.out.txt",
+        "volume_old": 0,
+        "volume": 3,
+        "epub_basename": "辺境都市の育成者.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "この勇者が俺ＴＵＥＥＥくせに慎重すぎる": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 10
+        "chapter_old": 10,
+        "chapter": 10,
+        "txt_basename": "這個勇者明明超強卻過分慎重.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "這個勇者明明超強卻過分慎重.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       }
     },
     "webqxs_out": {
       "公会的开挂接待小姐_(20)": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 53
+        "chapter_old": 53,
+        "chapter": 53,
+        "txt_basename": "公会的开挂接待小姐_(20).out.txt",
+        "volume_old": 0,
+        "volume": 4,
+        "epub_basename": "公会的开挂接待小姐_(20).epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       },
       "かみがみ〜最も弱き反逆者〜": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 14
+        "chapter_old": 14,
+        "chapter": 14,
+        "txt_basename": "かみがみ〜最も弱き反逆者〜.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "かみがみ〜最も弱き反逆者〜.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       }
     },
     "uukanshu_out": {
       "炎之魔女的守序信仰": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 262
+        "chapter_old": 262,
+        "chapter": 262,
+        "txt_basename": "炎之魔女的守序信仰.out.txt",
+        "volume_old": 0,
+        "volume": 14,
+        "epub_basename": "炎之魔女的守序信仰.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       }
     },
     "other": {
@@ -2262,11 +3781,12 @@
         "chapter_old": 3,
         "chapter": 3,
         "epub_date": 1548200235321,
-        "volume_old": 0,
+        "volume_old": 1,
         "volume": 1,
         "epub_basename": "勇者「都打倒魔王了來回家吧」.epub",
-        "update_date": 1548172800000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "勇者「都打倒魔王了來回家吧」.out.txt"
       },
       "絕對想被打倒的魔王＆絕對不想戰鬥的勇者": {
         "segment_date": 1548199819662,
@@ -2279,15 +3799,22 @@
         "volume": 1,
         "chapter": 4,
         "epub_basename": "絕對想被打倒的魔王＆絕對不想戰鬥的勇者.epub",
-        "update_date": 1548259200000,
-        "update_count": 2
+        "update_date": 1552060800000,
+        "update_count": 3,
+        "txt_basename": "絕對想被打倒的魔王＆絕對不想戰鬥的勇者.out.txt"
       }
     },
     "z.abandon_out": {
       "邪竜転生": {
         "init_date": 1545494400000,
-        "chapter_old": 0,
-        "chapter": 52
+        "chapter_old": 52,
+        "chapter": 52,
+        "txt_basename": "邪竜転生.out.txt",
+        "volume_old": 0,
+        "volume": 1,
+        "epub_basename": "邪竜転生.epub",
+        "update_date": 1552060800000,
+        "update_count": 1
       }
     },
     "dmzj": {
@@ -2301,6 +3828,38 @@
       },
       "不是真正同伴的我被逐出了勇者隊伍，因此決定在邊境過上慢生活": {
         "init_date": 1548172800000
+      },
+      "食銹末世錄": {
+        "segment_date": 1558393580729,
+        "segment_old": 23,
+        "segment": 9,
+        "init_date": 1557763200000,
+        "txt_basename": "食銹末世錄.out.txt",
+        "epub_date": 1558480176406,
+        "volume_old": 1,
+        "chapter_old": 23,
+        "volume": 1,
+        "chapter": 23,
+        "epub_basename": "食銹末世錄.epub",
+        "novel_status": 256,
+        "update_date": 1558454400000,
+        "update_count": 3
+      },
+      "魔法師塔塔": {
+        "segment_date": 1558050396278,
+        "segment_old": 12,
+        "segment": 9,
+        "init_date": 1557763200000,
+        "txt_basename": "魔法師塔塔.out.txt",
+        "epub_date": 1558050571138,
+        "volume_old": 1,
+        "chapter_old": 12,
+        "volume": 1,
+        "chapter": 12,
+        "epub_basename": "魔法師塔塔.epub",
+        "novel_status": 256,
+        "update_date": 1558022400000,
+        "update_count": 2
       }
     },
     "zh": {
@@ -2315,8 +3874,9 @@
         "volume": 3,
         "chapter": 28,
         "epub_basename": "如何在異世界殺死一個死宅.epub",
-        "update_date": 1545876925866,
-        "update_count": 3
+        "update_date": 1552060800000,
+        "update_count": 4,
+        "txt_basename": "如何在異世界殺死一個死宅.out.txt"
       }
     },
     "h": {
@@ -2326,13 +3886,14 @@
         "segment": 1,
         "init_date": 1547913600000,
         "epub_date": 1547976781000,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 47,
         "volume": 1,
         "chapter": 47,
         "epub_basename": "侯爵嫡男好色物語.epub",
-        "update_date": 1547913600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "侯爵嫡男好色物語.out.txt"
       },
       "在喪屍橫行的世界裡唯獨我不被襲擊": {
         "segment_date": 1548502679187,
@@ -2345,8 +3906,9 @@
         "volume": 3,
         "chapter": 62,
         "epub_basename": "在喪屍橫行的世界裡唯獨我不被襲擊.epub",
-        "update_date": 1548432000000,
-        "update_count": 3
+        "update_date": 1552060800000,
+        "update_count": 4,
+        "txt_basename": "在喪屍橫行的世界裡唯獨我不被襲擊.out.txt"
       },
       "異世界の男は全滅したようです": {
         "segment_date": 1547940565173,
@@ -2354,13 +3916,61 @@
         "segment": 32,
         "init_date": 1547913600000,
         "epub_date": 1547975249131,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 2,
+        "chapter_old": 33,
         "volume": 2,
         "chapter": 33,
         "epub_basename": "異世界の男は全滅したようです.epub",
-        "update_date": 1547913600000,
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "異世界の男は全滅したようです.out.txt"
+      },
+      "美腿寶箱怪": {
+        "init_date": 1553184000000,
+        "txt_basename": "美腿寶箱怪、春美小姐～轉生怪物在異世界青.out.txt",
+        "epub_date": 1553212861177,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 1,
+        "epub_basename": "美腿寶箱怪、春美小姐～轉生怪物在異世界青雲直上之傳說～.epub",
+        "novel_status": 256,
+        "update_date": 1553184000000,
         "update_count": 1
+      },
+      "勇者は犯されたい": {
+        "init_date": 1553270400000
+      },
+      "玩了VR工口遊戲轉生到異世界": {
+        "segment_date": 1554941210842,
+        "segment_old": 0,
+        "segment": 1,
+        "init_date": 1554912000000,
+        "txt_basename": "玩了VR工口遊戲轉生到異世界、將美少女魔.out.txt",
+        "epub_date": 1554941238828,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 10,
+        "epub_basename": "玩了VR工口遊戲轉生到異世界、將美少女魔王奴隸化〜跨越世界的救世主〜.epub",
+        "update_date": 1554912000000,
+        "update_count": 1
+      },
+      "俺が淫魔術で奴隷ハーレムを作る話": {
+        "segment_date": 1559085020423,
+        "segment_old": 2,
+        "segment": 2,
+        "init_date": 1556294400000,
+        "txt_basename": "我仰賴淫魔術建立了奴隸後宮.out.txt",
+        "epub_date": 1559085040608,
+        "volume_old": 1,
+        "chapter_old": 6,
+        "volume": 1,
+        "chapter": 7,
+        "epub_basename": "我仰賴淫魔術建立了奴隸後宮.epub",
+        "novel_status": 256,
+        "update_date": 1559059200000,
+        "update_count": 3
       }
     },
     "kakuyomu": {
@@ -2370,19 +3980,20 @@
         "segment": 9,
         "init_date": 1547913600000,
         "epub_date": 1547975250953,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 4,
+        "chapter_old": 10,
         "volume": 4,
         "chapter": 10,
         "epub_basename": "勇者，不幹了　～下一個職場是魔王城～.epub",
-        "update_date": 1547913600000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "勇者，不幹了　～下一個職場是魔王城～.out.txt"
       }
     },
     "yandere": {
       "転生ごときで逃げられるとでも、兄さん？": {
-        "segment_date": 1551743436809,
-        "segment_old": 2,
+        "segment_date": 1556583988121,
+        "segment_old": 12,
         "segment": 1,
         "init_date": 1548604800000,
         "epub_date": 1548977895318,
@@ -2391,106 +4002,110 @@
         "volume": 5,
         "chapter": 79,
         "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
-        "update_date": 1551715200000,
-        "update_count": 8
+        "update_date": 1556553600000,
+        "update_count": 10
       }
     },
     "mirronight_out": {
       "只有無職是不會辭掉的": {
         "txt_basename": "只有無職是不會辭掉的.out.txt",
         "epub_date": 1548719227689,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 8,
+        "chapter_old": 190,
         "volume": 8,
         "chapter": 190,
         "epub_basename": "只有無職是不會辭掉的.epub",
         "init_date": 1548691200000,
-        "update_date": 1548691200000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2
       }
     },
     "yandere_out": {
       "転生ごときで逃げられるとでも、兄さん？": {
         "txt_basename": "以為轉個生就能逃掉嗎，哥哥？.out.txt",
-        "epub_date": 1551743467474,
+        "epub_date": 1558393833255,
         "volume_old": 5,
-        "chapter_old": 84,
+        "chapter_old": 115,
         "volume": 5,
-        "chapter": 90,
+        "chapter": 117,
         "epub_basename": "以為轉個生就能逃掉嗎，哥哥？.epub",
         "init_date": 1549036800000,
-        "update_date": 1551715200000,
-        "update_count": 5
+        "update_date": 1558368000000,
+        "update_count": 11
       }
     },
     "girl": {
       "Genocide Online ～極惡千金的玩遊戲日記～": {
-        "segment_date": 1551138386796,
-        "segment_old": 4,
+        "segment_date": 1558393606088,
+        "segment_old": 1,
         "segment": 1,
         "init_date": 1549641600000,
-        "epub_date": 1551657389749,
+        "epub_date": 1559171788669,
         "volume_old": 1,
-        "chapter_old": 34,
+        "chapter_old": 120,
         "volume": 1,
-        "chapter": 40,
+        "chapter": 125,
         "epub_basename": "Genocide Online ～極惡千金的玩遊戲日記～.epub",
         "novel_status": 256,
-        "update_date": 1551628800000,
-        "update_count": 5
+        "update_date": 1559145600000,
+        "update_count": 22,
+        "txt_basename": "Genocide Online ～極惡千.out.txt"
       },
       "「「神と呼ばれ、魔王と呼ばれても」」": {
-        "segment_date": 1549669112284,
-        "segment_old": 0,
-        "segment": 51,
+        "segment_date": 1559171497172,
+        "segment_old": 71,
+        "segment": 24,
         "init_date": 1549641600000,
-        "epub_date": 1549755740199,
+        "epub_date": 1559171797642,
         "volume_old": 1,
-        "chapter_old": 51,
+        "chapter_old": 72,
         "volume": 1,
-        "chapter": 51,
+        "chapter": 81,
         "epub_basename": "無論是被當作神，還是被當作魔王.epub",
         "novel_status": 1,
-        "update_date": 1549728000000,
-        "update_count": 2
+        "update_date": 1559145600000,
+        "update_count": 5,
+        "txt_basename": "無論是被當作神，還是被當作魔王.out.txt"
       },
       "Free Life Fantasy Online ～人外姫様、始めました～": {
         "epub_date": 1550538280594,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 2,
+        "chapter_old": 9,
         "volume": 2,
         "chapter": 9,
         "epub_basename": "Free Life Fantasy Online ～人外姫様、始めました～.epub",
         "novel_status": 256,
         "init_date": 1550505600000,
-        "update_date": 1550505600000,
-        "update_count": 1,
+        "update_date": 1552060800000,
+        "update_count": 2,
         "segment_date": 1550537631997,
         "segment_old": 0,
-        "segment": 3
+        "segment": 3,
+        "txt_basename": "Free Life Fantasy On.out.txt"
       },
       "今度こそ幸せになります！": {
         "epub_date": 1550538281186,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 6,
         "volume": 1,
         "chapter": 6,
         "epub_basename": "今度こそ幸せになります！.epub",
         "novel_status": 768,
         "init_date": 1550505600000,
-        "update_date": 1550505600000,
-        "update_count": 1,
+        "update_date": 1552060800000,
+        "update_count": 2,
         "segment_date": 1550537643763,
         "segment_old": 0,
-        "segment": 6
+        "segment": 6,
+        "txt_basename": "今度こそ幸せになります！.out.txt"
       },
       "你這種傢伙別想打贏魔王": {
         "init_date": 1550505600000,
-        "segment_date": 1550620158835,
-        "segment_old": 0,
-        "segment": 4,
-        "update_date": 1550592000000,
-        "update_count": 1
+        "segment_date": 1558742528291,
+        "segment_old": 2,
+        "segment": 10,
+        "update_date": 1558713600000,
+        "update_count": 8
       },
       "JKハルは異世界で娼婦になった": {
         "segment_date": 1551484322490,
@@ -2498,24 +4113,240 @@
         "segment": 5,
         "init_date": 1551456000000,
         "epub_date": 1551484358151,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 1,
+        "chapter_old": 5,
         "volume": 1,
         "chapter": 5,
         "epub_basename": "JKハルは異世界で娼婦になった.epub",
         "novel_status": 257,
-        "update_date": 1551456000000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "JKハルは異世界で娼婦になった.out.txt"
       },
       "傀儡契約_(n4719ff)": {
         "init_date": 1551715200000,
-        "epub_date": 1551743458095,
+        "epub_date": 1557617960192,
+        "volume_old": 1,
+        "chapter_old": 6,
+        "volume": 1,
+        "chapter": 8,
+        "epub_basename": "傀儡契約.epub",
+        "update_date": 1557590400000,
+        "update_count": 8,
+        "txt_basename": "傀儡契約.out.txt",
+        "segment_date": 1557617695860,
+        "segment_old": 1,
+        "segment": 4
+      },
+      "村民轉生武器使": {
+        "segment_date": 1557274901407,
+        "segment_old": 5,
+        "segment": 6,
+        "init_date": 1552060800000,
+        "txt_basename": "轉生成村民的我作為最強的“武器使用者”每.out.txt",
+        "volume_old": 1,
+        "chapter_old": 5,
+        "volume": 1,
+        "chapter": 6,
+        "epub_basename": "轉生成村民的我作為最強的“武器使用者”每天盡情地殺戮與掠奪.epub",
+        "update_date": 1557244800000,
+        "update_count": 2,
+        "epub_date": 1557274941913
+      },
+      "エリナの成長物語（引き籠り女神の転生）": {
+        "init_date": 1552492800000,
+        "txt_basename": "エリナの成長物語（引き籠り女神の転生）.out.txt",
+        "epub_date": 1558743616844,
+        "volume_old": 1,
+        "chapter_old": 17,
+        "volume": 1,
+        "chapter": 19,
+        "epub_basename": "エリナの成長物語（引き籠り女神の転生）.epub",
+        "update_date": 1558713600000,
+        "update_count": 9,
+        "segment_date": 1558742465927,
+        "segment_old": 1,
+        "segment": 1
+      },
+      "三葉物語": {
+        "init_date": 1552665600000,
+        "txt_basename": "三葉物語.out.txt",
+        "epub_date": 1555288319472,
+        "volume_old": 1,
+        "chapter_old": 2,
+        "volume": 1,
+        "chapter": 3,
+        "epub_basename": "三葉物語.epub",
+        "update_date": 1555257600000,
+        "update_count": 2
+      },
+      "最強的吸血姬渴望妹妹": {
+        "init_date": 1552752000000,
+        "txt_basename": "最强的吸血姬渴望妹妹.out.txt",
+        "epub_date": 1552781697875,
         "volume_old": 0,
         "chapter_old": 0,
         "volume": 1,
         "chapter": 1,
-        "epub_basename": "傀儡契約.epub",
-        "update_date": 1551715200000,
+        "epub_basename": "最强的吸血姬渴望妹妹.epub",
+        "novel_status": 769,
+        "update_date": 1552752000000,
+        "update_count": 1
+      },
+      "原千金未婚媽媽": {
+        "segment_date": 1557617711180,
+        "segment_old": 5,
+        "segment": 2,
+        "init_date": 1552838400000,
+        "txt_basename": "原千金未婚媽媽.out.txt",
+        "epub_date": 1557617962172,
+        "volume_old": 2,
+        "chapter_old": 32,
+        "volume": 2,
+        "chapter": 39,
+        "epub_basename": "原千金未婚媽媽.epub",
+        "novel_status": 256,
+        "update_date": 1557590400000,
+        "update_count": 5
+      },
+      "ポンコツ少女の電脳世界救世記": {
+        "init_date": 1554739200000,
+        "txt_basename": "廢柴少女的電腦世界救世記　～不中用的技能.out.txt",
+        "epub_date": 1559171798836,
+        "volume_old": 2,
+        "chapter_old": 20,
+        "volume": 2,
+        "chapter": 25,
+        "epub_basename": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～.epub",
+        "novel_status": 1,
+        "update_date": 1559145600000,
+        "update_count": 11,
+        "segment_date": 1559171506322,
+        "segment_old": 1,
+        "segment": 1
+      },
+      "十歳の最強魔導師": {
+        "segment_date": 1557274896509,
+        "segment_old": 16,
+        "segment": 2,
+        "init_date": 1555603200000,
+        "txt_basename": "十歳の最強魔導師.out.txt",
+        "epub_date": 1557274941444,
+        "volume_old": 1,
+        "chapter_old": 141,
+        "volume": 1,
+        "chapter": 146,
+        "epub_basename": "十歳の最強魔導師.epub",
+        "novel_status": 256,
+        "update_date": 1557244800000,
+        "update_count": 4
+      },
+      "魔王の娘の百合戦記": {
+        "init_date": 1555776000000,
+        "txt_basename": "魔王の娘の百合戦記.out.txt",
+        "epub_date": 1557531271939,
+        "volume_old": 1,
+        "chapter_old": 9,
+        "volume": 1,
+        "chapter": 9,
+        "epub_basename": "魔王の娘の百合戦記.epub",
+        "novel_status": 256,
+        "update_date": 1557504000000,
+        "update_count": 6,
+        "segment_date": 1556842813471,
+        "segment_old": 2,
+        "segment": 3
+      },
+      "惡役轉生但是為什麼會變成這樣": {
+        "init_date": 1557331200000,
+        "txt_basename": "惡役轉生但是為什麼會變成這樣.out.txt",
+        "epub_date": 1557361605355,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 10,
+        "chapter": 148,
+        "epub_basename": "惡役轉生但是為什麼會變成這樣.epub",
+        "novel_status": 256,
+        "update_date": 1558627200000,
+        "update_count": 2,
+        "segment_date": 1558652965960,
+        "segment_old": 0,
+        "segment": 1
+      },
+      "chase　～何度ループしてもあなたを救えない物語～": {
+        "init_date": 1557417600000,
+        "txt_basename": "chase　～即使輪回無數次也無法拯救你.out.txt",
+        "epub_date": 1557444893638,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 1,
+        "epub_basename": "chase　～即使輪回無數次也無法拯救你的故事～.epub",
+        "update_date": 1557417600000,
+        "update_count": 1
+      },
+      "幼馴染二人から告白され困惑するも勢いで３Ｐに持ちこもうとする女の子の話": {
+        "init_date": 1557417600000,
+        "txt_basename": "關於一個被兩名青梅竹馬告白之後、雖然困惑.out.txt",
+        "epub_date": 1557531269942,
+        "volume_old": 1,
+        "chapter_old": 1,
+        "volume": 1,
+        "chapter": 1,
+        "epub_basename": "關於一個被兩名青梅竹馬告白之後、雖然困惑但還是順勢而為打算搞3P的女孩子的故事.epub",
+        "update_date": 1557504000000,
+        "update_count": 2
+      },
+      "王女殿下はお怒りのようです": {
+        "segment_date": 1558050406195,
+        "segment_old": 26,
+        "segment": 1,
+        "init_date": 1557763200000,
+        "txt_basename": "王女殿下はお怒りのようです.out.txt",
+        "epub_date": 1557791097053,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 26,
+        "epub_basename": "王女殿下はお怒りのようです.epub",
+        "novel_status": 256,
+        "update_date": 1558022400000,
+        "update_count": 2
+      },
+      "謙虚、堅実をモットーに生きております！": {
+        "segment_date": 1558912286691,
+        "segment_old": 0,
+        "segment": 5,
+        "init_date": 1558886400000,
+        "update_date": 1558886400000,
+        "update_count": 1
+      },
+      "勿論、慰謝料請求いたします！": {
+        "segment_date": 1559171513130,
+        "segment_old": 0,
+        "segment": 30,
+        "init_date": 1559145600000,
+        "txt_basename": "勿論、慰謝料請求いたします！.out.txt",
+        "epub_date": 1559171802314,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 30,
+        "epub_basename": "勿論、慰謝料請求いたします！.epub",
+        "novel_status": 768,
+        "update_date": 1559145600000,
+        "update_count": 1
+      },
+      "自覚なし聖女の異世界モフモフ道中": {
+        "init_date": 1559145600000,
+        "txt_basename": "無自覺聖女的摸呼摸呼旅程.out.txt",
+        "epub_date": 1559171802466,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 1,
+        "epub_basename": "無自覺聖女的摸呼摸呼旅程.epub",
+        "update_date": 1559145600000,
         "update_count": 1
       }
     },
@@ -2526,47 +4357,277 @@
         "segment": 2,
         "init_date": 1549728000000,
         "epub_date": 1549755741747,
-        "volume_old": 0,
-        "chapter_old": 0,
+        "volume_old": 2,
+        "chapter_old": 13,
         "volume": 2,
         "chapter": 13,
         "epub_basename": "咦、不是穿越到異世界……而是俄羅斯……？.epub",
-        "update_date": 1549728000000,
-        "update_count": 1
+        "update_date": 1552060800000,
+        "update_count": 2,
+        "txt_basename": "咦、不是穿越到異世界……而是俄羅斯……？.out.txt"
       }
     },
     "girl_out": {
       "你這種傢伙別想打贏魔王": {
         "txt_basename": "你這種傢伙別想打贏魔王.out.txt",
-        "epub_date": 1550620202039,
-        "volume_old": 16,
-        "chapter_old": 111,
-        "volume": 16,
-        "chapter": 112,
+        "epub_date": 1556843719132,
+        "volume_old": 15,
+        "chapter_old": 117,
+        "volume": 15,
+        "chapter": 123,
         "epub_basename": "你這種傢伙別想打贏魔王.epub",
         "novel_status": 769,
         "init_date": 1550505600000,
-        "update_date": 1550592000000,
+        "update_date": 1556812800000,
+        "update_count": 6
+      },
+      "王女殿下はお怒りのようです": {
+        "txt_basename": "王女殿下はお怒りのようです.out.txt",
+        "epub_date": 1558050572831,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 26,
+        "epub_basename": "王女殿下はお怒りのようです.epub",
+        "novel_status": 256,
+        "init_date": 1558022400000,
+        "update_date": 1558022400000,
+        "update_count": 1
+      },
+      "惡役轉生但是為什麼會變成這樣": {
+        "txt_basename": "惡役轉生但是為什麼會變成這樣.out.txt",
+        "epub_date": 1558739347435,
+        "volume_old": 10,
+        "chapter_old": 148,
+        "volume": 10,
+        "chapter": 148,
+        "epub_basename": "惡役轉生但是為什麼會變成這樣.epub",
+        "novel_status": 256,
+        "init_date": 1558627200000,
+        "update_date": 1558713600000,
         "update_count": 2
+      },
+      "謙虚、堅実をモットーに生きております！": {
+        "txt_basename": "謙虛踏實的生活下去.out.txt",
+        "epub_date": 1558912312503,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 299,
+        "epub_basename": "謙虛踏實的生活下去.epub",
+        "init_date": 1558886400000,
+        "update_date": 1558886400000,
+        "update_count": 1
       }
     },
     "ts": {
       "幼女転生": {
         "init_date": 1550851200000
+      },
+      "變成了美少女、但也成了網游廢人。": {
+        "segment_date": 1555200703626,
+        "segment_old": 0,
+        "segment": 6,
+        "init_date": 1555171200000,
+        "txt_basename": "變成了美少女、但也成了網游廢人。.out.txt",
+        "epub_date": 1555200822122,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 12,
+        "epub_basename": "變成了美少女、但也成了網游廢人。.epub",
+        "novel_status": 256,
+        "update_date": 1555171200000,
+        "update_count": 1
+      },
+      "双剣のエレナ": {
+        "segment_date": 1555632894009,
+        "segment_old": 3,
+        "segment": 1,
+        "init_date": 1555344000000,
+        "txt_basename": "双剣のエレナ.out.txt",
+        "epub_date": 1555373611255,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 6,
+        "chapter": 137,
+        "epub_basename": "双剣のエレナ.epub",
+        "update_date": 1555603200000,
+        "update_count": 3
+      },
+      "吸血少女は男に戻りたい！": {
+        "init_date": 1555344000000,
+        "txt_basename": "吸血少女想變回男人！.out.txt",
+        "epub_date": 1555632991522,
+        "volume_old": 5,
+        "chapter_old": 297,
+        "volume": 5,
+        "chapter": 297,
+        "epub_basename": "吸血少女想變回男人！.epub",
+        "update_date": 1555603200000,
+        "update_count": 3,
+        "segment_date": 1555632933735,
+        "segment_old": 11,
+        "segment": 16
+      },
+      "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～": {
+        "init_date": 1555689600000
+      },
+      "自称贤者弟子的贤者": {
+        "segment_date": 1559171764436,
+        "segment_old": 19,
+        "segment": 4,
+        "init_date": 1556812800000,
+        "update_date": 1559145600000,
+        "update_count": 3
+      },
+      "葉隠桜は嘆かない": {
+        "init_date": 1556812800000,
+        "txt_basename": "葉隱櫻不悲嘆.out.txt",
+        "epub_date": 1556843727399,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 1,
+        "epub_basename": "葉隱櫻不悲嘆.epub",
+        "update_date": 1556812800000,
+        "update_count": 1
+      },
+      "ゲームキャラで異世界転生して、大草原ではじめるスローライフ": {
+        "init_date": 1556899200000,
+        "txt_basename": "以游戲角色的異世界轉生～由大草原開始的慢.out.txt",
+        "epub_date": 1557015651700,
+        "volume_old": 1,
+        "chapter_old": 3,
+        "volume": 1,
+        "chapter": 3,
+        "epub_basename": "以游戲角色的異世界轉生～由大草原開始的慢節奏生活～.epub",
+        "novel_status": 257,
+        "update_date": 1556985600000,
+        "update_count": 2
+      },
+      "朝起きたら銀髪ロリ吸血鬼になっていた（小並感）": {
+        "init_date": 1556899200000,
+        "txt_basename": "早上起來變成銀髮蘿莉吸血鬼了.out.txt",
+        "epub_date": 1556929237499,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 18,
+        "epub_basename": "早上起來變成銀髮蘿莉吸血鬼了.epub",
+        "update_date": 1556899200000,
+        "update_count": 1
       }
     },
     "ts_out": {
       "幼女転生": {
         "txt_basename": "幼女転生.out.txt",
-        "epub_date": 1551138433293,
+        "epub_date": 1558393827946,
         "volume_old": 5,
         "chapter_old": 61,
         "volume": 5,
-        "chapter": 61,
+        "chapter": 63,
         "epub_basename": "幼女転生.epub",
         "init_date": 1550851200000,
-        "update_date": 1551110400000,
-        "update_count": 2
+        "update_date": 1558368000000,
+        "update_count": 4
+      },
+      "双剣のエレナ": {
+        "txt_basename": "双剣のエレナ.out.txt",
+        "epub_date": 1555719377734,
+        "volume_old": 11,
+        "chapter_old": 167,
+        "volume": 11,
+        "chapter": 167,
+        "epub_basename": "双剣のエレナ.epub",
+        "init_date": 1555430400000,
+        "update_date": 1555689600000,
+        "update_count": 4
+      },
+      "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～": {
+        "txt_basename": "人喰い転移者の異世界復讐譚　～無能はスキ.out.txt",
+        "epub_date": 1555719373616,
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 3,
+        "chapter": 58,
+        "epub_basename": "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～.epub",
+        "init_date": 1555689600000,
+        "update_date": 1555689600000,
+        "update_count": 1
+      },
+      "自称贤者弟子的贤者": {
+        "txt_basename": "自称贤者弟子的贤者.out.txt",
+        "epub_date": 1559171811769,
+        "volume_old": 7,
+        "chapter_old": 315,
+        "volume": 7,
+        "chapter": 316,
+        "epub_basename": "自称贤者弟子的贤者.epub",
+        "novel_status": 768,
+        "init_date": 1556812800000,
+        "update_date": 1559145600000,
+        "update_count": 4
+      }
+    },
+    "game": {
+      "ＶＲＭＭＯ学園で楽しい魔改造のススメ": {
+        "init_date": 1552060800000,
+        "txt_basename": "VRMMO 學園的愉快魔改推薦～把最弱職.out.txt",
+        "volume_old": 0,
+        "chapter_old": 0,
+        "volume": 1,
+        "chapter": 4,
+        "epub_basename": "VRMMO 學園的愉快魔改推薦～把最弱職業打造出最高傷害～.epub",
+        "novel_status": 257,
+        "update_date": 1552060800000,
+        "update_count": 1
+      }
+    },
+    "family": {
+      "被剝奪了冒險者執照的大叔，得到了愛女悠閒的謳歌人生": {
+        "init_date": 1552147200000,
+        "txt_basename": "被剝奪了冒險者執照的大叔，得到了愛女悠閒.out.txt",
+        "epub_date": 1556584006084,
+        "volume_old": 1,
+        "chapter_old": 2,
+        "volume": 1,
+        "chapter": 5,
+        "epub_basename": "被剝奪了冒險者執照的大叔，得到了愛女悠閒的謳歌人生.epub",
+        "novel_status": 768,
+        "update_date": 1556553600000,
+        "update_count": 3,
+        "segment_date": 1552261885555,
+        "segment_old": 0,
+        "segment": 1
+      }
+    },
+    "novelba": {
+      "劣等眼の転生魔術師": {
+        "init_date": 1552320000000
+      }
+    },
+    "z.bookmark": {
+      "緑王の盾と真冬の国": {
+        "init_date": 1552320000000
+      }
+    },
+    "otome": {
+      "転生王子と憂いの大国": {
+        "init_date": 1554998400000,
+        "txt_basename": "転生王子と憂いの大国.out.txt",
+        "epub_date": 1555546518327,
+        "volume_old": 4,
+        "chapter_old": 7,
+        "volume": 4,
+        "chapter": 11,
+        "epub_basename": "転生王子と憂いの大国.epub",
+        "novel_status": 769,
+        "update_date": 1555516800000,
+        "update_count": 2,
+        "segment_date": 1555546310596,
+        "segment_old": 0,
+        "segment": 1
       }
     }
   },
@@ -3073,6 +5134,61 @@
             "allow_lf2": true
           }
         }
+      },
+      "転生魔術師が運営するタワーダンジョン　～罠にかけてエロいことをしよう！～": {
+        "novel": {
+          "title": "転生魔術師が運営するタワーダンジョン　～罠にかけてエロいことをしよう！～",
+          "title_zh": "轉生魔術師營運的迷宮塔",
+          "author": "クリスタラー桜井",
+          "illust": "TAKTO",
+          "source": "http://novel18.syosetu.com/n4848da/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81QS6ohBe3L.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2016-12-18T00:00:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "転生魔術師が運営するタワーダンジョン　～罠にかけてエロいことをしよう！～"
+          },
+          "preface": "※キングノベルス様より書籍版が大好評発売中です!!\n書き下ろし短編や美麗イラストもございますので、ぜひともお手にとってみて下さい！\n\n大魔術師の息子として転生した、趣味オナニーのオタクな主人公。\n彼は生まれ変わったら死ぬほど女を抱くことを目標に生きてきた。\n\n二十歳になったある時、先祖が封印した魔王が復活するということで、\n再び封印する役目を負う。\n\n魔王が封印されているのは、攻略不可能されているタワーダンジョン。\n\nひょんなことから魔王と意気投合した彼は、\nタワーダンジョンに罠を張り、やってくる女たちとセックスをしまくる！",
+          "tags": [
+            "node-novel",
+            "novel18",
+            "syosetu",
+            "エロトラップ",
+            "ダンジョン経営",
+            "ハーレム",
+            "メイド",
+            "主人公チート級",
+            "書籍化",
+            "男性向け",
+            "異世界ファンタジー",
+            "魔王",
+            "魔術師"
+          ]
+        },
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n4848da"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou18.nar.jp](https://narou18.nar.jp/search.php?text=n4848da&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[转生魔术师运营的迷宫塔吧](https://tieba.baidu.com/f?kw=%E8%BD%AC%E7%94%9F%E9%AD%94%E6%9C%AF%E5%B8%88%E8%BF%90%E8%90%A5%E7%9A%84%E8%BF%B7%E5%AE%AB%E5%A1%94&ie=utf-8 \"转生魔术师运营的迷宫塔\")"
+        ]
       },
       "魔王の始め方": {
         "novel": {
@@ -3591,6 +5707,106 @@
         ]
       }
     },
+    "dmzj": {
+      "食銹末世錄": {
+        "novel": {
+          "title": "錆喰いビスコ",
+          "title_zh": "食銹末世錄",
+          "author": "瘤久保 慎司",
+          "illust": "赤岸K",
+          "illusts": [
+            "mocha"
+          ],
+          "source": "http://q.dmzj.com/2661/index.shtml",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/71%2BbOKGKEVL.jpg",
+          "publisher": "",
+          "publishers": [
+            "dmzj"
+          ],
+          "date": "2019-05-10T13:22:45+08:00",
+          "status": "连载中",
+          "novel_status": 256,
+          "series": {
+            "name": "食锈末世录"
+          },
+          "preface": "　　穿梭于能够锈蚀一切，使人类陷入死亡威胁的「锈蚀风」中，\n　　迅猛粗暴的「蕈菇守护者」赤星毕斯可。\n　　他为了拯救师父，而踏上寻找灵药蕈菇「食锈」的旅程。\n　　毕斯可带著搭档──美貌的少年医师美禄，\n　　投身波澜万丈的冒险中。\n　　他们行经宽广的埼玉铁沙漠、\n　　由毁灭文明的防卫兵器残骸架构而成的城镇、\n　　大章鱼盘据的废弃地下铁路线──\n　　严苛路途中面临的各种威胁，都以美禄的灵机一动，\n　　与毕斯可的必中蕈菇箭一举贯穿！\n　　但旅途的前方却有邪恶县知事的奸计等著他们──",
+          "tags": [
+            "dmzj",
+            "node-novel",
+            "冒险",
+            "日本",
+            "轻之国度"
+          ]
+        },
+        "contribute": [
+          "Kasou",
+          "何阳"
+        ],
+        "options": {
+          "dmzj": {
+            "novel_id": "2661"
+          },
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 4,
+            "startIndex": 1
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "https://twitter.com/cobkubo"
+        ]
+      },
+      "魔法師塔塔": {
+        "novel": {
+          "title": "タタの魔法使い",
+          "title_zh1": "魔法師塔塔",
+          "author": "うーぱー",
+          "illust": "佐藤 ショウジ",
+          "source": "http://q.dmzj.com/2658/index.shtml",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/51ZiWIMzbXL.jpg",
+          "publisher": "",
+          "publishers": [
+            "dmzj"
+          ],
+          "date": "2019-05-09T15:51:53+08:00",
+          "status": "连载中",
+          "novel_status": 256,
+          "series": {
+            "name": "魔法师塔塔"
+          },
+          "preface": "　　2015年7月22日12点20分。\n　　自称异世界魔法师的谜样女性塔塔突然间出现在弘桥高中一年A班的教室。\n　　这正是有如童话「哈梅尔的吹笛人」的情节\n　　而有此名称的公立高中消失事件的开端。\n　　「我决定要实现这所学校中所有人的心愿。」\n　　如同魔法师的宣言，学校学生写在\n　　国中毕业纪念册上的「将来的梦想」全部实现。\n　　一切愿望全部实现的世界──\n　　最终造成超过两百人牺牲的求生旅程就此揭开序幕……",
+          "tags": [
+            "dmzj",
+            "node-novel",
+            "冒险",
+            "日本",
+            "魔法"
+          ]
+        },
+        "contribute": [
+          "天使动漫",
+          "轻之国度",
+          "轻之国度录入组",
+          "陈士晋"
+        ],
+        "options": {
+          "dmzj": {
+            "novel_id": "2658"
+          },
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 4,
+            "startIndex": 1
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        }
+      }
+    },
     "epub_out": {
       "異世界で魅了チートを使って奴隷ハーレムをつくってみた": {
         "novel": {
@@ -3663,7 +5879,7 @@
           "publisher": "syosetu",
           "date": "2019-03-01T18:00:00+08:00",
           "status": "連載",
-          "novel_status": 256,
+          "novel_status": 768,
           "series": {
             "name": "冒険者ライセンスを剥奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する"
           },
@@ -3682,6 +5898,7 @@
             "主人公最強",
             "仲良し親子",
             "加速する親バカ",
+            "家族",
             "年の差",
             "幼女",
             "旅",
@@ -3690,11 +5907,19 @@
             "残酷な描写あり",
             "父親",
             "疑似家族",
+            "親情",
             "養育"
-          ]
+          ],
+          "illuss": [
+            "唯浦史"
+          ],
+          "title_tieba": "得到了爱女悠闲的讴歌人生"
         },
         "contribute": [
-          "人生就像除錯"
+          "七七七千愛",
+          "人生就像除錯",
+          "烈火寒冰",
+          "聖光武士愛迪生"
         ],
         "options": {
           "downloadOptions": {
@@ -3713,11 +5938,142 @@
         },
         "link": [
           "[narou.nar.jp](https://narou.nar.jp/search.php?text=n0442em&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[得到了爱女悠闲的讴歌人生吧](https://tieba.baidu.com/f?kw=%E5%BE%97%E5%88%B0%E4%BA%86%E7%88%B1%E5%A5%B3%E6%82%A0%E9%97%B2%E7%9A%84%E8%AE%B4%E6%AD%8C%E4%BA%BA%E7%94%9F&ie=utf-8 \"得到了爱女悠闲的讴歌人生\")"
+          "[得到了爱女悠闲的讴歌人生吧](https://tieba.baidu.com/f?kw=%E5%BE%97%E5%88%B0%E4%BA%86%E7%88%B1%E5%A5%B3%E6%82%A0%E9%97%B2%E7%9A%84%E8%AE%B4%E6%AD%8C%E4%BA%BA%E7%94%9F&ie=utf-8 \"得到了爱女悠闲的讴歌人生\")",
+          "[dm5](http://www.dm5.com/manhua-beibaoduolemaoxianzhezhizhaodedashu/)",
+          "https://masiro.moe/forum.php?mod=forumdisplay&fid=142&page=1"
+        ]
+      }
+    },
+    "game": {
+      "ＶＲＭＭＯ学園で楽しい魔改造のススメ": {
+        "novel": {
+          "title": "ＶＲＭＭＯ学園で楽しい魔改造のススメ ～最弱ジョブで最強ダメージ出してみた～",
+          "title_zh": "VRMMO 學園的愉快魔改推薦～把最弱職業打造出最高傷害～",
+          "author": "ハヤケン",
+          "illust": "晃田ヒカ",
+          "source": "http://ncode.syosetu.com/n3139du/",
+          "cover": "https://images-fe.ssl-images-amazon.com/images/I/611BorQhE0L.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "HJ文庫"
+          ],
+          "date": "2019-01-31T07:00:00+08:00",
+          "status": "完結済",
+          "novel_status": 257,
+          "series": {
+            "name": "ＶＲＭＭＯ学園で楽しい魔改造のススメ ～最弱ジョブで最強ダメージ出してみた～"
+          },
+          "preface": "喜愛遊戲的少年，高代蓮的興趣是魔改一般人評價為廢柴職業或者垃圾技能，讓其發光發熱！！\n這樣的蓮接受了從國中時代的網友──光的邀請，進入了以VRMMO遊戲進行教學的特別高中！\n蓮很自然地選擇了遊戲中最弱的職業【紋章術師】，開始了他將這職業變為擁有最強火力的魔改工程──\n「誒! 光是女生嗎!?」「沒錯唷?」和真實身份為美少女的網遊好友一起創造最強的遊戲生活\n　　　　　　　── 現正開始!\n\n※ＨＪ文庫様より書籍１～６巻（完結）発売中です！\n\nゲーム大好き少年・高代蓮の趣味は、世間的に評価の低い不遇職や残念スキルを魔改造し、輝かせることである!!\nそんな蓮は、中学からのネトゲ友達であるアキラの誘いを受け、VRMMOゲームを授業に取り入れた特別な高校へと入学! 息をするようにゲーム内最弱の呼び声高い【紋章術師】を選んだ蓮は、超低火力の支援職だったジョブ性能を、一撃大ダメージ狙いのロマン仕様にするべく魔改造を開始するが――\n「え、アキラって女の子だったのかよ!?」「そうだよ?」実は美少女だったネトゲ友達と一緒に最強ゲームライフ、開始!",
+          "tags": [
+            "R15",
+            "SF",
+            "VRMMO",
+            "VRゲーム[SF]",
+            "node-novel",
+            "syosetu",
+            "お前、女だったのか！",
+            "エロ衣装",
+            "ジャイアントキリング",
+            "ネトゲの学園",
+            "ロマン砲",
+            "主人公最強",
+            "完結済",
+            "書籍化",
+            "検証厨",
+            "極振り",
+            "男主人公",
+            "遊戲",
+            "銭投げ",
+            "頭のいいバカ",
+            "魔改造"
+          ]
+        },
+        "contribute": [
+          "6667787#6757",
+          "Kaya_Irimi"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n3139du"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n3139du&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[vrmmo学园的愉快魔改吧](http://dq.tieba.com/f?kw=vrmmo%E5%AD%A6%E5%9B%AD%E7%9A%84%E6%84%89%E5%BF%AB%E9%AD%94%E6%94%B9&ie=utf-8&tp=0 \"vrmmo学园的愉快魔改\")"
         ]
       }
     },
     "girl": {
+      "chase　～何度ループしてもあなたを救えない物語～": {
+        "novel": {
+          "title": "chase　～何度ループしてもあなたを救えない物語～",
+          "title_zh": "chase　～即使輪回無數次也無法拯救你的故事～",
+          "author": "kiki",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n2654ev/",
+          "cover": "",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "Invalid date",
+          "status": "短編",
+          "novel_status": 0,
+          "series": {
+            "name": "chase　～何度ループしてもあなたを救えない物語～"
+          },
+          "preface": "",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ガールズラブ",
+            "シリアス",
+            "タイムリープ",
+            "ハッピーエンド",
+            "恋愛",
+            "残酷な描写あり",
+            "現代",
+            "現実世界[恋愛]",
+            "現実世界〔恋愛〕",
+            "百合",
+            "青春"
+          ]
+        },
+        "contribute": [
+          "pinshi519"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n2654ev"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n2654ev&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n2654ev/)",
+          "https://www.lightnovel.cn/thread-939937-1-1.html"
+        ]
+      },
       "Free Life Fantasy Online ～人外姫様、始めました～": {
         "novel": {
           "title": "Free Life Fantasy Online ～人外姫様、始めました～",
@@ -3951,6 +6307,187 @@
           "[lightnovel.cn](https://www.lightnovel.cn/thread-947509-1-1.html)"
         ]
       },
+      "エリナの成長物語（引き籠り女神の転生）": {
+        "novel": {
+          "title": "エリナの成長物語（引き籠り女神の転生）",
+          "title_zh1": "艾麗娜的成長物語",
+          "author": "リエトー",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n0463dq/",
+          "cover": "",
+          "publisher": "syosetu",
+          "date": "2019-03-13T01:00:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "エリナの成長物語（引き籠り女神の転生）"
+          },
+          "preface": "原本是女神的她,在异世界作為人類的成長的故事。因某件事而隱居的女神艾麗娜=帕森，由於那個世界的神在進行勇者轉生時,操作失誤動作,成為了人類。而且不是從胎兒轉生過來,而是轉生為人類幼兒的艾麗娜,被某貴族撿到作為養女生活著。\n\n　女神だった女の子が異世界で人間として成長していく物語です。とある用事で引き籠っていた女神エリナ＝パーソンは、その世界の神による勇者転生の誤作動で、人間になってしまいます。胎児からの生まれ変わり転生ではなく、人間に転じて生きることになったエリナは、ある貴族に拾われて養女として生活することなりました。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ほのぼの",
+            "シリアス",
+            "ハイファンタジー",
+            "ファンタジー",
+            "冒険",
+            "勇者",
+            "女主人公",
+            "女神",
+            "日常",
+            "残酷な描写あり",
+            "異能力バトル",
+            "西洋",
+            "超能力",
+            "魔法",
+            "魔王"
+          ]
+        },
+        "contribute": [
+          "黑紋蝶"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n0463dq"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n0463dq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=129&page=1)"
+        ]
+      },
+      "ポンコツ少女の電脳世界救世記": {
+        "novel": {
+          "title": "ポンコツ少女の電脳世界救世記　～外れスキル『アイテムボックス』は時を超える～",
+          "title_short": "廢柴少女的電腦世界救世記",
+          "title_zh": "廢柴少女的電腦世界救世記　～不中用的技能『物品箱』是超越時間的～",
+          "author": "kiki",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n0074eg/",
+          "cover": "",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2018-01-30T20:57:00+08:00",
+          "status": "完結済",
+          "novel_status": 1,
+          "series": {
+            "name": "ポンコツ少女の電脳世界救世記　～外れスキル『アイテムボックス』は時を超える～"
+          },
+          "preface": "呂特莉是一名吊車尾的冒險者。儘管她持有方便的技能『物品箱』，但由於它帶有“放進去的物品立即就會腐爛”的bug，她過着甚至連房租也付不出的日子。\n\n不過――她不是人類，而是在某個MMO裡、配備了先進的AI的NPC。\n然後這個MMO『Fairy Story Online（通稱FSO）』即將在20XX年3月31日結束服務。\n玩家將會從世界上一齊消失――而在終結的世界裡，只留下了強大的魔物和弱小的NPC。\n\n當NPC被魔物們逼到絕境時，她終於發現了，『物品箱』除了將物品放進去以外的其他用法。\n運用甚至能超越時空和破壞遊戲功能的技能的力量，她能夠拯救逐漸崩壞的世界嗎。\n\nルトリーは落ちこぼれ冒険者である。彼女は便利なスキル『アイテムボックス』を持ちながらも、”アイテムを入れるとすぐに腐ってしまう”というバグを抱えていたために、家賃すら払えない日々を過ごしていた。\n\nしかし――彼女は人間ではなく、高度なAIを搭載した、とあるMMOのNPCであった。\nそしてMMO『フェアリー・ストーリー・オンライン（通称FSO)』は20XX年3月31日をもってサービスを終了する。\n世界からは一斉にプレイヤーが消え――そして終わった世界には、強力なモンスターと非力なNPCだけが残された。\n\nNPCがモンスターたちに追い詰められる中、彼女はやがて、『アイテムボックス』にアイテムを入れる以外の使いみちがあることに気づく。\n時空すら超え、ゲームの機能すらも破壊するスキルの力を駆使し、彼女は壊れゆく世界を救うことができるのだろうか。\n\nノベルバにも掲載されています。\n\n完結済みです。",
+          "tags": [
+            "MMORPG",
+            "R15",
+            "SF",
+            "VRゲーム[SF]",
+            "node-novel",
+            "syosetu",
+            "ある意味チート",
+            "アイテムボックス",
+            "ガールズラブ",
+            "ゲーム",
+            "シリアス",
+            "スキル",
+            "ダンジョン",
+            "冒険",
+            "女主人公",
+            "完結済",
+            "百合"
+          ]
+        },
+        "contribute": [
+          "6757",
+          "Genora"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n0074eg"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n0074eg&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=132&page=1)"
+        ]
+      },
+      "三葉物語": {
+        "novel": {
+          "title": "みつばものがたり",
+          "title_zh": "三葉物語",
+          "author": "七沢またり",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n0388ee/",
+          "cover": "",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-03-07T16:43:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "みつばものがたり"
+          },
+          "preface": "どこからかすっ飛んできた少女みつばのなんちゃって戦記？　高貴な家に生まれたけれど、何やら事情がありそうで。なんやかんやでいつの間にやら士官学校送りの刑。そんな感じの少女の物語です。いっぱい遊んだり戦ったり政治したり死んだりします。\nなんちゃってなのでおおらかな気分で見守ってください。ねじがすっ飛んでる人たちがたまに出てきますがそういう感じのお話です。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "オリジナル戦記",
+            "シリアス",
+            "ハイファンタジー",
+            "ファンタジー",
+            "女主人公",
+            "戦記風",
+            "残酷な描写あり",
+            "異世界転生"
+          ]
+        },
+        "contribute": [
+          "布枝道123",
+          "雪拉的禮贊"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n0388ee"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n0388ee&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[从极星飘落的少女吧](https://tieba.baidu.com/f?kw=%E4%BB%8E%E6%9E%81%E6%98%9F%E9%A3%98%E8%90%BD%E7%9A%84%E5%B0%91%E5%A5%B3&ie=utf-8 \"从极星飘落的少女\")"
+        ]
+      },
       "今度こそ幸せになります！": {
         "novel": {
           "title": "今度こそ幸せになります!",
@@ -4064,7 +6601,558 @@
         },
         "link": [
           "[narou.nar.jp](https://narou.nar.jp/search.php?text=n4719ff&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "https://tieba.baidu.com/p/6028562307"
+          "https://tieba.baidu.com/p/6028562307",
+          "[你这种家伙别想打赢魔王吧](https://tieba.baidu.com/f?kw=%E4%BD%A0%E8%BF%99%E7%A7%8D%E5%AE%B6%E4%BC%99%E5%88%AB%E6%83%B3%E6%89%93%E8%B5%A2%E9%AD%94%E7%8E%8B&ie=utf-8&tp=0 \"你这种家伙别想打赢魔王\")"
+        ]
+      },
+      "勿論、慰謝料請求いたします！": {
+        "novel": {
+          "title": "勿論、慰謝料請求いたします！",
+          "title_zh1": "当然请给我精神损失费",
+          "author": "soy",
+          "illust": "m/g",
+          "illusts": [
+            "無糖党"
+          ],
+          "source": "http://ncode.syosetu.com/n2665dw/",
+          "cover": "https://dip6t338iqjb9.cloudfront.net/upload/save_image/694/N3740469825.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-05-28T10:59:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "勿論、慰謝料請求いたします！"
+          },
+          "preface": "我是最喜欢存钱且最讨厌亏损、追求利益的伯爵千金尤莉雅丝。\n虽然知道婚约者是头脑很差的人，但没想到会到这种地步。\n如果要解除婚约的话，请付给我慰问金。\n是解除婚约的故事！并非转生或者召唤的故事。\n会有残酷描写的标签是作为保险。\n\n　私はお金儲けが大好きで損することが大嫌いな商魂逞しい伯爵令嬢ユリアス。\n　婚約者は頭の悪い人間だと知ってはいたがここまでとは知らなかった。\n　婚約破棄するなら慰謝料いただきます！\n　婚約破棄ものです！　\n　転生、召喚ものではございません！\n　残酷描写ありは保険です。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "商魂",
+            "婚約破棄",
+            "恋愛",
+            "悪役令嬢",
+            "慰謝料請求",
+            "残酷な描写あり",
+            "異世界[恋愛]",
+            "異世界〔恋愛〕"
+          ]
+        },
+        "contribute": [
+          "yushuandorisli",
+          "ミミ",
+          "九久酒玖",
+          "春绘",
+          "獸耳少年",
+          "酒保"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n2665dw"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n2665dw&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n2665dw/)",
+          "[当然请给我精神损失费吧](https://tieba.baidu.com/f?kw=%E5%BD%93%E7%84%B6%E8%AF%B7%E7%BB%99%E6%88%91%E7%B2%BE%E7%A5%9E%E6%8D%9F%E5%A4%B1%E8%B4%B9&ie=utf-8 \"当然请给我精神损失费\")",
+          "https://pan.baidu.com/s/1-108FSHD8-KyL2I2s1oDdg jzkk",
+          "http://www.dm5.com/manhua-dangranqinggeiwojingshensunshifei/",
+          "https://twitter.com/mutotamu"
+        ]
+      },
+      "十歳の最強魔導師": {
+        "novel": {
+          "title": "十歳の最強魔導師",
+          "title_zh1": "",
+          "author": "天乃聖樹",
+          "illust": "フカヒレ",
+          "source": "http://ncode.syosetu.com/n6583dj/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91xxwY7IZML.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-13T19:00:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "十歳の最強魔導師"
+          },
+          "preface": "十歲的少女菲利斯，在魔石礦山工作的奴隸。\n但是，無限的魔法耐性能看見是非常驚人的才能，變成進入魔法學校入學的事。\n被溫柔的人們守護著，用猛烈速度成長才能的菲利斯。\n將那個力量入手，森羅萬象的勢力採取行動。\n\n她是非常厲害的魔導師而不知道，只有菲利斯。\n菲利斯今天也能吃很多飯的話就滿足了！\n\n※書籍版の５巻が１１月３０日に発売されます！\n（https://herobunko.com/books/hero45/9072/）\n\n「自分が最強だと知らない」最強の魔導師、出現！\n\n十歳の少女フェリスは、魔石鉱山で働く奴隷だった。\nしかし、魔法耐性が無限という凄まじい才能を見出され、魔法学校へ入学することになる。\n優しい人たちに見守られ、猛スピードで才能を伸ばしていくフェリス。\nその力を手に入れようと、有象無象の勢力が動き出す。\n\n彼女が凄い魔導師だということを知らないのは、フェリスだけ。\nフェリスは今日もごはんがいっぱい食べられれば満足です！",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "チート",
+            "ハイファンタジー",
+            "ハッピーエンド",
+            "ファンタジー",
+            "人外",
+            "俺TUEEE",
+            "剣と魔法",
+            "女主人公",
+            "学園",
+            "少女",
+            "残酷な描写あり",
+            "無双",
+            "異世界",
+            "魔法"
+          ]
+        },
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n6583dj"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n6583dj&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[十岁的最强魔导师吧](https://tieba.baidu.com/f?kw=%E5%8D%81%E5%B2%81%E7%9A%84%E6%9C%80%E5%BC%BA%E9%AD%94%E5%AF%BC%E5%B8%88&ie=utf-8 \"十岁的最强魔导师\")",
+          "[esjzone](https://www.esjzone.cc/detail/1550107034.html)"
+        ]
+      },
+      "原千金未婚媽媽": {
+        "novel": {
+          "title": "元貴族令嬢で未婚の母ですが、娘たちが可愛すぎて冒険者業も苦になりません",
+          "title_zh1": "原千金兼未婚媽媽、因為女兒們很可愛所以當冒險者完全不覺得辛苦",
+          "author": "大小判",
+          "illust": "まろ",
+          "source": "http://ncode.syosetu.com/n2129ei/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91v9n0PqG6L.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-03-12T02:40:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "ざまぁシリーズ"
+          },
+          "preface": "魔物猖獗的異世界。\n元贵族千金、夏莉因冤罪而失去了一切。\n\n重生為【不朽】的不死者，成為了斬首災害級魔物，將古龍一刀兩斷那樣的冒险者。但、外表冷酷的她內心卻是—「該怎麼辦！我的女兒們實在太可愛了」重度的女兒控！\n\n拋棄過去的仇恨。那位母親……只希望與至愛的雙胞胎女兒們安靜的生活。直至某日，收到了三天後龍率領的魔物軍團即將進攻城鎮。但是，那天剛好是女兒們的家長日。《白之劍鬼》受世人所恐懼的夏莉，是否能擊破敵軍，順利參加家長日呢？\n\n最強的劍鬼  也是個天媽  冒險幻想！\n\n　２０１９年、３月９日。ＴＯブックス様より第２巻発売が決定しました！　詳しくはイラストが記載された活動報告をどうぞ！\n　第二章、帝国ざまぁ編始めました！\n　白髪とオッドアイを蛇蝎の如く嫌う帝国貴族、その最高位である公爵家に生まれたシャーリィは、見事な白髪と、紅色と蒼色のオッドアイを持って生まれてきた。\n　血の繋がった家族からも疎まれ、巡り会った自分を愛してくれる婚約者も実の妹に奪われ、冤罪を着せられた上に投獄されてしまう。\n　激しい拷問の末、自分を貶めた全てに復讐を誓い、運良く脱獄に成功したのだが、彼女のお腹には既に元婚約者との間に出来た子供が宿っていた。\n　例え憎い男の血を引いていたとしても、生まれてくる子供に罪はない。せめて無事に生んで、後は孤児院にでも預けようとしたのだが――――\n\n「どうしましょう、私の娘たちが世界一可愛いんですけど」\n\n　お腹を痛めて生んだ我が子の可愛さにノックアウトされたシャーリィ。復讐よりも子育てを選び、帝国を飛び出して隣の王国の辺境の街に移り住んだ彼女は養育費や生活費を稼ぐために冒険者ギルドの扉を開く。目立たず、ひっそりと、帝国に気付かれないように暮らせればいいと思っていたが――――\n\n「シャーリィさん！　王都の近くに天災級の魔物が現れたんですけど、依頼を引き受けてくれませんか！？」\n「断ります。今日は娘たちの学校の宿題を手伝う約束をしていますので」\n\n　十年後、何時の間にか世界トップレベルの冒険者、《白の剣鬼》と呼ばれるようになってしまった。\n\n\n　主人公復讐を止めてますが、後に盛大なざまあが有ります。\n　日間ランキング、早くも１位達成！　皆さまの評価、本当にありがとうございます！",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ざまぁ",
+            "すれ違い",
+            "オリジナル戦記",
+            "クール＆ツンデレ",
+            "ハイファンタジー",
+            "ファンタジー",
+            "不老",
+            "冒険者",
+            "冤罪",
+            "女主人公",
+            "女兒",
+            "婚約破棄",
+            "家族",
+            "年の差",
+            "広義的にはロリババア",
+            "復讐",
+            "恋愛",
+            "悪役令嬢",
+            "残酷な描写あり",
+            "異世界召喚",
+            "異色瞳",
+            "親バカ",
+            "親子"
+          ],
+          "title_en1": "Even Though I'm a Former Noble and a Single Mother, My Daughters are too Cute and Working as an Adventurer Isn't Too Much of a Hassle"
+        },
+        "contribute": [
+          "enterpr1se",
+          "nyancats2012"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "s8227d",
+            "novel_id": "n2129ei"
+          },
+          "textlayout": {
+            "allow_lf2": false
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n2129ei&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[ざまぁシリーズ](http://ncode.syosetu.com/s8227d/)",
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=130&page=1)",
+          "https://www.novelupdates.com/series/even-though-im-a-former-noble-and-a-single-mother-my-daughters-are-too-cute-and-working-as-an-adventurer-isnt-too-much-of-a-hassle/"
+        ]
+      },
+      "幼馴染二人から告白され困惑するも勢いで３Ｐに持ちこもうとする女の子の話": {
+        "novel": {
+          "title": "幼馴染二人から告白され困惑するも勢いで３Ｐに持ちこもうとする女の子の話",
+          "title_zh": "關於一個被兩名青梅竹馬告白之後、雖然困惑但還是順勢而為打算搞3P的女孩子的故事",
+          "author": "kiki",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n7857eu/",
+          "cover": "",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "Invalid date",
+          "status": "短編",
+          "novel_status": 0,
+          "series": {
+            "name": "幼馴染二人から告白され困惑するも勢いで３Ｐに持ちこもうとする女の子の話"
+          },
+          "preface": "",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ガールズラブ",
+            "ギャグ",
+            "ノリと勢い",
+            "ラブコメ",
+            "女主人公",
+            "恋愛",
+            "現代",
+            "現実世界[恋愛]",
+            "現実世界〔恋愛〕",
+            "百合"
+          ]
+        },
+        "contribute": [
+          "kosudarika"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n7857eu"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n7857eu&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n7857eu/)",
+          "https://masiro.moe/forum.php?mod=viewthread&tid=6535&extra=page%3D1"
+        ]
+      },
+      "最強的吸血姬渴望妹妹": {
+        "novel": {
+          "title": "最强的吸血姬渴望妹妹",
+          "title_zh": "最强的吸血姬渴望妹妹",
+          "author": "緋色の雨",
+          "illust": "",
+          "illusts": [
+            "カイシシシ",
+            "シソ"
+          ],
+          "source": "http://ncode.syosetu.com/n9188eg/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91kNzGno4XL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-02-26T23:35:00+08:00",
+          "status": "完結済",
+          "novel_status": 769,
+          "series": {
+            "name": "異世界姉妹と同じ世界の物語"
+          },
+          "preface": "自稱普通的女孩子-莉斯提亞！為了成為姐姐痛愛妹妹，從一千年的沉睡中蘇醒！\n\n　＊8月10日にTOブックスから一巻が発売予定です。\n　真祖のお姫様であるリスティアは、人間の女の子を妹にしようと人里に降り立った。\n　けれど、困っている女の子を助けようとドラゴンを消し炭にしたら怯えられ、自作のアクセサリーをプレゼントしたらアーティファクトだと大騒ぎされる。\n　リスティアは、自分がどれだけ規格外な存在なのかまるで理解していなかった。\n　そうして無自覚に頑張り続けた結果――\n「さすが天使ですね、リスティア様！」\n「あたしは妹が欲しいだけの、普通の女の子なんだけどなぁ」\n　なにやら予想と違う方向に慕われてしまう。果たして、リスティアは妹を手に入れることが出来るのか!?　自称普通の女の子の、普通じゃないスローライフが始まる！\n\n　＊普通がゲシュタルト崩壊を起こすような物語で、ストレスなく読める展開を心がけています。\n　☆のついている話に、頂いたファンアートを載せています。",
+          "tags": [
+            "node-novel",
+            "syosetu",
+            "ほのぼの",
+            "スローライフ",
+            "ハイファンタジー",
+            "ファンタジー",
+            "ユリ",
+            "勘違い",
+            "吸血鬼",
+            "女主人公",
+            "姉妹",
+            "完結済",
+            "敵に厳しい世界",
+            "書籍化",
+            "最強",
+            "無双",
+            "無自覚",
+            "異世界",
+            "百合",
+            "真祖",
+            "知識チート",
+            "魔法"
+          ],
+          "title_jp1": "最強の吸血姫は妹が欲しいっ！",
+          "title_jp2": "とにかく妹が欲しい最強の吸血姫は無自覚ご奉仕中！",
+          "title_tieba": "想要妹妹的最强吸血姬"
+        },
+        "contribute": [
+          "yukari"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "s5161e",
+            "novel_id": "n9188eg"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n9188eg&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[同じ世界の物語](http://ncode.syosetu.com/s5161e/)",
+          "[想要妹妹的最强吸血姬吧](https://tieba.baidu.com/f?kw=%E6%83%B3%E8%A6%81%E5%A6%B9%E5%A6%B9%E7%9A%84%E6%9C%80%E5%BC%BA%E5%90%B8%E8%A1%80%E5%A7%AC&ie=utf-8 \"想要妹妹的最强吸血姬\")",
+          "[dm5](http://www.dm5.com/manhua-zuiqiangdexixuejikewangmeimei/)"
+        ]
+      },
+      "村民轉生武器使": {
+        "novel": {
+          "title": "村人に転生した私は、最強の“武器使い”として気ままな日々を『殺してでも奪い取る』",
+          "title_zh": "轉生成村民的我作為最強的“武器使用者”每天盡情地殺戮與掠奪",
+          "title_zh1": "村民轉生武器使",
+          "title_zh2": "轉生為村民的我作為最強的“武器使”每天盡情地『殺戮與掠奪』",
+          "author": "kiki",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n2052ez/",
+          "cover": "",
+          "publisher": "syosetu",
+          "date": "2019-01-01T02:03:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "村人に転生した私は、最強の“武器使い”として気ままな日々を『殺してでも奪い取る』"
+          },
+          "preface": "紅葉被燒死在雙親親手引起的火災之中。  \n她醒來後轉生成了和vrmmo相似的異世界裡最弱的職業------村民。  \n而村民的武器適性很低，根本沒有戰鬥的能力。  \n但是紅葉可以和游戲一樣打開菜單畫麵，通過引導出裝備上的武器的力量，獲得了了這個世界上絕無僅有的高武器適性與技能。  \n更何況，在有素材的情況下一下子就能做出道具的技能，使用著無條件治療傷口的道具，這些讓她獲得了超乎常識的最強的力量。  \n\"在這個世界上，我或許可以成為理想中的自己。\"  \n這樣想著，這樣祈願著的紅葉，為了獲得真正的自由，時而也奪取著他人的性命，繼續前進著。  \n在沒有雙親與規則束縛的世界裡，相信自己能幸福地生活。  \n（ 舊名：武器如果不裝備上就沒有意義哦）\n\n両親の手により起きた火事に巻き込まれ、焼死したモミジ。\n彼女は目を覚ますと、ＶＲＭＭＯに似た異世界に最弱職“村人”として転生していた。\n村人は武器の適正が低く、まともに戦う手段を持たない。\nだがゲームと同じようにメニュー画面が開けるモミジは、装備した武器の力を引き出すことで、この世界の人間には無い、高い武器適正やスキルを得ることに成功する。\nさらに、素材さえあれば一瞬でアイテムを作れる製造スキルや、無条件で傷を癒やす回復アイテムの力を駆使し、常識外れの力で最強へと上り詰めていく。\n\n「この世界でなら、私は理想の自分になれるかもしれない」\n\nそう考えるモミジは、その願いをかなえるため、そして真の自由を得るため、時に他者の命を奪ってでも前に進み続ける。\n両親や規則に縛られないこの世界でなら、幸せに生きられると信じて。\n\n\n\n（旧題：武器は装備しないと意味がありませんよ？）",
+          "tags": [
+            "GL",
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ガールズラブ",
+            "スキル",
+            "ステータス",
+            "チート",
+            "ハイファンタジー",
+            "ハーレム",
+            "ファンタジー",
+            "メニュー画面",
+            "主人公最強",
+            "仲間も最強",
+            "冒険",
+            "女主人公",
+            "学園",
+            "暗殺者",
+            "残酷な描写あり",
+            "異世界転生",
+            "百合",
+            "装備",
+            "遊戲",
+            "ＲＰＧ風"
+          ],
+          "title_jp_old": "武器は装備しないと意味がありませんよ？"
+        },
+        "contribute": [
+          "6667787#6757",
+          "charsaznable",
+          "cyy"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n2052ez"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n2052ez&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[lightnovel](https://www.lightnovel.cn/thread-940273-1-1.html)"
+        ]
+      },
+      "自覚なし聖女の異世界モフモフ道中": {
+        "novel": {
+          "title": "自覚なし聖女の異世界モフモフ道中",
+          "title_zh": "無自覺聖女的摸呼摸呼旅程",
+          "author": "犬魔人",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n5694fk/",
+          "cover": "",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-05-19T20:50:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "自覚なし聖女の異世界モフモフ道中"
+          },
+          "preface": "在前世因為不幸而死去的彼方，獲得無窮才能與身分誕生於異世界。\n人們流傳著，其神聖的舉止就如同是過去將世界從渾沌中拯救的『起始聖女』再世般。\n但是，彼方並不是選擇聖女，而是選擇被稱作是沒用職業的魔物使。\n要說為何，彼方的願望就只有與魔物關係變好，盡情摸乎摸乎而已。\n彼方雖然只是因為自己而行動，但在受到幫助的人們眼中，簡直是聖女般。\n這是一部為了摸呼摸呼而無自覺留下聖女痕跡的異世界旅途。\n\n前世で孤独と不幸の中で死んだカナタは、有り余る才能とステータスを持って異世界に生まれ落ちる。\nその神々しい立ち振舞いから、かつて世界を混沌の中から救った【始まりの聖女】の再来では、と人々に噂されていた。\n\nしかしカナタは聖女になることを選ばず、ハズレ職と言われる魔物使いを選択する。\n\nなぜならば、カナタの望みは、魔物たちと仲良くなって思う存分モフモフすることのみ。\n\n自分の望むがままに行動するカナタだったが、その行いに救われた人々の目にはまさしく聖女として映るのだった。\n\nこれはモフモフしながら無自覚に聖女の痕跡を残していく異世界道中である。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ほのぼの",
+            "もふもふ",
+            "ギャグ",
+            "グルメ",
+            "チート",
+            "チートなペットたち",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ハッピーエンド",
+            "ファンタジー",
+            "中世",
+            "冒険",
+            "女主人公",
+            "残酷な描写あり",
+            "無自覚な聖女",
+            "異世界転生",
+            "西洋",
+            "身分差",
+            "近世"
+          ]
+        },
+        "contribute": [
+          "殘星塵"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n5694fk"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n5694fk&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n5694fk/)",
+          "https://www.lightnovel.us/thread-974848-1-1.html"
+        ]
+      },
+      "魔王の娘の百合戦記": {
+        "novel": {
+          "title": "魔王の娘の百合戦記〜TS転生した勇者は可愛い魔族やモン娘に囲まれた平穏な暮らしを守りたい～",
+          "title_short": "魔王の娘の百合戦記",
+          "title_zh1": "魔王的女儿百合战记",
+          "title_zh2": "魔王之女的百合战记",
+          "author": "新生べっこう飴",
+          "illust": "みすみ",
+          "source": "http://ncode.syosetu.com/n3487fe/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/711Jhp3EzvL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-20T21:45:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "魔王の娘の百合戦記〜TS転生した勇者は可愛い魔族やモン娘に囲まれた平穏な暮らしを守りたい～"
+          },
+          "preface": "一边完成魔王讨伐，根据聚会成员的谋略被装上了处刑台的勇者。死之际，使用能力离开了身体的他的魂，如何在自己打倒了的魔王的女儿·eriena中转生了！作为魔王的女儿类稀有的魔力和，作为勇者积累了的经验。拥有绝对力量决定作为艾丽娜生活的原勇者，虽然心里藏着对背叛自己的人们的复仇，却无法舍弃失去魔王而荒废的魔界……。\n\n［2019/4/5にぶんか社BKブックス様から書籍化します。手直しも書き下ろしも加えております！　詳細は割烹をご覧ください！］\n\n　あらゆる才能を持った男は最強故に孤独だった。そんな思いから創り出した、自らの才能を分け与える技能、『譲渡』で仲間を作ったが……最期には魔王を倒したところで嵌められて処刑された。絆などなかったのだ。\n　死の間際、魂の『譲渡』を使った彼は、自身が倒した魔王の娘・エリーナに転生してしまった！\n\n　そして、魔王の娘としての無尽蔵な魔力と勇者として積み重ねてきた経験を併せ持ったエリーナとして生きていくことを決めた。自分を裏切った者達への復讐心を胸に抱えつつも、新生魔王として立ち上がったエリーナの下には、今度こそ真の仲間と呼べる魔族達が集うのだった。",
+          "tags": [
+            "R15",
+            "TSF",
+            "node-novel",
+            "syosetu",
+            "やり直し系",
+            "オリジナル戦記",
+            "ガールズラブ",
+            "シリアス気味？",
+            "ハイファンタジー",
+            "ファンタジー",
+            "不遇スタート",
+            "主人公最強覚醒",
+            "優しい世界",
+            "冒険",
+            "少しざまぁあり",
+            "書籍化",
+            "残酷な描写あり",
+            "現地転生",
+            "男→女主人公",
+            "異世界",
+            "百合",
+            "魔王の娘"
+          ],
+          "title_zh3": "魔王女儿的百合战记"
+        },
+        "contribute": [
+          "6757",
+          "JUS0422",
+          "虚雪之葎"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n3487fe"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n3487fe&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[魔王的女儿百合战记吧](https://tieba.baidu.com/f?kw=%E9%AD%94%E7%8E%8B%E7%9A%84%E5%A5%B3%E5%84%BF%E7%99%BE%E5%90%88%E6%88%98%E8%AE%B0&ie=utf-8 \"魔王的女儿百合战记\")",
+          "https://book.uki.moe/book-2/"
         ]
       }
     },
@@ -4112,7 +7200,8 @@
             "百合",
             "魔法",
             "魔王"
-          ]
+          ],
+          "title_zh3": "你这种家伙别想打赢魔王"
         },
         "contribute": [
           "6667787#6757",
@@ -4157,9 +7246,321 @@
           "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=90)",
           "[lightnovel.cn](https://www.lightnovel.cn/thread-950403-1-1.html)"
         ]
+      },
+      "惡役轉生但是為什麼會變成這樣": {
+        "novel": {
+          "title": "悪役転生だけどどうしてこうなった。",
+          "title_zh1": "惡役轉生但是為什麼會變成這樣",
+          "author": "関村イムヤ",
+          "illust": "山下 ナナオ",
+          "source": "http://ncode.syosetu.com/n6613ck/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91UFnt6W9vL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-02-25T04:09:00+08:00",
+          "status": "",
+          "novel_status": 256,
+          "series": {
+            "name": "悪役転生だけどどうしてこうなった。"
+          },
+          "preface": "　ファンタジー系乙女ゲーの世界の悪役令嬢として転生したエリザ・カルディアは、貴族の娘にも関わらず恋愛ゲームの世界というイメージからは縁遠い幼少期を送る事になる。そもそものゲームの舞台となる学園生活まで生きていられるかすら疑わしいとはどういう事なのか。ゲーム世界では華やかな学園生活に関係ないとばかりに殆ど登場すらしなかった隣国の情勢の変化から、まだ幼女なのに武器を持たねばならない立場になっていく。\n　一体どうしてこうなった。\n\n　チート能力はありません。魔法も使えません。倫理観は、生まれ変わってちょっとおかしくなったかもしれない。\n\n　二稿版になります。旧版よりもゆっくり展開です。\n\n　アリアンローズ様より書籍版全三巻が発売中です。こちらもよろしくお願いいたします。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "その他",
+            "その他〔その他〕",
+            "シリアス",
+            "ダーク",
+            "チート能力無し",
+            "ハイファンタジー〔ファンタジー〕",
+            "ファンタジー",
+            "乙女ゲーム",
+            "前世",
+            "外伝",
+            "夢",
+            "女主人公",
+            "女装",
+            "宗教",
+            "宮廷陰謀劇",
+            "悪役",
+            "悪役令嬢転生",
+            "成り上がり",
+            "戦争",
+            "救いはありません",
+            "時々ほのぼの",
+            "残酷な描写あり",
+            "男装",
+            "異世界転生",
+            "貴族",
+            "領地経営"
+          ],
+          "sources": [
+            "http://ncode.syosetu.com/n0708cs/"
+          ]
+        },
+        "contribute": [
+          "56965速度",
+          "IIPUGII",
+          "MoneyOnlyOK",
+          "Orsted1号",
+          "redsandy0",
+          "sombremal",
+          "treeking0",
+          "十面绘",
+          "可可雪松子",
+          "土之女神",
+          "尘埃院长",
+          "很大书虫",
+          "温血的蛇",
+          "腹黑的轩轩"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "s1455c",
+            "novel_id": "n6613ck"
+          },
+          "textlayout": {
+            "allow_lf2": false
+          }
+        },
+        "link": [
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n6613ck/)",
+          "[悪役転生だけどどうしてこうなった。](http://ncode.syosetu.com/s1455c/)",
+          "[恶役转生但是为什么会变成这样吧](https://tieba.baidu.com/f?kw=%E6%81%B6%E5%BD%B9%E8%BD%AC%E7%94%9F%E4%BD%86%E6%98%AF%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%8F%98%E6%88%90%E8%BF%99%E6%A0%B7&ie=utf-8&tp=0 \"恶役转生但是为什么会变成这样\")",
+          "[整合](https://tieba.baidu.com/p/4757720966 \"整合\")",
+          "[登場人物／用語／簡易年表](https://tieba.baidu.com/p/5516247077 \"登場人物／用語／簡易年表\")",
+          "https://shimo.im/sheets/DW0LrSVl1IsgwxhW/MODOC",
+          "https://pan.baidu.com/s/1agMUJlDXOpYFJx7bxRHSbg bfgp"
+        ]
+      },
+      "王女殿下はお怒りのようです": {
+        "novel": {
+          "title": "王女殿下はお怒りのようです",
+          "title_zh1": "王女陛下生气了",
+          "title_zh2": "王女殿下似乎要生气",
+          "author": "八ツ橋皓",
+          "illust": "凪白みと",
+          "source": "http://ncode.syosetu.com/n4072er/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/71K7cd6gb4L.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-05-11T18:35:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "王女殿下はお怒りのようです＜WEB版＞"
+          },
+          "preface": "作為王女的最強魔術師蕾蒂希爾，在戰爭中死去，向著千年後的世界轉生了。\n她因為沒有魔力而被周圍人認為是一個無能的大小姐，但對蕾蒂希爾來說是一個使用\"魔術\"的奇才。\n在這之後蕾蒂希爾在學園裡看到了千年之後的\"魔術\"後感到了震驚——被那劣質的東西激怒！不能忍受的蕾蒂希爾用\"魔術\"震撼了學院，也被國王所知曉，蕾蒂希爾的\"魔術\"研究全部都化為夢成為泡影？！\n\n將和前世的伴侶相似的少年吉克和被冷落的大小姐米蘭達蕾特一起卷入，重生後改變的王女殿下以自己的道路前進！超越常識的最強魔術譚，開幕！\n\n---\n\n戦乱の世に生きて死んだ最強魔術師の王女が、太平の世に無能の公爵令嬢として転生。\nどうやら周囲の人間にも家族にも嫌われているというかなり詰んだ状況にあるらしく、加えて王女時代の常識とも何一つ噛み合わない。\nいろいろと物申したいことはあるけど、とりあえず一つだけ言わせてほしい。\n\nこの世界の魔術レベル低すぎっっっっ！！！\n\n【書籍版】オーバーラップ文庫より①巻発売中\n2019年4月25日に②巻が発売！\n***コミカライズ決定しました***",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ざまぁ",
+            "ほのぼの？",
+            "オリジナル戦記",
+            "シリアス少々",
+            "チート",
+            "ハッピーエンド",
+            "女主人公",
+            "婚約破棄",
+            "学園",
+            "恋愛",
+            "日常",
+            "残酷な描写あり",
+            "異世界[恋愛]",
+            "異世界〔恋愛〕",
+            "魔法",
+            "魔術"
+          ],
+          "title_zh3": "王女殿下生气了"
+        },
+        "contribute": [
+          "Gaburiru",
+          "吾辈喜欢银毛"
+        ],
+        "options": {
+          "dmzj": {
+            "novel_id": "2654"
+          },
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n4072er"
+          },
+          "textlayout": {
+            "allow_lf2": false
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n4072er&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n4072er/)",
+          "https://github.com/Gaburiru/lightnovels/",
+          "[王女殿下似乎要生气吧](https://tieba.baidu.com/f?kw=%E7%8E%8B%E5%A5%B3%E6%AE%BF%E4%B8%8B%E4%BC%BC%E4%B9%8E%E8%A6%81%E7%94%9F%E6%B0%94&ie=utf-8 \"王女殿下似乎要生气\")"
+        ]
+      },
+      "謙虚、堅実をモットーに生きております！": {
+        "novel": {
+          "title": "謙虚、堅実をモットーに生きております！",
+          "title_zh": "謙虛踏實的生活下去",
+          "author": "ひよこのケーキ",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n4029bs/",
+          "cover": "",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2017-10-20T18:39:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "謙虚、堅実をモットーに生きております！"
+          },
+          "preface": "　　簡單介紹一下，這是一部在『小説家になろう』網站上連載中的小說。\n　　故事的設定是這樣的，一個富商大小姐（吉祥院麗華）在某天突然意識到自己所處的世界是前世某部少女漫畫的世界，前世的自己是個普通的平民，憧憬著漫畫中的場景。\n　　而現在的自己正是少女漫畫中那個品性惡劣的角色，在漫畫里自己飛揚跋扈般欺負女主角，不斷阻撓男主（富商家的公子）和女主（平民家的普通女孩）的戀情发展，最后遭到男主的報復，家里因此而破滅。是可喜可賀的Happy end。\n　　不過，現在的她只是感到了恐懼，于是決定踏踏實實做人，絕對不要重蹈漫畫里自己的覆轍，另外，為了今后也許會家破人亡而開始存錢（以供自己讀大學）。。。。(|||?Д?)\n　　故事是以校園生活為背景，描寫了巨富的子女們的各種日常，校園生活則是從小學開始寫，小學寫完了再寫中學，然后是高中，再之后恐怕會寫大學（漫畫里沒有的部分），可以說是一本流水賬，但與一般看到的流水賬不同，基本上除了主角的內心斗爭之外，几乎沒有“血腥”場面，也不會讓人覺得拖泥帶水。讀者可以輕松愉快地享受謙虛踏實的巨富大小姐行云流水般的日常生活。\n　　故事主要是以女主角（麗華）為第一人稱視點，但每隔十几話會穿插第三人稱視點，從各個角度觀察行動古怪卻可愛的女主角，別樣生動有趣。\n　　故事沒什么波瀾壯闊的起伏，但也並非風平浪靜，雖然女主極力克制自己，避免自己處于風口浪尖，但名門的身世容不得她躲藏，有好多次都硬著頭皮被推到第一戰線，而后发生各種幽默搞笑的事情（讀者角度）。雖然女主試圖低調，但總有人會爬到她頭上，于是就有了這樣的傳聞——妖刀扇子一揮間，校園落下血雨。\n　　（后來學生會禁止她帶扇子，她就改用牡丹花了，效果更勝一籌。。）\n\n---\n\n小学校お受験を控えたある日の事。私はここが前世に愛読していた少女マンガ『君は僕のdolce』の世界で、私はその中の登場人物になっている事に気が付いた。\n私に割り当てられた役は、庶民である主人公をいじめ倒し、主人公と恋に落ちる通称皇帝と呼ばれる御曹司との仲を引き裂く、典型的な悪役お嬢様、吉祥院麗華だった。\n物語の最後で、麗華は皇帝から報復され家ごと破滅させられる。悪役は消え、主人公達は苦難を乗り越えて結ばれる。めでたしめでたし。\nってそんなの困るー！　マンガはそれで終われるけど、私には没落後の人生があるんだから！\n主人公達は恋だ、愛だとどうぞお好きに騒いでいてくれてて結構。私は皇帝の怒りを買わないように、存在消してます。\nえっ？悪役がいないから物語が上手く進まない？　でも私は没落後を見据え、貯金と勉強に忙しいんです。少しでも破滅を回避する為に、皇帝には関わりたくないんです。運命のカップルなら、障害がなくても自力で盛り上がって下さいよ。\n前世はド庶民。現世はお金持ちの家の悪役お嬢様。ジャンクフードの味が忘れられず、こっそり家を抜け出して、ポテチ買いに行ってます。",
+          "tags": [
+            "node-novel",
+            "syosetu",
+            "学園",
+            "学校",
+            "少女マンガ",
+            "庶民",
+            "御曹司",
+            "恋愛",
+            "悪役お嬢様",
+            "牡丹",
+            "現実世界[恋愛]",
+            "現実世界〔恋愛〕",
+            "生徒会",
+            "異世界転生"
+          ]
+        },
+        "contribute": [
+          "2013rnc",
+          "EDifier_96",
+          "HScarlet",
+          "Lardist",
+          "TOAOT瑄",
+          "bottlefly2011",
+          "hn102060",
+          "kentei0074",
+          "lasdi",
+          "najiji",
+          "taxilam12",
+          "zengokoz",
+          "二次元漫迷",
+          "儒雅的熊猫猫",
+          "卖糕的小骸",
+          "发誓看完后宫",
+          "塵洛依",
+          "复调之声",
+          "寻寻腻腻囧",
+          "恶魔的祭品",
+          "暗黑V小狼",
+          "柏_茶叶",
+          "殳书书贼",
+          "無限紳士",
+          "白色超新星之狼",
+          "老虎煲汤",
+          "起名字超超麻烦",
+          "阳炎loop",
+          "陽炎loop"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n4029bs"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n4029bs&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n4029bs/)",
+          "[谦虚踏实的生活下去吧](https://tieba.baidu.com/f?kw=%E8%B0%A6%E8%99%9A%E8%B8%8F%E5%AE%9E%E7%9A%84%E7%94%9F%E6%B4%BB%E4%B8%8B%E5%8E%BB&ie=utf-8 \"谦虚踏实的生活下去\")"
+        ]
       }
     },
     "h": {
+      "エッチな召喚士の変態的召喚論": {
+        "novel": {
+          "title": "エッチな召喚士の変態的召喚論",
+          "title_zh1": "召喚士的召喚論",
+          "author": "RYOMA",
+          "authors": [
+            "坂本 いづみ"
+          ],
+          "illust": "坂井 久太",
+          "source": "https://kakuyomu.jp/works/1177354054886310394",
+          "cover": "https://images-fe.ssl-images-amazon.com/images/I/51feeDHgQuL._SY346_.jpg",
+          "publisher": "kakuyomu",
+          "publishers": [
+            "kakuyomu"
+          ],
+          "date": "2019-04-13T07:00:25+08:00",
+          "status": "連載中",
+          "novel_status": 0,
+          "series": {
+            "name": "エッチな召喚士の変態的召喚論"
+          },
+          "preface": "人是为何而召唤怪物呢，我高声如此断言。那就是为了H！ 强大的怪物没有必要。召唤出来的怪物只要可爱就好！ 格雷姆……不需要！ 小恶魔……不需要！ 我追求的只有魅魔！ 人鱼、厄客德娜等有魅力的女性型怪物！\n因此我成为了召唤士。然后召唤女性型怪物。可是，为什么这个召唤系统不能如我所愿地召唤呢……\n\n\n这个物语是变态召唤士为了召唤可爱的怪物而奋斗的冒险活剧。\n\n【書籍版１巻　発売中】　俺はモンスターを性的な目で見ている。\nRYOMA\n\n（注目）3月18日発売に電撃新文芸より書籍１巻が発売されます。WEB版とは違ったエッチな世界をご覧ください。\n\n人はなぜモンスターを召喚するか、俺は声高らかにこう言い切る。それはエッチなことをする為だ！　強いモンスターなど必要ない。召喚するモンスターは可愛ければいいのだ！　ゴーレム・・いらぬ！　レッサーデーモン・・いらぬ！　俺の求めているのはサキュバス！　マーメイド、エキドナなど魅力的な女性型モンスターだけだ！\nなので俺は召喚士になった。そして女性型モンスターを召喚するのだ。だけど、なんだこの召喚システムは・・思い通りに召喚できんではないか・・\n\nこの物語は、変態召喚士が、可愛いモンスターを召喚する為に奮闘する冒険活劇である。",
+          "tags": [
+            "kakuyomu",
+            "node-novel",
+            "novel18",
+            "ちょいエロ",
+            "カクヨムオンリー",
+            "コミカル",
+            "ライトノベル",
+            "冒険",
+            "召喚",
+            "変態",
+            "性描写有り",
+            "異世界ファンタジー"
+          ]
+        },
+        "contribute": [
+          "土之女神"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 0
+          },
+          "kakuyomu": {
+            "novel_id": "1177354054886310394"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[召唤士的召唤论吧](https://tieba.baidu.com/f?kw=%E5%8F%AC%E5%94%A4%E5%A3%AB%E7%9A%84%E5%8F%AC%E5%94%A4%E8%AE%BA&ie=utf-8 \"召唤士的召唤论\")"
+        ]
+      },
       "侯爵嫡男好色物語": {
         "novel": {
           "title": "侯爵嫡男好色物語",
@@ -4214,6 +7615,82 @@
         "link": [
           "[dip.jp](https://narou18.nar.jp/search.php?text=n9598df&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[侯爵嫡男好色物语吧](https://tieba.baidu.com/f?kw=%E4%BE%AF%E7%88%B5%E5%AB%A1%E7%94%B7%E5%A5%BD%E8%89%B2%E7%89%A9%E8%AF%AD&ie=utf-8 \"侯爵嫡男好色物语\")"
+        ]
+      },
+      "俺が淫魔術で奴隷ハーレムを作る話": {
+        "novel": {
+          "title": "俺が淫魔術で奴隷ハーレムを作る話",
+          "title_zh": "我仰賴淫魔術建立了奴隸後宮",
+          "author": "黒水蛇",
+          "illust": "誉",
+          "source": "http://novel18.syosetu.com/n6061cm/",
+          "cover": "http://nox-novels.jp/wordpress/wp-content/uploads/2016/01/------------_1-1.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2017-02-26T18:41:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "俺が淫魔術で奴隷ハーレムを作る話"
+          },
+          "preface": "這個是天使和魔族與人類以及亞人所居住的異世界。在那裏有一位男性被召喚出來。魔族告知該男子是為了收集魔力而被召喚過來，不過、該男子為了回收魔力而選擇的手段是「凌辱」。將女人調教成奴隸直到墮落為止。究竟那男子會朝向…。\n\n\n標題有附加◆的話是含有色情場景　\n※則是附有激烈的凌辱描寫\n×則是有附加上除了主角以外第三者的女主角凌辱\n\n※　ノクスノベルス様より書籍版発売中です！ 三巻は2／10発売予定。よろしくお願い致します！　※\n\n天使と魔族と人間。そして亜人の住む異世界。其処へ呼び出された一人の男。魔族に魔力を集めるように告げられた男が回収手段として選んだのは「陵辱」　女を調教し奴隷に落とし行き着く先は…。\n※誤字脱字の指摘はどんどんお願い致します。\nタイトルに◆の付く話はエロシーンが　\n※が付く話には激しい陵辱描写が　\n×の付く話には主人公以外の第三者によるヒロインの陵辱があります。\n\n天使/堕天使/竜娘/獣娘/エルフ/淫魔/使い魔/シスター/聖女/女勇者/機械娘/スライム娘/　などヒロイン多人数型のハーレム形成物語となっています。\n\n※一三六話にて本編完結致しました。",
+          "tags": [
+            "NTR",
+            "TS",
+            "node-novel",
+            "novel18",
+            "syosetu",
+            "ふたなり",
+            "スライム",
+            "ファンタジー",
+            "メイド",
+            "レイプ",
+            "一時的なNTR",
+            "奴隷",
+            "強姦",
+            "快楽堕ち",
+            "書籍化",
+            "残酷な描写あり",
+            "淫語",
+            "男性向け",
+            "異種族ハーレム",
+            "監禁",
+            "第三者のヒロイン陵辱",
+            "触手",
+            "調教"
+          ],
+          "title_tieba": "咱用吟魔立创建随从乐园"
+        },
+        "contribute": [
+          "我只是一個紳士",
+          "暗風月",
+          "黑尋亦"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n6061cm"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou18.nar.jp](https://narou18.nar.jp/search.php?text=%E4%BF%BA%E3%81%8C%E6%B7%AB%E9%AD%94%E8%A1%93%E3%81%A7%E5%A5%B4%E9%9A%B7%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%E3%82%92%E4%BD%9C%E3%82%8B%E8%A9%B1&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://novel18.syosetu.com/novelview/infotop/ncode/n6061cm/)",
+          "[石墨整合帖](https://shimo.im/docs/1CUShfWuAdMHJoFe/read)",
+          "[譯名整合](https://shimo.im/docs/TFRNRXb4TuEgw1vd)",
+          "[咱用吟魔立创建随从乐园吧](https://tieba.baidu.com/f?kw=%E5%92%B1%E7%94%A8%E5%90%9F%E9%AD%94%E7%AB%8B%E5%88%9B%E5%BB%BA%E9%9A%8F%E4%BB%8E%E4%B9%90%E5%9B%AD&ie=utf-8 \"咱用吟魔立创建随从乐园\")",
+          "https://drive.google.com/drive/folders/1Fw-AK-pHVGkWmBvVV19DiIDd6vDF5Y4q",
+          "http://t.cn/EooW1kf"
         ]
       },
       "在喪屍橫行的世界裡唯獨我不被襲擊": {
@@ -4334,6 +7811,136 @@
           "[dip.jp](https://narou18.nar.jp/search.php?text=n4233bh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[异世界的男人们貌似全灭了吧](https://tieba.baidu.com/f?kw=%E5%BC%82%E4%B8%96%E7%95%8C%E7%9A%84%E7%94%B7%E4%BA%BA%E4%BB%AC%E8%B2%8C%E4%BC%BC%E5%85%A8%E7%81%AD%E4%BA%86&ie=utf-8 \"异世界的男人们貌似全灭了\")"
         ]
+      },
+      "異世界風流記": {
+        "novel": {
+          "title": "せっかくチートを貰って異世界に転移したんだから、好きなように生きてみたい",
+          "title_zh": "異世界風流記",
+          "title_zh1": "異世界風流記～既然難得獲得了外掛那麼就想要隨心所欲的活著～",
+          "title_zh2": "難得拿到作弊能力轉移到異世界了 就隨心所欲的生活吧",
+          "author": "ムンムン",
+          "illust": "水龍敬",
+          "illusts": [
+            "ブッチャーU"
+          ],
+          "source": "http://novel18.syosetu.com/n8321do/",
+          "cover": "https://images-cn.ssl-images-amazon.com/images/I/91Dk84pLHaL._SL1500_.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-26T05:27:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "せっかくチートを貰って異世界に転移したんだから、好きなように生きてみたい"
+          },
+          "preface": "\n\n工事現場で事故死した主人公は、謎の存在から回復系チートを与えられ、異世界へと転移する。\n転移した先は、剣と魔法のファンタジー世界。\n彼はその地で人々と触れ合い、救い救われ、時に戦う。\n様々な経験を積み成長して行く主人公。\nそんな彼と人々との深いつながりを綴った一大叙事詩が、今ここに幕を上げる。",
+          "tags": [
+            "R18",
+            "node-novel",
+            "novel18",
+            "syosetu",
+            "オリジナル戦記",
+            "チート",
+            "ノクターンノベルズ(男性向け)",
+            "冒険",
+            "娼婦",
+            "娼館",
+            "男主人公",
+            "男性向け",
+            "異世界娼館",
+            "異世界転移",
+            "紳士"
+          ]
+        },
+        "contribute": [
+          "alex0389"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n8321do"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou18.nar.jp](https://narou18.nar.jp/search.php?text=n8321do&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://novel18.syosetu.com/novelview/infotop/ncode/n8321do/)",
+          "[异世界风流记吧](https://tieba.baidu.com/f?kw=%E5%BC%82%E4%B8%96%E7%95%8C%E9%A3%8E%E6%B5%81%E8%AE%B0&ie=utf-8&tp=0 \"异世界风流记\")",
+          "http://www.dm5.com/manhua-yishijiefengliuji/",
+          "https://www.lightnovel.cn/thread-926365-1-1.html"
+        ]
+      },
+      "美腿寶箱怪": {
+        "novel": {
+          "title": "美脚ミミック、ハルミさん　～転生モンスター異世界成り上がり伝説～",
+          "title_short": "美腿寶箱怪",
+          "title_zh": "美腿寶箱怪、春美小姐～轉生怪物在異世界青雲直上之傳說～",
+          "author": "藤孝剛志",
+          "illust": "夕薙",
+          "source": "http://ncode.syosetu.com/n7374dz/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91ah3vWwEdL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2018-07-10T00:10:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "美脚ミミック、ハルミさん　～転生モンスター異世界成り上がり伝説～"
+          },
+          "preface": "『那雙美腿，堪稱傳說』\n\n\n回過神來，我已經變成寶箱型的怪物ー--寶箱怪--。\n而且還被丟在四周都充斥魔物的地下迷宮，連一點說明也沒有，就被分配到地下第一層!\n正當我不知所措時，忽然眼前出現了冒險者。\n當然手和腳都長出不來。因為人家現在只是一個寶箱而已!\n然而，當我想盡辦法逃跑時，拚上性命發動了擬態技能“?\" 竟然真的長出了手和腳!\n\n……不對，那接下來該怎麼辦?\n\n只是長出手腳怎麼可能與高等級的冒險者們匹敵!\n才在提心吊膽，不知為何冒險者們的團隊卻開始起內鬨，而唯一生還的盜賊對我說道。\n\n「真是天生尤物」\n\n這是一個關於變成寶箱怪的女生，由於獲得一雙舉世無雙的美腿，而在異世界平步青雲的故事----\n\n※書籍化してます！　１巻発売中です！\n\n気付けば私は宝箱型のモンスター－－ミミック－－になっていた。\nしかも、周りはモンスターだらけのダンジョンだし、たいした説明もなく地下一階に配置されるし！\nもう何がなんだかって思ってたら、いきなり冒険者がやってきた。\nもちろん手も足も出ない。宝箱だから！\nけど、どうにか逃げだそうと必死になって擬態スキルの“？”を発動させると、なんか手足が生えてきた！\n\n……いや、それでどうしろと？\n\n手足が生えた程度で高レベル冒険者にかなうわけないじゃん！\nと思っていたら、なぜか急に冒険者たちが仲間割れを始め、生き残った盗賊が私に向かってこう言ったのだ。\n\n「すばらしい」\n\nこれは、ミミックになっちゃった女の子が、たぐいまれな美脚を手に入れたことで、異世界で成り上がっていくお話－－－－",
+          "tags": [
+            "node-novel",
+            "syosetu",
+            "ほのぼの",
+            "コメディ",
+            "コメディー",
+            "チート",
+            "ファンタジー",
+            "ミミック最強",
+            "モンスター",
+            "冒険",
+            "女主人公",
+            "書籍化",
+            "残酷な描写あり",
+            "爆裂",
+            "異世界"
+          ]
+        },
+        "contribute": [
+          "章魚子"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n7374dz"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n7374dz&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[章鱼子个人小屋吧](https://tieba.baidu.com/f?kw=%E7%AB%A0%E9%B1%BC%E5%AD%90%E4%B8%AA%E4%BA%BA%E5%B0%8F%E5%B1%8B&ie=utf-8 \"章鱼子个人小屋\")",
+          "[黴腿寶箱怪](https://tieba.baidu.com/p/6069727862 \"黴腿寶箱怪\")"
+        ]
       }
     },
     "h_out": {
@@ -4342,15 +7949,17 @@
           "title": "勇者は犯されたい",
           "title_zh": "想被侵犯的勇者",
           "author": "シースルー",
+          "illust": "薄稀",
           "source": "http://novel18.syosetu.com/n7623br/",
           "cover": "https://images-fe.ssl-images-amazon.com/images/I/613pf755ZxL.jpg",
           "publisher": "syosetu",
           "date": "2018-02-22T23:24:00+08:00",
           "status": "完結済",
+          "novel_status": 257,
           "series": {
             "name": "勇者は犯されたい"
           },
-          "preface": "主角玩HG的时候因为游戏的超拟真界面去了异世界变成了妹纸，但主角还以为这是游戏，没有认识现实；\n\n因为这是主角第N轮玩游戏，加上游戏的继承系统，主角已经达到最高等级，即是世界最强的，因为是HGAME，所以主角说想看H场景，本来是其他人被x的，但主角代替了她们自动往坑里跳，喜闻乐见的各种东西就此出来了 \n\n強くてニューゲームを選んだら、ゲームの中に居た。エロRPGをクリアした後、いつものように強くてニューゲームを選択したら、直前に選んだオプションが悪かったのか、気が付けばそこはゲームの中だった。エロゲーが？ 現実になった？ しかも、女性主人公を選んだおかげで身体は女性。これは、色々試してみるしかない。カンストしたレベルと、コンプリートした魔法とアイテムを持っているにも関わらず、わざと押し倒されちゃう。そんな性欲まみれの周回プレイが始まった。\n※「残酷な描写あり」タグを追加しましたが、保険です。あまり酷い描写はない予定です。\n※「ボーイズラブ」タグを追加しましたが、保険です。男性同士の絡みはありません。男性とTS娘の絡みはあります。「ラブ」の描写はありません。",
+          "preface": "主角玩HG的时候因为游戏的超拟真界面去了异世界变成了妹纸，但主角还以为这是游戏，没有认识现实；\n\n因为这是主角第N轮玩游戏，加上游戏的继承系统，主角已经达到最高等级，即是世界最强的，因为是HGAME，所以主角说想看H场景，本来是其他人被x的，但主角代替了她们自动往坑里跳，喜闻乐见的各种东西就此出来了\n\n強くてニューゲームを選んだら、ゲームの中に居た。エロRPGをクリアした後、いつものように強くてニューゲームを選択したら、直前に選んだオプションが悪かったのか、気が付けばそこはゲームの中だった。エロゲーが？ 現実になった？ しかも、女性主人公を選んだおかげで身体は女性。これは、色々試してみるしかない。カンストしたレベルと、コンプリートした魔法とアイテムを持っているにも関わらず、わざと押し倒されちゃう。そんな性欲まみれの周回プレイが始まった。\n※「残酷な描写あり」タグを追加しましたが、保険です。あまり酷い描写はない予定です。\n※「ボーイズラブ」タグを追加しましたが、保険です。男性同士の絡みはありません。男性とTS娘の絡みはあります。「ラブ」の描写はありません。",
           "tags": [
             "TS",
             "node-novel",
@@ -4370,6 +7979,7 @@
         "contribute": [
           "一團和氣",
           "十賭九輸",
+          "我只是一個紳士",
           "聯盟冠軍"
         ],
         "options": {
@@ -4390,6 +8000,57 @@
           "[dip.jp](https://narou18.nar.jp/search.php?text=n7623br&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "http://lscj.ys168.com/",
           "https://tieba.baidu.com/p/4254108193?red_tag=0127070180"
+        ]
+      },
+      "玩了VR工口遊戲轉生到異世界": {
+        "novel": {
+          "title": "VRエロゲーやってたら異世界に転生したので、美少女魔王を奴隷化する　〜クロスアウト・セイバー〜",
+          "title_zh": "玩了VR工口遊戲轉生到異世界、將美少女魔王奴隸化〜跨越世界的救世主〜",
+          "author": "仁科朝丸",
+          "illust": "TAKTO",
+          "source": "http://novel18.syosetu.com/n3640eg/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81MRO7r-07L.jpg",
+          "publisher": "syosetu",
+          "date": "2018-07-29T22:21:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "VRエロゲーやってたら異世界に転生したので、美少女魔王を奴隷化する　〜クロスアウト・セイバー〜"
+          },
+          "preface": "玩VR對應的工口遊戲時發生悲慘意外死亡的主人公，\n因女神的考量而轉生到了遊戲中的異世界。\n\n轉生時得到的恩惠是【馴服（奴隷化）】特化的技能和狀態值。\n\n在這個遊戲中，能脫去女性敵人的衣物並給予快感\n還能將他們招降為自己同伴的一員（奴隷化）。\n\n當主人公在對上BOSS級的強敵時，意外馴服（奴隷化）並吸收了她的能力\n這是得到美少女的他，踏上自由冒險旅程的故事。\n\n\n\n*作者溫馨提醒： 標題末尾有▲代表有一定程度上、例如愛撫Ｈ場景。\n                標題末尾有★代表有正戲的場景描述。\n\n*譯者：本篇譯文皆翻自WEB無刪減版本（小説家になろう），並非文庫版。\n       文中不乏18禁文字敘述，未成年者可參閱刪減版本（カクヨム）。\n\n（追記：書籍版第２巻、ファミ通文庫から発売中です！）\n（コミカライズ決定しました！！　コミックヴァルキリーにて連載予定です！）\n\n　ＶＲ対応のエロゲーをプレイ中に事故死、という悲惨な最期を遂げた主人公は、女神の計らいでゲーム世界に転生させてもらう。\n　転生時の特典として得たのは、【テイム（奴隷化）】特化のスキルとステータス。\n　このゲームでは、女性型のあらゆる敵を脱がし、快感を与えることで、手なずけることができるのだった。\n　ボス級の強敵をサクッとテイムし、その能力を吸収した主人公は、行く先々で美少女を手なずけながら、自由に道を突き進んでいく。\n\n（末尾に▲のあるタイトルには、愛撫程度のＨシーンあり。★のあるタイトルには本番シーンありです）",
+          "tags": [
+            "VR",
+            "node-novel",
+            "novel18",
+            "syosetu",
+            "スキル",
+            "ハーレム",
+            "ファンタジー",
+            "主人公最強",
+            "冒険",
+            "強制脱衣",
+            "残酷な描写あり",
+            "男主人公",
+            "男性視点",
+            "異世界転生",
+            "飼い慣らし"
+          ]
+        },
+        "contribute": [
+          "章魚子"
+        ],
+        "options": {
+          "syosetu": {
+            "txtdownload_id": "1103530"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou18.dip.jp/search.php?text=n3640eg&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[kakuyomu.jp](https://kakuyomu.jp/works/1177354054885380132)",
+          "[章魚子](https://pan.baidu.com/s/1xOs1KZ4SuEwoXZcgA9rVDQ) wu2f",
+          "[漫畫](https://manhua.dmzj.com/vryouxizhuanshengyishijietiaojiaomowangmeishaonvcl/ \"VR游戏转生异世界调教魔王美少女 clothout·saber\")"
         ]
       }
     },
@@ -4894,6 +8555,68 @@
         ]
       }
     },
+    "novelba": {
+      "劣等眼の転生魔術師": {
+        "novel": {
+          "title": "劣等眼の転生魔術師　～　虐げられた元勇者は未来の世界を余裕で生き抜く　　～",
+          "author": "柑橘ゆすら",
+          "illust": "",
+          "illusts": [
+            "峠比呂",
+            "ミユキルリア",
+            "猫箱ようたろ"
+          ],
+          "source": "https://novelba.com/works/851684",
+          "cover": "https://images-fe.ssl-images-amazon.com/images/I/61EZoMOvMPL.jpg",
+          "publisher": "novelba",
+          "date": "2018-11-04T00:00:00+08:00",
+          "status": "",
+          "novel_status": 768,
+          "series": {
+            "name": "劣等眼の転生魔術師　～　虐げられた元勇者は未来の世界を余裕で生き抜く　　～"
+          },
+          "preface": "　＊書籍化決まりました。ダッシュエックス文庫より２０１８年７月２５日に１巻発売予定です！\n\n\n　生まれ持った眼の色によって能力が決められる世界で、圧倒的な力を持った天才魔術師がいた。\n\n　男の名前はアベル。\n　最強の力を持つアベルは理想の世界を求めて、遥か未来に魂を転生させる。\n\n　しかし、未来の世界では何故かアベルの持つ至高の目が『劣等眼』と呼ばれ、バカにされるようになっていた。\n\n　過去からやってきた最強の英雄は、自由気ままに未来の魔術師たちの常識をぶち壊していく。",
+          "tags": [
+            "ESJZone",
+            "R15",
+            "node-novel",
+            "novelba",
+            "チート",
+            "ハーレム",
+            "ファンタジー",
+            "冒険",
+            "勇者",
+            "学園",
+            "未来",
+            "琥珀眼",
+            "異世界",
+            "衰退",
+            "魔法",
+            "魔王"
+          ],
+          "title_tieba": "劣等眼的转生魔术师"
+        },
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 0
+          },
+          "novelba": {
+            "novel_id": "851684"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "https://shonenjumpplus.com/episode/10834108156642569336",
+          "[dm5](http://www.dm5.com/manhua-liedengyandezhuanshengmoshushi/)",
+          "[劣等眼的转生魔术师吧](https://tieba.baidu.com/f?kw=%E5%8A%A3%E7%AD%89%E7%9C%BC%E7%9A%84%E8%BD%AC%E7%94%9F%E9%AD%94%E6%9C%AF%E5%B8%88&ie=utf-8&tp=0 \"劣等眼的转生魔术师\")",
+          "https://www.esjzone.cc/detail/1552238185.html"
+        ]
+      }
+    },
     "other": {
       "勇者「都打倒魔王了來回家吧」": {
         "novel": {
@@ -4976,55 +8699,157 @@
         ]
       }
     },
-    "syosetu_out": {
-      "World's End Online": {
+    "otome": {
+      "転生王子と憂いの大国": {
         "novel": {
-          "title": "World's End Online",
-          "author": "yuki",
-          "source": "http://ncode.syosetu.com/n4227bh/",
-          "cover": "https://images.droidsans.com/wp-content/uploads/2015/09/The%20World%20End%20EclipseNew1.jpg",
+          "title": "転生王子と憂いの大国",
+          "title_zh1": "",
+          "author": "楠　のびる",
+          "illust": "あり子",
+          "illusts": [
+            "あり子",
+            "北国良人"
+          ],
+          "source": "http://ncode.syosetu.com/n1586by/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91IptcyOvaL.jpg",
           "publisher": "syosetu",
-          "date": "2017-07-02T16:54:00+08:00",
+          "date": "2019-01-02T23:31:00+08:00",
           "status": "完結済",
+          "novel_status": 769,
           "series": {
-            "name": "World's End Online"
+            "name": "ハーシェリク 転生王子の英雄譚（転生王子シリーズ）"
           },
-          "preface": "我（私）的名字是『赛西莉亚』。随处可见的网络人妖。曾经使用了女性角色就骂我（私）是人妖，被迫害的我（私）就愤怒的发誓了。如果你们轻蔑人妖的話，我（私）就成为真正的人妖复仇给你们看看。有各种各样的辛苦，不过平安取得了网络人妖的真传！决定以正好开始的世界首次的VRMMORPG《World ' s End Online》为复仇的舞台。\n\n对掌握了男人的心的我（私）来说欺骗那些在线上游戏中专挑不懂男生的女孩下手的烂男人（即为直结厨）并不是什么难事。重要的是我（私）有一个想法。只是一点点地煽动大家对我（私）说爱的言语。我（私）打算把那样的他们的奇特的求爱行动不留余地的记录并在复仇的舞台上公开。计划顺利的进行直结厨们聚集的大曝光活动开始了。然而繁盛的暴露每个人羞耻的过去并笑翻了的瞬间，进行了与游戏相似的异世界转移了。被在周围不断的发火的直结厨们包围了，而且应该是网络人妖的我（私）的身体变成了与我使用的虚拟形象一样的真正的少女了。\n\n......啊啊，神（kami sama）？作为报应来说不是有点太过苛刻了吗？这是，一个网络人妖（其实是TS萝莉少女）为了回到原来的世界依靠智慧和交涉术在异世界生存下去的故事。  \n\nPS:这是一个TS成萝莉的故事，如上所述，就在主角暴露自己是网络人妖并对直结厨们展开群体嘲讽的时候突然转移到了异世界，主角也成为了真正的少女，之前因为是在游戏中拿他（她）毫无办法的直结厨们也开始行动把她包围起来，然后展开了追杀与逃亡剧（雾）？\n\n\nかつて女キャラを使っていただけでネカマと糾弾され迫害を受けた少年は全世界の直結厨どもに復讐すべく、世界初のVRMMORPG『World's End Online』に手を出した。やがて『プロネカマ』を自称するまでになった少年はセシリアというアバターを作成。磨き上げたテクニックを駆使し、数々の男達を篭絡し始める。熱烈な告白や厨二じみた痛いアプローチの数々を余すところなく記録し、ネカマだとばらすついでにこれらの記録を公開する計画は順調に最終段階を迎えた。だが、暴露イベントで彼らを散々嘲笑っていたまさにその瞬間、プレイヤー達は一瞬の暗転を境にゲームとよく似た異世界へ転送されてしまう。ゲームと同じ姿になってしまった今、何をされてもおかしくないと察したセシリアは混乱するプレイヤー集団から我先に逃げ出す。能力や容姿はゲームのままなのに、ゲームシステムの大部分が排除されたシビアかつ現実味溢れる異世界では、毎日を生き伸びる事でさえ困難の連続。元の世界に帰る方法を探すには他のプレイヤー達の協力が必要不可欠だと感じたセシリアは、ゲーム時代からの親友が属しているギルドへの加入を決める。ネカマを暴露した事で多くのプレイヤーから恨まれる中、どうにか宥める事に成功して無事加入を果たしたまでは良かったものの、お人好しのマスターが慣れない異世界で急造したギルドは大量の問題で溢れかえっていて……。まずはこの世界で安定した生活を築く為、そして何より元の世界に帰る為、プロネカマとして磨いた知恵と交渉術を武器に異世界の攻略に挑む。",
+          "preface": " オタク女である早川涼子は、アラフォーとなる三十五歳の誕生日前日、交通事故によりこの世を去った。そしてファンタジー世界の、しかもその大陸一の大国の金髪碧眼の美形王子様に転生したのだった。\n\n　宝くじがあたったが如く王子様ライフを満喫していたが、実はその大国は王を蔑む臣下、貴族たちの専横、役人の汚職等々かなりまずい状況だった。\n\n　父王を守るため、国民を助ける為、転生した王子ハーシェリクは国の闇と戦う決意をする。\n\n　しかし転生した先の王子は運動神経なし、魔力なし、おまけに美形だと思っていたら王族の中では華がないという残念な王子だった。\n\n　だがそれでも王子は諦めず前世の事務員のスキルと経験を活かし、持ち前の行動力と（オタク的な）頭脳、そして仲間達と共に今立ち上がる。\n\n【続編-転生王子と黄昏の騎士に続きます】",
           "tags": [
             "R15",
             "TS",
-            "VRMMO",
+            "TS転生（女→男）",
             "node-novel",
             "syosetu",
+            "コメディー",
+            "シリアス",
             "ファンタジー",
-            "性転換",
-            "星球大賞",
+            "三人称",
+            "主従",
+            "女性向",
+            "家族",
+            "性轉",
+            "戦記",
             "残酷な描写あり",
-            "異世界",
-            "異世界転移"
+            "王子",
+            "異世界転生"
           ]
         },
         "contribute": [
-          "不是秃子的兔子",
-          "女装欲语还羞的渣迷",
-          "晓之晨曦3",
-          "求吾所其",
-          "神睡者",
-          "肝帝柚",
-          "诺唑咪",
-          "雾华绯色"
+          "Rakko",
+          "皮卡喵",
+          "青行灯amber"
         ],
         "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
           "syosetu": {
-            "txtdownload_id": "334194"
+            "txtdownload_id": "",
+            "series_id": "s6899b",
+            "novel_id": "n1586by"
           },
           "textlayout": {
             "allow_lf2": true
           }
         },
         "link": [
-          "[dip.jp](https://narou.dip.jp/search.php?text=n4227bh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[worldsendonline吧](https://tieba.baidu.com/f?kw=worldsendonline&ie=utf-8 \"\")"
+          "[dip.jp](https://narou.nar.jp/search.php?text=n1586by&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[ハーシェリク 転生王子の英雄譚（転生王子シリーズ）](http://ncode.syosetu.com/s6899b/)",
+          "[转生王子吧](https://tieba.baidu.com/f?kw=%E8%BD%AC%E7%94%9F%E7%8E%8B%E5%AD%90&ie=utf-8&tp=0 \"\")",
+          "[dm5 转生王子的英雄谭](http://www.dm5.com/manhua-zhuanshengwangzideyingxiongtan/)",
+          "[amazon.co.jp](https://www.amazon.co.jp/s/ref=dp_byline_sr_book_1?ie=UTF8&text=%E6%A5%A0+%E3%81%AE%E3%81%B3%E3%82%8B&search-alias=books-jp&field-author=%E6%A5%A0+%E3%81%AE%E3%81%B3%E3%82%8B&sort=relevancerank)",
+          "https://pan.baidu.com/s/1wp1unzWp2fBZC9aTJHAIFQ bqv7"
+        ]
+      }
+    },
+    "syosetu": {
+      "Ｌｖ２からチートだった元勇者候補のまったり異世界ライフ": {
+        "novel": {
+          "title": "Ｌｖ２からチートだった元勇者候補のまったり異世界ライフ",
+          "title_zh": "從Lv2開始開掛的原勇者候補悠閑的異世界生活",
+          "title_zh1": "從Lv2開始開外掛的前勇者候補過著悠哉異世界生活",
+          "title_zh2": "勇者候補的悠閑的異世界生活",
+          "author": "鬼ノ城ミヤ",
+          "illust": "片桐",
+          "source": "http://ncode.syosetu.com/n6849da/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91n6QbBcgWL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-03-09T18:44:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "【web版】Ｌｖ２からチートだった元勇者候補のまったり異世界ライフ"
+          },
+          "preface": "魔法國進行異世界的勇者候補的召喚(從多個異世界隨機召換)\n主角也被召喚過去\n可是角色屬性太低(屬性都是個位數), 沒被認定是勇者\n然後隔壁被召喚的金髮帥哥被認定是勇者(屬性都是999)\n就開慶祝會了(主角被扔到一旁沒人理)\n然後慶祝會開完才發現主角沒被送回去(隔太久已經回不去了)\n然後就給他一些裝備就扔他一個人在充滿瘴氣的森林\n結果主角為了測試能力, 竟然淨化了整座森林 (順便同時秒殺了在遠方的魔王軍的一支部隊)\n然後主角Lv2, 發現他的人物屬性, 其實不是8, 而是無限大 (旋轉90度的8)\n\n*コミックガルド様にてコミカライズはじまりました！\n原作小説１－７巻発売中\n\n＊web版と書籍版は別のストーリー展開になっており書籍版は大幅加筆修正してあります＊\n\n魔法国クライロードに勇者候補として召喚されたバナザは、その能力が一般市民並みでしかなかったため、勇者失格扱いとなってしまった。\n　本来なら元の世界に送還されるはずだった彼は、魔法国の手違いのせいで元の世界に戻れなくなってしまい、しかたなくこの世界で暮らすことになってしまう。\n　そんな彼は、Ｌｖ２になったとたんにあらゆるスキル、あらゆる魔法を習得しすべての能力値が上限突破した超チートへと超絶進化！ \n　にもかかわらず、いつも飄々とした笑顔を浮かべるマイペースな彼は、魔族のリースを妻に向かえた新婚生活を満喫していく。彼は名前をフリオに改め更にまったり生活していたのだが、そんなフリオ家には、ペットのサベア・居候の女騎士ら４人に加えて、魔人や元魔王までもが加わっていき、カオスこの上ない状態の中、それでもまったりライフを満喫中。双子も生まれてさらにまったり感を増しまくっているフリオ一家の毎日を綴ったストーリーをお楽しみください。\nなお、フリオの代わりに勇者となった男の話[SIDE:GHB]も同時公開中\n\n＊＊＊書籍化等履歴＊＊＊\n\n２０１６年１２月２５日オーバーラップノベルス様から１巻発売\n２０１７年　４月２５日オーバーラップノベルス様から２巻発売\n２０１７年　８月２５日オーバーラップノベルス様から３巻発売（完全書き下ろし）\n２０１８年　１月２５日オーバーラップノベルス様から４巻発売\n２０１８年　５月２５日オーバーラップノベルス様から５巻発売\n２０１８年　９月２５日オーバーラップノベルス様から６巻発売\n２０１９年　１月１０日コミックガルド様にてコミカライズ開始\n２０１９年　１月２５日オーバーラップノベルス様から７巻発売",
+          "tags": [
+            "node-novel",
+            "syosetu",
+            "らぶらぶ",
+            "カオス",
+            "コメディー",
+            "チート",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ハッピーエンド",
+            "ファンタジー",
+            "子育て",
+            "恋愛",
+            "新婚生活",
+            "異世界転移",
+            "落し穴最強伝説",
+            "超ご都合主義",
+            "魔法",
+            "魔王"
+          ]
+        },
+        "contribute": [
+          "dayT丶涛",
+          "garden20123",
+          "gardenfanyi",
+          "hoho2505",
+          "kker013",
+          "为了爱与米娅",
+          "咕哒",
+          "天下第一肥宅",
+          "姑娘请留步",
+          "彩虹快乐风男",
+          "放荡者3",
+          "机器人xp",
+          "水無月流歌",
+          "纤罂",
+          "阿楼"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n6849da"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n6849da&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n6849da/)",
+          "http://www.dm5.com/manhua-cong-lv-2-kaishikaiguadeyuanyongzhehoubuyouxiandeyishijieshenghuo/",
+          "[勇者候补的悠闲的异世界生活吧](https://tieba.baidu.com/f?kw=%E5%8B%87%E8%80%85%E5%80%99%E8%A1%A5%E7%9A%84%E6%82%A0%E9%97%B2%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E7%94%9F%E6%B4%BB&ie=utf-8 \"勇者候补的悠闲的异世界生活\")"
         ]
       },
       "アラフォー賢者の異世界生活日記": {
@@ -5037,6 +8862,7 @@
           "publisher": "syosetu",
           "date": "2018-07-27T12:00:00+08:00",
           "status": "連載",
+          "novel_status": 256,
           "series": {
             "name": "アラフォー賢者の異世界生活日記"
           },
@@ -5062,6 +8888,7 @@
           "Bellow19",
           "ID_Index_",
           "Nameless1024",
+          "ReadBook642",
           "archmonk",
           "bemymine",
           "chiangwew",
@@ -5151,6 +8978,77 @@
           "[以剪切粘贴在这个世界生活吧](https://tieba.baidu.com/f?kw=%E4%BB%A5%E5%89%AA%E5%88%87%E7%B2%98%E8%B4%B4%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%94%9F%E6%B4%BB&ie=utf-8 \"以剪切粘贴在这个世界生活\")"
         ]
       },
+      "ガチャを回して仲間を増やす　最強の美少女軍団を作り上げろ": {
+        "novel": {
+          "title": "ガチャを回して仲間を増やす　最強の美少女軍団を作り上げろ",
+          "title_zh": "通過扭蛋增加同伴　建立最強美少女軍團",
+          "title_zh2": "通过扭蛋增加同伴，做成最强美少女军团",
+          "author": "ちんくるり",
+          "illust": "イセ川ヤスタカ",
+          "illusts": [
+            "晴野しゅー"
+          ],
+          "source": "http://ncode.syosetu.com/n1896dc/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81p6ljkh-RL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-28T22:14:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "ガチャを回して仲間を増やす　最強の美少女軍団を作り上げろ"
+          },
+          "preface": "當前，某款社交游戲正風靡一時，依托可愛精致的立繪和詳細的人設博得無數玩家的好感，每當全新限定UR出現時必定會有無數氪金玩家為之瘋狂。\n一位信仰著0點扭蛋的玩家像平時一樣正坐著面對著手機畫面，用顫抖的手指按下了扭蛋按鈕，得到UR道具的同時不知為何被邀請到了異世界。\n而眼前能夠依賴的只有全部信息都初始化的社交游戲？！\n為了抽出可愛的女孩子，從氪金向氪命覺醒，揮舞著撬棍和鍋蓋，以創造出一個異世界最強的美少女軍團作為目標奮鬥！\n\n　今巷で話題となっているソーシャルゲーム。それにのめり込む一人の男性がいた。\n　彼はいつものようにガチャを回していると、何故か異世界へと招待されてしまう。\n　頼りになるのはスマホに入ったソシャゲガチャ。\n　排出されるのは便利な道具とチートな装備と美少女キャラクター。\n　そして彼は、異世界最強の美少女軍団を作り上げることを目指す。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ご都合主義",
+            "ガチャ",
+            "チート",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ハーレム？",
+            "ファンタジー",
+            "仲間が最強",
+            "残酷な描写あり",
+            "異世界転移"
+          ]
+        },
+        "contribute": [
+          "-妖妖幻想",
+          "升级鬼泣",
+          "第五kira",
+          "绿军骑士",
+          "蝶舞凝汐"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n1896dc"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n1896dc&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n1896dc/)",
+          "http://comicride.jp/gatya/",
+          "https://comic.pixiv.net/works/4659",
+          "[通过扭蛋增加同伴吧](https://tieba.baidu.com/f?kw=%E9%80%9A%E8%BF%87%E6%89%AD%E8%9B%8B%E5%A2%9E%E5%8A%A0%E5%90%8C%E4%BC%B4&ie=utf-8 \"通过扭蛋增加同伴\")",
+          "http://www.dm5.com/manhua-tongguoniudanzengjiatongban-zuochengzuiqiangmeishaonvjuntuan/",
+          "[升级鬼泣 txt](https://pan.baidu.com/s/1Ttcs8p_fQfBd0w3j5yp4Jw) 2gm2"
+        ]
+      },
       "チートで賢者な俺は異世界に革命を起こす": {
         "novel": {
           "title": "チートで賢者な俺は異世界に革命を起こす　～天才、鬼才、稀代の賢者……それ全部俺のことらしいです～",
@@ -5204,6 +9102,1570 @@
         "link": [
           "[dip.jp](https://narou.dip.jp/search.php?text=n0607dl&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[开挂贤者的我在异世界发起改革吧](https://tieba.baidu.com/f?kw=%E5%BC%80%E6%8C%82%E8%B4%A4%E8%80%85%E7%9A%84%E6%88%91%E5%9C%A8%E5%BC%82%E4%B8%96%E7%95%8C%E5%8F%91%E8%B5%B7%E6%94%B9%E9%9D%A9&ie=utf-8 \"开挂贤者的我在异世界发起改革\")"
+        ]
+      },
+      "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～": {
+        "novel": {
+          "title": "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～",
+          "author": "酒とゾンビ",
+          "source": "http://ncode.syosetu.com/n1489eq/",
+          "cover": "",
+          "publisher": "syosetu",
+          "date": "2018-09-19T21:44:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～"
+          },
+          "preface": "高中二年级的政宗跳楼自杀后，被卷入了了班级转移。\n\n同班同学被授予勇者和贤者等高级职业，另一方面\n\n政宗被赋予了的是治愈职业【治愈士】。\n\n那是连攻击魔法都无法使用的【最弱】职业。\n\n持有着【最弱职业】的政宗被别人当成无能和傻瓜，独自一人被驱逐出境。\n\n\n但是在苦难的最后，偶然觉醒的固有技能【反転の悪戯〈極〉】\n\n这是治愈士最弱的魔法。\n\n这是一种逆转攻击魔法的技能，被称为【侵蝕の波動】。\n\n\n获得【最强】的政宗在苦恼和纠葛中，\n\n为了报复自己的公主和同学而走上复仇之旅。\n\n然后，政宗将自己的人生也反转。\n\n【累計 1000万PV 突破しました！】\n\n高校２年生の政宗は飛び降り自殺した直後、クラス転移に巻き込まれる。\nクラスメートが、勇者や賢者といった上級職を授かる一方で、\n政宗に与えられたのは治癒職【ヒーラー】。\nそれは攻撃魔法すら扱うことのできない【最弱】の職業。\n【最弱職】の政宗は無能と馬鹿にされ、一人国外追放を受ける。\n\nしかし苦難の末、偶然手にした固有スキル【反転の悪戯〈極〉】\nこれは最弱であるヒーラーの魔術【治癒】を\n【侵蝕の波動】という攻撃魔法へ反転させるスキルであった。\n\n【最強】を手にした政宗は苦悩や葛藤の中、\n自身を虐げた王女やクラスメートを殺すために復讐の旅へ出る。\nそして政宗は自身の人生をも反転していく。\n\n※ランキング入りできました！　ありがとうございます(;^ω^)\nそれぞれ過去の最高位です。\n・総合日間ランキングにて５位！\n・総合週間ランキングにて１０位！\n・日間ファンタジー異世界転生/転移ランキングにて３位！\n・週間ファンタジー異世界転生/転移ランキングにて４位！\n・月間ファンタジー異世界転生/転移ランキングにて１０位！\n・小説家になろう　勝手にランキングにて７位！\n\n※カクヨムでも　酒とゾンビ　で投稿しています。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "いじめ",
+            "オリジナル戦記",
+            "クラス転移",
+            "ダークファンタジー",
+            "ハーレムと最愛",
+            "ヤンデレメンヘラ",
+            "主人公最強",
+            "冒険",
+            "反転スキル",
+            "差別風習文化",
+            "復讐ざまぁ",
+            "残酷な描写あり",
+            "異世界転生",
+            "異世界転移",
+            "病み展開鬱展開"
+          ]
+        },
+        "contribute": [
+          "懶惰的咸魚"
+        ],
+        "options": {
+          "syosetu": {
+            "txtdownload_id": "1201369"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.dip.jp/search.php?text=n1489eq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[尼特的慵懒异世界吧](https://tieba.baidu.com/f?kw=%E5%B0%BC%E7%89%B9%E7%9A%84%E6%85%B5%E6%87%92%E5%BC%82%E4%B8%96%E7%95%8C&ie=utf-8 \"尼特的慵懒异世界\")"
+        ]
+      },
+      "リアリスト魔王による聖域なき異世界改革": {
+        "novel": {
+          "title": "リアリスト魔王による聖域なき異世界改革",
+          "title_zh": "現實主義魔王的異世界改革",
+          "author": "羽田遼亮",
+          "illust": "ゆーげん",
+          "illusts": [
+            "铃木マナツ"
+          ],
+          "source": "http://ncode.syosetu.com/n2360eu/",
+          "cover": "http://dengekionline.com/elem/000/001/868/1868009/006_cs1w1_1000x718.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-28T09:14:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "リアリスト魔王による聖域なき異世界改革"
+          },
+          "preface": "在腐朽的城堡裡，作為魔王醒來的亞斯特。\n有前世知識的他，作為徹底的『現實主義者』經營著領地。\n\n「魔王大人，你為什麼要襲擊等級1的勇者？」\n「在長大之前打倒。這就是兵法。」\n\n「魔王大人，你打算把偽幣送到敵國去嗎？」\n「讓敵國的經濟陷入混亂，自取滅亡」\n\n「人狼部隊攻過來了。你用銀子彈嗎？」\n「不是子彈，而是大炮」\n\n就這樣『改革』了舊體制的亞斯特。\n成為民眾和部下都喜愛的領主的他，不久就被稱為歷代最強的魔王。\n\n【書籍版、好評発売中！　コミカライズ連載中！】\n\n朽ち果てた城で、魔王として目覚めたアシト。\n『前世の知識』がある彼は、徹底的な『リアリスト』として領地を経営していく。\n\n「魔王様、なんでレベル1の勇者を襲うんですか？」\n「育ちきる前に倒す。それが兵法だ」 \n\n「魔王様、偽金を敵国に送ってどうするのですか？」\n「敵国の経済を混乱させて自滅させる」\n\n「人狼部隊が攻めてきました。銀の弾丸を使いますか？」\n「弾丸ではなく、大砲をぶち込め」\n\nこうして古い体質を『改革』したアシト。\n民衆からも部下からも愛される領主になった彼は、やがて歴代最強の魔王と呼ばれることになる。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "さすごしゅ",
+            "オリジナル戦記",
+            "コミカライズ",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ファンタジー",
+            "マキャベリズム",
+            "主人公最強",
+            "内政",
+            "外交",
+            "戦争",
+            "書籍化",
+            "歴史上の英雄",
+            "残酷な描写あり",
+            "現実主義者",
+            "異世界",
+            "知略",
+            "知識チート",
+            "魔法"
+          ]
+        },
+        "contribute": [
+          "動漫我生命"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n2360eu"
+          },
+          "textlayout": {
+            "allow_lf2": false
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n2360eu&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n2360eu/)",
+          "http://www.dm5.com/manhua-xianshizhuyimowangdeyishijiegaige/",
+          "[现实主义魔王的异世界改革吧](https://tieba.baidu.com/f?kw=%E7%8E%B0%E5%AE%9E%E4%B8%BB%E4%B9%89%E9%AD%94%E7%8E%8B%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E6%94%B9%E9%9D%A9&ie=utf-8 \"现实主义魔王的异世界改革\")",
+          "https://comic-walker.com/contents/detail/KDCW_AM01200774010000_68/"
+        ]
+      },
+      "レベル１の最強賢者": {
+        "novel": {
+          "title": "レベル１の最強賢者 ～ 呪いで最下級魔法しか使えないけど、神の勘違いで無限の魔力を手に入れて最強に！ ～",
+          "title_short": "等級１的最強賢者",
+          "title_zh1": "等級１的最強賢者　因為詛咒只能使用最下級魔法，但是因為神的失誤獲得無限魔力所以成為最強！",
+          "author": "木塚 麻弥",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n1563fd/",
+          "cover": "https://cdn-image.alphapolis.co.jp/cover/827249005/500x711/5c82e89a-df28-4d66-94a2-25f3ac113c6e",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-03-21T19:40:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "レベル１の最強賢者 ～ 呪いで最下級魔法しか使えないけど、神の勘違いで無限の魔力を手に入れて最強に！ ～"
+          },
+          "preface": "西条 遥人某天、因异世界的邪神而转生了、并被附上了〘状态固定〙的诅咒。\n\n转生到的是一个剑与魔法的世界。\n\n通过提升职业的等级变强、而哈鲁特（遥人）因为诅咒的关系并不能升级。\n\n哈鲁特陷入了绝望。\n\n但是、因为邪神的失误、哈鲁特得到了无尽的魔力。（*怜：锁状态把血蓝也给锁了）\n\n依靠无限的魔力和、原本世界的知识、哈鲁特成长为最强贤者。\n\n狩猎高等级魔物、甚至打倒了魔人与恶魔。\n\n「可以吗？就用三成实力吧。请绝对不要认真放出魔法哦」\n\n被魔法学院的教师念叨说不要认真使用魔法。\n\n「所以说啊、哈鲁特太强了啦。是魔王嘛」\n\n得到了被同伴说成魔王的等级力量、哈鲁特仍然将目标放在更高水平。\n\n最终目标是找到杀掉自己的邪神干他一炮（x）。\n\n等级1的最强贤者、今天也在摸索着提高自己实力的方法。\n\n---\n\n西条 遥人はある日、異世界の邪神によって転生させられ、〘ステータス固定〙の呪いをかけられた。\n\n転生先は剣と魔法の世界。\n\n職業のレベルを上げることで強くなれるが、ハルトは呪いのせいでレベルを上げることが出来ない。\n\nハルトは絶望した。\n\nだが、邪神の勘違いにより、ハルトは無尽蔵の魔力を手に入れていた。\n\n無限の魔力と、元の世界での知識を利用して、ハルトは最強の賢者へと成長していく。\n\n高レベルの魔物を狩り、魔人や悪魔すら倒した。\n\n\n「いいですか？三割くらいですよ。絶対に本気で魔法を撃たないでくださいね」\n\n魔法学園の教師に本気で魔法を使うなと言われたり。\n\n\n「てか、ハルト強すぎ。魔王かよ」\n\n仲間に魔王かと言われる程の力を得ていながら、ハルトはまだまだ上を目指す。\n\n最終目標は自分を殺した邪神を1発殴ること。\n\nレベル1の最強賢者は、今日も己の力を高める手段を模索する。\n\n\n※日常シーンは割とのほほんとしてます。\n※戦闘は主人公の圧倒で割と短めです。\n※ハーレム、恋愛(？)、もふもふ要素あり。\n\n※アルファポリスでも公開しています。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ほのぼの",
+            "エルフ",
+            "ネット小説大賞七感想",
+            "ハイファンタジー",
+            "ハーレム",
+            "ファンタジー",
+            "レベル1",
+            "人外",
+            "冒険",
+            "最強主人公",
+            "残酷な描写あり",
+            "猫獣人",
+            "異世界転生",
+            "異世界転移",
+            "精霊",
+            "賢者"
+          ],
+          "sources": [
+            "https://www.alphapolis.co.jp/novel/732537330/827249005"
+          ]
+        },
+        "contribute": [
+          "Chris Liu",
+          "土之女神",
+          "守护舞忍",
+          "无限且遥远◆",
+          "秋葉怜"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n1563fd"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n1563fd&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[等级1的最强贤者吧](https://tieba.baidu.com/f?kw=%E7%AD%89%E7%BA%A71%E7%9A%84%E6%9C%80%E5%BC%BA%E8%B4%A4%E8%80%85&ie=utf-8 \"等级1的最强贤者\")",
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=131&page=1)"
+        ]
+      },
+      "世界最強の後衛　～迷宮国の新人探索者～": {
+        "novel": {
+          "title": "世界最強の後衛　～迷宮国の新人探索者～",
+          "author": "とーわ",
+          "source": "http://ncode.syosetu.com/n4344dy/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91jOjbyErfL.jpg",
+          "publisher": "syosetu",
+          "date": "2018-11-24T19:00:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "世界最強の後衛　～迷宮国の新人探索者～"
+          },
+          "preface": "身為前社畜的有人轉生後擔任起來路不明的職業『後衛』，但這原來是個能支援攻擊與防禦，還能補血的萬能職業！在有人的身邊也陸續聚集了轉生前的美女上司（比他年紀還小）、充滿謎團的亞人傭兵少女、身懷隱情的高等美少女劍士及個性鮮明的女性成員。不僅如此，『後衛』更擁有只要待在對方身後，就能讓好感度直線上升的能力――!?最強的守護系輔助職業冒險物語，正式揭開序幕！\n\n【カドカワBOOKSから書籍版の刊行が決定しました！３巻は８月１０日発売予定です。】\n【コミカライズが連載中です！「ComicWalker」内の「異世界コミック」コーナー、ニコニコ静画の二つのサイトで掲載しています。コミック担当は力蔵先生です。】\n　事故で死亡したらしく、異世界「迷宮国」に転生することになったアリヒト＝アトベは、転移先に出る際案内役と名乗る女性から「探索者の札」を渡される。転移者は全員が迷宮探索者となり、それ以外の生き方を許されないという少々ブラックな世界であると知ったアリヒトは、とりあえず探索者のならわしに従って、札に希望する職業を書くことに。適性があればその職業に就くことができるというのだが、アリヒトは「優秀な後衛が不足している」という話を聞いて、職業欄にそのまま「後衛」と書いてしまう。魔法使いでも射手でもない、迷宮国に今まで存在しなかった職業「後衛」に就くことができてしまったアリヒトは、色々と試しながら「後衛」という職業の持つスキルの有用性、応用性を発見し、理想のパーティメンバーたちを見つけて、探索者の序列を駆け上がっていく。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ギルド",
+            "スキル応用",
+            "チート",
+            "ハーレム",
+            "ファンタジー",
+            "リザードマン",
+            "ヴァルキリー",
+            "万能職",
+            "冒険",
+            "剣神",
+            "受付嬢",
+            "女性上司",
+            "巫女",
+            "後衛",
+            "残酷な描写あり",
+            "異世界転生",
+            "迷宮"
+          ]
+        },
+        "contribute": [
+          "飛"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 3,
+            "startIndex": 0
+          },
+          "syosetu": {
+            "txtdownload_id": "1024242",
+            "novel_id": "n4344dy"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n4344dy&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[世界最强后卫吧](https://tieba.baidu.com/f?kw=%E4%B8%96%E7%95%8C%E6%9C%80%E5%BC%BA%E5%90%8E%E5%8D%AB&ie=utf-8 \"世界最强后卫\")"
+        ]
+      },
+      "世界最高の暗殺者、異世界貴族に転生する": {
+        "novel": {
+          "title": "世界最高の暗殺者、異世界貴族に転生する",
+          "title_zh1": "世界最強暗殺者轉生為異世界貴族",
+          "title_zh2": "最強暗殺者轉生成異世界貴族",
+          "author": "月夜　涙（るい）",
+          "illust": "れい亜",
+          "illusts": [
+            "皇ハマオ"
+          ],
+          "source": "http://ncode.syosetu.com/n3148ex/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81Ctq4rudWL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-24T07:39:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "世界最高の暗殺者、異世界貴族に転生する"
+          },
+          "preface": "世界第一的暗殺者轉生為暗殺貴族托瓦哈迪家的長子。\n前世的技術·經驗·知識，暗殺貴族托瓦哈迪的秘術，魔法，都產生了相輔相成的效果，他成長為連神都能殺掉的暗殺者。\n優秀的暗殺者通用於萬物。\n他平時作為理想的領主被人仰慕，背地裡作為暗殺貴族揮舞著刀刃。\n\n世界一の暗殺者が、暗殺貴族トウアハーデ家の長男に転生した。\n前世の技術・経験・知識、暗殺貴族トウアハーデの秘術、魔法、そのすべてが相乗効果をうみ、彼は神すら殺す暗殺者へと成長していく。\n優れた暗殺者は万に通じる。彼は普段は理想の領主として慕われ、裏では暗殺貴族として刃を振るうのだった。",
+          "tags": [
+            "ESJZone",
+            "R15",
+            "node-novel",
+            "syosetu",
+            "チート",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ハーレム",
+            "ファンタジー",
+            "暗殺者",
+            "異世界",
+            "異世界転生",
+            "貴族",
+            "転生"
+          ],
+          "title_tieba": "世界最强暗sha者转生异世界",
+          "title_zh3": "世界最強暗殺者轉生成異世界貴族"
+        },
+        "contribute": [
+          "ESJ",
+          "黑"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n3148ex"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n3148ex&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n3148ex/)",
+          "https://www.esjzone.cc/detail/1548762549.html",
+          "[世界最强暗sha者转生异世界吧](https://tieba.baidu.com/f?kw=%E4%B8%96%E7%95%8C%E6%9C%80%E5%BC%BA%E6%9A%97sha%E8%80%85%E8%BD%AC%E7%94%9F%E5%BC%82%E4%B8%96%E7%95%8C&ie=utf-8 \"世界最强暗sha者转生异世界\")",
+          "http://www.dm5.com/manhua-shijiezuiqianganshazhezhuanshengchengyishijieguizu/"
+        ]
+      },
+      "俺は星間国家の悪徳領主！": {
+        "novel": {
+          "title": "俺は星間国家の悪徳領主！",
+          "title_zh1": "我在星際國家當惡德領主",
+          "author": "わい／三嶋　与夢",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n1976ey/",
+          "cover": "",
+          "publisher": "syosetu",
+          "date": "2019-01-24T19:08:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": ""
+          },
+          "preface": "里爾姆·塞拉·班菲爾德是個轉生者。  \n他轉生到了劍與魔法的幻想世界裏。然而，那個世界已經邁進了星際時代。  \n這是一個有著星際國家存在，充滿著人型兵器、宇宙戰艦等戰鬥要素，宛若太空歌劇一般的奇妙幻想世界。  \n轉生為貴族制國家――帝國伯爵家一份子的里爾姆，有一個奢望。  \n那就是成為――惡德領主。  \n在前世裏，他失去了一切，在絕望中死去。  \n――善良地活著簡直可笑  \n――這一次，一定要隨自己的心意，自由地活下去。  \n懷著這樣的心情，開始第二人生的他，卻被人們當做名君來崇拜。因為這個世界的價值觀與前世截然不同。  \n里爾姆能順利成為惡德領主嗎？\n\nリアム・セラ・バンフィールドは転生者だ。\n剣と魔法のファンタジー世界に転生したのだが、その世界は宇宙進出を果たしていた。\n星間国家が存在し、人型兵器や宇宙戦艦が戦うスペースオペラのような世界。\n貴族たちが支配する帝国の伯爵家に転生したリアムには野望があった。\nそれは――悪徳領主になることだ。\n前世、不幸にも全てを失い絶望の中で死んだリアム。\n――善良に生きるなんて馬鹿らしい。\n――好き勝手に生きてやる。\nそんな気持ちを胸に、第二の人生を歩もうとするのだが、価値観の違いから名君として崇められてしまう。\nリアムは無事、悪徳領主になれるのだろうか？",
+          "tags": [
+            "R15",
+            "SF",
+            "node-novel",
+            "syosetu",
+            "アンドロイド",
+            "スペースオペラ",
+            "ダーク",
+            "ハーレム",
+            "ロボット",
+            "勘違い",
+            "宇宙",
+            "悪徳",
+            "星間国家",
+            "残酷な描写あり",
+            "男主人公",
+            "異世界転生",
+            "貴族",
+            "領主"
+          ]
+        },
+        "contribute": [
+          "回眸一笑"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n1976ey"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n1976ey&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[我在星际国家当恶德领主吧](https://tieba.baidu.com/f?kw=%E6%88%91%E5%9C%A8%E6%98%9F%E9%99%85%E5%9B%BD%E5%AE%B6%E5%BD%93%E6%81%B6%E5%BE%B7%E9%A2%86%E4%B8%BB&ie=utf-8 \"我在星际国家当恶德领主\")"
+        ]
+      },
+      "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～": {
+        "novel": {
+          "title": "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～",
+          "title_zh": "原世界第一玩家的小號練成日記",
+          "title_zh1": "原・世界第一玩家的小號練成日記 ～廢人玩家、異世界攻略中～",
+          "author": "沢村治太郎(合成酵素)",
+          "illust": "",
+          "illusts": [
+            "まろ",
+            "前田理想"
+          ],
+          "source": "http://ncode.syosetu.com/n6774eh/",
+          "cover": "https://lohas.nicoseiga.jp/material/603cc7/8801618",
+          "publisher": "syosetu",
+          "date": "2019-01-28T19:12:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～"
+          },
+          "preface": "初中和高中都不出席，成人之後也不工作，整天都沉迷於網遊。對世界排名第1位的他來說，網遊就是人生本身。\n那樣的某日，他的角色突然被破壞了。修復是不可能。沒有辦法。失去了賭上人生的全部持續君臨世界首位寶座的他，在過度的絕望下嘗試自殺。醒來後，已經置身於網遊中。不，是和網路遊戲一模一樣的現實世界中。在那裡他，作為過去放置的高級收費的造型輔助角色轉生。\n世界首位的廢人脫胎換骨後，在與網遊一模一樣的異世界。他的傳說即將再次開幕。廢人，貓，黑暗精靈等，與眾多有個性的伙伴們一起，取回他「世界首位」的冒險現在開始。\n\n（原題：世界一位の異世界サブキャラ育成日記）\n\n　中学も高校もろくに通わず、成人しても働かず、朝昼晩とネットゲーム。世界ランキング１位の彼にとって、ネトゲはまさしく人生そのものであった。\n　そんなある日、彼のキャラクターが突如としてクラックされる。復旧は不可能。どうしようもなかった。人生の全てを賭けて君臨し続けていた世界一位の座を失った彼は、あまりの絶望に自殺を試みてしまう。\n　目が覚めると、そこはネットゲームの中。否、ネットゲームそっくりな現実世界の中。そこで彼は、過去に作成したきり放置していたプレミアム課金アバターのサブキャラに転生していた。\n　世界一位の廃人が、ネトゲそっくりの異世界に生まれ変わる。それは途轍もない伝説の幕開けであった。\n　ぽんこつ、ネコ、ダークエルフなど、大勢の個性的な仲間たちと共に、彼の「世界一位」を取り戻す育成が今始まる。\n　\n第一章：女騎士編　\n第二章：魔術学校編　\n第三章：奴隷編　\n第四章：精霊大王編　\n第五章：暗黒狼編　\n第六章：政争編　\n第七章：タイトル争奪編　\n第八章：聖女編　\n第九章：刀八ノ国編　\n第十章：タイトル防衛編　\n第十一章：帝国編　\n第十二章：",
+          "tags": [
+            "R15",
+            "VRMMO",
+            "node-novel",
+            "syosetu",
+            "スキル",
+            "ダンジョン",
+            "ダークエルフ",
+            "ハーレム",
+            "メイド",
+            "主人公最強",
+            "冒険",
+            "剣と魔法",
+            "女騎士",
+            "奴隷",
+            "日常",
+            "残酷な描写あり",
+            "獣人",
+            "男主人公",
+            "異世界転移",
+            "穿越",
+            "精霊",
+            "網遊"
+          ],
+          "title_jp2": "世界一位の異世界サブキャラ育成日記"
+        },
+        "contribute": [
+          "勤奋的懒惰的羊",
+          "章魚子",
+          "缥缈浣纱"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n6774eh"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n6774eh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[原世界第一玩家的小号练成日记吧](https://tieba.baidu.com/f?kw=%E5%8E%9F%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%8E%A9%E5%AE%B6%E7%9A%84%E5%B0%8F%E5%8F%B7%E7%BB%83%E6%88%90%E6%97%A5%E8%AE%B0&ie=utf-8&tp=0 \"原世界第一玩家的小号练成日记\")",
+          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_KS01200682010000_68/)",
+          "[seiga.nicovideo.jp](http://seiga.nicovideo.jp/comic/38266)",
+          "[dm5 漫画](http://www.dm5.com/manhua-yuan-shijiediyiwanjiadexiaohaolianchengriji-feirenwanjia-yishijiegongluezhong/)"
+        ]
+      },
+      "大叔撿到了勇者和魔王": {
+        "novel": {
+          "title": "おっさん、勇者と魔王を拾う",
+          "author": "チョコカレー",
+          "source": "http://ncode.syosetu.com/n8756en/",
+          "cover": "",
+          "publisher": "syosetu",
+          "date": "2018-09-17T19:19:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "おっさん、勇者と魔王を拾う"
+          },
+          "preface": "冒険者ギルドを退職させられたおっさんは故郷に帰る事にする。\nその道中、彼は二人の赤子を拾う。一人目は勇者の紋章を宿した人間の赤子。二人目は魔王の紋章を宿した魔族の赤子であった。\nかくして、勇者と魔王を拾ったおっさんの物語が幕を開ける。\n【書籍化決定】２０１８年７月１０日よりTOブックス様より書籍化させて頂く事になりました。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "おっさん",
+            "オリジナル戦記",
+            "勇者",
+            "勘違い",
+            "残酷な描写あり",
+            "異世界",
+            "魔王"
+          ]
+        },
+        "contribute": [
+          "史卡辛米之刃",
+          "蝶舞凝汐"
+        ],
+        "options": {
+          "syosetu": {
+            "txtdownload_id": "1178639"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.dip.jp/search.php?text=n8756en&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[大叔捡到了勇者和魔王吧](https://tieba.baidu.com/f?kw=%E5%A4%A7%E5%8F%94%E6%8D%A1%E5%88%B0%E4%BA%86%E5%8B%87%E8%80%85%E5%92%8C%E9%AD%94%E7%8E%8B&ie=utf-8 \"大叔捡到了勇者和魔王\")"
+        ]
+      },
+      "奴隷商人しか選択肢がないですよ？　～ハーレム？　なにそれおいしいの？～": {
+        "novel": {
+          "title": "奴隷商人しか選択肢がないですよ？　～ハーレム？　なにそれおいしいの？～",
+          "title_zh": "除了成為奴隸商人以外別無選擇喲？～後宮？那好吃嗎？",
+          "author": "カラユミ",
+          "illust": "neropaso",
+          "illusts": [
+            "ごまし"
+          ],
+          "source": "http://ncode.syosetu.com/n8567do/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91sSsOf1oqL.jpg",
+          "publisher": "syosetu",
+          "date": "2019-01-18T10:35:00+08:00",
+          "status": "完結済",
+          "novel_status": 769,
+          "series": {
+            "name": "奴隷商人しか選択肢がないですよ？　～ハーレム？　なにそれおいしいの？～"
+          },
+          "preface": "塞奧利斯遵循村中的慣例一到十五歲就去職業學校。從那裡得到的稱號將會決定人生的大致方向,但是他所得到的稱號是【勇者】【魔帝】【大賢者】【奴隸商人】、無論哪一個都是見不得人的。他從中選了最不引人注目的、能輕鬆活下去的最差的稱號【奴隸商人】。開啟了被青梅竹馬的毒舌美少女、同是奴隸商人的精靈、貓耳冒險者、蘿莉魔王等各式各樣的女性折騰的後宮苦勞傳\n\n村の決まりで十五歳から職業学校に通うことになったゼオリス。そこで得られる称号で人生がほぼ決まるのだが、得られた称号は【勇者】【魔帝】【大賢者】【奴隷商人】と、どれも人目を憚る称号ばかりだった。その中で一番注目されず、生きていくのが楽そうな最低の称号【奴隷商人】を選ぶことに。幼馴染の毒舌美少女から同じ奴隷商人のエルフ、猫耳冒険者、ロリ魔王と多種多様な女性に振り回されるハーレム苦労譚。\n■コミカライズは書籍をベースとしていますので、WEB版とは途中から大きく異なる予定です。\n\n\n■2018.1.26完結\n■只今3巻まで発売中\n■書籍は一巻後半部分でweb版から分岐ルート\n■幻冬舎コミックスのコミックブーストでコミカライズ中\n◆アルファポリス外部サイト登録中\n【今日の一冊】で紹介されました。2016.11.22【http://syosetu.com/issatu/archive/no/25/】",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "エルフ",
+            "ギャグ",
+            "ゲイネタ有",
+            "コミカライズ",
+            "コメディ",
+            "ハッピーエンド",
+            "ヒロイン問題有",
+            "ラブコメ",
+            "主人公最強？",
+            "勘違いされ系",
+            "変態主人公",
+            "後半",
+            "徐々に下ネタ増",
+            "書籍化",
+            "残酷な描写あり",
+            "獣人",
+            "結婚",
+            "苦労ハーレム",
+            "魔王"
+          ]
+        },
+        "contribute": [
+          "Yuki",
+          "jemiwyl",
+          "半支蜡烛♬",
+          "忍野忍",
+          "懒惰的鹹鱼",
+          "月下空城♂",
+          "缘指逝的水滴"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "undefined",
+            "novel_id": "n8567do"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n8567do&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[除了成为奴隶商人以外别无选择吧](https://tieba.baidu.com/f?kw=%E9%99%A4%E4%BA%86%E6%88%90%E4%B8%BA%E5%A5%B4%E9%9A%B6%E5%95%86%E4%BA%BA%E4%BB%A5%E5%A4%96%E5%88%AB%E6%97%A0%E9%80%89%E6%8B%A9&ie=utf-8 \"除了成为奴隶商人以外别无选择\")",
+          "[dm5](http://www.dm5.com/manhua-chulechengweinulishangrenyiwaibiewuxuanzeyo-hougong-nahaochima/)",
+          "[over-lap.co.jp](https://over-lap.co.jp/narou/865542509/)",
+          "https://masiro.moe/forum.php?mod=forumdisplay&fid=110"
+        ]
+      },
+      "婚約者は、私の妹に恋をする": {
+        "novel": {
+          "title": "婚約者は、私の妹に恋をする",
+          "author": "はなぶさ",
+          "source": "http://ncode.syosetu.com/n8109cq/",
+          "cover": "",
+          "publisher": "syosetu",
+          "date": "2018-09-10T02:00:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "婚約者は、私の妹に恋をする"
+          },
+          "preface": "ああ、またか。私の可愛い妹を見つめる、私の婚約者。その冷たい目に灯る僅かな熱量を確かに見たとき、私は既視感に襲われた。かつての人生でも、私の婚約者は私の妹に恋をした。私はただそれを見ていることしかできなかった。そして、そんな私は、何の因果か、同じ時を巡る人間だった。\n☆6月9日にKADOKAWA様より書籍化。☆12月9日に２巻が刊行されます。本当に有難うございます。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "すれ違い",
+            "ファンタジー",
+            "学園",
+            "恋愛",
+            "残酷な描写あり",
+            "異世界",
+            "転生"
+          ]
+        },
+        "contribute": [
+          "SuppiYuu",
+          "小Mo",
+          "蓝胖子XD"
+        ],
+        "options": {
+          "syosetu": {
+            "txtdownload_id": "688041"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.dip.jp/search.php?text=n8109cq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[婚约者恋上我的妹妹吧](https://tieba.baidu.com/f?kw=%E5%A9%9A%E7%BA%A6%E8%80%85%E6%81%8B%E4%B8%8A%E6%88%91%E7%9A%84%E5%A6%B9%E5%A6%B9&ie=utf-8 \"婚约者恋上我的妹妹\")"
+        ]
+      },
+      "宵の国戦記": {
+        "novel": {
+          "title": "宵の国戦記（■旧題：最強の暗黒騎士は定時で帰りたい！ ）",
+          "title_zh1": "夜之國戰記",
+          "author": "長月東葭",
+          "illust": "こぞう",
+          "source": "http://ncode.syosetu.com/n6116dk/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91MEZ4gIqyL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-20T22:49:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "宵の国戦記（■旧題：最強の暗黒騎士は定時で帰りたい！ ）"
+          },
+          "preface": "從現代日本，轉生為劍與魔法的異世界已經400年了。\n研究武藝和魔法，成為魔族軍最強的黑闇騎士的主人公，從事著保護魔族領土不受人類侵略的任務。\n\n這樣的主人公，有完成工作之後的『樂趣』。\n但是，最近由於人類領土的動盪，其樂趣正在被剝奪。\n為了守護治癒的時間，主人公拔出了『魔劍』。\n\n陰謀、憎愛、戰斗全開的陰謀和黑暗幻想。\n魔族VS人類。角色各自的故事以群像劇的形式展開的戰記。\n\nドラゴンノベルス様より「宵の国戦記」書籍版、発売中です。\n\n【毎週土曜、昼11時、定期更新中！】\n\n【第3回カクヨムWeb小説コンテスト、異世界ファンタジー部門、特別賞をいただきました！】\n\n現代日本から、剣と魔法の異世界に転生して400年。武芸と魔法を究め、魔族軍最強の暗黒騎士として成り上がった主人公は、人間領の侵攻から魔族領を護る任務に就いていた。\n\nそんな主人公には、仕事を終えてからの“楽しみ”がある。\n\nしかしこのところ、人間領の不穏な動きのために、その楽しみが奪われつつあった。\n癒やしの時間を護るため、主人公は“魔剣”を抜く。\n\n陰謀・憎愛・バトル全開の、ドロドロダークファンタジー。\n\n魔族VS人間。キャラクターそれぞれの物語が群像劇調に展開していく戦記もの。\n\n注）\n第2部以降、シリアスパートオンリーとなります。シリアス展開が苦手な方はご注意下さい。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "オリジナル戦記",
+            "シリアス",
+            "ダーク",
+            "ダークファンタジー",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ファンタジー",
+            "人外",
+            "剣と魔法",
+            "戦記",
+            "残酷な描写あり",
+            "男主人公",
+            "異世界転生",
+            "群像劇"
+          ],
+          "source_kakuyomu": "https://kakuyomu.jp/works/1177354054881454400"
+        },
+        "contribute": [
+          "我就是不知道忘"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n6116dk"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n6116dk&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n6116dk/)",
+          "[夜之国战记吧](https://tieba.baidu.com/f?kw=%E5%A4%9C%E4%B9%8B%E5%9B%BD%E6%88%98%E8%AE%B0&ie=utf-8&tp=0 \"\")",
+          "https://www.esjzone.cc/detail/1555820905.html"
+        ]
+      },
+      "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい": {
+        "novel": {
+          "title": "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい",
+          "title_zh1": "復仇喚來天罰",
+          "author": "月汰元",
+          "illust": "ジャン・ポポ",
+          "source": "http://ncode.syosetu.com/n8216dt/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/715eFp4JVtL.jpg",
+          "publisher": "syosetu",
+          "date": "2019-02-18T11:27:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい"
+          },
+          "preface": "【第六届ネット小说大赏获奖，2019年1月宝岛社发售第一卷】\n\n中年教师间藤未来生追查到了杀害妻子和女儿的犯人，在复仇之日，他因遭到了天罚而死亡。\n\n然而，他的精神体却被带到了一个未知的世界，并转移到了一个叫做里卡尔德·尤尼乌斯（リカルド・ユニウス）的少年身上。\n那个陌生的世界被称为『天神族的游乐场』，这是一个存在着魔术与魔兽、而且人类在初次杀死魔兽时，可以得到一个神之恩惠，这样的世界。\n一般而言，人们可以从五个恩惠中选择其一。然而，同样的情况发生在里卡尔德（间腾）身上，却出现了第六个选项。\n这是一篇由选择魔术士道路的里卡尔德和他的成长之路所编织而成的物语。\n\n【第六回ネット小説大賞受賞、２０１９年１月宝島社より第１巻発売】　\n　中年教師の間藤未来生は妻と娘を殺した犯人を突き止め復讐した日に天罰が下って死亡する。\n　但し、その精神は見知らぬ世界に飛ばされ、リカルド・ユニウスという少年に乗り移った。\n　その見知らぬ世界は『天神族の遊び場』と呼ばれ魔獣や魔術が存在していた。しかも人間は初めて魔獣を殺した時、神の恩恵を一つ貰える世界だった。\n　恩恵は五つの中から一つを選択する方法で与えられる。しかし、リカルド（間藤）の場合には六番目の選択肢が現れた。\n　この物語はリカルド（間藤）が魔術士としての道を選び、成長していく物語である。\n\n　世界観や設定が固まったので、書き溜めていたものを投稿します。更新は不定期になります。\n　感想は喜んで読ませて頂きますが、時間の関係で全部に返事が出来ないと思います。ご容赦下さい。",
+          "tags": [
+            "node-novel",
+            "syosetu",
+            "ハイファンタジー",
+            "ファンタジー",
+            "内政",
+            "冒険",
+            "妖樹飼育",
+            "復讐",
+            "書籍化",
+            "最強魔術士",
+            "残酷な描写あり",
+            "異世界転移",
+            "触媒",
+            "魔獣",
+            "魔術",
+            "魔術士協会"
+          ]
+        },
+        "contribute": [
+          "呉Kingkong",
+          "回眸一笑"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n8216dt"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n8216dt&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[复仇唤来天罚吧](https://tieba.baidu.com/f?kw=%E5%A4%8D%E4%BB%87%E5%94%A4%E6%9D%A5%E5%A4%A9%E7%BD%9A&ie=utf-8 \"复仇唤来天罚\")"
+        ]
+      },
+      "悠閑農家與亂碼技能": {
+        "novel": {
+          "title": "ゆるふわ農家の文字化けスキル　～異世界でカタログ通販やってます～",
+          "title_zh": "悠閑農家與亂碼技能　在異世界網購雜貨",
+          "author": "白石　新",
+          "illust": "ももいろね",
+          "source": "http://ncode.syosetu.com/n7352fa/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91qExOqZLhL.jpg",
+          "publisher": "syosetu",
+          "date": "2019-02-08T18:47:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "ゆるふわ農家の文字化けスキル　～異世界でカタログ通販やってます～"
+          },
+          "preface": "有美味的飯菜和酒。\n要是身邊還有漂亮的妻子們，就算身處異世界也不是挺好的嗎。\n大叔就像這樣轉移到異世界，然後悠閑地做起了農活。\n使用日本的調料製作出的料理，令妻子們感到十分滿足。這比普通的異世界食材還要美味，並且自己所種的農作物也十分地美味。\n正如獨身男性回到老家時那樣，這是一名悠閑度日的男性的生活記錄。\n\n美味いメシと酒。\nそして綺麗な嫁達がいれば、そこが異世界でも良いじゃない。\nそんな感じでオジサンが異世界に転移して、まったりと農業をやることにした。\n日本の調味料で作った料理で嫁達も自分も大満足。普通に異世界の食材も美味いし、自分の農作物もめっちゃ美味い。\nこれはまるで独身男性が実家に帰った時のような感じの、ゆるふわな優しい時間を過ごす男の生活記録である。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ご都合主義",
+            "ざまぁもあるよ",
+            "ゆるゆる",
+            "スキル無双",
+            "スローライフ",
+            "チート",
+            "ドラゴン",
+            "ハーレム",
+            "主人公最強",
+            "優しい世界",
+            "剣と魔法",
+            "微エロ",
+            "日常",
+            "残酷な描写あり",
+            "異世界転生",
+            "異世界転移",
+            "苦戦なし",
+            "鬱展開なし"
+          ]
+        },
+        "contribute": [
+          "黑色弦律"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n7352fa"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n7352fa&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[悠闲农家与乱码技能吧](https://tieba.baidu.com/f?kw=%E6%82%A0%E9%97%B2%E5%86%9C%E5%AE%B6%E4%B8%8E%E4%B9%B1%E7%A0%81%E6%8A%80%E8%83%BD&ie=utf-8 \"悠闲农家与乱码技能\")",
+          "[黑色弦律](https://pan.baidu.com/s/1s3QREM5IxmzD_fTqcSCgdQ) 656h"
+        ]
+      },
+      "昏き宮殿の死者の王": {
+        "novel": {
+          "title": "昏き宮殿の死者の王",
+          "title_zh1": "昏暗宫殿的死者之王",
+          "author": "槻影",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n6621fl/",
+          "cover": "http://1.bp.blogspot.com/-E42-xNlD6VM/UFHpIIMpnSI/AAAAAAAAADY/P1VuG2oMRSo/s1600/20120712_ccbbae.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-05-18T16:37:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "昏き宮殿の死者の王"
+          },
+          "preface": "――死にたくない。自由が欲しい。\nそのためならば、僕は――甘んじて『怪物』になろう。\n\n全身に絶え間ない激痛が奔り、衰弱の末死に至る奇病。\nそれに冒された少年は数年の苦痛の末、絶望を感じる余裕もなく誰にも看取られることなく生を終える。\n\nそして再び目覚めた時――少年は邪悪な死霊魔術師の力により、最下級アンデッド、『死肉人』となっていた。\n\n念願の痛みを感じない身体を手に入れ、歓喜する少年だが、すぐに自分の立場が未だ支配され、病室に軟禁されていた頃と大差ない事に気づく。\n\nただ平穏を求める少年を、世界は放っておかなかった。\n\n死霊魔術により死体から少年を蘇らせ、エンドと名付け支配せんとする死霊魔術師。\n闇に属する者をどこまでも追い詰め、滅する事に命を賭ける終焉騎士団。\n多数の魔物を配下に収め、各地に君臨し覇を争う魔王達。\n\n目的は生存と自由。必要な物は力と注意深さ。\n\nこれは、自由を求め、時に戦い、時に逃げ出し、時に怯え、時に躊躇う、臆病な死者の王の物語。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "だけどあまり暗くない",
+            "アンデッド",
+            "ダークファンタジー",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ファンタジー",
+            "呪い",
+            "変異",
+            "成長",
+            "戦い",
+            "死霊魔術",
+            "残酷な描写あり",
+            "現地人主人公",
+            "進化"
+          ],
+          "sources": [
+            "https://kakuyomu.jp/works/1177354054888541019"
+          ]
+        },
+        "contribute": [
+          "贺神镜"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n6621fl"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n6621fl&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n6621fl/)",
+          "[昏暗宫殿的死者之王](https://masiro.moe/forum.php?mod=forumdisplay&fid=161&page=1)"
+        ]
+      },
+      "最強職《竜騎士》から初級職《運び屋》": {
+        "novel": {
+          "title": "最強職《竜騎士》から初級職《運び屋》になったのに、なぜか勇者達から頼られてます",
+          "title_zh": "明明從最強職《竜騎士》成為初級職《送貨人》，為何依然備受勇者們的青睞",
+          "author": "あまうい白一",
+          "source": "http://ncode.syosetu.com/n4045ed/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/71RMRiJKoeL.jpg",
+          "publisher": "syosetu",
+          "date": "2018-11-07T12:32:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "最強職《竜騎士》から初級職《運び屋》になったのに、なぜか勇者達から頼られてます"
+          },
+          "preface": "─儘管從最上級職成為初級職，卻變得更強了─  \n最強的《竜騎士》阿克塞爾是，應王家的委託成為勇者隊伍上的一員並且打倒了魔王。  \n之後，得到許多報酬的他沒有必要再從事危險的工作，並且轉職為初級職《送貨人》。  \n然後，和身為夥伴的竜一同遨遊世界，過著原以為悠閒自適的生活──  \n「總覺得前勇者和公會裡的人老是依賴我啊？」  \n「因為主人已經變成，驅使身為竜王的我，最快速的送貨人先生，當然囉」  \n「話說回來，不僅比竜騎士時代的能力更高，技能也更強耶？」  \n「因為主人，不是從基礎學起，重新學習會更強是理所當然的啊」  \n就這樣成為史上最強的新手《送貨人》的他，在被周遭愛戴崇拜、依靠之下自由自在的生活下去。\n\n　ガガガブックス様より書籍化しました&マンガワン様、裏サンデー様、ニコニコ静画様でコミカライズが連載中です！　\n　原作小説２巻、コミックス１巻は５/１８に発売しています！\n　そしてコミックス２巻は１０/１２（金）に発売です！\n　\n　―最上級職から初級職になったのに、より強くなるだけでした―\n　最強の《竜騎士》アクセルは、王家の依頼により勇者パーティーの一人として魔王を倒した。その後、多大な報酬を得た彼はこれ以上物騒な仕事をする必要もない、と初級職《運び屋》に転職した。そして、相棒である竜と共に世界を旅しながら、悠々自適な生活をしようと思っていたのだが――\n「何だか前より勇者やギルドの連中から頼りにされていないか？」「だってご主人、竜王のボクを駆る、最速の運び屋さんになったんだから、当然でしょ」\n「というか、竜騎士時代よりも能力が上がっているし、スキルも強いような？」「だってご主人、基礎を学んでないんだから、学び直したら強くなるのは当たり前だよ」\n　こうして史上最強のビギナー《運び屋》となった彼は、周りから愛され憧れられ、頼られながら自由気ままに生活していく。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "コミカライズしてます",
+            "スキル",
+            "ビギナー最強",
+            "ファンタジー",
+            "冒険",
+            "初級職",
+            "勇者",
+            "最強",
+            "残酷な描写あり",
+            "異世界",
+            "神",
+            "竜",
+            "精霊",
+            "職業",
+            "転職",
+            "龍娘"
+          ]
+        },
+        "contribute": [
+          "RunningCat",
+          "轻之国度",
+          "飛奔中的喵"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "1073938",
+            "novel_id": "n4045ed"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n4045ed&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[轻之国度](https://www.lightnovel.cn/forum.php?mod=viewthread&tid=919749&extra=&authorid=989041)"
+        ]
+      },
+      "月桂樹の唄": {
+        "novel": {
+          "title": "月桂樹の唄",
+          "title_zh1": "月桂树之歌",
+          "author": "松山 京平",
+          "source": "http://ncode.syosetu.com/n1828cs/",
+          "cover": "http://gmom04-res.cloudinary.com/image/upload/v1491893744/dlynaizfnjybuo87uotj.jpg",
+          "publisher": "syosetu",
+          "date": "2018-10-29T01:16:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "月桂樹の唄"
+          },
+          "preface": "淩川琉璃，是位如彗星一般橫空出世的人氣聲優。\n但是，她有一個不為人知的秘密。那就是、她有著“本是名男生”這樣令人難以相信的過去。\n因臨近高考的、十四歲左右時的、身體異常的變化而痛苦掙扎、並陷入絕望深淵的琉璃，於平安夜夜晚、在公園中與既是劇作家、又是“七色團”劇團團長的奈良屋義春相遇，決心走上演員的道路。\n擁有著非凡的姿容與表演技藝、以及如天性一般的美聲與歌唱力的琉璃，不久，就在聲優界獲得了頂尖的人氣。\n然後，再一次造訪的平安夜。\n欺騙群眾、背叛朋友、不斷對自己的內心說謊的琉璃，被捲入了事故之中……。\n\n　彗星の如く現われた人気声優「澪川瑠璃（みおかわ　るり）」。\n　しかし、１年前の彼女はロックシンガーを夢見るひねくれた中学生３年生の男子、「宮川瑠伊（みやかわ　るい）」だった。\n\n　高校受験を控えた１４歳の秋、男だった瑠伊の身体は少しずつ変化していく……。\n　身体の異常をひた隠しにしながら、瑠伊は原因不明の激痛にもがき苦しむ日々を過ごした。\n　身体の変化に限界を感じ、明日にでも命尽き果てる不安と絶望の底で、ついに瑠伊の身体は完全な女性へと変貌する。\n\n　季節は冬。\n　クリスマス・イヴの夜の公園で劇作家であり俳優でもある劇団七色座の座長「奈良屋義春」と出会い、瑠伊は役者の道を志す決意をする。\n　天使のような容姿と美声に演技力と歌唱力が加わった瑠伊は瑠璃となり、天の悪戯か声優デビューを果たして一躍世間の注目を浴びる存在となる。\n\n\n　　──そして１年後。再び訪れたクリスマス・イヴの夜。\n\n\n　初のライブで観客を熱狂させた帰りの夜、瑠璃は交通事故に巻き込まれた。\n　その刹那、懐かしい思い出が走馬灯のように駆け巡る……。\n\n\n　　この物語は女へと変わってしまった男子中学生の記憶であり、\n　　芸能界へ挑戦する一人の少女の秘密の記録である。\n\n\n　大衆を誑（たぶら）かし、友を騙し、自らの心をも偽り続ける瑠璃は……。\n\n\n※本作品はPixiv様でも掲載しております。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ご都合主義",
+            "ガールズラブ",
+            "シリアス",
+            "スクールラブ",
+            "ネット小説大賞六感想",
+            "ボーイズラブ",
+            "ラブコメ",
+            "中学生",
+            "劇団",
+            "声優",
+            "少しずつＴＳ",
+            "性転換",
+            "日常",
+            "現代(モダン)",
+            "舞台",
+            "青春",
+            "高校生",
+            "ＴＳ"
+          ]
+        },
+        "contribute": [
+          "土之女神",
+          "寂夜空雪",
+          "星宫濑奈",
+          "興國物語",
+          "阿拉斯加巨企鹅",
+          "随便取的名字82"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "undefined",
+            "novel_id": "n1828cs"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n1828cs&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[月桂树之歌吧](https://tieba.baidu.com/f?kw=%E6%9C%88%E6%A1%82%E6%A0%91%E4%B9%8B%E6%AD%8C&ie=utf-8 \"\")",
+          "[pixiv](https://www.pixiv.net/novel/series/882076)"
+        ]
+      },
+      "父は英雄、母は精霊、娘の私は転生者。": {
+        "novel": {
+          "title": "父は英雄、母は精霊、娘の私は転生者。",
+          "title_other": "爹强妈猛我无敌",
+          "author": "松浦",
+          "source": "http://ncode.syosetu.com/n2056dn/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91xqrEG%2BX0L.jpg",
+          "publisher": "syosetu",
+          "date": "2018-09-27T21:36:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "父は英雄、母は精霊、娘の私は転生者。"
+          },
+          "preface": "カドカワBOOKS様より書籍化、2018年3月10日に無事一巻発売。続いて二巻が6月9日に発売いたしました。\nスクウェア・エニックス様 月刊ビッグガンガン10月号より2018年9月25日コミカライズ開始。\n\n読んでくださっている皆様のお陰です。本当にありがとうございます！\n\n\n日本で研究者をしていた28歳の私は、気付いたらファンタジーの世界へ輪廻転生をしていました。\n更に半精霊化した父と精霊の母を持つクォーターという存在に。\n父に執着する叔母、問題児の従妹達。まるで乙女ゲームの様な泥沼のテンプレを巻き起こす彼女達。\n更に何故か従妹が狙っていたと思わしき対象に気に入られたり、王様相手に言葉でバトルをやりあったり。人間助けたり、精霊助けたりと大忙し！\n\n更にあの人達が最終的に父を狙っていると知ったその瞬間。\n「潰します」\nチートな主人公が、人様の家庭に手を出すんじゃないと制裁に乗り出す。そんなお話。\n\n※修正一時中断しております。申し訳ありません。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "じれじれ",
+            "コメディ",
+            "シリアス",
+            "チート",
+            "ハッピーエンド",
+            "ファンタジー",
+            "恋愛",
+            "書籍化",
+            "残酷な描写あり",
+            "異世界転生",
+            "異類婚姻譚",
+            "精霊",
+            "身分差"
+          ]
+        },
+        "contribute": [
+          "傻酱o-o"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "911965",
+            "novel_id": "n2056dn"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n2056dn&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[父为英雄母为精灵女儿为转生者吧](https://tieba.baidu.com/f?kw=%E7%88%B6%E4%B8%BA%E8%8B%B1%E9%9B%84%E6%AF%8D%E4%B8%BA%E7%B2%BE%E7%81%B5%E5%A5%B3%E5%84%BF%E4%B8%BA%E8%BD%AC%E7%94%9F%E8%80%85&ie=utf-8 \"父为英雄母为精灵女儿为转生者\")",
+          "[dmzj](https://manhua.dmzj.com/dieqiangmamengwowudi/)"
+        ]
+      },
+      "破滅の魔導王とゴーレムの蛮妃": {
+        "novel": {
+          "title": "破滅の魔導王とゴーレムの蛮妃",
+          "title_zh": "破滅之魔導王與魔偶蠻妃",
+          "author": "北下路 来名",
+          "illust": "",
+          "illusts": [
+            "いのうえひなこ",
+            "芝"
+          ],
+          "source": "http://ncode.syosetu.com/n0406dr/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91n5c9r2xvL.jpg",
+          "publisher": "syosetu",
+          "date": "2018-12-25T21:53:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "破滅の魔導王とゴーレムの蛮妃"
+          },
+          "preface": "◆書籍化しました。2018年12月27日、第2巻が発売いたします！\n\n世界を滅ぼす『破滅の魔導王』として、ダサいパジャマ姿のまま、異なる世界に召喚された一人の青年。\nしかし、彼はわりと理性的な人間であり、破滅的なのはネーミングセンスくらいのものだった。\n世界を滅ぼすつもりなどは、特にない。\nさらには、召喚直後に予想外のアクシデントが発生する。これにより青年は召喚主のコントロール下を離れ、完全な独自行動を取りはじめた。\n\nそして遂に、彼は生み出してしまうことになるのだ。……その、おそるべき相棒を。\n滅びに向かうはずだった世界の運命が、今大きく変わりはじめていた。\n\n※ヒロインの愛が、重いです。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ほのぼのヤンデレ",
+            "エルフ(?)",
+            "ゴーレム",
+            "タッグバトル",
+            "土属性主人公",
+            "旅",
+            "残酷な描写あり",
+            "異世界転移",
+            "異類婚姻譚",
+            "魔王"
+          ]
+        },
+        "contribute": [
+          "墨羽",
+          "章魚子",
+          "鑫森淼焱垚"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "undefined",
+            "novel_id": "n0406dr"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n0406dr&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[破灭之魔导王与魔偶蛮妃吧](https://tieba.baidu.com/f?kw=%E7%A0%B4%E7%81%AD%E4%B9%8B%E9%AD%94%E5%AF%BC%E7%8E%8B%E4%B8%8E%E9%AD%94%E5%81%B6%E8%9B%AE%E5%A6%83&ie=utf-8 \"破灭之魔导王与魔偶蛮妃\")",
+          "[dm5](http://www.dm5.com/manhua-pomiezhimodaowangyumooumanfei/)"
+        ]
+      },
+      "絕對不想工作的地下城城主想睡懶覺": {
+        "novel": {
+          "title": "絶対に働きたくないダンジョンマスターが惰眠をむさぼるまで",
+          "title_zh1": "絕對不想工作的地下城城主想睡懶覺",
+          "title_zh2": "不工作的地城主想睡懶覺",
+          "author": "鬼影スパナ",
+          "illust": "よう太",
+          "illusts": [
+            "七六"
+          ],
+          "source": "http://ncode.syosetu.com/n5490cq/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91ZCsHrplUL.jpg",
+          "publisher": "syosetu",
+          "date": "2019-01-29T21:51:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "絶対に働きたくないダンジョンマスター"
+          },
+          "preface": "「我不想工作Zzzz」\n　即將被召喚到異世界的增田桂馬、神明大人說可以聽取他一個條件時、桂馬如此回答了。\n　......不過、異世界好像並沒有這等好事。接着神明大人呆然地說「......那我期待下一個人吧...」、然後桂馬就這樣被祂目送着穿越到了異世界。\n　召喚桂馬的是被稱為第695號地城核心的金髮蘿莉幼女。接着不知怎的桂馬突然被登錄為了地城主、什麼......、這個地城就只有1個房間，而且那個房間還被山賊佔領了......？\n　------那麼究竟桂馬能不能顛覆這個突如其來的困境、然後實現可以睡懶覺而又不用工作的生活呢？！\n\n「働きたくない」\n　異世界召喚される中、神様が一つだけ条件を聞いてくれるということで、増田桂馬はそう答えた。\n　……だが、さすがにそううまい話はないらしい。呆れられて「次の人に期待する」という神様に見送られ、桂馬はそのまま召喚された。\n　召喚したのは第６９５番ダンジョンコアと名乗る金髪ロリ幼女。そしてなんか流れでダンジョンマスターになったけど、あれ、このダンジョン１部屋しかない上に山賊に制圧されてね……？\n　はたして桂馬はいきなり詰んでるこの状況を覆し、惰眠をむさぼる働かない生活を手に入れることはできるのか？！\n\n（2018年11月25日　書籍９巻発売。コミカライズもしました→https://over-lap.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=ZG0023）",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ダンジョン",
+            "ダンジョンマスター",
+            "ダンジョン経営",
+            "ダンジョン運営",
+            "ファンタジー",
+            "地下城",
+            "奴隷",
+            "幼女",
+            "残酷な描写あり",
+            "異世界",
+            "異世界転移",
+            "経営",
+            "運営",
+            "魔法"
+          ]
+        },
+        "contribute": [
+          "ALEXY",
+          "elsun87108",
+          "giligili_eve",
+          "iam_hungry",
+          "m51352004",
+          "on哥",
+          "初级侬侬",
+          "吉村理葛代",
+          "夜幕壟罩",
+          "崇雨沛風",
+          "新筆芯",
+          "暗風月",
+          "水中浮云月",
+          "試用版beta",
+          "路人_鋒",
+          "長谷川無用男",
+          "阿李猫猫cat",
+          "雪隐鬼狐",
+          "鳥鈴司",
+          "黑尋亦"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "novel_id": "n5490cq"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n5490cq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[不工作的地城主想睡懒觉吧](https://tieba.baidu.com/f?kw=%E4%B8%8D%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E5%9F%8E%E4%B8%BB%E6%83%B3%E7%9D%A1%E6%87%92%E8%A7%89&ie=utf-8 \"不工作的地城主想睡懒觉\")",
+          "[石墨整合帖](https://shimo.im/docs/QVS5Zmgs85QzmDKB)",
+          "[真白小鎮](https://masiro.moe/forum.php?mod=forumdisplay&fid=97)",
+          "[dm5 漫畫](http://www.dm5.com/manhua-jueduibuxianggongzuodedixiachengchengzhuxiangshuilanjue/)"
+        ]
+      },
+      "継続は魔力なり《無能魔法が便利魔法に》": {
+        "novel": {
+          "title": "継続は魔力なり《無能魔法が便利魔法に》",
+          "title_zh1": "堅持就是魔力",
+          "author": "リッキー",
+          "illust": "",
+          "illusts": [
+            "鶴山ミト",
+            "キッカイキ"
+          ],
+          "source": "http://ncode.syosetu.com/n3956eq/",
+          "cover": "https://pbs.twimg.com/media/D0zSjBXU4AAqY8p.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-03-10T18:42:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "継続は魔力なり《無能魔法が便利魔法に》"
+          },
+          "preface": "隻要堅持不懈，開往幼兒園的車就會啟動！\n\n特技：國寶級的道具製作！\n與公主·聖女的孫子對一起，致力於修行這個名的約會！\n最強東西製作幻想！\n\n為了使用魔術每天咯噔咯噔持續做魔力鍛鍊的re盎斯有的日，自己的適應性魔術，被世間普通強迫知道是沒中處理的『創造魔術』。\n可是向re盎斯驅使特別的魔力和運，生出『創造魔術』最強的條款的便利魔術使之進化。能會話的doM的魔劍等，許多的稍微變()？不斷地生出便利條款，為公主sheria和聖女的孫子riana送，變成或者與二人總覺得好的氣氛。\n訪問那樣的re盎斯，某考驗。更加威脅帝國的和平的神秘的組織『隱身舖』也第一次------!?暗中活動\n\n越級一千里的道！　最強東西製作幻想！\n\n☆３月９日にＴＯブックス様にて書籍版二巻が発売されます☆\n☆１月１４日よりニコニコ静画にて漫画版が公開されます☆\n『魔法を使うには魔力と適性が必要』\nこれを俺は、幼少期に知った。\nしかし、まだ俺は適性魔法を知らない……。\nなら、わかるまで魔力を鍛えればいいじゃん！\nそれから毎日、暇な俺は魔力を独自の方法で黙々と鍛え続けた……。\nそして時が経ち、適性魔法が『創造魔法』である事を知る。\n俺は、創造魔法は当たりだと思い、喜んだ。\nしかし、周りの大人は創造魔法と知ると喜ぶどころか何故か悲しんでいた……。\n「創造魔法は珍しいが、無能魔法なんだよ」\nどうやら、創造魔法は無駄に魔力を使い、簡単な物も造れない無能な魔法らしい。\n実際に試してみるが……本当に何も造れなかった。\nしかし、何度も挑戦する中で俺はある創造魔法の秘密を見つけた。\nそして、今まで鍛えてきた魔力を使って無能魔法を便利魔法に変えていく！",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "コミカライズ",
+            "ハイファンタジー",
+            "ハーレム",
+            "ファンタジー",
+            "主人公最強になる予定",
+            "勇者",
+            "学園",
+            "成長チート",
+            "書籍化",
+            "残酷な描写あり",
+            "男主人公",
+            "異世界転生",
+            "貴族",
+            "魔法",
+            "魔王"
+          ],
+          "title_jp2": "継続は魔力なり～無能魔法が便利魔法に進化を遂げました～"
+        },
+        "contribute": [
+          "比利琼斯1380"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n3956eq"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n3956eq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[\\[Eternal Dead汉化组\\]\\[坚持就是魔力\\]](https://www.lightnovel.cn/thread-953957-1-1.html)",
+          "[坚持就是魔力吧](https://tieba.baidu.com/f?kw=%E5%9D%9A%E6%8C%81%E5%B0%B1%E6%98%AF%E9%AD%94%E5%8A%9B&ie=utf-8&tp=0 \"坚持就是魔力\")",
+          "[eternaldead汉化组吧](https://tieba.baidu.com/f?kw=eternaldead%E6%B1%89%E5%8C%96%E7%BB%84&ie=utf-8 \"eternaldead汉化组\")",
+          "[dm5](http://www.dm5.com/manhua-jianchijiushimoli/)",
+          "https://tobooks.shop-pro.jp/?pid=134618957"
+        ]
+      },
+      "美女と賢者と魔人の剣": {
+        "novel": {
+          "title": "美女と賢者と魔人の剣",
+          "author": "片遊佐 牽太",
+          "illust": "",
+          "illusts": [
+            "モティカ",
+            "六時"
+          ],
+          "source": "http://ncode.syosetu.com/n4191cj/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81tuJC3KZzL.jpg",
+          "publisher": "syosetu",
+          "date": "2018-02-02T22:36:00+08:00",
+          "status": "完結済",
+          "novel_status": 769,
+          "series": {
+            "name": "美女と賢者と魔人の剣"
+          },
+          "preface": "※コミックヴァルキリーでコミカライズ連載中。第三回ネット小説大賞（旧名：なろうコン）受賞作／書籍①～③巻発売中。\n\n　世界と世界の狭間に落ちたアラサー会社員・安良川 圭（ケイ）は、一つの『制約』と引き替えに『モノの状態を把握する能力』を手に入れる。だが、ケイはその能力以外、至って普通の力しか持ち合わせていない。異世界に行き着いた彼に出来ることは、あらゆるモノの状態を見抜き、情報を自らの成長に活かして生き抜くことだ。\n　そんな中、敵に襲われてしまったケイは、一人の人物によって命を救われることになる。ところが、その人物には重大な『秘密』があった――。\n\n　異世界で出会う美女とともに、強大な魔人に挑むバトル／冒険ファンタジー。\n\n★には地図を掲載。",
+          "tags": [
+            "R15",
+            "esjzone",
+            "node-novel",
+            "syosetu",
+            "なろうコン受賞作",
+            "コミカライズ",
+            "ハイファンタジー",
+            "ハーレム要素あり",
+            "バトル・戦闘",
+            "ファンタジー",
+            "冒険",
+            "剣と魔法",
+            "完結済",
+            "心劍",
+            "残酷な描写あり",
+            "異世界",
+            "異世界転移"
+          ],
+          "title_tieba": "美女与贤者与魔人之剑"
+        },
+        "contribute": [
+          "pichelcheng"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n4191cj"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n4191cj&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[美女与贤者与魔人之剑吧](https://tieba.baidu.com/f?kw=%E7%BE%8E%E5%A5%B3%E4%B8%8E%E8%B4%A4%E8%80%85%E4%B8%8E%E9%AD%94%E4%BA%BA%E4%B9%8B%E5%89%91&ie=utf-8 \"美女与贤者与魔人之剑\")",
+          "[dm5](http://www.dm5.com/manhua-meinvyuxianzheyumorenzhijian/ \"美女与贤者与魔人之剑\")",
+          "https://www.esjzone.cc/detail/1546324061.html"
+        ]
+      },
+      "航宙軍士官、冒険者になる": {
+        "novel": {
+          "title": "航宙軍士官、冒険者になる",
+          "title_zh": "宇宙軍士官，成為冒險者",
+          "author": "a_itoh（伊藤 暖彦）",
+          "illust": "himesuz",
+          "source": "http://ncode.syosetu.com/n3490ee/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/71VwAWPbp3L.jpg",
+          "publisher": "syosetu",
+          "date": "2019-01-14T07:04:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "航宙軍士官、冒険者になる"
+          },
+          "preface": "帝國航宙軍士兵艾倫・柯林特所乘坐的航宙艦，在超空間航行中遭受到未知的攻擊。\n\n艾倫是偶然在艦上，成為了唯一的倖存者。\n\n嚴重損壞的航宙艦無法繼續航行，只好降落於附近的星球。\n\n艾倫藉由船上的逃生艙一人獨自來到了星球之上。\n\n航宙軍士官艾倫帶著他的奈米機器［納姆］打算在未開發星球中賭上性命生存下去。\n\n然而降落行星的當地居民，竟然是與艾倫的遺傳基因系譜緊緊相連的人類。\n\n艾倫雖然對劍與魔法的世界不知所措，但仍會竭盡全力與同伴一起活下去。\n\n艾倫究竟會在這顆行星上有什麼作為呢\n\n以中世紀舞台的SF幻想小說，就此開幕。\n\n書籍が2018年11月30日に、KADOKAWA / エンターブレイン（ファミ通文庫）様より発売されました！\nこれも皆様のおかげです。ありがとうござます！\n\n帝国航宙軍兵士アラン・コリントの乗艦する航宙艦は、超空間航行中の未知の攻撃により大破してしまう。\n\nアランは全くの偶然から艦上で、たった一人の生存者となってしまった。\n\n大破した航宙艦は航行不能で、目前の惑星に落下中だった。\nアランは脱出ポッドで一人惑星に逃れる。\n\n未開の惑星に放り出された航宙軍士官アランとアランに共生しているナノマシン［ナノム］の生存を賭けたサバイバルが始まった。\n\n降り立った惑星には、驚くべきことにアランの遺伝子の系譜に連なる人類が繁栄していた。\n\nアランは、剣と魔法のファンタジーな世界に戸惑いつつも、仲間と共に精一杯生きていく。\n\nアランは、この惑星で何を成すのか。\n中世を舞台にしたSFファンタジー、ここに開幕。\n\n\n途中、料理の話で暴走している箇所がありますが、時間ができしだい修正するつもりでいます。大変申し訳ありませんが更新を優先していきたいので、それがいつになるか分かりません。しかし料理話は読み飛ばしても問題ないと考えています。",
+          "tags": [
+            "R15",
+            "SF",
+            "node-novel",
+            "syosetu",
+            "オリジナル戦記",
+            "サバイバル",
+            "チート",
+            "ドラゴン",
+            "ハーレム",
+            "内政",
+            "冒険者",
+            "剣",
+            "料理",
+            "異世界",
+            "貴族",
+            "魔法",
+            "魔道具"
+          ]
+        },
+        "contribute": [
+          "波凹凸战士",
+          "章魚子"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "undefined",
+            "novel_id": "n3490ee"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n3490ee&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[宇宙军士官成为冒险者吧](https://tieba.baidu.com/f?kw=%E5%AE%87%E5%AE%99%E5%86%9B%E5%A3%AB%E5%AE%98%E6%88%90%E4%B8%BA%E5%86%92%E9%99%A9%E8%80%85&ie=utf-8 \"宇宙军士官成为冒险者\")",
+          "[dm5](http://www.dm5.com/manhua-yuzhoujunshiguan-chengweimaoxianzhe/)"
+        ]
+      },
+      "身為暗殺者的我明顯比勇者還強": {
+        "novel": {
+          "title": "暗殺者である俺のステータスが勇者よりも明らかに強いのだが",
+          "title_zh": "身為暗殺者的我明顯比勇者還強",
+          "author": "赤井まつり",
+          "source": "http://ncode.syosetu.com/n7707dt/",
+          "cover": "https://images-fe.ssl-images-amazon.com/images/I/61UFSKi0JTL.jpg",
+          "publisher": "syosetu",
+          "date": "2018-09-17T15:11:00+08:00",
+          "status": "連載",
+          "series": {
+            "name": "暗殺者である俺のステータスが勇者よりも明らかに強いのだが"
+          },
+          "preface": "気配を消すことが得意な高校生織田晶〈おだあきら〉はクラスメイトと共に異世界へ召喚されてしまう。\nそこは剣と魔法の世界で、晶達は勇者として魔王討伐を依頼される。\n依頼をしてきた国王と王女に違和感を感じた晶は、1人得意な気配消しで国王の書斎に忍び込み、過酷な真実を知る。\nそうとは知らないクラスメイト達を、見捨てるか、助けるか、全ては晶の手にかかっていた。\nそして、自分のステータスと勇者のステータスを見比べてみて、明らかな違和感に気づく。\n\n\n作者の都合でできない日もあるかもしれませんが、2017年1月27日から1日1更新を目指して頑張ります。\n\nオーバーラップ文庫様により書籍化しました。(2017年11月25日発売)",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ざまぁあり",
+            "チート",
+            "ハーレム要素なし",
+            "主人公最強",
+            "恋愛は一筋",
+            "残酷な描写あり",
+            "王道？",
+            "異世界転移"
+          ]
+        },
+        "contribute": [
+          "Koryf",
+          "懶惰的鹹魚",
+          "深海潜水母舰",
+          "灵零翎凌铃",
+          "蝶舞凝汐",
+          "路西法"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 0
+          },
+          "syosetu": {
+            "txtdownload_id": "977610",
+            "novel_id": "n7707dt"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n7707dt&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[over-lap.co.jp](https://over-lap.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=ZG0022&vid=&cat=CGS&swrd=)",
+          "[我的数值明显比勇者强吧](https://tieba.baidu.com/f?kw=%E6%88%91%E7%9A%84%E6%95%B0%E5%80%BC%E6%98%8E%E6%98%BE%E6%AF%94%E5%8B%87%E8%80%85%E5%BC%BA&ie=utf-8&tp=0 \"我的数值明显比勇者强\")",
+          "[dmzj](https://manhua.dmzj.com/shenweianshazhedewomingxianbiyongzhehaiqiang/)",
+          "[身为阿萨辛的我明显比勇者还强吧](https://tieba.baidu.com/f?kw=%E8%BA%AB%E4%B8%BA%E9%98%BF%E8%90%A8%E8%BE%9B%E7%9A%84%E6%88%91%E6%98%8E%E6%98%BE%E6%AF%94%E5%8B%87%E8%80%85%E8%BF%98%E5%BC%BA&ie=utf-8&tp=0 \"身为阿萨辛的我明显比勇者还强\")"
+        ]
+      },
+      "転生！異世界より愛をこめて": {
+        "novel": {
+          "title": "転生！異世界より愛をこめて",
+          "title_zh1": "轉生在異世界對你傾注愛",
+          "author": "弁当箱",
+          "illust": "H2SO4",
+          "source": "http://ncode.syosetu.com/n9475bv/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81yAIPNbqQL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2017-10-08T20:30:00+08:00",
+          "status": "完結済",
+          "novel_status": 257,
+          "series": {
+            "name": "転生！異世界より愛をこめて"
+          },
+          "preface": "世界は俺中心に廻っている、そんなふうに考えてた時期が俺にもありました。えぇ、そんなことはないんです。世界は金で勝手にクルクルやってるみたいでして、それはもう俺の意思なんて関係なく、日々飽きもせず大回転ですよ。ふとそれに気づき始めたのは高2の夏でして、いくら待っても美少女は降ってこない、どこぞやの組織に拉致されない、授業中にテロリストやってこない、もう俺なんで生きてるんだろう、某涼宮さんじゃないんですけどね、自分の小ささというか現実とかいう糞みたいな物を受け止めざるを得ないなぁなんてそんな悟りを開き始めてた時期だったのですが、俺は勘違いしてたんですね。そういう何かしらのチャンスっていうかオポテュニティ？そういうものがあっちから訪れる訳がないということに気付くんです。ああ、なぜもっと早く気づかなかったんだろう、だけどそれに気づいた俺が歓喜してる暇なんてない。すぐさま行動に移しましたとも。そしたらね、死んじゃいました(笑)　　　俺、転生。",
+          "tags": [
+            "5月29日",
+            "R15",
+            "node-novel",
+            "syosetu",
+            "こんにゃく",
+            "ハイファンタジー",
+            "ファンタジー",
+            "完結済",
+            "残酷な描写あり",
+            "異世界転生"
+          ]
+        },
+        "contribute": [
+          "329566282",
+          "Kindesu",
+          "gyjgh3",
+          "kazi1234",
+          "qwaszx66987",
+          "碘酒神",
+          "芙兰莉亚-",
+          "闭锁世界",
+          "阁下会平地摔吗"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n9475bv"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n9475bv&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[转生在异世界对你倾注爱吧](https://tieba.baidu.com/f?kw=%E8%BD%AC%E7%94%9F%E5%9C%A8%E5%BC%82%E4%B8%96%E7%95%8C%E5%AF%B9%E4%BD%A0%E5%80%BE%E6%B3%A8%E7%88%B1&ie=utf-8 \"转生在异世界对你倾注爱\")"
+        ]
+      }
+    },
+    "syosetu_out": {
+      "World's End Online": {
+        "novel": {
+          "title": "World's End Online",
+          "author": "yuki",
+          "source": "http://ncode.syosetu.com/n4227bh/",
+          "cover": "https://images.droidsans.com/wp-content/uploads/2015/09/The%20World%20End%20EclipseNew1.jpg",
+          "publisher": "syosetu",
+          "date": "2017-07-02T16:54:00+08:00",
+          "status": "完結済",
+          "series": {
+            "name": "World's End Online"
+          },
+          "preface": "我（私）的名字是『赛西莉亚』。随处可见的网络人妖。曾经使用了女性角色就骂我（私）是人妖，被迫害的我（私）就愤怒的发誓了。如果你们轻蔑人妖的話，我（私）就成为真正的人妖复仇给你们看看。有各种各样的辛苦，不过平安取得了网络人妖的真传！决定以正好开始的世界首次的VRMMORPG《World ' s End Online》为复仇的舞台。\n\n对掌握了男人的心的我（私）来说欺骗那些在线上游戏中专挑不懂男生的女孩下手的烂男人（即为直结厨）并不是什么难事。重要的是我（私）有一个想法。只是一点点地煽动大家对我（私）说爱的言语。我（私）打算把那样的他们的奇特的求爱行动不留余地的记录并在复仇的舞台上公开。计划顺利的进行直结厨们聚集的大曝光活动开始了。然而繁盛的暴露每个人羞耻的过去并笑翻了的瞬间，进行了与游戏相似的异世界转移了。被在周围不断的发火的直结厨们包围了，而且应该是网络人妖的我（私）的身体变成了与我使用的虚拟形象一样的真正的少女了。\n\n......啊啊，神（kami sama）？作为报应来说不是有点太过苛刻了吗？这是，一个网络人妖（其实是TS萝莉少女）为了回到原来的世界依靠智慧和交涉术在异世界生存下去的故事。  \n\nPS:这是一个TS成萝莉的故事，如上所述，就在主角暴露自己是网络人妖并对直结厨们展开群体嘲讽的时候突然转移到了异世界，主角也成为了真正的少女，之前因为是在游戏中拿他（她）毫无办法的直结厨们也开始行动把她包围起来，然后展开了追杀与逃亡剧（雾）？\n\n\nかつて女キャラを使っていただけでネカマと糾弾され迫害を受けた少年は全世界の直結厨どもに復讐すべく、世界初のVRMMORPG『World's End Online』に手を出した。やがて『プロネカマ』を自称するまでになった少年はセシリアというアバターを作成。磨き上げたテクニックを駆使し、数々の男達を篭絡し始める。熱烈な告白や厨二じみた痛いアプローチの数々を余すところなく記録し、ネカマだとばらすついでにこれらの記録を公開する計画は順調に最終段階を迎えた。だが、暴露イベントで彼らを散々嘲笑っていたまさにその瞬間、プレイヤー達は一瞬の暗転を境にゲームとよく似た異世界へ転送されてしまう。ゲームと同じ姿になってしまった今、何をされてもおかしくないと察したセシリアは混乱するプレイヤー集団から我先に逃げ出す。能力や容姿はゲームのままなのに、ゲームシステムの大部分が排除されたシビアかつ現実味溢れる異世界では、毎日を生き伸びる事でさえ困難の連続。元の世界に帰る方法を探すには他のプレイヤー達の協力が必要不可欠だと感じたセシリアは、ゲーム時代からの親友が属しているギルドへの加入を決める。ネカマを暴露した事で多くのプレイヤーから恨まれる中、どうにか宥める事に成功して無事加入を果たしたまでは良かったものの、お人好しのマスターが慣れない異世界で急造したギルドは大量の問題で溢れかえっていて……。まずはこの世界で安定した生活を築く為、そして何より元の世界に帰る為、プロネカマとして磨いた知恵と交渉術を武器に異世界の攻略に挑む。",
+          "tags": [
+            "R15",
+            "TS",
+            "VRMMO",
+            "node-novel",
+            "syosetu",
+            "ファンタジー",
+            "性転換",
+            "星球大賞",
+            "残酷な描写あり",
+            "異世界",
+            "異世界転移"
+          ]
+        },
+        "contribute": [
+          "不是秃子的兔子",
+          "女装欲语还羞的渣迷",
+          "晓之晨曦3",
+          "求吾所其",
+          "神睡者",
+          "肝帝柚",
+          "诺唑咪",
+          "雾华绯色"
+        ],
+        "options": {
+          "syosetu": {
+            "txtdownload_id": "334194"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.dip.jp/search.php?text=n4227bh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[worldsendonline吧](https://tieba.baidu.com/f?kw=worldsendonline&ie=utf-8 \"\")"
         ]
       },
       "ロリータ・ガンバレット　～魔弾幼女の異世界戦記～": {
@@ -5263,6 +10725,101 @@
           "[dip.jp](https://narou.nar.jp/search.php?text=n1853cj&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[魔弹萝莉的异世界战记吧](https://tieba.baidu.com/f?kw=%E9%AD%94%E5%BC%B9%E8%90%9D%E8%8E%89%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E6%88%98%E8%AE%B0&ie=utf-8 \"魔弹萝莉的异世界战记\")",
           "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=77)"
+        ]
+      },
+      "乙女ゲー世界はモブに厳しい世界です": {
+        "novel": {
+          "title": "乙女ゲー世界はモブに厳しい世界です",
+          "title_zh": "乙女遊戲世界對路人角色太嚴厲",
+          "author": "わい／三嶋　与夢",
+          "illusts": [
+            "孟達",
+            "潮里润"
+          ],
+          "source": "http://ncode.syosetu.com/n3191eh/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/912nndTR2SL.jpg",
+          "publisher": "syosetu",
+          "date": "2019-01-26T16:52:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": ""
+          },
+          "preface": "主人公在幫一抹多推乙女遊戲，結果一不小心猝死了。之後轉生（轉生套路限定），本來可以享受一番，但好死不死轉生的那個世界卻是自己所玩的那個乙女遊戲的世界（奉行女尊男卑觀念）。  \n\n轉生之後名為【利昂·冯·巴尔特费尔德】（是男爵和小妾的次子），而且被告知二十歲沒結婚就會成為老女人（歐巴桑）的後夫。本可以通過入學擺脫將來的命運，卻被家裡的那位（所謂的父親正妻）給安排了要娶一個大嬸（肥婆？）的命運。主人公奮起抵抗，試圖去扭轉這女尊男卑的觀念。（不過還是成功入學？），卻又被捲入由（玩家？）所引發的一系列遊戲事件當中。  \n\n【該作看似乙女小說但實際上是男性向】  \n\n簡評:男主脫離苦海and打臉五傻（帥哥）and無意間攻略（然鵝自己配不上）\n\n現代日本から転生した世界は――まさかの女尊男卑の乙女ゲー世界だった!?\n男爵家の三男として第二の人生を歩むことになった「リオン」だが、そこはまさかの知っている乙女ゲーの世界。\n大地が空に浮かび、飛行船が空を行き交うファンタジー世界だった。\n冒険者が存在し、何ともワクワクする異世界。\nだが、リオンは素直に楽しめない。\nそれは女尊男卑が凄い世界で、貴族の男は婚活に悪戦苦闘する世界だったからだ。\n\n外道な自称モブ男主人公が暴れ回るゲーム系異世界ファンタジー！\n\n※GCノベルズ様より書籍化。一巻発売中！",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ダンジョン",
+            "チート",
+            "ロボット",
+            "一人称",
+            "乙女ゲーム",
+            "人工知能",
+            "冒険",
+            "女尊男卑",
+            "学園",
+            "悪役令嬢",
+            "残酷な描写あり",
+            "男主人公",
+            "異世界転生",
+            "近代",
+            "飛行船"
+          ]
+        },
+        "contribute": [
+          "-流流年华",
+          "6969letsex",
+          "Miigen",
+          "ReadBook642",
+          "________640",
+          "davidwwb123",
+          "electricfan_bk",
+          "homtsai",
+          "jt00743672",
+          "lhway911",
+          "ms18999",
+          "ロ吻",
+          "东山奈央",
+          "回眸一笑",
+          "土之女神",
+          "圣堂祭司",
+          "彼岸乌啼",
+          "懶惰的頹廢男代",
+          "月影破云出",
+          "火烤de泡泡",
+          "灰常瞴语",
+          "當世蜉",
+          "白织酱喏-",
+          "破碎的镜子丶",
+          "神楽坂秀吉",
+          "空儚2383",
+          "缘指逝的水滴",
+          "艾特尔",
+          "萩丶枼",
+          "虹夢璀璨",
+          "離魂症"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "1113080",
+            "novel_id": "n3191eh"
+          },
+          "textlayout": {
+            "allow_lf2": false
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.nar.jp/search.php?text=n3191eh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[乙女游戏世界对路人角色太严厉吧](https://tieba.baidu.com/f?kw=%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C%E5%AF%B9%E8%B7%AF%E4%BA%BA%E8%A7%92%E8%89%B2%E5%A4%AA%E4%B8%A5%E5%8E%89&ie=utf-8&tp=0 \"乙女游戏世界对路人角色太严厉\")",
+          "[dmzj](https://manhua.dmzj.com/yinvyouxishijieduilurenjuesehenbuyouhao/)",
+          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_FS01200541010000_68/)",
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=60&page=1)"
         ]
       },
       "你們先走我斷後": {
@@ -5950,6 +11507,7 @@
           "title_zh2": "閑人以魔王之姿在異世界闖蕩 \\~時而開掛的休閒之旅\\~",
           "title_other": "廢柴以魔王之姿闖蕩異世界有時作弊一下的悠哉旅程",
           "author": "藍敦",
+          "illust": "桂井よしあき",
           "source": "http://ncode.syosetu.com/n2435cr/",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/81lL3xQjiPL.jpg",
           "publisher": "syosetu",
@@ -6092,6 +11650,7 @@
         },
         "contribute": [
           "Alice",
+          "SAN-略略",
           "SDK_C",
           "billy7645",
           "celestia173",
@@ -6107,6 +11666,7 @@
           "水魚醬",
           "眼前的飞碟",
           "碱式盐",
+          "碱暂停接坑",
           "禾缗",
           "草库金会",
           "长衫造纸笼",
@@ -6143,7 +11703,7 @@
           "series": {
             "name": "極星から零れた少女"
           },
-          "preface": "从极星飘落的少女  \n\n被什么尖锐的东西所刺痛的少女取回了感觉。周围净是如同粘稠的污泥一样的黑暗。在这闭锁的世界中，射入一缕赤色之光之时，少女总算睁开了眼睛。从奇妙的红鸟那里收下紫色的球体时，少女内在中的两份记忆混合了。  \n\n少女的目标，是要活完被预测的六十年寿命。但是因为想要度过充实的每一天，所以总是投身于各种各样的事情当中。因为很贫弱所以也不得不锻炼身体。这是一个匆忙过活系少女顽强而吵闹地生存的故事。\n\n何か鋭いものに突かれる痛みで少女は感覚を取り戻した。粘りつく汚泥のような暗闇。その閉じた世界に一筋の赤い光が差し込んだとき、少女はようやく目を覚ました。赤い奇妙な鳥から紫色の球体を渡されたとき、少女の中で二つの記憶が混ざり合う。\n\n\n少女の目標は、六十年と予測している寿命を全うする事です。でも充実した日々を送りたいのでいろいろと首を突っ込みます。貧弱なので身体も鍛えなければいけません。生き急ぎ系少女が強くたくましく騒がしく生きていく物語です。",
+          "preface": "从极星飘落的少女\n\n被什么尖锐的东西所刺痛的少女取回了感觉。周围净是如同粘稠的污泥一样的黑暗。在这闭锁的世界中，射入一缕赤色之光之时，少女总算睁开了眼睛。从奇妙的红鸟那里收下紫色的球体时，少女内在中的两份记忆混合了。\n\n少女的目标，是要活完被预测的六十年寿命。但是因为想要度过充实的每一天，所以总是投身于各种各样的事情当中。因为很贫弱所以也不得不锻炼身体。这是一个匆忙过活系少女顽强而吵闹地生存的故事。\n\n何か鋭いものに突かれる痛みで少女は感覚を取り戻した。粘りつく汚泥のような暗闇。その閉じた世界に一筋の赤い光が差し込んだとき、少女はようやく目を覚ました。赤い奇妙な鳥から紫色の球体を渡されたとき、少女の中で二つの記憶が混ざり合う。\n\n\n少女の目標は、六十年と予測している寿命を全うする事です。でも充実した日々を送りたいのでいろいろと首を突っ込みます。貧弱なので身体も鍛えなければいけません。生き急ぎ系少女が強くたくましく騒がしく生きていく物語です。",
           "tags": [
             "R15",
             "node-novel",
@@ -6156,6 +11716,7 @@
         "contribute": [
           "倾听の翅膀",
           "布枝道123",
+          "雪拉的禮贊",
           "黑426"
         ],
         "options": {
@@ -6214,7 +11775,8 @@
           "0银色的血0",
           "AAiDDSSl",
           "yukari",
-          "响"
+          "响",
+          "游戏nyx"
         ],
         "options": {
           "syosetu": {
@@ -6388,55 +11950,6 @@
           "[DAJSAY](https://pan.baidu.com/s/1izbzpbNtAFzJcUeT_PiegA)"
         ]
       },
-      "玩了VR工口遊戲轉生到異世界": {
-        "novel": {
-          "title": "VRエロゲーやってたら異世界に転生したので、美少女魔王を奴隷化する　〜クロスアウト・セイバー〜",
-          "title_zh": "玩了VR工口遊戲轉生到異世界、將美少女魔王奴隸化〜跨越世界的救世主〜",
-          "author": "仁科朝丸",
-          "source": "http://novel18.syosetu.com/n3640eg/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/81MRO7r-07L.jpg",
-          "publisher": "syosetu",
-          "date": "2018-07-29T22:21:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "VRエロゲーやってたら異世界に転生したので、美少女魔王を奴隷化する　〜クロスアウト・セイバー〜"
-          },
-          "preface": "玩VR對應的工口遊戲時發生悲慘意外死亡的主人公，\n因女神的考量而轉生到了遊戲中的異世界。\n\n轉生時得到的恩惠是【馴服（奴隷化）】特化的技能和狀態值。\n\n在這個遊戲中，能脫去女性敵人的衣物並給予快感\n還能將他們招降為自己同伴的一員（奴隷化）。\n\n當主人公在對上BOSS級的強敵時，意外馴服（奴隷化）並吸收了她的能力\n這是得到美少女的他，踏上自由冒險旅程的故事。\n\n\n\n*作者溫馨提醒： 標題末尾有▲代表有一定程度上、例如愛撫Ｈ場景。\n                標題末尾有★代表有正戲的場景描述。\n\n*譯者：本篇譯文皆翻自WEB無刪減版本（小説家になろう），並非文庫版。\n       文中不乏18禁文字敘述，未成年者可參閱刪減版本（カクヨム）。\n\n（追記：書籍版第２巻、ファミ通文庫から発売中です！）\n（コミカライズ決定しました！！　コミックヴァルキリーにて連載予定です！）\n\n　ＶＲ対応のエロゲーをプレイ中に事故死、という悲惨な最期を遂げた主人公は、女神の計らいでゲーム世界に転生させてもらう。\n　転生時の特典として得たのは、【テイム（奴隷化）】特化のスキルとステータス。\n　このゲームでは、女性型のあらゆる敵を脱がし、快感を与えることで、手なずけることができるのだった。\n　ボス級の強敵をサクッとテイムし、その能力を吸収した主人公は、行く先々で美少女を手なずけながら、自由に道を突き進んでいく。\n\n（末尾に▲のあるタイトルには、愛撫程度のＨシーンあり。★のあるタイトルには本番シーンありです）",
-          "tags": [
-            "node-novel",
-            "novel18",
-            "syosetu",
-            "スキル",
-            "ハーレム",
-            "ファンタジー",
-            "主人公最強",
-            "冒険",
-            "強制脱衣",
-            "残酷な描写あり",
-            "男主人公",
-            "男性視点",
-            "異世界転生",
-            "飼い慣らし"
-          ]
-        },
-        "contribute": [
-          "章魚子"
-        ],
-        "options": {
-          "syosetu": {
-            "txtdownload_id": "1103530"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou18.dip.jp/search.php?text=n3640eg&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[kakuyomu.jp](https://kakuyomu.jp/works/1177354054885380132)",
-          "[章魚子](https://pan.baidu.com/s/1xOs1KZ4SuEwoXZcgA9rVDQ) wu2f",
-          "[漫畫](https://manhua.dmzj.com/vryouxizhuanshengyishijietiaojiaomowangmeishaonvcl/ \"VR游戏转生异世界调教魔王美少女 clothout·saber\")"
-        ]
-      },
       "甜點転生": {
         "novel": {
           "title": "おかしな転生",
@@ -6498,11 +12011,13 @@
           "title": "用務員さんは勇者じゃありませんので",
           "title_zh": "因為校工桑並不是勇者",
           "author": "棚花尋平",
+          "illust": "巖本 英利",
           "source": "http://ncode.syosetu.com/n4202cb/",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/81gC4iaNlGL.jpg",
           "publisher": "syosetu",
           "date": "2018-08-27T23:08:00+08:00",
           "status": "連載",
+          "novel_status": 256,
           "series": {
             "name": "用務員さんは勇者じゃありませんので"
           },
@@ -6527,6 +12042,7 @@
           "Nimbushark",
           "a454251432",
           "nice天夜月",
+          "不安小子",
           "吉村理葛",
           "聞人織也"
         ],
@@ -6927,6 +12443,63 @@
           "[为鲜血献上吻吧](https://tieba.baidu.com/f?kw=%E4%B8%BA%E9%B2%9C%E8%A1%80%E7%8C%AE%E4%B8%8A%E5%90%BB&ie=utf-8 \"为鲜血献上吻\")"
         ]
       },
+      "自称！平凡魔族の英雄ライフ": {
+        "novel": {
+          "title": "自称！平凡魔族の英雄ライフ～B級魔族なのにチートダンジョンを作ってしまった結果～",
+          "title_zh": "自稱！平凡魔族的英雄生活～明明是Ｂ級魔族卻創造了作弊級地下城的結果～",
+          "author": "あまうい白一",
+          "illust": "卵の黄身",
+          "illusts": [
+            "こねこねこ"
+          ],
+          "source": "http://ncode.syosetu.com/n4679do/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/814mBdvhXzL.jpg",
+          "publisher": "syosetu",
+          "date": "2018-09-13T12:00:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "自称！平凡魔族の英雄ライフ～B級魔族なのにチートダンジョンを作ってしまった結果～"
+          },
+          "preface": "魔族如果成為二十歲\n有前往魔王城\n製作洞窟的風俗習慣\n\n在那裡自製的洞窟一邊居住\n通過魔王城並設的學園偷學習作為魔族的力量的用法和洞窟的擴張方法等一邊\n\n總之魔王城\n成為一種教育機關\n\n書籍版が、講談社Ｋラノベブックス様より発売中です！\nまたニコニコ静画様でコミカライズが連載がスタートしました。是非一読して頂ければ嬉しいです。　\nコミックス1巻は１０/９発売です！\n\n――小さな部屋で良いのに、出来てしまったのは広大で強力なダンジョンだった。\n　平凡な魔族であるクロノは、魔王城の学園でダンジョンを作成する。二十歳になったら魔王城でダンジョンを作り上げ、そこに住みつつ勉学に励み、一人立ちするのが魔族の風習だった。\n　クロノとしては、小さなダンジョンができればいい、と思って作成したのだが――完成したのは数百層に渡る巨大な代物だった。それはもう、伝説の魔王が作ったダンジョンを超えるとんでもないレベルの。\n「俺は小さなダンジョンを持てれば充分なのに……！」\n平凡で気楽な生活を求めていたクロノは、あっという間に注目の的になり、魔族の中で成り上がっていく。やがて英雄と言われるまで。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "エルフ",
+            "ダンジョン",
+            "チート",
+            "モンスタ―娘",
+            "主人公最強",
+            "人外",
+            "地下城",
+            "妖精",
+            "学園",
+            "成り上がり",
+            "残酷な描写あり",
+            "運営",
+            "魔王"
+          ]
+        },
+        "contribute": [
+          "我只是想看小說",
+          "才人→大爱",
+          "章魚子"
+        ],
+        "options": {
+          "syosetu": {
+            "txtdownload_id": "924587"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.dip.jp/search.php?text=n4679do&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[自称平凡魔族的英雄生活吧](https://tieba.baidu.com/f?kw=%E8%87%AA%E7%A7%B0%E5%B9%B3%E5%87%A1%E9%AD%94%E6%97%8F%E7%9A%84%E8%8B%B1%E9%9B%84%E7%94%9F%E6%B4%BB&ie=utf-8 \"自称平凡魔族的英雄生活\")",
+          "[dm5](http://www.dm5.com/manhua-zichen-pingfanmozudeyingxiongshenghuo-mingmingshi-b-jimozuquechuangzaolezuobijidixiachengdejieguo/ \"自称！平凡魔族的英雄生活～明明是B级魔族却创造了作弊级地下城的结果～\")"
+        ]
+      },
       "英雄の中の英雄の物語　〜アレスティア建国記〜": {
         "novel": {
           "title": "英雄の中の英雄の物語　〜アレスティア建国記〜",
@@ -7184,15 +12757,17 @@
         "novel": {
           "title": "転生少女の履歴書",
           "author": "唐澤和希/鳥好きのピスタチオ",
+          "illust": "桑島 黎音",
           "source": "http://ncode.syosetu.com/n4269cp/",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/71iUyAS7ibL.jpg",
           "publisher": "syosetu",
           "date": "2018-06-30T00:17:00+08:00",
           "status": "連載",
+          "novel_status": 256,
           "series": {
             "name": "転生少女の履歴書"
           },
-          "preface": "頭腦聰明，體育萬能，甚麼事都能做到的絕世美少女因車禍而散落生命。  \n然後帶著前世的記憶，轉生到劍與魔法的幻想異世界中！  \n雖然生活全部由魔法使支撐，但魔法使逐年減少，全世界中的魔力（瑪娜）消失等問題開始浮現，依靠魔法的生活開始變得困難。  \n這是個少女靠著前世的記憶，提議著即使沒有魔法也能生活下去，同時探索著甚麼是魔法，以豐盛的生活作目標引導人們的物語。\n\n頭脳明晰、スポーツ万能、何をやらせてもそつなくこなす絶世の美少女は、車の事故であっけなく命を散らしてしまう。\nそして前世の記憶を持ちながら、転生した先は剣と魔法のファンタジーな異世界！\n魔法使いによって全ての生活が支えられていたが、年々減少する魔法使い、世界中に散らばる魔力（マナ）がなくなっていくなどの問題が起きており、魔法頼りの生活では立ち行かなくなってきていた。\n\n前世の知識を頼りに、魔法が無くても生きていけることを提案しながら、魔法とは何なのかを模索し、少女がより豊な生活を目指して人々を導いていく物語です。\n\n※ヒーロー文庫さんで書籍化することになりました。\nそれに伴いタイトルを変更しました（旧：ハイスペック女子高生の異世界転生）",
+          "preface": "頭腦聰明，體育萬能，甚麼事都能做到的絕世美少女因車禍而散落生命。\n然後帶著前世的記憶，轉生到劍與魔法的幻想異世界中！\n雖然生活全部由魔法使支撐，但魔法使逐年減少，全世界中的魔力（瑪娜）消失等問題開始浮現，依靠魔法的生活開始變得困難。\n這是個少女靠著前世的記憶，提議著即使沒有魔法也能生活下去，同時探索著甚麼是魔法，以豐盛的生活作目標引導人們的物語。\n\n頭脳明晰、スポーツ万能、何をやらせてもそつなくこなす絶世の美少女は、車の事故であっけなく命を散らしてしまう。\nそして前世の記憶を持ちながら、転生した先は剣と魔法のファンタジーな異世界！\n魔法使いによって全ての生活が支えられていたが、年々減少する魔法使い、世界中に散らばる魔力（マナ）がなくなっていくなどの問題が起きており、魔法頼りの生活では立ち行かなくなってきていた。\n\n前世の知識を頼りに、魔法が無くても生きていけることを提案しながら、魔法とは何なのかを模索し、少女がより豊な生活を目指して人々を導いていく物語です。\n\n※ヒーロー文庫さんで書籍化することになりました。\nそれに伴いタイトルを変更しました（旧：ハイスペック女子高生の異世界転生）",
           "tags": [
             "R15",
             "node-novel",
@@ -7211,6 +12786,7 @@
           ]
         },
         "contribute": [
+          "NoName",
           "漂移雾董",
           "路易666bbs"
         ],
@@ -7388,6 +12964,7 @@
         },
         "contribute": [
           "King丶lost",
+          "ReadBook642",
           "SOSZ0Z",
           "XarbitraryX",
           "ah21ling",
@@ -7480,6 +13057,96 @@
         "link": [
           "[dip.jp](https://narou.dip.jp/search.php?text=n6673cu&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[独臂的钢姬吧](https://tieba.baidu.com/f?kw=%E7%8B%AC%E8%87%82%E7%9A%84%E9%92%A2%E5%A7%AC&ie=utf-8 \"\")"
+        ]
+      },
+      "願わくばこの手に幸福を": {
+        "novel": {
+          "title": "願わくばこの手に幸福を",
+          "title_zh1": "愿你手拥幸福",
+          "title_zh2": "愿你手握幸福",
+          "author": "ショーン田中",
+          "illust": "おちゃう",
+          "illusts": [
+            "メイジ"
+          ],
+          "source": "http://ncode.syosetu.com/n3170ed/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91Fehvils2L.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-05-11T23:15:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "願わくばこの手に幸福を"
+          },
+          "preface": "孤兒出身的路基斯是個平凡的男人，沒有什麼特別的才幹，\n跟著冒險者的師傅多年只學到凡庸的武藝跟髒活的惡巧，\n唯一比常人優勝一點的大慨就只有能在暗中視物吧。\n\n直至大災害席卷大陸，魔獸大舉進攻，多少國度就此覆滅，多少英雄冒起然後殞落。\n最終教會組成救世主一行踏上反擊的旅途，路奇斯為了追隨自小愛慕的青梅竹馬阿雷耶諾也加入隊伍之中，\n但凡人之才的他又如何與隊中的英傑相提並論？\n他只能負責打雜守夜，聽救世主跟他愉快的後宮在帳中行樂，\n路上被阿雷耶諾以外眾女各種霸凌蔑視。\n\n即使如此，一無所有的自己也沒法放棄唯一僅存對阿雷耶諾的感情離去。\n他想、如果哪天終於聽見帳中與救世主一起的是阿雷耶諾，自己就會絕望了吧。\n在失意與惰性的日子中，奇妙的黑影向他伸手\n“我可以給予你機會，將一切重啟，讓你把人生重來”\n\n但是黑影並沒有給予路基斯外掛，\n這世界沒有數字等級技能鑑定遊戲系統，\n即使知道未來，沒有超人的實力也沒有名聲，想要掌握機會又談何容易。\n練不起來的主角不會突然發現隱世潛力，單單努力早已證明是徒勞，\n即使重來一次，路基斯又能成就什麼？\n\n願わくばこの手に幸福を\n這是一個沒被上天眷顧的人，\n在愛恨與矛盾中爭紮，以勇氣與覺悟違逆命運，\n…還有收集病嬌的故事\n\n\n救世の旅に同行を続けるルーギス。\nその中で彼の役割は、雑用や夜番。\n女達からは疎まれ、冷たい視線を与えられる日々。\n\nだが幼馴染のアリュエノの存在だけが、彼をパーティに繋ぎ止めていた。\n例え、彼女が救世者と呼ばれる男に心奪われていたとしても。\n\n失意と惰性の日々。\nそんな中に訪れた影は告げる。\n\n「貴様に機会を与えてやろう。全てを塗りつぶし、人生という絵画を描き直す機会を！」\n\n＊2017/9/25　第一部完結（第一章～第三章）\n　2018/4/30　第二部完結（第四章～第九章）\n　2018/10/31 第三部完結（第十章～第十二章）\n　現在第四部を連載中です\n\n＊2018/9/10　TOブックス様より第一巻発売\n　2019/2/9　 TOブックス様より第二巻発売\n\n＊コンプエース様よりメイジ様執筆にてコミカライズ頂ける事となりました。\n　2019/4/26発売のコンプエース様6月号より連載予定です。",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "やり直し",
+            "オリジナル戦記",
+            "ギャグ",
+            "コメディー",
+            "コメディー〔文芸〕",
+            "スクールラブ",
+            "タイムリープ",
+            "ダーク",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ハーレム",
+            "パラレルワールド",
+            "ヒストリカル",
+            "ヒストリカル - やり直し",
+            "ファンタジー",
+            "ラブコメ",
+            "冒険",
+            "学園",
+            "復讐",
+            "日常",
+            "残酷な描写あり",
+            "現代",
+            "男主人公",
+            "異能力バトル",
+            "西洋",
+            "青春",
+            "魔法"
+          ],
+          "sources": [
+            "https://ncode.syosetu.com/n5298fh/"
+          ]
+        },
+        "contribute": [
+          "ACG之神上",
+          "iamhungry",
+          "terry12369",
+          "xrayxray"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n3170ed"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n3170ed&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n3170ed/)",
+          "[超級病嬌大戰 【願わくばこの手に幸福を】](https://forum.gamer.com.tw/C.php?bsn=60415&snA=8477&tnum=1)",
+          "[愿你手拥幸福吧](https://tieba.baidu.com/f?kw=%E6%84%BF%E4%BD%A0%E6%89%8B%E6%8B%A5%E5%B9%B8%E7%A6%8F&ie=utf-8 \"愿你手拥幸福\")",
+          "https://web-ace.jp/compace/contents/395/",
+          "http://www.dm5.com/manhua-yuannishouwoxingfu/",
+          "https://masiro.moe/forum.php?mod=forumdisplay&fid=171&page=1"
         ]
       },
       "魔人勇者（自称）サトゥン": {
@@ -7651,513 +13318,53 @@
         ]
       }
     },
-    "syosetu": {
-      "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～": {
+    "ts": {
+      "ゲームキャラで異世界転生して、大草原ではじめるスローライフ": {
         "novel": {
-          "title": "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～",
-          "author": "酒とゾンビ",
-          "source": "http://ncode.syosetu.com/n1489eq/",
-          "cover": "",
+          "title": "ゲームキャラで異世界転生して、大草原ではじめるスローライフ",
+          "title_zh": "以游戲角色的異世界轉生～由大草原開始的慢節奏生活～",
+          "author": "鏑木ハルカ",
+          "illust": "にゅむ",
+          "source": "http://ncode.syosetu.com/n1695cq/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/71ll0bwfZbL.jpg",
           "publisher": "syosetu",
-          "date": "2018-09-19T21:44:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "ニトの怠惰な異世界症候群～最弱職〈ヒーラー〉なのに最強はチートですか？～"
-          },
-          "preface": "高中二年级的政宗跳楼自杀后，被卷入了了班级转移。\n\n同班同学被授予勇者和贤者等高级职业，另一方面\n\n政宗被赋予了的是治愈职业【治愈士】。\n\n那是连攻击魔法都无法使用的【最弱】职业。\n\n持有着【最弱职业】的政宗被别人当成无能和傻瓜，独自一人被驱逐出境。\n\n\n但是在苦难的最后，偶然觉醒的固有技能【反転の悪戯〈極〉】\n\n这是治愈士最弱的魔法。\n\n这是一种逆转攻击魔法的技能，被称为【侵蝕の波動】。\n\n\n获得【最强】的政宗在苦恼和纠葛中，\n\n为了报复自己的公主和同学而走上复仇之旅。\n\n然后，政宗将自己的人生也反转。\n\n【累計 1000万PV 突破しました！】\n\n高校２年生の政宗は飛び降り自殺した直後、クラス転移に巻き込まれる。\nクラスメートが、勇者や賢者といった上級職を授かる一方で、\n政宗に与えられたのは治癒職【ヒーラー】。\nそれは攻撃魔法すら扱うことのできない【最弱】の職業。\n【最弱職】の政宗は無能と馬鹿にされ、一人国外追放を受ける。\n\nしかし苦難の末、偶然手にした固有スキル【反転の悪戯〈極〉】\nこれは最弱であるヒーラーの魔術【治癒】を\n【侵蝕の波動】という攻撃魔法へ反転させるスキルであった。\n\n【最強】を手にした政宗は苦悩や葛藤の中、\n自身を虐げた王女やクラスメートを殺すために復讐の旅へ出る。\nそして政宗は自身の人生をも反転していく。\n\n※ランキング入りできました！　ありがとうございます(;^ω^)\nそれぞれ過去の最高位です。\n・総合日間ランキングにて５位！\n・総合週間ランキングにて１０位！\n・日間ファンタジー異世界転生/転移ランキングにて３位！\n・週間ファンタジー異世界転生/転移ランキングにて４位！\n・月間ファンタジー異世界転生/転移ランキングにて１０位！\n・小説家になろう　勝手にランキングにて７位！\n\n※カクヨムでも　酒とゾンビ　で投稿しています。",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "いじめ",
-            "オリジナル戦記",
-            "クラス転移",
-            "ダークファンタジー",
-            "ハーレムと最愛",
-            "ヤンデレメンヘラ",
-            "主人公最強",
-            "冒険",
-            "反転スキル",
-            "差別風習文化",
-            "復讐ざまぁ",
-            "残酷な描写あり",
-            "異世界転生",
-            "異世界転移",
-            "病み展開鬱展開"
-          ]
-        },
-        "contribute": [
-          "懶惰的咸魚"
-        ],
-        "options": {
-          "syosetu": {
-            "txtdownload_id": "1201369"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.dip.jp/search.php?text=n1489eq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[尼特的慵懒异世界吧](https://tieba.baidu.com/f?kw=%E5%B0%BC%E7%89%B9%E7%9A%84%E6%85%B5%E6%87%92%E5%BC%82%E4%B8%96%E7%95%8C&ie=utf-8 \"尼特的慵懒异世界\")"
-        ]
-      },
-      "世界最強の後衛　～迷宮国の新人探索者～": {
-        "novel": {
-          "title": "世界最強の後衛　～迷宮国の新人探索者～",
-          "author": "とーわ",
-          "source": "http://ncode.syosetu.com/n4344dy/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91jOjbyErfL.jpg",
-          "publisher": "syosetu",
-          "date": "2018-11-24T19:00:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "世界最強の後衛　～迷宮国の新人探索者～"
-          },
-          "preface": "身為前社畜的有人轉生後擔任起來路不明的職業『後衛』，但這原來是個能支援攻擊與防禦，還能補血的萬能職業！在有人的身邊也陸續聚集了轉生前的美女上司（比他年紀還小）、充滿謎團的亞人傭兵少女、身懷隱情的高等美少女劍士及個性鮮明的女性成員。不僅如此，『後衛』更擁有只要待在對方身後，就能讓好感度直線上升的能力――!?最強的守護系輔助職業冒險物語，正式揭開序幕！\n\n【カドカワBOOKSから書籍版の刊行が決定しました！３巻は８月１０日発売予定です。】\n【コミカライズが連載中です！「ComicWalker」内の「異世界コミック」コーナー、ニコニコ静画の二つのサイトで掲載しています。コミック担当は力蔵先生です。】\n　事故で死亡したらしく、異世界「迷宮国」に転生することになったアリヒト＝アトベは、転移先に出る際案内役と名乗る女性から「探索者の札」を渡される。転移者は全員が迷宮探索者となり、それ以外の生き方を許されないという少々ブラックな世界であると知ったアリヒトは、とりあえず探索者のならわしに従って、札に希望する職業を書くことに。適性があればその職業に就くことができるというのだが、アリヒトは「優秀な後衛が不足している」という話を聞いて、職業欄にそのまま「後衛」と書いてしまう。魔法使いでも射手でもない、迷宮国に今まで存在しなかった職業「後衛」に就くことができてしまったアリヒトは、色々と試しながら「後衛」という職業の持つスキルの有用性、応用性を発見し、理想のパーティメンバーたちを見つけて、探索者の序列を駆け上がっていく。",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "ギルド",
-            "スキル応用",
-            "チート",
-            "ハーレム",
-            "ファンタジー",
-            "リザードマン",
-            "ヴァルキリー",
-            "万能職",
-            "冒険",
-            "剣神",
-            "受付嬢",
-            "女性上司",
-            "巫女",
-            "後衛",
-            "残酷な描写あり",
-            "異世界転生",
-            "迷宮"
-          ]
-        },
-        "contribute": [
-          "飛"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 3,
-            "startIndex": 0
-          },
-          "syosetu": {
-            "txtdownload_id": "1024242",
-            "novel_id": "n4344dy"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n4344dy&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[世界最强后卫吧](https://tieba.baidu.com/f?kw=%E4%B8%96%E7%95%8C%E6%9C%80%E5%BC%BA%E5%90%8E%E5%8D%AB&ie=utf-8 \"世界最强后卫\")"
-        ]
-      },
-      "乙女ゲー世界はモブに厳しい世界です": {
-        "novel": {
-          "title": "乙女ゲー世界はモブに厳しい世界です",
-          "title_zh": "乙女遊戲世界對路人角色太嚴厲",
-          "author": "わい／三嶋　与夢",
-          "source": "http://ncode.syosetu.com/n3191eh/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/912nndTR2SL.jpg",
-          "publisher": "syosetu",
-          "date": "2019-01-26T16:52:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "連載中"
-          },
-          "preface": "主人公在幫一抹多推乙女遊戲，結果一不小心猝死了。之後轉生（轉生套路限定），本來可以享受一番，但好死不死轉生的那個世界卻是自己所玩的那個乙女遊戲的世界（奉行女尊男卑觀念）。  \n\n轉生之後名為【利昂·冯·巴尔特费尔德】（是男爵和小妾的次子），而且被告知二十歲沒結婚就會成為老女人（歐巴桑）的後夫。本可以通過入學擺脫將來的命運，卻被家裡的那位（所謂的父親正妻）給安排了要娶一個大嬸（肥婆？）的命運。主人公奮起抵抗，試圖去扭轉這女尊男卑的觀念。（不過還是成功入學？），卻又被捲入由（玩家？）所引發的一系列遊戲事件當中。  \n\n【該作看似乙女小說但實際上是男性向】  \n\n簡評:男主脫離苦海and打臉五傻（帥哥）and無意間攻略（然鵝自己配不上）\n\n現代日本から転生した世界は――まさかの女尊男卑の乙女ゲー世界だった!?\n男爵家の三男として第二の人生を歩むことになった「リオン」だが、そこはまさかの知っている乙女ゲーの世界。\n大地が空に浮かび、飛行船が空を行き交うファンタジー世界だった。\n冒険者が存在し、何ともワクワクする異世界。\nだが、リオンは素直に楽しめない。\nそれは女尊男卑が凄い世界で、貴族の男は婚活に悪戦苦闘する世界だったからだ。\n\n外道な自称モブ男主人公が暴れ回るゲーム系異世界ファンタジー！\n\n※GCノベルズ様より書籍化。一巻発売中！",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "ダンジョン",
-            "チート",
-            "ロボット",
-            "一人称",
-            "乙女ゲーム",
-            "人工知能",
-            "冒険",
-            "女尊男卑",
-            "学園",
-            "悪役令嬢",
-            "残酷な描写あり",
-            "男主人公",
-            "異世界転生",
-            "近代",
-            "飛行船"
-          ]
-        },
-        "contribute": [
-          "-流流年华",
-          "6969letsex",
-          "Miigen",
-          "davidwwb123",
-          "electricfan_bk",
-          "homtsai",
-          "jt00743672",
-          "ロ吻",
-          "东山奈央",
-          "回眸一笑",
-          "土之女神",
-          "月影破云出",
-          "火烤de泡泡",
-          "灰常瞴语",
-          "神楽坂秀吉",
-          "空儚2383",
-          "萩丶枼",
-          "虹夢璀璨"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "1113080",
-            "novel_id": "n3191eh"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n3191eh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[乙女游戏世界对路人角色太严厉吧](https://tieba.baidu.com/f?kw=%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C%E5%AF%B9%E8%B7%AF%E4%BA%BA%E8%A7%92%E8%89%B2%E5%A4%AA%E4%B8%A5%E5%8E%89&ie=utf-8&tp=0 \"乙女游戏世界对路人角色太严厉\")",
-          "[dmzj](https://manhua.dmzj.com/yinvyouxishijieduilurenjuesehenbuyouhao/)",
-          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_FS01200541010000_68/)",
-          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=60&page=1)"
-        ]
-      },
-      "俺は星間国家の悪徳領主！": {
-        "novel": {
-          "title": "俺は星間国家の悪徳領主！",
-          "title_zh1": "我在星際國家當惡德領主",
-          "author": "わい／三嶋　与夢",
-          "illust": "",
-          "source": "http://ncode.syosetu.com/n1976ey/",
-          "cover": "",
-          "publisher": "syosetu",
-          "date": "2019-01-24T19:08:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": ""
-          },
-          "preface": "里爾姆·塞拉·班菲爾德是個轉生者。  \n他轉生到了劍與魔法的幻想世界裏。然而，那個世界已經邁進了星際時代。  \n這是一個有著星際國家存在，充滿著人型兵器、宇宙戰艦等戰鬥要素，宛若太空歌劇一般的奇妙幻想世界。  \n轉生為貴族制國家――帝國伯爵家一份子的里爾姆，有一個奢望。  \n那就是成為――惡德領主。  \n在前世裏，他失去了一切，在絕望中死去。  \n――善良地活著簡直可笑  \n――這一次，一定要隨自己的心意，自由地活下去。  \n懷著這樣的心情，開始第二人生的他，卻被人們當做名君來崇拜。因為這個世界的價值觀與前世截然不同。  \n里爾姆能順利成為惡德領主嗎？\n\nリアム・セラ・バンフィールドは転生者だ。\n剣と魔法のファンタジー世界に転生したのだが、その世界は宇宙進出を果たしていた。\n星間国家が存在し、人型兵器や宇宙戦艦が戦うスペースオペラのような世界。\n貴族たちが支配する帝国の伯爵家に転生したリアムには野望があった。\nそれは――悪徳領主になることだ。\n前世、不幸にも全てを失い絶望の中で死んだリアム。\n――善良に生きるなんて馬鹿らしい。\n――好き勝手に生きてやる。\nそんな気持ちを胸に、第二の人生を歩もうとするのだが、価値観の違いから名君として崇められてしまう。\nリアムは無事、悪徳領主になれるのだろうか？",
-          "tags": [
-            "R15",
-            "SF",
-            "node-novel",
-            "syosetu",
-            "アンドロイド",
-            "スペースオペラ",
-            "ダーク",
-            "ハーレム",
-            "ロボット",
-            "勘違い",
-            "宇宙",
-            "悪徳",
-            "星間国家",
-            "残酷な描写あり",
-            "男主人公",
-            "異世界転生",
-            "貴族",
-            "領主"
-          ]
-        },
-        "contribute": [
-          "回眸一笑"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "",
-            "novel_id": "n1976ey"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n1976ey&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[我在星际国家当恶德领主吧](https://tieba.baidu.com/f?kw=%E6%88%91%E5%9C%A8%E6%98%9F%E9%99%85%E5%9B%BD%E5%AE%B6%E5%BD%93%E6%81%B6%E5%BE%B7%E9%A2%86%E4%B8%BB&ie=utf-8 \"我在星际国家当恶德领主\")"
-        ]
-      },
-      "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～": {
-        "novel": {
-          "title": "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～",
-          "title_zh": "原世界第一玩家的小號練成日記",
-          "title_zh1": "原・世界第一玩家的小號練成日記 ～廢人玩家、異世界攻略中～",
-          "author": "沢村治太郎(合成酵素)",
-          "illust": "",
-          "illusts": [
-            "まろ",
-            "前田理想"
+          "publishers": [
+            "syosetu"
           ],
-          "source": "http://ncode.syosetu.com/n6774eh/",
-          "cover": "https://lohas.nicoseiga.jp/material/603cc7/8801618",
-          "publisher": "syosetu",
-          "date": "2019-01-28T19:12:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "元・世界１位のサブキャラ育成日記 ～廃プレイヤー、異世界を攻略中！～"
-          },
-          "preface": "初中和高中都不出席，成人之後也不工作，整天都沉迷於網遊。對世界排名第1位的他來說，網遊就是人生本身。\n那樣的某日，他的角色突然被破壞了。修復是不可能。沒有辦法。失去了賭上人生的全部持續君臨世界首位寶座的他，在過度的絕望下嘗試自殺。醒來後，已經置身於網遊中。不，是和網路遊戲一模一樣的現實世界中。在那裡他，作為過去放置的高級收費的造型輔助角色轉生。\n世界首位的廢人脫胎換骨後，在與網遊一模一樣的異世界。他的傳說即將再次開幕。廢人，貓，黑暗精靈等，與眾多有個性的伙伴們一起，取回他「世界首位」的冒險現在開始。\n\n（原題：世界一位の異世界サブキャラ育成日記）\n\n　中学も高校もろくに通わず、成人しても働かず、朝昼晩とネットゲーム。世界ランキング１位の彼にとって、ネトゲはまさしく人生そのものであった。\n　そんなある日、彼のキャラクターが突如としてクラックされる。復旧は不可能。どうしようもなかった。人生の全てを賭けて君臨し続けていた世界一位の座を失った彼は、あまりの絶望に自殺を試みてしまう。\n　目が覚めると、そこはネットゲームの中。否、ネットゲームそっくりな現実世界の中。そこで彼は、過去に作成したきり放置していたプレミアム課金アバターのサブキャラに転生していた。\n　世界一位の廃人が、ネトゲそっくりの異世界に生まれ変わる。それは途轍もない伝説の幕開けであった。\n　ぽんこつ、ネコ、ダークエルフなど、大勢の個性的な仲間たちと共に、彼の「世界一位」を取り戻す育成が今始まる。\n　\n第一章：女騎士編　\n第二章：魔術学校編　\n第三章：奴隷編　\n第四章：精霊大王編　\n第五章：暗黒狼編　\n第六章：政争編　\n第七章：タイトル争奪編　\n第八章：聖女編　\n第九章：刀八ノ国編　\n第十章：タイトル防衛編　\n第十一章：帝国編　\n第十二章：",
-          "tags": [
-            "R15",
-            "VRMMO",
-            "node-novel",
-            "syosetu",
-            "スキル",
-            "ダンジョン",
-            "ダークエルフ",
-            "ハーレム",
-            "メイド",
-            "主人公最強",
-            "冒険",
-            "剣と魔法",
-            "女騎士",
-            "奴隷",
-            "日常",
-            "残酷な描写あり",
-            "獣人",
-            "男主人公",
-            "異世界転移",
-            "穿越",
-            "精霊",
-            "網遊"
-          ],
-          "title_jp2": "世界一位の異世界サブキャラ育成日記"
-        },
-        "contribute": [
-          "勤奋的懒惰的羊",
-          "章魚子",
-          "缥缈浣纱"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "",
-            "novel_id": "n6774eh"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n6774eh&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[原世界第一玩家的小号练成日记吧](https://tieba.baidu.com/f?kw=%E5%8E%9F%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%8E%A9%E5%AE%B6%E7%9A%84%E5%B0%8F%E5%8F%B7%E7%BB%83%E6%88%90%E6%97%A5%E8%AE%B0&ie=utf-8&tp=0 \"原世界第一玩家的小号练成日记\")",
-          "[comic-walker](https://comic-walker.com/contents/detail/KDCW_KS01200682010000_68/)",
-          "[seiga.nicovideo.jp](http://seiga.nicovideo.jp/comic/38266)",
-          "[dm5 漫画](http://www.dm5.com/manhua-yuan-shijiediyiwanjiadexiaohaolianchengriji-feirenwanjia-yishijiegongluezhong/)"
-        ]
-      },
-      "大叔撿到了勇者和魔王": {
-        "novel": {
-          "title": "おっさん、勇者と魔王を拾う",
-          "author": "チョコカレー",
-          "source": "http://ncode.syosetu.com/n8756en/",
-          "cover": "",
-          "publisher": "syosetu",
-          "date": "2018-09-17T19:19:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "おっさん、勇者と魔王を拾う"
-          },
-          "preface": "冒険者ギルドを退職させられたおっさんは故郷に帰る事にする。\nその道中、彼は二人の赤子を拾う。一人目は勇者の紋章を宿した人間の赤子。二人目は魔王の紋章を宿した魔族の赤子であった。\nかくして、勇者と魔王を拾ったおっさんの物語が幕を開ける。\n【書籍化決定】２０１８年７月１０日よりTOブックス様より書籍化させて頂く事になりました。",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "おっさん",
-            "オリジナル戦記",
-            "勇者",
-            "勘違い",
-            "残酷な描写あり",
-            "異世界",
-            "魔王"
-          ]
-        },
-        "contribute": [
-          "史卡辛米之刃",
-          "蝶舞凝汐"
-        ],
-        "options": {
-          "syosetu": {
-            "txtdownload_id": "1178639"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.dip.jp/search.php?text=n8756en&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[大叔捡到了勇者和魔王吧](https://tieba.baidu.com/f?kw=%E5%A4%A7%E5%8F%94%E6%8D%A1%E5%88%B0%E4%BA%86%E5%8B%87%E8%80%85%E5%92%8C%E9%AD%94%E7%8E%8B&ie=utf-8 \"大叔捡到了勇者和魔王\")"
-        ]
-      },
-      "奴隷商人しか選択肢がないですよ？　～ハーレム？　なにそれおいしいの？～": {
-        "novel": {
-          "title": "奴隷商人しか選択肢がないですよ？　～ハーレム？　なにそれおいしいの？～",
-          "title_zh": "除了成為奴隸商人以外別無選擇喲？～後宮？那好吃嗎？",
-          "author": "カラユミ",
-          "source": "http://ncode.syosetu.com/n8567do/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91sSsOf1oqL.jpg",
-          "publisher": "syosetu",
-          "date": "2019-01-18T10:35:00+08:00",
+          "date": "2019-04-28T00:37:00+08:00",
           "status": "完結済",
-          "novel_status": 1,
+          "novel_status": 257,
           "series": {
-            "name": "奴隷商人しか選択肢がないですよ？　～ハーレム？　なにそれおいしいの？～"
+            "name": "ゲームキャラで異世界転生して、大草原ではじめるスローライフ"
           },
-          "preface": "塞奧利斯遵循村中的慣例一到十五歲就去職業學校。從那裡得到的稱號將會決定人生的大致方向,但是他所得到的稱號是【勇者】【魔帝】【大賢者】【奴隸商人】、無論哪一個都是見不得人的。他從中選了最不引人注目的、能輕鬆活下去的最差的稱號【奴隸商人】。開啟了被青梅竹馬的毒舌美少女、同是奴隸商人的精靈、貓耳冒險者、蘿莉魔王等各式各樣的女性折騰的後宮苦勞傳\n\n村の決まりで十五歳から職業学校に通うことになったゼオリス。そこで得られる称号で人生がほぼ決まるのだが、得られた称号は【勇者】【魔帝】【大賢者】【奴隷商人】と、どれも人目を憚る称号ばかりだった。その中で一番注目されず、生きていくのが楽そうな最低の称号【奴隷商人】を選ぶことに。幼馴染の毒舌美少女から同じ奴隷商人のエルフ、猫耳冒険者、ロリ魔王と多種多様な女性に振り回されるハーレム苦労譚。\n■コミカライズは書籍をベースとしていますので、WEB版とは途中から大きく異なる予定です。\n\n\n■2018.1.26完結\n■只今3巻まで発売中\n■書籍は一巻後半部分でweb版から分岐ルート\n■幻冬舎コミックスのコミックブーストでコミカライズ中\n◆アルファポリス外部サイト登録中\n【今日の一冊】で紹介されました。2016.11.22【http://syosetu.com/issatu/archive/no/25/】",
+          "preface": "故事是讲述主角「优米露」和「亞瑠莎」在异世界转移后，身处于一望无际的大草原，两人相依为命，只好靠着大草原内迷宫的资源生活。途中和各样的人相遇所发生的故事。\n故事主要都是讲述主角两人互相卖萌，作死。\n轻快的故事内容和没有胃痛的主线，绝对可以作为洗涤心灵的小说。\n\n内容的要点大既就是\n1.主角1号为TS Loli (重点)\n2.主角2号是幺力女(初期)\n3.主角1号偶尔会作死(可以想像成优米露是物理版的尤莉)\n4.這是一個Loli养育幺力女，最后后被吃掉的故事！\n\nVRMMO全盛期にレトロ系MMORPGをプレイしていた主人公は、いつの間にか異世界に放り出された。しかも大平原のど真ん中、目の前には迷宮があるだけ。そこで保護した幼女と生き抜く為に物作りに励む。\nやがて別のゲームからの転移者とも出会い、手を取り合ったり戦ったりしつつ成長する話です。\n\nこの作品はTS（性転換）要素および若干の性的な表現を含みます。苦手な方はご注意ください。\n\n第6回ネット小説大賞で入賞しました。\n201902/09　ゲームキャラで異世界転生して、大草原ではじめるスローライフと改題して発売しました。\n\n旧題：ゲームキャラで異世界転生　～トップランナーはよろず屋さん～",
           "tags": [
+            "GLっぽい要素有",
             "R15",
+            "ROリスペクト",
+            "TS",
             "node-novel",
             "syosetu",
-            "エルフ",
-            "ギャグ",
-            "ゲイネタ有",
-            "コミカライズ",
-            "コメディ",
-            "ハッピーエンド",
-            "ヒロイン問題有",
-            "ラブコメ",
-            "主人公最強？",
-            "勘違いされ系",
-            "変態主人公",
-            "後半",
-            "徐々に下ネタ増",
-            "書籍化",
-            "残酷な描写あり",
-            "獣人",
-            "結婚",
-            "苦労ハーレム",
-            "魔王"
-          ]
-        },
-        "contribute": [
-          "Yuki",
-          "忍野忍"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "undefined",
-            "novel_id": "n8567do"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n8567do&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[除了成为奴隶商人以外别无选择吧](https://tieba.baidu.com/f?kw=%E9%99%A4%E4%BA%86%E6%88%90%E4%B8%BA%E5%A5%B4%E9%9A%B6%E5%95%86%E4%BA%BA%E4%BB%A5%E5%A4%96%E5%88%AB%E6%97%A0%E9%80%89%E6%8B%A9&ie=utf-8 \"除了成为奴隶商人以外别无选择\")",
-          "[dm5](http://www.dm5.com/manhua-chulechengweinulishangrenyiwaibiewuxuanzeyo-hougong-nahaochima/)",
-          "[over-lap.co.jp](https://over-lap.co.jp/narou/865542509/)"
-        ]
-      },
-      "婚約者は、私の妹に恋をする": {
-        "novel": {
-          "title": "婚約者は、私の妹に恋をする",
-          "author": "はなぶさ",
-          "source": "http://ncode.syosetu.com/n8109cq/",
-          "cover": "",
-          "publisher": "syosetu",
-          "date": "2018-09-10T02:00:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "婚約者は、私の妹に恋をする"
-          },
-          "preface": "ああ、またか。私の可愛い妹を見つめる、私の婚約者。その冷たい目に灯る僅かな熱量を確かに見たとき、私は既視感に襲われた。かつての人生でも、私の婚約者は私の妹に恋をした。私はただそれを見ていることしかできなかった。そして、そんな私は、何の因果か、同じ時を巡る人間だった。\n☆6月9日にKADOKAWA様より書籍化。☆12月9日に２巻が刊行されます。本当に有難うございます。",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "すれ違い",
-            "ファンタジー",
-            "学園",
-            "恋愛",
-            "残酷な描写あり",
-            "異世界",
-            "転生"
-          ]
-        },
-        "contribute": [
-          "SuppiYuu",
-          "小Mo",
-          "蓝胖子XD"
-        ],
-        "options": {
-          "syosetu": {
-            "txtdownload_id": "688041"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.dip.jp/search.php?text=n8109cq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[婚约者恋上我的妹妹吧](https://tieba.baidu.com/f?kw=%E5%A9%9A%E7%BA%A6%E8%80%85%E6%81%8B%E4%B8%8A%E6%88%91%E7%9A%84%E5%A6%B9%E5%A6%B9&ie=utf-8 \"婚约者恋上我的妹妹\")"
-        ]
-      },
-      "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい": {
-        "novel": {
-          "title": "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい",
-          "title_zh1": "復仇喚來天罰",
-          "author": "月汰元",
-          "illust": "ジャン・ポポ",
-          "source": "http://ncode.syosetu.com/n8216dt/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/715eFp4JVtL.jpg",
-          "publisher": "syosetu",
-          "date": "2019-02-18T11:27:00+08:00",
-          "status": "連載",
-          "novel_status": 256,
-          "series": {
-            "name": "復讐は天罰を呼び、魔術士はぽやぽやを楽しみたい"
-          },
-          "preface": "【第六届ネット小说大赏获奖，2019年1月宝岛社发售第一卷】\n\n中年教师间藤未来生追查到了杀害妻子和女儿的犯人，在复仇之日，他因遭到了天罚而死亡。\n\n然而，他的精神体却被带到了一个未知的世界，并转移到了一个叫做里卡尔德·尤尼乌斯（リカルド・ユニウス）的少年身上。\n那个陌生的世界被称为『天神族的游乐场』，这是一个存在着魔术与魔兽、而且人类在初次杀死魔兽时，可以得到一个神之恩惠，这样的世界。\n一般而言，人们可以从五个恩惠中选择其一。然而，同样的情况发生在里卡尔德（间腾）身上，却出现了第六个选项。\n这是一篇由选择魔术士道路的里卡尔德和他的成长之路所编织而成的物语。\n\n【第六回ネット小説大賞受賞、２０１９年１月宝島社より第１巻発売】　\n　中年教師の間藤未来生は妻と娘を殺した犯人を突き止め復讐した日に天罰が下って死亡する。\n　但し、その精神は見知らぬ世界に飛ばされ、リカルド・ユニウスという少年に乗り移った。\n　その見知らぬ世界は『天神族の遊び場』と呼ばれ魔獣や魔術が存在していた。しかも人間は初めて魔獣を殺した時、神の恩恵を一つ貰える世界だった。\n　恩恵は五つの中から一つを選択する方法で与えられる。しかし、リカルド（間藤）の場合には六番目の選択肢が現れた。\n　この物語はリカルド（間藤）が魔術士としての道を選び、成長していく物語である。\n\n　世界観や設定が固まったので、書き溜めていたものを投稿します。更新は不定期になります。\n　感想は喜んで読ませて頂きますが、時間の関係で全部に返事が出来ないと思います。ご容赦下さい。",
-          "tags": [
-            "node-novel",
-            "syosetu",
+            "ご都合主義",
+            "ほのぼの",
+            "ものづくり",
+            "チート",
             "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
             "ファンタジー",
-            "内政",
-            "冒険",
-            "妖樹飼育",
-            "復讐",
-            "書籍化",
-            "最強魔術士",
+            "主人公最強",
+            "完結済",
+            "書籍化作品",
             "残酷な描写あり",
+            "異世界転生",
             "異世界転移",
-            "触媒",
-            "魔獣",
-            "魔術",
-            "魔術士協会"
+            "異能力バトル",
+            "百合",
+            "転移者複数出現します"
           ]
         },
         "contribute": [
-          "呉Kingkong",
-          "回眸一笑"
+          "月宮鍵"
         ],
         "options": {
           "downloadOptions": {
@@ -8168,320 +13375,67 @@
           "syosetu": {
             "txtdownload_id": "",
             "series_id": "",
-            "novel_id": "n8216dt"
+            "novel_id": "n1695cq"
           },
           "textlayout": {
             "allow_lf2": true
           }
         },
         "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n8216dt&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[复仇唤来天罚吧](https://tieba.baidu.com/f?kw=%E5%A4%8D%E4%BB%87%E5%94%A4%E6%9D%A5%E5%A4%A9%E7%BD%9A&ie=utf-8 \"复仇唤来天罚\")"
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n1695cq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n1695cq/)",
+          "[以游戏角色的异世界转生～由大草原开始的慢节奏生活～](https://tieba.baidu.com/p/6031960273?red_tag=0288847927)",
+          "[以游戏角色的异世界转生吧](https://tieba.baidu.com/f?kw=%E4%BB%A5%E6%B8%B8%E6%88%8F%E8%A7%92%E8%89%B2%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E8%BD%AC%E7%94%9F&ie=utf-8 \"以游戏角色的异世界转生\")"
         ]
       },
-      "最強職《竜騎士》から初級職《運び屋》": {
+      "吸血少女は男に戻りたい！": {
         "novel": {
-          "title": "最強職《竜騎士》から初級職《運び屋》になったのに、なぜか勇者達から頼られてます",
-          "title_zh": "明明從最強職《竜騎士》成為初級職《送貨人》，為何依然備受勇者們的青睞",
-          "author": "あまうい白一",
-          "source": "http://ncode.syosetu.com/n4045ed/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/71RMRiJKoeL.jpg",
+          "title": "吸血少女は男に戻りたい！",
+          "title_zh": "吸血少女想變回男人！",
+          "title_zh1": "吸血鬼少女想变回男人！",
+          "author": "秋野　錦",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n4236dr/",
+          "cover": "",
           "publisher": "syosetu",
-          "date": "2018-11-07T12:32:00+08:00",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-03-23T20:16:00+08:00",
           "status": "連載",
+          "novel_status": 0,
           "series": {
-            "name": "最強職《竜騎士》から初級職《運び屋》になったのに、なぜか勇者達から頼られてます"
+            "name": "吸血少女は男に戻りたい！"
           },
-          "preface": "─儘管從最上級職成為初級職，卻變得更強了─  \n最強的《竜騎士》阿克塞爾是，應王家的委託成為勇者隊伍上的一員並且打倒了魔王。  \n之後，得到許多報酬的他沒有必要再從事危險的工作，並且轉職為初級職《送貨人》。  \n然後，和身為夥伴的竜一同遨遊世界，過著原以為悠閒自適的生活──  \n「總覺得前勇者和公會裡的人老是依賴我啊？」  \n「因為主人已經變成，驅使身為竜王的我，最快速的送貨人先生，當然囉」  \n「話說回來，不僅比竜騎士時代的能力更高，技能也更強耶？」  \n「因為主人，不是從基礎學起，重新學習會更強是理所當然的啊」  \n就這樣成為史上最強的新手《送貨人》的他，在被周遭愛戴崇拜、依靠之下自由自在的生活下去。\n\n　ガガガブックス様より書籍化しました&マンガワン様、裏サンデー様、ニコニコ静画様でコミカライズが連載中です！　\n　原作小説２巻、コミックス１巻は５/１８に発売しています！\n　そしてコミックス２巻は１０/１２（金）に発売です！\n　\n　―最上級職から初級職になったのに、より強くなるだけでした―\n　最強の《竜騎士》アクセルは、王家の依頼により勇者パーティーの一人として魔王を倒した。その後、多大な報酬を得た彼はこれ以上物騒な仕事をする必要もない、と初級職《運び屋》に転職した。そして、相棒である竜と共に世界を旅しながら、悠々自適な生活をしようと思っていたのだが――\n「何だか前より勇者やギルドの連中から頼りにされていないか？」「だってご主人、竜王のボクを駆る、最速の運び屋さんになったんだから、当然でしょ」\n「というか、竜騎士時代よりも能力が上がっているし、スキルも強いような？」「だってご主人、基礎を学んでないんだから、学び直したら強くなるのは当たり前だよ」\n　こうして史上最強のビギナー《運び屋》となった彼は、周りから愛され憧れられ、頼られながら自由気ままに生活していく。",
+          "preface": "在剑与魔法的世界中转生的少年有一件令他烦恼的事，那就是因为废材女神的失误而被转生成了女孩子。原废人玩家成为露娜.雷文顿，决意要取回男人的身体而在异世界中生活下去。\n没错，这一切都是为了能和女孩子卿卿我我！\n但是，现实无法一帆风顺的露娜身边涌现出了各种难题。\n最终露娜能否跨越众多困难取回男人的身体呢！？\n\n剣と魔法の異世界に転生した少年には一つの悩み事があった。それはポンコツ女神の手違いで女の子に転生してしまったこと。廃人ゲーマー改めルナ・レストンは男に戻ることを決意し異世界を生き抜いていく。\nすべてはそう、女の子と気兼ねなくいちゃいちゃするために！\nしかし、現実はそうそううまくはいかずルナのもとには様々な問題が浮上してくる。\n果たしてルナは数多の難題を乗り越え男に戻ることが出来るのか！？",
           "tags": [
             "R15",
             "node-novel",
             "syosetu",
-            "コミカライズしてます",
-            "スキル",
-            "ビギナー最強",
-            "ファンタジー",
-            "冒険",
-            "初級職",
-            "勇者",
-            "最強",
-            "残酷な描写あり",
-            "異世界",
-            "神",
-            "竜",
-            "精霊",
-            "職業",
-            "転職",
-            "龍娘"
-          ]
-        },
-        "contribute": [
-          "RunningCat",
-          "轻之国度",
-          "飛奔中的喵"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "1073938",
-            "novel_id": "n4045ed"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n4045ed&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[轻之国度](https://www.lightnovel.cn/forum.php?mod=viewthread&tid=919749&extra=&authorid=989041)"
-        ]
-      },
-      "月桂樹の唄": {
-        "novel": {
-          "title": "月桂樹の唄",
-          "title_zh1": "月桂树之歌",
-          "author": "松山 京平",
-          "source": "http://ncode.syosetu.com/n1828cs/",
-          "cover": "http://gmom04-res.cloudinary.com/image/upload/v1491893744/dlynaizfnjybuo87uotj.jpg",
-          "publisher": "syosetu",
-          "date": "2018-10-29T01:16:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "月桂樹の唄"
-          },
-          "preface": "淩川琉璃，是位如彗星一般橫空出世的人氣聲優。\n但是，她有一個不為人知的秘密。那就是、她有著“本是名男生”這樣令人難以相信的過去。\n因臨近高考的、十四歲左右時的、身體異常的變化而痛苦掙扎、並陷入絕望深淵的琉璃，於平安夜夜晚、在公園中與既是劇作家、又是“七色團”劇團團長的奈良屋義春相遇，決心走上演員的道路。\n擁有著非凡的姿容與表演技藝、以及如天性一般的美聲與歌唱力的琉璃，不久，就在聲優界獲得了頂尖的人氣。\n然後，再一次造訪的平安夜。\n欺騙群眾、背叛朋友、不斷對自己的內心說謊的琉璃，被捲入了事故之中……。\n\n　彗星の如く現われた人気声優「澪川瑠璃（みおかわ　るり）」。\n　しかし、１年前の彼女はロックシンガーを夢見るひねくれた中学生３年生の男子、「宮川瑠伊（みやかわ　るい）」だった。\n\n　高校受験を控えた１４歳の秋、男だった瑠伊の身体は少しずつ変化していく……。\n　身体の異常をひた隠しにしながら、瑠伊は原因不明の激痛にもがき苦しむ日々を過ごした。\n　身体の変化に限界を感じ、明日にでも命尽き果てる不安と絶望の底で、ついに瑠伊の身体は完全な女性へと変貌する。\n\n　季節は冬。\n　クリスマス・イヴの夜の公園で劇作家であり俳優でもある劇団七色座の座長「奈良屋義春」と出会い、瑠伊は役者の道を志す決意をする。\n　天使のような容姿と美声に演技力と歌唱力が加わった瑠伊は瑠璃となり、天の悪戯か声優デビューを果たして一躍世間の注目を浴びる存在となる。\n\n\n　　──そして１年後。再び訪れたクリスマス・イヴの夜。\n\n\n　初のライブで観客を熱狂させた帰りの夜、瑠璃は交通事故に巻き込まれた。\n　その刹那、懐かしい思い出が走馬灯のように駆け巡る……。\n\n\n　　この物語は女へと変わってしまった男子中学生の記憶であり、\n　　芸能界へ挑戦する一人の少女の秘密の記録である。\n\n\n　大衆を誑（たぶら）かし、友を騙し、自らの心をも偽り続ける瑠璃は……。\n\n\n※本作品はPixiv様でも掲載しております。",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "ご都合主義",
+            "イラスト（挿絵）有り",
             "ガールズラブ",
-            "シリアス",
-            "スクールラブ",
-            "ネット小説大賞六感想",
-            "ボーイズラブ",
-            "ラブコメ",
-            "中学生",
-            "劇団",
-            "声優",
-            "少しずつＴＳ",
-            "性転換",
-            "日常",
-            "現代(モダン)",
-            "舞台",
-            "青春",
-            "高校生",
+            "ケモノ娘",
+            "シリアスギャグ",
+            "スキル",
+            "ネット小説大賞七",
+            "ハイファンタジー",
+            "ファンタジー",
+            "主人公最強（予定）",
+            "冒険ファンタジー",
+            "剣と魔法",
+            "女主人公",
+            "残酷な描写あり",
+            "異世界転生",
+            "異能力バトル",
+            "百合ハーレム",
+            "種族チート",
+            "能天気主人公",
             "ＴＳ"
           ]
         },
         "contribute": [
-          "土之女神",
-          "寂夜空雪",
-          "星宫濑奈",
-          "興國物語",
-          "阿拉斯加巨企鹅",
-          "随便取的名字82"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "undefined",
-            "novel_id": "n1828cs"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n1828cs&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[月桂树之歌吧](https://tieba.baidu.com/f?kw=%E6%9C%88%E6%A1%82%E6%A0%91%E4%B9%8B%E6%AD%8C&ie=utf-8 \"\")",
-          "[pixiv](https://www.pixiv.net/novel/series/882076)"
-        ]
-      },
-      "父は英雄、母は精霊、娘の私は転生者。": {
-        "novel": {
-          "title": "父は英雄、母は精霊、娘の私は転生者。",
-          "title_other": "爹强妈猛我无敌",
-          "author": "松浦",
-          "source": "http://ncode.syosetu.com/n2056dn/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91xqrEG%2BX0L.jpg",
-          "publisher": "syosetu",
-          "date": "2018-09-27T21:36:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "父は英雄、母は精霊、娘の私は転生者。"
-          },
-          "preface": "カドカワBOOKS様より書籍化、2018年3月10日に無事一巻発売。続いて二巻が6月9日に発売いたしました。\nスクウェア・エニックス様 月刊ビッグガンガン10月号より2018年9月25日コミカライズ開始。\n\n読んでくださっている皆様のお陰です。本当にありがとうございます！\n\n\n日本で研究者をしていた28歳の私は、気付いたらファンタジーの世界へ輪廻転生をしていました。\n更に半精霊化した父と精霊の母を持つクォーターという存在に。\n父に執着する叔母、問題児の従妹達。まるで乙女ゲームの様な泥沼のテンプレを巻き起こす彼女達。\n更に何故か従妹が狙っていたと思わしき対象に気に入られたり、王様相手に言葉でバトルをやりあったり。人間助けたり、精霊助けたりと大忙し！\n\n更にあの人達が最終的に父を狙っていると知ったその瞬間。\n「潰します」\nチートな主人公が、人様の家庭に手を出すんじゃないと制裁に乗り出す。そんなお話。\n\n※修正一時中断しております。申し訳ありません。",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "じれじれ",
-            "コメディ",
-            "シリアス",
-            "チート",
-            "ハッピーエンド",
-            "ファンタジー",
-            "恋愛",
-            "書籍化",
-            "残酷な描写あり",
-            "異世界転生",
-            "異類婚姻譚",
-            "精霊",
-            "身分差"
-          ]
-        },
-        "contribute": [
-          "傻酱o-o"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "911965",
-            "novel_id": "n2056dn"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n2056dn&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[父为英雄母为精灵女儿为转生者吧](https://tieba.baidu.com/f?kw=%E7%88%B6%E4%B8%BA%E8%8B%B1%E9%9B%84%E6%AF%8D%E4%B8%BA%E7%B2%BE%E7%81%B5%E5%A5%B3%E5%84%BF%E4%B8%BA%E8%BD%AC%E7%94%9F%E8%80%85&ie=utf-8 \"父为英雄母为精灵女儿为转生者\")",
-          "[dmzj](https://manhua.dmzj.com/dieqiangmamengwowudi/)"
-        ]
-      },
-      "破滅の魔導王とゴーレムの蛮妃": {
-        "novel": {
-          "title": "破滅の魔導王とゴーレムの蛮妃",
-          "title_zh": "破滅之魔導王與魔偶蠻妃",
-          "author": "北下路 来名",
-          "illust": "",
-          "illusts": [
-            "いのうえひなこ",
-            "芝"
-          ],
-          "source": "http://ncode.syosetu.com/n0406dr/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91n5c9r2xvL.jpg",
-          "publisher": "syosetu",
-          "date": "2018-12-25T21:53:00+08:00",
-          "status": "連載",
-          "novel_status": 256,
-          "series": {
-            "name": "破滅の魔導王とゴーレムの蛮妃"
-          },
-          "preface": "◆書籍化しました。2018年12月27日、第2巻が発売いたします！\n\n世界を滅ぼす『破滅の魔導王』として、ダサいパジャマ姿のまま、異なる世界に召喚された一人の青年。\nしかし、彼はわりと理性的な人間であり、破滅的なのはネーミングセンスくらいのものだった。\n世界を滅ぼすつもりなどは、特にない。\nさらには、召喚直後に予想外のアクシデントが発生する。これにより青年は召喚主のコントロール下を離れ、完全な独自行動を取りはじめた。\n\nそして遂に、彼は生み出してしまうことになるのだ。……その、おそるべき相棒を。\n滅びに向かうはずだった世界の運命が、今大きく変わりはじめていた。\n\n※ヒロインの愛が、重いです。",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "ほのぼのヤンデレ",
-            "エルフ(?)",
-            "ゴーレム",
-            "タッグバトル",
-            "土属性主人公",
-            "旅",
-            "残酷な描写あり",
-            "異世界転移",
-            "異類婚姻譚",
-            "魔王"
-          ]
-        },
-        "contribute": [
-          "墨羽",
-          "章魚子",
-          "鑫森淼焱垚"
-        ],
-        "options": {
-          "downloadOptions": {
-            "noFilePadend": true,
-            "filePrefixMode": 1,
-            "startIndex": 1
-          },
-          "syosetu": {
-            "txtdownload_id": "undefined",
-            "novel_id": "n0406dr"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n0406dr&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[破灭之魔导王与魔偶蛮妃吧](https://tieba.baidu.com/f?kw=%E7%A0%B4%E7%81%AD%E4%B9%8B%E9%AD%94%E5%AF%BC%E7%8E%8B%E4%B8%8E%E9%AD%94%E5%81%B6%E8%9B%AE%E5%A6%83&ie=utf-8 \"破灭之魔导王与魔偶蛮妃\")",
-          "[dm5](http://www.dm5.com/manhua-pomiezhimodaowangyumooumanfei/)"
-        ]
-      },
-      "絕對不想工作的地下城城主想睡懶覺": {
-        "novel": {
-          "title": "絶対に働きたくないダンジョンマスターが惰眠をむさぼるまで",
-          "title_zh1": "絕對不想工作的地下城城主想睡懶覺",
-          "title_zh2": "不工作的地城主想睡懶覺",
-          "author": "鬼影スパナ",
-          "illust": "よう太",
-          "illusts": [
-            "七六"
-          ],
-          "source": "http://ncode.syosetu.com/n5490cq/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91ZCsHrplUL.jpg",
-          "publisher": "syosetu",
-          "date": "2019-01-29T21:51:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "絶対に働きたくないダンジョンマスター"
-          },
-          "preface": "「我不想工作Zzzz」\n　即將被召喚到異世界的增田桂馬、神明大人說可以聽取他一個條件時、桂馬如此回答了。\n　......不過、異世界好像並沒有這等好事。接着神明大人呆然地說「......那我期待下一個人吧...」、然後桂馬就這樣被祂目送着穿越到了異世界。\n　召喚桂馬的是被稱為第695號地城核心的金髮蘿莉幼女。接着不知怎的桂馬突然被登錄為了地城主、什麼......、這個地城就只有1個房間，而且那個房間還被山賊佔領了......？\n　------那麼究竟桂馬能不能顛覆這個突如其來的困境、然後實現可以睡懶覺而又不用工作的生活呢？！\n\n「働きたくない」\n　異世界召喚される中、神様が一つだけ条件を聞いてくれるということで、増田桂馬はそう答えた。\n　……だが、さすがにそううまい話はないらしい。呆れられて「次の人に期待する」という神様に見送られ、桂馬はそのまま召喚された。\n　召喚したのは第６９５番ダンジョンコアと名乗る金髪ロリ幼女。そしてなんか流れでダンジョンマスターになったけど、あれ、このダンジョン１部屋しかない上に山賊に制圧されてね……？\n　はたして桂馬はいきなり詰んでるこの状況を覆し、惰眠をむさぼる働かない生活を手に入れることはできるのか？！\n\n（2018年11月25日　書籍９巻発売。コミカライズもしました→https://over-lap.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=ZG0023）",
-          "tags": [
-            "R15",
-            "node-novel",
-            "syosetu",
-            "ダンジョン",
-            "ダンジョンマスター",
-            "ダンジョン経営",
-            "ダンジョン運営",
-            "ファンタジー",
-            "地下城",
-            "奴隷",
-            "幼女",
-            "残酷な描写あり",
-            "異世界",
-            "異世界転移",
-            "経営",
-            "運営",
-            "魔法"
-          ]
-        },
-        "contribute": [
-          "ALEXY",
-          "elsun87108",
-          "giligili_eve",
-          "iam_hungry",
-          "m51352004",
-          "on哥",
-          "初级侬侬",
-          "吉村理葛代",
-          "夜幕壟罩",
-          "崇雨沛風",
-          "新筆芯",
-          "暗風月",
-          "水中浮云月",
-          "試用版beta",
-          "路人_鋒",
-          "長谷川無用男",
-          "阿李猫猫cat",
-          "雪隐鬼狐",
-          "鳥鈴司",
-          "黑尋亦"
+          "StarSky_G_",
+          "疯一样的苦力怕"
         ],
         "options": {
           "downloadOptions": {
@@ -8491,106 +13445,69 @@
           },
           "syosetu": {
             "txtdownload_id": "",
-            "novel_id": "n5490cq"
+            "series_id": "",
+            "novel_id": "n4236dr"
           },
           "textlayout": {
-            "allow_lf2": true
+            "allow_lf2": false
           }
         },
         "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n5490cq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[不工作的地城主想睡懒觉吧](https://tieba.baidu.com/f?kw=%E4%B8%8D%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E5%9F%8E%E4%B8%BB%E6%83%B3%E7%9D%A1%E6%87%92%E8%A7%89&ie=utf-8 \"不工作的地城主想睡懒觉\")",
-          "[石墨整合帖](https://shimo.im/docs/QVS5Zmgs85QzmDKB)",
-          "[真白小鎮](https://masiro.moe/forum.php?mod=forumdisplay&fid=97)",
-          "[dm5 漫畫](http://www.dm5.com/manhua-jueduibuxianggongzuodedixiachengchengzhuxiangshuilanjue/)"
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n4236dr&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[吸血鬼少女想变回男人吧](https://tieba.baidu.com/f?kw=%E5%90%B8%E8%A1%80%E9%AC%BC%E5%B0%91%E5%A5%B3%E6%83%B3%E5%8F%98%E5%9B%9E%E7%94%B7%E4%BA%BA&ie=utf-8 \"吸血鬼少女想变回男人\")"
         ]
       },
-      "自称！平凡魔族の英雄ライフ": {
+      "朝起きたら銀髪ロリ吸血鬼になっていた（小並感）": {
         "novel": {
-          "title": "自称！平凡魔族の英雄ライフ～B級魔族なのにチートダンジョンを作ってしまった結果～",
-          "author": "あまうい白一",
-          "source": "http://ncode.syosetu.com/n4679do/",
-          "cover": "",
+          "title": "朝起きたら銀髪ロリ吸血鬼になっていた（小並感）",
+          "title_zh": "早上起來變成銀髮蘿莉吸血鬼了",
+          "author": "バッグパス",
+          "authors": [
+            "バックパス"
+          ],
+          "illust": "ひみつ",
+          "source": "http://novel18.syosetu.com/n8176ca/",
+          "cover": "https://img1.mitemin.net/60/zs/32zr1d589x6fy0tc8trgfng2dn0_r8g_k4_sf_6p11.jpg",
           "publisher": "syosetu",
-          "date": "2018-09-13T12:00:00+08:00",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2018-03-10T07:32:00+08:00",
           "status": "連載",
+          "novel_status": 0,
           "series": {
-            "name": "自称！平凡魔族の英雄ライフ～B級魔族なのにチートダンジョンを作ってしまった結果～"
+            "name": "朝起きたら銀髪ロリ吸血鬼になっていた（小並感）"
           },
-          "preface": "書籍版が、講談社Ｋラノベブックス様より発売中です！\nまたニコニコ静画様でコミカライズが連載がスタートしました。是非一読して頂ければ嬉しいです。　\nコミックス1巻は１０/９発売です！\n\n――小さな部屋で良いのに、出来てしまったのは広大で強力なダンジョンだった。\n　平凡な魔族であるクロノは、魔王城の学園でダンジョンを作成する。二十歳になったら魔王城でダンジョンを作り上げ、そこに住みつつ勉学に励み、一人立ちするのが魔族の風習だった。\n　クロノとしては、小さなダンジョンができればいい、と思って作成したのだが――完成したのは数百層に渡る巨大な代物だった。それはもう、伝説の魔王が作ったダンジョンを超えるとんでもないレベルの。\n「俺は小さなダンジョンを持てれば充分なのに……！」\n平凡で気楽な生活を求めていたクロノは、あっという間に注目の的になり、魔族の中で成り上がっていく。やがて英雄と言われるまで。",
+          "preface": "朝目覚めたら、銀髪美少女（推定12歳）になっていた----\n\n人生詰みかけ枯れかけ壮年サラリーマン柳生鉄馬（42歳♂）は、これで完璧詰んだと諦観しながらも、\"己\"の物語を読み解き始めることとなる。\n\nという、「朝起きたら銀髪ロリ吸血鬼になっていた（小並感）」の完全版（18禁）です。「秘密の袋とじ」的なものとして、扱ってもらえれば幸いです。",
           "tags": [
             "R15",
+            "R18",
+            "TS（性転換）",
             "node-novel",
+            "novel18",
             "syosetu",
-            "エルフ",
-            "ダンジョン",
-            "チート",
-            "モンスタ―娘",
-            "主人公最強",
-            "人外",
-            "妖精",
-            "学園",
-            "成り上がり",
+            "ぼっち系",
+            "ノクターンノベルズ(男性向け)",
+            "レイプ",
+            "主人公は最強系？",
+            "吸血鬼",
+            "女主人公",
+            "成長",
             "残酷な描写あり",
-            "運営"
-          ]
+            "男性向け",
+            "転生",
+            "鬼畜系"
+          ],
+          "source_old": "http://ncode.syosetu.com/n4983ca",
+          "title_en1": "When I Woke Up in the Morning I Became a Silver Haired Loli Vampire"
         },
         "contribute": [
-          "我只是想看小說",
-          "才人→大爱",
-          "章魚子"
-        ],
-        "options": {
-          "syosetu": {
-            "txtdownload_id": "924587"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.dip.jp/search.php?text=n4679do&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[自称平凡魔族的英雄生活吧](https://tieba.baidu.com/f?kw=%E8%87%AA%E7%A7%B0%E5%B9%B3%E5%87%A1%E9%AD%94%E6%97%8F%E7%9A%84%E8%8B%B1%E9%9B%84%E7%94%9F%E6%B4%BB&ie=utf-8 \"自称平凡魔族的英雄生活\")"
-        ]
-      },
-      "航宙軍士官、冒険者になる": {
-        "novel": {
-          "title": "航宙軍士官、冒険者になる",
-          "title_zh": "宇宙軍士官，成為冒險者",
-          "author": "a_itoh（伊藤 暖彦）",
-          "illust": "himesuz",
-          "source": "http://ncode.syosetu.com/n3490ee/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/71VwAWPbp3L.jpg",
-          "publisher": "syosetu",
-          "date": "2019-01-14T07:04:00+08:00",
-          "status": "連載",
-          "series": {
-            "name": "航宙軍士官、冒険者になる"
-          },
-          "preface": "帝國航宙軍士兵艾倫・柯林特所乘坐的航宙艦，在超空間航行中遭受到未知的攻擊。\n\n艾倫是偶然在艦上，成為了唯一的倖存者。\n\n嚴重損壞的航宙艦無法繼續航行，只好降落於附近的星球。\n\n艾倫藉由船上的逃生艙一人獨自來到了星球之上。\n\n航宙軍士官艾倫帶著他的奈米機器［納姆］打算在未開發星球中賭上性命生存下去。\n\n然而降落行星的當地居民，竟然是與艾倫的遺傳基因系譜緊緊相連的人類。\n\n艾倫雖然對劍與魔法的世界不知所措，但仍會竭盡全力與同伴一起活下去。\n\n艾倫究竟會在這顆行星上有什麼作為呢\n\n以中世紀舞台的SF幻想小說，就此開幕。\n\n書籍が2018年11月30日に、KADOKAWA / エンターブレイン（ファミ通文庫）様より発売されました！\nこれも皆様のおかげです。ありがとうござます！\n\n帝国航宙軍兵士アラン・コリントの乗艦する航宙艦は、超空間航行中の未知の攻撃により大破してしまう。\n\nアランは全くの偶然から艦上で、たった一人の生存者となってしまった。\n\n大破した航宙艦は航行不能で、目前の惑星に落下中だった。\nアランは脱出ポッドで一人惑星に逃れる。\n\n未開の惑星に放り出された航宙軍士官アランとアランに共生しているナノマシン［ナノム］の生存を賭けたサバイバルが始まった。\n\n降り立った惑星には、驚くべきことにアランの遺伝子の系譜に連なる人類が繁栄していた。\n\nアランは、剣と魔法のファンタジーな世界に戸惑いつつも、仲間と共に精一杯生きていく。\n\nアランは、この惑星で何を成すのか。\n中世を舞台にしたSFファンタジー、ここに開幕。\n\n\n途中、料理の話で暴走している箇所がありますが、時間ができしだい修正するつもりでいます。大変申し訳ありませんが更新を優先していきたいので、それがいつになるか分かりません。しかし料理話は読み飛ばしても問題ないと考えています。",
-          "tags": [
-            "R15",
-            "SF",
-            "node-novel",
-            "syosetu",
-            "オリジナル戦記",
-            "サバイバル",
-            "チート",
-            "ドラゴン",
-            "ハーレム",
-            "内政",
-            "冒険者",
-            "剣",
-            "料理",
-            "異世界",
-            "貴族",
-            "魔法",
-            "魔道具"
-          ]
-        },
-        "contribute": [
-          "波凹凸战士",
-          "章魚子"
+          "LWLQLR",
+          "偷午睡懒癌S",
+          "名纸owo",
+          "暂时不想起名字",
+          "流光之迹",
+          "虚雪之葎"
         ],
         "options": {
           "downloadOptions": {
@@ -8599,17 +13516,86 @@
             "startIndex": 1
           },
           "syosetu": {
-            "txtdownload_id": "undefined",
-            "novel_id": "n3490ee"
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n8176ca"
           },
           "textlayout": {
             "allow_lf2": true
           }
         },
         "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n3490ee&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[宇宙军士官成为冒险者吧](https://tieba.baidu.com/f?kw=%E5%AE%87%E5%AE%99%E5%86%9B%E5%A3%AB%E5%AE%98%E6%88%90%E4%B8%BA%E5%86%92%E9%99%A9%E8%80%85&ie=utf-8 \"宇宙军士官成为冒险者\")",
-          "[dm5](http://www.dm5.com/manhua-yuzhoujunshiguan-chengweimaoxianzhe/)"
+          "[narou18.nar.jp](https://narou18.nar.jp/search.php?text=n8176ca&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://novel18.syosetu.com/novelview/infotop/ncode/n8176ca/)",
+          "[早上起来变成银发萝莉吸血鬼了吧](https://tieba.baidu.com/f?kw=%E6%97%A9%E4%B8%8A%E8%B5%B7%E6%9D%A5%E5%8F%98%E6%88%90%E9%93%B6%E5%8F%91%E8%90%9D%E8%8E%89%E5%90%B8%E8%A1%80%E9%AC%BC%E4%BA%86&ie=utf-8 \"早上起来变成银发萝莉吸血鬼了\")"
+        ]
+      },
+      "葉隠桜は嘆かない": {
+        "novel": {
+          "title": "葉隠桜は嘆かない",
+          "title_zh": "葉隱櫻不悲嘆",
+          "author": "玖洞",
+          "illust": "",
+          "source": "http://ncode.syosetu.com/n4912do/",
+          "cover": "",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-05-02T01:10:00+08:00",
+          "status": "連載",
+          "novel_status": 0,
+          "series": {
+            "name": "葉隠桜は嘆かない"
+          },
+          "preface": "――空が割れ、現代社会に魔獣が現れるようになった世界。\n\n魔獣に対抗するために『魔法少女』と呼ばれる少女たちが活躍するようになって早三十年。\nとある路地の片隅で、一人の少年が死にかけていた。\n\n「小僧。お前、救われたいか？」\n\nそう言って、黒猫は少年の顔を覗き込んだ。\n\n血に塗れた四肢を引きずりながら、霞みそうな意識の中で、少年はしっかりと頷いた。\nたとえそれが悪魔の取引だと分かっていても。\n\n黒猫は嗤う。\n\n「そうか。――ならば巣食ってやる」\n\n――その日、誰も知らない路地裏で一人の『魔法少女』が生まれた。\n『彼女』は決して嘆かない。たとえどんな未来が待ち受けていようとも。\n\n※日本を舞台にした現代ファンタジーです。TS注意。\n\n2019/1/23　改稿開始。連載中。",
+          "tags": [
+            "ESN大賞",
+            "HJ大賞2019",
+            "R15",
+            "node-novel",
+            "syosetu",
+            "ややシリアス",
+            "ファンタジー",
+            "ローファンタジー",
+            "ローファンタジー〔ファンタジー〕",
+            "人間賛歌",
+            "友情",
+            "変身",
+            "天災",
+            "怪獣",
+            "残酷な描写あり",
+            "現代",
+            "男主人公",
+            "異能力バトル",
+            "神様",
+            "魔法少女",
+            "ＴＳ"
+          ]
+        },
+        "contribute": [
+          "6757",
+          "虚雪之葎"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n4912do"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n4912do&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n4912do/)",
+          "[叶隐樱不悲叹吧](https://tieba.baidu.com/f?kw=%E5%8F%B6%E9%9A%90%E6%A8%B1%E4%B8%8D%E6%82%B2%E5%8F%B9&ie=utf-8&tp=0 \"叶隐樱不悲叹\")"
         ]
       },
       "變成了美少女、但也成了網游廢人。": {
@@ -8618,11 +13604,13 @@
           "title_zh": "變成了美少女、但也成了網游廢人。",
           "title_zh2": "变成了美少女但也成了网游废人",
           "author": "星屑ぽんぽん",
+          "illust": "ネコメガネ",
           "source": "http://ncode.syosetu.com/n0170db/",
-          "cover": "https://21485.mitemin.net/userpageimage/viewimagebig/icode/i246294/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/51prfKzR%2BVL.jpg",
           "publisher": "syosetu",
           "date": "2019-01-15T13:29:00+08:00",
           "status": "連載",
+          "novel_status": 256,
           "series": {
             "name": "美少女になったけど、ネトゲ廃人やってます。"
           },
@@ -8651,7 +13639,8 @@
         "contribute": [
           "lulala61",
           "秋葉怜",
-          "紫月的夜梦"
+          "紫月的夜梦",
+          "閃電小星"
         ],
         "options": {
           "downloadOptions": {
@@ -8673,67 +13662,155 @@
           "[地名装备名技能名人名等简单整合（不含角色介绍有的人名）](https://tieba.baidu.com/p/5603770798 \"地名装备名技能名人名等简单整合（不含角色介绍有的人名）\")",
           "[twitter](https://twitter.com/hosikuzuponpon)"
         ]
-      },
-      "身為暗殺者的我明顯比勇者還強": {
+      }
+    },
+    "ts_out": {
+      "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～": {
         "novel": {
-          "title": "暗殺者である俺のステータスが勇者よりも明らかに強いのだが",
-          "title_zh": "身為暗殺者的我明顯比勇者還強",
-          "author": "赤井まつり",
-          "source": "http://ncode.syosetu.com/n7707dt/",
-          "cover": "https://images-fe.ssl-images-amazon.com/images/I/61UFSKi0JTL.jpg",
+          "title": "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～",
+          "title_zh1": "食人转移者的异世界复仇谭",
+          "title_zh2": "喰人转移者的异世界复仇谭",
+          "author": "kiki",
+          "source": "http://ncode.syosetu.com/n7933eb/",
+          "cover": "",
           "publisher": "syosetu",
-          "date": "2018-09-17T15:11:00+08:00",
-          "status": "連載",
+          "date": "2017-11-28T21:51:00+08:00",
+          "status": "完結済",
           "series": {
-            "name": "暗殺者である俺のステータスが勇者よりも明らかに強いのだが"
+            "name": ""
           },
-          "preface": "気配を消すことが得意な高校生織田晶〈おだあきら〉はクラスメイトと共に異世界へ召喚されてしまう。\nそこは剣と魔法の世界で、晶達は勇者として魔王討伐を依頼される。\n依頼をしてきた国王と王女に違和感を感じた晶は、1人得意な気配消しで国王の書斎に忍び込み、過酷な真実を知る。\nそうとは知らないクラスメイト達を、見捨てるか、助けるか、全ては晶の手にかかっていた。\nそして、自分のステータスと勇者のステータスを見比べてみて、明らかな違和感に気づく。\n\n\n作者の都合でできない日もあるかもしれませんが、2017年1月27日から1日1更新を目指して頑張ります。\n\nオーバーラップ文庫様により書籍化しました。(2017年11月25日発売)",
+          "preface": "『捕食』――那是吞噬他人，夺取能力的技能。被卷入班级转移的白诘岬，遭到凄惨的霸凌被夺走了全部，在异世界召唤的失败中就连性别都被夺走了，最后什么技能都没得到，以被贴上\"无能\"的标签告终。然后，发现自己拥有的技能『捕食』的存在时，他的命运走向转折。岬化为获得力量的复仇之鬼，逐个诱骗虐待过自己的班上同学，然后捕食――\n\n※为描述复仇成功的过程，含有霸凌、猎奇、性暴力，NTR，心情描写。对这方面苦手的注意。\n\n　『捕食』――それは他者を喰らい、能力を奪うスキル。クラス転移に巻き込まれた白詰　岬は、凄惨ないじめで全てを奪われ、異世界召喚の失敗で性別すら奪われ、挙句の果てに何のスキルも与えられず”無能”のレッテルを貼られてしまう。しかし、自らの持つスキル『捕食』の存在に気づいた時、その運命は一変した。力を手に入れ復讐鬼と化した岬は、自分を虐げてきたクラスメイトたちを次々と陥れ、捕食していくのだった――\n\n\n　※復讐へ至る過程の描写もあるため、いじめ、グロ、性的暴力、寝取られ、胸糞描写などが含まれております。苦手な方は注意。\n\n完結済みです。",
           "tags": [
             "R15",
+            "TS",
             "node-novel",
             "syosetu",
-            "ざまぁあり",
-            "チート",
-            "ハーレム要素なし",
-            "主人公最強",
-            "恋愛は一筋",
-            "残酷な描写あり",
-            "王道？",
-            "異世界転移"
+            "ざまぁ",
+            "ガールズラブ",
+            "クラスごと異世界転移",
+            "クラス転移",
+            "スキル",
+            "ステータス",
+            "ダークファンタジー",
+            "ロボット",
+            "主人公最強予定",
+            "復讐",
+            "性転換",
+            "悪堕ち",
+            "成り上がり",
+            "捕食",
+            "異世界転移",
+            "百合",
+            "百合ハーレム",
+            "魔法"
           ]
         },
         "contribute": [
-          "Koryf",
-          "懶惰的鹹魚",
-          "深海潜水母舰",
-          "灵零翎凌铃",
-          "蝶舞凝汐",
-          "路西法"
+          "kong5sl",
+          "mana63905",
+          "siumonmon",
+          "time中二病患者",
+          "yswysc",
+          "一云淡风轻",
+          "六一绅士",
+          "怕来上课",
+          "業餘渣翻",
+          "污浊不堪",
+          "贪吃的小羔羊",
+          "零崎千爱"
+        ],
+        "options": {
+          "syosetu": {
+            "txtdownload_id": "1057828"
+          },
+          "textlayout": {
+            "allow_lf2": false
+          }
+        },
+        "link": [
+          "[dip.jp](https://narou.dip.jp/search.php?text=n7933eb&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[人喰い転移者の異世界復讐譚～無能はスキル『捕食』で成り上が～](https://tieba.baidu.com/p/5322052155 \"人喰い転移者の異世界復讐譚～無能はスキル『捕食』で成り上が～\")",
+          "[千爱的陨石坑吧](https://tieba.baidu.com/f?kw=%E5%8D%83%E7%88%B1%E7%9A%84%E9%99%A8%E7%9F%B3%E5%9D%91&ie=utf-8&tp=0 \"千爱的陨石坑\")",
+          "[食人转移者的异世界复仇谭吧](https://tieba.baidu.com/f?kw=%E9%A3%9F%E4%BA%BA%E8%BD%AC%E7%A7%BB%E8%80%85%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E5%A4%8D%E4%BB%87%E8%B0%AD&ie=utf-8&tp=0 \"食人转移者的异世界复仇谭\") <= new",
+          "[喰人转移者的异世界复仇谭吧](https://tieba.baidu.com/f?kw=%E5%96%B0%E4%BA%BA%E8%BD%AC%E7%A7%BB%E8%80%85%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E5%A4%8D%E4%BB%87%E8%B0%AD&ie=utf-8 \"喰人转移者的异世界复仇谭\") <=廢棄",
+          "[图转文](https://mega.nz/#F!hSpEULqA!Fo2HF_TjZFtDnLPb7yx0gQ)",
+          "[1kGCLIv3Dtk-Pxi3RfQGQaA](https://pan.baidu.com/s/1kGCLIv3Dtk-Pxi3RfQGQaA) wlne"
+        ]
+      },
+      "双剣のエレナ": {
+        "novel": {
+          "title": "双剣のエレナ",
+          "title_zh1": "雙刃的伊莉娜",
+          "title_zh2": "雙劍的伊莉娜",
+          "author": "ながれ",
+          "illust": "",
+          "source": "https://kakuyomu.jp/works/4852201425154978794",
+          "cover": "",
+          "publisher": "kakuyomu",
+          "publishers": [
+            "kakuyomu",
+            "syosetu"
+          ],
+          "date": "2017-12-03T22:11:58+08:00",
+          "status": "連載中",
+          "novel_status": 0,
+          "series": {
+            "name": "双剣のエレナ"
+          },
+          "preface": "畢安納多王國的英雄艾因斯(特注:性別♂)在魔女卡特琳娜之亂中打敗並消滅了魔女，最終結束了災難，作為代價身體被魔女所詛咒。\n因賢者艾琳瑟的突發奇想魂魄被禁術塞進愛玩用魔法人偶(特注:性別♀)，少女決定在身體因詛咒而消失的剩餘兩年內自由的活著。\n就在這個時候，少女聽說大國奧蘭度舉辦的武術大會上贈給勝利者的獎品裡有可以解除各種詛咒的聖杯。\n心中懷著一絲希望而趕往奧蘭度的艾因斯面前卻有著一堵名為公會(ギルド)的高牆等待著她。為了參加大會愛伊斯立即尋找打算參加大會的公會，但是願意讓她加入的卻是最弱的公會……\n\n世界を救った英雄の新たなる物語\nながれ\n\n魔女カテリーナの災厄を魔女を討ち滅ぼし終わらせたビエナート王国の英雄アインスはその代償として魔女の呪いをその身に受ける。\n賢者エリーゼの気まぐれか、その魂を禁呪により愛玩用の魔法人形の少女に定着されたアインスは、呪いにより身体が消滅するまでの二年間を自由に生きようと決意するのであった。\nそんな折、大国オーランドで開催されている武術大会の覇者に贈られる賞品の中にあらゆる呪いを解くといわれる聖杯の存在を耳にする。\n僅かな希望を胸にオーランドへと赴いたアインスを待っていたのはギルドという高い壁。大会に参加すべくギルドを探すアインスであったが受け入れてくれたのは最弱なギルドで……。\n\n\n\n\n\nArcadia様に同時投稿しております。\n\nカクヨム様では以前から執筆していた分を加筆・修正せず、そのまま投稿していく予定です。\n\n現行分に関しては日に二話、予約投稿で掲載していき最終的な完結まで書いていきたいと考えていますのでどうぞ宜しくお願いします。\n\nArcadia様では冒頭・序盤以降は完全な新規のお話となります。\n\n\n…続きを読む",
+          "tags": [
+            "TS",
+            "kakuyomu",
+            "node-novel",
+            "syosetu",
+            "冒険",
+            "女主人公",
+            "戦記",
+            "架空戦記",
+            "残酷な描写あり",
+            "異世界ファンタジー",
+            "百合",
+            "英雄",
+            "魔女",
+            "魔物"
+          ],
+          "sources": [
+            "http://ncode.syosetu.com/n6628cg"
+          ]
+        },
+        "contribute": [
+          "卡莉奥丝特萝",
+          "愛爾柏塔",
+          "我是风吹啦",
+          "暗夜十刃",
+          "棒棒没有糖",
+          "花果茶",
+          "花音神野",
+          "路人gzj"
         ],
         "options": {
           "downloadOptions": {
+            "noFirePrefix": false,
             "noFilePadend": true,
             "filePrefixMode": 1,
             "startIndex": 0
           },
-          "syosetu": {
-            "txtdownload_id": "977610",
-            "novel_id": "n7707dt"
+          "kakuyomu": {
+            "novel_id": "4852201425154978794"
           },
           "textlayout": {
-            "allow_lf2": true
+            "allow_lf2": false
           }
         },
         "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n7707dt&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[over-lap.co.jp](https://over-lap.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=ZG0022&vid=&cat=CGS&swrd=)",
-          "[我的数值明显比勇者强吧](https://tieba.baidu.com/f?kw=%E6%88%91%E7%9A%84%E6%95%B0%E5%80%BC%E6%98%8E%E6%98%BE%E6%AF%94%E5%8B%87%E8%80%85%E5%BC%BA&ie=utf-8&tp=0 \"我的数值明显比勇者强\")",
-          "[dmzj](https://manhua.dmzj.com/shenweianshazhedewomingxianbiyongzhehaiqiang/)",
-          "[身为阿萨辛的我明显比勇者还强吧](https://tieba.baidu.com/f?kw=%E8%BA%AB%E4%B8%BA%E9%98%BF%E8%90%A8%E8%BE%9B%E7%9A%84%E6%88%91%E6%98%8E%E6%98%BE%E6%AF%94%E5%8B%87%E8%80%85%E8%BF%98%E5%BC%BA&ie=utf-8&tp=0 \"身为阿萨辛的我明显比勇者还强\")"
+          "[双刃的伊莉娜吧](https://tieba.baidu.com/f?kw=%E5%8F%8C%E5%88%83%E7%9A%84%E4%BC%8A%E8%8E%89%E5%A8%9C&ie=utf-8 \"双刃的伊莉娜\")",
+          "[花果茶](https://pan.baidu.com/s/1UFWqKcCO3BVqpmCIV8QXeg) - 7a89",
+          "[棒棒没有糖](https://pan.baidu.com/s/1hsRNIyo) - c5zx",
+          "[某无责任润色4!!!](https://tieba.baidu.com/p/5116568434 \"某无责任润色4!!!\")",
+          "[某无责任润色5](https://tieba.baidu.com/p/5150881118 \"某无责任润色5\")",
+          "[某无责任润色6](https://tieba.baidu.com/p/5528738038 \"某无责任润色6\") [](https://tieba.baidu.com/p/5528738038?see_lz=1)"
         ]
-      }
-    },
-    "ts_out": {
+      },
       "幼女転生": {
         "novel": {
           "title": "幼女転生",
@@ -8808,6 +13885,80 @@
           "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=82&page=1)",
           "[loli转生吧](https://tieba.baidu.com/f?kw=loli%E8%BD%AC%E7%94%9F&ie=utf-8 \"\")"
         ]
+      },
+      "自称贤者弟子的贤者": {
+        "novel": {
+          "title": "自稱賢者弟子的賢者",
+          "title_jp": "賢者の弟子を名乗る賢者",
+          "author": "りゅうせんひろつぐ",
+          "illusts": [
+            "藤ちょこ",
+            "すえみつぢっか"
+          ],
+          "source": "http://ncode.syosetu.com/n6829bd/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91Qk3leml-L.jpg",
+          "publisher": "syosetu",
+          "date": "2018-07-26T19:52:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "賢者の弟子を名乗る賢者"
+          },
+          "preface": "在VRMMO游戏ArcEarthonline中，扮演九贤者之一，召唤师邓布鲁夫・冈达德亚一角的咲森鉴，突然在游戏的梦境中发生了逆转，跌落进了已经成为了现实的游戏世界中。\n\n而且，老练威严的贤者居然变成了楚楚可怜的少女。。。 \n这样岂不是要让建立至今贤者的威严就此瓦解！\n想到这些的咲森鉴决定，用贤者弟子米拉的名义\n\n转生后的美少女冒险梦幻的金字塔，开幕！",
+          "tags": [
+            "MMO",
+            "TS",
+            "VRMMO",
+            "node-novel",
+            "syosetu",
+            "ファンタジー",
+            "ロリジジイ？",
+            "ロリババア",
+            "冒険",
+            "冒險",
+            "奇幻",
+            "性転換",
+            "残酷な描写あり",
+            "異世界",
+            "異世界転移",
+            "穿越",
+            "賢者",
+            "遊戲",
+            "魔法"
+          ]
+        },
+        "contribute": [
+          "6667787#6757",
+          "Aster",
+          "BrianZSYJ",
+          "ReadBook642",
+          "blackkanon",
+          "chenyushang",
+          "iop78988",
+          "michaelbb2DkN",
+          "whoisit080",
+          "◆葉籽◆",
+          "一梯退三歩",
+          "乃木板初桂",
+          "休闲飛",
+          "奈落的红叶",
+          "崇寅之月",
+          "影宝醬",
+          "星煌之羽",
+          "百元便当",
+          "贤狼赫萝",
+          "邊緣佳",
+          "重子葉"
+        ],
+        "options": {
+          "textlayout": {}
+        },
+        "link": [
+          "[dip.jp](https://narou.dip.jp/search.php?text=n6829bd&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[自称贤者弟子的贤者](https://tieba.baidu.com/f?kw=%E8%87%AA%E7%A7%B0%E8%B4%A4%E8%80%85%E5%BC%9F%E5%AD%90%E7%9A%84%E8%B4%A4%E8%80%85&ie=utf-8 \"自称贤者弟子的贤者\")",
+          "[epub / txt 持續更新](https://tieba.baidu.com/p/5664828470) <== 推薦觀看此版本",
+          "[dm5](http://www.dm5.com/manhua-zichenxianzhedizidexianzhe/)"
+        ]
       }
     },
     "user_out": {
@@ -8816,11 +13967,13 @@
           "title": "２９歳独身は異世界で自由に生きた…かった。",
           "title_zh": "２９歲單身漢在異世界想自由生活卻事與願違！？",
           "author": "リュート",
+          "illust": "桑島 黎音",
           "source": "http://ncode.syosetu.com/n9814bu/",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/8157FLBOjDL.jpg",
           "publisher": "syosetu",
           "date": "2017-11-05T21:00:00+08:00",
           "status": "連載",
+          "novel_status": 256,
           "series": {
             "name": ""
           },
@@ -8850,7 +14003,8 @@
             "穿越",
             "街づくり",
             "魔法"
-          ]
+          ],
+          "title_tieba": "29岁独身曾想在异世界自由地生活"
         },
         "contribute": [
           "kerorokun",
@@ -8870,7 +14024,7 @@
             "txtdownload_id": "469768"
           },
           "textlayout": {
-            "allow_lf2": true
+            "allow_lf2": false
           }
         },
         "link": [
@@ -9098,6 +14252,7 @@
       "カルマの塔": {
         "novel": {
           "title": "カルマの塔",
+          "title_zh": "業之塔",
           "author": "富士田けやき",
           "source": "http://ncode.syosetu.com/n6337cb/",
           "cover": "http://fanblogs.jp/activegirl0912/file/image/image-4ec97-thumbnail2.jpg",
@@ -9124,10 +14279,14 @@
             "男主人公",
             "群像劇",
             "軍隊"
+          ],
+          "sources": [
+            "https://kakuyomu.jp/works/1177354054886943247"
           ]
         },
         "contribute": [
           "zx神帝",
+          "姽计",
           "海市蜃楼谁不识",
           "絳紅葉"
         ],
@@ -9198,86 +14357,18 @@
           "[转生恶役遇上鬼畜女装混账女主吧](https://tieba.baidu.com/f?kw=%E8%BD%AC%E7%94%9F%E6%81%B6%E5%BD%B9%E9%81%87%E4%B8%8A%E9%AC%BC%E7%95%9C%E5%A5%B3%E8%A3%85%E6%B7%B7%E8%B4%A6%E5%A5%B3%E4%B8%BB&ie=utf-8 \"转生恶役遇上鬼畜女装混账女主\")"
         ]
       },
-      "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～": {
-        "novel": {
-          "title": "人喰い転移者の異世界復讐譚　～無能はスキル『捕食』で成り上がる～",
-          "title_zh1": "食人转移者的异世界复仇谭",
-          "title_zh2": "喰人转移者的异世界复仇谭",
-          "author": "kiki",
-          "source": "http://ncode.syosetu.com/n7933eb/",
-          "cover": "",
-          "publisher": "syosetu",
-          "date": "2017-11-28T21:51:00+08:00",
-          "status": "完結済",
-          "series": {
-            "name": ""
-          },
-          "preface": "『捕食』――那是吞噬他人，夺取能力的技能。被卷入班级转移的白诘岬，遭到凄惨的霸凌被夺走了全部，在异世界召唤的失败中就连性别都被夺走了，最后什么技能都没得到，以被贴上\"无能\"的标签告终。然后，发现自己拥有的技能『捕食』的存在时，他的命运走向转折。岬化为获得力量的复仇之鬼，逐个诱骗虐待过自己的班上同学，然后捕食――\n\n※为描述复仇成功的过程，含有霸凌、猎奇、性暴力，NTR，心情描写。对这方面苦手的注意。\n\n　『捕食』――それは他者を喰らい、能力を奪うスキル。クラス転移に巻き込まれた白詰　岬は、凄惨ないじめで全てを奪われ、異世界召喚の失敗で性別すら奪われ、挙句の果てに何のスキルも与えられず”無能”のレッテルを貼られてしまう。しかし、自らの持つスキル『捕食』の存在に気づいた時、その運命は一変した。力を手に入れ復讐鬼と化した岬は、自分を虐げてきたクラスメイトたちを次々と陥れ、捕食していくのだった――\n\n\n　※復讐へ至る過程の描写もあるため、いじめ、グロ、性的暴力、寝取られ、胸糞描写などが含まれております。苦手な方は注意。\n\n完結済みです。",
-          "tags": [
-            "R15",
-            "TS",
-            "node-novel",
-            "syosetu",
-            "ざまぁ",
-            "ガールズラブ",
-            "クラスごと異世界転移",
-            "クラス転移",
-            "スキル",
-            "ステータス",
-            "ダークファンタジー",
-            "ロボット",
-            "主人公最強予定",
-            "復讐",
-            "性転換",
-            "悪堕ち",
-            "成り上がり",
-            "捕食",
-            "異世界転移",
-            "百合ハーレム",
-            "魔法"
-          ]
-        },
-        "contribute": [
-          "kong5sl",
-          "mana63905",
-          "siumonmon",
-          "time中二病患者",
-          "yswysc",
-          "一云淡风轻",
-          "六一绅士",
-          "業餘渣翻",
-          "污浊不堪",
-          "贪吃的小羔羊",
-          "零崎千爱"
-        ],
-        "options": {
-          "syosetu": {
-            "txtdownload_id": "1057828"
-          },
-          "textlayout": {
-            "allow_lf2": true
-          }
-        },
-        "link": [
-          "[dip.jp](https://narou.dip.jp/search.php?text=n7933eb&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[人喰い転移者の異世界復讐譚～無能はスキル『捕食』で成り上が～](https://tieba.baidu.com/p/5322052155 \"人喰い転移者の異世界復讐譚～無能はスキル『捕食』で成り上が～\")",
-          "[千爱的陨石坑吧](https://tieba.baidu.com/f?kw=%E5%8D%83%E7%88%B1%E7%9A%84%E9%99%A8%E7%9F%B3%E5%9D%91&ie=utf-8&tp=0 \"千爱的陨石坑\")",
-          "[食人转移者的异世界复仇谭吧](https://tieba.baidu.com/f?kw=%E9%A3%9F%E4%BA%BA%E8%BD%AC%E7%A7%BB%E8%80%85%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E5%A4%8D%E4%BB%87%E8%B0%AD&ie=utf-8&tp=0 \"食人转移者的异世界复仇谭\") <= new",
-          "[喰人转移者的异世界复仇谭吧](https://tieba.baidu.com/f?kw=%E5%96%B0%E4%BA%BA%E8%BD%AC%E7%A7%BB%E8%80%85%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E5%A4%8D%E4%BB%87%E8%B0%AD&ie=utf-8 \"喰人转移者的异世界复仇谭\") <=廢棄",
-          "[图转文](https://mega.nz/#F!hSpEULqA!Fo2HF_TjZFtDnLPb7yx0gQ)",
-          "[1kGCLIv3Dtk-Pxi3RfQGQaA](https://pan.baidu.com/s/1kGCLIv3Dtk-Pxi3RfQGQaA) wlne"
-        ]
-      },
       "俺の死亡フラグが留まるところを知らない": {
         "novel": {
           "title": "俺の死亡フラグが留まるところを知らない",
-          "title_zh": "不知我的死亡flag将于何处停止",
+          "title_zh": "不知我的死亡flag將於何處停止",
           "author": "泉",
+          "illust": "Aちき",
           "source": "http://ncode.syosetu.com/n4449cj/",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/81vLZRct-ZL.jpg",
           "publisher": "syosetu",
           "date": "2018-03-12T01:47:00+08:00",
           "status": "連載",
+          "novel_status": 256,
           "series": {
             "name": ""
           },
@@ -9286,11 +14377,15 @@
             "node-novel",
             "syosetu",
             "コメディー",
+            "ハイファンタジー",
+            "ファンタジー",
             "勘違い",
             "強制ツンデレ地獄",
+            "惡役",
             "憑依",
             "死亡フラグ満載",
-            "異世界転移"
+            "異世界転移",
+            "遊戲"
           ]
         },
         "contribute": [
@@ -9491,6 +14586,7 @@
           "title_zh1": "咒術師無法成為勇者",
           "title_zh2": "咒術師不能當勇者",
           "author": "菱影代理",
+          "illust": "誉",
           "source": "http://ncode.syosetu.com/n1132dk/",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/91yzBCP%2BeUL.jpg",
           "publisher": "syosetu",
@@ -9586,11 +14682,16 @@
           "title": "四度目は嫌な死属性魔術師",
           "title_zh1": "討厭第四次的死屬性魔術師",
           "author": "デンスケ",
+          "illusts": [
+            "児嶋建洋",
+            "ばん!"
+          ],
           "source": "http://ncode.syosetu.com/n1745ct/",
           "cover": "http://www.hifumi.co.jp/books/lineup/images/view/9784891994082.jpg",
           "publisher": "syosetu",
           "date": "2018-04-09T16:34:00+08:00",
           "status": "連載",
+          "novel_status": 768,
           "preface": "掌管轮回的神为了推动LAMBDA世界的发展决定把百名地球的日本人转生到LAMBDA，为了以防万一，神先让转生者们转生到一个名叫ORIGIN的发达世界，让他们在那里积累经验。\n\n然而在这过程中神犯了一个错误，其中一名转生者也就是主角在没有获得任何加护的情况下被送到ORIGIN，主角在ORIGIN经历了悲惨的人生并含恨而死，在这过程中他得到了名为【死】的属性，这个故事讲的是主角在ORIGIN死后，再次转生到LAMBDA的第三次人生的故事。\n\n　中々発展しないどころか何時衰退と崩壊のコンボを決めるか分からない問題だらけの世界ラムダ。\n　その世界も含めた複数の世界の輪廻転生を管理運行する神様は、問題を解決すべく『対象の世界に異世界の人間をチート能力つきで転生させて送り込むと、世界が発展する』と言う神仲間から聞いたジンクスを実行した。\n　ただし、念のためにオリジンと言うまた別の異世界に転生させて経験を積ませてから。\n\n　この物語は、そんな神様のうっかりミスで与えられるはずのチート能力を、名前が良く似た他人に与えられてしまい、莫大な魔力(ＭＰ)と独自に獲得した特殊な死霊魔術である死属性魔術しかない主人公が、不幸だった一度目、二度目の人生を終えながらも、四度目は嫌だと異世界で三度目の人生を生きるお話です。\n\n　ハーレム展開になったり、成りあがったりする予定ですが、それまでの話が長くなるかもしれません。残酷な表現があり、アンデッドが沢山出てきます。現在、大体四日毎に投稿しております。\n\nお陰さまで第四回ネット小説大賞で受賞し、書籍化致しました！　一二三書房様のサーガフォレストから１巻から２巻まで発売しており、３巻が１月２０日に発売されます。",
           "tags": [
             "R15",
@@ -9633,6 +14734,7 @@
           "dead907",
           "joy10079",
           "mingxu976",
+          "shifish123",
           "treeking0",
           "zyl2312",
           "仙剑奇侠电",
@@ -9675,6 +14777,7 @@
           "title_zh": "回復術士重來人生",
           "title_zh1": "回復術士的重啟人生～即死魔法與複製技能的極致回復術～",
           "author": "月夜　涙（るい）",
+          "illust": "しおこんぶ",
           "source": "https://ncode.syosetu.com/n3512ds/",
           "cover": "http://img1.reactor.cc/pics/post/full/shiokonbu-Anime-Art-Anime-Anime-Ero-4194795.jpeg",
           "publisher": "syosetu",
@@ -9704,6 +14807,7 @@
           "812843924",
           "Lonely☆奇迹",
           "Mightea",
+          "SnowEquinox",
           "boyyeah199",
           "laocun",
           "meinekonigin",
@@ -10234,7 +15338,7 @@
             "txtdownload_id": "657875"
           },
           "textlayout": {
-            "allow_lf2": true
+            "allow_lf2": false
           }
         },
         "link": [
@@ -10453,6 +15557,7 @@
           "无能之士",
           "朱雫",
           "朽叶天一",
+          "某根絨毛",
           "珂学大家",
           "相川缇娅拉",
           "相川阳滝",
@@ -10478,7 +15583,9 @@
           "[异世界迷宫最深部为目标吧](https://tieba.baidu.com/f?kw=%E5%BC%82%E4%B8%96%E7%95%8C%E8%BF%B7%E5%AE%AB%E6%9C%80%E6%B7%B1%E9%83%A8%E4%B8%BA%E7%9B%AE%E6%A0%87&ie=utf-8 \"异世界迷宫最深部为目标\")",
           "[外傳空間2 諾文](https://mega.nz/#!kRUkiSxJ!wKCxPYC33egz4HLFe4b_5OKddBUEpfZlAgXCcDNrvng) - 冷粥傳奇",
           "[小说插图集合](https://tieba.baidu.com/p/4647529889)",
-          "[轻之国度](https://www.lightnovel.cn/home.php?mod=space&uid=987726&do=thread&view=me&from=space) - 落地死的流星"
+          "[轻之国度](https://www.lightnovel.cn/home.php?mod=space&uid=987726&do=thread&view=me&from=space) - 落地死的流星",
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=112&page=1)",
+          "[权当余兴的阶层宣言！？推特上发现的好东西！微微剧透？](https://tieba.baidu.com/p/5140403024 \"权当余兴的阶层宣言！？推特上发现的好东西！微微剧透？\")"
         ]
       },
       "病娇女神の箱庭": {
@@ -10707,80 +15814,6 @@
           "[轮到自己转移去异世界](https://tieba.baidu.com/f?kw=%E8%BD%AE%E5%88%B0%E8%87%AA%E5%B7%B1%E8%BD%AC%E7%A7%BB%E5%8E%BB%E5%BC%82%E4%B8%96%E7%95%8C)"
         ]
       },
-      "自称贤者弟子的贤者": {
-        "novel": {
-          "title": "自称贤者弟子的贤者",
-          "title_jp": "賢者の弟子を名乗る賢者",
-          "author": "りゅうせんひろつぐ",
-          "illusts": [
-            "藤ちょこ",
-            "すえみつぢっか"
-          ],
-          "source": "http://ncode.syosetu.com/n6829bd/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91Qk3leml-L.jpg",
-          "publisher": "syosetu",
-          "date": "2018-07-26T19:52:00+08:00",
-          "status": "連載",
-          "novel_status": 768,
-          "series": {
-            "name": "賢者の弟子を名乗る賢者"
-          },
-          "preface": "在VRMMO游戏ArcEarthonline中，扮演九贤者之一，召唤师邓布鲁夫・冈达德亚一角的咲森鉴，突然在游戏的梦境中发生了逆转，跌落进了已经成为了现实的游戏世界中。\n\n而且，老练威严的贤者居然变成了楚楚可怜的少女。。。 \n这样岂不是要让建立至今贤者的威严就此瓦解！\n想到这些的咲森鉴决定，用贤者弟子米拉的名义\n\n转生后的美少女冒险梦幻的金字塔，开幕！",
-          "tags": [
-            "MMO",
-            "TS",
-            "VRMMO",
-            "node-novel",
-            "syosetu",
-            "ファンタジー",
-            "ロリジジイ？",
-            "ロリババア",
-            "冒険",
-            "冒險",
-            "奇幻",
-            "性転換",
-            "残酷な描写あり",
-            "異世界",
-            "異世界転移",
-            "穿越",
-            "賢者",
-            "遊戲",
-            "魔法"
-          ]
-        },
-        "contribute": [
-          "6667787#6757",
-          "Aster",
-          "BrianZSYJ",
-          "ReadBook642",
-          "blackkanon",
-          "chenyushang",
-          "iop78988",
-          "michaelbb2DkN",
-          "whoisit080",
-          "◆葉籽◆",
-          "一梯退三歩",
-          "乃木板初桂",
-          "休闲飛",
-          "奈落的红叶",
-          "崇寅之月",
-          "影宝醬",
-          "星煌之羽",
-          "百元便当",
-          "贤狼赫萝",
-          "邊緣佳",
-          "重子葉"
-        ],
-        "options": {
-          "textlayout": {}
-        },
-        "link": [
-          "[dip.jp](https://narou.dip.jp/search.php?text=n6829bd&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[自称贤者弟子的贤者](https://tieba.baidu.com/f?kw=%E8%87%AA%E7%A7%B0%E8%B4%A4%E8%80%85%E5%BC%9F%E5%AD%90%E7%9A%84%E8%B4%A4%E8%80%85&ie=utf-8 \"自称贤者弟子的贤者\")",
-          "[epub / txt 持續更新](https://tieba.baidu.com/p/5664828470) <== 推薦使用觀看此版本",
-          "[dm5](http://www.dm5.com/manhua-zichenxianzhedizidexianzhe/)"
-        ]
-      },
       "蘇りの魔王": {
         "novel": {
           "title": "蘇りの魔王",
@@ -10834,29 +15867,48 @@
           "title": "誰にでもできる影から助ける魔王討伐",
           "title_zh": "誰都能做到的暗中協助魔王討伐",
           "author": "槻影",
+          "illust": "bob",
+          "illusts": [
+            "貴島煉瓦"
+          ],
           "source": "https://kakuyomu.jp/works/1177354054880238351",
           "cover": "https://images-na.ssl-images-amazon.com/images/I/81iY8SzcvtL.jpg",
           "publisher": "kakuyomu",
           "date": "2018-01-17T23:00:45+08:00",
           "status": "連載中",
+          "novel_status": 768,
           "series": {
             "name": "誰にでもできる影から助ける魔王討伐"
           },
-          "preface": "これは……ビジネスだ\n槻影\n\n魔王クラノスが人類に宣戦布告して十年。\n強大極まりないクラノスの軍に劣勢に立たされ、退っ引きならない状態に陥った王国は教会の持つ禁断の秘奥、英雄召喚の実施を決定した。\n\n召喚された聖勇者、藤堂直継の栄えあるパーティメンバーにプリースト（ヒーラー）として選ばれた俺は、残りのパーティメンバーとして選ばれた二人、魔導師と剣士が原石であり、まだ第一線で戦える実力にない事に気づく。\n果たして俺は魔王からの尖兵をしのぎ切り、勇者とその仲間達をレベルアップさせることはできるのか！？\n\n\n＊＊＊＊\nエンターブレインさんより書籍、三巻まで発売中。\nそれぞれ書き下ろし他ステータスなどが収録されていますのでよろしくお願いします。\n\nまた、ComicWalkerにて漫画版が連載中です。詳しくは近況ノートをご確認ください。\n\n引き続き、Web版書籍版共々よろしくお願いします。",
+          "preface": "魔王庫拉諾斯對人類發出宣戰公告後十年。\n面對強大的庫拉諾斯軍人類位居劣勢，陷入到進退維谷狀態的王國決定實施教會所持有的禁斷的極秘奧義，英雄召喚。\n被光榮的以牧師（回覆役）的身份選為召喚而來的聖勇者，藤堂直繼的隊伍成員的我\n察覺到了其餘被選為隊伍成員的兩人是魔導師和劍士的原石，尚不具有能在第一線戰鬥的實力。\n我終究能否抵禦魔王的尖兵，讓勇者及其同伴升級嗎！？\n\nこれは……ビジネスだ\n槻影\n\n魔王クラノスが人類に宣戦布告して十年。\n強大極まりないクラノスの軍に劣勢に立たされ、退っ引きならない状態に陥った王国は教会の持つ禁断の秘奥、英雄召喚の実施を決定した。\n\n召喚された聖勇者、藤堂直継の栄えあるパーティメンバーにプリースト（ヒーラー）として選ばれた俺は、残りのパーティメンバーとして選ばれた二人、魔導師と剣士が原石であり、まだ第一線で戦える実力にない事に気づく。\n果たして俺は魔王からの尖兵をしのぎ切り、勇者とその仲間達をレベルアップさせることはできるのか！？\n\n\n＊＊＊＊\nエンターブレインさんより書籍、三巻まで発売中。\nそれぞれ書き下ろし他ステータスなどが収録されていますのでよろしくお願いします。\n\nまた、ComicWalkerにて漫画版が連載中です。詳しくは近況ノートをご確認ください。\n\n引き続き、Web版書籍版共々よろしくお願いします。",
           "tags": [
             "kakuyomu",
             "node-novel",
+            "オタク向け(女性)",
+            "オタク向け(男性)",
+            "カクヨム",
             "カクヨムオンリー",
+            "コミカライズ",
+            "コミックウォーカー",
+            "コミックウォーカー発",
             "ヒーラー",
             "ファンタジー",
             "プリースト",
             "ライトノベル",
+            "ラノベ原作",
             "勇者",
+            "女性向け",
+            "男性向け",
+            "異世界コミック",
             "異世界ファンタジー",
+            "異世界モノ",
+            "転生",
             "魔王"
           ]
         },
         "contribute": [
+          "二階堂真紅",
+          "卡斯特里安",
           "弒澪",
           "海市蜃楼谁不识",
           "絨質墮菌",
@@ -10864,13 +15916,15 @@
         ],
         "options": {
           "textlayout": {
-            "allow_lf2": true
+            "allow_lf2": false
           }
         },
         "link": [
           "[谁都能做到的暗中协助魔王讨伐](https://tieba.baidu.com/f?kw=%E8%B0%81%E9%83%BD%E8%83%BD%E5%81%9A%E5%88%B0%E7%9A%84%E6%9A%97%E4%B8%AD%E5%8D%8F%E5%8A%A9%E9%AD%94%E7%8E%8B%E8%AE%A8%E4%BC%90&ie=utf-8 \"谁都能做到的暗中协助魔王讨伐\")",
           "[我异世界的姐妹很不自重吧](https://tieba.baidu.com/f?kw=%E6%88%91%E5%BC%82%E4%B8%96%E7%95%8C%E7%9A%84%E5%A7%90%E5%A6%B9%E5%BE%88%E4%B8%8D%E8%87%AA%E9%87%8D&ie=utf-8 \"我异世界的姐妹很不自重\")",
-          "[masiro.moe](http://masiro.moe/forum.php?mod=forumdisplay&fid=61&page=1)"
+          "[masiro.moe](http://masiro.moe/forum.php?mod=forumdisplay&fid=61&page=1)",
+          "https://comic-walker.com/contents/detail/KDCW_MF00000039010000_68/",
+          "[二階堂真紅 txt](https://drive.google.com/drive/folders/1Mt1hL7QtayCwhCWXacp-UZY4Kw9bcbGI)"
         ]
       },
       "豚公爵に転生したから、今度は君に好きと言いたい": {
@@ -10888,7 +15942,7 @@
           "series": {
             "name": ""
           },
-          "preface": "大人気动画「girl＆SYUYA」里存在着一个被嫌弃的人。\n\n那就是德林克公爵家的三男，豚猪公爵，斯诺・德林克。\n\n他拥有在学园中作为被嫌恶者的各种嫌弃要素。而最终等待着豚猪公爵的将会是被放逐的悲惨未来，以及悄悄的深刻爱慕着他，作为他的従者的女孩子也会被主人公ntr的不幸遭遇。\n\n将会包含【从底层奋起】【主人公最強】【豚猪总之先变得幸福】【美女们和豚猪】【会有痩下的帅哥化（不过马上会变肥）】【投机主义】等要素。\n\n\n豚公爵他聰明、堅強、溫柔、  \n然後教人悲傷的是他更不乏毅力。  \n從反面來看的話  \n這『修亞・巴琉捏特』講述的  \n是關於他的悲傷故事  \n\n――『修亞・巴琉捏特』監督上\n\n　大人気アニメ「ガール＆シューヤ」には嫌われ者が存在する。  \n　デニング公爵家三男こと豚公爵、スロウ・デニングだ。  \n　学園中の嫌われ者として、人を見下す、家柄を鼻にかける、デブ、リアルオークなど様々なヘイト要素を持ち、最終的には国を追放される悲惨な未来が豚公爵を待っている。そしてさらに彼が密かに思いを寄せる従者の女の子も主人公に取られてしまうという不遇っぷり。  \n　なんでこんな話をしているかって？  \n　俺が豚公爵に転生してしまったからだ！　そして俺はアニメで人気断トツナンバー１の豚公爵を現実世界でもナンバー１にしてやるんだ！  \n【主人公最強要素あり】【底辺からの成り上がり】【ただ豚が幸せになる話】【アニメ知識による、強くてニューゲーム】  \n\n2016.06.23 ）  \n特別賞を頂き、書籍化します。\n\n底辺から成り上がり、今度は君に好きだと叫ぶッ！【コミカライズ連載中】\n合田拍子（グルグル魔）",
+          "preface": "大人気动画「girl＆SYUYA」里存在着一个被嫌弃的人。\n\n那就是德林克公爵家的三男，豚猪公爵，斯诺・德林克。\n\n他拥有在学园中作为被嫌恶者的各种嫌弃要素。而最终等待着豚猪公爵的将会是被放逐的悲惨未来，以及悄悄的深刻爱慕着他，作为他的従者的女孩子也会被主人公ntr的不幸遭遇。\n\n将会包含【从底层奋起】【主人公最強】【豚猪总之先变得幸福】【美女们和豚猪】【会有痩下的帅哥化（不过马上会变肥）】【投机主义】等要素。\n\n\n豚公爵他聰明、堅強、溫柔、\n然後教人悲傷的是他更不乏毅力。\n從反面來看的話\n這『修亞・巴琉捏特』講述的\n是關於他的悲傷故事\n\n――『修亞・巴琉捏特』監督上\n\n　大人気アニメ「ガール＆シューヤ」には嫌われ者が存在する。\n　デニング公爵家三男こと豚公爵、スロウ・デニングだ。\n　学園中の嫌われ者として、人を見下す、家柄を鼻にかける、デブ、リアルオークなど様々なヘイト要素を持ち、最終的には国を追放される悲惨な未来が豚公爵を待っている。そしてさらに彼が密かに思いを寄せる従者の女の子も主人公に取られてしまうという不遇っぷり。\n　なんでこんな話をしているかって？\n　俺が豚公爵に転生してしまったからだ！　そして俺はアニメで人気断トツナンバー１の豚公爵を現実世界でもナンバー１にしてやるんだ！\n【主人公最強要素あり】【底辺からの成り上がり】【ただ豚が幸せになる話】【アニメ知識による、強くてニューゲーム】\n\n2016.06.23 ）\n特別賞を頂き、書籍化します。\n\n底辺から成り上がり、今度は君に好きだと叫ぶッ！【コミカライズ連載中】\n合田拍子（グルグル魔）",
           "tags": [
             "kakuyomu",
             "node-novel",
@@ -10919,6 +15973,7 @@
           "扁意粉豬仔包",
           "晶体管PN结",
           "最强蛋糕",
+          "枫灵辰梦",
           "比利小子",
           "缘起幻想乡"
         ],
@@ -11019,10 +16074,11 @@
           "publisher": "syosetu",
           "date": "2018-02-10T15:23:00+08:00",
           "status": "連載",
+          "novel_status": 768,
           "series": {
             "name": ""
           },
-          "preface": "　随处可见的社会人士——大野晶（おおの　あきら）在自己运营的游戏内，以被称之为「魔王」角色的登陆状态下，转移到了异世界。\n　他在这里遇到了一位右脚不便的小孩子，并一同启程旅行。然而「魔王」持有压倒性的力量，其他人不可能放任不管。\n　他们被想要讨伐魔王的国家和圣女所盯上，这场引发的骚动最终都把整座王国卷入其中。\n　这是一部外观上是魔王，可其内在是一般人的误会系幻想世界。\n\n　3/30　書籍3巻＆漫画版1巻が発売されます。\n\n　どこにでもいる社会人、大野晶は自身が運営するゲーム内の「魔王」と呼ばれるキャラにログインしたまま異世界へと飛ばされてしまう。そこで出会った片足が不自由な女の子と旅をし始めるが、圧倒的な力を持つ「魔王」を周囲が放っておくわけがなかった。\n　魔王を討伐しようとする国やら聖女から狙われ、一行は行く先々で騒動を巻き起こす。\n　見た目は魔王、中身は一般人の勘違い系ファンタジー! \n\n　※この作品はハーメルン様の方でも公開しております。\n　※多忙のため、暫く感想欄は閉じておきます。",
+          "preface": "　随处可见的社会人士——大野晶（おおの　あきら）在自己运营的游戏内，以被称之为「魔王」角色的登陆状态下，转移到了异世界。\n　他在这里遇到了一位右脚不便的小孩子，并一同启程旅行。然而「魔王」持有压倒性的力量，其他人不可能放任不管。\n　他们被想要讨伐魔王的国家和圣女所盯上，这场引发的骚动最终都把整座王国卷入其中。\n　这是一部外观上是魔王，可其内在是一般人的误会系幻想世界。\n\n　3/30　書籍3巻＆漫画版1巻が発売されます。\n\n　どこにでもいる社会人、大野晶は自身が運営するゲーム内の「魔王」と呼ばれるキャラにログインしたまま異世界へと飛ばされてしまう。そこで出会った片足が不自由な女の子と旅をし始めるが、圧倒的な力を持つ「魔王」を周囲が放っておくわけがなかった。\n　魔王を討伐しようとする国やら聖女から狙われ、一行は行く先々で騒動を巻き起こす。\n　見た目は魔王、中身は一般人の勘違い系ファンタジー!\n\n　※この作品はハーメルン様の方でも公開しております。\n　※多忙のため、暫く感想欄は閉じておきます。",
           "tags": [
             "R15",
             "node-novel",
@@ -11065,46 +16121,57 @@
             "txtdownload_id": "926697"
           },
           "textlayout": {
-            "allow_lf2": true
+            "allow_lf2": false
           }
         },
         "link": [
           "[dip.jp](https://narou.dip.jp/search.php?text=n6789do&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[重来吧魔王大人](https://tieba.baidu.com/f?kw=%E9%87%8D%E6%9D%A5%E5%90%A7%E9%AD%94%E7%8E%8B%E5%A4%A7%E4%BA%BA)",
           "[漫畫](http://tieba.baidu.com/home/main/?un=%E9%A3%84%E9%9B%B6leaf&ie=utf-8&id=04e2e9a384e99bb66c656166ae5f&fr=frs&red_tag=c2986950856) - 飄零leaf",
-          "http://webaction.jp/Mcomics/"
+          "http://webaction.jp/Mcomics/",
+          "https://shimo.im/docs/7u7GsKC8MKc3wNVp/"
         ]
       },
       "黑之魔王": {
         "novel": {
           "title": "黒の魔王",
           "author": "菱影代理",
+          "illust": "森野ヒロ",
+          "illusts": [
+            "的場 りょう"
+          ],
           "source": "http://ncode.syosetu.com/n2627t/",
           "cover": "https://2.bp.blogspot.com/-qG7giNZTRuI/VkpMgj44IfI/AAAAAAAAAL4/MldUKuehBaE/s1600/volumen-1-0.jpg",
           "status": "連載",
+          "novel_status": 768,
           "series": {
             "name": "黒の魔王"
           },
-          "preface": "黑乃真央是一个有着凶恶眼神的男高中生。没有女友的他每天仍能享受着和平的高中生活。但是有一天，在没有预兆的情况下黑乃在他所属的文艺部的活动室，头突然痛了起来，然后晕了过去。当他其次醒来的时候等待他的到底是什么……。",
+          "preface": "黑乃真央是一個有著凶惡眼神的男高中生。沒有女友的他每天仍能享受著和平的高中生活。但是有一天，在沒有預兆的情況下黑乃在他所屬的文藝部的活動室，頭突然痛了起來，然後暈了過去。當他其次醒來的時候等待他的到底是什麼……。\n\n黒乃真央は悪い目つきを気にする男子高校生。彼女はいないがそれなりに友人にも恵まれ平和な高校生活を謳歌していた。しかしある日突然、何の前触れも無く黒乃は所属する文芸部の部室で謎の頭痛に襲われ気絶。次に目覚めた時には......。剣と魔法、モンスターの闊歩するオーソドックスな異世界召喚モノ！　※この度、晴れてコミカライズしました！　『コミックウォーカー』『ニコニコ静画』でどうぞご覧ください。これからは、なろう版、書籍版、コミカライズ、ともによろしくお願いいたします！",
           "tags": [
             "BL",
             "R15",
             "syosetu",
+            "コミックウォーカー",
             "シリアス",
+            "ダークファンタジー",
             "ファンタジー",
             "ヤンデレ",
-            "冒险",
             "冒険者",
-            "后宫",
+            "冒險",
             "国家",
-            "异界",
+            "後宮",
             "架空戦記",
             "残酷な描写あり",
             "民族",
             "異世界",
+            "異世界コミック",
+            "異世界転生",
             "異世界転移",
+            "異界",
             "病嬌",
             "穿越",
+            "逆境",
             "魔法",
             "魔王"
           ]
@@ -11145,6 +16212,7 @@
           "成萌新这件事",
           "把傷疤當做酒窩",
           "无尽神行靴",
+          "望虫",
           "歌利亚",
           "歪空の姬",
           "永恒",
@@ -11155,6 +16223,7 @@
           "玩脱的秀吉",
           "萝莉・最高",
           "萤火奇点",
+          "路人甲教主",
           "陨月天碎",
           "雪梦緣",
           "零号机403"
@@ -11596,7 +16665,7 @@
           "author": "厨二好き/白米良",
           "illust": "たかやＫｉ",
           "source": "http://ncode.syosetu.com/n8611bv/",
-          "cover": "http://img.wkcdn.com/image/2/2080/2080s.jpg",
+          "cover": "https://images-fe.ssl-images-amazon.com/images/I/B1X4-2ypCUS._SL250_FMpng_.png",
           "publisher": "其他文库",
           "status": "連載",
           "novel_status": 1792,
@@ -11676,7 +16745,7 @@
             "novel_id": "n8611bv"
           },
           "textlayout": {
-            "allow_lf2": true
+            "allow_lf2": false
           },
           "wenku8": {
             "novel_id": "2080"
@@ -11748,7 +16817,11 @@
           ]
         },
         "contribute": [
-          "gundam793"
+          "Oscuro",
+          "gundam793",
+          "七七七千爱",
+          "十六",
+          "镜"
         ],
         "options": {
           "downloadOptions": {
@@ -11764,7 +16837,8 @@
           }
         },
         "link": [
-          "[不吉波普不笑](https://share.dmhy.org/topics/list?keyword=%E4%B8%8D%E5%90%89%E6%B3%A2%E6%99%AE%E4%B8%8D%E7%AC%91&sort_id=2&team_id=0&order=date-desc)"
+          "[不吉波普不笑](https://share.dmhy.org/topics/list?keyword=%E4%B8%8D%E5%90%89%E6%B3%A2%E6%99%AE%E4%B8%8D%E7%AC%91&sort_id=2&team_id=0&order=date-desc)",
+          "[不吉波普吧](https://tieba.baidu.com/f?kw=%E4%B8%8D%E5%90%89%E6%B3%A2%E6%99%AE&ie=utf-8 \"\")"
         ]
       },
       "打倒女神勇者的下流手段": {
@@ -11821,6 +16895,104 @@
         "link": [
           "[kakuyomu](https://kakuyomu.jp/works/1177354054887566690)",
           "[syosetu](https://ncode.syosetu.com/n3670fe/)"
+        ]
+      },
+      "書姬吟游錄": {
+        "novel": {
+          "title": "本の姫",
+          "title_zh": "書姬吟遊錄",
+          "title_zh1": "書姬吟游錄",
+          "author": "多崎 礼",
+          "illust": "山本 ヤマト",
+          "source": "http://www.wenku8.com/book/857.htm",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/51CKH0PKIJL.jpg",
+          "publisher": "其他文库",
+          "publishers": [
+            "wenku8"
+          ],
+          "date": "2011-07-15T00:00:00+08:00",
+          "status": "已完成",
+          "novel_status": 256,
+          "series": {
+            "name": "本の姫"
+          },
+          "preface": "　　因為「滅日」事件而散落在大陸各處，\n　　不斷侵蝕世界的邪惡存在──術文。\n\n　　少年．安格斯走訪各地天使遺跡、修繕書本，\n　　為了尋找術文並將其回收，持續著與〈書姬〉的旅程。\n\n　　一天，少年從無法者們手中救出了一名少女，\n　　少年竟從那名少女身上，感受到了術文的氣息──\n\n　　擁有壓倒性筆力與縝密的世界觀，\n　　以『煌夜祭』一書在第2屆C★NOVELS大賞中獲獎的作者多崎禮\n　　蓄勢推出的最新系列，堂堂開幕!!\n\n「滅日」によって大陸中に散らばった、世界を蝕む邪悪な存在―文字。天使の遺跡を巡り、本を修繕する少年アンガスは、文字を探し回収するために、“本の姫”と旅を続けている。ある日、無法者たちから救い出した少女に、文字の気配を感じた彼は―。圧倒的な筆力と緻密な世界観を持ち、第2回C・NOVELS大賞受賞作『煌夜祭』で話題騒然の多崎礼が満を持して放つ新シリーズ、堂々開幕。",
+          "tags": [
+            "node-novel",
+            "wenku8",
+            "冒險",
+            "奇幻",
+            "書姬"
+          ]
+        },
+        "contribute": [
+          "Alpheilia",
+          "Gemini☆Saga",
+          "Harpuia0000",
+          "shine",
+          "輕之國度"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 4,
+            "startIndex": 1
+          },
+          "textlayout": {
+            "allow_lf2": true
+          },
+          "wenku8": {
+            "novel_id": "857"
+          }
+        }
+      },
+      "森の魔獣に花束を": {
+        "novel": {
+          "title": "森の魔獣に花束を",
+          "title_zh1": "向森之魔物獻上花束",
+          "title_zh2": "向森林的魔獸少女獻花",
+          "author": "小木君人",
+          "illust": "そと",
+          "source": "http://www.wenku8.com/book/1306.htm",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/71Ui8eSP62L.jpg",
+          "publisher": "小学馆",
+          "publishers": [
+            "wenku8"
+          ],
+          "date": "2012-11-02T00:00:00+08:00",
+          "status": "已完成",
+          "novel_status": 256,
+          "series": {
+            "name": "向森之魔物献上花束(向森林的魔兽少女献花)"
+          },
+          "preface": "向森林的魔物獻上花束\n\n劍與魔法作為一股強大力量的世界裡，克雷歐過著只有繪畫是唯一生存意義的孤獨生活。不過生於名門的他，為了取得繼承人資格必須踏上試煉之旅。踏入禁忌之森的他，遇見一名半人半植物的魔獸少女。輕易被抓的克雷歐設法勾起少女的興趣得到幫助，卻又被她當成寵物一般囚禁起來。兩人從此展開奇異的同居生活，這樣的生活不知不覺間令他感到很安心。但平靜的日子沒有持續太久......描繪人與魔獸的戀情，一本溫暖的異色奇幻小說。\n\n登場人物\n克雷歐\n名門子弟。繪畫是他的生存意義。\n\n羅莎莉\n魔獸少女。雖然會捕食人類，但性格天真無邪。\n\n\n---\n\nひとりぼっちの魔獣の少女に恋をした。\n\nとある村の近くに、人喰う魔物が棲むという禁断の森があった。家の跡継ぎになるための試練として稀少な青い薔薇を探す旅に出た少年クレヲは、同行者の裏切りに遭い、その森にひとり取り残される。そこでクレヲが出会ったのは半獣半人の魔獣の少女。なんとか魔獣の少女の気を惹いて、食べられることを免れたクレヲだったが、その代わりに彼女のペットにされてしまった……。そして、始まる奇妙な共同生活。純真な心を持つクレヲと一緒に暮らすうち、ずっとひとりぼっちだった魔獣の少女の心にやがて変化が現れる。だが、二人の日々はそう長くは続かなかった……。\n人間と魔獣の恋を描いた心温まる異色のファンタジー小説。\n\n---\n\n剣と魔法が大きな力として存在する世界。クレヲは絵を描くことだけを生きがいに孤独な日々を過ごしていた。だが、名家に生まれた彼は、跡継ぎになるための試練の旅に出なければならなくなる。禁断の森へ踏み込み、そこで半人半植物の魔獣の少女と出逢う。あっけなく捕まったクレヲは、なんとか気を惹いて助けてもらうが、代わりにペット同然に拘束されてしまった。こうして始まった奇妙な共同生活だったが、クレヲはいつしか安らぎを覚えていく。しかし平穏な日々は長く続かなかった...。人と魔獣の恋を描いた心温まる異色ファンタジー。",
+          "tags": [
+            "node-novel",
+            "wenku8"
+          ],
+          "title_zh3": "向森之魔獸獻上花束"
+        },
+        "contribute": [
+          "喵生赢家组",
+          "掉毛的狐",
+          "毛什么的最讨厌了！",
+          "毛好讨厌！"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 4,
+            "startIndex": 1
+          },
+          "textlayout": {
+            "allow_lf2": false
+          },
+          "wenku8": {
+            "novel_id": "1306"
+          }
+        },
+        "link": [
+          "[向森林的魔兽少女献花吧](https://tieba.baidu.com/f?kw=%E5%90%91%E6%A3%AE%E6%9E%97%E7%9A%84%E9%AD%94%E5%85%BD%E5%B0%91%E5%A5%B3%E7%8C%AE%E8%8A%B1&ie=utf-8 \"向森林的魔兽少女献花\")"
         ]
       },
       "被死神撫養的少女懷抱漆黑之劍": {
@@ -12039,7 +17211,9 @@
         "link": [
           "[dip.jp](https://narou.nar.jp/search.php?text=n7437dj&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
           "[被病娇妹妹爱的死去活来](https://tieba.baidu.com/f?kw=%E8%A2%AB%E7%97%85%E5%A8%87%E5%A6%B9%E5%A6%B9%E7%88%B1%E7%9A%84%E6%AD%BB%E5%8E%BB%E6%B4%BB%E6%9D%A5&ie=utf-8 \"被病娇妹妹爱的死去活来\")",
-          "[石墨整合](https://shimo.im/docs/ARkNdGT5kR00USzY)"
+          "[石墨整合](https://shimo.im/docs/ARkNdGT5kR00USzY)",
+          "[百石尤莉叶](https://pan.baidu.com/s/1rH5E_HUXw6KzyqWZHoUVCg) - z9sa",
+          "https://masiro.moe/forum.php?mod=forumdisplay&fid=116"
         ]
       }
     },
@@ -12184,46 +17358,36 @@
           "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=101)"
         ]
       },
-      "悠閑農家與亂碼技能": {
+      "ラピスの心臓": {
         "novel": {
-          "title": "ゆるふわ農家の文字化けスキル　～異世界でカタログ通販やってます～",
-          "title_zh": "悠閑農家與亂碼技能",
-          "author": "白石　新",
-          "illust": "",
-          "source": "http://ncode.syosetu.com/n7352fa/",
-          "cover": "",
+          "title": "ラピスの心臓",
+          "title_zh": "青金石之心",
+          "author": "おぽっさむ",
+          "illust": "一色箱",
+          "source": "http://ncode.syosetu.com/n4006r/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91UD7us7AKL.jpg",
           "publisher": "syosetu",
-          "date": "2019-02-08T18:47:00+08:00",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-02-16T10:25:00+08:00",
           "status": "連載",
           "novel_status": 0,
           "series": {
-            "name": "ゆるふわ農家の文字化けスキル　～異世界でカタログ通販やってます～"
+            "name": "ラピスの心臓"
           },
-          "preface": "美味いメシと酒。\nそして綺麗な嫁達がいれば、そこが異世界でも良いじゃない。\nそんな感じでオジサンが異世界に転移して、まったりと農業をやることにした。\n日本の調味料で作った料理で嫁達も自分も大満足。普通に異世界の食材も美味いし、自分の農作物もめっちゃ美味い。\nこれはまるで独身男性が実家に帰った時のような感じの、ゆるふわな優しい時間を過ごす男の生活記録である。",
+          "preface": "這是一個名為狂鬼的凶暴生物猖獗泛濫、被灰色森林所覆蓋的世界。\n從小作為孤兒獨自長大的朱應，生來便具有優秀的動態視力。\n一次偶然的相遇，被實力強大的刺客撿回家領養。\n十二年後，朱應學會了各式各樣的知識與技術，為了增廣見聞而踏上了旅途。\n才華洋溢的他，將會經歷各種邂逅增長經驗，並踏實的走向人生更高的境界。\n永無止境地成長、出人頭地的幻想故事，便是從這裡開始。\n\n狂鬼と呼ばれる凶暴な生き物でひしめき合う、灰色の森で覆われた世界。孤児として独りぼっちで生きる主人公のシュオウは、生まれながらの優れた動体視力を見込まれて、偶然の出会いを果たした凄腕の刺客に拾われる。十二年後、様々な知識や技術を習得したシュオウは、見聞を広めるために旅にでる。才に溢れるシュオウは、様々な出会いや経験を経て、着実に上への階段を昇っていくことになる。天井知らずの立身出世ファンタジーはここから始まる。\n▽このお話には【サクセスストーリー】【戦争】【恋愛】【主人公TUEE】等の要素があります。\n▼このお話には【性暴力】【寝取られ】等の要素はありません。",
           "tags": [
-            "R15",
             "node-novel",
             "syosetu",
-            "ご都合主義",
-            "ざまぁもあるよ",
-            "ゆるゆる",
-            "スキル無双",
-            "スローライフ",
-            "チート",
-            "ドラゴン",
-            "ハーレム",
-            "主人公最強",
-            "優しい世界",
-            "剣と魔法",
-            "微エロ",
-            "日常",
-            "残酷な描写あり",
-            "異世界転生",
-            "異世界転移",
-            "苦戦なし",
-            "鬱展開なし"
+            "ハイファンタジー",
+            "ファンタジー",
+            "残酷な描写あり"
           ]
         },
+        "contribute": [
+          "章魚子"
+        ],
         "options": {
           "downloadOptions": {
             "noFilePadend": true,
@@ -12232,15 +17396,16 @@
           },
           "syosetu": {
             "txtdownload_id": "",
-            "novel_id": "n7352fa"
+            "series_id": "",
+            "novel_id": "n4006r"
           },
           "textlayout": {
             "allow_lf2": true
           }
         },
         "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n7352fa&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[悠闲农家与乱码技能吧](https://tieba.baidu.com/f?kw=%E6%82%A0%E9%97%B2%E5%86%9C%E5%AE%B6%E4%B8%8E%E4%B9%B1%E7%A0%81%E6%8A%80%E8%83%BD&ie=utf-8 \"悠闲农家与乱码技能\")"
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n4006r&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[青金石之心吧](https://tieba.baidu.com/f?kw=%E9%9D%92%E9%87%91%E7%9F%B3%E4%B9%8B%E5%BF%83&ie=utf-8 \"\")"
         ]
       },
       "想當冒險者的女兒到首都當了等級Ｓ的冒險者": {
@@ -12402,46 +17567,54 @@
           "[dm5 漫画](http://www.dm5.com/manhua-xingcunlianjinshushixiangzaichenglijingjingshenghuo/ \"幸存炼金术师想在城里静静生活\")"
         ]
       },
-      "転生王子と憂いの大国": {
+      "異世界でスローライフを（願望）": {
         "novel": {
-          "title": "転生王子と憂いの大国",
-          "title_zh1": "",
-          "author": "楠　のびる",
-          "illust": "あり子",
-          "illusts": [
-            "あり子",
-            "北国良人"
-          ],
-          "source": "http://ncode.syosetu.com/n1586by/",
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91IptcyOvaL.jpg",
+          "title": "異世界でスローライフを（願望）",
+          "title_zh1": "異世界的慢生活",
+          "author": "シゲ",
+          "illust": "オウカ",
+          "source": "http://ncode.syosetu.com/n2276dz/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/91wv7bfkG5L.jpg",
           "publisher": "syosetu",
-          "date": "2019-01-02T23:31:00+08:00",
-          "status": "完結済",
-          "novel_status": 769,
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-12T17:40:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
           "series": {
-            "name": "ハーシェリク 転生王子の英雄譚（転生王子シリーズ）"
+            "name": "異世界でスローライフを（願望）"
           },
-          "preface": " オタク女である早川涼子は、アラフォーとなる三十五歳の誕生日前日、交通事故によりこの世を去った。そしてファンタジー世界の、しかもその大陸一の大国の金髪碧眼の美形王子様に転生したのだった。\n\n　宝くじがあたったが如く王子様ライフを満喫していたが、実はその大国は王を蔑む臣下、貴族たちの専横、役人の汚職等々かなりまずい状況だった。\n\n　父王を守るため、国民を助ける為、転生した王子ハーシェリクは国の闇と戦う決意をする。\n\n　しかし転生した先の王子は運動神経なし、魔力なし、おまけに美形だと思っていたら王族の中では華がないという残念な王子だった。\n\n　だがそれでも王子は諦めず前世の事務員のスキルと経験を活かし、持ち前の行動力と（オタク的な）頭脳、そして仲間達と共に今立ち上がる。\n\n【続編-転生王子と黄昏の騎士に続きます】",
+          "preface": "忍宫一树被女神转移到了别的世界，但是可以选择外挂能力\n但是来到不同的世界也不一定要战斗啊。\n如果这样的話，就把外挂能力全部点成战斗以外的技能，不从街上出去，过着悠闲的生活。\n在这样的想法下，忍宫一树用独特技能和生产技能开始了异世界的慢生活。\n\n忍宮一樹は女神によって異世界に転移する事となり、そこでチート能力を選択できることになった。\n\nだが異世界に来てチート能力を貰おうと戦闘しなくてはいけないわけではない。\n\nならばチート能力を全て戦闘以外のスキルにし、街から出ることもなく魔物に遭うこともなくスローライフを送れないものかと。\n\nそんな考えのもと、忍宮一樹のユニークスキルと生産スキルでの異世界生活がスタートした。\n\n注意\n\nハーレム要素強め、基本的にドタバタしてます。\n（願望）が強く出ている作品です。\n\n\nありがたいことにオーバーラップノベルス様より書籍化しています！\n素敵なオウカ様の絵を含んだ、この作品ならではの雰囲気を是非お楽しみください！\n\n※１２月２５日３巻発売しました！！　よろしくー！",
           "tags": [
             "R15",
-            "TS",
-            "TS転生（女→男）",
             "node-novel",
             "syosetu",
-            "コメディー",
+            "ご都合展開",
+            "まったり",
             "シリアス",
+            "スローライフ（願望）",
+            "ハイファンタジー",
+            "ハーレム",
             "ファンタジー",
-            "三人称",
-            "主従",
-            "女性向",
-            "家族",
-            "性轉",
-            "戦記",
+            "冒険",
+            "勇者",
+            "奴隷",
+            "微エロ",
             "残酷な描写あり",
-            "王子",
-            "異世界転生"
+            "生産チート",
+            "男主人公",
+            "異世界",
+            "異世界転生",
+            "異世界転移",
+            "錬金",
+            "魔法"
           ]
         },
+        "contribute": [
+          "yhj钉宫癌",
+          "勤奋的懒惰的羊"
+        ],
         "options": {
           "downloadOptions": {
             "noFilePadend": true,
@@ -12450,19 +17623,246 @@
           },
           "syosetu": {
             "txtdownload_id": "",
-            "series_id": "s6899b",
-            "novel_id": "n1586by"
+            "series_id": "",
+            "novel_id": "n2276dz"
           },
           "textlayout": {
             "allow_lf2": true
           }
         },
         "link": [
-          "[dip.jp](https://narou.nar.jp/search.php?text=n1586by&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
-          "[ハーシェリク 転生王子の英雄譚（転生王子シリーズ）](http://ncode.syosetu.com/s6899b/)",
-          "[转生王子吧](https://tieba.baidu.com/f?kw=%E8%BD%AC%E7%94%9F%E7%8E%8B%E5%AD%90&ie=utf-8&tp=0 \"\")",
-          "[dm5 转生王子的英雄谭](http://www.dm5.com/manhua-zhuanshengwangzideyingxiongtan/)",
-          "[amazon.co.jp](https://www.amazon.co.jp/s/ref=dp_byline_sr_book_1?ie=UTF8&text=%E6%A5%A0+%E3%81%AE%E3%81%B3%E3%82%8B&search-alias=books-jp&field-author=%E6%A5%A0+%E3%81%AE%E3%81%B3%E3%82%8B&sort=relevancerank)"
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n2276dz&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[异世界的慢生活吧](https://tieba.baidu.com/f?kw=%E5%BC%82%E4%B8%96%E7%95%8C%E7%9A%84%E6%85%A2%E7%94%9F%E6%B4%BB&ie=utf-8 \"异世界的慢生活\")"
+        ]
+      },
+      "異世界に転生したら美少女で女城主だった。": {
+        "novel": {
+          "title": "異世界に転生したら美少女で女城主だった。",
+          "title_zh": "轉生異世界成為美少女城主",
+          "author": "水城みなも",
+          "illust": "冬ゆき",
+          "source": "",
+          "cover": "https://cdn.kdkw.jp/cover_1000/321711/321711000239.jpg",
+          "publisher": "",
+          "date": "",
+          "status": "",
+          "novel_status": 0,
+          "series": {
+            "name": ""
+          },
+          "preface": "转生以来没有挂，也没有特殊技能，可以凭借的只有「美少女力」。她的目标是，称霸三国！\n\n为了帮助一只黑猫，七门景在交通事故中失去了生命——然后转生成为了小国斯登堡的公主大人蒂芙。而公主的灵魂进入了本来的宠物黑猫体内。「把我的身体还我！」就算被这么说景也束手无策。然而，景正处于被步步紧逼，贞操和性命都陷入大危机的状况之中！转生技能什么的一律没有的景，决心用绝世的「美少女力」渡过危机，但——！？成为兴国之美少女制霸三个国家的故事，开幕！",
+          "tags": [
+            "女主人公",
+            "異世界転生",
+            "転生"
+          ]
+        },
+        "contribute": [
+          "牧野诗歌"
+        ],
+        "options": {
+          "textlayout": {}
+        },
+        "link": [
+          "[masiro.moe](https://masiro.moe/forum.php?mod=forumdisplay&fid=67)",
+          "[转生异世界成为美少女城主吧](https://tieba.baidu.com/f?kw=%E8%BD%AC%E7%94%9F%E5%BC%82%E4%B8%96%E7%95%8C%E6%88%90%E4%B8%BA%E7%BE%8E%E5%B0%91%E5%A5%B3%E5%9F%8E%E4%B8%BB&ie=utf-8 \"转生异世界成为美少女城主\")"
+        ]
+      },
+      "緑王の盾と真冬の国": {
+        "novel": {
+          "title": "緑王の盾と真冬の国",
+          "author": "ぷにちゃん",
+          "illust": "緋原ヨウ",
+          "source": "http://ncode.syosetu.com/n6308dg/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81KKSR3WftL.jpg",
+          "publisher": "syosetu",
+          "date": "2017-03-10T23:50:00+08:00",
+          "status": "連載",
+          "novel_status": 256,
+          "series": {
+            "name": "緑王の盾と真冬の国"
+          },
+          "preface": "轉生為盾牌的哈米亞所覺醒的地方，是一年四季紛紛下雪的隆冬國家。\n\n被人說是“髒兮兮的盾”的我，誰也看不起。\n在城堡的寶庫裡蘇醒過來，原以為會成為王族們的武器——大家都越過我。\n被選中的都是聖劍、治愈的魔杖等非常厲害的寶物。\n\n而向那樣的我伸出手的，是心地善良的第六王子。\n\n盾に転生したハーミアが目覚めたのは、一年中雪が降りそそぐ真冬の国だった。\n\n「汚らしい盾だ」と言われた私は、誰にも見向きをされない。\n城の宝物庫で目覚め、王族たちの武器になるのだと思っていたのだけれど――みんな、私をスルーしていきます。\n選ばれるのは、聖剣や、治癒の杖などとてもすごい宝物ばかり。\n\nそんな私に手を伸ばしてくれたのは、心優しい第六王子だった。",
+          "tags": [
+            "node-novel",
+            "syosetu",
+            "じれじれ",
+            "チート",
+            "ハイファンタジー",
+            "ファンタジー",
+            "人外",
+            "女主人公",
+            "恋愛",
+            "成り上がり",
+            "王子",
+            "王族",
+            "異世界",
+            "異世界転生",
+            "盾",
+            "盾ショタ(˘ω˘)？",
+            "転生"
+          ],
+          "title_tieba": "绿王的盾与真冬之国"
+        },
+        "contribute": [
+          "堅決反對"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n6308dg"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n6308dg&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[绿王的盾与真冬之国吧](https://tieba.baidu.com/f?kw=%E7%BB%BF%E7%8E%8B%E7%9A%84%E7%9B%BE%E4%B8%8E%E7%9C%9F%E5%86%AC%E4%B9%8B%E5%9B%BD&ie=utf-8 \"绿王的盾与真冬之国\")"
+        ]
+      },
+      "老後に備えて異世界で８万枚の金貨を貯めます": {
+        "novel": {
+          "title": "老後に備えて異世界で８万枚の金貨を貯めます",
+          "title_zh1": "為了養老金去異界存八萬金",
+          "author": "FUNA",
+          "illust": "東西",
+          "illusts": [
+            "モトエ惠介"
+          ],
+          "source": "http://ncode.syosetu.com/n5529cy/",
+          "cover": "https://images-fe.ssl-images-amazon.com/images/I/51RP3NPfJaL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-04-26T00:47:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "老後に備えて異世界で８万枚の金貨を貯めます"
+          },
+          "preface": "家族發生事故, 雙親與哥哥死亡了, 以保險金支付了剩餘的房貸\n山野光波, 18歲少女\n某日從懸崖掉落, 穿越到異世界\n在經歷與狼群的死鬥, 知道能夠往返穿越兩個世界的方法\n光波決定在兩個世界活下去\n為了老年的生活, 目標在異世界賺到決定8萬枚金幣\n\n　事故で家族を失った１８歳の少女、山野光波（やまのみつは）は、ある日崖から転落し中世ヨーロッパ程度の文明レベルである異世界へと転移した。狼との死闘を経て地球との行き来ができることを知った光波は、２つの世界をまたいで生きることを決意する。\n「老後の安泰のため、目指せ金貨８万枚！」\n　異世界の正しい進歩を歪めないよう、おかしな物は流通させない。でも、自分の楽ちん生活と身の安全のためには自重しないよ！\n　３丁の拳銃を身につけて、表に現れる言動はまともだが頭の中は少々アレな雑学少女山野光波、西洋人には子供に見られる小柄な身体でお金儲けに頑張ります！\n　あ、情報隠蔽が甘過ぎますか、そうですか。\n　いいんですよ、細かいことは！　いざとなったら転移で逃げるから！\n\n講談社様が「なろう」を始めとするｗｅｂ小説の書籍化のために立ち上げられた新レーベル、「Ｋラノベブックス」から書籍化されました。２０１９年１月９日に書籍第４巻、コミックス第３巻が同時発売です！　『ポーション頼みで生き延びます！』も同時刊行です。\n\nまた、無料ｗｅｂ漫画誌『水曜日のシリウス』において、コミカライズ連載中！\n毎月第２・第４金曜日更新です。\n『水曜日のシリウス』なのに金曜日更新で、わかりにくくてごめんなさい。(^^ゞ\nよろしくお願い致します！(^^)/",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "お店",
+            "チート",
+            "ハイファンタジー",
+            "ハイファンタジー〔ファンタジー〕",
+            "ファンタジー",
+            "ミリタリー",
+            "内政",
+            "女主人公",
+            "少女",
+            "残酷な描写あり",
+            "現代兵器",
+            "現代知識",
+            "異世界",
+            "異世界転移",
+            "転移"
+          ]
+        },
+        "contribute": [
+          "joseph261059"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n5529cy"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n5529cy&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n5529cy/)",
+          "https://mega.nz/#F!4x9RVZLT!Tucgvy-PK--6YV13oaC2LA",
+          "https://mega.nz/#F!4x9RVZLT!Tucgvy-PK--6YV13oaC2LA!co1xQK6D",
+          "[为了养老金去异界存八万金吧](https://tieba.baidu.com/f?kw=%E4%B8%BA%E4%BA%86%E5%85%BB%E8%80%81%E9%87%91%E5%8E%BB%E5%BC%82%E7%95%8C%E5%AD%98%E5%85%AB%E4%B8%87%E9%87%91&ie=utf-8&tp=0 \"为了养老金去异界存八万金\")",
+          "http://www.dm5.com/manhua-weileyanglaojin-quyijiecunbawanjin/"
+        ]
+      },
+      "魔導具師ダリヤはうつむかない": {
+        "novel": {
+          "title": "魔導具師ダリヤはうつむかない",
+          "title_zh": "魔導具師妲莉雅不會低頭　～從今天開始自由的職人生活～",
+          "author": "甘岸久弥",
+          "illust": "景",
+          "illusts": [
+            "釜田"
+          ],
+          "source": "http://ncode.syosetu.com/n7787eq/",
+          "cover": "https://images-na.ssl-images-amazon.com/images/I/81lMSZfy2CL.jpg",
+          "publisher": "syosetu",
+          "publishers": [
+            "syosetu"
+          ],
+          "date": "2019-05-15T23:33:00+08:00",
+          "status": "連載",
+          "novel_status": 768,
+          "series": {
+            "name": "魔導具師ダリヤはうつむかない"
+          },
+          "preface": "「抱歉，妲莉雅。我想要解除婚約」結婚前日，眼前的婚約者如此說。\n前世忍受著公司的繁重業務，就這樣低著頭的過勞死了。\n今世解除了打算成為老老實實低著頭的好妻子的婚約。\n妲莉雅決定了。夠了、該停止低頭了。\n努力做魔導具師的工作、去想去的地方、吃想吃的東西、喝想喝的東西。盡自己所能、過想過的生活吧。\n那樣的她，和魔物討伐部隊的騎士相遇。喜歡魔導具的妲莉雅和、喜歡魔劍的沃魯夫。\n一面熱衷於製作魔導具和魔劍，一面吃吃喝喝，被捲入各式各樣的日子。\n若是為了生活的便利，怎樣的辛勞都不嫌棄的魔導具師和，不知恐懼只顧衝鋒陷陣的魔物討伐部隊的騎士。\n想背對戀愛的兩人，何時會成為戀人呢。\n※戀愛甜味成分不足。故事設定很甜。※\n―――――――――――――――――――――\n\n以上是小說家官方版介紹。\n這是一部微戀愛番…才怪，這是美食番！\n這作者至少有六分之一在寫吃的跟酒。\n\n以下是我流版介紹。\n\n　妲莉雅在搬入新家的第一天，結婚的前一天，就被未婚夫這垃圾以找到『真正的愛』為由解除了婚約，因兩人都是魔導具師且已訂婚兩年整，所以當天下午就在商業公會清算所有共同契約與財產。\n　垃圾要新居但對半折現給妲莉雅，可是錢不夠只好死皮賴臉的以自家商會信譽為擔保分期，垃圾還把婚約手環要了回去要送給新對象（漫畫是當場，小說家是事後）。\n\n　之後妲莉雅委託運輸業友人把早上送到的行李原封不動的搬回原本的家，結果愕然的發現新買的大床早已被睡過，衣櫥裡塞滿了新對象的衣服，為了不惹麻煩還請了公證人一件件清算搬回了衣櫥，小說家中後來在垃圾來要新對象謊稱的遺失物時被妲莉雅說了『用過的大床就當作結婚祝賀吧』。\n\n　事情結束後，妲莉雅決定不再低頭，要過自己想要的生活，吃吃喝喝、專注於做魔導具，為了轉換心情而出門採集素材時偶遇了全身傷痕累累連走兩天的沃魯夫。\n\n　身為魔物討伐部隊的騎士的沃魯夫，因為打雙足飛龍時不慎被抓走，雖在空中確實殺掉，自己也掉了下去，渾身傷痕累累的往王都走回去時遇到妲莉雅，接受了回復藥、午餐、並在河邊洗去魔物之血後穿上妲莉雅帶來偽裝成男性的備用大衣，並一同坐妲莉雅的馬車回去。\n　歸隊後被某隊友發現大衣內側用了不得了的雙足飛龍皮，還說妲莉雅搞不好不知道價格，之後沃魯夫就為了歸還而在王都內到處找，找到的時候妲莉雅非常驚訝，沃魯夫說雖然那時有猜到可能是女性，而剛才發現時也還是有點疑惑，但靠近後因為味道而確定了。\n\n=======\n\n「すまない、ダリヤ。婚約を破棄させてほしい」 結婚前日、目の前の婚約者はそう言った。\n前世は会社の激務を我慢し、うつむいたままの過労死。\n今世はおとなしくうつむいて、いい妻になろうとして婚約破棄。\nダリヤは決めた。もう、うつむくのはやめる。\n頑張って魔導具師の仕事をし、行きたいところに行き、食べたいものを食べ、飲みたいものを飲もう。自分でできる限り、生きたいように生きよう、と。\nそんな彼女は、魔物討伐部隊の騎士と出会う。魔導具が好きなダリヤと、魔剣が好きなヴォルフ。\n魔導具と魔剣作りに熱中しつつ、飲んで食べて、いろいろと巻き込まれる日々。\n生活の便利さのためならば、どんな苦労もいとわぬ魔導具師と、怖さ知らずでひたすら先陣を切る魔物討伐部隊の騎士。\n恋愛に背を向けたい2人は、いつか恋人になれるのか。\n※恋愛甘味成分が不足しております。物語設定は甘いです。\n\n【おかげさまで書籍となりました。MFブックス様より4月25日2巻刊行、コミカライズ:コンプエース様本誌で6月号（4月26日）から、MAGCOMI様で4月25日からWEBで連載となります。どうぞよろしくお願いします】",
+          "tags": [
+            "R15",
+            "node-novel",
+            "syosetu",
+            "女主人公",
+            "婚約破棄",
+            "家電愛",
+            "恋愛",
+            "残酷な描写あり",
+            "物作り",
+            "生産",
+            "異世界[恋愛]",
+            "異世界〔恋愛〕",
+            "異世界転生",
+            "酒",
+            "食事",
+            "魔剣",
+            "魔導具"
+          ],
+          "title_jp2": "魔導具師ダリヤはうつむかない　～今日から自由な職人ライフ～"
+        },
+        "contribute": [
+          "SPT草包"
+        ],
+        "options": {
+          "downloadOptions": {
+            "noFilePadend": true,
+            "filePrefixMode": 1,
+            "startIndex": 1
+          },
+          "syosetu": {
+            "txtdownload_id": "",
+            "series_id": "",
+            "novel_id": "n7787eq"
+          },
+          "textlayout": {
+            "allow_lf2": true
+          }
+        },
+        "link": [
+          "[narou.nar.jp](https://narou.nar.jp/search.php?text=n7787eq&novel=all&genre=all&new_genre=all&length=0&down=0&up=100) - 小説家になろう　更新情報検索",
+          "[小説情報](https://ncode.syosetu.com/novelview/infotop/ncode/n7787eq/)",
+          "http://seiga.nicovideo.jp/comic/40695",
+          "[魔导具师妲莉雅吧](https://tieba.baidu.com/f?kw=%E9%AD%94%E5%AF%BC%E5%85%B7%E5%B8%88%E5%A6%B2%E8%8E%89%E9%9B%85&ie=utf-8 \"魔导具师妲莉雅\")"
         ]
       }
     },
