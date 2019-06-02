@@ -5,11 +5,13 @@ import path = require('path');
 import console from './script/util';
 import PrerenderSPAPlugin from 'prerender-spa-plugin'
 import JsDomRenderer from '@prerenderer/renderer-jsdom'
+import { array_unique } from 'array-hyper-unique';
 
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
 
 console.debug('NODE_ENV', process.env.NODE_ENV);
+console.debug('BASE_URL', process.env.BASE_URL);
 
 let allowSourceMap: boolean = development;
 
@@ -52,30 +54,43 @@ module.exports = {
 			new PrerenderSPAPlugin({
 				staticDir: path.join(ROOT, 'dist'),
 				indexPath: path.join(ROOT, 'dist', 'index.html'),
-				routes: [
-					'/',
-
-					...[
-						1, 2, 3, 4, 5
-					].reduce(function (a, n)
+				routes: array_unique([
+					1, 2, 3, 4, 5,
+				].reduce(function (a, n)
 					{
-						//a.push(`?page=${n}`);
-
-						//a.push(`/search/tag?searchValue=百合`);
-						a.push(`/search/author/kiki`);
-						//a.push(`/search/tag?searchValue=novel18`);
+						a.push(`?page=${n}`);
 
 						return a
-					}, [] as string[]),
+					}, [] as string[])
+					.concat([
+						`/search/tag?searchValue=百合`,
+						`/search/author/kiki`,
+						`/search/author/黒水蛇`,
+						`/search/tag?searchValue=novel18`,
 
-					'/history',
-					'/tool/cjk-conv',
-				],
+						`/search/contribute?searchValue=我只是一個紳士`,
+
+						`/search/publisher`,
+						`/search/illust`,
+
+						`/search/author`,
+
+						`/search/tag`,
+
+						`/search/chapter_range`,
+
+						'/history',
+						'/tool/cjk-conv',
+					])
+					.map(v =>
+					{
+						return new URL(v, 'http://localhost').pathname
+					})),
 				renderer: new JsDomRenderer({
 					//renderAfterDocumentEvent: 'onload',
 					//renderAfterElementExists: '#nav',
 					renderAfterTime: 10000,
-					headless: false
+					headless: false,
 				}),
 				/*
 				postProcessHtml: function (context) {
@@ -90,7 +105,7 @@ module.exports = {
 					)
 				}
 				 */
-			})
+			}),
 
 		],
 //		devtool: !production,
@@ -141,7 +156,7 @@ module.exports = {
 			},
 
 			runtimeChunk: {
-				name: entrypoint => `runtime~${entrypoint.name}`
+				name: entrypoint => `runtime~${entrypoint.name}`,
 			},
 
 			minimize: production,
@@ -161,7 +176,6 @@ module.exports = {
 
 //		// @ts-ignore
 //		config.plugins.set(new webpack.IgnorePlugin(/\.d\.ts$/))
-
 
 //		config.plugins.set(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/))
 

@@ -450,6 +450,7 @@ import { Route } from 'vue-router'
 import { handleSearchText, toHalfWidthLocaleLowerCase } from '@/lib/conv';
 import { zhRegExpGreedy, zhRegExpGreedyMatchWords } from '@/lib/regexp';
 import { sortSeriesCallback } from '@/lib/util/sort';
+import { matchOperatorsAndPunctuationRegex, matchPunctuationRegex } from '@/lib/regex/const';
 
 let NovelData: ReturnType<typeof dataAll>;
 
@@ -1290,13 +1291,15 @@ export default class List extends Vue
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
-		let ks = handleSearchText(toHalfWidthLocaleLowerCase(keyword))
+		let ks = toHalfWidthLocaleLowerCase(keyword)
+			.replace(matchPunctuationRegex, ' ')
 			.replace(/([\.\?])+/g, '$1')
-			.split(/[\s　#\-,@]+/)
+			.split(/[\s　#\-,@\u3000]+/)
 			.map(function (v: string)
 			{
 				return v
 					.replace(/^[\/\\\+\!\?\*\.\[\]=<>]$/, '')
+					.replace(matchOperatorsAndPunctuationRegex, '')
 					;
 			})
 			.filter(function (v)
@@ -1468,6 +1471,7 @@ export default class List extends Vue
 				return k;
 			},
 
+			// @ts-ignore
 			handleKeyword(value, k)
 			{
 				return Array.isArray(k) && (k as string[]).join(',') || value

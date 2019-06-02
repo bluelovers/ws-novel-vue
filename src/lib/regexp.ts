@@ -1,9 +1,13 @@
 import { zhRegExp } from 'regexp-cjk';
 import { toHalfWidthLocaleLowerCase } from '@/lib/conv';
 import { array_unique } from 'array-hyper-unique'
+import createZhRegExpPlugin, { IZhRegExpPluginOptions } from 'regexp-cjk-plugin-extra';
+import escapeStringRegexp from 'escape-string-regexp';
+import { IOptionsOn } from 'regexp-cjk/lib/core';
 
 let _err: boolean;
 let _err2: boolean;
+let _cache_plugin: IOptionsOn[];
 
 export function getZhRegExp(): typeof zhRegExp
 {
@@ -29,6 +33,24 @@ export function getZhRegExp(): typeof zhRegExp
 	}
 }
 
+function getPlugin()
+{
+	if (!_cache_plugin)
+	{
+		_cache_plugin = _cache_plugin || [];
+
+		_cache_plugin.push((require('regexp-cjk-plugin-extra') as typeof import('regexp-cjk-plugin-extra'))
+			.createZhRegExpPlugin({
+				autoVoice: true,
+				autoFullHaif: true,
+				autoLocale: true,
+				autoDeburr: true,
+			}))
+	}
+
+	return _cache_plugin
+}
+
 export function zhRegExpGreedy(input: unknown, flags?: string)
 {
 	const zhRegExp = getZhRegExp();
@@ -38,8 +60,10 @@ export function zhRegExpGreedy(input: unknown, flags?: string)
 		input = input.join('|')
 	}
 
+	// @ts-ignore
 	return new zhRegExp(input as string, flags || '', {
 		greedyTable: 2,
+		on: getPlugin(),
 	});
 }
 
@@ -47,16 +71,19 @@ export function zhRegExpGreedyMatchWords(input: string)
 {
 	try
 	{
-		let k = input.replace(/[|\\{}()\[\]^$+*?.]/g, '\\$1');
 
-		let ks = array_unique([
-			k,
-			toHalfWidthLocaleLowerCase(k),
-		]).join('|');
+		//let k = input.replace(/[|\\{}()\[\]^$+*?.]/g, '\\$1');
 
-		let rs = `\^(?:${ks})\$`;
+		let k = escapeStringRegexp(input);
 
-		let k2 = `\^(${k})\$`;
+//		let ks = array_unique([
+//			k,
+//			toHalfWidthLocaleLowerCase(k),
+//		]).join('|');
+
+		//let rs = `\^(?:${ks})\$`;
+
+		let rs = `\^(?:${k})\$`;
 
 		//console.log('zhRegExpGreedyMatchWords', k2, rs);
 

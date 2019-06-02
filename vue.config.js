@@ -7,9 +7,11 @@ const path = require("path");
 const util_1 = tslib_1.__importDefault(require("./script/util"));
 const prerender_spa_plugin_1 = tslib_1.__importDefault(require("prerender-spa-plugin"));
 const renderer_jsdom_1 = tslib_1.__importDefault(require("@prerenderer/renderer-jsdom"));
+const array_hyper_unique_1 = require("array-hyper-unique");
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
 util_1.default.debug('NODE_ENV', process.env.NODE_ENV);
+util_1.default.debug('BASE_URL', process.env.BASE_URL);
 let allowSourceMap = development;
 const ROOT = path.join(__dirname);
 module.exports = {
@@ -40,27 +42,36 @@ module.exports = {
             new prerender_spa_plugin_1.default({
                 staticDir: path.join(ROOT, 'dist'),
                 indexPath: path.join(ROOT, 'dist', 'index.html'),
-                routes: [
-                    '/',
-                    ...[
-                        1, 2, 3, 4, 5
-                    ].reduce(function (a, n) {
-                        //a.push(`?page=${n}`);
-                        //a.push(`/search/tag?searchValue=百合`);
-                        a.push(`/search/author/kiki`);
-                        //a.push(`/search/tag?searchValue=novel18`);
-                        return a;
-                    }, []),
+                routes: array_hyper_unique_1.array_unique([
+                    1, 2, 3, 4, 5,
+                ].reduce(function (a, n) {
+                    a.push(`?page=${n}`);
+                    return a;
+                }, [])
+                    .concat([
+                    `/search/tag?searchValue=百合`,
+                    `/search/author/kiki`,
+                    `/search/author/黒水蛇`,
+                    `/search/tag?searchValue=novel18`,
+                    `/search/contribute?searchValue=我只是一個紳士`,
+                    `/search/publisher`,
+                    `/search/illust`,
+                    `/search/author`,
+                    `/search/tag`,
+                    `/search/chapter_range`,
                     '/history',
                     '/tool/cjk-conv',
-                ],
+                ])
+                    .map(v => {
+                    return new URL(v, 'http://localhost').pathname;
+                })),
                 renderer: new renderer_jsdom_1.default({
                     //renderAfterDocumentEvent: 'onload',
                     //renderAfterElementExists: '#nav',
                     renderAfterTime: 10000,
-                    headless: false
+                    headless: false,
                 }),
-            })
+            }),
         ],
         //		devtool: !production,
         optimization: {
@@ -85,7 +96,7 @@ module.exports = {
                 },
             },
             runtimeChunk: {
-                name: entrypoint => `runtime~${entrypoint.name}`
+                name: entrypoint => `runtime~${entrypoint.name}`,
             },
             minimize: production,
             minimizer: [getTerserPlugin()],
