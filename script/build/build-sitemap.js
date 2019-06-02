@@ -34,34 +34,34 @@ async function runBuild() {
     });
     novel_1.listChapterRange(NovelData.max_chapter)
         .forEach(row => {
-        sitemap.add({
+        addSitemap(sitemap, {
             url: createVueLink(row.label, novel_1.EnumEventLabel.CHAPTER_RANGE),
             changefreq: 'daily',
             priority: 0.5,
-        });
+        }, 5);
     });
     NovelData.tags
         .forEach(title => {
-        sitemap.add({
+        addSitemap(sitemap, {
             url: createVueLink(title, novel_1.EnumEventLabel.TAG),
             changefreq: 'daily',
             priority: 0.8,
-        });
+        }, 5);
     });
     NovelData.authors
         .forEach(title => {
-        sitemap.add({
+        addSitemap(sitemap, {
             url: createVueLink(title, novel_1.EnumEventLabel.AUTHOR),
             changefreq: 'daily',
             priority: 0.8,
-        });
+        }, 2);
     });
     NovelData.publishers.forEach(title => {
-        sitemap.add({
-            url: createVueLink(title, novel_1.EnumEventLabel.AUTHOR),
+        addSitemap(sitemap, {
+            url: createVueLink(title, novel_1.EnumEventLabel.PUBLISHER),
             changefreq: 'monthly',
             priority: 0.9,
-        });
+        }, 10);
     });
     Object.keys(NovelData.alias).forEach(title => {
         let data = NovelData.alias[title].sort((a, b) => {
@@ -90,11 +90,18 @@ async function runBuild() {
         });
     });
     NovelData.illusts.forEach(title => {
-        sitemap.add({
+        addSitemap(sitemap, {
             url: createVueLink(title, novel_1.EnumEventLabel.ILLUST),
             changefreq: 'monthly',
             priority: 0.6,
-        });
+        }, 2);
+    });
+    NovelData.contributes.forEach(title => {
+        addSitemap(sitemap, {
+            url: createVueLink(title, novel_1.EnumEventLabel.CONTRIBUTE),
+            changefreq: 'monthly',
+            priority: 0.1,
+        }, 2);
     });
     let xml = sitemap.toXML();
     //console.log(xml);
@@ -107,5 +114,22 @@ function createVueLink(text, type = novel_1.EnumEventLabel.KEYWORD) {
         `${type}?searchValue=${text}`,
     ].join('/'));
 }
+function addSitemap(sitemap, data, pages) {
+    let { url, changefreq, priority } = data;
+    sitemap.add({
+        url, changefreq, priority
+    });
+    if (pages && pages > 1) {
+        let u = new URL(url, project_config_1.siteUrl);
+        let i = 1;
+        while (i++ <= pages) {
+            u.searchParams.set('page', i);
+            sitemap.add({
+                url: u.href,
+                changefreq,
+                priority
+            });
+        }
+    }
+}
 module.exports = runBuild();
-//# sourceMappingURL=build-sitemap.js.map
