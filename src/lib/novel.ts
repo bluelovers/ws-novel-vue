@@ -151,6 +151,9 @@ export function dataAll()
 
 					if (novel.mdconf.novel)
 					{
+						// @ts-ignore
+						novel.mdconf.novel.titles = array_unique(metaInfo.titles());
+
 						data.tags.push(...(novel.mdconf.novel.tags = metaInfo.tags()));
 						data.authors.push(...(novel.mdconf.novel.authors = metaInfo.authors()));
 						data.publishers.push(...(novel.mdconf.novel.publishers = metaInfo.publishers()));

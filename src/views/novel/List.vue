@@ -4,6 +4,9 @@
 
 		<vue-headful
 			:title="title"
+			:description="seo_description"
+			:keywords="seo_keywords"
+			:image="seo_image"
 		/>
 
 		<vue-global-events
@@ -176,18 +179,18 @@
 						class="mt-2"
 					>
 						<div style="text-align: center">
-						<router-link
-							v-for="author in cur_author_list"
-							:to="`/search/author?searchValue=${author}`" class="text-color-inherit"
-						>
-							<v-chip
-								small
-								class="caption"
-								label
-								color="pink accent-4" text-color="white"
-							>{{ author }}
-							</v-chip>
-						</router-link>
+							<router-link
+								v-for="author in cur_author_list"
+								:to="`/search/author?searchValue=${author}`" class="text-color-inherit"
+							>
+								<v-chip
+									small
+									class="caption"
+									label
+									color="pink accent-4" text-color="white"
+								>{{ author }}
+								</v-chip>
+							</router-link>
 						</div>
 					</v-layout>
 
@@ -537,6 +540,10 @@ export default class List extends Vue
 			cur_title: '',
 			title: '',
 
+			seo_description: null as string,
+			seo_keywords: null as string,
+			seo_image: null as string,
+
 			cur_publisher: '',
 			publishers: NovelData["publishers"],
 
@@ -585,7 +592,7 @@ export default class List extends Vue
 
 				return a;
 			}, {} as List["searchOptions"])
-		;
+			;
 	}
 
 	itemPopup(item: IFilterNovelDataPlus)
@@ -634,6 +641,129 @@ export default class List extends Vue
 		{
 			this.title = 'Novel'
 		}
+
+		this._updateSeo();
+	}
+
+	_updateSeo(this: IVueComponent<List>)
+	{
+
+		let seo_keywords: string[] = [
+			...this.tags,
+		];
+
+		let seo_image: string;
+		let seo_description: string[] = [];
+
+		let _contribute: string[] = [];
+
+		this.novels
+			.forEach(data =>
+			{
+
+				seo_keywords.push(data.pathMain);
+				seo_keywords.push(...data.mdconf.novel.authors);
+				seo_keywords.push(...data.mdconf.novel.illusts);
+
+				if (seo_image == null && data.mdconf.novel.cover)
+				{
+					seo_image = data.mdconf.novel.cover;
+				}
+
+				_contribute.push(...data.mdconf.contribute);
+
+				// @ts-ignore
+				seo_description.push(...data.mdconf.novel.titles)
+
+			})
+		;
+
+		if (seo_image)
+		{
+			this.seo_image = seo_image;
+		}
+
+		seo_keywords = array_unique(seo_keywords.concat(_contribute));
+
+		this.seo_keywords = seo_keywords.join(' , ');
+		this.seo_description = shuffle(array_unique(seo_description)).join(' , ');
+
+		if (this.pages)
+		{
+			let baseUrl = `/`;
+
+			let q = this._queryParams(this.$route);
+
+			let s = new URLSearchParams();
+
+			if (q.searchType)
+			{
+				baseUrl = `/${EnumEventAction.SEARCH}/${q.searchType}`;
+
+				s.set('searchValue', q.searchValue);
+			}
+
+			let first = _join(s);
+			let previous = _join(s, this.page - 1);
+			let next = _join(s, this.page + 1);
+			let last = _join(s, this.pages);
+
+			function _join(s: URLSearchParams, n?: number)
+			{
+				if (n > 1)
+				{
+					s = new URLSearchParams(s);
+
+					s.set('page', n as any);
+				}
+
+				let o = s.toString();
+
+				if (o)
+				{
+					return baseUrl + '?' + o
+				}
+
+				return baseUrl
+			}
+
+			_setAttribute(`link[rel="first"]`, first);
+			_setAttribute(`link[rel="previous"]`, previous);
+			_setAttribute(`link[rel="next"]`, next);
+			_setAttribute(`link[rel="last"]`, last);
+
+			_setAttribute(`link[rel="start"]`, first);
+			_setAttribute(`link[rel="prev"]`, previous);
+
+			function _setAttribute(selector: string, value: string)
+			{
+				try
+				{
+					document.head
+						.querySelector(selector)
+						.setAttribute('href', value)
+					;
+				}
+				catch (e)
+				{
+
+				}
+			}
+			{
+
+			}
+		}
+
+		function shuffle<T>(a: T[]): T[]
+		{
+			for (let i = a.length - 1; i > 0; i--)
+			{
+				const j = Math.floor(Math.random() * (i + 1));
+				[a[i], a[j]] = [a[j], a[i]];
+			}
+			return a;
+		}
+
 	}
 
 	_data_init()
@@ -1406,6 +1536,7 @@ export default class List extends Vue
 					}
 					else
 					{
+						// @ts-ignore
 						return novel.mdconf.novel.tags.includes(cache.keyword)
 					}
 				}
@@ -1472,6 +1603,7 @@ export default class List extends Vue
 					novel.mdconf.novel
 					&& novel.mdconf.contribute
 					&& novel.mdconf.contribute.length
+					// @ts-ignore
 					&& novel.mdconf.contribute.includes(cache.keyword)
 				)
 				{
