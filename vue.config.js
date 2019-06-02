@@ -56,6 +56,7 @@ module.exports = {
                     `/search/contribute?searchValue=我只是一個紳士`,
                     `/search/publisher`,
                     `/search/illust`,
+                    `/search/keyword`,
                     `/search/author`,
                     `/search/tag`,
                     `/search/chapter_range`,

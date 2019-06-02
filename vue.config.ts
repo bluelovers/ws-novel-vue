@@ -73,6 +73,8 @@ module.exports = {
 						`/search/publisher`,
 						`/search/illust`,
 
+						`/search/keyword`,
+
 						`/search/author`,
 
 						`/search/tag`,
