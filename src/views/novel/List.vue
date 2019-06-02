@@ -542,25 +542,25 @@ export default class List extends Vue
 			illusts: NovelData["illusts"],
 
 			searchOptions: {
-				epub_date: false,
-				epub_date_reverse: false,
+				epub_date: true,
+				epub_date_reverse: null,
 
-				segment_date: false,
-				segment_date_reverse: false,
+				segment_date: null,
+				segment_date_reverse: null,
 
-				update_date: false,
-				update_date_reverse: false,
+				update_date: null,
+				update_date_reverse: null,
 
-				chapter: false,
-				chapter_reverse: false,
+				chapter: null,
+				chapter_reverse: null,
 
-				title: false,
-				title_reverse: false,
+				title: null,
+				title_reverse: null,
 
-				novel_status: false,
+				novel_status: null,
 				novel_status_value: 0 as EnumNovelStatus | number,
 
-				...(this.$session.get('searchOptions') || {}),
+				...this._filterNullSearchOptions(this.$session.get('searchOptions') || {}),
 			} as List["searchOptions"],
 
 			EnumNovelStatus,
@@ -569,6 +569,21 @@ export default class List extends Vue
 		this.$nextTick(() => this._data_init());
 
 		return data;
+	}
+
+	_filterNullSearchOptions(searchOptions: List["searchOptions"]): List["searchOptions"]
+	{
+		return Object.entries(searchOptions)
+			.reduce(function (a, b)
+			{
+				if (b[1] != null)
+				{
+					a[b[0]] = b[1];
+				}
+
+				return a;
+			}, {} as List["searchOptions"])
+		;
 	}
 
 	itemPopup(item: IFilterNovelDataPlus)
@@ -736,7 +751,7 @@ export default class List extends Vue
 		_this.cur_chapter_range = null;
 		_this.cur_illust = '';
 
-		this.searchOptions.novel_status = false;
+		this.searchOptions.novel_status = null;
 	}
 
 	_searchByChapterRange(value: {
@@ -1063,7 +1078,7 @@ export default class List extends Vue
 	{
 		this._searchResetKeyword();
 
-		this.searchOptions.novel_status = false;
+		this.searchOptions.novel_status = null;
 
 		this.watchSort();
 	}
