@@ -468,6 +468,7 @@ export default class List extends Vue
 
 	page: number;
 	drawer: boolean;
+	pageInit: number;
 
 	novels_all: IFilterNovelDataPlus[];
 
@@ -515,6 +516,7 @@ export default class List extends Vue
 			novels: [] as typeof NovelData["novels"],
 			page,
 			pages: 1,
+			pageInit: null as number,
 
 			tags: [] as typeof NovelData["tags"],
 			contributes: [] as typeof NovelData["contributes"],
@@ -639,6 +641,13 @@ export default class List extends Vue
 		this._updateTitle();
 		let refdata = referrer_search();
 
+		//console.dir(this.$route.query.page);
+
+		if (this.$route.query.page)
+		{
+			this.pageInit = this.page = (this.$route.query.page as any) | 0;
+		}
+
 		// @ts-ignore
 		if (this.$route.params.searchType)
 		{
@@ -686,6 +695,18 @@ export default class List extends Vue
 	@Watch('$route')
 	onRouterChanged(to: Route, from?: Route)
 	{
+
+		if (to && from)
+		{
+			let q1 = this._queryParams(to);
+			let q2 = this._queryParams(from);
+
+			if (q1.searchType == q2.searchType && q1.searchValue == q1.searchValue)
+			{
+				return;
+			}
+		}
+
 		//console.log('onRouterChanged', to, from);
 		if (to.name == EnumEventAction.SEARCH)
 		{
@@ -1017,9 +1038,43 @@ export default class List extends Vue
 		this._setTitle('');
 	}
 
+	_updateRouterPage()
+	{
+		let page: any = this.page;
+		let query = {
+			...this.$route.query,
+		} as {
+			page: string
+		};
+
+		if (page != query.page && (page || query.page))
+		{
+			if (page > 1)
+			{
+				query.page = page;
+			}
+			else
+			{
+				delete query.page;
+			}
+
+			this.$router.push({
+				path: this.$route.path,
+				query,
+			})
+		}
+	}
+
 	_searchUpdateRouter(searchType: EnumEventLabel, searchValue: string | number)
 	{
 		//console.log('_searchUpdateRouter', searchType, searchValue);
+
+		let query = {} as any;
+
+		if (this.page > 1)
+		{
+			query.page = this.page;
+		}
 
 		if (searchValue)
 		{
@@ -1027,13 +1082,13 @@ export default class List extends Vue
 
 			if (q.searchType !== searchType || q.searchValue != searchValue)
 			{
+				query.searchValue = searchValue as string || '';
+
 				this.$router.push({
 					//path: `/${EnumEventAction.SEARCH}/${searchType}?searchValue=${searchValue || ''}`,
 
 					path: `/${EnumEventAction.SEARCH}/${searchType}`,
-					query: {
-						searchValue: searchValue as string || '',
-					},
+					query,
 				});
 			}
 		}
@@ -1041,6 +1096,7 @@ export default class List extends Vue
 		{
 			this.$router.push({
 				path: `/`,
+				query,
 			});
 		}
 	}
@@ -1640,6 +1696,12 @@ export default class List extends Vue
 
 		_this.pages = Math.ceil(_this.novels_all.length / page_size);
 
+		if (_this.pageInit | 0)
+		{
+			self.page = _this.pageInit | 0;
+			_this.pageInit = null;
+		}
+
 		self.page = Math.min(Math.max((self.page) | 0, 1), _this.pages);
 
 		let idx = (self.page - 1) * page_size;
@@ -1663,6 +1725,11 @@ export default class List extends Vue
 		_this.cur_author_list = array_unique(_this.cur_author_list).sort(cacheSortCallback);
 		_this.tags = array_unique(_this.tags).sort(cacheSortCallback);
 		_this.contributes = array_unique(_this.contributes).sort(cacheSortCallback);
+
+		setTimeout(() =>
+		{
+			this._updateRouterPage();
+		}, 500);
 
 		this._updateTitle();
 
