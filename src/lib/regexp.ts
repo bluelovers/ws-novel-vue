@@ -1,9 +1,12 @@
+
+import matchProperty = require('unicode-match-property-ecmascript');
 import { zhRegExp } from 'regexp-cjk';
 import { toHalfWidthLocaleLowerCase } from '@/lib/conv';
 import { array_unique } from 'array-hyper-unique'
 import createZhRegExpPlugin, { IZhRegExpPluginOptions } from 'regexp-cjk-plugin-extra';
 import escapeStringRegexp from 'escape-string-regexp';
 import { IOptionsOn } from 'regexp-cjk/lib/core';
+import { matchOperatorsAndPunctuationRegex } from '@/lib/regex/const';
 
 let _err: boolean;
 let _err2: boolean;
@@ -61,7 +64,7 @@ export function zhRegExpGreedy(input: unknown, flags?: string)
 	}
 
 	// @ts-ignore
-	return new zhRegExp(input as string, flags || '', {
+	return new zhRegExp(input as string, input.flags || 'u', input.f, {
 		greedyTable: 2,
 		on: getPlugin(),
 	});
@@ -69,33 +72,65 @@ export function zhRegExpGreedy(input: unknown, flags?: string)
 
 export function zhRegExpGreedyMatchWords(input: string)
 {
-	try
+	let re: RegExp;
+	let rs: string;
+
+	let bool = [
+		() => {
+			let k = escapeStringRegexp(input);
+			rs = `\^(?:${k})\$`;
+
+			return zhRegExpGreedy(rs, 'ui')
+		},
+
+		() => {
+			let k = input;
+			rs = `\^(?:${k})\$`;
+
+			return zhRegExpGreedy(rs, 'ui')
+		},
+
+		() => {
+			let k = escapeStringRegexp(input.replace(matchOperatorsAndPunctuationRegex, ''));
+			rs = `\^(?:${k})\$`;
+
+			return zhRegExpGreedy(rs, 'ui')
+		},
+
+		() => {
+			let k = input
+				.replace(matchOperatorsAndPunctuationRegex, '')
+				.replace(/[-\\\/]/g, '')
+			;
+			rs = `\^(?:${k})\$`;
+
+			return zhRegExpGreedy(rs, 'ui')
+		},
+
+	].some(function (fn)
 	{
-
-		//let k = input.replace(/[|\\{}()\[\]^$+*?.]/g, '\\$1');
-
-		let k = escapeStringRegexp(input);
-
-//		let ks = array_unique([
-//			k,
-//			toHalfWidthLocaleLowerCase(k),
-//		]).join('|');
-
-		//let rs = `\^(?:${ks})\$`;
-
-		let rs = `\^(?:${k})\$`;
-
-		//console.log('zhRegExpGreedyMatchWords', k2, rs);
-
-		return zhRegExpGreedy(rs, 'ui')
-	}
-	catch (e)
-	{
-		if (!_err2)
+		try
 		{
-			console.error(e);
-			_err2 = true;
+			re = fn()
+
+			return true;
 		}
-		return String(input);
+		catch (e)
+		{
+			console.error(rs);
+
+			if (!_err2)
+			{
+				console.error(e);
+				_err2 = true;
+			}
+		}
+	});
+
+	if (bool && re)
+	{
+		return re;
 	}
+
+	return String(input);
 }

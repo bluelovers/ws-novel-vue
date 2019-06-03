@@ -63,6 +63,8 @@
     "register-service-worker": "^1.6.2",
     "str-util": "^2.3.21",
     "uni-string": "^1.1.2",
+    "unicode-match-property-ecmascript": "^1.0.4",
+    "unicode-punctuation-regex": "^1.0.0",
     "vue": "^2.6.10",
     "vue-analytics": "^5.17.0",
     "vue-class-component": "^7.1.0",

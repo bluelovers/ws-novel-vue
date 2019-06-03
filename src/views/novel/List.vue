@@ -1401,7 +1401,7 @@ export default class List extends Vue
 			}
 			catch (e)
 			{
-
+				console.error(e);
 			}
 		}
 		else if (_this.novels_all !== NovelData.novels)
