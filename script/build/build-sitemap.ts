@@ -46,7 +46,7 @@ async function runBuild()
 				url: createVueLink(row.label, EnumEventLabel.CHAPTER_RANGE),
 				changefreq: 'daily',
 				priority: 0.5,
-			}, 5);
+			}, 3);
 
 		})
 	;
@@ -59,7 +59,7 @@ async function runBuild()
 			url: createVueLink(title, EnumEventLabel.TAG),
 			changefreq: 'daily',
 			priority: 0.8,
-		}, 5);
+		}, 3);
 
 	})
 	;
@@ -83,7 +83,7 @@ async function runBuild()
 			url: createVueLink(title, EnumEventLabel.PUBLISHER),
 			changefreq: 'monthly',
 			priority: 0.9,
-		}, 10);
+		}, 1);
 	});
 
 	Object.keys(NovelData.alias).forEach(title => {
@@ -121,6 +121,22 @@ async function runBuild()
 		})
 	});
 
+	[
+		'魔王',
+		'姬騎士',
+		'蜘蛛',
+		'四度目',
+		'幼女',
+	]
+		.forEach(title => {
+			sitemap.add({
+				url: createVueLink(title),
+				changefreq: 'monthly',
+				priority: 0.5,
+			})
+		})
+	;
+
 	NovelData.illusts.forEach(title =>
 	{
 
@@ -138,7 +154,7 @@ async function runBuild()
 			url: createVueLink(title, EnumEventLabel.CONTRIBUTE),
 			changefreq: 'monthly',
 			priority: 0.1,
-		}, 2);
+		}, 1);
 	});
 
 	let xml = sitemap.toXML();
@@ -152,10 +168,16 @@ async function runBuild()
 
 function createVueLink(text: string, type: EnumEventLabel = EnumEventLabel.KEYWORD)
 {
+	let u = new URL([EnumEventAction.SEARCH, type, encodeURIComponent(text)].join('/'), siteUrl);
+
+	return u.toString();
+
+	/*
 	return url.resolve(siteUrl, [
 		EnumEventAction.SEARCH,
 		`${type}?searchValue=${text}`,
 	].join('/'))
+	 */
 }
 
 function addSitemap(sitemap, data: {

@@ -5,6 +5,8 @@ import path = require('path');
 import console from './script/util';
 import PrerenderSPAPlugin from 'prerender-spa-plugin'
 import JsDomRenderer from '@prerenderer/renderer-jsdom'
+import JsDomRenderer2 from 'prerenderer-renderer-jsdom'
+
 import { array_unique } from 'array-hyper-unique';
 
 const production = process.env.NODE_ENV === 'production';
@@ -51,7 +53,7 @@ module.exports = {
 			new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
 			new webpack.IgnorePlugin(/zh[/\\]convert[/\\].*\.txt/, /cjk-conv/),
 
-			new PrerenderSPAPlugin({
+			production && new PrerenderSPAPlugin({
 				staticDir: path.join(ROOT, 'dist'),
 				indexPath: path.join(ROOT, 'dist', 'index.html'),
 				routes: array_unique([
@@ -63,23 +65,45 @@ module.exports = {
 						return a
 					}, [] as string[])
 					.concat([
-						`/search/tag?searchValue=百合`,
+						`/search/tag/百合`,
 						`/search/author/kiki`,
-						`/search/author/黒水蛇`,
-						`/search/tag?searchValue=novel18`,
 
-						`/search/contribute?searchValue=我只是一個紳士`,
+						`/search/tag/novel18`,
+
+						`/search/contribute`,
 
 						`/search/publisher`,
 						`/search/illust`,
 
 						`/search/keyword`,
 
+						`/search/keyword/魔王`,
+						`/search/keyword/姬騎士`,
+						`/search/keyword/蜘蛛`,
+						`/search/keyword/四度目`,
+						`/search/keyword/幼女`,
+
+						`/search/tag/魔王`,
+						`/search/tag/病嬌`,
+						`/search/tag/女主人公`,
+						`/search/tag/TS`,
+
 						`/search/author`,
 
 						`/search/tag`,
 
 						`/search/chapter_range`,
+
+						`/search/chapter_range/000-000`,
+						`/search/chapter_range/001-005`,`/search/chapter_range/006-010`,
+						`/search/chapter_range/006-010`,
+						`/search/chapter_range/011-020`,
+						`/search/chapter_range/021-050`,
+						`/search/chapter_range/051-100`,`/search/chapter_range/101-200`,
+						`/search/chapter_range/201-300`,`/search/chapter_range/301-400`,
+						`/search/chapter_range/501-600`,
+						`/search/chapter_range/601-700`,
+						`/search/chapter_range/701-800`,`/search/chapter_range/801-900`,
 
 						'/history',
 						'/tool/cjk-conv',
@@ -88,11 +112,12 @@ module.exports = {
 					{
 						return new URL(v, 'http://localhost').pathname
 					})),
-				renderer: new JsDomRenderer({
-					//renderAfterDocumentEvent: 'onload',
+				renderer: new JsDomRenderer2({
+					renderAfterDocumentEvent: 'render-vue-mounted-event',
 					//renderAfterElementExists: '#nav',
 					renderAfterTime: 10000,
-					headless: false,
+					renderAfterTimeMax: 10000,
+					renderAfterDelay: 3000,
 				}),
 				/*
 				postProcessHtml: function (context) {
@@ -109,7 +134,7 @@ module.exports = {
 				 */
 			}),
 
-		],
+		].filter(v => v),
 //		devtool: !production,
 
 		optimization: {

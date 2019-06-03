@@ -6,7 +6,7 @@ const webpack = require("webpack");
 const path = require("path");
 const util_1 = tslib_1.__importDefault(require("./script/util"));
 const prerender_spa_plugin_1 = tslib_1.__importDefault(require("prerender-spa-plugin"));
-const renderer_jsdom_1 = tslib_1.__importDefault(require("@prerenderer/renderer-jsdom"));
+const prerenderer_renderer_jsdom_1 = tslib_1.__importDefault(require("prerenderer-renderer-jsdom"));
 const array_hyper_unique_1 = require("array-hyper-unique");
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
@@ -39,7 +39,7 @@ module.exports = {
              */
             new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ja/),
             new webpack.IgnorePlugin(/zh[/\\]convert[/\\].*\.txt/, /cjk-conv/),
-            new prerender_spa_plugin_1.default({
+            production && new prerender_spa_plugin_1.default({
                 staticDir: path.join(ROOT, 'dist'),
                 indexPath: path.join(ROOT, 'dist', 'index.html'),
                 routes: array_hyper_unique_1.array_unique([
@@ -49,31 +49,50 @@ module.exports = {
                     return a;
                 }, [])
                     .concat([
-                    `/search/tag?searchValue=百合`,
+                    `/search/tag/百合`,
                     `/search/author/kiki`,
-                    `/search/author/黒水蛇`,
-                    `/search/tag?searchValue=novel18`,
-                    `/search/contribute?searchValue=我只是一個紳士`,
+                    `/search/tag/novel18`,
+                    `/search/contribute`,
                     `/search/publisher`,
                     `/search/illust`,
                     `/search/keyword`,
+                    `/search/keyword/魔王`,
+                    `/search/keyword/姬騎士`,
+                    `/search/keyword/蜘蛛`,
+                    `/search/keyword/四度目`,
+                    `/search/keyword/幼女`,
+                    `/search/tag/魔王`,
+                    `/search/tag/病嬌`,
+                    `/search/tag/女主人公`,
+                    `/search/tag/TS`,
                     `/search/author`,
                     `/search/tag`,
                     `/search/chapter_range`,
+                    `/search/chapter_range/000-000`,
+                    `/search/chapter_range/001-005`, `/search/chapter_range/006-010`,
+                    `/search/chapter_range/006-010`,
+                    `/search/chapter_range/011-020`,
+                    `/search/chapter_range/021-050`,
+                    `/search/chapter_range/051-100`, `/search/chapter_range/101-200`,
+                    `/search/chapter_range/201-300`, `/search/chapter_range/301-400`,
+                    `/search/chapter_range/501-600`,
+                    `/search/chapter_range/601-700`,
+                    `/search/chapter_range/701-800`, `/search/chapter_range/801-900`,
                     '/history',
                     '/tool/cjk-conv',
                 ])
                     .map(v => {
                     return new URL(v, 'http://localhost').pathname;
                 })),
-                renderer: new renderer_jsdom_1.default({
-                    //renderAfterDocumentEvent: 'onload',
+                renderer: new prerenderer_renderer_jsdom_1.default({
+                    renderAfterDocumentEvent: 'render-vue-mounted-event',
                     //renderAfterElementExists: '#nav',
                     renderAfterTime: 10000,
-                    headless: false,
+                    renderAfterTimeMax: 10000,
+                    renderAfterDelay: 3000,
                 }),
             }),
-        ],
+        ].filter(v => v),
         //		devtool: !production,
         optimization: {
             splitChunks: {

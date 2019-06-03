@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { EnumEventAction } from '@/lib/novel';
 
 Vue.use(Router);
 
@@ -19,15 +20,17 @@ export default new Router({
 		*/
 
 		{
-			name: 'search',
+			name: EnumEventAction.SEARCH,
 			path: '/search/:searchType',
 			component: routeNovels,
 
 			children: [
 				{
+					name: EnumEventAction.SEARCH,
 					path: ':searchValue',
 				},
 				{
+					name: EnumEventAction.SEARCH,
 					path: '*',
 				},
 			],

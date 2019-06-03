@@ -643,7 +643,10 @@ export default class List extends Vue
 			this.title = 'Novel'
 		}
 
-		this._updateSeo();
+		this.$nextTick(() => {
+			this._updateSeo();
+		});
+
 	}
 
 	_updateSeo(this: IVueComponent<List>)
@@ -774,15 +777,26 @@ export default class List extends Vue
 
 		//console.dir(this.$route.query.page);
 
-		if (this.$route.query.page)
+		let q = this._queryParams(this.$route);
+
+		if (q.page)
 		{
-			this.pageInit = this.page = (this.$route.query.page as any) | 0;
+			this.pageInit = this.page = q.page = (q.page as any) | 0;
 		}
 
+		console.dir({
+			method: '_data_init',
+			q,
+			$route: this.$route,
+		});
+
 		// @ts-ignore
-		if (this.$route.params.searchType)
+		if (q.searchType)
 		{
-			setTimeout(() => this.onRouterChanged(this.$route, null), 250);
+			Object.assign(this.$route.params, q);
+			//Object.assign(this.$route.query, q);
+
+			this.$nextTick(() => this.onRouterChanged(this.$route, null));
 		}
 		else if (refdata && refdata.keywords.length)
 		{
@@ -790,13 +804,13 @@ export default class List extends Vue
 
 			console.log(`檢測到 referrer 關鍵字`, refdata, k);
 
-			setTimeout(() => this._search(EnumEventLabel.KEYWORD, k), 250);
+			this.$nextTick(() => this._search(EnumEventLabel.KEYWORD, k));
 		}
 		else
 		{
 			this._updateSort();
 
-			setTimeout(() => this.updateResource(this.page), 250);
+			this.$nextTick(() => this.updateResource(this.page));
 		}
 	}
 
@@ -806,6 +820,7 @@ export default class List extends Vue
 	_queryParams(to: Route)
 	{
 		let q = {
+			page: null as number | string,
 			searchValue: '',
 			searchType: '' as EnumEventLabel,
 			...to.query,
@@ -826,13 +841,25 @@ export default class List extends Vue
 	@Watch('$route')
 	onRouterChanged(to: Route, from?: Route)
 	{
+		let q = this._queryParams(to);
+
+		console.dir({
+			method: 'onRouterChanged',
+			to,
+			q,
+		});
 
 		if (to && from)
 		{
-			let q1 = this._queryParams(to);
 			let q2 = this._queryParams(from);
 
-			if (q1.searchType == q2.searchType && q1.searchValue == q1.searchValue)
+			console.dir({
+				method: 'onRouterChanged:2',
+				from,
+				q2,
+			});
+
+			if (q.searchType == q2.searchType && q.searchValue == q.searchValue)
 			{
 				return;
 			}
@@ -841,10 +868,6 @@ export default class List extends Vue
 		//console.log('onRouterChanged', to, from);
 		if (to.name == EnumEventAction.SEARCH)
 		{
-			let q = this._queryParams(to);
-
-			//console.log('onRouterChanged', q);
-
 			this._search(q.searchType, q.searchValue);
 		}
 		else
@@ -1158,6 +1181,11 @@ export default class List extends Vue
 		// @ts-ignore
 		let _this = this as ReturnType<List["data"]>;
 
+		console.dir({
+			method: '_searchReset',
+			$route: this.$route,
+		});
+
 		this._searchStatReset();
 
 		_this.cur_len = 0;
@@ -1171,11 +1199,11 @@ export default class List extends Vue
 
 	_updateRouterPage()
 	{
+		let q = this._queryParams(this.$route);
+
 		let page: any = this.page;
 		let query = {
-			...this.$route.query,
-		} as {
-			page: string
+			...q,
 		};
 
 		if (page != query.page && (page || query.page))
@@ -1189,10 +1217,33 @@ export default class List extends Vue
 				delete query.page;
 			}
 
-			this.$router.push({
-				path: this.$route.path,
-				query,
-			})
+			Object.entries(query)
+				.forEach(([k, v]) => {
+					if (v == null || v === '')
+					{
+						delete query[k]
+					}
+					else if (this.$route.params[k])
+					{
+						delete query[k]
+					}
+				})
+			;
+
+			if (Object.keys(query).length)
+			{
+				console.dir({
+					method: '_updateRouterPage',
+					$route: this.$route,
+					query,
+				});
+
+				this.$router.push({
+					path: this.$route.path,
+					params: query as any,
+					query: query as any,
+				})
+			}
 		}
 	}
 
@@ -1862,10 +1913,10 @@ export default class List extends Vue
 		_this.tags = array_unique(_this.tags).sort(cacheSortCallback);
 		_this.contributes = array_unique(_this.contributes).sort(cacheSortCallback);
 
-		setTimeout(() =>
+		this.$nextTick(() =>
 		{
 			this._updateRouterPage();
-		}, 100);
+		});
 
 		this._updateTitle();
 
@@ -1927,7 +1978,9 @@ export default class List extends Vue
 			/**
 			 * 利用 v-if 來強制刷新物件 避免 image 沒有更新的 BUG
 			 */
-			self.cur_len = self.novels.length
+			self.cur_len = self.novels.length;
+
+			this._updateTitle();
 		});
 	}
 

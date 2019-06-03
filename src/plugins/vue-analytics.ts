@@ -42,6 +42,17 @@ Vue.use(VueAnalytics, {
 	{
 		// here Google Analytics is ready to track!
 	},
+
+	disabled()
+	{
+
+		if (document.referrer && new URL(document.referrer).host.includes('prerenderer'))
+		{
+			return true;
+		}
+
+		return false
+	}
 });
 
 export interface IVueAnalytics$ga

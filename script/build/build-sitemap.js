@@ -38,7 +38,7 @@ async function runBuild() {
             url: createVueLink(row.label, novel_1.EnumEventLabel.CHAPTER_RANGE),
             changefreq: 'daily',
             priority: 0.5,
-        }, 5);
+        }, 3);
     });
     NovelData.tags
         .forEach(title => {
@@ -46,7 +46,7 @@ async function runBuild() {
             url: createVueLink(title, novel_1.EnumEventLabel.TAG),
             changefreq: 'daily',
             priority: 0.8,
-        }, 5);
+        }, 3);
     });
     NovelData.authors
         .forEach(title => {
@@ -61,7 +61,7 @@ async function runBuild() {
             url: createVueLink(title, novel_1.EnumEventLabel.PUBLISHER),
             changefreq: 'monthly',
             priority: 0.9,
-        }, 10);
+        }, 1);
     });
     Object.keys(NovelData.alias).forEach(title => {
         let data = NovelData.alias[title].sort((a, b) => {
@@ -89,6 +89,20 @@ async function runBuild() {
             ..._append,
         });
     });
+    [
+        '魔王',
+        '姬騎士',
+        '蜘蛛',
+        '四度目',
+        '幼女',
+    ]
+        .forEach(title => {
+        sitemap.add({
+            url: createVueLink(title),
+            changefreq: 'monthly',
+            priority: 0.5,
+        });
+    });
     NovelData.illusts.forEach(title => {
         addSitemap(sitemap, {
             url: createVueLink(title, novel_1.EnumEventLabel.ILLUST),
@@ -101,7 +115,7 @@ async function runBuild() {
             url: createVueLink(title, novel_1.EnumEventLabel.CONTRIBUTE),
             changefreq: 'monthly',
             priority: 0.1,
-        }, 2);
+        }, 1);
     });
     let xml = sitemap.toXML();
     //console.log(xml);
@@ -109,10 +123,14 @@ async function runBuild() {
     return fs.writeFileSync(path.join(project_config_1.default.ProjectRoot, 'public/sitemap.xml'), xml);
 }
 function createVueLink(text, type = novel_1.EnumEventLabel.KEYWORD) {
-    return url_1.default.resolve(project_config_1.siteUrl, [
-        novel_1.EnumEventAction.SEARCH,
+    let u = new URL([novel_1.EnumEventAction.SEARCH, type, encodeURIComponent(text)].join('/'), project_config_1.siteUrl);
+    return u.toString();
+    /*
+    return url.resolve(siteUrl, [
+        EnumEventAction.SEARCH,
         `${type}?searchValue=${text}`,
-    ].join('/'));
+    ].join('/'))
+     */
 }
 function addSitemap(sitemap, data, pages) {
     let { url, changefreq, priority } = data;
