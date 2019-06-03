@@ -122,7 +122,8 @@ module.exports = {
 					renderAfterDelay: 3000,
 				}),
 
-				postProcess (renderedRoute: IPostProcessContext) {
+				async postProcess(renderedRoute: IPostProcessContext)
+				{
 //					// Ignore any redirects.
 //					renderedRoute.route = renderedRoute.originalRoute
 //					// Basic whitespace removal. (Don't use this in production.)
@@ -130,13 +131,36 @@ module.exports = {
 //					// Remove /index.html from the output path if the dir name ends with a .html file extension.
 //					// For example: /dist/dir/special.html/index.html -> /dist/dir/special.html
 
-					const staticDir = path.join(ROOT, 'dist');
+					const staticDir = path.normalize(path.join(ROOT, 'dist'));
 
 					//console.dir(renderedRoute);
 
-					fs.outputFile(path.join(staticDir, renderedRoute.originalRoute + '/index.html'), renderedRoute.html)
+
+					let file = path.normalize(path.join(staticDir, renderedRoute.originalRoute));
+
+					await fs.outputFile(file + '/index.html', renderedRoute.html)
 						.catch(e => console.error(e.message))
 					;
+
+					if (0 && file != staticDir && file != staticDir + '/')
+					{
+						await fs.outputFile(file, renderedRoute.html)
+							.catch(e => console.error(e.message))
+						;
+					}
+
+					file = path.join(staticDir, decodeURIComponent(renderedRoute.originalRoute));
+
+					await fs.outputFile(file + '/index.html', renderedRoute.html)
+						.catch(e => console.error(e.message))
+					;
+
+					if (0 && file != staticDir && file != staticDir + '/')
+					{
+						await fs.outputFile(file, renderedRoute.html)
+							.catch(e => console.error(e.message))
+						;
+					}
 
 //					fs.outputFile(path.join(staticDir, path.dirname(renderedRoute.originalRoute), decodeURIComponent(path.basename(renderedRoute.originalRoute)) + '.html'), renderedRoute.html)
 //						.catch(e => console.error(e.message))

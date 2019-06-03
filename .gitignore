@@ -32,3 +32,4 @@ yarn-error.log*
 /a.js
 
 !/src/setting/index.js
+/test/temp.ts

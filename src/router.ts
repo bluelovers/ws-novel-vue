@@ -46,6 +46,12 @@ export default new Router({
 			path: '/history',
 			// @ts-ignore
 			component: () => import(/* webpackChunkName: "history" */ '@/views/novel/Hisory.vue'),
+
+			children: [
+				{
+					path: '*',
+				},
+			],
 		},
 
 		{
