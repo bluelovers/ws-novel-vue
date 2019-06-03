@@ -31,6 +31,10 @@ export default new Router({
 				},
 				{
 					name: EnumEventAction.SEARCH,
+					path: ':searchValue/index.html',
+				},
+				{
+					name: EnumEventAction.SEARCH,
 					path: '*',
 				},
 			],

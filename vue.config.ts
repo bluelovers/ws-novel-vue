@@ -6,8 +6,10 @@ import console from './script/util';
 import PrerenderSPAPlugin from 'prerender-spa-plugin'
 import JsDomRenderer from '@prerenderer/renderer-jsdom'
 import JsDomRenderer2 from 'prerenderer-renderer-jsdom'
+import fs from 'fs-extra';
 
 import { array_unique } from 'array-hyper-unique';
+import { IPostProcessContext } from 'prerenderer-renderer-jsdom/types/renderer';
 
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
@@ -119,6 +121,34 @@ module.exports = {
 					renderAfterTimeMax: 10000,
 					renderAfterDelay: 3000,
 				}),
+
+				postProcess (renderedRoute: IPostProcessContext) {
+//					// Ignore any redirects.
+//					renderedRoute.route = renderedRoute.originalRoute
+//					// Basic whitespace removal. (Don't use this in production.)
+//					renderedRoute.html = renderedRoute.html.split(/>[\s]+</gmi).join('><')
+//					// Remove /index.html from the output path if the dir name ends with a .html file extension.
+//					// For example: /dist/dir/special.html/index.html -> /dist/dir/special.html
+
+					const staticDir = path.join(ROOT, 'dist');
+
+					//console.dir(renderedRoute);
+
+					fs.outputFile(path.join(staticDir, renderedRoute.originalRoute + '/index.html'), renderedRoute.html)
+						.catch(e => console.error(e.message))
+					;
+
+//					fs.outputFile(path.join(staticDir, path.dirname(renderedRoute.originalRoute), decodeURIComponent(path.basename(renderedRoute.originalRoute)) + '.html'), renderedRoute.html)
+//						.catch(e => console.error(e.message))
+//					;
+
+//					if (renderedRoute.route.endsWith('index.html')) {
+//						renderedRoute.outputPath = path.join(__dirname, 'dist', renderedRoute.route)
+//					}
+
+					return renderedRoute
+				},
+
 				/*
 				postProcessHtml: function (context) {
 					var titles = {

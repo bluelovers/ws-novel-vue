@@ -7,6 +7,7 @@ const path = require("path");
 const util_1 = tslib_1.__importDefault(require("./script/util"));
 const prerender_spa_plugin_1 = tslib_1.__importDefault(require("prerender-spa-plugin"));
 const prerenderer_renderer_jsdom_1 = tslib_1.__importDefault(require("prerenderer-renderer-jsdom"));
+const fs_extra_1 = tslib_1.__importDefault(require("fs-extra"));
 const array_hyper_unique_1 = require("array-hyper-unique");
 const production = process.env.NODE_ENV === 'production';
 const development = !production;
@@ -91,6 +92,25 @@ module.exports = {
                     renderAfterTimeMax: 10000,
                     renderAfterDelay: 3000,
                 }),
+                postProcess(renderedRoute) {
+                    //					// Ignore any redirects.
+                    //					renderedRoute.route = renderedRoute.originalRoute
+                    //					// Basic whitespace removal. (Don't use this in production.)
+                    //					renderedRoute.html = renderedRoute.html.split(/>[\s]+</gmi).join('><')
+                    //					// Remove /index.html from the output path if the dir name ends with a .html file extension.
+                    //					// For example: /dist/dir/special.html/index.html -> /dist/dir/special.html
+                    const staticDir = path.join(ROOT, 'dist');
+                    //console.dir(renderedRoute);
+                    fs_extra_1.default.outputFile(path.join(staticDir, renderedRoute.originalRoute + '/index.html'), renderedRoute.html)
+                        .catch(e => util_1.default.error(e.message));
+                    //					fs.outputFile(path.join(staticDir, path.dirname(renderedRoute.originalRoute), decodeURIComponent(path.basename(renderedRoute.originalRoute)) + '.html'), renderedRoute.html)
+                    //						.catch(e => console.error(e.message))
+                    //					;
+                    //					if (renderedRoute.route.endsWith('index.html')) {
+                    //						renderedRoute.outputPath = path.join(__dirname, 'dist', renderedRoute.route)
+                    //					}
+                    return renderedRoute;
+                },
             }),
         ].filter(v => v),
         //		devtool: !production,
