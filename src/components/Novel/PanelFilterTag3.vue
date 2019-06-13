@@ -24,6 +24,7 @@
 				<v-card-text expand>
 					<VChipTag
 						v-for="itemv in items"
+						v-bind:key="toItem(itemv).label"
 						:item="toItem(itemv)"
 						:value="value"
 						@click="onClick"

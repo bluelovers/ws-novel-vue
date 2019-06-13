@@ -1,9 +1,12 @@
 <template>
 	<root v-model="value">
-		<v-checkbox v-for="item in items" class="shrink my-0 mr-2"
-								v-model="inputValues"
-								:label="item.label"
-								:value="item.value"
+		<v-checkbox
+			v-for="item in items"
+			v-bind:key="item.label"
+			class="shrink my-0 mr-2"
+			v-model="inputValues"
+			:label="item.label"
+			:value="item.value"
 		></v-checkbox>
 	</root>
 </template>

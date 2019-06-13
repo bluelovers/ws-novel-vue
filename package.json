@@ -39,8 +39,9 @@
     "inspect-production": "vue-cli-service inspect --mode production",
     "remove-vue-dts": "node ./script/tool/remove-vue-dts",
     "pre-commit": "node ./script/pre-commit",
-    "serve": "vue-cli-service serve --color --copy",
-    "serve-production": "vue-cli-service serve --mode production",
+    "serve": "yarn run serve:production",
+    "serve:dev": "vue-cli-service serve --color --copy",
+    "serve:production": "vue-cli-service serve --mode production",
     "test": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -57,7 +58,7 @@
     "lodash-decorators": "^6.0.1",
     "node-novel-info": "^2.3.33",
     "prerender-spa-plugin": "^3.4.0",
-    "prerenderer-renderer-jsdom": "^0.2.3",
+    "prerenderer-renderer-jsdom": "^0.2.4",
     "regexp-cjk": "^3.3.3",
     "regexp-cjk-plugin-extra": "^1.0.2",
     "register-service-worker": "^1.6.2",

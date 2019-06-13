@@ -22,7 +22,10 @@
 			</div>
 			<v-card v-if="items.length">
 				<v-card-text expand>
-					<v-chip v-for="item in items" class="caption" @click="onClick(item)"
+					<v-chip
+						v-for="item in items"
+						v-bind:key="item.label"
+						class="caption" @click="onClick(item)"
 							small
 							:selected="item.value == value"
 							:close="item.value == value"

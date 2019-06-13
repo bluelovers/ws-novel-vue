@@ -56,6 +56,7 @@
 					>
 						<v-flex
 							v-for="item in novels"
+							v-bind:key="item.pathMain + '_' + item.novelID"
 							md4
 							flat tile
 							class="my-novel"
@@ -181,6 +182,7 @@
 						<div style="text-align: center">
 							<router-link
 								v-for="author in cur_author_list"
+								v-bind:key="author"
 								:to="`/search/author?searchValue=${author}`" class="text-color-inherit"
 							>
 								<v-chip

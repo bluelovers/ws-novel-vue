@@ -8564,10 +8564,10 @@ prerender-spa-plugin@^3.4.0:
     "@prerenderer/renderer-puppeteer" "^0.2.0"
     html-minifier "^3.5.16"
 
-prerenderer-renderer-jsdom@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/prerenderer-renderer-jsdom/-/prerenderer-renderer-jsdom-0.2.3.tgz#e06168fb147af4280209866f34d92bdb7f87af67"
-  integrity sha512-dutLNGlZ0pyqVptUjcHdrv9SmTFJ4ljcmTXCTFQ73siWh01FBgMyfHmI4A8Lo9gRO5IdTvjCbQ8GBDpKT5Cnyw==
+prerenderer-renderer-jsdom@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/prerenderer-renderer-jsdom/-/prerenderer-renderer-jsdom-0.2.4.tgz#2c3270c4f83a352e417fdc468ec363d1b400b189"
+  integrity sha512-ym1A8R+lvMhFYlplSj2PFqXiQHVIympmC4kYVjFzpRN+1/JahkpwVYQTD2jVEBY3oFgnYzc8BrM5+URBG8SLGQ==
   dependencies:
     bluebird "*"
     debug-color2 "^1.1.5"
