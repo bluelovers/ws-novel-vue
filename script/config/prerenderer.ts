@@ -163,7 +163,10 @@ export function createRenderer()
 
 		return new PuppeteerRenderer({
 
+			maxConcurrentRoutes: 3,
+
 			renderAfterTime,
+
 
 		})
 	}
@@ -178,3 +181,4 @@ export function createRenderer()
 		renderAfterDelay: 5000,
 	})
 }
+

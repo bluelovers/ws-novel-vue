@@ -102,6 +102,7 @@ function createRenderer() {
     if (ENV_IS_REMOTE) {
         util_1.consoleDebug.log(`PrerenderPlugin:default`);
         return new prerender_spa_plugin_1.PuppeteerRenderer({
+            maxConcurrentRoutes: 3,
             renderAfterTime,
         });
     }
