@@ -167,6 +167,7 @@ export function createRenderer()
 
 			renderAfterTime,
 
+			timeout: 0,
 
 		})
 	}
