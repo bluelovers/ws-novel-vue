@@ -7,6 +7,6 @@ command = "yarn run yarn-install-latest && yarn run build-netlify"
 #  YARN_FLAGS = "--no-lockfile"
   FORCE_COLOR = "1"
 #  NODE_ENV = "production"
-
+  ENV_IS_REMOTE = "1"
 
 
