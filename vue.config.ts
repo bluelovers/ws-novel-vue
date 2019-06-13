@@ -27,7 +27,7 @@ module.exports = {
 
 	productionSourceMap: allowSourceMap,
 
-	runtimeCompiler: true,
+	//runtimeCompiler: true,
 
 	configureWebpack: {
 
@@ -191,6 +191,7 @@ module.exports = {
 		].filter(v => v),
 //		devtool: !production,
 
+		/*
 		optimization: {
 
 			splitChunks: {
@@ -243,8 +244,10 @@ module.exports = {
 			minimize: production,
 			minimizer: [getTerserPlugin()],
 		},
+		 */
 
 	},
+
 
 	chainWebpack(config: ChainWebpack)
 	{

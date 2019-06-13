@@ -19,7 +19,7 @@ const ROOT = path.join(__dirname);
 module.exports = {
     publicPath: '/',
     productionSourceMap: allowSourceMap,
-    runtimeCompiler: true,
+    //runtimeCompiler: true,
     configureWebpack: {
         /*
         output: {
@@ -126,34 +126,6 @@ module.exports = {
                 },
             }),
         ].filter(v => v),
-        //		devtool: !production,
-        optimization: {
-            splitChunks: {
-                chunks: 'all',
-                //				minSize: 1048,
-                //				maxSize: 0,
-                name: true,
-                cacheGroups: {
-                    //					tool: {
-                    //						test: /^tool$/,
-                    //					},
-                    //					cjk: {
-                    //						test: /cjk|japanese|chinese/,
-                    //						priority: 20,
-                    ////						reuseExistingChunk: true,
-                    //					},
-                    'novel-stat-json': {
-                        test: /build\.json$|novel-stat\.json$/,
-                        priority: 20,
-                    },
-                },
-            },
-            runtimeChunk: {
-                name: entrypoint => `runtime~${entrypoint.name}`,
-            },
-            minimize: production,
-            minimizer: [getTerserPlugin()],
-        },
     },
     chainWebpack(config) {
         //config.resolve.extensions.prepend('.tsx');

@@ -23,6 +23,7 @@
     "test": "test"
   },
   "scripts": {
+    "netlify:dev": "netlify dev",
     "check-updates": "npx npm-check-updates -u && npx npm-check-updates -u ../../package.json",
     "yarn-install-latest": "node ./script/yarn-install",
     "build": "node ./script/build",
@@ -89,7 +90,7 @@
     "@vue/cli-service": "^3.8.3",
     "cross-fetch": "^3.0.4",
     "cross-spawn-extra": "^1.0.6",
-    "css-loader": "^3.0.0",
+    "css-loader": "2.1.1",
     "debug-color2": "^1.1.5",
     "fast-glob": "^2.2.7",
     "fs-extra": "^8.0.1",
@@ -106,6 +107,7 @@
     "stylus-loader": "^3.0.2",
     "terser": "4.0.0",
     "terser-webpack-plugin": "^1.3.0",
+    "ts-loader": "^6.0.2",
     "ts-node": "^8.2.0",
     "typescript": "next",
     "vue-cli-plugin-iview": "^1.0.6",
@@ -115,6 +117,9 @@
     "vue-template-compiler": "^2.6.10"
   },
   "resolutions": {
+    "regexp-cjk": "^3"
+  },
+  "_resolutions": {
     "@types/node": "*",
     "strip-ansi": "*",
     "deep-eql": "*",

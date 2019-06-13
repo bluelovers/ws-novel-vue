@@ -1,15 +1,17 @@
 {
-  "extends": "@bluelovers/tsconfig/sourcemap/mapfile.json",
+  "extends": "@bluelovers/tsconfig",
   "compilerOptions": {
+    "incremental": false,
     "strict": false,
     "jsx": "preserve",
 //    "importHelpers": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "inlineSourceMap": false,
-    "inlineSources": true,
+    "sourceMap": true,
     "removeComments": false,
     "skipLibCheck": true,
+
     "strictBindCallApply": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
