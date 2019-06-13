@@ -4,7 +4,7 @@ import webpack = require('webpack');
 import path = require('path');
 import console from './script/util';
 import PrerenderSPAPlugin from 'prerender-spa-plugin'
-import JsDomRenderer from '@prerenderer/renderer-jsdom'
+//import JsDomRenderer from '@prerenderer/renderer-jsdom'
 import JsDomRenderer2 from 'prerenderer-renderer-jsdom'
 import fs from 'fs-extra';
 
@@ -119,7 +119,7 @@ module.exports = {
 					//renderAfterElementExists: '#nav',
 					renderAfterTime: 10000,
 					renderAfterTimeMax: 10000,
-					renderAfterDelay: 3000,
+					renderAfterDelay: 5000,
 				}),
 
 				async postProcess(renderedRoute: IPostProcessContext)

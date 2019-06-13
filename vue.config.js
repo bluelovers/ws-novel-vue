@@ -6,6 +6,7 @@ const webpack = require("webpack");
 const path = require("path");
 const util_1 = tslib_1.__importDefault(require("./script/util"));
 const prerender_spa_plugin_1 = tslib_1.__importDefault(require("prerender-spa-plugin"));
+//import JsDomRenderer from '@prerenderer/renderer-jsdom'
 const prerenderer_renderer_jsdom_1 = tslib_1.__importDefault(require("prerenderer-renderer-jsdom"));
 const fs_extra_1 = tslib_1.__importDefault(require("fs-extra"));
 const array_hyper_unique_1 = require("array-hyper-unique");
@@ -90,7 +91,7 @@ module.exports = {
                     //renderAfterElementExists: '#nav',
                     renderAfterTime: 10000,
                     renderAfterTimeMax: 10000,
-                    renderAfterDelay: 3000,
+                    renderAfterDelay: 5000,
                 }),
                 async postProcess(renderedRoute) {
                     //					// Ignore any redirects.
