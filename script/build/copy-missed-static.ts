@@ -15,7 +15,7 @@ const copyOptions: fs.CopyOptions = {
 	recursive: true,
 };
 
-export = Bluebird.resolve(FastGlob.async<string>([
+export = Bluebird.resolve(FastGlob<string>([
 	'**',
 
 ], {

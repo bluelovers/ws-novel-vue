@@ -14,7 +14,7 @@ const copyOptions = {
     errorOnExist: false,
     recursive: true,
 };
-module.exports = Bluebird.resolve(FastGlob.async([
+module.exports = Bluebird.resolve(FastGlob([
     '**',
 ], {
     cwd: project_config_1.default.publicPath,
@@ -44,4 +44,3 @@ module.exports = Bluebird.resolve(FastGlob.async([
     .tap(function () {
     util_1.default.info('[copy]', 'done');
 });
-//# sourceMappingURL=copy-missed-static.js.map

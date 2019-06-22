@@ -3,7 +3,7 @@
  */
 
 import fs from 'fs-extra';
-import { async as fgAsync } from 'fast-glob';
+import FastGlob = require('fast-glob');
 import path, { ParsedPath } from 'path';
 import Bluebird from 'bluebird';
 import { console, consoleDebug } from '../util';
@@ -23,7 +23,7 @@ export function removeBadIdeaJs(mode?: boolean)
 	consoleDebug.debug(`removeBadIdeaJs`, mode);
 
 	return Bluebird
-		.resolve(fgAsync<string>([
+		.resolve(FastGlob<string>([
 			'**/*.js',
 			'**/*.d.ts',
 			//'**/*.map',

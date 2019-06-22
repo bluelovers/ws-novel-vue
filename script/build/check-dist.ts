@@ -9,7 +9,7 @@ import fs = require('fs-extra');
 import path = require('path');
 import console from '../util';
 
-export = Bluebird.resolve(FastGlob.async<string>([
+export = Bluebird.resolve(FastGlob<string>([
 	'**',
 ], {
 	cwd: ProjectConfig.distPath,
