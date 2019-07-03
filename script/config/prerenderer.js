@@ -104,7 +104,7 @@ function createRenderer() {
         return new prerender_spa_plugin_1.PuppeteerRenderer({
             maxConcurrentRoutes: 3,
             renderAfterTime,
-            timeout: 0,
+            timeout: 60000,
         });
     }
     util_1.consoleDebug.log(`PrerenderPlugin:jsdom`);
