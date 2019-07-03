@@ -57,7 +57,7 @@ export = (async () =>
 
 	//process.exit();
 
-	await CrossSpawn('yarn', [
+	let cp = await CrossSpawn('yarn', [
 		'run',
 		'build-base',
 		//'--',
@@ -70,6 +70,15 @@ export = (async () =>
 		//env: process.env,
 	})
 	;
+
+	let { error, status } = cp;
+
+	console.dir({ error, status });
+
+	if (error || status)
+	{
+		process.exit((status | 0) || 1);
+	}
 
 	await import('./build/copy-missed-static').then(awaitImport);
 	await import('./build/check-dist').then(awaitImport);

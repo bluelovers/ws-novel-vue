@@ -35,14 +35,18 @@ module.exports = (async () => {
     })
         .catch(e => null);
     //process.exit();
-    await cross_spawn_extra_1.async('yarn', [
+    let cp = await cross_spawn_extra_1.async('yarn', [
         'run',
         'build-base',
     ], {
         cwd,
         stdio: 'inherit',
     });
+    let { error, status } = cp;
+    util_1.default.dir({ error, status });
+    if (error || status) {
+        process.exit((status | 0) || 1);
+    }
     await Promise.resolve().then(() => tslib_1.__importStar(require('./build/copy-missed-static'))).then(util_1.awaitImport);
     await Promise.resolve().then(() => tslib_1.__importStar(require('./build/check-dist'))).then(util_1.awaitImport);
 })();
-//# sourceMappingURL=build.js.map
