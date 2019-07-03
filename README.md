@@ -1,5 +1,7 @@
 # hello-world
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2bf6a17e-87af-40a0-90c5-b2179e9c62cc/deploy-status)](https://app.netlify.com/sites/demonovel/deploys)
+
 > https://demonovel.netlify.com/
 
 ## Project setup
