@@ -57,7 +57,7 @@ function createRoutes() {
     return array_hyper_unique_1.array_unique([
         1, 2, 3, 4, 5,
     ].reduce(function (a, n) {
-        a.push(`?page=${n}`);
+        //a.push(`?page=${n}`);
         return a;
     }, [])
         .concat([

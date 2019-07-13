@@ -98,8 +98,7 @@ export function createRoutes()
 		1, 2, 3, 4, 5,
 	].reduce(function (a, n)
 		{
-			a.push(`?page=${n}`);
-
+			//a.push(`?page=${n}`);
 			return a
 		}, [] as string[])
 		.concat([
