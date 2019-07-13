@@ -11,7 +11,7 @@ const fs_extra_1 = tslib_1.__importDefault(require("fs-extra"));
 const util_1 = tslib_1.__importStar(require("../util"));
 const path = require("path");
 const ENV_IS_REMOTE = !!process.env.ENV_IS_REMOTE;
-const renderAfterTime = 10 * 1000;
+const renderAfterTime = 3 * 1000;
 util_1.consoleDebug.info(`ENV_IS_REMOTE`, ENV_IS_REMOTE);
 function createPrerenderPlugin(ROOT) {
     const staticDir = path.normalize(path.join(ROOT, 'dist'));
@@ -102,7 +102,7 @@ function createRenderer() {
     if (ENV_IS_REMOTE) {
         util_1.consoleDebug.log(`PrerenderPlugin:default`);
         return new prerender_spa_plugin_1.PuppeteerRenderer({
-            maxConcurrentRoutes: 3,
+            maxConcurrentRoutes: 1,
             renderAfterTime,
             timeout: 60000,
         });

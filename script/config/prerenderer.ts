@@ -12,7 +12,7 @@ import console, { consoleDebug } from '../util';
 import path = require('path');
 
 const ENV_IS_REMOTE = !!process.env.ENV_IS_REMOTE;
-const renderAfterTime = 10 * 1000;
+const renderAfterTime = 3 * 1000;
 
 consoleDebug.info(`ENV_IS_REMOTE`, ENV_IS_REMOTE);
 
@@ -163,7 +163,7 @@ export function createRenderer()
 
 		return new PuppeteerRenderer({
 
-			maxConcurrentRoutes: 3,
+			maxConcurrentRoutes: 1,
 
 			renderAfterTime,
 
