@@ -2,7 +2,7 @@
  * Created by user on 2019/1/13/013.
  */
 
-import FastGlob = require('fast-glob');
+import FastGlob from '@bluelovers/fast-glob';
 import ProjectConfig, { ProjectRoot } from '../../project.config';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');
@@ -13,6 +13,7 @@ export = Bluebird.resolve(FastGlob<string>([
 	'**',
 ], {
 	cwd: ProjectConfig.distPath,
+	// @ts-ignore
 	deep: true,
 	onlyFiles: true,
 }))

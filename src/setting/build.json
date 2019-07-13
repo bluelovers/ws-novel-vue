@@ -1,9 +1,9 @@
 {
 	"meta": {
-		"todayTimestamp": 1559318400000,
-		"timestamp": 1559344387658,
+		"todayTimestamp": 1560355200000,
+		"timestamp": 1560369803024,
 		"sourceUrl": "https://gitlab.com/novel-group/txt-source/blob/master",
 		"outputUrl": "https://gitlab.com/demonovel/epub-txt/blob/master"
 	},
-	"buildTimestamp": 1559544641905
+	"buildTimestamp": 1560415663556
 }

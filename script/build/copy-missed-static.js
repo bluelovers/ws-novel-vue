@@ -3,7 +3,7 @@
  * Created by user on 2019/1/13/013.
  */
 const tslib_1 = require("tslib");
-const FastGlob = require("fast-glob");
+const fast_glob_1 = tslib_1.__importDefault(require("@bluelovers/fast-glob"));
 const project_config_1 = tslib_1.__importDefault(require("../../project.config"));
 const Bluebird = require("bluebird");
 const fs = require("fs-extra");
@@ -14,10 +14,11 @@ const copyOptions = {
     errorOnExist: false,
     recursive: true,
 };
-module.exports = Bluebird.resolve(FastGlob([
+module.exports = Bluebird.resolve(fast_glob_1.default([
     '**',
 ], {
     cwd: project_config_1.default.publicPath,
+    // @ts-ignore
     deep: true,
     onlyFiles: true,
     //followSymlinkedDirectories: true,

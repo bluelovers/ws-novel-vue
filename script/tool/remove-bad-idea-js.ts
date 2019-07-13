@@ -3,7 +3,7 @@
  */
 
 import fs from 'fs-extra';
-import FastGlob = require('fast-glob');
+import FastGlob from '@bluelovers/fast-glob';
 import path, { ParsedPath } from 'path';
 import Bluebird from 'bluebird';
 import { console, consoleDebug } from '../util';

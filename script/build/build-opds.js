@@ -12,4 +12,3 @@ async function runBuild() {
     util_1.default.success(`[build] opds.xml`);
 }
 module.exports = runBuild();
-//# sourceMappingURL=build-opds.js.map

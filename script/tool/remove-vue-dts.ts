@@ -2,7 +2,7 @@
  * Created by user on 2019/5/1.
  */
 
-import FastGlob = require('fast-glob');
+import FastGlob from '@bluelovers/fast-glob';
 import ProjectConfig, { ProjectRoot, srcPath } from '../../project.config';
 import Bluebird = require('bluebird');
 import fs = require('fs-extra');

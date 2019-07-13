@@ -38,4 +38,3 @@ module.exports = cross_spawn_extra_1.async('yarn', [
     });
 })
     .catch(e => util_1.default.error(e));
-//# sourceMappingURL=yarn-list.js.map

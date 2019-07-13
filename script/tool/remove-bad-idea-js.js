@@ -5,7 +5,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const fs_extra_1 = tslib_1.__importDefault(require("fs-extra"));
-const FastGlob = require("fast-glob");
+const fast_glob_1 = tslib_1.__importDefault(require("@bluelovers/fast-glob"));
 const path_1 = tslib_1.__importDefault(require("path"));
 const bluebird_1 = tslib_1.__importDefault(require("bluebird"));
 const util_1 = require("../util");
@@ -20,7 +20,7 @@ const ROOT = path_1.default.join(__dirname, '../..');
 function removeBadIdeaJs(mode) {
     util_1.consoleDebug.debug(`removeBadIdeaJs`, mode);
     return bluebird_1.default
-        .resolve(FastGlob([
+        .resolve(fast_glob_1.default([
         '**/*.js',
         '**/*.d.ts',
         //'**/*.map',

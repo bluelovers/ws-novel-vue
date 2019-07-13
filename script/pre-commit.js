@@ -15,4 +15,3 @@ module.exports = (async () => {
         stdio: 'inherit',
     });
 })();
-//# sourceMappingURL=pre-commit.js.map

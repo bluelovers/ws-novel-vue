@@ -3,6 +3,7 @@ import Vuetify from 'vuetify'
 //import 'vuetify/dist/vuetify.min.css'
 import '../assets/stylus/main.styl'
 import zhHant from 'vuetify/src/locale/zh-Hant'
+import * as VuetifyLocale from 'vuetify/src/locale'
 
 Vue.use(Vuetify, {
 
@@ -19,8 +20,8 @@ Vue.use(Vuetify, {
 	customProperties: true,
 	iconfont: 'md',
 	lang: {
-		locales: { zhHant },
-		current: 'zh-Hant',
+		locales: VuetifyLocale,
+//		current: 'zh-Hant',
 	},
 
 	options: {

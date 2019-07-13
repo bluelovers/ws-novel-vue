@@ -4,11 +4,11 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const FastGlob = require("fast-glob");
+const fast_glob_1 = tslib_1.__importDefault(require("@bluelovers/fast-glob"));
 const project_config_1 = require("../../project.config");
 const fs = require("fs-extra");
 const util_1 = tslib_1.__importDefault(require("../util"));
-FastGlob.sync([
+fast_glob_1.default.sync([
     '**/*.vue'
 ], {
     cwd: project_config_1.srcPath,
@@ -21,4 +21,3 @@ FastGlob.sync([
         fs.removeSync(dts);
     }
 });
-//# sourceMappingURL=remove-vue-dts.js.map

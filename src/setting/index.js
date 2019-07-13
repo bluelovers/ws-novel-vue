@@ -10,4 +10,3 @@ exports.ProjectSetting = Object.freeze({
     NOVEL_LINK: 'https://gitlab.com/novel-group/txt-source/blob/master/',
 });
 exports.default = exports.ProjectSetting;
-//# sourceMappingURL=index.js.map

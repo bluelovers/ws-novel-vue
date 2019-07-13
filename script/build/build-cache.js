@@ -24,4 +24,3 @@ function cacheBuildJson() {
     util_1.default.log('meta.todayTimestamp', lib_1.moment(output.meta.todayTimestamp).format());
 }
 module.exports = cacheBuildJson();
-//# sourceMappingURL=build-cache.js.map

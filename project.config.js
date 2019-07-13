@@ -11,4 +11,3 @@ exports.srcPath = path.join(exports.ProjectRoot, 'src');
 exports.siteUrl = 'https://demonovel.netlify.com/';
 exports.ProjectConfig = exports;
 exports.default = exports.ProjectConfig;
-//# sourceMappingURL=project.config.js.map

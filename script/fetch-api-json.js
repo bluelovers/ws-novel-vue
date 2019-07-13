@@ -36,4 +36,3 @@ function fetchApiJson() {
 }
 let p = fetchApiJson();
 module.exports = p;
-//# sourceMappingURL=fetch-api-json.js.map

@@ -36,4 +36,3 @@ function awaitImport(m, skipError) {
 }
 exports.awaitImport = awaitImport;
 exports.default = exports.console;
-//# sourceMappingURL=util.js.map
