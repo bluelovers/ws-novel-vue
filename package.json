@@ -55,7 +55,7 @@
     "diff": "^4.0.1",
     "escape-string-regexp": "^2.0.0",
     "iview": "^3.4.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "lodash-decorators": "^6.0.1",
     "node-novel-info": "^2.3.33",
     "prerender-spa-plugin": "bluelovers/prerender-spa-plugin",
